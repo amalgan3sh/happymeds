@@ -1,0 +1,716 @@
+INFO - 2024-06-08 09:07:34 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 09:07:34 --> customerLogin: Password is incorrect.. returning false, password input: rahul and password in db: $2y$10$J3n.xCVvhgfcyc8qKye0UelqZ6fYhlci253Uqu16MiQ
+INFO - 2024-06-08 09:07:34 --> Login response: 
+INFO - 2024-06-08 09:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 09:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 09:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 09:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 09:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 09:11:57 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 09:11:57 --> customerLogin: Password verified.. returning true
+INFO - 2024-06-08 09:11:57 --> Login response: 1
+INFO - 2024-06-08 09:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:20:54 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 11:20:54 --> customerLogin: Password verified.. returning true
+INFO - 2024-06-08 11:20:54 --> Login response: 1
+INFO - 2024-06-08 11:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:24:52 --> getUserByPhoneOrEmail: user exists
+ERROR - 2024-06-08 11:24:52 --> Login process failed: Trying to access array offset on value of type bool
+INFO - 2024-06-08 11:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:25:02 --> getUserByPhoneOrEmail: user exists
+ERROR - 2024-06-08 11:25:02 --> Login process failed: Trying to access array offset on value of type bool
+INFO - 2024-06-08 11:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:25:55 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 11:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:28:13 --> ErrorException: Undefined variable $user_ids
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_ids', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(64): view('partner/partner_header')
+ 6 APPPATH\Controllers\PartnerController.php(57): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(63): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(19): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-08 11:28:21 --> ErrorException: Undefined variable $user_id
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_id', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(64): view('partner/partner_header')
+ 6 APPPATH\Controllers\PartnerController.php(57): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(63): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(19): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:34:29 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(64): view('partner/partner_header')
+ 6 APPPATH\Controllers\PartnerController.php(57): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(63): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(19): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:34:35 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 11:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:34:35 --> TypeError: CodeIgniter\HTTP\RedirectResponse::with(): Argument #1 ($key) must be of type string, array given, called in C:\xampp\htdocs\BuildMax\app\Controllers\PublicController.php on line 151
+[Method: POST, Route: login_process]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 134.
+ 1 APPPATH\Controllers\PublicController.php(151): CodeIgniter\HTTP\RedirectResponse->with([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PublicController->loginProcess()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:36:35 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 11:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-08 11:36:35 --> Login process failed: Undefined variable $user
+INFO - 2024-06-08 11:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:36:45 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 11:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-08 11:36:45 --> Login process failed: Undefined variable $user
+INFO - 2024-06-08 11:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:37:11 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 11:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:37:11 --> TypeError: CodeIgniter\HTTP\RedirectResponse::with(): Argument #1 ($key) must be of type string, array given, called in C:\xampp\htdocs\BuildMax\app\Controllers\PublicController.php on line 151
+[Method: POST, Route: login_process]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 134.
+ 1 APPPATH\Controllers\PublicController.php(151): CodeIgniter\HTTP\RedirectResponse->with([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PublicController->loginProcess()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:39:21 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 11:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:39:21 --> TypeError: CodeIgniter\HTTP\RedirectResponse::with(): Argument #1 ($key) must be of type string, array given, called in C:\xampp\htdocs\BuildMax\app\Controllers\PublicController.php on line 151
+[Method: POST, Route: login_process]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 134.
+ 1 APPPATH\Controllers\PublicController.php(151): CodeIgniter\HTTP\RedirectResponse->with([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PublicController->loginProcess()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:40:23 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 11:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 11:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:40:23 --> ErrorException: Undefined array key "email"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(64): view('partner/partner_header')
+ 6 APPPATH\Controllers\PartnerController.php(57): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(63): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(19): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:43:38 --> ErrorException: Array to string conversion
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(64): view('partner/partner_header')
+ 6 APPPATH\Controllers\PartnerController.php(57): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(63): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(19): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:45:11 --> ErrorException: Undefined array key "email"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(64): view('partner/partner_header')
+ 6 APPPATH\Controllers\PartnerController.php(57): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(63): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(19): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:47:19 --> ErrorException: Undefined variable $userData
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(65): view('partner/partner_header')
+ 6 APPPATH\Controllers\PartnerController.php(58): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(64): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(20): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:55:13 --> ErrorException: Undefined variable $userData
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(67): view('partner/partner_header')
+ 6 APPPATH\Controllers\PartnerController.php(60): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(66): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(22): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:57:13 --> ErrorException: Undefined variable $userData
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(68): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(60): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(66): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(22): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:57:15 --> ErrorException: Undefined variable $userData
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(68): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(60): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(66): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(22): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 11:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 11:57:45 --> ErrorException: Undefined array key "user_name"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_name"', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(69): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(61): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(67): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(23): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:03:00 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 12:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:03:00 --> ErrorException: Undefined variable $userData
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 45.
+ 1 APPPATH\Views\partner\partner_header.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 45)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(67): view('partner/partner_header')
+ 6 APPPATH\Controllers\PartnerController.php(60): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(66): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(22): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:07:24 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 12:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:14:19 --> ErrorException: Array to string conversion
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(67): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:14:36 --> ErrorException: Undefined array key "user_name"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_name"', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(67): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:15:22 --> ErrorException: Undefined variable $userData
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(67): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:16:17 --> ErrorException: Undefined variable $user_data
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_data', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(67): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:18:20 --> ErrorException: Undefined variable $user_name
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_name', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(70): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:19:49 --> ErrorException: Undefined array key "user_name"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_name"', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(70): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:22:22 --> ErrorException: Undefined array key "user_name"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_name"', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(70): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:31:31 --> ErrorException: Undefined variable $userData
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 996.
+ 1 APPPATH\Views\partner\partner_header.php(996): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 996)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(70): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:31:35 --> ErrorException: Undefined variable $userData
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 996.
+ 1 APPPATH\Views\partner\partner_header.php(996): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 996)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(70): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:32:16 --> ErrorException: Undefined variable $userData
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 996.
+ 1 APPPATH\Views\partner\partner_header.php(996): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 996)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(70): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:33:00 --> TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 997.
+ 1 APPPATH\Views\partner\partner_header.php(997): htmlspecialchars([...])
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(72): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:35:34 --> TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): htmlspecialchars([...])
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(72): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:36:49 --> ErrorException: Undefined array key "user_name"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_header.php on line 995.
+ 1 APPPATH\Views\partner\partner_header.php(995): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_name"', 'C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php', 995)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\BuildMax\\app\\Views\\partner\\partner_header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_header', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(72): view('partner/partner_header', [...])
+ 6 APPPATH\Controllers\PartnerController.php(59): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(65): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:43:32 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::getControllerName()
+[Method: GET, Route: partner_home]
+in APPPATH\Controllers\BaseController.php on line 71.
+ 1 APPPATH\Controllers\BaseController.php(59): App\Controllers\BaseController->checkLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:44:27 --> ErrorException: Undefined property: App\Controllers\PartnerController::$router
+[Method: GET, Route: partner_home]
+in APPPATH\Controllers\BaseController.php on line 71.
+ 1 APPPATH\Controllers\BaseController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PartnerController::$router', 'C:\\xampp\\htdocs\\BuildMax\\app\\Controllers\\BaseController.php', 71)
+ 2 APPPATH\Controllers\BaseController.php(59): App\Controllers\BaseController->checkLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:45:31 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 12:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:45:46 --> TypeError: App\Controllers\PartnerController::renderView(): Argument #3 ($data) must be of type array, null given, called in C:\xampp\htdocs\BuildMax\app\Controllers\PartnerController.php on line 21
+[Method: GET, Route: partner_home]
+in APPPATH\Controllers\PartnerController.php on line 63.
+ 1 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:46:57 --> TypeError: App\Controllers\PartnerController::renderView(): Argument #3 ($data) must be of type array, null given, called in C:\xampp\htdocs\BuildMax\app\Controllers\PartnerController.php on line 21
+[Method: GET, Route: partner_home]
+in APPPATH\Controllers\PartnerController.php on line 63.
+ 1 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:46:59 --> TypeError: App\Controllers\PartnerController::renderView(): Argument #3 ($data) must be of type array, null given, called in C:\xampp\htdocs\BuildMax\app\Controllers\PartnerController.php on line 21
+[Method: GET, Route: partner_home]
+in APPPATH\Controllers\PartnerController.php on line 63.
+ 1 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:47:26 --> TypeError: App\Controllers\PartnerController::renderView(): Argument #3 ($data) must be of type array, null given, called in C:\xampp\htdocs\BuildMax\app\Controllers\PartnerController.php on line 21
+[Method: GET, Route: partner_home]
+in APPPATH\Controllers\PartnerController.php on line 63.
+ 1 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:51:53 --> TypeError: App\Controllers\PartnerController::renderView(): Argument #3 ($data) must be of type array, null given, called in C:\xampp\htdocs\BuildMax\app\Controllers\PartnerController.php on line 21
+[Method: GET, Route: partner_home]
+in APPPATH\Controllers\PartnerController.php on line 63.
+ 1 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 12:51:55 --> TypeError: App\Controllers\PartnerController::renderView(): Argument #3 ($data) must be of type array, null given, called in C:\xampp\htdocs\BuildMax\app\Controllers\PartnerController.php on line 21
+[Method: GET, Route: partner_home]
+in APPPATH\Controllers\PartnerController.php on line 63.
+ 1 APPPATH\Controllers\PartnerController.php(21): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 12:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 12:52:11 --> getUserByPhoneOrEmail: user exists
+INFO - 2024-06-08 12:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 18:30:24 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "@popperjs"
+[Method: GET, Route: assets/vendors/@popperjs/popper.min.js.map]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/vendors/@popperjs/popper.min.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/vendors/@popperjs/popper.min.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-08 18:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 18:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

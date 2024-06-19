@@ -1,0 +1,51 @@
+name: Deploy to buildmax.lammy.life
+
+on:
+  push:
+    branches:
+      - main  # Adjust branch name as needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'  # Adjust PHP version as needed
+          extensions: mbstring, intl  # Install necessary PHP extensions
+
+      - name: Create temporary directory
+        run: mkdir deploy_temp
+
+      - name: Copy files to temporary directory
+        run: rsync -avz --exclude='.git' --exclude='deploy_temp' ./ deploy_temp/
+
+      - name: Create archive
+        run: |
+          tar -czf archive.tgz -C deploy_temp .
+
+      - name: Upload archive via FTP
+        env:
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}
+          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }}
+          CPANEL_DOMAIN: buildmax.lammy.life
+          CPANEL_PUBLIC_HTML: public_html  # Adjust if different for subdomains
+        run: |
+          curl -u ${CPANEL_USER}:${CPANEL_PASSWORD} ftp://${CPANEL_DOMAIN}/public_html/archive.tgz -T archive.tgz
+
+      - name: Extract archive on cPanel server
+        env:
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}
+          CPANEL_DOMAIN: buildmax.lammy.life
+          CPANEL_PUBLIC_HTML: public_html
+        run: |
+          ssh ${CPANEL_USER}@${CPANEL_DOMAIN} << 'ENDSSH'
+            cd /home1/${CPANEL_USER}/${CPANEL_PUBLIC_HTML}
+            tar -xzf archive.tgz
+            rm archive.tgz
+          ENDSSH

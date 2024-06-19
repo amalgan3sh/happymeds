@@ -1,0 +1,211 @@
+INFO - 2024-06-06 16:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 16:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 19:02:23 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\BuildMax\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 68.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(68): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\BuildMax\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(127): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(122): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(452): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(448): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(179): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(162): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(157): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Boot.php(298): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-06 19:02:23 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\BuildMax\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 68.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(68): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\BuildMax\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(127): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(122): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(452): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(448): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(179): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(162): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(157): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Boot.php(298): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-06 19:02:26 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\BuildMax\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 68.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(68): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\BuildMax\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(127): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(122): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(452): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(448): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(179): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(162): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(157): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Boot.php(298): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-06 19:02:32 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\BuildMax\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 68.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(68): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\BuildMax\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(127): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(122): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(452): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(448): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(179): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(162): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(157): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Boot.php(298): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-06 19:03:53 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\BuildMax\writable\cache/".
+[Method: GET, Route: user_types]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 68.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(68): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\BuildMax\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(127): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(122): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(452): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(448): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(179): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(162): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(157): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Boot.php(298): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-06 19:03:56 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\BuildMax\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 68.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(68): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\BuildMax\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(127): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(122): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(452): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(448): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(179): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(162): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(157): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Boot.php(298): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-06 19:03:56 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\BuildMax\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 68.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(68): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\BuildMax\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(127): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(122): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(452): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(448): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(179): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(162): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(157): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Boot.php(298): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-06-06 19:03:58 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\BuildMax\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 68.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(68): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\BuildMax\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(127): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(122): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(201): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(452): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(311): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(448): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(179): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(162): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(320): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(250): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(157): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Boot.php(298): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-06-06 17:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 17:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
