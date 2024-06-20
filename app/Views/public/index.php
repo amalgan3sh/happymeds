@@ -11,7 +11,7 @@
             <div class="col-md-7 col-lg-6 text-center text-md-start">
                 <span class="badge bg-light rounded-pill text-dark align-items-center d-flex flex-row-reverse justify-content-end mx-auto mx-md-0 ps-0 w-75 w-sm-50 w-md-75 w-xl-50 mb-3">#1 in Global Healthcare Solutions<img class="img-fluid float-start me-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/arrow-right.png" alt=""/></span>
                 <h1 class="mb-4 display-3 fw-bold lh-sm">Empowering Global Healthcare</h1>
-                <p class="mt-3 mb-4 fs-1">We're Buildmax International - Your trusted partner in revolutionizing healthcare worldwide. From pharmaceuticals to logistics, we're dedicated to making quality healthcare accessible everywhere.</p>
+                <p class="mt-3 mb-4 fs-1">We're Happymeds International - Your trusted partner in revolutionizing healthcare worldwide. From pharmaceuticals to logistics, we're dedicated to making quality healthcare accessible everywhere.</p>
                 <a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Explore Solutions</a>
                 <a class="btn btn-link ps-md-4" href="#" role="button"> Watch Demo</a>
             </div>
@@ -69,8 +69,8 @@
           <div class="row align-items-center">
             <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid" src="<?php echo base_url('assets/');?>assets/img/illustrations/feature-bg.png" width="550" alt="" /></div>
             <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
-              <h6 class="fw-bold fs-4 display-3 lh-sm">Explore Buildmax's <br />Unique Features</h6>
-              <p class="my-4">Experience seamless investing and ecommerce solutions with <br class="d-none d-xl-block" />Buildmax's advanced features tailored to empower your financial growth and business success.</p>
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Explore Happymeds's <br />Unique Features</h6>
+              <p class="my-4">Experience seamless investing and ecommerce solutions with <br class="d-none d-xl-block" />Haappymed's advanced features tailored to empower your financial growth and business success.</p>
               <div class="d-flex align-items-center mb-5">
                 <div><img class="img-fluid" src="<?php echo base_url('assets/');?>assets/img/illustrations/fast-performance.png" width="90" alt="" /></div>
                 <div class="px-4">
@@ -107,7 +107,7 @@
             <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="<?php echo base_url('assets/');?>assets/img/illustrations/call-to-action.png" width="550" alt="" /></div>
             <div class="col-md-6 text-center text-md-start offset-md-1">
               <h6 class="fw-bold fs-4 display-3 lh-sm">Transforming Healthcare<br />with Innovative Solutions</h6>
-              <p class="my-4 pe-xl-5"> Experience the future of healthcare with Buildmax's cutting-edge platform, designed and built using the latest code integration. Revolutionize the way you manage investments and access healthcare services with our seamless and intuitive solutions.</p><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Learn more</a>
+              <p class="my-4 pe-xl-5"> Experience the future of healthcare with Happymed's cutting-edge platform, designed and built using the latest code integration. Revolutionize the way you manage investments and access healthcare services with our seamless and intuitive solutions.</p><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Learn more</a>
             </div>
           </div>
         </div>
@@ -127,8 +127,8 @@
         <div class="container">
           <div class="row justify-content-center mb-6">
             <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
-              <h6 class="fw-bold fs-4 display-3 lh-sm">Why Choose <br />Buildmax's Platform</h6>
-              <p class="mb-0">Experience the power of Buildmax's platform, designed to elevate your healthcare investments and ecommerce ventures. Here's why Buildmax stands out:</p>
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Why Choose <br />Happymed's Platform</h6>
+              <p class="mb-0">Experience the power of Happymed's platform, designed to elevate your healthcare investments and ecommerce ventures. Here's why Happymed stands out:</p>
             </div>
           </div>
           <div class="row">
@@ -141,7 +141,7 @@
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/time-award.png" width="90" alt="" />
                 <h5 class="fw-bold">Reliable Performance</h5>
-                <p class="mb-md-0">Count on Buildmax for reliable performance, ensuring consistent and dependable service to meet your healthcare and ecommerce needs.</p>
+                <p class="mb-md-0">Count on Happymed for reliable performance, ensuring consistent and dependable service to meet your healthcare and ecommerce needs.</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
@@ -153,19 +153,19 @@
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/customization.png" width="90" alt="" />
                 <h5 class="fw-bold">Tailored Solutions</h5>
-                <p class="mb-md-0">Customize your experience with Buildmax's tailored solutions, ensuring that your healthcare investments and ecommerce ventures meet your unique needs and requirements.</p>
+                <p class="mb-md-0">Customize your experience with Happymed's tailored solutions, ensuring that your healthcare investments and ecommerce ventures meet your unique needs and requirements.</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/ux.png" width="90" alt="" />
                 <h5 class="fw-bold">User Experience Design</h5>
-                <p class="mb-md-0">Benefit from Buildmax's user-centric design approach, ensuring a seamless and intuitive user experience across all aspects of our platform.</p>
+                <p class="mb-md-0">Benefit from Happymed's user-centric design approach, ensuring a seamless and intuitive user experience across all aspects of our platform.</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/support.png" width="90" alt="" />
                 <h5 class="fw-bold">Customer Support</h5>
-                <p class="mb-md-0">Receive dedicated support from Buildmax's team of experts, ensuring that you have the assistance you need every step of the way.</p>
+                <p class="mb-md-0">Receive dedicated support from Happymed's team of experts, ensuring that you have the assistance you need every step of the way.</p>
               </div>
             </div>
           </div>
@@ -257,55 +257,90 @@
         </section> -->
 
         <section class="py-8" id="pricing">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6 col-xxl-5 text-center mb-3">
-                        <h6 class="fw-bold fs-4 display-3 lh-sm mb-3">Choose Your Account Type</h6>
-                        <p class="mb-4">Select the account type that suits your needs and get started.</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 col-xxl-5 text-center mb-3">
+                <h6 class="fw-bold fs-4 display-3 lh-sm mb-3">Choose Your Account Type</h6>
+                <p class="mb-4">Select the account type that suits your needs and get started.</p>
+            </div>
+        </div>
+        <div class="row flex-nowrap justify-content-center">
+            <div class="col-lg-3 col-md-6">
+                <div class="card shadow-lg mb-4 border-0">
+                    <div class="card-header border-bottom-0 pt-7 pb-5">
+                        <h5 class="fw-bold text-center">B2B Partner</h5>
+                        <p class="text-700 text-center d-block">Buy products from our store (ecommerce)</p>
                     </div>
-                </div>
-                <div class="row flex-center">
-                    <div class="col-lg-6">
-                        <div class="card shadow-lg mb-4 border-0">
-                            <div class="card-header border-bottom-0 pt-7 pb-5">
-                                <h5 class="fw-bold text-center">B2B Customer</h5>
-                                <p class="text-700 text-center d-block">Buy products from our store (ecommerce)</p>
-                            </div>
-                            <div class="card-body mx-auto">
-                                <ul class="list-unstyled mb-4">
-                                    <li class="text-700 py-2 text-secondary">Access to a wide range of products</li>
-                                    <li class="text-700 py-2 text-secondary">Exclusive B2B pricing</li>
-                                    <li class="text-700 py-2 text-secondary">Easy bulk ordering</li>
-                                    <li class="text-700 py-2 text-secondary">Dedicated customer support</li>
-                                </ul>
-                                <a class="btn btn-lg btn-primary rounded-pill mb-3" style="background-color: #FCAE61 !important; border-color: #FFFFFF !important;" href="<?php echo base_url('customer_registration'); ?>">Register as B2B Customer</a>
-                                <a class="btn btn-lg btn-primary rounded-pill mb-3" href="<?php echo base_url('coming_soon'); ?>">Log in</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card shadow-lg mb-4">
-                            <div class="card-header border-bottom-0 pt-7 pb-5">
-                                <h5 class="fw-bold text-center">Brand Partner</h5>
-                                <p class="text-700 text-center d-block">Invest in products and earn benefits from sales</p>
-                            </div>
-                            <div class="card-body mx-auto">
-                                <ul class="list-unstyled mb-4">
-                                    <li class="text-700 py-2 text-secondary">Invest in nutraceutical herbal products</li>
-                                    <li class="text-700 py-2 text-secondary">Earn benefits on B2B orders</li>
-                                    <li class="text-700 py-2 text-secondary">5-year subscription plan</li>
-                                    <li class="text-700 py-2 text-secondary">Turnover benefits</li>
-                                </ul>
-                                <a class="btn btn-lg btn-primary rounded-pill mb-3" style="background-color: #FCAE61 !important; border-color: #FFFFFF !important;" href="<?php echo base_url('brand_partner_registration'); ?>">Register as Brand Partner</a>
-                                <a class="btn btn-lg btn-primary rounded-pill mb-3" href="<?php echo base_url('customer_login'); ?>">Log in</a>
-
-                            </div>
-                        </div>
+                    <div class="card-body mx-auto">
+                        <ul class="list-unstyled mb-4">
+                            <li class="text-700 py-2 text-secondary">Access to a wide range of products</li>
+                            <li class="text-700 py-2 text-secondary">Exclusive B2B pricing</li>
+                            <li class="text-700 py-2 text-secondary">Easy bulk ordering</li>
+                            <li class="text-700 py-2 text-secondary">Dedicated customer support</li>
+                        </ul>
+                        <a class="btn btn-lg btn-primary rounded-pill mb-3" style="background-color: #FCAE61 !important; border-color: #FFFFFF !important;" href="<?php echo base_url('customer_registration'); ?>">Register Now</a>
+                        <a class="btn btn-lg btn-primary rounded-pill mb-3" href="<?php echo base_url('coming_soon'); ?>">Log in</a>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="col-lg-3 col-md-6">
+                <div class="card shadow-lg mb-4 border-0">
+                    <div class="card-header border-bottom-0 pt-7 pb-5">
+                        <h5 class="fw-bold text-center">Supplier/ Manufacturer</h5>
+                        <p class="text-700 text-center d-block">Sell your products through our platform</p>
+                    </div>
+                    <div class="card-body mx-auto">
+                        <ul class="list-unstyled mb-4">
+                            <li class="text-700 py-2 text-secondary">Access to a large network of buyers</li>
+                            <li class="text-700 py-2 text-secondary">Competitive pricing strategies</li>
+                            <li class="text-700 py-2 text-secondary">Marketing and sales support</li>
+                            <li class="text-700 py-2 text-secondary">Reliable logistics and distribution</li>
+                        </ul>
+                        <a class="btn btn-lg btn-primary rounded-pill mb-3" style="background-color: #FCAE61 !important; border-color: #FFFFFF !important;" href="<?php echo base_url('customer_registration'); ?>">Register Now</a>
+                        <a class="btn btn-lg btn-primary rounded-pill mb-3" href="<?php echo base_url('coming_soon'); ?>">Log in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card shadow-lg mb-4 border-0">
+                    <div class="card-header border-bottom-0 pt-7 pb-5">
+                        <h5 class="fw-bold text-center">Agent</h5>
+                        <p class="text-700 text-center d-block">Represent our products in your region</p>
+                    </div>
+                    <div class="card-body mx-auto">
+                        <ul class="list-unstyled mb-4">
+                            <li class="text-700 py-2 text-secondary">Earn commissions on sales</li>
+                            <li class="text-700 py-2 text-secondary">Access to exclusive product lines</li>
+                            <li class="text-700 py-2 text-secondary">Sales and marketing support</li>
+                            <li class="text-700 py-2 text-secondary">Training and development opportunities</li>
+                        </ul>
+                        <a class="btn btn-lg btn-primary rounded-pill mb-3" style="background-color: #FCAE61 !important; border-color: #FFFFFF !important;" href="<?php echo base_url('customer_registration'); ?>">Register Now</a>
+                        <a class="btn btn-lg btn-primary rounded-pill mb-3" href="<?php echo base_url('coming_soon'); ?>">Log in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card shadow-lg mb-4">
+                    <div class="card-header border-bottom-0 pt-7 pb-5">
+                        <h5 class="fw-bold text-center">Brand Partner</h5>
+                        <p class="text-700 text-center d-block">Invest in products and earn benefits from sales</p>
+                    </div>
+                    <div class="card-body mx-auto">
+                        <ul class="list-unstyled mb-4">
+                            <li class="text-700 py-2 text-secondary">Invest in nutraceutical herbal products</li>
+                            <li class="text-700 py-2 text-secondary">Earn benefits on B2B orders</li>
+                            <li class="text-700 py-2 text-secondary">5-year subscription plan</li>
+                            <li class="text-700 py-2 text-secondary">Turnover benefits</li>
+                        </ul>
+                        <a class="btn btn-lg btn-primary rounded-pill mb-3" style="background-color: #FCAE61 !important; border-color: #FFFFFF !important;" href="<?php echo base_url('brand_partner_registration'); ?>">Register Now</a>
+                        <a class="btn btn-lg btn-primary rounded-pill mb-3" href="<?php echo base_url('customer_login'); ?>">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 

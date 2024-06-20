@@ -9,14 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Buildmax</title>
+    <title>Happymeds</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/');?>assets/img/favicons/buildmax_logo_main.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('assets/');?>assets/img/favicons/buildmax_logo_main.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets/');?>assets/img/favicons/buildmax_logo_main.png">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/');?>assets/img/favicons/buildmax_logo_main.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
     <link rel="manifest" href="<?php echo base_url('assets/');?>assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="<?php echo base_url('assets/');?>assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
@@ -44,8 +44,8 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="<?php echo base_url('') ?>">
-                    <div class="text-warning">Build</div>
-                    <div class="text-1000">Max</div>
+                    <div class="text-warning">Happy</div>
+                    <div class="text-1000">Meds</div>
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

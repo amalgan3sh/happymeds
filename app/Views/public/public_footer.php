@@ -4,8 +4,8 @@
 <div class="container">
   <div class="row flex-center">
     <div class="col-auto mb-5"><a class="pe-2 d-flex align-items-center text-decoration-none fw-bold fs-3" href="#">
-        <div class="text-warning">Build</div>
-        <div class="text-white">Max</div>
+        <div class="text-warning">Happy</div>
+        <div class="text-white">Meds</div>
       </a></div>
   </div>
   <div class="row flex-center">
