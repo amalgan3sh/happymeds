@@ -304,7 +304,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card shadow-lg mb-4 border-0">
                     <div class="card-header border-bottom-0 pt-7 pb-5">
-                        <h5 class="fw-bold text-center">Agent</h5>
+                        <h5 class="fw-bold text-center">Agent/ Agency</h5>
                         <p class="text-700 text-center d-block">Represent our products in your region</p>
                     </div>
                     <div class="card-body mx-auto">
