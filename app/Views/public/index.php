@@ -7,8 +7,9 @@
 
     <div class="container position-relative">
         <div class="row align-items-center py-8">
-            <div class="col-md-5 col-lg-6 order-md-1 text-center text-md-end"><img class="img-fluid" src="<?php echo base_url('assets/');?>assets/img/illustrations/buildmax_mobile.png" width="350" alt="" /></div>
-            <div class="col-md-7 col-lg-6 text-center text-md-start">
+        <div class="col-md-5 col-lg-6 order-md-1 text-center text-md-end">
+    <img class="img-fluid shadow-effect" src="<?php echo base_url('assets/');?>assets/img/illustrations/Dash 2.png" width="350" alt="" />
+</div>            <div class="col-md-7 col-lg-6 text-center text-md-start">
                 <span class="badge bg-light rounded-pill text-dark align-items-center d-flex flex-row-reverse justify-content-end mx-auto mx-md-0 ps-0 w-75 w-sm-50 w-md-75 w-xl-50 mb-3">#1 in Global Healthcare Solutions<img class="img-fluid float-start me-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/arrow-right.png" alt=""/></span>
                 <h1 class="mb-4 display-3 fw-bold lh-sm">Empowering Global Healthcare</h1>
                 <p class="mt-3 mb-4 fs-1">We're Happymeds International - Your trusted partner in revolutionizing healthcare worldwide. From pharmaceuticals to logistics, we're dedicated to making quality healthcare accessible everywhere.</p>
@@ -18,6 +19,8 @@
         </div>
     </div>
 </section>
+
+
 
 
 
@@ -67,7 +70,7 @@
       <section class="py-5" id="features">
         <div class="container-lg">
           <div class="row align-items-center">
-            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid" src="<?php echo base_url('assets/');?>assets/img/illustrations/feature-bg.png" width="550" alt="" /></div>
+            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid  shadow-effect" src="<?php echo base_url('assets/');?>assets/img/illustrations/dash.png" width="550" alt="" /></div>
             <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
               <h6 class="fw-bold fs-4 display-3 lh-sm">Explore Happymeds's <br />Unique Features</h6>
               <p class="my-4">Experience seamless investing and ecommerce solutions with <br class="d-none d-xl-block" />Haappymed's advanced features tailored to empower your financial growth and business success.</p>
@@ -97,6 +100,12 @@
         </div>
       </section>
 
+      <style>
+        .shadow-effect {
+          box-shadow: 0 0 100px 100px #f7f7f7;
+      }
+      </style>
+
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
@@ -104,7 +113,7 @@
 
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="<?php echo base_url('assets/');?>assets/img/illustrations/call-to-action.png" width="550" alt="" /></div>
+            <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="<?php echo base_url('assets/');?>assets/img/illustrations/laptop.png" width="550" alt="" /></div>
             <div class="col-md-6 text-center text-md-start offset-md-1">
               <h6 class="fw-bold fs-4 display-3 lh-sm">Transforming Healthcare<br />with Innovative Solutions</h6>
               <p class="my-4 pe-xl-5"> Experience the future of healthcare with Happymed's cutting-edge platform, designed and built using the latest code integration. Revolutionize the way you manage investments and access healthcare services with our seamless and intuitive solutions.</p><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Learn more</a>
