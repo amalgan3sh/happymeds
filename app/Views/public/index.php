@@ -100,11 +100,11 @@
         </div>
       </section>
 
-      <!-- <style>
+      <style>
         .shadow-effect {
           box-shadow: 0 0 100px 100px #f7f7f7;
       }
-      </style> -->
+      </style>
 
 
       <!-- ============================================-->
