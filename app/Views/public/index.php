@@ -8,7 +8,7 @@
     <div class="container position-relative">
         <div class="row align-items-center py-8">
         <div class="col-md-5 col-lg-6 order-md-1 text-center text-md-end">
-    <img class="img-fluid shadow-effect" src="<?php echo base_url('assets/');?>assets/img/illustrations/Dash 2.png" width="350" alt="" />
+    <img class="img-fluid shadow-effect" src="<?php echo base_url('assets/');?>assets/img/illustrations/dashboard_1.jpg" width="350" alt="" />
 </div>            <div class="col-md-7 col-lg-6 text-center text-md-start">
                 <span class="badge bg-light rounded-pill text-dark align-items-center d-flex flex-row-reverse justify-content-end mx-auto mx-md-0 ps-0 w-75 w-sm-50 w-md-75 w-xl-50 mb-3">#1 in Global Healthcare Solutions<img class="img-fluid float-start me-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/arrow-right.png" alt=""/></span>
                 <h1 class="mb-4 display-3 fw-bold lh-sm">Empowering Global Healthcare</h1>
@@ -70,7 +70,7 @@
       <section class="py-5" id="features">
         <div class="container-lg">
           <div class="row align-items-center">
-            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid  shadow-effect" src="<?php echo base_url('assets/');?>assets/img/illustrations/dash.png" width="550" alt="" /></div>
+            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid  shadow-effect" src="<?php echo base_url('assets/');?>assets/img/illustrations/dashboard_2.jpg" width="550" alt="" /></div>
             <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
               <h6 class="fw-bold fs-4 display-3 lh-sm">Explore Happymeds's <br />Unique Features</h6>
               <p class="my-4">Experience seamless investing and ecommerce solutions with <br class="d-none d-xl-block" />Haappymed's advanced features tailored to empower your financial growth and business success.</p>
