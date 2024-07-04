@@ -1,18 +1,19 @@
 
 
 <section class="py-0" id="home">
-    <div class="bg-holder" style="background-image:url(<?php echo base_url('assets/');?>assets/img/illustrations/hero-bg.png);background-position:bottom;background-size:cover;">
+    <div class="bg-holder" style="background-image:url(<?php echo base_url('assets/');?>assets/img/illustrations/bg-3.jpeg);background-position:bottom;background-size:cover;">
     </div>
     <!--/.bg-holder-->
 
     <div class="container position-relative">
         <div class="row align-items-center py-8">
-        <div class="col-md-5 col-lg-6 order-md-1 text-center text-md-end">
-    <img class="img-fluid shadow-effect" src="<?php echo base_url('assets/');?>assets/img/illustrations/dashboard_1.jpg" width="350" alt="" />
-</div>            <div class="col-md-7 col-lg-6 text-center text-md-start">
+            <div class="col-md-5 col-lg-9 order-md-1 text-center text-md-end">
+                <img class="img-fluid responsive-img" src="<?php echo base_url('assets/');?>assets/img/illustrations/dash-ne.png" width="350" alt="" />
+            </div>            
+            <div class="col-md-4 col-lg-7 text-center text-md-start">
                 <span class="badge bg-light rounded-pill text-dark align-items-center d-flex flex-row-reverse justify-content-end mx-auto mx-md-0 ps-0 w-75 w-sm-50 w-md-75 w-xl-50 mb-3">#1 in Global Healthcare Solutions<img class="img-fluid float-start me-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/arrow-right.png" alt=""/></span>
-                <h1 class="mb-4 display-3 fw-bold lh-sm">Empowering Global Healthcare</h1>
-                <p class="mt-3 mb-4 fs-1">We're Happymeds International - Your trusted partner in revolutionizing healthcare worldwide. From pharmaceuticals to logistics, we're dedicated to making quality healthcare accessible everywhere.</p>
+                <h1 class="mb-4 display-5 fw-bold lh-sm">Empowering Global Healthcare Import and Export Solutions</h1>
+                <p class="mt-3 mb-4 fs-1">Welcome to ARANEA - Your trusted partner in revolutionizing healthcare worldwide. Our amazing platform simplifies your business operations ensuring that quality. We provide comprehensive solutions, from pharmaceuticals to logistics, to help transform the healthcare industry</p>
                 <a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Explore Solutions</a>
                 <a class="btn btn-link ps-md-4" href="#" role="button"> Watch Demo</a>
             </div>
@@ -21,6 +22,12 @@
 </section>
 
 
+<style>
+    .responsive-img {
+        max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+</style>
 
 
 
