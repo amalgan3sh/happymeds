@@ -1,7 +1,7 @@
 
 
 <section class="py-0" id="home">
-    <div class="bg-holder" style="background-image:url(<?php echo base_url('assets/');?>assets/img/illustrations/bg-3.jpeg);background-position:bottom;background-size:cover;">
+    <div class="bg-holder" style="background-image:url(<?php echo base_url('assets/');?>assets/img/illustrations/IMG_1166.jpeg);background-position:bottom;background-size:cover;">
     </div>
     <!--/.bg-holder-->
 

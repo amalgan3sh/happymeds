@@ -53,8 +53,8 @@
                 <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
                         <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium active" aria-current="page" href="<?php echo base_url('') ?>">Home</a></li>
-                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#features'); ?>">Collaborations</a></li>
-                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#pricing'); ?>">Membership Plans</a></li>
+                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#features'); ?>">Features</a></li>
+                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#pricing'); ?>">Collaborations</a></li>
                         <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#faq'); ?>">FAQ</a></li>
                     </ul>
                     <form class="ps-lg-5" id="createAccountForm" action="<?php echo base_url('user_types') ?>">
