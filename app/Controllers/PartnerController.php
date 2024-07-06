@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 use App\Models\PartnerModel; 
+use App\Models\TransactionModel;
+use App\Models\MarketModel;
+
 
 class PartnerController extends BaseController
 {
@@ -23,7 +26,9 @@ class PartnerController extends BaseController
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
-        return $this->renderView('partner_home_view', 'partner/partner_home');
+        $model = new TransactionModel();
+        $data['transactions'] = $model->findAll();
+        return $this->renderView('partner_home_view', 'partner/partner_home',  $data);
     }
 
     public function productDetails()
@@ -38,7 +43,9 @@ class PartnerController extends BaseController
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
-        return $this->renderView('market_view', 'partner/dashboard/market');
+        $model = new MarketModel();
+        $data['market_previews'] = $model->findAll();
+        return $this->renderView('market_view', 'partner/dashboard/market',$data);
     }
     public function Portfolio()
     {

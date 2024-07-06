@@ -43,9 +43,12 @@
     <main class="main" id="top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="<?php echo base_url('') ?>">
-                    <div class="text-warning">Happy</div>
-                    <div class="text-1000">Meds</div>
+                <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="<?php echo base_url('assets/');?>assets/img/illustrations/ARANEA.png">
+                    <img src="<?php echo base_url('assets/');?>assets/img/illustrations/ARANEA.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+                    <div class="d-flex align-items-center">
+                        <div class="text-warning">Happy</div>
+                        <div class="text-1000">Meds</div>
+                    </div>
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
