@@ -4,6 +4,8 @@ namespace App\Controllers;
 use App\Models\PartnerModel; 
 use App\Models\TransactionModel;
 use App\Models\MarketModel;
+use App\Models\ProductModel;
+
 
 
 class PartnerController extends BaseController
@@ -36,7 +38,9 @@ class PartnerController extends BaseController
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
-        return $this->renderView('product_details_view', 'partner/dashboard/product_details');
+        $model = new ProductModel();
+        $data['products'] = $model->findAll();
+        return $this->renderView('product_details_view', 'partner/dashboard/product_details',$data);
     }
     public function Market()
     {

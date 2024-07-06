@@ -8,66 +8,53 @@
 			<div class="container-fluid">
 				<!-- Row -->
 				<div class="row">
+					<!-- File: app/Views/partner/dashboard/market.php -->
+
 					<div class="col-xl-3 col-xxl-4 col-sm-6 my-order-ile">
 						<div class="card">
 							<div class="card-header border-0 pb-3">
-								<h4 class="card-title">Market Previews</h4>	
+								<h4 class="card-title">Market Previews</h4>    
 							</div>
 							<div class="card-body px-0 pt-0 dlab-scroll height370">
+								<?php foreach ($market_previews as $item): ?>
 								<div class="d-flex justify-content-between align-items-center market-preview">
 									<div class="d-flex align-items-center">
 										<span>
-											<svg width="38" height="38" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M21 0C9.40205 0 0 9.40205 0 21C0 32.5979 9.40205 42 21 42C32.5979 42 42 32.5979 42 21C41.9867 9.40754 32.5925 0.0132752 21 0ZM28.5 31.5002H16.5002C15.6716 31.5002 15.0001 30.8287 15.0001 30.0001C15.0001 29.9292 15.0051 29.8582 15.0152 29.7877L16.144 21.8844L13.8639 22.4548C13.7449 22.485 13.6226 22.5001 13.5 22.5001C12.6714 22.4992 12.0008 21.8272 12.0012 20.9986C12.0022 20.3111 12.47 19.7123 13.137 19.5448L16.6018 18.6787L18.0149 8.78727C18.1321 7.96695 18.892 7.39749 19.7123 7.51468C20.5326 7.63187 21.1021 8.39176 20.9849 9.21208L19.7443 17.8931L25.1364 16.545C25.9388 16.3404 26.755 16.8252 26.9592 17.6276C27.1638 18.4301 26.679 19.2463 25.8766 19.4509C25.872 19.4518 25.8674 19.4532 25.8628 19.4541L19.2857 21.0984L18.2287 28.5H28.5C29.3286 28.5 30.0001 29.1716 30.0001 30.0001C30.0001 30.8282 29.3286 31.5002 28.5 31.5002Z" fill="#374C98"/>
-											</svg>
+											<?= getCategorySVG($item['category']) ?>
 										</span>
 										<div class="ms-3">
-											<a href="javascript:void(0);"><h5 class="fs-14 font-w600 mb-0">LTC/USD</h5></a>
-											<span class="fs-12 font-w400">March</span>
+											<a href="javascript:void(0);"><h5 class="fs-14 font-w600 mb-0"><?= esc($item['product_name']) ?></h5></a>
+											<span class="fs-12 font-w400"><?= esc($item['month']) ?></span>
 										</div>
-									</div>	
+									</div>    
 									<div class="d-flex align-items-center">
-										<span class="peity-line2" data-width="100%">8,4,5,9,5,3,5,7,5</span>
+										<span class="peity-line" data-width="100%"><?= esc($item['trend_data']) ?></span>
 										<div class="ms-3">
-											<h5 class="fs-14 font-w600 mb-0">120.45</h5>
-											<span class="text-success">1,24%</span>
+											<h5 class="fs-14 font-w600 mb-0"><?= number_format($item['current_price'], 2) ?></h5>
+											<span class="<?= $item['percentage_change'] >= 0 ? 'text-success' : 'text-danger' ?>">
+												<?= number_format($item['percentage_change'], 2) ?>%
+											</span>
 										</div>
-									</div>	
+									</div>    
 								</div>
-								<div class="d-flex justify-content-between align-items-center market-preview">
-									<div class="d-flex align-items-center">
-										<span>
-											<svg width="38" height="38" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M37.3334 22.167C37.3318 20.2347 35.7654 18.6688 33.8336 18.6667H23.3334V25.6667H33.8336C35.7654 25.6651 37.3318 24.0987 37.3334 22.167Z" fill="#FFAB2D"/>
-												<path d="M23.3334 37.3333H33.8336C35.7664 37.3333 37.3334 35.7664 37.3334 33.8336C37.3334 31.9003 35.7664 30.3333 33.8336 30.3333H23.3334V37.3333Z" fill="#FFAB2D"/>
-												<path d="M28 0C12.5361 0 0 12.5361 0 28C0 43.4639 12.5361 56 28 56C43.4639 56 56 43.4639 56 28C55.9823 12.5434 43.4566 0.0177002 28 0ZM42.0003 33.9998C41.9948 38.4163 38.4163 41.9948 34.0004 41.9997V43.9998C34.0004 45.1046 33.1044 46 32.0003 46C30.8955 46 30.0001 45.1046 30.0001 43.9998V41.9997H26.0005V43.9998C26.0005 45.1046 25.1045 46 24.0003 46C22.8956 46 22.0002 45.1046 22.0002 43.9998V41.9997H16.0004C14.8957 41.9997 14.0003 41.1043 14.0003 40.0002C14.0003 38.8954 14.8957 38 16.0004 38H18V18H16.0004C14.8957 18 14.0003 17.1046 14.0003 15.9998C14.0003 14.8951 14.8957 13.9997 16.0004 13.9997H22.0002V12.0002C22.0002 10.8954 22.8956 10 24.0003 10C25.1051 10 26.0005 10.8954 26.0005 12.0002V13.9997H30.0001V12.0002C30.0001 10.8954 30.8955 10 32.0003 10C33.105 10 34.0004 10.8954 34.0004 12.0002V13.9997C38.3998 13.9814 41.9814 17.5324 42.0003 21.9319C42.0101 24.2616 40.9999 26.479 39.2354 28C40.9835 29.5039 41.9924 31.6933 42.0003 33.9998Z" fill="#FFAB2D"/>
-											</svg>
-										</span>
-										<div class="ms-3">
-											<a href="javascript:void(0);"><h5 class="fs-14 font-w600 mb-0">BTC/USD</h5></a>
-											<span class="fs-12 font-w400">January</span>
-										</div>
-									</div>	
-									<div class="d-flex align-items-center">
-										<span class="peity-line" data-width="100%">8,3,8,6,5,3,5,7,5</span>
-										<div class="ms-3">
-											<h5 class="fs-14 font-w600 mb-0">149.50</h5>
-											<span class="text-danger">1,24%</span>
-										</div>
-									</div>	
-								</div>
-								
-								
-								
-								
-								
-								
+								<?php endforeach; ?>
 							</div>
 							<div class="card-footer border-0 pt-0">
-								<a href="trading-market.html" class="btn btn-primary d-block btn-sm">Show more <i class="fa-solid fa-caret-right ms-2"></i></a>
+								<a href="<?= site_url('trading-market') ?>" class="btn btn-primary d-block btn-sm">Show more <i class="fa-solid fa-caret-right ms-2"></i></a>
 							</div>
 						</div>
 					</div>
+
+					<?php
+					// Helper function to generate SVG based on category
+					function getCategorySVG($category) {
+						// You can define different SVGs for different categories here
+						// For now, we'll use a placeholder
+						return '<svg width="38" height="38" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="21" cy="21" r="21" fill="#374C98"/>
+						</svg>';
+					}
+					?>
 					<div class="col-xl-9 col-xxl-8">
 						<div class="row">
 							<div class="col-xl-12">
