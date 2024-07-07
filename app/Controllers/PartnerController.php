@@ -48,7 +48,7 @@ class PartnerController extends BaseController
             return redirect()->to('/customer_login');
         }
         $model = new MarketModel();
-        $data['market_previews'] = $model->findAll();
+        $data['market_previews'] = $model->getMarketPreview();
         return $this->renderView('market_view', 'partner/dashboard/market',$data);
     }
     public function Portfolio()

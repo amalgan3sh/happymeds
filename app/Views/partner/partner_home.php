@@ -346,9 +346,7 @@
 														<h2 class="font-w600 mb-0">Surgicals</h2>
 													</div>
 													<div class="dlab-swiper-circle">
-														<svg width="50" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M6 4a2 2 0 0 0-2 2v3H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3h1a1 1 0 0 0 1-1V10a1 1 0 0 0-1-1h-1V6a2 2 0 0 0-2-2H6zm6 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 9h10v6H7V9zm5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" fill="#FFF"/>
-														</svg>
+														<img src="https://cdn-icons-png.freepik.com/512/1107/1107123.png" alt="Heart Icon" width="50" height="45" />
 													</div>
 
 												</div>
