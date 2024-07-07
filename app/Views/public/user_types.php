@@ -77,7 +77,7 @@
                             <li class="text-700 py-2 text-secondary">Turnover benefits</li>
                         </ul>
                         <a class="btn btn-lg btn-primary rounded-pill mb-3" style="background-color: #FCAE61 !important; border-color: #FFFFFF !important;" href="<?php echo base_url('brand_partner_registration') ?>">Register Now</a>
-                        <a class="btn btn-lg btn-primary rounded-pill mb-3" href="https://user.lakshmipharmaceuticals.com/">Log in</a>
+                        <a class="btn btn-lg btn-primary rounded-pill mb-3" href="<?php echo base_url('customer_login'); ?>">Log in</a>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     	<!--Title-->
-	<title>Buildmax : Brand Partner Dashboard</title>
+	<title>Aranea : Brand Partner Dashboard</title>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -79,7 +79,7 @@
 					</svg>
 
 				<div class="brand-title">
-					<h3>BUILDMAX</h3>
+					<h3>ARANEA</h3>
 				</div>
 				
 

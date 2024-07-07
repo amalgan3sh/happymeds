@@ -70,8 +70,8 @@
 													</svg>
 												</span>
 												<div class="ms-3">
-													<span class="fs-14 font-w400">Bitcoin</span>	
-													<a href="javascript:void(0);"><h4 class="font-w600 mb-0">BTC / USD</h4></a>
+													<span class="fs-14 font-w400">Healthcare</span>
+													<a href="javascript:void(0);"><h4 class="font-w600 mb-0">Product / Category</h4></a>
 												</div>
 											</div>
 											<div class="coin-box">
