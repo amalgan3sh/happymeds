@@ -236,26 +236,24 @@
 								<div class="swiper mySwiper-counter position-relative overflow-hidden">
 									<div class="swiper-wrapper">
 									<div class="swiper-slide">
-    <div class="card card-box bg-info">
-        <div class="card-header border-0 pb-0">
-            <div class="chart-num">
-                <p>
-                    <i class="fa-solid fa-heart-pulse me-2"></i>
-                    +12% (30 days)
-                </p>
-                <h2 class="font-w600 mb-0">Healthcare Services</h2>
-            </div>
-            <div class="dlab-swiper-circle">
-                <svg width="50" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21c-3.038 0-5.631-1.862-6.687-4.5a9.01 9.01 0 0 1 9.374 0C13.631 19.138 15.038 21 18 21zm-9-6a9 9 0 0 0 18 0c0-4.97-4.03-9-9-9s-9 4.03-9 9zm4.5-9a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z" fill="#FFF" />
-                </svg>
-            </div>
-        </div>
-        <div class="card-body p-0">
-            <div id="widgetChart1" class="chart-primary"></div>
-        </div>
-    </div>
-</div>
+								<div class="card card-box bg-info">
+									<div class="card-header border-0 pb-0">
+										<div class="chart-num">
+											<p>
+												<i class="fa-solid fa-heart-pulse me-2"></i>
+												+12% (30 days)
+											</p>
+											<h2 class="font-w600 mb-0">Healthcare Services</h2>
+										</div>
+										<div class="dlab-swiper-circle">
+											<img src="https://cdn-icons-png.freepik.com/512/4320/4320421.png" alt="Heart Icon" width="50" height="45" />
+										</div>
+									</div>
+									<div class="card-body p-0">
+										<div id="widgetChart1" class="chart-primary"></div>
+									</div>
+								</div>
+							</div>
 										<div class="swiper-slide">
 											<div class="card card-box bg-dark">
 												<div class="card-header border-0 pb-0">
@@ -267,9 +265,7 @@
 														<h2 class="font-w600 mb-0">Neutraceuticals</h2>
 													</div>
 													<div class="dlab-swiper-circle">
-														<svg width="50" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm1 16v-2h-2v2h-2v2h2v2h2v-2h2v-2h-2zm-3-3h4v-2h-4v2z" fill="#FFF"/>
-														</svg>
+														<img src="https://labelsunwrapped.org/wp-content/uploads/2020/10/supplements-icon.png" alt="Heart Icon" width="50" height="45" />
 													</div>
 
 
@@ -290,9 +286,7 @@
 														<h2 class="font-w600 mb-0">Cosmetics</h2>
 													</div>
 													<div class="dlab-swiper-circle">
-														<svg width="50" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M12 2C10.9 2 10 2.9 10 4V7H14V4C14 2.9 13.1 2 12 2zM9 7H8C6.9 7 6 7.9 6 9V16C6 17.1 6.9 18 8 18H16C17.1 18 18 17.1 18 16V9C18 7.9 17.1 7 16 7H15V4C15 2.34 13.66 1 12 1S9 2.34 9 4V7ZM4 20C4 18.9 4.9 18 6 18H18C19.1 18 20 18.9 20 20V21H4V20Z" fill="#FFF"/>
-														</svg>
+														<img src="https://cdn-icons-png.flaticon.com/512/6330/6330213.png" alt="Heart Icon" width="50" height="45" />
 													</div>
 
 												</div>
@@ -312,10 +306,7 @@
 														<h2 class="font-w600 mb-0">Hospital Care</h2>
 													</div>
 													<div class="dlab-swiper-circle">
-														<svg width="50" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M19 10h-4v4h-2v-4h-4v-2h4V4h2v4h4v2z" fill="#FFF"/>
-															<path d="M3 11h14v10H3V11zm2 2v6h10v-6H5zm8-7h3v2h-3V6zm-8 0h3v2H5V6zm-1 8h2v2H4v-2zm0 4h2v2H4v-2zm12 0h2v2h-2v-2zm0-4h2v2h-2v-2z" fill="#FFF"/>
-														</svg>
+														<img src="https://cdn-icons-png.flaticon.com/512/5295/5295946.png" alt="Heart Icon" width="50" height="45" />
 													</div>
 
 												</div>
@@ -335,9 +326,7 @@
 														<h2 class="font-w600 mb-0">Cosmaceuticals</h2>
 													</div>
 													<div class="dlab-swiper-circle">
-														<svg width="50" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M12 2C10.9 2 10 2.9 10 4V6.17L7.41 9.41 2 4 4 2l5.41 5.41L10 6.83V4c0-1.1.9-2 2-2s2 .9 2 2v2.83l-1.41-1.42L12 2zM21 9l-5 5v6h-2v-6l-5-5-1.41 1.41 5.59 5.59L12 21l6-6-1.41-1.41-5.59 5.59L6 12l1.41-1.41 5.59 5.59L18 9h3z" fill="#FFF"/>
-														</svg>
+														<img src="https://cdn-icons-png.flaticon.com/256/3501/3501241.png" alt="Heart Icon" width="50" height="45" />
 													</div>
 
 												</div>

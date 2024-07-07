@@ -63,7 +63,11 @@
 								<div class="text-center my-profile">
 									<div class="media d-block">
 										<div class="media-img">
-											<img src="images/user.jpg" alt="">
+										<?php if (empty($userProfile['profile_photo'])): ?>
+												<img src="images/user.jpg" alt="">
+											<?php else: ?>
+												<img src="<?= esc(base_url('public/uploads/profiles/' . $userProfile['profile_photo'])) ?>" class="img-fluid rounded-circle" alt="">
+											<?php endif; ?>
 											<a href="javascript:void(0);"><i class="fas fa-pencil-alt" aria-hidden="true"></i></a>
 										</div>
 										
