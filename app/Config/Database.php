@@ -36,7 +36,7 @@ class Database extends \CodeIgniter\Database\Config
         parent::__construct();
 
             // Determine environment based on server hostname
-    $environment = ($_SERVER['HTTP_HOST'] === 'buildmax.lammy.life') ? 'production' : 'development';
+    $environment = ($_SERVER['HTTP_HOST'] === 'happymeds.lammy.life') ? 'production' : 'development';
 
     // Set the appropriate database connection based on the environment
     if ($environment === 'production') {
