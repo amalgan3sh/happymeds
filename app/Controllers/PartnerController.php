@@ -30,6 +30,10 @@ class PartnerController extends BaseController
         }
         $model = new TransactionModel();
         $data['transactions'] = $model->findAll();
+
+        $model = new MarketModel();
+        $data['market_previews'] = $model->getMarketPreview();
+        
         return $this->renderView('partner_home_view', 'partner/partner_home',  $data);
     }
 

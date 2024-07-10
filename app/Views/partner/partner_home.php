@@ -56,169 +56,57 @@
 				</div>
 			</div>
 			<div class="order-history">
-				<div class="card price-list-1 mb-0">
-					<div class="card-header border-0 pb-2 px-3">
-						<div>
-							<h4 class="text-primary card-title mb-2">Buy Order</h4>
-						</div>
-						<div class="dropdown custom-dropdown">
-							<div class="btn sharp btn-primary tp-btn" data-bs-toggle="dropdown">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
-							</div>
-							<div class="dropdown-menu dropdown-menu-end">
-								<a class="dropdown-item" href="#">Option 1</a>
-								<a class="dropdown-item" href="#">Option 2</a>
-								<a class="dropdown-item" href="#">Option 3</a>
-							</div>
-						</div>
-					</div>
-					<div class="card-body p-3 py-0">
-						<select class="form-control custom-image-select-2 image-select mt-3 mt-sm-0 style-1">
-							<option data-thumbnail="images/svg/dash.svg" data-content="<img src='images/svg/dash.svg'/> Dash Coin">Dash Coin</option>
-							<option data-thumbnail="images/svg/btc.svg" data-content="<img src='images/svg/btc.svg'/> Ripple">Ripple</option>
-							<option data-thumbnail="images/svg/eth.svg" data-content="<img src='images/svg/eth.svg'/> Ethereum">Ethereum</option>
-							<option data-thumbnail="images/svg/btc.svg" data-content="<img src='images/svg/btc.svg'/> Bitcoin">Bitcoin</option>
-						</select>
-						<div class="table-responsive">
-							<table class="table text-center bg-primary-hover tr-rounded order-tbl mt-2 ">
-								<thead>
-									<tr>
-										<th class="text-start">Price</th>
-										<th class="text-center">Amount</th>
-										<th class="text-end">Total</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="text-start">82.3</td>
-										<td>0.15</td>
-										<td class="text-end">$134,12</td>
-									</tr>
-									<tr>
-										<td class="text-start">83.9</td>
-										<td>0.18</td>
-										<td class="text-end">$237,31</td>
-									</tr>
-									<tr>
-										<td class="text-start">84.2</td>
-										<td>0.25</td>
-										<td class="text-end">$252,58</td>
-									</tr>
-									<tr>
-										<td class="text-start">86.2</td>
-										<td>0.35</td>
-										<td class="text-end">$126,26</td>
-									</tr>
-									<tr>
-										<td class="text-start">91.6</td>
-										<td>0.75</td>
-										<td class="text-end">$46,92</td>
-									</tr>
-									<tr>
-										<td class="text-start">92.6</td>
-										<td>0.21</td>
-										<td class="text-end">$123,27</td>
-									</tr>
-									<tr>
-										<td class="text-start">93.9</td>
-										<td>0.55</td>
-										<td class="text-end">$212,56</td>
-									</tr>
-									<tr>
-										<td class="text-start">94.2</td>
-										<td>0.18</td>
-										<td class="text-end">$129,26</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="card-footer text-center py-2">
-						<a href="coin-details.html" class="btn-link text-primary">Show more <i class="fa fa-caret-right ms-2"></i></a>
-					</div>
-				</div>
-				<div class="card price-list style-2 border-top border-style">
-					<div class="card-header border-0 pb-2 px-3">
-						<div>
-							<h4 class="text-pink mb-2 card-title">Sell Order</h4>
-						</div>
-						<div class="dropdown custom-dropdown">
-							<div class="btn sharp btn-pink tp-btn" data-bs-toggle="dropdown">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
-							</div>
-							<div class="dropdown-menu dropdown-menu-end">
-								<a class="dropdown-item" href="#">Option 1</a>
-								<a class="dropdown-item" href="#">Option 2</a>
-								<a class="dropdown-item" href="#">Option 3</a>
-							</div>
-						</div>
-					</div>
-					<div class="card-body p-3 py-0">
-						<select class="form-control custom-image-select-2 style-1 image-select mt-3 mt-sm-0 pink-light style-1">
-							<option data-thumbnail="images/svg/dash-pink.svg" data-content="<img src='images/svg/dash.svg'/> Dash Coin">Dash Coin</option>
-							<option data-thumbnail="images/svg/btc.svg" data-content="<img src='images/svg/btc.svg'/> Ripple">Ripple</option>
-							<option data-thumbnail="images/svg/eth.svg" data-content="<img src='images/svg/eth.svg'/> Ethereum">Ethereum</option>
-							<option data-thumbnail="images/svg/btc.svg" data-content="<img src='images/svg/btc.svg'/> Bitcoin">Bitcoin</option>
-						</select>
-						<div class="table-responsive">
-							<table class="table text-center bg-pink-hover tr-rounded order-tbl mt-2">
-								<thead>
-									<tr>
-										<th class="text-start">Price</th>
-										<th class="text-center">Amount</th>
-										<th class="text-end">Total</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td class="text-start">82.3</td>
-										<td>0.15</td>
-										<td class="text-end">$134,12</td>
-									</tr>
-									<tr>
-										<td class="text-start">83.9</td>
-										<td>0.18</td>
-										<td class="text-end">$237,31</td>
-									</tr>
-									<tr>
-										<td class="text-start">84.2</td>
-										<td>0.25</td>
-										<td class="text-end">$252,58</td>
-									</tr>
-									<tr>
-										<td class="text-start">86.2</td>
-										<td>0.35</td>
-										<td class="text-end">$126,26</td>
-									</tr>
-									<tr>
-										<td class="text-start">91.6</td>
-										<td>0.75</td>
-										<td class="text-end">$46,92</td>
-									</tr>
-									<tr>
-										<td class="text-start">92.6</td>
-										<td>0.21</td>
-										<td class="text-end">$123,27</td>
-									</tr>
-									<tr>
-										<td class="text-start">93.9</td>
-										<td>0.55</td>
-										<td class="text-end">$212,56</td>
-									</tr>
-									<tr>
-										<td class="text-start">94.2</td>
-										<td>0.18</td>
-										<td class="text-end">$129,26</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="card-footer text-center py-2">
-						<a href="coin-details.html" class="btn-link text-pink">Show more <i class="fa fa-caret-right ms-2"></i></a>
-					</div>
-				</div>
-			</div>
+    <div class="card price-list-1 mb-0">
+        <div class="card-header border-0 pb-2 px-3">
+            <div>
+                <h4 class="text-primary card-title mb-2">Trending Brands</h4>
+            </div>
+            <div class="dropdown custom-dropdown">
+                <div class="btn sharp btn-primary tp-btn" data-bs-toggle="dropdown">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="12" cy="5" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="19" r="2"></circle></g></svg>
+                </div>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <a class="dropdown-item" href="#">Option 1</a>
+                    <a class="dropdown-item" href="#">Option 2</a>
+                    <a class="dropdown-item" href="#">Option 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-body p-3 py-0">
+            <select class="form-control custom-image-select-2 image-select mt-3 mt-sm-0 style-1">
+                <option data-thumbnail="https://cdn-icons-png.freepik.com/512/3099/3099275.png" data-content="<img src='https://cdn-icons-png.freepik.com/512/3099/3099275.png'/> Pharma Brand 1">Pharmaceuticals</option>
+                <option data-thumbnail="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFMW8cRwGbIOxgw8uEzqBxQRNAgIDBbMbNbm35jhqnWZjGwujU8-GHRB5fnD_yueqA9M&usqp=CAU" data-content="<img src='images/brands/nutra1.png'/> Nutra Brand 1">Nutraceuticals</option>
+                <option data-thumbnail="https://cdn-icons-png.flaticon.com/512/6330/6330213.png" data-content="<img src='https://cdn-icons-png.flaticon.com/512/6330/6330213.png'/> Cosmetic Brand 1">Cosmetics</option>
+                <option data-thumbnail="https://p7.hiclipart.com/preview/912/424/939/health-care-computer-icons-medicine-health.jpg" data-content="<img src='https://p7.hiclipart.com/preview/912/424/939/health-care-computer-icons-medicine-health.jpg'/> Healthcare Brand 1">Healthcare</option>
+				<option data-thumbnail="https://cdn-icons-png.flaticon.com/512/3974/3974873.png" data-content="<img src='https://cdn-icons-png.flaticon.com/512/3974/3974873.png'/> Healthcare Brand 1">Surgicals</option>
+            </select>
+			<div class="card-body p-3 py-0">
+                <div class="table-responsive">
+                    <table class="table text-center bg-primary-hover tr-rounded order-tbl mt-2">
+                        <thead>
+                            <tr>
+                                <th class="text-start">Brand</th>
+                                <th class="text-end">Popularity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($market_previews as $preview): ?>
+                                <tr>
+                                    <td class="text-start"><?= esc($preview['product_name']) ?></td>
+                                    <td class="text-end"><?= esc($preview['percentage_change']) ?>%</td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card-footer text-center py-2">
+            <a href="brands-details.html" class="btn-link text-primary">Show more <i class="fa fa-caret-right ms-2"></i></a>
+        </div> -->
+    </div>
+</div>
+
 		</div>
 		</div>
 		

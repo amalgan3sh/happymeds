@@ -18,28 +18,30 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center align-items-center">
-					<div class="item-1">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="40px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
-							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<polygon points="0 0 24 0 24 24 0 24"/>
-								<path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#fff" fill-rule="nonzero" opacity="0.3"/>
-								<path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#fff" fill-rule="nonzero"/>
-							</g>
-						</svg>
-						<h4 class="mb-0 text-white"><span class="counter">2023</span>k</h4>
-						<small>Followers</small>
-					</div>
-					<div class="item-1">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="40px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
-							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<polygon points="0 0 24 0 24 24 0 24"/>
-								<path d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z" fill="#fff" fill-rule="nonzero" opacity="0.3"/>
-								<path d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="#fff" fill-rule="nonzero"/>
-							</g>
-						</svg>
-						<h4 class="mb-0 text-white"><span class="counter">2024</span>k</h4>
-						<small>Following</small>
-					</div>
+				<div class="item-1">
+				<!-- <img src="" width="30" height="40" alt="Investment Icon" class="icon-main-icon"> -->
+
+					<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="40px" viewBox="0 0 24 24" class="svg-main-icon">
+						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<path d="M4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 Z" fill="#fff" opacity="0.3"/>
+							<path d="M18.5,11 L5.5,11 C4.67157288,11 4,11.6715729 4,12.5 L4,13 L20,13 L20,12.5 C20,11.6715729 19.3284271,11 18.5,11 Z" fill="#fff" opacity="0.3"/>
+							<path d="M12,16 C13.6568542,16 15,14.6568542 15,13 C15,11.3431458 13.6568542,10 12,10 C10.3431458,10 9,11.3431458 9,13 C9,14.6568542 10.3431458,16 12,16 Z" fill="#fff"/>
+						</g>
+					</svg>
+					<h4 class="mb-0 text-white">$<span class="counter">20</span>K</h4>
+					<small>Total Investments</small>
+				</div>
+				<div class="item-1">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="40px" viewBox="0 0 24 24" class="svg-main-icon">
+						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<rect x="0" y="0" width="24" height="24"/>
+							<path d="M2,6 L21,6 C21.5522847,6 22,6.44771525 22,7 L22,17 C22,17.5522847 21.5522847,18 21,18 L2,18 C1.44771525,18 1,17.5522847 1,17 L1,7 C1,6.44771525 1.44771525,6 2,6 Z M11,12 C11,11.4477153 11.4477153,11 12,11 C12.5522847,11 13,11.4477153 13,12 L13,13 C13,13.5522847 12.5522847,14 12,14 C11.4477153,14 11,13.5522847 11,13 L11,12 Z" fill="#fff"/>
+							<path d="M5.5,10 C6.32842712,10 7,9.32842712 7,8.5 C7,7.67157288 6.32842712,7 5.5,7 C4.67157288,7 4,7.67157288 4,8.5 C4,9.32842712 4.67157288,10 5.5,10 Z M18.5,10 C19.3284271,10 20,9.32842712 20,8.5 C20,7.67157288 19.3284271,7 18.5,7 C17.6715729,7 17,7.67157288 17,8.5 C17,9.32842712 17.6715729,10 18.5,10 Z" fill="#fff" opacity="0.3"/>
+						</g>
+					</svg>
+					<h4 class="mb-0 text-white">$<span class="counter">500</span>k</h4>
+					<small>Total Turnover</small>
+				</div>
 				</div>
 			</div>
 			<span class="main-menu">Main Menu</span>
