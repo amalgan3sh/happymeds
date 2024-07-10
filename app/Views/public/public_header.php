@@ -46,8 +46,8 @@
                 <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="<?php echo base_url('assets/');?>assets/img/illustrations/ARANEA.png">
                     <img src="<?php echo base_url('assets/');?>assets/img/illustrations/ARANEA.png" alt="Logo" style="height: 40px; margin-right: 10px;">
                     <div class="d-flex align-items-center">
-                        <div class="text-warning">Happy</div>
-                        <div class="text-1000">Meds</div>
+                    <div style="color: #002ba4;">ARANEA</div>
+                    <div class="text-1000"></div>
                     </div>
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
