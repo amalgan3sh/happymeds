@@ -93,7 +93,7 @@
 								<li><a href="user.html">User</a></li>
 							</ul>
 						</li>
-						<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+						<!-- <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">apps_outage</i>
 								<span class="nav-text">Apps</span>
 							</a>
@@ -121,10 +121,10 @@
 									</ul>
 								</li>
 							</ul>
-						</li>
+						</li> -->
 						<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="fa-regular fa-gear fw-bold"></i>
-							<span class="nav-text">CMS</span>
+							<span class="nav-text">Settings</span>
 						</a>
 						<ul aria-expanded="false">
 							<li><a href="content.html">Content</a></li>
@@ -137,7 +137,7 @@
 							<li><a href="blog-category.html">Blog Category</a></li>	
 						</ul>
 					</li>
-						<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+						<!-- <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">donut_large</i>
 								<span class="nav-text">Charts</span>
 							</a>
@@ -149,8 +149,8 @@
 								<li><a href="chart-sparkline.html">Sparkline</a></li>
 								<li><a href="chart-peity.html">Peity</a></li>
 							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+						</li> -->
+						<!-- <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 								
 								<i class="material-symbols-outlined">favorite</i>
 								<span class="nav-text">Bootstrap</span>
@@ -174,8 +174,8 @@
 								<li><a href="ui-grid.html">Grid</a></li>
 
 							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+						</li> -->
+						<!-- <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">scatter_plot</i>
 								<span class="nav-text">Plugins</span>
 							</a>
@@ -188,8 +188,8 @@
 								<li><a href="map-jqvmap.html">Jqv Map</a></li>
 								<li><a href="uc-lightgallery.html">Light Gallery</a></li>
 							</ul>
-						</li>
-						<li><a href="widget-basic.html" class="" aria-expanded="false">
+						</li> -->
+						<!-- <li><a href="widget-basic.html" class="" aria-expanded="false">
 								<i class="material-symbols-outlined">widgets</i>
 								<span class="nav-text">Widget</span>
 							</a>
@@ -205,8 +205,8 @@
 								<li><a href="form-pickers.html">Pickers</a></li>
 								<li><a href="form-validation.html">Form Validate</a></li>
 							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+						</li> -->
+						<!-- <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">table_chart</i>
 								<span class="nav-text">Table</span>
 							</a>
@@ -214,8 +214,8 @@
 								<li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
 								<li><a href="table-datatable-basic.html">Datatable</a></li>
 							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+						</li> -->
+						<!-- <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">lab_profile</i>
 								<span class="nav-text">Pages</span>
 							</a>
@@ -234,7 +234,7 @@
 								<li><a href="page-lock-screen.html">Lock Screen</a></li>
 								<li><a href="empty-page.html">Empty Page</a></li>
 							</ul>
-						</li>
+						</li> -->
 					</ul>
 					<div class="support-box">
 						<div class="media"> 
@@ -246,13 +246,13 @@
 
 						</div>
 						<div class="info">
-							<p>Jiade Crypto Trading UI Template</p>
+							<p>Aranea - Healthcare Platform</p>
 							<a href="javascript:void(0);" class="btn bg-white text-black w-75 btn-sm">Supports</a>
 						</div>
 					</div>
 					<div class="copyright">
-						<p><strong>Jiade Crypto Trading UI Template</strong> © <span class="current-year">2024</span> All Rights Reserved</p>
-						<p class="fs-12">Made with <span class="heart"></span> by DexignLab</p>
+						<p><strong>Aranea - Healthcare Platform</strong> © <span class="current-year">2024</span> All Rights Reserved</p>
+						<p class="fs-12">Made with <span class="heart"></span> by SpyderHub</p>
 					</div>
 				</div>
 			</div>
