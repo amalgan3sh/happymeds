@@ -55,21 +55,29 @@
 							<ul aria-expanded="false">
 								<!-- <li><a href="index.html">Dashboard Light</a></li> -->
 								<li><a href="<?php echo base_url('partner_home')?>">Dashboard</a></li>
-								<li><a href="<?php echo base_url('market')?>">Market</a></li>
-								<li><a href="<?php echo base_url('product_details')?>">Product Details</a></li>
-								<li><a href="<?php echo base_url('portfolio')?>">Portofolio</a></li>
+								
+								
 							</ul>
 
 						</li>
+
+						<li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+							<i class="material-symbols-outlined">account_circle</i>  <span class="nav-text">Profile</span>
+							</a>
+							<ul aria-expanded="false">
+								<li><a href="<?php echo base_url('partner_profile')?>">Profile</a></li>
+								<li><a href="<?php echo base_url('portfolio')?>">Portofolio</a></li>
+								<li><a href="edit_profile">Edit Profile</a></li>
+							</ul>
+						</li>
+						
 						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">monitoring</i>
 								<span class="nav-text">Trading</span>
 							</a>
 							<ul aria-expanded="false">
-								<li><a href="trading-market.html">Market</a></li>
-								<li><a href="ico-listing.html">Ico Listing</a></li>
-								<li><a href="p2p.html">P2P</a></li>
-								<li><a href="future.html">Future</a></li>
+								<li><a href="<?php echo base_url('market')?>">Market</a></li>
+								<li><a href="<?php echo base_url('p2p')?>">P2P</a></li>
 							</ul>
 						</li>
 						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
@@ -77,9 +85,8 @@
 								<span class="nav-text">Products</span>
 							</a>
 							<ul aria-expanded="false">
-								<li><a href="market-watch.html">Market Watch </a></li>
-								<li><a href="exchange.html">Exchange</a></li>
-								<li><a href="banking.html">Banking</a></li>
+							<li><a href="<?php echo base_url('product_details')?>">Product Details</a></li>
+
 							</ul>
 						</li>
 						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
@@ -87,41 +94,12 @@
 								<span class="nav-text">Reports</span>
 							</a>
 							<ul aria-expanded="false">
-								<li><a href="history.html">History</a></li>
-								<li><a href="orders.html">Orders</a></li>
-								<li><a href="reports.html">Report</a></li>
-								<li><a href="user.html">User</a></li>
+								<li><a href="<?php echo base_url('transaction')?>">Transactions</a></li>
+								<li><a href="<?php echo base_url('banking')?>">Banking</a></li>
+								<li><a href="<?php echo base_url('reports')?>">Report</a></li>
 							</ul>
 						</li>
-						<!-- <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
-								<i class="material-symbols-outlined">apps_outage</i>
-								<span class="nav-text">Apps</span>
-							</a>
-							<ul aria-expanded="false">
-								<li><a href="partner_profile">Profile</a></li>
-								<li><a href="edit_profile">Edit Profile</a></li>
-								<li><a href="post-details.html">Post Details</a></li>
-								<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
-									<ul aria-expanded="false">
-										<li><a href="email-compose.html">Compose</a></li>
-										<li><a href="email-inbox.html">Inbox</a></li>
-										<li><a href="email-read.html">Read</a></li>
-									</ul>
-								</li>
-								<li><a href="app-calender.html">Calendar</a></li>
-								<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
-									<ul aria-expanded="false">
-										<li><a href="ecom-product-grid.html">Product Grid</a></li>
-										<li><a href="ecom-product-list.html">Product List</a></li>
-										<li><a href="ecom-product-detail.html">Product Details</a></li>
-										<li><a href="ecom-product-order.html">Order</a></li>
-										<li><a href="ecom-checkout.html">Checkout</a></li>
-										<li><a href="ecom-invoice.html">Invoice</a></li>
-										<li><a href="ecom-customers.html">Customers</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li> -->
+						
 						<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="fa-regular fa-gear fw-bold"></i>
 							<span class="nav-text">Settings</span>

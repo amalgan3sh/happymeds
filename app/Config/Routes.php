@@ -26,6 +26,10 @@ $routes->get('portfolio', 'PartnerController::Portfolio');
 $routes->get('partner_profile', 'PartnerController::partnerProfile');
 $routes->get('edit_profile', 'PartnerController::editProfile');
 $routes->post('update_profile', 'PartnerController::updateProfile');
+$routes->get('p2p', 'PartnerController::p2p');
+$routes->get('transaction', 'PartnerController::Transaction');
+$routes->get('reports', 'PartnerController::Reports');
+$routes->get('banking', 'PartnerController::Banking');
 
 
 //auth

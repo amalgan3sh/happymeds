@@ -37,6 +37,42 @@ class PartnerController extends BaseController
         return $this->renderView('partner_home_view', 'partner/partner_home',  $data);
     }
 
+    public function p2p()
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+        
+        return $this->renderView('p2p_view', 'partner/market/p2p');
+    }
+
+    public function Transaction()
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+        
+        return $this->renderView('transaction_view', 'partner/reports/transaction');
+    }
+
+    public function Reports()
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+        
+        return $this->renderView('transaction_view', 'partner/reports/reports');
+    }
+
+    public function Banking()
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+        
+        return $this->renderView('banking_view', 'partner/reports/banking');
+    }
+
     public function productDetails()
     {
         if (!$this->checkSession()) {
