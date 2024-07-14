@@ -5,6 +5,8 @@ use App\Models\PartnerModel;
 use App\Models\TransactionModel;
 use App\Models\MarketModel;
 use App\Models\ProductModel;
+use App\Models\ProductDataModel;
+
 
 
 
@@ -72,6 +74,32 @@ class PartnerController extends BaseController
         
         return $this->renderView('banking_view', 'partner/reports/banking');
     }
+    public function ProductDetailsView()
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+
+        // Get the product_id from the URL query string
+        $product_id = $this->request->getGet('product_id');
+
+        // Check if product_id is provided
+        if ($product_id === null) {
+            return redirect()->to('/products')->with('error', 'No product specified');
+        }
+
+        $model = new ProductModel();
+        
+        // Fetch the specific product
+        $data['product'] = $model->find($product_id);
+
+        // Check if the product exists
+        if ($data['product'] === null) {
+            return redirect()->to('/products')->with('error', 'Product not found');
+        }
+
+        return $this->renderView('banking_view', 'partner/product/product_details_view', $data);
+    }
 
     public function productDetails()
     {
@@ -79,8 +107,9 @@ class PartnerController extends BaseController
             return redirect()->to('/customer_login');
         }
         $model = new ProductModel();
-        $data['products'] = $model->findAll();
-        return $this->renderView('product_details_view', 'partner/dashboard/product_details',$data);
+        $data['product_data'] = $model->findAll();
+
+        return $this->renderView('product_details_view', 'partner/product/product_details',$data);
     }
     public function Market()
     {

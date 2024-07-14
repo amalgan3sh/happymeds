@@ -30,6 +30,7 @@ $routes->get('p2p', 'PartnerController::p2p');
 $routes->get('transaction', 'PartnerController::Transaction');
 $routes->get('reports', 'PartnerController::Reports');
 $routes->get('banking', 'PartnerController::Banking');
+$routes->get('product_details_view', 'PartnerController::ProductDetailsView');
 
 
 //auth
