@@ -69,36 +69,18 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="<?php echo base_url('partner_home') ?>" class="brand-logo">
-			<!-- <img src="<?php echo base_url('assets/');?>assets/img/illustrations/ARANEA.png" alt="Aranea Logo" width="27.5" height="36.5"> -->
-			<svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-				<style>
-					.logo { fill: none; stroke: #FFFFFF; stroke-width: 4; }
-				</style>
-				
-				<!-- Stylized A -->
-				<path class="logo" d="M10 90 L50 10 L90 90 H65 L50 60 L35 90 Z"/>
-				
-				<!-- Investment graph -->
-				<path class="logo" d="M30 70 L50 40 L70 60 L90 30" stroke-linecap="round"/>
-				
-				<!-- Healthcare heartbeat -->
-				<path class="logo" d="M10 50 L25 50 L30 30 L40 70 L45 50 L90 50" stroke-width="3"/>
-			</svg>
-
-
-<div class="brand-title" style="font-family: 'Arial', sans-serif; text-transform: uppercase; letter-spacing: 2px;">
-    <h3 style="color: #FFFFFF; font-size: 24px; font-weight: 600; margin: 0; padding: 0;">ARANEA</h3>
-</div>
-				
-
-            </a>
-            <div class="nav-control">
-                <div class="hamburger">
-                    <span class="line"></span><span class="line"></span><span class="line"></span>
-                </div>
+        <a href="<?php echo base_url('partner_home') ?>" class="brand-logo" style="display: flex; align-items: center;">
+            <img src="<?php echo base_url('assets/');?>assets/img/illustrations/ARANEA_WHITE.png" alt="Aranea Logo" width="100" height="100" style="margin: 0; padding: 0;">
+            <div class="brand-title" style="font-family: 'Arial', sans-serif; text-transform: uppercase; letter-spacing: 2px; margin-left: 10px;">
+                <h3 style="color: #FFFFFF; font-size: 24px; font-weight: 600; margin: 0; padding: 0;">ARANEA</h3>
+            </div>
+        </a>
+        <div class="nav-control">
+            <div class="hamburger">
+                <span class="line"></span><span class="line"></span><span class="line"></span>
             </div>
         </div>
+    </div>
         <!--**********************************
             Nav header end
         ***********************************-->
