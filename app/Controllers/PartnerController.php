@@ -74,6 +74,16 @@ class PartnerController extends BaseController
         
         return $this->renderView('banking_view', 'partner/reports/banking');
     }
+
+    public function ProductInvest()
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+        
+        return $this->renderView('banking_view', 'partner/product/product_invest');
+    }
+
     public function ProductDetailsView()
     {
         if (!$this->checkSession()) {

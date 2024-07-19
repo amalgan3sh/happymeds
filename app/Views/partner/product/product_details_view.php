@@ -124,9 +124,9 @@
 														class="product-review" href="" data-bs-toggle="modal"
 														data-bs-target="#reviewModal">Write a review?</a>
 												</div>
-												<div class="d-table mb-2">
+												<!-- <div class="d-table mb-2">
 													<p class="price float-left d-block">$325.00</p>
-												</div>
+												</div> -->
 												<p>Strength: <span class="item"> <?= esc($product['Strength']) ?> <i
 															class="fa fa-shopping-basket"></i></span></p>
 												<p>Dosage Form: <span class="item"><?= esc($product['DosageForm']) ?></span> </p>
@@ -172,9 +172,8 @@
 													</div>
 													<!--Quanatity End-->
 													<div class="shopping-cart  me-3 mt-xl-0 mt-2">
-														<a class="btn btn-primary" href="javascript:void();"><i
-																class="fa fa-shopping-basket me-2"></i>Add
-															to cart</a>
+														<a class="btn btn-primary" href="<?php echo base_url('product_invest') ?>"><i
+																class="fa fa-shopping-basket me-2"></i>Invest</a>
 													</div>
 												</div>
 											</div>

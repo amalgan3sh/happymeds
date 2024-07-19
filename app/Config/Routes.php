@@ -31,6 +31,7 @@ $routes->get('transaction', 'PartnerController::Transaction');
 $routes->get('reports', 'PartnerController::Reports');
 $routes->get('banking', 'PartnerController::Banking');
 $routes->get('product_details_view', 'PartnerController::ProductDetailsView');
+$routes->get('product_invest', 'PartnerController::ProductInvest');
 
 
 //auth

@@ -254,16 +254,7 @@
 												<h4 class="card-title">Healthcare Statistics</h4>
 												<p>Explore healthcare trends and data across various sectors.</p>
 											</div>
-											<div class="d-flex mb-2">
-												<div class="form-check form-switch toggle-switch me-3">
-													<label class="form-check-label" for="flexSwitchCheckChecked1">Date</label>
-													<input class="form-check-input custome" type="checkbox" id="flexSwitchCheckChecked1" checked="">
-												</div>
-												<div class="form-check form-switch toggle-switch">
-													<label class="form-check-label" for="flexSwitchCheckChecked2">Value</label>
-													<input class="form-check-input custome" type="checkbox" id="flexSwitchCheckChecked2" checked="">
-												</div>
-											</div>
+											
 										</div>
 										<div class="card-body pt-2">
 										<ul class="nav nav-pills">
