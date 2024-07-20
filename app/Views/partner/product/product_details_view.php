@@ -129,7 +129,21 @@
 												</div> -->
 												<p>Strength: <span class="item"> <?= esc($product['Strength']) ?> <i
 															class="fa fa-shopping-basket"></i></span></p>
-												<p>Dosage Form: <span class="item"><?= esc($product['DosageForm']) ?></span> </p>
+															<p>Dosage Form: 
+																<span class="item">
+																	<?= esc($product['DosageForm']) ?>
+																	<?php if (strpos(strtolower($product['DosageForm']), 'tablet') !== false): ?>
+																		<i class="fas fa-tablets"></i>
+																	<?php elseif (strpos(strtolower($product['DosageForm']), 'syrup') !== false): ?>
+																		<i class="fas fa-prescription-bottle-alt"></i>
+																	<?php elseif (strpos(strtolower($product['DosageForm']), 'injection') !== false): ?>
+																		<i class="fas fa-syringe"></i>
+																	<?php elseif (strpos(strtolower($product['DosageForm']), 'suspension') !== false): ?>
+																		<i class="fas fa-vial"></i>
+																	<?php endif; ?>
+																</span>
+															</p>
+
 												<p>Content: <span class="item"><?= esc($product['Content']) ?></span></p>
 												<p>Product tags:&nbsp;&nbsp;
                                                     <span class="badge badge-success light">cough syrup</span>
@@ -143,37 +157,11 @@
                                                 <?= esc($product['TherapeuticUse']) ?>
 												</p>
 												<div class="d-flex align-items-end flex-wrap mt-4">
-													<div class="filtaring-area me-3">
-														<div class="size-filter mb-0">
-															<h4 class="m-b-15">Select size</h4>
-															<div class="d-flex select-size" role="group" aria-label="Basic radio toggle button group">
-																<input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked="">
-																<label class="btn btn-outline-primary sharp sharp-lg" for="btnradio1">XS</label>
-  
-																<input type="radio" class="btn-check" name="btnradio" id="btnradio2">
-																<label class="btn btn-outline-primary sharp sharp-lg" for="btnradio2">SM</label>
-  
-																<input type="radio" class="btn-check" name="btnradio" id="btnradio3">
-																<label class="btn btn-outline-primary sharp sharp-lg" for="btnradio3">MD</label>
-																
-																<input type="radio" class="btn-check" name="btnradio" id="btnradio4">
-																<label class="btn btn-outline-primary sharp sharp-lg" for="btnradio4">LG</label>
-																
-																<input type="radio" class="btn-check" name="btnradio" id="btnradio5">
-																<label class="btn btn-outline-primary sharp sharp-lg" for="btnradio5">XL</label>
-															  </div>
-
-														</div>
-													</div>
-													<!--Quantity start-->
-													<div class="col-2 px-0  me-3">
-														<input type="number" name="num"
-															class="form-control input-number" value="1">
-													</div>
+												
 													<!--Quanatity End-->
 													<div class="shopping-cart  me-3 mt-xl-0 mt-2">
 														<a class="btn btn-primary" href="<?php echo base_url('product_invest') ?>"><i
-																class="fa fa-shopping-basket me-2"></i>Invest</a>
+																class="fa fa-shopping-basket me-2"></i>Are you intrested to be a brand partner?</a>
 													</div>
 												</div>
 											</div>

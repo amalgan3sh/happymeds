@@ -13,7 +13,7 @@
 								<div class="card banking-card">
 									<div class="card-header border-0 flex-wrap pb-0">
 										<div class="revenue-date">
-											<span>Business</span>
+											<span>Total Deposit</span>
 											<h4>$310.435</h4>
 										</div>
 										<div class="setting bgl-primary">
@@ -46,8 +46,8 @@
 								<div class="card banking-card">
 									<div class="card-header border-0 flex-wrap pb-0">
 										<div class="revenue-date">
-											<span>Tax Revenue</span>
-											<h4>$310.435</h4>
+											<span>Total Withdrawal</span>
+											<h4>$510.435</h4>
 										</div>
 										<div class="setting bgl-secondary">
 											<svg xmlns="http://www.w3.org/2000/svg"
@@ -79,8 +79,8 @@
 								<div class="card banking-card">
 									<div class="card-header border-0 flex-wrap pb-0">
 										<div class="revenue-date">
-											<span>Saving</span>
-											<h4>$310.435</h4>
+											<span>Balance</span>
+											<h4>$30.56</h4>
 										</div>
 										<div class="setting bgl-success">
 											<svg xmlns="http://www.w3.org/2000/svg"
@@ -513,7 +513,7 @@
 							<div class="col-xl-6 col-sm-6">
 								<div class="card">
 									<div class="card-header border-0 pb-0">
-										<h6 class="mb-0 m-auto">Income</h6>
+										<h6 class="mb-0 m-auto">Deposit</h6>
 									</div>
 									<div class="card-body text-center pt-3">
 										<div class="icon-box icon-box-sm bg-primary">
@@ -536,7 +536,7 @@
 							<div class="col-xl-6 col-sm-6">
 								<div class="card">
 									<div class="card-header border-0 pb-0">
-										<h6 class="m-auto mb-0">Expense</h6>
+										<h6 class="m-auto mb-0">Profit</h6>
 									</div>
 									<div class="card-body text-center pt-3">
 										<div class="icon-box icon-box-sm bg-danger">

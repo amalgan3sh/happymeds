@@ -168,14 +168,34 @@
 																<h5 class="mb-0 ms-2"><?= esc($product['product_name']) ?></h5>
 															</a>
 														</td>
-														<td><?= esc($product['category']) ?></td>
+														<td>
+															<?= esc($product['category']) ?>
+															<?php if (strpos(strtolower($product['category']), 'pharmaceuticals') !== false): ?>
+																<i class="fas fa-pills"></i>
+															<?php elseif (strpos(strtolower($product['category']), 'medical devices') !== false): ?>
+																<i class="fas fa-heartbeat"></i>
+															<?php elseif (strpos(strtolower($product['category']), 'diagnostic equipment') !== false): ?>
+																<i class="fas fa-stethoscope"></i>
+															<?php elseif (strpos(strtolower($product['category']), 'personal protective equipment') !== false): ?>
+																<i class="fas fa-hard-hat"></i>
+															<?php elseif (strpos(strtolower($product['category']), 'digital health') !== false): ?>
+																<i class="fas fa-laptop-medical"></i>
+															<?php elseif (strpos(strtolower($product['category']), 'cosmaceuticals') !== false): ?>
+																<i class="fas fa-magic"></i>
+															<?php elseif (strpos(strtolower($product['category']), 'healthcare') !== false): ?>
+																<i class="fas fa-clinic-medical"></i>
+															<?php elseif (strpos(strtolower($product['category']), 'neutraceuticals') !== false): ?>
+																<i class="fas fa-apple-alt"></i>
+															<?php endif; ?>
+														</td>
+
 														<td><?= esc($product['month']) ?></td>
 														<td>$<?= number_format($product['current_price'], 2) ?></td>
 														<td class="<?= $product['percentage_change'] >= 0 ? 'text-success' : 'text-danger' ?>">
 															<?= $product['percentage_change'] >= 0 ? '+' : '' ?><?= number_format($product['percentage_change'], 2) ?>%
 														</td>
 														<td><?= esc($product['trend_data']) ?></td>
-														<td class="text-end"><a href="javascript:void(0)" class="badge badge-sm badge-primary">Invest</a></td>
+														<td class="text-end"><a href="javascript:void(0)" class="badge badge-sm badge-primary">Collaborate</a></td>
 													</tr>
 													<?php endforeach; ?>
 												</tbody>

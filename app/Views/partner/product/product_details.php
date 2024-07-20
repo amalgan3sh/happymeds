@@ -21,7 +21,18 @@
                                         </div>
                                         <div class="ms-3">
                                             <h4 class="card-title mb-0"><?= esc($product['ProductName']) ?></h4>
-                                            <span><?= esc($product['DosageForm']) ?></span>
+                                            <span>
+                                                <?= esc($product['DosageForm']) ?>
+                                                <?php if (strpos(strtolower($product['DosageForm']), 'tablet') !== false): ?>
+                                                    <i class="fas fa-tablets"></i>
+                                                <?php elseif (strpos(strtolower($product['DosageForm']), 'syrup') !== false): ?>
+                                                    <i class="fas fa-prescription-bottle-alt"></i>
+                                                <?php elseif (strpos(strtolower($product['DosageForm']), 'injection') !== false): ?>
+                                                    <i class="fas fa-syringe"></i>
+                                                <?php elseif (strpos(strtolower($product['DosageForm']), 'suspension') !== false): ?>
+                                                    <i class="fas fa-vial"></i>
+                                                <?php endif; ?>
+                                            </span>
                                         </div>
                                     </div>    
                                     <div class="d-flex align-items-center justify-content-between">

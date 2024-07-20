@@ -11,9 +11,9 @@
                         <h4 class="card-title">Investment History</h4>
                         <nav>
                             <div class="nav nav-pills light" id="nav-tab" role="tablist">
-                                <button class="nav-link active" id="nav-order-tab" data-bs-toggle="tab" data-bs-target="#nav-order" type="button" role="tab" aria-selected="true">Current Investments</button>
-                                <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history" type="button" role="tab" aria-selected="false">Investment History</button>
-                                <button class="nav-link" id="nav-trade-tab" data-bs-toggle="tab" data-bs-target="#nav-trade" type="button" role="tab" aria-selected="false">Trade History</button>
+                                <button class="nav-link active" id="nav-order-tab" data-bs-toggle="tab" data-bs-target="#nav-order" type="button" role="tab" aria-selected="true">Trade History</button>
+                                <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history" type="button" role="tab" aria-selected="false">Deposit History</button>
+                                <button class="nav-link" id="nav-trade-tab" data-bs-toggle="tab" data-bs-target="#nav-trade" type="button" role="tab" aria-selected="false">Withdraw History</button>
                             </div>
                         </nav>
                     </div>

@@ -827,7 +827,7 @@
 												<div class="align-items-center d-flex justify-content-between">	
 													<div class="c-heading">
 														<span class="text-dark font-w600 mb-2 d-block text-nowrap ">345</span>
-														<p class="mb-0 font-w500 text-nowrap">Transactions</p>
+														<p class="mb-0 font-w500 text-nowrap">Total Deposit</p>
 													</div>
 													<div class="d-inline-block position-relative donut-chart-sale mb-0">
 														<span class="donut1" data-peity='{ "fill": ["rgb(9, 60, 189)", "rgba(245, 245, 245, 1)"],   "innerRadius": 40, "radius": 10}'>5/8</span>
@@ -843,7 +843,7 @@
 												<div class="align-items-center d-flex justify-content-between">	
 													<div class="c-heading">
 														<span class="text-dark font-w600 mb-2 d-block">4,563</span>
-														<p class="mb-0 font-w500">Income</p>
+														<p class="mb-0 font-w500">Total Income</p>
 													</div>
 													<div class="d-inline-block position-relative donut-chart-sale mb-0">
 														<span class="donut1" data-peity='{ "fill": ["rgba(255, 97, 117, 1)", "rgba(245, 245, 245, 1)"],   "innerRadius": 40, "radius": 10}'>3/8</span>
@@ -878,36 +878,32 @@
 										<div class="chart-items">
 												<div class=" col-xl-12 col-sm-12">
 													<div class="row text-dark text-start fs-13 mt-4">
-														<span class="mb-3 col-6 pe-0">
-															<svg class="me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<rect width="14" height="14" rx="4" fill="#3C8AFF"/>
-															</svg>
-															Food
-														</span>
+														
 														<span class="mb-3 col-6 pe-0">
 															<svg class="me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<rect width="14" height="14" rx="4" fill="#FF5166"/>
 															</svg>
-															Rent
+															Neutraceutical
 														</span>
 														<span class="mb-3 col-6 pe-0">
 															<svg class="me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<rect width="14" height="14" rx="4" fill="#ED3DD1"/>
 															</svg>
-															Transport
+															Cosmetics
 														</span>
 														<span class="mb-3 col-6 pe-0">
 															<svg class="me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<rect width="14" height="14" rx="4" fill="#2BC844"/>
 															</svg>
-															Installment
+															HealthCare
 														</span>
 														<span class="mb-3 col-6 pe-0">
 															<svg class="me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<rect width="14" height="14" rx="4" fill="#FFEE54"/>
+																<rect width="14" height="14" rx="4" fill="#3C8AFF"/>
 															</svg>
-															Investment
+															Hospital Care
 														</span>
+														
 													</div>
 												</div>
 											</div>
