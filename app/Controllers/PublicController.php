@@ -71,6 +71,15 @@ class PublicController extends BaseController
         ]);
     }
 
+    public function BrandPartnerDetails(): string
+    {
+        return $this->renderView('brand_partner_detals_view', [
+            'public/public_header',
+            'public/brand_partner_details',
+            'public/public_footer'
+        ]);
+    }
+
     public function OTPVerification(): string
     {
         return $this->renderView('otp_verification_view', [

@@ -79,7 +79,7 @@
           <div class="row align-items-center">
             <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid  shadow-effect" src="<?php echo base_url('assets/');?>assets/img/illustrations/dashboard_2.jpg" width="550" alt="" /></div>
             <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
-              <h6 class="fw-bold fs-4 display-3 lh-sm">Explore Happymeds's <br />Unique Features</h6>
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Explore Aranea's <br />Unique Features</h6>
               <p class="my-4">Experience seamless investing and ecommerce solutions with <br class="d-none d-xl-block" />Haappymed's advanced features tailored to empower your financial growth and business success.</p>
               <div class="d-flex align-items-center mb-5">
                 <div><img class="img-fluid" src="<?php echo base_url('assets/');?>assets/img/illustrations/fast-performance.png" width="90" alt="" /></div>
@@ -199,78 +199,6 @@
 
 
 
-<!-- 
-      <section class="py-8" id="pricing">
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6 col-xxl-5 text-center mb-3">
-                    <h6 class="fw-bold fs-4 display-3 lh-sm mb-3">Invest in our partnership plans, tailored to your needs</h6>
-                    <p class="mb-4">Choose from our partnership plans below and unlock exclusive benefits for your healthcare and ecommerce ventures.</p>
-                </div>
-            </div>
-            <div class="row flex-center">
-                <div class="col-lg-4">
-                    <div class="card shadow-lg mb-4 border-0">
-                        <div class="card-header border-bottom-0 pt-7 pb-5">
-                            <div class="d-flex justify-content-center">
-                                <h1 class="fw-bold">$3000</h1><span class="d-flex align-items-center">/partner</span>
-                            </div>
-                            <h5 class="fw-bold text-center">Basic Partnership</h5><span class="text-700 text-center d-block">Ideal for startups</span>
-                        </div>
-                        <div class="card-body mx-auto">
-                            <ul class="list-unstyled mb-4">
-                                <li class="text-700 py-2 text-secondary">Nutraceutical Herbal Products</li>
-                                <li class="text-700 py-2 text-secondary">3% Benefit on B2B Orders</li>
-                                <li class="text-700 py-2 text-secondary">5-Year Subscription</li>
-                                <li class="text-700 py-2 text-secondary">Turnover: $50K to $1M</li>
-                            </ul>
-                            <a class="btn btn-lg btn-primary rounded-pill mb-3" href="#">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card shadow-lg mb-4">
-                        <div class="card-header border-bottom-0 pt-7 pb-5">
-                            <div class="d-flex justify-content-center">
-                                <h1 class="fw-bold">$6000</h1><span class="d-flex align-items-center">/partner</span>
-                            </div>
-                            <h5 class="fw-bold text-center">Standard Partnership</h5><span class="text-700 text-center d-block">For growing businesses</span>
-                        </div>
-                        <div class="card-body mx-auto">
-                            <ul class="list-unstyled mb-4">
-                                <li class="text-700 py-2 text-secondary">Nutraceutical Herbal Products</li>
-                                <li class="text-700 py-2 text-secondary">6% Benefit on B2B Orders</li>
-                                <li class="text-700 py-2 text-secondary">5-Year Subscription</li>
-                                <li class="text-700 py-2 text-secondary">Turnover: $50K to $1M</li>
-                            </ul>
-                            <a class="btn btn-lg btn-primary rounded-pill mb-3" href="#">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card shadow-lg mb-4">
-                        <div class="card-header border-bottom-0 pt-7 pb-5">
-                            <div class="d-flex justify-content-center">
-                                <h1 class="fw-bold">$9000</h1><span class="d-flex align-items-center">/partner</span>
-                            </div>
-                            <h5 class="fw-bold text-center">Premium Partnership</h5><span class="text-700 text-center d-block">For established enterprises</span>
-                        </div>
-                        <div class="card-body mx-auto">
-                            <ul class="list-unstyled mb-4">
-                                <li class="text-700 py-2 text-secondary">Nutraceutical Herbal Products</li>
-                                <li class="text-700 py-2 text-secondary">9% Benefit on B2B Orders</li>
-                                <li class="text-700 py-2 text-secondary">5-Year Subscription</li>
-                                <li class="text-700 py-2 text-secondary">Turnover: $50K to $1M</li>
-                            </ul>
-                            <a class="btn btn-lg btn-primary rounded-pill mb-3" href="#">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        </section> -->
 
         <section class="py-5 py-md-8" id="pricing">
     <div class="container">
@@ -384,115 +312,6 @@
 
 
 
-      <!-- <section class="py-8" id="testimonial">
-        <div class="container-lg">
-          <div class="row flex-center">
-            <div class="col-sm-10 col-md-5 col-lg-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="<?php echo base_url('assets/');?>assets/img/illustrations/testimonial.png" alt="" /></div>
-            <div class="col-sm-10 col-md-6 col-lg-6 text-center text-md-start offset-md-1">
-              <h6 class="fw-bold fs-4 display-3 lh-sm"> Meet Client Satisfaction <br />by using product</h6>
-              <p class="my-4 pe-xl-5"> The rise of mobile devices transforms the way we consume.Elevant channels such as Facebook.</p>
-              <div class="carousel slide" id="carouselExampleDark" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="row h-100">
-                      <div class="col-12">
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <h5 class="my-4 fw-bold lh-sm">User friendly &amp; Customizable</h5>
-                        <p class="mb-0 text-center text-md-start">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                      </div>
-                      <div class="col-xl-6 pt-4 d-flex d-sm-block flex-center">
-                        <div class="d-flex align-items-md-center"><img class="img-fluid me-4 me-md-3 me-lg-4" src="<?php echo base_url('assets/');?>assets/img/gallery/user.png" width="100" alt="" />
-                          <div class="w-lg-50 my-3">
-                            <h5 class="mb-0 fw-bold">Zoltan Nemeth</h5>
-                            <p class="fw-normal mb-0">CEO of Pixer Lab</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <div class="row h-100">
-                      <div class="col-12">
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <h5 class="my-4 fw-bold lh-sm">User friendly &amp; Customizable</h5>
-                        <p class="mb-0 text-center text-md-start">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                      </div>
-                      <div class="col-xl-6 pt-4 d-flex d-sm-block flex-center">
-                        <div class="d-flex align-items-md-center"><img class="img-fluid me-4 me-md-3 me-lg-4" src="<?php echo base_url('assets/');?>assets/img/gallery/user-1.png" width="100" alt="" />
-                          <div class="w-lg-50 my-3">
-                            <h5 class="mb-0 fw-bold">Jhon Doe</h5>
-                            <p class="fw-normal mb-0">Web Developer</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row h-100">
-                      <div class="col-12">
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <svg class="bi bi-star-fill" xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
-                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                        </svg>
-                        <h5 class="my-4 fw-bold lh-sm">User friendly &amp; Customizable</h5>
-                        <p class="mb-0 text-center text-md-start">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                      </div>
-                      <div class="col-xl-6 pt-4 d-flex d-sm-block flex-center">
-                        <div class="d-flex align-items-md-center"><img class="img-fluid me-4 me-md-3 me-lg-4" src="<?php echo base_url('assets/');?>assets/img/gallery/user-2.png" width="100" alt="" />
-                          <div class="w-lg-50 my-3">
-                            <h5 class="mb-0 fw-bold">Viezh Robert</h5>
-                            <p class="fw-normal mb-0">UI/UX Designer</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="position-relative mt-sm-n5"><a class="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
 
       <!-- ============================================-->
@@ -556,26 +375,58 @@
         <!-- end of .container-->
 
       </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
 
-
-      <!-- <section class="py-6">
-        <hr />
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-5 col-lg-7 order-md-1 text-center text-md-start z-index-2 cta-image"><img class="img-fluid mb-4 mb-md-0" src="<?php echo base_url('assets/');?>assets/img/illustrations/cta.png" width="850" alt="" /></div>
-            <div class="col-md-7 col-lg-5 text-center text-md-start">
-              <h1 class="display-3 fw-bold lh-sm">Download our App now</h1>
-              <p class="my-4"> The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</p>
-              <div class="d-flex justify-content-center d-md-inline-block"><a class="pe-2 pe-sm-3 pe-md-4" href="!#"><img src="<?php echo base_url('assets/');?>assets/img/illustrations/google-play.png" width="160" alt="" /></a><a href="!#"><img src="<?php echo base_url('assets/');?>assets/img/illustrations/app-store.png" width="160" alt="" /></a></div>
-            </div>
+<!-- Contact Us Section -->
+<section class="py-8 bg-light" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <h2 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm mb-3">Get in Touch</h2>
+        <p class="mb-0">Have questions about our platform? We're here to help!</p>
+      </div>
+    </div>
+    <div class="row justify-content-between align-items-center">
+      <div class="col-md-5 mb-4 mb-md-0">
+        <img src="https://unblast.com/wp-content/uploads/2020/09/Contact-Us-Vector-Illustration-Part-02-1.jpg" alt="Contact Us Illustration" class="img-fluid rounded shadow-sm">
+      </div>
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
           </div>
-        </div>
-      </section> -->
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg w-100" style="background-color: #FCAE61; border-color: #FFFFFF;">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
+<style>
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+  .bg-dark {
+    background-color: #343a40;
+  }
+  .form-control:focus {
+    border-color: #FCAE61;
+    box-shadow: 0 0 0 0.2rem rgba(252, 174, 97, 0.25);
+  }
+  .btn-primary:hover {
+    background-color: #f9a14f;
+    border-color: #f9a14f;
+  }
+  .social-icons a:hover {
+    opacity: 0.8;
+  }
+</style>
 
-      <!-- ============================================-->
 
 
       <script>

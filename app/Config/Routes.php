@@ -17,6 +17,7 @@ $routes->get('customer_login', 'PublicController::customerLogin');
 $routes->post('login_process', 'PublicController::loginProcess');
 $routes->get('otp_verification', 'PublicController::OTPVerification');
 $routes->post('otp_login_process', 'PublicController::otp_login_process');
+$routes->get('brand_partner_details', 'PublicController::BrandPartnerDetails');
 
 //partner-routes
 $routes->get('partner_home', 'PartnerController::partnerHome');

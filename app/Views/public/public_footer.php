@@ -73,6 +73,106 @@
 
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap" rel="stylesheet">
+
+<!-- Floating Chatbot -->
+<div id="chatbot-icon" class="chatbot-icon">
+  <i class="fas fa-comments"></i>
+</div>
+
+<div id="chatbot-container" class="chatbot-container">
+  <div class="chatbot-header">
+    <h3>Aranea Assistant</h3>
+    <button id="close-chat">×</button>
+  </div>
+  <div id="chat-messages" class="chat-messages">
+    <!-- Chat messages will be inserted here -->
+  </div>
+  <div id="faq-prompts" class="faq-prompts">
+    <!-- FAQ prompts will be inserted here -->
+  </div>
+  <div class="chat-input-area">
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button id="send-message">Send</button>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const chatbotIcon = document.getElementById('chatbot-icon');
+  const chatbotContainer = document.getElementById('chatbot-container');
+  const closeChat = document.getElementById('close-chat');
+  const userInput = document.getElementById('user-input');
+  const sendMessage = document.getElementById('send-message');
+  const chatMessages = document.getElementById('chat-messages');
+  const faqPrompts = document.getElementById('faq-prompts');
+
+  const faqs = [
+    { question: "How are you?", answer: "I'm doing well, thank you! How can I assist you today?" },
+    { question: "What services do you offer?", answer: "We offer a range of healthcare investment and ecommerce solutions. Would you like more details on a specific service?" },
+    { question: "How do I create an account?", answer: "To create an account, click on the 'Register Now' button for your preferred account type on our homepage. Follow the prompts to complete your registration." },
+    { question: "Is my data secure?", answer: "Yes, we take data security very seriously. We use advanced encryption and follow strict privacy policies to protect your information." }
+  ];
+
+  function createFAQPrompts() {
+    faqs.forEach(faq => {
+      const promptButton = document.createElement('button');
+      promptButton.classList.add('faq-prompt');
+      promptButton.textContent = faq.question;
+      promptButton.addEventListener('click', () => handleFAQPrompt(faq.question, faq.answer));
+      faqPrompts.appendChild(promptButton);
+    });
+  }
+
+  function handleFAQPrompt(question, answer) {
+    addMessage(question, true);
+    setTimeout(() => addMessage(answer), 500);
+  }
+
+  chatbotIcon.addEventListener('click', function() {
+    chatbotContainer.style.display = 'flex';
+    chatbotIcon.style.display = 'none';
+  });
+
+  closeChat.addEventListener('click', function() {
+    chatbotContainer.style.display = 'none';
+    chatbotIcon.style.display = 'flex';
+  });
+
+  function addMessage(message, isUser = false) {
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('message');
+    messageElement.classList.add(isUser ? 'user-message' : 'bot-message');
+    messageElement.textContent = message;
+    chatMessages.appendChild(messageElement);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  function handleUserMessage(message) {
+    // This is where you'd integrate with a real chatbot API
+    // For now, we'll just provide a generic response
+    addMessage("Thank you for your message. Our team will get back to you soon with a detailed response.");
+  }
+  
+
+  sendMessage.addEventListener('click', function() {
+    const message = userInput.value.trim();
+    if (message) {
+      addMessage(message, true);
+      userInput.value = '';
+      handleUserMessage(message);
+    }
+  });
+
+  userInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      sendMessage.click();
+    }
+  });
+
+  // Initial bot message and FAQ prompts
+  addMessage("Hello! How can I assist you with HappyMed's platform today? You can also click on the prompts below for quick answers to common questions.");
+  createFAQPrompts();
+});
+</script>
 </body>
 
 </html>

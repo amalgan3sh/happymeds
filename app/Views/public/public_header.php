@@ -17,6 +17,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="manifest" href="<?php echo base_url('assets/');?>assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="<?php echo base_url('assets/');?>assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
@@ -36,6 +38,137 @@
             <?php endif; ?>
         });
     </script>
+    <style>
+        .chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #2500F9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.chatbot-icon i {
+  color: white;
+  font-size: 24px;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.chatbot-header {
+  background-color: #FCAE61;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header h3 {
+  margin: 0;
+}
+
+#close-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chat-input-area {
+  display: flex;
+  padding: 10px;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+#send-message {
+  background-color: #FCAE61;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.faq-prompts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.faq-prompt {
+  background-color: #FCAE61;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.faq-prompt:hover {
+  background-color: #f9a14f;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 80%;
+}
+
+.user-message {
+  background-color: #e6f2ff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot-message {
+  background-color: #f0f0f0;
+  align-self: flex-start;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+}
+    </style>
 </head>
 
 <body>
@@ -59,6 +192,8 @@
                         <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#features'); ?>">Features</a></li>
                         <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#pricing'); ?>">Collaborations</a></li>
                         <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#faq'); ?>">FAQ</a></li>
+                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#contact'); ?>">Contact us</a></li>
+
                     </ul>
                     <form class="ps-lg-5" id="createAccountForm" action="<?php echo base_url('user_types') ?>">
                         <button class="btn btn-lg btn-primary rounded-pill order-0" type="submit" id="createAccountButton">Create Account / sign in</button>
