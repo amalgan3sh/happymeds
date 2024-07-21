@@ -13,7 +13,7 @@ class ProductHoldingsModel extends Model
     public function getProductHoldingsWithIcons()
     {
         return $this->db->table('product_holdings')
-            ->select('product_holdings.*, product_data.icon')
+            ->select('product_holdings.*, product_data.icon,product_data.ProductName')
             ->join('product_data', 'product_holdings.product_id = product_data.product_id', 'inner')
             ->get()
             ->getResultArray();
