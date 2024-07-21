@@ -390,15 +390,28 @@
         <img src="https://unblast.com/wp-content/uploads/2020/09/Contact-Us-Vector-Illustration-Part-02-1.jpg" alt="Contact Us Illustration" class="img-fluid rounded shadow-sm">
       </div>
       <div class="col-md-6">
-        <form>
+        <form id="contactForm">
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Your Name" required>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Your Email" required>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
           </div>
           <div class="mb-3">
-            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-control" id="category" required>
+              <option value="">Select Category</option>
+              <option value="Distributor">Distributor</option>
+              <option value="Agent">Agent</option>
+              <option value="Supplier/Manufacturer">Supplier/Manufacturer</option>
+              <option value="Franchise">Franchise</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-lg w-100" style="background-color: #FCAE61; border-color: #FFFFFF;">Send Inquiry</button>
         </form>
@@ -406,6 +419,41 @@
     </div>
   </div>
 </section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init('ZqAGdlu-q_WGJsESw');
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get form values
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var message = document.getElementById('message').value;
+
+    // Send email using EmailJS
+    emailjs.send('service_j4lzfgy', 'template_zye5m7k', {
+      from_name: name,
+      from_email: email,
+      phone: phone,
+      message: message
+    })
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Your message has been sent successfully!');
+      document.getElementById('contactForm').reset();
+    }, function(error) {
+      console.log('FAILED...', error);
+      alert('Failed to send the message. Please try again later.');
+    });
+  });
+</script>
 
 <style>
   .bg-light {
