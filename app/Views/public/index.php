@@ -46,19 +46,19 @@
                 <button class="slider-arrow left-arrow">&larr;</button>
                 <div class="logo-slider">
                     <div class="logo-container">
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/fssai.png" alt="FSSAI" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/gmp.png" alt="GMP" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/iso.png" alt="ISO" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/feio.png" alt="FEIO" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/haccp.png" alt="HACCP" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/gmp_blue.jpeg" alt="GMP CERTIFIED" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/nsf.jpeg" alt="NSF" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/kosher.png" alt="ISO" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/halal.png" alt="FEIO" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/who_gmp.jpeg" alt="HACCP" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/nsic.png" alt="HACCP" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/fda.png" alt="HACCP" /></div>
-                        <div class="logo-item"><img src="<?php echo base_url('assets/');?>assets/img/gallery/pharmexil.png" alt="HACCP" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/fssai.png" alt="FSSAI" /></div>
+                        <!-- <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/gmp.png" alt="GMP" /></div> -->
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/iso.png" alt="ISO" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/fieo.png" alt="FEIO" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/haccp.png" alt="HACCP" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/gmp-blue.png" alt="GMP CERTIFIED" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/nsf.png" alt="NSF" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/kosher.png" alt="ISO" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/halal.png" alt="FEIO" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/who-gmp.png" alt="HACCP" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/nsic.png" alt="HACCP" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/fda.png" alt="HACCP" /></div>
+                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/pharmexil.png" alt="HACCP" /></div>
 
 
                     </div>

@@ -274,21 +274,35 @@
 												<a href="#navpills-5" class="nav-link" data-bs-toggle="tab" data-trend="Cosmeceutical" aria-expanded="true">Cosmeceuticals</a>
 											</li>
 										</ul>
-										<div id="marketCharts"></div>
-											<div id="marketCharts">
-
-											<script type="text/javascript">
+										<div id="marketCharts1"></div>
+										<script type="text/javascript">
+											function renderTrends(sector) {
+												// Clear the current chart
+												document.getElementById('marketCharts1').innerHTML = '';
+												// Create a new div for the Google Trends widget
+												var widgetDiv = document.createElement('div');
+												document.getElementById('marketCharts1').appendChild(widgetDiv);
+												// Render the Google Trends widget in the new div
 												trends.embed.renderExploreWidget("TIMESERIES", {
-													"comparisonItem": [{"keyword":"Pharmaceutical","geo":"","time":"today 5-y"}],
+													"comparisonItem": [{"keyword": sector, "geo": "", "time": "today 5-y"}],
 													"category": 0,
 													"property": ""
 												}, {
-													"exploreQuery": "date=today%205-y&q=Pharmaceutical&hl=en",
+													"exploreQuery": `date=today%205-y&q=${sector}&hl=en`,
 													"guestPath": "https://trends.google.com:443/trends/embed/"
-												});
-											</script>
+												}, widgetDiv);
+											}
 
-											</div>
+											document.querySelectorAll('.nav-link').forEach(function(tab) {
+												tab.addEventListener('click', function() {
+													var sector = this.getAttribute('data-trend');
+													renderTrends(sector);
+												});
+											});
+
+											// Initial load
+											renderTrends('Pharmaceutical');
+										</script>
 											
 										</div>
 									</div>
