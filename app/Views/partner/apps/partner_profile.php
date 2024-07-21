@@ -53,10 +53,10 @@
                                     <div class="text-center">
                                         <div class="row">
                                             <div class="col">
-                                                <h3 class="m-b-0">32</h3><span>Investments</span>
+                                                <h3 class="m-b-0">12</h3><span>Investments</span>
                                             </div>
                                             <div class="col">
-                                                <h3 class="m-b-0">$5.7M</h3><span>Portfolio Value</span>
+                                                <h3 class="m-b-0">$748k</h3><span>Portfolio Value</span>
                                             </div>
                                             <div class="col">
                                                 <h3 class="m-b-0">21.3%</h3><span>Avg. ROI</span>
@@ -109,10 +109,10 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="profile-blog">
-                                    <h5 class="text-primary d-inline">Latest Investment News</h5>
-                                    <img src="images/profile/8.jpg" alt="" class="img-fluid mt-4 mb-4 w-100 rounded">
-                                    <h4><a href="post-details.html" class="text-dark">NanoHeart's Stent Breakthrough</a></h4>
-                                    <p class="mb-0">Our portfolio company NanoHeart just received FDA approval for their biodegradable nano-stents. This could reduce repeat procedures by 60%...</p>
+                                    <h5 class="text-primary d-inline">Healthcare Innovations</h5>
+                                    <img src="https://i.ytimg.com/vi/FFZQJzOyIs0/maxresdefault.jpg" alt="Healthcare Innovations" class="img-fluid mt-4 mb-4 w-100 rounded">
+                                    <h4><a href="healthcare-details.html" class="text-dark">Revolutionary Treatment for Diabetes</a></h4>
+                                    <p class="mb-0">Our healthcare sector is buzzing with news about a revolutionary new treatment for diabetes that shows promise in improving patients' lives significantly. This treatment uses a novel approach to manage blood sugar levels...</p>
                                 </div>
                             </div>
                         </div>
@@ -138,17 +138,17 @@
                                 <div class="profile-news">
                                     <h5 class="text-primary mb-4">Market Insights</h5>
                                     <div class="media pt-3 pb-3">
-                                        <img src="images/profile/5.jpg" alt="" class="me-3 rounded" width="75">
+                                        <img src="https://res.cloudinary.com/dlpitjizv/image/upload/v1687454099/impact/20210630_Impact_How_Telehealth_Has_Impacted_the_Healthcare_Industry_Blog_Data_1_2a71c4e0ad.jpg" alt="" class="me-3 rounded" width="75">
                                         <div class="media-body">
-                                            <h5 class="m-b-5"><a href="post-details.html" class="text-dark">Telemedicine Stocks Rise</a></h5>
-                                            <p class="mb-0">Pandemic-driven adoption boosts sector...</p>
+                                            <h5 class="m-b-5"><a href="telemedicine-details.html" class="text-dark">Telemedicine Stocks Surge</a></h5>
+                                            <p class="mb-0">The surge in telemedicine adoption during the pandemic has led to a significant boost in the sector, with stocks rising sharply...</p>
                                         </div>
                                     </div>
                                     <div class="media pt-3 pb-3">
-                                        <img src="images/profile/6.jpg" alt="" class="me-3 rounded" width="75">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuY5GUbNssd6ltb0-zozxDJbsrZDyY8FXgOkuCVmhg0zo8W5nZotEk53I2bnatnJZE04&usqp=CAU" alt="" class="me-3 rounded" width="75">
                                         <div class="media-body">
-                                            <h5 class="m-b-5"><a href="post-details.html" class="text-dark">Biotech Merger Shakes Market</a></h5>
-                                            <p class="mb-0">GeneTech and BioNova join forces...</p>
+                                            <h5 class="m-b-5"><a href="biotech-merger-details.html" class="text-dark">Biotech Merger Shakes Market</a></h5>
+                                            <p class="mb-0">In a major development, GeneTech and BioNova have announced their merger, creating ripples across the biotech industry...</p>
                                         </div>
                                     </div>
                                 </div>
@@ -179,19 +179,20 @@
                                                 <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#postModal">Post</a>
                                             </div>
                                             <div class="profile-uoloaded-post border-bottom-1 pb-5">
-                                                <img src="images/profile/8.jpg" alt="" class="img-fluid w-100 rounded">
-                                                <a class="post-title" href="post-details.html"><h3 class="text-dark">AI-Driven Arrhythmia Detection</h3></a>
-                                                <p>Our recent investment in CardioAI is showing tremendous promise. Their algorithm detected complex arrhythmias with 98% accuracy in our clinical trials, outperforming traditional ECG analysis...</p>
+                                                <img src="https://bitperfect.pe/wp-content/uploads/2024/07/compressed_img-0i6ZQTQa2ul6HqDQhnpVK3jR.png" alt="CardioTech" class="img-fluid w-100 rounded">
+                                                <a class="post-title" href="cardiotech-details.html"><h3 class="text-dark">Breakthrough in CardioTech Innovations</h3></a>
+                                                <p>Our recent investment in CardioTech is proving to be a game-changer. Their latest wearable device monitors cardiac health in real-time, providing early detection of potential heart issues and allowing for timely medical intervention...</p>
                                                 <button class="btn btn-primary me-2"><span class="me-2"><i class="fa fa-heart"></i></span>Endorse</button>
                                                 <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#replyModal"><span class="me-2"><i class="fa fa-reply"></i></span>Reply</button>
                                             </div>
                                             <div class="profile-uoloaded-post border-bottom-1 pb-5">
-                                                <img src="images/profile/9.jpg" alt="" class="img-fluid w-100 rounded">
-                                                <a class="post-title" href="post-details.html"><h3 class="text-dark">Telemedicine for Rural Areas</h3></a>
+                                                <img src="https://lh3.googleusercontent.com/xJRGE_K4G0Qnm06tt5Pb_7f2gwkN9-uCaXOlTaHdNyatvnoqoZAv0FMXd9pQAjD2TW9zNUmN5VMK19AJDTLWm9iDwDvNBXsh8jAiGFqSmcErGzMKPZxy9DkQy-Oy5BFttW2S4VhN" alt="Telemedicine for Rural Areas" class="img-fluid w-100 rounded">
+                                                <a class="post-title" href="rural-telemedicine-details.html"><h3 class="text-dark">Telemedicine for Rural Areas</h3></a>
                                                 <p>Excited to announce our partnership with RuralHealth Connect. By leveraging satellite internet and AI-powered diagnostics, we're bringing top-tier cardiac care to remote regions. Early results show a 40% reduction in emergency cardiac events...</p>
                                                 <button class="btn btn-primary me-2"><span class="me-2"><i class="fa fa-heart"></i></span>Endorse</button>
                                                 <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#replyModal"><span class="me-2"><i class="fa fa-reply"></i></span>Reply</button>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div id="about-me" class="tab-pane fade">
