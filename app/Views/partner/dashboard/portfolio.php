@@ -117,55 +117,55 @@
 
 							<style>
 								table {
-            width: 100%;
-            border-collapse: separate; /* Change from collapse to separate */
-            border-spacing: 0; /* Remove spacing between cells */
-            border-radius: 10px; /* Curved borders */
-            overflow: hidden; /* Hide overflow to make border-radius effect visible */
-            border: 1px solid #ddd; /* Border color for the table */
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd;
-            border-radius: 0; /* No rounded corners for cells */
-        }
-        th {
-            background-color: #f4f4f4; /* Background color for header cells */
-        }
-        .icon-wrapper img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%; /* Round icon images */
-            object-fit: cover;
-        }
-							</style>
+									width: 100%;
+									border-collapse: separate; /* Change from collapse to separate */
+									border-spacing: 0; /* Remove spacing between cells */
+									border-radius: 10px; /* Curved borders */
+									overflow: hidden; /* Hide overflow to make border-radius effect visible */
+									border: 1px solid #ddd; /* Border color for the table */
+								}
+								th, td {
+									padding: 10px;
+									text-align: left;
+									border: 1px solid #ddd;
+									border-radius: 0; /* No rounded corners for cells */
+								}
+								th {
+									background-color: #f4f4f4; /* Background color for header cells */
+								}
+								.icon-wrapper img {
+									width: 50px;
+									height: 50px;
+									border-radius: 50%; /* Round icon images */
+									object-fit: cover;
+								}
+						</style>
 							<table>
-        <thead>
-            <tr>
-                <th>Icon</th>
-                <th>Product Name</th>
-                <th>Holding Value</th>
-                <th>Change Percentage</th>
-                <th>Week Change</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($product_holdings as $holding): ?>
-                <tr>
-                    <td>
-                        <div class="icon-wrapper">
-                            <img src="<?= esc($holding['icon']) ?>" alt="<?= esc($holding['product_name']) ?> Icon">
-                        </div>
-                    </td>
-                    <td><?= esc($holding['product_name']) ?></td>
-                    <td>$<?= number_format($holding['holding_value'], 2) ?></td>
-                    <td><?= esc($holding['change_percentage']) ?>%</td>
-                    <td>$<?= number_format($holding['week_change'], 2) ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>							
+								<thead>
+									<tr>
+										<th>Icon</th>
+										<th>Product Name</th>
+										<th>Holding Value</th>
+										<th>Change Percentage</th>
+										<th>Week Change</th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php foreach ($product_holdings as $holding): ?>
+										<tr>
+											<td>
+												<div class="icon-wrapper">
+													<img src="<?= esc($holding['icon']) ?>" alt="<?= esc($holding['product_name']) ?> Icon">
+												</div>
+											</td>
+											<td><?= esc($holding['product_name']) ?></td>
+											<td>$<?= number_format($holding['holding_value'], 2) ?></td>
+											<td><?= esc($holding['change_percentage']) ?>%</td>
+											<td>$<?= number_format($holding['week_change'], 2) ?></td>
+										</tr>
+									<?php endforeach; ?>
+								</tbody>
+							</table>							
 							</div>
 						</div>
 					</div>
@@ -622,31 +622,32 @@
 								<div class="card overflow-hidden h-auto">
 									<div class="card-body pb-4">
 										<div class="row">
-											<div class="col-xl-5 col-md-5">
-												<h4 class="card-title mb-0">Weekly Summary</h4>
-												<p>Lorem ipsum dolor sit amet</p>
-												<div class="d-flex mb-3 align-items-center">
-													<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect y="-3.05176e-05" width="22.2609" height="16" rx="8" fill="#2BC155"/>
-													</svg>
-													<span class="fs-16 text-dark mx-2 font-w600">30%</span>
-													<span class="fs-14">Succesfull Market</span>
-												</div>
-												<div class="d-flex mb-3 align-items-center">
-													<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect y="-3.05176e-05" width="22.2609" height="16" rx="8" fill="#FD5353"/>
-													</svg>
-													<span class="fs-16 text-dark mx-2 font-w600">46%</span>
-													<span class="fs-14">Appllication Answered</span>
-												</div>
-												<div class="d-flex align-items-center">
-													<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect y="-3.05176e-05" width="22.2609" height="16" rx="8" fill="#D7D7D7"/>
-													</svg>
-													<span class="fs-16 text-dark mx-2 font-w600">10%</span>
-													<span class="fs-14">Pending</span>
-												</div>
-											</div>
+										<div class="col-xl-5 col-md-5">
+    <h4 class="card-title mb-0">Weekly Healthcare Investment Summary</h4>
+    <p>Overview of our healthcare investments and returns for the week.</p>
+    <div class="d-flex mb-3 align-items-center">
+        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0" width="22.2609" height="16" rx="8" fill="#28A745"/>
+        </svg>
+        <span class="fs-16 text-dark mx-2 font-w600">$300</span>
+        <span class="fs-14">Investment</span>
+    </div>
+    <div class="d-flex mb-3 align-items-center">
+        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0" width="22.2609" height="16" rx="8" fill="#FFC107"/>
+        </svg>
+        <span class="fs-16 text-dark mx-2 font-w600">$650</span>
+        <span class="fs-14">Total Returns</span>
+    </div>
+    <div class="d-flex align-items-center">
+        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0" width="22.2609" height="16" rx="8" fill="#007BFF"/>
+        </svg>
+        <span class="fs-16 text-dark mx-2 font-w600">30%</span>
+        <span class="fs-14">ROI Percentage</span>
+    </div>
+</div>
+
 											<div class="col-xl-7 col-md-7 align-self-center" style="position: relative;">
 												<div id="columnChart">
 												</div>
