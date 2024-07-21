@@ -6,7 +6,7 @@ use App\Models\TransactionModel;
 use App\Models\MarketModel;
 use App\Models\ProductModel;
 use App\Models\ProductDataModel;
-
+use App\Models\ProductHoldingsModel;
 
 
 
@@ -143,6 +143,9 @@ class PartnerController extends BaseController
         $data = [
             'userProfile' => $userProfile
         ];
+
+        $model = new ProductHoldingsModel();
+        $data['product_holdings'] = $model->getProductHoldingsWithIcons();
 
         return $this->renderView('portfolio_view', 'partner/dashboard/portfolio',$data);
     }
