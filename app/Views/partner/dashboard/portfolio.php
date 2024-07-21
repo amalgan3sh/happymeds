@@ -94,9 +94,9 @@
 								</h4>
 								<div class="d-flex align-items-center">
 									<!-- Button trigger modal -->
-									<button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-									 + Add New
-									</button>
+									<a href="<?= base_url('product_details') ?>" class="btn btn-secondary btn-sm">
+										+ Add New
+									</a>
 
 									<div class="dropdown custom-dropdown mb-0 ms-3">
 										<div class="btn sharp tp-btn" data-bs-toggle="dropdown" aria-expanded="false" role="button">
@@ -114,222 +114,58 @@
 								</div>	
 							</div>
 							<div class="card-body pt-0">
-								<div class="coin-holding">
-									<div class="coin-box-warper">
-									<div class="d-flex align-items-center">
-										<div>
-											<svg class="product-svg" width="45" height="45" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M30 0C13.4314 0 0 13.4314 0 30C0 46.5686 13.4314 60 30 60C46.5686 60 60 46.5686 60 30C60 13.4314 46.5686 0 30 0ZM30 54C16.7452 54 6 43.2548 6 30C6 16.7452 16.7452 6 30 6C43.2548 6 54 16.7452 54 30C54 43.4412 43.4106 54.375 30 54Z" fill="#13B440"/>
-												<path d="M30 8C19.5066 8 11 16.5066 11 27C11 37.4934 19.5066 46 30 46C40.4934 46 49 37.4934 49 27C49 16.5066 40.4934 8 30 8ZM39 28.5H31.5V36C31.5 36.828 30.828 37.5 30 37.5C29.172 37.5 28.5 36.828 28.5 36V28.5H21C20.172 28.5 19.5 27.828 19.5 27C19.5 26.172 20.172 25.5 21 25.5H28.5V19C28.5 18.172 29.172 17.5 30 17.5C30.828 17.5 31.5 18.172 31.5 19V25.5H39C39.828 25.5 40.5 26.172 40.5 27C40.5 27.828 39.828 28.5 39 28.5Z" fill="#13B440"/>
-											</svg>
-										</div>
-										<div class="ms-3">
-											<h4 class="font-w600 mb-0">Medical Masks</h4>
-											<p class="mb-0">N95</p>
-										</div>
-									</div>
-										
-									</div>
-									<div class="coin-box-warper">
-										<div class="d-flex align-items-center">
-											<span>
-												<svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<rect width="4.71425" height="34.5712" rx="2.35713" transform="matrix(-1 0 0 1 33 0)" fill="#13B440"/>
-													<rect width="4.71425" height="25.1427" rx="2.35713" transform="matrix(-1 0 0 1 23.5713 9.42853)" fill="#13B440"/>
-													<rect width="4.71425" height="10.9999" rx="2.35713" transform="matrix(-1 0 0 1 14.1436 23.5713)" fill="#13B440"/>
-													<rect width="5.31864" height="21.2746" rx="2.65932" transform="matrix(-1 0 0 1 5.31836 13.2966)" fill="#13B440"/>
-												</svg>
-											</span>	
-											<div class="ms-4">
-												<h4 class=" font-w600 mb-1">$18,783.33</h4>
-												<div class="d-flex align-items-center">
-													<svg class="me-2" width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M1.3291 13C2.24645 11.9157 5.22374 8.72772 6.82538 7L12.8213 10L19.8166 1" stroke="#13B440" stroke-width="2" stroke-linecap="round"/>
-													</svg>
-													<p class="mb-0"><span class="text-success">45%</span> This week</p>
+
+							<style>
+								table {
+									width: 100%;
+									border-collapse: separate; /* Change from collapse to separate */
+									border-spacing: 0; /* Remove spacing between cells */
+									border-radius: 10px; /* Curved borders */
+									overflow: hidden; /* Hide overflow to make border-radius effect visible */
+									border: 1px solid #ddd; /* Border color for the table */
+								}
+								th, td {
+									padding: 10px;
+									text-align: left;
+									border: 1px solid #ddd;
+									border-radius: 0; /* No rounded corners for cells */
+								}
+								th {
+									background-color: #f4f4f4; /* Background color for header cells */
+								}
+								.icon-wrapper img {
+									width: 50px;
+									height: 50px;
+									border-radius: 50%; /* Round icon images */
+									object-fit: cover;
+								}
+						</style>
+							<table>
+								<thead>
+									<tr>
+										<th>Icon</th>
+										<th>Product Name</th>
+										<th>Holding Value</th>
+										<th>Change Percentage</th>
+										<th>Week Change</th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php foreach ($product_holdings as $holding): ?>
+										<tr>
+											<td>
+												<div class="icon-wrapper">
+													<img src="<?= esc($holding['icon']) ?>" alt="<?= esc($holding['product_name']) ?> Icon">
 												</div>
-											</div>
-										</div>
-									</div>
-									<div class="coin-box-warper">
-										<span class="peity-line" data-width="100%" style="display: none;">8,7,8,6,9,2,5,7,5,3,8,6,8,7,8,6</span>
-									</div>
-									<div class="coin-box-warper">
-										<div class="justify-content-end d-flex">
-											<a href="javascript:void(0);">
-												<svg width="20" height="20" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M12.0002 16.3C5.85019 16.3 1.1252 9.40001 0.900195 9.10001C0.675195 8.80001 0.675195 8.35001 0.900195 8.05001C1.1252 7.75001 5.85019 0.700012 12.0002 0.700012C18.1502 0.700012 22.8752 7.75001 23.1002 8.05001C23.3252 8.35001 23.3252 8.80001 23.1002 9.10001C22.8752 9.40001 18.1502 16.3 12.0002 16.3ZM2.9252 8.57501C4.1252 10.075 7.80019 14.35 12.0002 14.35C16.2002 14.35 19.9502 10.075 21.0752 8.57501C19.8752 7.00001 16.2002 2.57501 12.0002 2.57501C7.80019 2.57501 4.0502 7.00001 2.9252 8.57501Z" fill="#717579"/>
-													<path d="M12.0004 13.225C9.37539 13.225 7.27539 11.125 7.27539 8.50003C7.27539 5.87503 9.37539 3.77502 12.0004 3.77502C14.6254 3.77502 16.7254 5.87503 16.7254 8.50003C16.7254 11.125 14.6254 13.225 12.0004 13.225ZM12.0004 5.65003C10.4254 5.65003 9.15039 6.92503 9.15039 8.50003C9.15039 10.075 10.4254 11.35 12.0004 11.35C13.5754 11.35 14.8504 10.075 14.8504 8.50003C14.8504 6.92503 13.5754 5.65003 12.0004 5.65003Z" fill="#717579"/>
-												</svg>
-											</a>
-											<a href="javascript:void(0);">
-												<svg width="16" height="16" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M15.883 6.53C15.958 6.67 16 6.83 16 7V16C16 18.209 14.21 20 12 20H1C0.448 20 0 19.552 0 19V1C0 0.448 0.448 0 1 0H9C9.17 0 9.33 0.0420006 9.47 0.117001L9.47299 0.118999C9.55099 0.159999 9.624 0.213001 9.69 0.276001L9.707 0.292999L15.707 6.293L15.724 6.31C15.788 6.377 15.84 6.45 15.882 6.527L15.883 6.53ZM8 2H2V18H12C13.105 18 14 17.105 14 16V8H9C8.448 8 8 7.552 8 7V2ZM6 16H10C10.552 16 11 15.552 11 15C11 14.448 10.552 14 10 14H6C5.448 14 5 14.448 5 15C5 15.552 5.448 16 6 16ZM5 12H11C11.552 12 12 11.552 12 11C12 10.448 11.552 10 11 10H5C4.448 10 4 10.448 4 11C4 11.552 4.448 12 5 12ZM12.586 6L10 3.414V6H12.586Z" fill="#717579"/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="coin-holding">
-									<div class="coin-box-warper">
-										<div class="d-flex align-items-center">
-										<div>
-											<svg class="product-svg" width="45" height="45" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M30 0C13.4314 0 0 13.4314 0 30C0 46.5686 13.4314 60 30 60C46.5686 60 60 46.5686 60 30C60 13.4314 46.5686 0 30 0ZM30 54C16.7452 54 6 43.2548 6 30C6 16.7452 16.7452 6 30 6C43.2548 6 54 16.7452 54 30C54 43.4412 43.4106 54.375 30 54Z" fill="#13B440"/>
-												<path d="M30 8C19.5066 8 11 16.5066 11 27C11 37.4934 19.5066 46 30 46C40.4934 46 49 37.4934 49 27C49 16.5066 40.4934 8 30 8ZM39 28.5H31.5V36C31.5 36.828 30.828 37.5 30 37.5C29.172 37.5 28.5 36.828 28.5 36V28.5H21C20.172 28.5 19.5 27.828 19.5 27C19.5 26.172 20.172 25.5 21 25.5H28.5V19C28.5 18.172 29.172 17.5 30 17.5C30.828 17.5 31.5 18.172 31.5 19V25.5H39C39.828 25.5 40.5 26.172 40.5 27C40.5 27.828 39.828 28.5 39 28.5Z" fill="#13B440"/>
-											</svg>
-										</div>
-										<div class="ms-3">
-											<h4 class="font-w600 mb-0"> Masks</h4>
-											<p class="mb-0">N95</p>
-										</div>
-									</div>
-									</div>
-									<div class="coin-box-warper">
-										<div class="d-flex align-items-center">
-											<svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect width="4.71425" height="34.5712" rx="2.35713" transform="matrix(-1 0 0 1 33 0)" fill="#13B440"/>
-												<rect width="4.71425" height="25.1427" rx="2.35713" transform="matrix(-1 0 0 1 23.5713 9.42853)" fill="#13B440"/>
-												<rect width="4.71425" height="10.9999" rx="2.35713" transform="matrix(-1 0 0 1 14.1436 23.5713)" fill="#13B440"/>
-												<rect width="5.31864" height="21.2746" rx="2.65932" transform="matrix(-1 0 0 1 5.31836 13.2966)" fill="#13B440"/>
-											</svg>
-											<div class="ms-4">
-												<h4 class=" font-w600 mb-1">$18,783.33</h4>
-												<div class="d-flex align-items-center">
-													<svg class="me-2" width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M1.3291 13C2.24645 11.9157 5.22374 8.72772 6.82538 7L12.8213 10L19.8166 1" stroke="#13B440" stroke-width="2" stroke-linecap="round"/>
-													</svg>
-													<p class="mb-0"><span class="text-success">45%</span> This week</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="coin-box-warper">
-										<span class="peity-line" data-width="100%" style="display: none;">6,7,6,2,7,2,5,7,5,3,8,6,8,7,8,6</span>
-									</div>
-									<div class="coin-box-warper">
-										<div class="justify-content-end d-flex">
-											<a href="javascript:void(0);">
-												<svg width="20" height="20" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M12.0002 16.3C5.85019 16.3 1.1252 9.40001 0.900195 9.10001C0.675195 8.80001 0.675195 8.35001 0.900195 8.05001C1.1252 7.75001 5.85019 0.700012 12.0002 0.700012C18.1502 0.700012 22.8752 7.75001 23.1002 8.05001C23.3252 8.35001 23.3252 8.80001 23.1002 9.10001C22.8752 9.40001 18.1502 16.3 12.0002 16.3ZM2.9252 8.57501C4.1252 10.075 7.80019 14.35 12.0002 14.35C16.2002 14.35 19.9502 10.075 21.0752 8.57501C19.8752 7.00001 16.2002 2.57501 12.0002 2.57501C7.80019 2.57501 4.0502 7.00001 2.9252 8.57501Z" fill="#717579"/>
-													<path d="M12.0004 13.225C9.37539 13.225 7.27539 11.125 7.27539 8.50003C7.27539 5.87503 9.37539 3.77502 12.0004 3.77502C14.6254 3.77502 16.7254 5.87503 16.7254 8.50003C16.7254 11.125 14.6254 13.225 12.0004 13.225ZM12.0004 5.65003C10.4254 5.65003 9.15039 6.92503 9.15039 8.50003C9.15039 10.075 10.4254 11.35 12.0004 11.35C13.5754 11.35 14.8504 10.075 14.8504 8.50003C14.8504 6.92503 13.5754 5.65003 12.0004 5.65003Z" fill="#717579"/>
-												</svg>
-											</a>
-											<a href="javascript:void(0);">
-												<svg width="16" height="16" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M15.883 6.53C15.958 6.67 16 6.83 16 7V16C16 18.209 14.21 20 12 20H1C0.448 20 0 19.552 0 19V1C0 0.448 0.448 0 1 0H9C9.17 0 9.33 0.0420006 9.47 0.117001L9.47299 0.118999C9.55099 0.159999 9.624 0.213001 9.69 0.276001L9.707 0.292999L15.707 6.293L15.724 6.31C15.788 6.377 15.84 6.45 15.882 6.527L15.883 6.53ZM8 2H2V18H12C13.105 18 14 17.105 14 16V8H9C8.448 8 8 7.552 8 7V2ZM6 16H10C10.552 16 11 15.552 11 15C11 14.448 10.552 14 10 14H6C5.448 14 5 14.448 5 15C5 15.552 5.448 16 6 16ZM5 12H11C11.552 12 12 11.552 12 11C12 10.448 11.552 10 11 10H5C4.448 10 4 10.448 4 11C4 11.552 4.448 12 5 12ZM12.586 6L10 3.414V6H12.586Z" fill="#717579"/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="coin-holding">
-									<div class="d-flex align-items-center">
-										<div>
-											<svg class="product-svg" width="45" height="45" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M30 0C13.4314 0 0 13.4314 0 30C0 46.5686 13.4314 60 30 60C46.5686 60 60 46.5686 60 30C60 13.4314 46.5686 0 30 0ZM30 54C16.7452 54 6 43.2548 6 30C6 16.7452 16.7452 6 30 6C43.2548 6 54 16.7452 54 30C54 43.4412 43.4106 54.375 30 54Z" fill="#13B440"/>
-												<path d="M30 8C19.5066 8 11 16.5066 11 27C11 37.4934 19.5066 46 30 46C40.4934 46 49 37.4934 49 27C49 16.5066 40.4934 8 30 8ZM40 28H32V36C32 36.552 31.552 37 31 37H29C28.448 37 28 36.552 28 36V28H20C19.448 28 19 27.552 19 27V25C19 24.448 19.448 24 20 24H28V16C28 15.448 28.448 15 29 15H31C31.552 15 32 15.448 32 16V24H40C40.552 24 41 24.448 41 25V27C41 27.552 40.552 28 40 28Z" fill="#13B440"/>
-											</svg>
-										</div>
-										<div class="ms-3">
-											<h4 class="font-w600 mb-0">Painkillers</h4>
-											<p class="mb-0">TYL</p>
-										</div>
-									</div>
-									<div class="coin-box-warper">
-										<div class="d-flex align-items-center">
-											<svg  width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect width="4.71425" height="34.5712" rx="2.35713" transform="matrix(-1 0 0 1 33 0)" fill="#FD5353"/>
-												<rect width="4.71425" height="25.1427" rx="2.35713" transform="matrix(-1 0 0 1 23.5713 9.42853)" fill="#FD5353"/>
-												<rect width="4.71425" height="10.9999" rx="2.35713" transform="matrix(-1 0 0 1 14.1436 23.5713)" fill="#FD5353"/>
-												<rect width="5.31864" height="21.2746" rx="2.65932" transform="matrix(-1 0 0 1 5.31836 13.2966)" fill="#FD5353"/>
-											</svg>
-											<div class="ms-4">
-												<h4 class=" font-w600 mb-1">$18,783.33</h4>
-												<div class="d-flex align-items-center">
-													<svg class="me-2" width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M1.3291 13C2.24645 11.9157 5.22374 8.72772 6.82538 7L12.8213 10L19.8166 1" stroke="#FD5353" stroke-width="2" stroke-linecap="round"/>
-													</svg>
-													<p class="mb-0"><span class="text-danger">45%</span> This week</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="coin-box-warper">
-										<span class="peity-line2" data-width="100%" style="display: none;">8,7,8,6,4,2,5,2,5,3,6,6,8,7,6,4</span>
-									</div>
-									<div class="coin-box-warper">
-										<div class="justify-content-end d-flex">
-											<a href="javascript:void(0);">
-												<svg width="20" height="20" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M12.0002 16.3C5.85019 16.3 1.1252 9.40001 0.900195 9.10001C0.675195 8.80001 0.675195 8.35001 0.900195 8.05001C1.1252 7.75001 5.85019 0.700012 12.0002 0.700012C18.1502 0.700012 22.8752 7.75001 23.1002 8.05001C23.3252 8.35001 23.3252 8.80001 23.1002 9.10001C22.8752 9.40001 18.1502 16.3 12.0002 16.3ZM2.9252 8.57501C4.1252 10.075 7.80019 14.35 12.0002 14.35C16.2002 14.35 19.9502 10.075 21.0752 8.57501C19.8752 7.00001 16.2002 2.57501 12.0002 2.57501C7.80019 2.57501 4.0502 7.00001 2.9252 8.57501Z" fill="#717579"/>
-													<path d="M12.0004 13.225C9.37539 13.225 7.27539 11.125 7.27539 8.50003C7.27539 5.87503 9.37539 3.77502 12.0004 3.77502C14.6254 3.77502 16.7254 5.87503 16.7254 8.50003C16.7254 11.125 14.6254 13.225 12.0004 13.225ZM12.0004 5.65003C10.4254 5.65003 9.15039 6.92503 9.15039 8.50003C9.15039 10.075 10.4254 11.35 12.0004 11.35C13.5754 11.35 14.8504 10.075 14.8504 8.50003C14.8504 6.92503 13.5754 5.65003 12.0004 5.65003Z" fill="#717579"/>
-												</svg>
-											</a>
-											<a href="javascript:void(0);">
-												<svg width="16" height="16" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M15.883 6.53C15.958 6.67 16 6.83 16 7V16C16 18.209 14.21 20 12 20H1C0.448 20 0 19.552 0 19V1C0 0.448 0.448 0 1 0H9C9.17 0 9.33 0.0420006 9.47 0.117001L9.47299 0.118999C9.55099 0.159999 9.624 0.213001 9.69 0.276001L9.707 0.292999L15.707 6.293L15.724 6.31C15.788 6.377 15.84 6.45 15.882 6.527L15.883 6.53ZM8 2H2V18H12C13.105 18 14 17.105 14 16V8H9C8.448 8 8 7.552 8 7V2ZM6 16H10C10.552 16 11 15.552 11 15C11 14.448 10.552 14 10 14H6C5.448 14 5 14.448 5 15C5 15.552 5.448 16 6 16ZM5 12H11C11.552 12 12 11.552 12 11C12 10.448 11.552 10 11 10H5C4.448 10 4 10.448 4 11C4 11.552 4.448 12 5 12ZM12.586 6L10 3.414V6H12.586Z" fill="#717579"/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="coin-holding">
-									<div class="product-box-warper">
-										<div class="d-flex align-items-center">
-											<div>
-												<svg class="product-svg" width="45" height="45" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M30 0C13.4314 0 0 13.4314 0 30C0 46.5686 13.4314 60 30 60C46.5686 60 60 46.5686 60 30C60 13.4314 46.5686 0 30 0ZM30 54C16.7452 54 6 43.2548 6 30C6 16.7452 16.7452 6 30 6C43.2548 6 54 16.7452 54 30C54 43.4412 43.4106 54.375 30 54Z" fill="#13B440"/>
-													<path d="M30 8C19.5066 8 11 16.5066 11 27C11 37.4934 19.5066 46 30 46C40.4934 46 49 37.4934 49 27C49 16.5066 40.4934 8 30 8ZM38 29H34V33C34 33.552 33.552 34 33 34H31C30.448 34 30 33.552 30 33V29H26C25.448 29 25 28.552 25 28V26C25 25.448 25.448 25 26 25H30V21C30 20.448 30.448 20 31 20H33C33.552 20 34 20.448 34 21V25H38C38.552 25 39 25.448 39 26V28C39 28.552 38.552 29 38 29Z" fill="#13B440"/>
-												</svg>
-											</div>
-											<div class="ms-3">
-												<h4 class="font-w600 mb-0">Syringes</h4>
-												<p class="mb-0">SYR</p>
-											</div>
-										</div>
-									</div>
-									<div class="coin-box-warper">
-										<div class="d-flex align-items-center">
-											<span>
-												<svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<rect width="4.71425" height="34.5712" rx="2.35713" transform="matrix(-1 0 0 1 33 0)" fill="#13B440"/>
-													<rect width="4.71425" height="25.1427" rx="2.35713" transform="matrix(-1 0 0 1 23.5713 9.42853)" fill="#13B440"/>
-													<rect width="4.71425" height="10.9999" rx="2.35713" transform="matrix(-1 0 0 1 14.1436 23.5713)" fill="#13B440"/>
-													<rect width="5.31864" height="21.2746" rx="2.65932" transform="matrix(-1 0 0 1 5.31836 13.2966)" fill="#13B440"/>
-												</svg>
-											</span>	
-											<div class="ms-4">
-												<h4 class=" font-w600 mb-1">$18,783.33</h4>
-												<div class="d-flex align-items-center">
-													<svg class="me-2" width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M1.3291 13C2.24645 11.9157 5.22374 8.72772 6.82538 7L12.8213 10L19.8166 1" stroke="#13B440" stroke-width="2" stroke-linecap="round"/>
-													</svg>
-													<p class="mb-0"><span class="text-success">45%</span> This week</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="coin-box-warper">
-										<span class="peity-line" data-width="100%" style="display: none;">8,7,8,6,9,2,5,7,5,3,8,6,8,7,8,6</span>
-									</div>
-									<div class="coin-box-warper">
-										<div class="justify-content-end d-flex">
-											<a href="javascript:void(0);">
-												<svg width="20" height="20" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M12.0002 16.3C5.85019 16.3 1.1252 9.40001 0.900195 9.10001C0.675195 8.80001 0.675195 8.35001 0.900195 8.05001C1.1252 7.75001 5.85019 0.700012 12.0002 0.700012C18.1502 0.700012 22.8752 7.75001 23.1002 8.05001C23.3252 8.35001 23.3252 8.80001 23.1002 9.10001C22.8752 9.40001 18.1502 16.3 12.0002 16.3ZM2.9252 8.57501C4.1252 10.075 7.80019 14.35 12.0002 14.35C16.2002 14.35 19.9502 10.075 21.0752 8.57501C19.8752 7.00001 16.2002 2.57501 12.0002 2.57501C7.80019 2.57501 4.0502 7.00001 2.9252 8.57501Z" fill="#717579"/>
-													<path d="M12.0004 13.225C9.37539 13.225 7.27539 11.125 7.27539 8.50003C7.27539 5.87503 9.37539 3.77502 12.0004 3.77502C14.6254 3.77502 16.7254 5.87503 16.7254 8.50003C16.7254 11.125 14.6254 13.225 12.0004 13.225ZM12.0004 5.65003C10.4254 5.65003 9.15039 6.92503 9.15039 8.50003C9.15039 10.075 10.4254 11.35 12.0004 11.35C13.5754 11.35 14.8504 10.075 14.8504 8.50003C14.8504 6.92503 13.5754 5.65003 12.0004 5.65003Z" fill="#717579"/>
-												</svg>
-											</a>
-											<a href="javascript:void(0);">
-												<svg width="16" height="16" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M15.883 6.53C15.958 6.67 16 6.83 16 7V16C16 18.209 14.21 20 12 20H1C0.448 20 0 19.552 0 19V1C0 0.448 0.448 0 1 0H9C9.17 0 9.33 0.0420006 9.47 0.117001L9.47299 0.118999C9.55099 0.159999 9.624 0.213001 9.69 0.276001L9.707 0.292999L15.707 6.293L15.724 6.31C15.788 6.377 15.84 6.45 15.882 6.527L15.883 6.53ZM8 2H2V18H12C13.105 18 14 17.105 14 16V8H9C8.448 8 8 7.552 8 7V2ZM6 16H10C10.552 16 11 15.552 11 15C11 14.448 10.552 14 10 14H6C5.448 14 5 14.448 5 15C5 15.552 5.448 16 6 16ZM5 12H11C11.552 12 12 11.552 12 11C12 10.448 11.552 10 11 10H5C4.448 10 4 10.448 4 11C4 11.552 4.448 12 5 12ZM12.586 6L10 3.414V6H12.586Z" fill="#717579"/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-								
+											</td>
+											<td><?= esc($holding['product_name']) ?></td>
+											<td>$<?= number_format($holding['holding_value'], 2) ?></td>
+											<td><?= esc($holding['change_percentage']) ?>%</td>
+											<td>$<?= number_format($holding['week_change'], 2) ?></td>
+										</tr>
+									<?php endforeach; ?>
+								</tbody>
+							</table>							
 							</div>
 						</div>
 					</div>
@@ -786,31 +622,32 @@
 								<div class="card overflow-hidden h-auto">
 									<div class="card-body pb-4">
 										<div class="row">
-											<div class="col-xl-5 col-md-5">
-												<h4 class="card-title mb-0">Weekly Summary</h4>
-												<p>Lorem ipsum dolor sit amet</p>
-												<div class="d-flex mb-3 align-items-center">
-													<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect y="-3.05176e-05" width="22.2609" height="16" rx="8" fill="#2BC155"/>
-													</svg>
-													<span class="fs-16 text-dark mx-2 font-w600">30%</span>
-													<span class="fs-14">Succesfull Market</span>
-												</div>
-												<div class="d-flex mb-3 align-items-center">
-													<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect y="-3.05176e-05" width="22.2609" height="16" rx="8" fill="#FD5353"/>
-													</svg>
-													<span class="fs-16 text-dark mx-2 font-w600">46%</span>
-													<span class="fs-14">Appllication Answered</span>
-												</div>
-												<div class="d-flex align-items-center">
-													<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<rect y="-3.05176e-05" width="22.2609" height="16" rx="8" fill="#D7D7D7"/>
-													</svg>
-													<span class="fs-16 text-dark mx-2 font-w600">10%</span>
-													<span class="fs-14">Pending</span>
-												</div>
-											</div>
+										<div class="col-xl-5 col-md-5">
+    <h4 class="card-title mb-0">Weekly Healthcare Investment Summary</h4>
+    <p>Overview of our healthcare investments and returns for the week.</p>
+    <div class="d-flex mb-3 align-items-center">
+        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0" width="22.2609" height="16" rx="8" fill="#28A745"/>
+        </svg>
+        <span class="fs-16 text-dark mx-2 font-w600">$300</span>
+        <span class="fs-14">Investment</span>
+    </div>
+    <div class="d-flex mb-3 align-items-center">
+        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0" width="22.2609" height="16" rx="8" fill="#FFC107"/>
+        </svg>
+        <span class="fs-16 text-dark mx-2 font-w600">$650</span>
+        <span class="fs-14">Total Returns</span>
+    </div>
+    <div class="d-flex align-items-center">
+        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0" width="22.2609" height="16" rx="8" fill="#007BFF"/>
+        </svg>
+        <span class="fs-16 text-dark mx-2 font-w600">30%</span>
+        <span class="fs-14">ROI Percentage</span>
+    </div>
+</div>
+
 											<div class="col-xl-7 col-md-7 align-self-center" style="position: relative;">
 												<div id="columnChart">
 												</div>
