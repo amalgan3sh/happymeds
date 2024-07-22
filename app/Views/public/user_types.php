@@ -9,7 +9,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             <div class="col">
-                <a href="https://user.lakshmipharmaceuticals.com/" class="card-link">
+                <a href="<?php echo base_url('b2b_partner_details') ?>" class="card-link">
                     <div class="card h-100 shadow border-0">
                         <div class="card-header border-bottom-0 pt-4 pb-3">
                             <h5 class="fw-bold text-center">B2B Partner</h5>
@@ -31,7 +31,7 @@
                 </a>
             </div>
             <div class="col">
-                <a href="https://user.lakshmipharmaceuticals.com/" class="card-link">
+                <a href="<?php echo base_url('supplier_details') ?>" class="card-link">
                     <div class="card h-100 shadow border-0">
                         <div class="card-header border-bottom-0 pt-4 pb-3">
                             <h5 class="fw-bold text-center">Supplier/ Manufacturer</h5>
@@ -53,7 +53,7 @@
                 </a>
             </div>
             <div class="col">
-                <a href="https://user.lakshmipharmaceuticals.com/" class="card-link">
+                <a href="<?php echo base_url('agent_details') ?>" class="card-link">
                     <div class="card h-100 shadow border-0">
                         <div class="card-header border-bottom-0 pt-4 pb-3">
                             <h5 class="fw-bold text-center">Agent/ Agency</h5>

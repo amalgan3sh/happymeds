@@ -73,9 +73,35 @@ class PublicController extends BaseController
 
     public function BrandPartnerDetails(): string
     {
-        return $this->renderView('brand_partner_detals_view', [
+        return $this->renderView('brand_partner_detalis_view', [
             'public/public_header',
             'public/brand_partner_details',
+            'public/public_footer'
+        ]);
+    }
+    public function AgentDetails(): string
+    {
+        return $this->renderView('agent_details_view', [
+            'public/public_header',
+            'public/agent_details',
+            'public/public_footer'
+        ]);
+    }
+
+    public function SupplierDetails(): string
+    {
+        return $this->renderView('supplier_details_view', [
+            'public/public_header',
+            'public/supplier_details',
+            'public/public_footer'
+        ]);
+    }
+
+    public function B2BPartnerDetails(): string
+    {
+        return $this->renderView('b2b_partner_details_view', [
+            'public/public_header',
+            'public/b2b_partner_details',
             'public/public_footer'
         ]);
     }
