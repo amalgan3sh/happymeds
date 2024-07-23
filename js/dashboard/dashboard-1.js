@@ -869,8 +869,8 @@
         };
 
 
-        if (jQuery("#marketChart").length > 0) {
-          var chartBar1 = new ApexCharts(document.querySelector("#marketChart"), options);
+        if (jQuery("#marketChart1").length > 0) {
+          var chartBar1 = new ApexCharts(document.querySelector("#marketChart1"), options);
           chartBar1.render();
 
           jQuery('.nav-pills .nav-link').on('click', function () {

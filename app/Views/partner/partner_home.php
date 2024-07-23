@@ -247,67 +247,85 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-xl-6">
-									<div class="card crypto-chart">
-										<div class="card-header pb-0 border-0 flex-wrap">
-											<div class="mb-0">
-												<h4 class="card-title">Healthcare Statistics</h4>
-												<p>Explore healthcare trends and data across various sectors.</p>
-											</div>
-											
-										</div>
-										<div class="card-body pt-2">
-										<ul class="nav nav-pills">
-											<li class="nav-item">
-												<a href="#navpills-1" class="nav-link active" data-bs-toggle="tab" data-trend="Pharmaceutical" aria-expanded="false">Pharmaceuticals</a>
-											</li>
-											<li class="nav-item">
-												<a href="#navpills-2" class="nav-link" data-bs-toggle="tab" data-trend="Nutraceutical" aria-expanded="false">Nutraceuticals</a>
-											</li>
-											<li class="nav-item">
-												<a href="#navpills-3" class="nav-link" data-bs-toggle="tab" data-trend="Cosmetic" aria-expanded="true">Cosmetics</a>
-											</li>
-											<li class="nav-item">
-												<a href="#navpills-4" class="nav-link" data-bs-toggle="tab" data-trend="Hospital Care" aria-expanded="true">Hospital Care</a>
-											</li>
-											<li class="nav-item">
-												<a href="#navpills-5" class="nav-link" data-bs-toggle="tab" data-trend="Cosmeceutical" aria-expanded="true">Cosmeceuticals</a>
-											</li>
-										</ul>
-										<div id="marketCharts1"></div>
-										<script type="text/javascript">
-											function renderTrends(sector) {
-												// Clear the current chart
-												document.getElementById('marketCharts1').innerHTML = '';
-												// Create a new div for the Google Trends widget
-												var widgetDiv = document.createElement('div');
-												document.getElementById('marketCharts1').appendChild(widgetDiv);
-												// Render the Google Trends widget in the new div
-												trends.embed.renderExploreWidget("TIMESERIES", {
-													"comparisonItem": [{"keyword": sector, "geo": "", "time": "today 5-y"}],
-													"category": 0,
-													"property": ""
-												}, {
-													"exploreQuery": `date=today%205-y&q=${sector}&hl=en`,
-													"guestPath": "https://trends.google.com:443/trends/embed/"
-												}, widgetDiv);
-											}
+							<div class="col-xl-6">
+    <div class="card crypto-chart">
+        <div class="card-header pb-0 border-0 flex-wrap">
+            <div class="mb-0">
+                <h4 class="card-title">Healthcare Statistics</h4>
+                <p>Explore healthcare trends and data across various sectors.</p>
+            </div>
+        </div>
+        <div class="card-body pt-2">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#navpills-1" class="nav-link active" data-bs-toggle="tab" data-trend="Pharmaceutical" aria-expanded="false">Pharmaceuticals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#navpills-2" class="nav-link" data-bs-toggle="tab" data-trend="Nutraceutical" aria-expanded="false">Nutraceuticals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#navpills-3" class="nav-link" data-bs-toggle="tab" data-trend="Cosmetic" aria-expanded="true">Cosmetics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#navpills-4" class="nav-link" data-bs-toggle="tab" data-trend="Hospital Care" aria-expanded="true">Hospital Care</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#navpills-5" class="nav-link" data-bs-toggle="tab" data-trend="Cosmeceutical" aria-expanded="true">Cosmeceuticals</a>
+                </li>
+            </ul>
+            <div id="marketCharts1"></div>
+            <script type="text/javascript">
+                    // Load the Google Trends library
+                    (function() {
+                        var script = document.createElement('script');
+                        script.type = 'text/javascript';
+                        script.async = true;
+                        script.src = 'https://ssl.gstatic.com/trends_nrtr/2080_RC01/embed_loader.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(script, s);
+                    })();
 
-											document.querySelectorAll('.nav-link').forEach(function(tab) {
-												tab.addEventListener('click', function() {
-													var sector = this.getAttribute('data-trend');
-													renderTrends(sector);
-												});
-											});
+                    function renderTrends(sector) {
+                        // Clear the current chart
+                        document.getElementById('marketCharts1').innerHTML = '';
+                        
+                        // Create a new div for the Google Trends widget
+                        var widgetDiv = document.createElement('div');
+                        document.getElementById('marketCharts1').appendChild(widgetDiv);
+                        
+                        // Render the Google Trends widget in the new div
+                        trends.embed.renderExploreWidgetTo(
+                            widgetDiv, 
+                            "TIMESERIES", 
+                            {
+                                "comparisonItem": [{"keyword": sector, "geo": "", "time": "today 5-y"}],
+                                "category": 0,
+                                "property": ""
+                            }, 
+                            {
+                                "exploreQuery": `date=today%205-y&q=${sector}&hl=en`,
+                                "guestPath": "https://trends.google.com:443/trends/embed/"
+                            }
+                        );
+                    }
 
-											// Initial load
-											renderTrends('Pharmaceutical');
-										</script>
-											
-										</div>
-									</div>
-								</div>
-								
+                    // Add event listeners to each navigation link
+                    document.querySelectorAll('.nav-link').forEach(function(tab) {
+                        tab.addEventListener('click', function() {
+                            var sector = this.getAttribute('data-trend');
+                            renderTrends(sector);
+                        });
+                    });
+
+                    // Initial load with the 'Pharmaceutical' sector
+                    document.addEventListener('DOMContentLoaded', function() {
+                        renderTrends('Pharmaceutical');
+                    });
+                </script>
+        </div>
+    </div>
+</div>
+
 								<div class="col-xl-6">
 									<div class="card market-chart">
 										<div class="card-header border-0 pb-0 flex-wrap">
