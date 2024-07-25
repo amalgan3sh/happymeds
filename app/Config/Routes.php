@@ -21,6 +21,7 @@ $routes->get('brand_partner_details', 'PublicController::BrandPartnerDetails');
 $routes->get('agent_details', 'PublicController::AgentDetails');
 $routes->get('supplier_details', 'PublicController::SupplierDetails');
 $routes->get('b2b_partner_details', 'PublicController::B2BPartnerDetails');
+$routes->post('product_favorite', 'PartnerController::addFavorite');
 
 //partner-routes
 $routes->get('partner_home', 'PartnerController::partnerHome');

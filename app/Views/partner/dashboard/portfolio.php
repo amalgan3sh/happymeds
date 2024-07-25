@@ -1,5 +1,5 @@
 
-		
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<!--**********************************
             Content body start
         ***********************************-->
@@ -139,6 +139,20 @@
 									border-radius: 50%; /* Round icon images */
 									object-fit: cover;
 								}
+								.like-button {
+									background: none;
+									border: none;
+									cursor: pointer;
+									outline: none;
+								}
+								.heart-icon {
+									font-size: 24px;
+									color: grey; /* Default color for empty heart */
+								}
+
+								.heart-icon.filled-heart {
+									color: red; /* Color for filled heart */
+								}
 						</style>
 							<table>
 								<thead>
@@ -148,6 +162,7 @@
 										<th>Holding Value</th>
 										<th>Change Percentage</th>
 										<th>Week Change</th>
+										<th></th>
 									</tr>
 								</thead>
 								<tbody>
@@ -162,6 +177,12 @@
 											<td>$<?= number_format($holding['holding_value'], 2) ?></td>
 											<td><?= esc($holding['change_percentage']) ?>%</td>
 											<td>$<?= number_format($holding['week_change'], 2) ?></td>
+											<td>
+												<button class="like-button" data-product-id="<?php echo $holding['product_id']; ?>" 
+												data-initial-status="<?= esc($holding['favorite']) ? 'true' : 'false' ?>">
+													<span class="heart-icon">&hearts;</span>
+												</button>
+											</td>
 										</tr>
 									<?php endforeach; ?>
 								</tbody>
@@ -791,6 +812,56 @@
     <!--**********************************
         Scripts
     ***********************************-->
+	<script>
+		$(document).ready(function() {
+			$('.like-button').each(function() {
+                var $button = $(this);
+				var isFavorite = $button.data('initial-status'); // Compare against string 'true'
+
+				console.log('Initial status:', isFavorite); // For debugging
+
+				if (isFavorite) {
+					$button.find('.heart-icon').addClass('filled-heart'); // Add class if favorite
+				} else {
+					$button.find('.heart-icon').removeClass('filled-heart'); // Remove class if not favorite
+				}
+            });
+
+
+			$('.like-button').on('click', function() {
+				var $button = $(this); // Cache the button element
+				var productId = $button.data('product-id');
+				console.log('Product ID:', productId); // Log the product ID to debug
+
+				$.ajax({
+					url: '<?php echo base_url('product_favorite'); ?>',
+					type: 'POST',
+					data: { product_id: productId },
+					dataType: 'json', // Ensure the response is treated as JSON
+					success: function(response) {
+						console.log('Response:', response); // Log the response for debugging
+						if (response.success) {
+
+							// Update the UI based on the new favorite status
+							var isFavorite = response.new_status; // New status from the response
+
+							if (isFavorite) {
+								$button.find('.heart-icon').addClass('filled-heart'); // Add class to fill heart
+							} else {
+								$button.find('.heart-icon').removeClass('filled-heart'); // Remove class to empty heart
+							}
+						} else {
+							console.log('Unknown error:', response.message); // Log the response for debugging
+						}
+					},
+					error: function(xhr, status, error) {
+						console.error('AJAX Error:', status, error); // Log AJAX errors
+					}
+				});
+			});
+		});
+	</script>
+
     <!-- Required vendors -->
     <script src="vendor/global/global.min.js"></script>
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>

@@ -16,11 +16,13 @@ class PartnerController extends BaseController
     protected $cache;
     protected $useCache;
     protected $cacheTime;
+    protected $productHoldingsModel;
 
     public function __construct()
     {
         $this->partnerModel = new PartnerModel(); // Initialize the model
         $this->cache = \Config\Services::cache(); // Load the cache service
+        $this->productHoldingsModel = new ProductHoldingsModel();
         $this->useCache = getenv('CI_ENVIRONMENT') === 'production'; // Only use cache in production
         $this->cacheTime = getenv('CI_CACHE_TIME') ? (int)getenv('CI_CACHE_TIME') : 600; // Cache time in seconds (10 minutes)
     }
@@ -37,6 +39,27 @@ class PartnerController extends BaseController
         $data['market_previews'] = $model->getMarketPreview();
         
         return $this->renderView('partner_home_view', 'partner/partner_home',  $data);
+    }
+
+    public function addFavorite()
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+
+        $product_id = $this->request->getPost('product_id');
+
+        if (empty($product_id)) {
+            echo json_encode(['success' => false, 'message' => 'Invalid product ID']);
+            return;
+        }
+
+        // Update favorite status and get the result
+        $result = $this->productHoldingsModel->updateFavorite($product_id);
+
+        // Send the result back to the client
+        echo json_encode($result);
+        
     }
 
     public function p2p()
