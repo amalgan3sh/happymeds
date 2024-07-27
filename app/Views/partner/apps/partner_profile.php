@@ -271,53 +271,78 @@
                                                 <div class="pt-3">
                                                     <div class="settings-form">
                                                         <h4 class="text-primary">Bank Account Details</h4>
-                                                        <form>
-                                                            <div class="row">
-                                                                <div class="mb-3 col-md-6">
-                                                                    <label class="form-label">Account Number</label>
-                                                                    <input type="text" placeholder="Account Number" class="form-control">
-                                                                </div>
-                                                                <div class="mb-3 col-md-6">
-                                                                    <label class="form-label">IFSC</label>
-                                                                    <input type="text" placeholder="IFSC" class="form-control">
-                                                                </div>
+                                                        <form action="<?php echo base_url('store_bank_account') ?>" method="post">
+                                                        <div class="row">
+                                                            <div class="mb-3 col-md-6">
+                                                                <label class="form-label">Account Number</label>
+                                                                <input type="text" name="account_number" placeholder="Account Number" class="form-control" value="<?= isset($bankAccount['account_number']) ? $bankAccount['account_number'] : '' ?>" required>
                                                             </div>
-                                                            <div class="mb-3">
-                                                                <label class="form-label">Name</label>
-                                                                <input type="text" placeholder="Account Holder Name" class="form-control">
+                                                            <div class="mb-3 col-md-6">
+                                                                <label class="form-label">IFSC</label>
+                                                                <input type="text" name="ifsc" placeholder="IFSC" class="form-control" value="<?= isset($bankAccount['ifsc']) ? $bankAccount['ifsc'] : '' ?>" required>
                                                             </div>
-                                                            <div class="mb-3">
-                                                                <label class="form-label">Branch</label>
-                                                                <input type="text" placeholder="Branch" class="form-control">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Name</label>
+                                                            <input type="text" name="name" placeholder="Account Holder Name" class="form-control" value="<?= isset($bankAccount['name']) ? $bankAccount['name'] : '' ?>" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Branch</label>
+                                                            <input type="text" name="branch" placeholder="Branch" class="form-control" value="<?= isset($bankAccount['branch']) ? $bankAccount['branch'] : '' ?>" required>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="mb-3 col-md-6">
+                                                                <label class="form-label">City</label>
+                                                                <input type="text" name="city" class="form-control" value="<?= isset($bankAccount['city']) ? $bankAccount['city'] : '' ?>" required>
                                                             </div>
-                                                            <div class="row">
-                                                                <div class="mb-3 col-md-6">
-                                                                    <label class="form-label">City</label>
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                                <div class="mb-3 col-md-4">
-                                                                    <label class="form-label">State</label>
-                                                                    <select class="form-control default-select wide" id="inputState">
-                                                                        <option selected="">Choose...</option>
-                                                                        <option>Option 1</option>
-                                                                        <option>Option 2</option>
-                                                                        <option>Option 3</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="mb-3 col-md-2">
-                                                                    <label class="form-label">Zip</label>
-                                                                    <input type="text" class="form-control">
-                                                                </div>
+                                                            <div class="mb-3 col-md-4">
+                                                                <label class="form-label">State</label>
+                                                                <select name="state" class="form-control default-select wide" id="inputState" required>
+                                                                    <option selected="" disabled>Choose...</option>
+                                                                    <!-- Include all Indian states here as options -->
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Andhra Pradesh' ? 'selected' : '' ?>>Andhra Pradesh</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Arunachal Pradesh' ? 'selected' : '' ?>>Arunachal Pradesh</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Assam' ? 'selected' : '' ?>>Assam</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Bihar' ? 'selected' : '' ?>>Bihar</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Chhattisgarh' ? 'selected' : '' ?>>Chhattisgarh</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Goa' ? 'selected' : '' ?>>Goa</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Gujarat' ? 'selected' : '' ?>>Gujarat</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Haryana' ? 'selected' : '' ?>>Haryana</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Himachal Pradesh' ? 'selected' : '' ?>>Himachal Pradesh</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Jharkhand' ? 'selected' : '' ?>>Jharkhand</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Karnataka' ? 'selected' : '' ?>>Karnataka</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Kerala' ? 'selected' : '' ?>>Kerala</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Madhya Pradesh' ? 'selected' : '' ?>>Madhya Pradesh</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Maharashtra' ? 'selected' : '' ?>>Maharashtra</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Manipur' ? 'selected' : '' ?>>Manipur</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Meghalaya' ? 'selected' : '' ?>>Meghalaya</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Mizoram' ? 'selected' : '' ?>>Mizoram</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Nagaland' ? 'selected' : '' ?>>Nagaland</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Odisha' ? 'selected' : '' ?>>Odisha</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Punjab' ? 'selected' : '' ?>>Punjab</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Rajasthan' ? 'selected' : '' ?>>Rajasthan</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Sikkim' ? 'selected' : '' ?>>Sikkim</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Tamil Nadu' ? 'selected' : '' ?>>Tamil Nadu</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Telangana' ? 'selected' : '' ?>>Telangana</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Tripura' ? 'selected' : '' ?>>Tripura</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Uttar Pradesh' ? 'selected' : '' ?>>Uttar Pradesh</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Uttarakhand' ? 'selected' : '' ?>>Uttarakhand</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'West Bengal' ? 'selected' : '' ?>>West Bengal</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Andaman and Nicobar Islands' ? 'selected' : '' ?>>Andaman and Nicobar Islands</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Chandigarh' ? 'selected' : '' ?>>Chandigarh</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Dadra and Nagar Haveli' ? 'selected' : '' ?>>Dadra and Nagar Haveli</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Daman and Diu' ? 'selected' : '' ?>>Daman and Diu</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Delhi' ? 'selected' : '' ?>>Delhi</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Lakshadweep' ? 'selected' : '' ?>>Lakshadweep</option>
+                                                                    <option <?= isset($bankAccount['state']) && $bankAccount['state'] == 'Puducherry' ? 'selected' : '' ?>>Puducherry</option>
+                                                                </select>
                                                             </div>
-                                                            <div class="mb-3">
-                                                                <div class="form-check custom-checkbox">
-																	<input type="checkbox" class="form-check-input" id="gridCheck">
-																	<label class="form-check-label form-label" for="gridCheck"> Check me out</label>
-																</div>
+                                                            <div class="mb-3 col-md-2">
+                                                                <label class="form-label">Zip</label>
+                                                                <input type="text" name="zip" class="form-control" value="<?= isset($bankAccount['zip']) ? $bankAccount['zip'] : '' ?>" required>
                                                             </div>
-                                                            <button class="btn btn-primary" type="submit">Sign
-                                                                in</button>
-                                                        </form>
+                                                        </div>
+                                                        <button class="btn btn-primary" type="submit">Save</button>
                                                     </div>
                                                 </div>
                                             </div>

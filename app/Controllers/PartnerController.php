@@ -1,68 +1,66 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\PartnerModel; 
-use App\Models\TransactionModel;
-use App\Models\MarketModel;
-use App\Models\ProductModel;
-use App\Models\ProductDataModel;
-use App\Models\ProductHoldingsModel;
 
-
+use App\Models\{
+    PartnerModel,
+    TransactionModel,
+    MarketModel,
+    ProductModel,
+    ProductHoldingsModel,
+    BankAccountModel,
+};
+use CodeIgniter\Cache\CacheInterface;
+use CodeIgniter\HTTP\ResponseInterface;
 
 class PartnerController extends BaseController
 {
-    protected $partnerModel;
-    protected $cache;
-    protected $useCache;
-    protected $cacheTime;
-    protected $productHoldingsModel;
+    protected PartnerModel $partnerModel;
+    protected CacheInterface $cache;
+    protected bool $useCache;
+    protected int $cacheTime;
+    protected ProductHoldingsModel $productHoldingsModel;
 
     public function __construct()
     {
-        $this->partnerModel = new PartnerModel(); // Initialize the model
-        $this->cache = \Config\Services::cache(); // Load the cache service
+        $this->partnerModel = new PartnerModel();
+        $this->cache = \Config\Services::cache();
         $this->productHoldingsModel = new ProductHoldingsModel();
-        $this->useCache = getenv('CI_ENVIRONMENT') === 'production'; // Only use cache in production
-        $this->cacheTime = getenv('CI_CACHE_TIME') ? (int)getenv('CI_CACHE_TIME') : 600; // Cache time in seconds (10 minutes)
+        $this->useCache = getenv('CI_ENVIRONMENT') === 'production';
+        $this->cacheTime = (int)(getenv('CI_CACHE_TIME') ?: 600);
     }
 
-    public function partnerHome()
+    public function partnerHome(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
-        $model = new TransactionModel();
-        $data['transactions'] = $model->findAll();
 
-        $model = new MarketModel();
-        $data['market_previews'] = $model->getMarketPreview();
-        
-        return $this->renderView('partner_home_view', 'partner/partner_home',  $data);
+        $data = [
+            'transactions' => (new TransactionModel())->findAll(),
+            'market_previews' => (new MarketModel())->getMarketPreview()
+        ];
+
+        return $this->renderView('partner_home_view', 'partner/partner_home', $data);
     }
 
-    public function addFavorite()
+    public function addFavorite(): ResponseInterface
     {
         if (!$this->checkSession()) {
-            return redirect()->to('/customer_login');
+            return $this->response->setStatusCode(401)->setJSON(['success' => false, 'message' => 'Unauthorized']);
         }
 
         $product_id = $this->request->getPost('product_id');
 
         if (empty($product_id)) {
-            echo json_encode(['success' => false, 'message' => 'Invalid product ID']);
-            return;
+            return $this->response->setJSON(['success' => false, 'message' => 'Invalid product ID']);
         }
 
-        // Update favorite status and get the result
         $result = $this->productHoldingsModel->updateFavorite($product_id);
-
-        // Send the result back to the client
-        echo json_encode($result);
-        
+        return $this->response->setJSON($result);
     }
 
-    public function p2p()
+    public function p2p(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
@@ -71,7 +69,7 @@ class PartnerController extends BaseController
         return $this->renderView('p2p_view', 'partner/market/p2p');
     }
 
-    public function Transaction()
+    public function Transaction(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
@@ -80,7 +78,7 @@ class PartnerController extends BaseController
         return $this->renderView('transaction_view', 'partner/reports/transaction');
     }
 
-    public function Reports()
+    public function Reports(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
@@ -89,7 +87,7 @@ class PartnerController extends BaseController
         return $this->renderView('transaction_view', 'partner/reports/reports');
     }
 
-    public function Banking()
+    public function Banking(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
@@ -98,7 +96,7 @@ class PartnerController extends BaseController
         return $this->renderView('banking_view', 'partner/reports/banking');
     }
 
-    public function ProductInvest()
+    public function ProductInvest(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
@@ -107,112 +105,96 @@ class PartnerController extends BaseController
         return $this->renderView('banking_view', 'partner/product/product_invest');
     }
 
-    public function ProductDetailsView()
+    public function ProductDetailsView(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
 
-        // Get the product_id from the URL query string
         $product_id = $this->request->getGet('product_id');
 
-        // Check if product_id is provided
         if ($product_id === null) {
             return redirect()->to('/products')->with('error', 'No product specified');
         }
 
-        $model = new ProductModel();
-        
-        // Fetch the specific product
-        $data['product'] = $model->find($product_id);
+        $product = (new ProductModel())->find($product_id);
 
-        // Check if the product exists
-        if ($data['product'] === null) {
+        if ($product === null) {
             return redirect()->to('/products')->with('error', 'Product not found');
         }
 
-        return $this->renderView('banking_view', 'partner/product/product_details_view', $data);
+        return $this->renderView('banking_view', 'partner/product/product_details_view', ['product' => $product]);
     }
 
-    public function productDetails()
+    public function productDetails(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
-        $model = new ProductModel();
-        $data['product_data'] = $model->findAll();
+        $data['product_data'] = (new ProductModel())->findAll();
 
-        return $this->renderView('product_details_view', 'partner/product/product_details',$data);
+        return $this->renderView('product_details_view', 'partner/product/product_details', $data);
     }
-    public function Market()
+
+    public function Market(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
-        $model = new MarketModel();
-        $data['market_previews'] = $model->getMarketPreview();
-        return $this->renderView('market_view', 'partner/dashboard/market',$data);
-    }
-    public function Portfolio()
-    {
-        if (!$this->checkSession()) {
-            return redirect()->to('/customer_login');
-        }
-        $userId = session()->get('user_id');
-
-        $userProfile = $this->partnerModel->getUserById($userId);
-
-        // Pass the data to the view
-        $data = [
-            'userProfile' => $userProfile
-        ];
-
-        $model = new ProductHoldingsModel();
-        $data['product_holdings'] = $model->getProductHoldingsWithIcons();
-
-        return $this->renderView('portfolio_view', 'partner/dashboard/portfolio',$data);
+        $data['market_previews'] = (new MarketModel())->getMarketPreview();
+        return $this->renderView('market_view', 'partner/dashboard/market', $data);
     }
 
-    public function partnerProfile()
+    public function Portfolio(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
         $userId = session()->get('user_id');
 
-        $userProfile = $this->partnerModel->getUserById($userId);
-
-        // Pass the data to the view
         $data = [
-            'userProfile' => $userProfile
+            'userProfile' => $this->partnerModel->getUserById($userId),
+            'product_holdings' => $this->productHoldingsModel->getProductHoldingsWithIcons()
         ];
-        return $this->renderView('partner_profile_view', 'partner/apps/partner_profile',$data);
+
+        return $this->renderView('portfolio_view', 'partner/dashboard/portfolio', $data);
     }
 
-    public function editProfile()
+    public function partnerProfile(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
         $userId = session()->get('user_id');
 
-        $userProfile = $this->partnerModel->getUserById($userId);
-
-        // Pass the data to the view
         $data = [
-            'userProfile' => $userProfile
+            'userProfile' => $this->partnerModel->getUserById($userId),
+            'bankAccount' => (new BankAccountModel())->where('user_id', $userId)->first()
         ];
-        return $this->renderView('market_view', 'partner/apps/partner_edit_profile', $data );
+
+        return $this->renderView('partner_profile_view', 'partner/apps/partner_profile', $data);
     }
 
-    public function updateProfile()
+    public function editProfile(): ResponseInterface
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+        $userId = session()->get('user_id');
+
+        $data = [
+            'userProfile' => $this->partnerModel->getUserById($userId)
+        ];
+        return $this->renderView('market_view', 'partner/apps/partner_edit_profile', $data);
+    }
+
+    public function updateProfile(): ResponseInterface
     {
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
         $userId = session()->get('user_id');
         
-        // Handle profile photo upload
         $profilePhoto = $this->request->getFile('profile_photo');
         $profilePhotoName = null;
         if ($profilePhoto->isValid() && !$profilePhoto->hasMoved()) {
@@ -235,7 +217,7 @@ class PartnerController extends BaseController
             'country' => $this->request->getPost('country'),
             'city' => $this->request->getPost('city'),
             'about_me' => $this->request->getPost('about_me'),
-            'profile_photo' => $profilePhotoName, // Save the new file name
+            'profile_photo' => $profilePhotoName,
             'language' => $this->request->getPost('language'),
             'age' => $this->request->getPost('age'),
             'experience' => $this->request->getPost('experience'),
@@ -247,57 +229,74 @@ class PartnerController extends BaseController
         return redirect()->to('/edit_profile')->with('success', 'Profile updated successfully');
     }
 
+    public function storeBankAccount(): ResponseInterface
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
 
-    /**
-     * Renders content from cache if available, otherwise generates and caches it.
-     *
-     * @param string $cacheKey The cache key to use.
-     * @param callable $contentGenerator A callable that generates the content if cache is missed.
-     * @return string The cached or generated content.
-     */
+        $model = new BankAccountModel();
+        $userId = session()->get('user_id');
+
+        $data = [
+            'user_id' => $userId,
+            'account_number' => $this->request->getPost('account_number'),
+            'ifsc' => $this->request->getPost('ifsc'),
+            'name' => $this->request->getPost('name'),
+            'branch' => $this->request->getPost('branch'),
+            'city' => $this->request->getPost('city'),
+            'state' => $this->request->getPost('state'),
+            'zip' => $this->request->getPost('zip')
+        ];
+
+        foreach ($data as $key => $value) {
+            if (empty($value)) {
+                return redirect()->back()->withInput()->with('error', "The $key field is required.");
+            }
+        }
+
+        $existing = $model->where('user_id', $userId)->first();
+        if ($existing) {
+            $model->update($existing['account_id'], $data);
+        } else {
+            $model->insert($data);
+        }
+
+        return redirect()->to('/partner_profile')->with('success', 'Bank account details saved successfully');
+    }
+
     private function renderCache(string $cacheKey, callable $contentGenerator): string
     {
-        if ($this->useCache) {
-            $cachedContent = $this->cache->get($cacheKey);
-
-            if ($cachedContent === null) {
-                // Cache miss, generate the content
-                $cachedContent = $contentGenerator();
-                // Save the content to the cache
-                $this->cache->save($cacheKey, $cachedContent, $this->cacheTime);
-            }
-
-            return $cachedContent;
-        } else {
-            // Cache disabled, generate the content directly
+        if (!$this->useCache) {
             return $contentGenerator();
         }
+
+        $cachedContent = $this->cache->get($cacheKey);
+
+        if ($cachedContent === null) {
+            $cachedContent = $contentGenerator();
+            $this->cache->save($cacheKey, $cachedContent, $this->cacheTime);
+        }
+
+        return $cachedContent;
     }
 
-    private function renderView(string $cacheKey, string $viewName, array $data = []): string
+    private function renderView(string $cacheKey, string $viewName, array $data = []): ResponseInterface
     {
-        return $this->renderCache($cacheKey, function() use ($viewName, $data) {
-            // Always get user data for every view
+        $content = $this->renderCache($cacheKey, function() use ($viewName, $data) {
             $userData = session()->get('user_data') ?? [];
-            $userData = is_array($userData) && !empty($userData);
-            
-            // Merge $userData with additional data passed to the method
-            $viewData = array_merge(['userData' => $userData], $data);
+            $viewData = ['userData' => !empty($userData)] + $data;
 
-            return view('partner/partner_header', $viewData)
-                . view('partner/partner_sidebar', $viewData)
-                . view($viewName, $viewData);
+            return view('partner/partner_header', $viewData) .
+                   view('partner/partner_sidebar', $viewData) .
+                   view($viewName, $viewData);
         });
+
+        return $this->response->setBody($content);
     }
 
-    /**
-     * Checks if the user session is active.
-     *
-     * @return bool True if the session is active, false otherwise.
-     */
     private function checkSession(): bool
     {
         return session()->has('user_data');
     }
-
 }
