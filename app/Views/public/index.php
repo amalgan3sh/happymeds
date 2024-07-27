@@ -38,7 +38,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 mx-auto align-items-center text-center">
-                <p class="mb-4">Certifications of Our Manufacturing Facility</p>
+                <p class="mb-4">Certifications of Our Collaborated Manufacturing Facility</p>
             </div>
         </div>
         <div class="row align-items-center justify-content-center">
