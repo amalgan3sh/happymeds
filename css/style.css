@@ -835,6 +835,12 @@ progress {
   max-width: 100%;
   height: auto; }
 
+  .product-image {
+    width: 100%; /* Ensure the image fills the container width */
+    height: 200px; /* Set a max height to maintain aspect ratio */
+    object-fit: cover; /* Cover the container, cropping as necessary */
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: var(--bs-body-bg);
@@ -27455,8 +27461,8 @@ table.tb-transaction tbody td {
   .nav .nav-item {
     margin-bottom: 0; } }
 
-@media only screen and (max-width: 74.9375rem) {
-  padding: 0.9375rem 0.625rem; }
+/* @media only screen and (max-width: 74.9375rem) {
+  padding: 0.625rem 1.5625rem; } */
 
 @media only screen and (max-width: 61.9375rem) {
   .coin-details-search .input-group .form-control {

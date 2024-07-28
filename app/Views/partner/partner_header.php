@@ -90,7 +90,7 @@
 		<!--**********************************
             Chat box start
         ***********************************-->
-		<div class="chatbox">
+		<!-- <div class="chatbox">
 			<div class="chatbox-close"></div>
 			<div class="custom-tab-1">
 				<ul class="nav nav-tabs">
@@ -584,11 +584,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<!--**********************************
             Chat box End
         ***********************************-->
-		
+		 
 		<!--**********************************
             Header start
         ***********************************-->
@@ -749,7 +749,7 @@
 								</a>
 							</li>
 							
-							<li class="nav-item dropdown notification_dropdown">
+							<!-- <li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link  menu-wallet" href="javascript:void(0);">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
 										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -759,7 +759,7 @@
 										</g>
 									</svg>
                                 </a>
-							</li>	
+							</li>	 -->
 							<li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link " href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
@@ -843,7 +843,7 @@
                                     <a class="all-notification" href="javascript:void(0);">See all notifications <i class="ti-arrow-end"></i></a>
                                 </div>
                             </li>
-							<li class="nav-item dropdown notification_dropdown">
+							<!-- <li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link bell-link " href="javascript:void(0);">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
 										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -853,8 +853,8 @@
 										</g>
 									</svg>
                                 </a>
-							</li>	
-							<li class="nav-item dropdown notification_dropdown">
+							</li>	 -->
+							<!-- <li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link me-0 " href="javascript:void(0);" data-bs-toggle="dropdown">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
 										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -917,7 +917,7 @@
 										</ul>
 									</div>
 								</div>
-							</li>
+							</li> -->
 							<li>
 								<div class="dropdown header-profile2">
 									<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -930,10 +930,10 @@
 											</div>
 											
 											
-											<?php if (empty($userProfile['profile_photo'])): ?>
+											<?php if (empty($_SESSION['user_data']['profile_photo'])): ?>
 												<img src="images/user.jpg" alt="">
 											<?php else: ?>
-												<img src="<?= esc(base_url('public/uploads/profiles/' . $userProfile['profile_photo'])) ?>" class="img-fluid rounded-circle" alt="">
+												<img src="<?= esc(base_url('public/uploads/profiles/' )) ?><?php echo htmlspecialchars($_SESSION['user_data']['profile_photo']) ?>" class="img-fluid rounded-circle" alt="">
 											<?php endif; ?>
 										</div>
 									</a>

@@ -118,12 +118,19 @@ class PartnerController extends BaseController
         }
 
         $product = (new ProductModel())->find($product_id);
-
+        
         if ($product === null) {
             return redirect()->to('/products')->with('error', 'Product not found');
         }
+        $productModel = new ProductModel();
+        $similarProducts = $productModel->where('product_id !=', $product_id) // Exclude the current product
+                                     ->findAll();
 
-        return $this->renderView('banking_view', 'partner/product/product_details_view', ['product' => $product]);
+        //return $this->renderView('banking_view', 'partner/product/product_details_view', ['product' => $product],$data);
+        return $this->renderView('banking_view', 'partner/product/product_details_view', [
+            'product' => $product,
+            'similarProducts' => $similarProducts,
+        ]);
     }
 
     public function productDetails(): ResponseInterface
@@ -287,13 +294,16 @@ class PartnerController extends BaseController
             $userData = session()->get('user_data') ?? [];
             $viewData = ['userData' => !empty($userData)] + $data;
 
+            // log_message('error', 'userData: ' . print_r($userData, true));
+
             return view('partner/partner_header', $viewData) .
-                   view('partner/partner_sidebar', $viewData) .
-                   view($viewName, $viewData);
+                view('partner/partner_sidebar', $viewData) .
+                view($viewName, $viewData);
         });
 
         return $this->response->setBody($content);
     }
+
 
     private function checkSession(): bool
     {

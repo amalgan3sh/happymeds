@@ -83,7 +83,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="javascript:void(0);" class="btn btn-primary">View Portfolio</a>
+                                            <a href="<?= base_url("/portfolio"); ?>" class="btn btn-primary">View Portfolio</a>
                                         </div>
                                     </div>
                                     <!-- Modal -->
@@ -518,10 +518,10 @@
         <!--**********************************
             Footer start
         ***********************************-->
-       <div class="footer">
+        <div class="footer">
 			<div class="copyright">
-				<p>Copyright © Designed &amp; Developed by <a href="https://dexignlab.com/"
-						target="_blank">DexignLab</a> <span class="current-year">2024</span>
+				<p>Copyright © Designed &amp; Developed by <a href="https://spyderhub.com/"
+						target="_blank">SpyderHub</a> <span class="current-year">2024</span>
 				</p>
 			</div>
 		</div>

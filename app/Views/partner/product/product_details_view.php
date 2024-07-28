@@ -59,20 +59,23 @@
 										<div class="tab-content" id="myTabContent">
 											<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
 												aria-labelledby="home-tab" tabindex="0">
-												<img class="img-fluid rounded  " src="<?php echo base_url('assets/');?>assets/img/products/AMBRO_LS/AMBRO_LS.jpg" alt="">
+												<img class="img-fluid rounded  " src="<?php echo base_url('assets/');?><?= esc($product['product_img_main']) ?>" alt="">
 											</div>
+											<?php
+											// Extract image paths from the comma-separated string
+											$imagePaths = explode(',', esc($product['product_images']));
+
+											// Loop through each image path and create an img element
+												foreach ($imagePaths as $path) {
+												$imagePath = trim($path);
+											?>
 											<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
 												aria-labelledby="profile-tab" tabindex="0">
-												<img class="img-fluid rounded " src="<?php echo base_url('assets/');?>assets/img/products/AMBRO_LS/Slide1.jpg" alt="">
+												<img class="img-fluid rounded " src="<?php echo base_url('assets/');?><?= esc($imagePath) ?>" alt="">
 											</div>
-											<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
-												aria-labelledby="contact-tab" tabindex="0">
-												<img class="img-fluid rounded" src="<?php echo base_url('assets/');?>assets/img/products/AMBRO_LS/Slide3.jpg" alt="">
-											</div>
-											<div class="tab-pane fade" id="end-tab-pane" role="tabpanel"
-												aria-labelledby="end-tab" tabindex="0">
-												<img class="img-fluid rounded" src="<?php echo base_url('assets/');?>assets/img/products/AMBRO_LS/Slide2.jpg" alt="">
-											</div>
+											<?php
+												}
+											?>
 
 										</div>
 										<ul class="nav nav-tabs slide-item-list mt-3" id="myTab" role="tablist">
@@ -80,30 +83,32 @@
 												<a href="#first" class="nav-link active" id="home-tab"
 													data-bs-toggle="tab" data-bs-target="#home-tab-pane" role="tab"
 													aria-controls="home-tab-pane" aria-selected="true"><img
-														class="img-fluid me-2 rounded" src="<?php echo base_url('assets/');?>assets/img/products/AMBRO_LS/AMBRO_LS.jpg" alt=""
+														class="img-fluid me-2 rounded" src="<?php echo base_url('assets/');?><?= esc($product['product_img_main']) ?>" alt=""
 														width="80"></a>
 											</li>
+											<?php
+											// Extract image paths from the comma-separated string
+											$count=0;
+											$imagePaths = explode(',', esc($product['product_images']));
+											
+											$tabNames = ['second', 'third', 'fourth', 'fifth']; // Extend this array as needed
+
+											// Loop through each image path and create an img element
+												foreach ($imagePaths as $path) {
+												$imagePath = trim($path);
+												$tabName = isset($tabNames[$count]) ? $tabNames[$count] : 'other';
+											?>
 											<li class="nav-item" role="presentation">
-												<a href="#second" class="nav-link" id="profile-tab" data-bs-toggle="tab"
+												<a href="#<?= $tabName?>" class="nav-link" id="profile-tab" data-bs-toggle="tab"
 													data-bs-target="#profile-tab-pane" role="tab"
 													aria-controls="profile-tab-pane" aria-selected="false"><img
-														class="img-fluid me-2 rounded" src="<?php echo base_url('assets/');?>assets/img/products/AMBRO_LS/Slide2.jpg" alt=""
+														class="img-fluid me-2 rounded" src="<?php echo base_url('assets/');?><?= esc($imagePath) ?>" alt=""
 														width="80"></a>
 											</li>
-											<li class="nav-item" role="presentation">
-												<a href="#third" class="nav-link" id="contact-tab" data-bs-toggle="tab"
-													data-bs-target="#contact-tab-pane" role="tab"
-													aria-controls="contact-tab-pane" aria-selected="false"><img
-														class="img-fluid me-2 rounded" src="<?php echo base_url('assets/');?>assets/img/products/AMBRO_LS/Slide3.jpg" alt=""
-														width="80"></a>
-											</li>
-											<li class="nav-item" role="presentation">
-												<a href="#for" class="nav-link" id="end-tab" data-bs-toggle="tab"
-													data-bs-target="#end-tab-pane" role="tab"
-													aria-controls="end-tab-pane" aria-selected="false"><img
-														class="img-fluid  rounded" src="<?php echo base_url('assets/');?>assets/img/products/AMBRO_LS/Slide1.jpg" alt=""
-														width="80"></a>
-											</li>
+											<?php
+												$count++;
+											}
+											?>
 
 										</ul>
 									</div>
@@ -219,149 +224,40 @@
 							</div>
 						</div>
 					</div>
-					<div>
-						<h4 class="fs-20 font-w600 my-4">SIMILAR PRODUCTS</h4>
-						<div class="owl-carousel card-slider">
-							<div class="items">
-								<div class="card">
-									<div class="card-body product-grid-card">
-										<div class="new-arrival-product">
-											<div class="new-arrivals-img-contnent">
-												<img class="img-fluid" src="images/product/1.jpg" alt="">
-											</div>
-											<div class="new-arrival-content text-center mt-3">
-												<h4><a href="ecom-product-detail.html">Bonorum et Malorum</a></h4>
-												<ul class="star-rating">
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-												</ul>
-												<del class="discount">$159</del>
-												<span class="price">$761.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="items">
-								<div class="card">
-									<div class="card-body  product-grid-card">
-										<div class="new-arrival-product">
-											<div class="new-arrivals-img-contnent">
-												<img class="img-fluid" src="images/product/2.jpg" alt="">
-											</div>
-											<div class="new-arrival-content text-center mt-3">
-												<h4><a href="ecom-product-detail.html">Bonorum et Malorum</a></h4>
-												<ul class="star-rating">
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-												</ul>
-												<del class="discount">$15</del>
-												<span class="price">$61.00</span>
+					<div class="row">
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="fs-20 font-w600 my-4">SIMILAR PRODUCTS</h4>
+								<div class="owl-carousel card-slider">
+									<?php foreach ($similarProducts as $product): ?>
+										<div class="items">
+											<div class="card">
+												<div class="card-body product-grid-card">
+													<div class="new-arrival-product">
+														<div class="new-arrivals-img-contnent">
+															<img class="img-fluid product-image" src="<?php echo base_url('assets/');?><?= esc($product['product_img_main']) ?>" alt="<?php echo esc($product['ProductName']); ?>">
+														</div>
+														<div class="new-arrival-content text-center mt-3">
+															<h4><a href="<?php echo base_url('product_detail/' . esc($product['product_id'])); ?>"><?php echo esc($product['ProductName']); ?></a></h4>
+															<ul class="star-rating">
+																<?php for ($i = 0; $i < 5; $i++): ?>
+																	<li><i class="fa <?php echo $i < $product['rating'] ? 'fa-star' : 'fa-star-o'; ?>"></i></li>
+																<?php endfor; ?>
+															</ul>
+															
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
-								</div>
-							</div>
-							<div class="items">
-								<div class="card">
-									<div class="card-body product-grid-card">
-										<div class="new-arrival-product">
-											<div class="new-arrivals-img-contnent">
-												<img class="img-fluid" src="images/product/3.jpg" alt="">
-											</div>
-											<div class="new-arrival-content text-center mt-3">
-												<h4><a href="ecom-product-detail.html">Bonorum et Malorum</a></h4>
-												<ul class="star-rating">
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-												</ul>
-												<del class="discount">$25</del>
-												<span class="price">$50.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="items">
-								<div class="card">
-									<div class="card-body product-grid-card">
-										<div class="new-arrival-product">
-											<div class="new-arrivals-img-contnent">
-												<img class="img-fluid" src="images/product/4.jpg" alt="">
-											</div>
-											<div class="new-arrival-content text-center mt-3">
-												<h4><a href="ecom-product-detail.html">Bonorum et Malorum</a></h4>
-												<ul class="star-rating">
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-												</ul>
-												<del class="discount">$4</del>
-												<span class="price">$40.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="items">
-								<div class="card">
-									<div class="card-body product-grid-card">
-										<div class="new-arrival-product">
-											<div class="new-arrivals-img-contnent">
-												<img class="img-fluid" src="images/product/5.jpg" alt="">
-											</div>
-											<div class="new-arrival-content text-center mt-3">
-												<h4><a href="ecom-product-detail.html">Bonorum et Malorum</a></h4>
-												<ul class="star-rating">
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-												</ul>
-												<del class="discount">$5</del>
-												<span class="price">$30.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="items">
-								<div class="card">
-									<div class="card-body product-grid-card">
-										<div class="new-arrival-product">
-											<div class="new-arrivals-img-contnent">
-												<img class="img-fluid" src="images/product/6.jpg" alt="">
-											</div>
-											<div class="new-arrival-content text-center mt-3">
-												<h4><a href="ecom-product-detail.html">Bonorum et Malorum</a></h4>
-												<ul class="star-rating">
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa fa-star"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-													<li><i class="fa-solid fa-star-half-stroke"></i></li>
-												</ul>
-												<del class="discount">$10</del>
-												<span class="price">$20.00</span>
-											</div>
-										</div>
-									</div>
+									<?php endforeach; ?>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+
 				</div>
 			</div>
 		</div>
@@ -373,10 +269,10 @@
         <!--**********************************
             Footer start
         ***********************************-->
-       <div class="footer">
+		<div class="footer">
 			<div class="copyright">
-				<p>Copyright © Designed &amp; Developed by <a href="https://dexignlab.com/"
-						target="_blank">DexignLab</a> <span class="current-year">2024</span>
+				<p>Copyright © Designed &amp; Developed by <a href="https://spyderhub.com/"
+						target="_blank">SpyderHub</a> <span class="current-year">2024</span>
 				</p>
 			</div>
 		</div>
