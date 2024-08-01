@@ -123,7 +123,7 @@
             <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="<?php echo base_url('assets/');?>assets/img/illustrations/laptop.png" width="550" alt="" /></div>
             <div class="col-md-6 text-center text-md-start offset-md-1">
               <h6 class="fw-bold fs-4 display-3 lh-sm">Transforming Healthcare<br />with Innovative Solutions</h6>
-              <p class="my-4 pe-xl-5"> Experience the future of healthcare with Happymed's cutting-edge platform, designed and built using the latest code integration. Revolutionize the way you manage investments and access healthcare services with our seamless and intuitive solutions.</p><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Learn more</a>
+              <p class="my-4 pe-xl-5"> Experience the future of healthcare with Aranea's cutting-edge platform, designed and built using the latest code integration. Revolutionize the way you manage investments and access healthcare services with our seamless and intuitive solutions.</p><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Learn more</a>
             </div>
           </div>
         </div>
@@ -143,8 +143,8 @@
         <div class="container">
           <div class="row justify-content-center mb-6">
             <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
-              <h6 class="fw-bold fs-4 display-3 lh-sm">Why Choose <br />Happymed's Platform</h6>
-              <p class="mb-0">Experience the power of Happymed's platform, designed to elevate your healthcare investments and ecommerce ventures. Here's why Happymed stands out:</p>
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Why Choose <br />Aranea</h6>
+              <p class="mb-0">Experience the power of Aranea, designed to elevate your healthcare investments and ecommerce ventures. Here's why Aranea stands out:</p>
             </div>
           </div>
           <div class="row">
@@ -157,7 +157,7 @@
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/time-award.png" width="90" alt="" />
                 <h5 class="fw-bold">Reliable Performance</h5>
-                <p class="mb-md-0">Count on Happymed for reliable performance, ensuring consistent and dependable service to meet your healthcare and ecommerce needs.</p>
+                <p class="mb-md-0">Count on Aranea for reliable performance, ensuring consistent and dependable service to meet your healthcare and ecommerce needs.</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
@@ -169,19 +169,19 @@
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/customization.png" width="90" alt="" />
                 <h5 class="fw-bold">Tailored Solutions</h5>
-                <p class="mb-md-0">Customize your experience with Happymed's tailored solutions, ensuring that your healthcare investments and ecommerce ventures meet your unique needs and requirements.</p>
+                <p class="mb-md-0">Customize your experience with Aranea's tailored solutions, ensuring that your healthcare investments and ecommerce ventures meet your unique needs and requirements.</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/ux.png" width="90" alt="" />
                 <h5 class="fw-bold">User Experience Design</h5>
-                <p class="mb-md-0">Benefit from Happymed's user-centric design approach, ensuring a seamless and intuitive user experience across all aspects of our platform.</p>
+                <p class="mb-md-0">Benefit from Aranea's user-centric design approach, ensuring a seamless and intuitive user experience across all aspects of our platform.</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/support.png" width="90" alt="" />
                 <h5 class="fw-bold">Customer Support</h5>
-                <p class="mb-md-0">Receive dedicated support from Happymed's team of experts, ensuring that you have the assistance you need every step of the way.</p>
+                <p class="mb-md-0">Receive dedicated support from Aranea's team of experts, ensuring that you have the assistance you need every step of the way.</p>
               </div>
             </div>
           </div>

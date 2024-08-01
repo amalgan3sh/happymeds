@@ -9,6 +9,7 @@ use App\Models\{
     ProductModel,
     ProductHoldingsModel,
     BankAccountModel,
+    InvestmentModel
 };
 use CodeIgniter\Cache\CacheInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -20,6 +21,7 @@ class PartnerController extends BaseController
     protected bool $useCache;
     protected int $cacheTime;
     protected ProductHoldingsModel $productHoldingsModel;
+    protected InvestmentModel $investmentModel;
 
     public function __construct()
     {
@@ -28,6 +30,7 @@ class PartnerController extends BaseController
         $this->productHoldingsModel = new ProductHoldingsModel();
         $this->useCache = getenv('CI_ENVIRONMENT') === 'production';
         $this->cacheTime = (int)(getenv('CI_CACHE_TIME') ?: 600);
+        $this->investmentModel = new InvestmentModel();
     }
 
     public function partnerHome(): ResponseInterface
@@ -101,8 +104,10 @@ class PartnerController extends BaseController
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
-        
-        return $this->renderView('banking_view', 'partner/product/product_invest');
+        $product_id = $this->request->getGet('product_id');
+        $product = (new ProductModel())->find($product_id);
+
+        return $this->renderView('banking_view', 'partner/product/product_invest',['product' => $product]);
     }
 
     public function ProductDetailsView(): ResponseInterface
@@ -309,4 +314,40 @@ class PartnerController extends BaseController
     {
         return session()->has('user_data');
     }
+
+    public function select_plan()
+    {
+
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+
+        // Get data from POST request
+        $plan = $this->request->getPost('plan');
+        $product_id = $this->request->getPost('product_id');
+        $user_id = $this->request->getPost('user_id');
+
+        // Prepare data for database insertion
+        $data = [
+            'plan' => $plan,
+            'product_id' => $product_id,
+            'user_id' => $user_id,
+            'time_stamp' => date('Y-m-d H:i:s')
+        ];
+
+        if ($this->investmentModel->save($data)) {
+            $response = [
+                'status' => 'success',
+                'message' => 'Subscription Request Has been Submitted, Our Team Will Get Back To You. Thank You!',
+            ];
+        } else {
+            $response = [
+                'status' => 'error',
+                'message' => 'There was a problem saving your plan. Please try again.',
+            ];
+        }
+
+        return $this->response->setJSON($response);
+    }
+    
 }

@@ -165,7 +165,7 @@
 												
 													<!--Quanatity End-->
 													<div class="shopping-cart  me-3 mt-xl-0 mt-2">
-														<a class="btn btn-primary" href="<?php echo base_url('product_invest') ?>"><i
+														<a class="btn btn-primary"  href="<?php echo base_url('product_invest?product_id='.$product['product_id']) ?>"><i
 																class="fa fa-shopping-basket me-2"></i>Are you intrested to be a brand partner?</a>
 													</div>
 												</div>

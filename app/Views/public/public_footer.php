@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Initial bot message and FAQ prompts
-  addMessage("Hello! How can I assist you with HappyMed's platform today? You can also click on the prompts below for quick answers to common questions.");
+  addMessage("Hello! How can I assist you with Aranea's platform today? You can also click on the prompts below for quick answers to common questions.");
   createFAQPrompts();
 });
 </script>

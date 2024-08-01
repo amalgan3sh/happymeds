@@ -358,22 +358,60 @@
 												</ul>
 											</div>	
 											<div id="marketCharts" class="market-line">
-											<script type="text/javascript">
-												trends.embed.renderExploreWidget("TIMESERIES", {
+											
+									<script type="text/javascript">
+										(function() {
+											var script = document.createElement('script');
+											script.type = 'text/javascript';
+											script.async = true;
+											script.src = 'https://ssl.gstatic.com/trends_nrtr/2080_RC01/embed_loader.js';
+											var s = document.getElementsByTagName('script')[0];
+											s.parentNode.insertBefore(script, s);
+										})();
+
+										// Function to render the chart based on the selected time frame
+										function renderChart(timeFrame) {
+											document.getElementById('marketCharts').innerHTML = '';
+											var widgetDiv1 = document.createElement('div');
+											document.getElementById('marketCharts').appendChild(widgetDiv1);
+
+											trends.embed.renderExploreWidget(
+
+												"TIMESERIES", 
+												{
 													"comparisonItem": [
-														{"keyword":"Pharmaceutical","geo":"","time":"today 5-y"},
-														{"keyword":"cosmetics","geo":"","time":"today 5-y"},
-														{"keyword":"healthcare","geo":"","time":"today 5-y"},
-														{"keyword":"cosmaceuticals","geo":"","time":"today 5-y"},
-														{"keyword":"surgicals","geo":"","time":"today 5-y"}
+														{"keyword":"Pharmaceutical","geo":"","time":timeFrame},
+														{"keyword":"cosmetics","geo":"","time":timeFrame},
+														{"keyword":"healthcare","geo":"","time":timeFrame},
+														{"keyword":"cosmaceuticals","geo":"","time":timeFrame},
+														{"keyword":"surgicals","geo":"","time":timeFrame}
 													],
 													"category": 0,
 													"property": ""
-												}, {
-													"exploreQuery": "date=today%205-y&q=Pharmaceutical,cosmetics,healthcare,cosmaceuticals,surgicals&hl=en",
+												}, 
+												{
+													"exploreQuery": `date=${timeFrame}&q=Pharmaceutical,cosmetics,healthcare,cosmaceuticals,surgicals&hl=en`,
 													"guestPath": "https://trends.google.com:443/trends/embed/"
-												});
-											</script>
+												}
+											);
+										}
+
+										// Event listeners for the tabs
+										document.getElementById('market-week-tab').addEventListener('click', function() {
+											renderChart('now 7-d');
+										});
+
+										document.getElementById('market-month-tab').addEventListener('click', function() {
+											renderChart('today 1-m');
+										});
+
+										document.getElementById('market-year-tab').addEventListener('click', function() {
+											renderChart('today 12-m');
+										});
+
+										// Initial render for the default active tab (week)
+										renderChart('now 7-d');
+									</script>
 
 											</div> 
 										</div>

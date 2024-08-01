@@ -39,6 +39,8 @@ $routes->get('product_details_view', 'PartnerController::ProductDetailsView');
 $routes->get('product_invest', 'PartnerController::ProductInvest');
 $routes->post('/store_bank_account', 'PartnerController::storeBankAccount');
 
+$routes->post('select_plan', 'PartnerController::select_plan');
+
 
 
 //auth
