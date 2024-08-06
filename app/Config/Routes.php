@@ -23,6 +23,11 @@ $routes->get('supplier_details', 'PublicController::SupplierDetails');
 $routes->get('b2b_partner_details', 'PublicController::B2BPartnerDetails');
 $routes->post('product_favorite', 'PartnerController::addFavorite');
 
+//Google Login
+$routes->post('/google_login_process', 'GoogleLogin::loginProcess');
+$routes->get('/google_login', 'GoogleLogin::login');
+$routes->get('/logout', 'GoogleLogin::logout');
+
 //partner-routes
 $routes->get('partner_home', 'PartnerController::partnerHome');
 $routes->get('product_details', 'PartnerController::productDetails');

@@ -27,8 +27,8 @@
                         </div>
                         <div class="mb-3">
                             <div id="g_id_onload"
-                                data-client_id="484079248335-d4kd454b6p9cu9uesk3618b93fj347cl.apps.googleusercontent.com"
-                                data-callback="handleCredentialResponse">
+                                 data-client_id="553520280062-2cjp0c7c2if534jmsvb9bdnbrs48c4v2.apps.googleusercontent.com"
+                                 data-callback="handleCredentialResponse">
                             </div>
                             <div class="g_id_signin" data-type="standard"></div>
                         </div>
@@ -41,6 +41,7 @@
     </section>
 </main>
 
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 <script>
   // Function to handle OTP request
   function requestOTP() {
@@ -50,33 +51,45 @@
   }
 
   // Function to handle Google login success
-  function onSuccess(googleUser) {
-    const profile = googleUser.getBasicProfile();
-    const id_token = googleUser.getAuthResponse().id_token;
+  function handleCredentialResponse(response) {
+    // Parse JWT to get user details
+    const responsePayload = decodeJwtResponse(response.credential);
 
     // Log user details to the console
-    console.log('ID Token: ' + id_token);
-    console.log('Full Name: ' + profile.getName());
-    console.log('Given Name: ' + profile.getGivenName());
-    console.log('Family Name: ' + profile.getFamilyName());
-    console.log('Email: ' + profile.getEmail());
+    console.log('ID: ' + responsePayload.sub);
+    console.log('Full Name: ' + responsePayload.name);
+    console.log('Given Name: ' + responsePayload.given_name);
+    console.log('Family Name: ' + responsePayload.family_name);
+    console.log('Image URL: ' + responsePayload.picture);
+    console.log('Email: ' + responsePayload.email);
 
     // Send the user's information to your server-side script
     const xhr = new XMLHttpRequest();
     xhr.open('POST', '<?php echo base_url('google_login_process'); ?>');
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onload = function() {
-        if (xhr.status === 200) {
+      if (xhr.status === 200) {
         // Handle successful login here (e.g., redirect to dashboard)
         window.location.href = '<?php echo base_url('dashboard'); ?>';
-        } else {
+      } else {
         // Handle login failure
         console.error('Login failed: ' + xhr.responseText);
         // Redirect to registration page
         window.location.href = '<?php echo base_url('brand_partner_registration'); ?>';
-        }
+      }
     };
-    xhr.send('id_token=' + id_token + '&email=' + profile.getEmail() + '&name=' + profile.getName());
+    xhr.send('id_token=' + response.credential + '&email=' + responsePayload.email + '&name=' + responsePayload.name);
+  }
+
+  function decodeJwtResponse(token) {
+    // Base64 decode JWT
+    const base64Url = token.split('.')[1];
+    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+      return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+
+    return JSON.parse(jsonPayload);
   }
 
   function onFailure(error) {
@@ -89,21 +102,4 @@
       errorMessage.textContent = 'An error occurred during sign-in. Please try again.';
     }
   }
-
-  function renderButton() {
-    gapi.signin2.render('my-signin2', {
-      'scope': 'profile email',
-      'width': 240,
-      'height': 50,
-      'longtitle': true,
-      'theme': 'dark',
-      'onsuccess': onSuccess,
-      'onfailure': onFailure
-    });
-  }
-
-  // Initialize the Google Sign-In button
-  window.onload = function() {
-    renderButton();
-  };
 </script>
