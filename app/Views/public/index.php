@@ -221,6 +221,7 @@
                             <li class="py-2 text-secondary">Exclusive B2B pricing</li>
                             <li class="py-2 text-secondary">Easy bulk ordering</li>
                             <li class="py-2 text-secondary">Dedicated customer support</li>
+                            <li class="py-2 text-secondary"><a class="" style="" href="<?php echo base_url('b2b_partner_details') ?>">More Details...</a></li>
                         </ul>
                         <div class="mt-auto">
                             <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="https://user.lakshmipharmaceuticals.com/">Register Now</a>
@@ -241,6 +242,7 @@
                             <li class="py-2 text-secondary">Competitive pricing strategies</li>
                             <li class="py-2 text-secondary">Marketing and sales support</li>
                             <li class="py-2 text-secondary">Reliable logistics and distribution</li>
+                            <li class="py-2 text-secondary"><a class="" style="" href="<?php echo base_url('supplier_details') ?>">More Details...</a></li>
                         </ul>
                         <div class="mt-auto">
                             <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="https://user.lakshmipharmaceuticals.com/">Register Now</a>
@@ -261,6 +263,7 @@
                             <li class="py-2 text-secondary">Access to exclusive product lines</li>
                             <li class="py-2 text-secondary">Sales and marketing support</li>
                             <li class="py-2 text-secondary">Training and development opportunities</li>
+                            <li class="py-2 text-secondary"><a class="" style="" href="<?php echo base_url('agent_details') ?>">More Details...</a></li>
                         </ul>
                         <div class="mt-auto">
                             <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="https://user.lakshmipharmaceuticals.com/">Register Now</a>
@@ -281,6 +284,7 @@
                             <li class="py-2 text-secondary">Earn benefits on B2B orders</li>
                             <li class="py-2 text-secondary">5-year subscription plan</li>
                             <li class="py-2 text-secondary">Turnover benefits</li>
+                            <li><a class="" style="" href="<?php echo base_url('brand_partner_details') ?>">More Details...</a></li>
                         </ul>
                         <div class="mt-auto">
                             <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="<?php echo base_url('brand_partner_registration') ?>">Register Now</a>
