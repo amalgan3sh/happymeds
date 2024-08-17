@@ -1,2 +1,3 @@
 /writable
 .env
+app/Config/Email.php

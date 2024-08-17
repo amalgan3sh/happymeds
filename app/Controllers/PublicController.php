@@ -2,7 +2,10 @@
 
 namespace App\Controllers;
 
-use App\Models\RegistrationModel;
+use App\Models\{
+    RegistrationModel,
+    SupportModel
+};
 use CodeIgniter\HTTP\ResponseInterface;
 
 class PublicController extends BaseController
@@ -11,9 +14,11 @@ class PublicController extends BaseController
     protected $cache;
     protected $useCache;
     protected $cacheTime;
+    protected SupportModel $supportModel;
 
     public function __construct() {
         $this->RegistrationModel = new RegistrationModel();
+        $this->supportModel = new SupportModel();
         $this->cache = \Config\Services::cache(); // Load the cache service
         $this->useCache = getenv('CI_ENVIRONMENT') === 'production'; // Only use cache in production
         $this->cacheTime = getenv('CI_CACHE_TIME') ? (int)getenv('CI_CACHE_TIME') : 600; // Cache time in seconds (10 minutes)
@@ -222,7 +227,7 @@ class PublicController extends BaseController
             return redirect()->to('/customer_login');
         }
     }
-
+    
     /**
      * Renders content from cache if available, otherwise generates and caches it.
      *
@@ -266,4 +271,11 @@ class PublicController extends BaseController
             return $content;
         });
     }
+
+
+    /*
+        Support Request 
+    */
+
+    
 }

@@ -22,6 +22,7 @@ $routes->get('agent_details', 'PublicController::AgentDetails');
 $routes->get('supplier_details', 'PublicController::SupplierDetails');
 $routes->get('b2b_partner_details', 'PublicController::B2BPartnerDetails');
 $routes->post('product_favorite', 'PartnerController::addFavorite');
+$routes->post('support_request', 'PartnerController::submitSupportRequest');
 
 //Google Login
 $routes->post('/google_login_process', 'GoogleLogin::loginProcess');

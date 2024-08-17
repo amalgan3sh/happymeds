@@ -1,27 +1,30 @@
+
 <?php
-
-namespace App\Models;
-
-use CodeIgniter\Model;
-
-class GoogleLoginModel extends Model
+class Google_login_model extends CI_Model
 {
-    protected $table = 'users'; // Your users table name
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['login_oauth_uid', 'first_name', 'last_name', 'email_address', 'profile_picture', 'created_at', 'updated_at'];
+ function Is_already_register($id)
+ {
+  $this->db->where('login_oauth_uid', $id);
+  $query = $this->db->get('chat_user');
+  if($query->num_rows() > 0)
+  {
+   return true;
+  }
+  else
+  {
+   return false;
+  }
+ }
 
-    public function isAlreadyRegistered($id)
-    {
-        return $this->where('login_oauth_uid', $id)->first() !== null;
-    }
+ function Update_user_data($data, $id)
+ {
+  $this->db->where('login_oauth_uid', $id);
+  $this->db->update('chat_user', $data);
+ }
 
-    public function updateUserData($data, $id)
-    {
-        return $this->where('login_oauth_uid', $id)->set($data)->update();
-    }
-
-    public function insertUserData($data)
-    {
-        return $this->insert($data);
-    }
+ function Insert_user_data($data)
+ {
+  $this->db->insert('chat_user', $data);
+ }
 }
+?>

@@ -225,7 +225,7 @@
 						</div>
 						<div class="info">
 							<p>Aranea - Healthcare Platform</p>
-							<a href="javascript:void(0);" class="btn bg-white text-black w-75 btn-sm">Supports</a>
+							<a href="javascript:void(0);" class="btn bg-white text-black w-75 btn-sm" id="supportButton">Supports</a>
 						</div>
 					</div>
 					<div class="copyright">
@@ -238,3 +238,112 @@
         <!--**********************************
             Sidebar end
         ***********************************-->
+
+		<!-- Support Modal -->
+		<div id="supportModal" class="support-modal">
+    <div class="support-modal-content">
+        <span class="close">&times;</span>
+        <h2>Support</h2>
+        <form id="supportForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" id="submitBtn">Submit</button>
+            <div id="loading" style="display: none;">Loading...</div>
+            <div id="responseMessage" style="margin-top: 10px;"></div>
+        </form>
+    </div>
+</div>
+
+
+
+
+<script>
+    // Get modal element
+    var modal = document.getElementById("supportModal");
+
+    // Get open modal button
+    var btn = document.getElementById("supportButton");
+
+    // Get close button
+    var span = document.getElementsByClassName("close")[0];
+
+    // Listen for open click
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // Listen for close click
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // Close modal if user clicks outside of the modal
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>
+
+<script>
+	document.getElementById("supportForm").onsubmit = function(event) {
+    event.preventDefault();
+
+    var submitBtn = document.getElementById("submitBtn");
+    var loading = document.getElementById("loading");
+    var responseMessage = document.getElementById("responseMessage");
+
+    // Show loading indicator and disable submit button
+	submitBtn.style.display = "none";
+    loading.style.display = "block";
+
+    var formData = new FormData();
+    formData.append('name', document.getElementById("name").value);
+    formData.append('email', document.getElementById("email").value);
+    formData.append('message', document.getElementById("message").value);
+
+    fetch('support_request', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Hide loading indicator
+        loading.style.display = "none";
+        submitBtn.disabled = false;
+
+        // Set the message and color based on success or failure
+        if(data.status === 'success') {
+            responseMessage.style.color = 'green';
+            responseMessage.innerHTML = data.message;
+            document.getElementById("supportForm").reset();
+        } else {
+            responseMessage.style.color = 'red';
+            responseMessage.innerHTML = data.message;
+        }
+    })
+    .catch(error => {
+        // Hide loading indicator and enable submit button
+        loading.style.display = "none";
+        submitBtn.disabled = false;
+
+        // Display error message in red
+        responseMessage.style.color = 'red';
+        responseMessage.innerHTML = 'An error occurred. Please try again later.';
+        console.error('Error:', error);
+    });
+};
+
+
+</script>

@@ -1,72 +1,98 @@
+
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-namespace App\Controllers;
+class Google_login extends CI_Controller {
 
-use App\Models\GoogleLoginModel;
-use CodeIgniter\Controller;
+ public function __construct()
+ {
+  parent::__construct();
+  $this->load->model('google_login_model');
+ }
 
-class GoogleLogin extends Controller
-{
-    protected $googleLoginModel;
+ function login()
+ {
+  include_once APPPATH . "libraries/vendor/autoload.php";
 
-    public function __construct()
+  $google_client = new Google_Client();
+
+  $google_client->setClientId(''); //Define your ClientID
+
+  $google_client->setClientSecret(''); //Define your Client Secret Key
+
+  $google_client->setRedirectUri(''); //Define your Redirect Uri
+
+  $google_client->addScope('email');
+
+  $google_client->addScope('profile');
+
+  if(isset($_GET["code"]))
+  {
+   $token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
+
+   if(!isset($token["error"]))
+   {
+    $google_client->setAccessToken($token['access_token']);
+
+    $this->session->set_userdata('access_token', $token['access_token']);
+
+    $google_service = new Google_Service_Oauth2($google_client);
+
+    $data = $google_service->userinfo->get();
+
+    $current_datetime = date('Y-m-d H:i:s');
+
+    if($this->google_login_model->Is_already_register($data['id']))
     {
-        $this->googleLoginModel = new GoogleLoginModel();
+     //update data
+     $user_data = array(
+      'first_name' => $data['given_name'],
+      'last_name'  => $data['family_name'],
+      'email_address' => $data['email'],
+      'profile_picture'=> $data['picture'],
+      'updated_at' => $current_datetime
+     );
 
+     $this->google_login_model->Update_user_data($user_data, $data['id']);
     }
-
-    public function loginProcess()
+    else
     {
-        $id_token = $this->request->getPost('id_token');
-        $email = $this->request->getPost('email');
-        $name = $this->request->getPost('name');
+     //insert data
+     $user_data = array(
+      'login_oauth_uid' => $data['id'],
+      'first_name'  => $data['given_name'],
+      'last_name'   => $data['family_name'],
+      'email_address'  => $data['email'],
+      'profile_picture' => $data['picture'],
+      'created_at'  => $current_datetime
+     );
 
-        // Verify the ID token with Google
-        $client = new \Google_Client(['client_id' => 'YOUR_CLIENT_ID.apps.googleusercontent.com']); 
-        $payload = $client->verifyIdToken($id_token);
-        if ($payload) {
-            $userid = $payload['sub'];
-
-            $current_datetime = date('Y-m-d H:i:s');
-
-            // Check if the user is already registered
-            if ($this->googleLoginModel->isAlreadyRegistered($userid)) {
-                // Update user data
-                $userData = [
-                    'first_name' => $payload['given_name'],
-                    'last_name' => $payload['family_name'],
-                    'email_address' => $payload['email'],
-                    'profile_picture' => $payload['picture'],
-                    'updated_at' => $current_datetime
-                ];
-
-                $this->googleLoginModel->updateUserData($userData, $userid);
-            } else {
-                // Insert new user data
-                $userData = [
-                    'login_oauth_uid' => $userid,
-                    'first_name' => $payload['given_name'],
-                    'last_name' => $payload['family_name'],
-                    'email_address' => $payload['email'],
-                    'profile_picture' => $payload['picture'],
-                    'created_at' => $current_datetime
-                ];
-
-                $this->googleLoginModel->insertUserData($userData);
-            }
-
-            // Set user data in session
-            session()->set('user_data', $userData);
-            return redirect()->to('/dashboard');
-        } else {
-            // Invalid ID token
-            return redirect()->to('/brand_partner_registration')->with('error', 'Invalid ID token.');
-        }
+     $this->google_login_model->Insert_user_data($user_data);
     }
+    $this->session->set_userdata('user_data', $user_data);
+   }
+  }
+  $login_button = '';
+  if(!$this->session->userdata('access_token'))
+  {
+   $login_button = '<a href="'.$google_client->createAuthUrl().'"><img src="'.base_url().'asset/sign-in-with-google.png" /></a>';
+   $data['login_button'] = $login_button;
+   $this->load->view('google_login', $data);
+  }
+  else
+  {
+   $this->load->view('google_login', $data);
+  }
+ }
 
-    public function logout()
-    {
-        session()->remove('user_data');
-        return redirect()->to('/google_login');
-    }
+ function logout()
+ {
+  $this->session->unset_userdata('access_token');
+
+  $this->session->unset_userdata('user_data');
+
+  redirect('google_login/login');
+ }
+ 
 }
+?>

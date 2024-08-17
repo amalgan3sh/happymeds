@@ -6,9 +6,20 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
-    public string $fromEmail  = '';
-    public string $fromName   = '';
-    public string $recipients = '';
+    public $fromEmail  = 'aswinramesh.asr@gmail.com';  // Your email address
+    public $fromName   = 'Aswin';               // Your name
+    public $recipients = '';                        // Default recipients (if any)
+
+    public $protocol = 'smtp';
+    public $SMTPHost = 'smtp.gmail.com';  // Replace with your SMTP host
+    public $SMTPUser = 'aswinramesh.asr@gmail.com';  // Replace with your SMTP username
+    public $SMTPPass = 'nrnneeddztewadtl';  // Replace with your SMTP password
+    public $SMTPPort = 587 ;  // Replace with your SMTP port, use 465 for SSL
+    public $SMTPCrypto = 'tls';  // Use 'ssl' if your SMTP server requires it
+
+    public $mailType = 'html';
+    public $charset  = 'UTF-8';
+    public $wordWrap = true;
 
     /**
      * The "user agent"
@@ -18,32 +29,11 @@ class Email extends BaseConfig
     /**
      * The mail sending protocol: mail, sendmail, smtp
      */
-    public string $protocol = 'mail';
 
     /**
      * The server path to Sendmail.
      */
     public string $mailPath = '/usr/sbin/sendmail';
-
-    /**
-     * SMTP Server Hostname
-     */
-    public string $SMTPHost = '';
-
-    /**
-     * SMTP Username
-     */
-    public string $SMTPUser = '';
-
-    /**
-     * SMTP Password
-     */
-    public string $SMTPPass = '';
-
-    /**
-     * SMTP Port
-     */
-    public int $SMTPPort = 25;
 
     /**
      * SMTP Timeout (in seconds)
@@ -55,35 +45,15 @@ class Email extends BaseConfig
      */
     public bool $SMTPKeepAlive = false;
 
-    /**
-     * SMTP Encryption.
-     *
-     * @var string '', 'tls' or 'ssl'. 'tls' will issue a STARTTLS command
-     *             to the server. 'ssl' means implicit SSL. Connection on port
-     *             465 should set this to ''.
-     */
-    public string $SMTPCrypto = 'tls';
-
-    /**
-     * Enable word-wrap
-     */
-    public bool $wordWrap = true;
-
+    
+    
     /**
      * Character count to wrap at
      */
     public int $wrapChars = 76;
 
-    /**
-     * Type of mail, either 'text' or 'html'
-     */
-    public string $mailType = 'text';
-
-    /**
-     * Character set (utf-8, iso-8859-1, etc.)
-     */
-    public string $charset = 'UTF-8';
-
+    
+    
     /**
      * Whether to validate the email address
      */

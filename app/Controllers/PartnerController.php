@@ -9,7 +9,9 @@ use App\Models\{
     ProductModel,
     ProductHoldingsModel,
     BankAccountModel,
-    InvestmentModel
+    InvestmentModel,
+    SupportModel,
+    ActivityModel
 };
 use CodeIgniter\Cache\CacheInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -22,6 +24,8 @@ class PartnerController extends BaseController
     protected int $cacheTime;
     protected ProductHoldingsModel $productHoldingsModel;
     protected InvestmentModel $investmentModel;
+    protected SupportModel $supportModel;
+    protected ActivityModel $activityModel;
 
     public function __construct()
     {
@@ -31,6 +35,8 @@ class PartnerController extends BaseController
         $this->useCache = getenv('CI_ENVIRONMENT') === 'production';
         $this->cacheTime = (int)(getenv('CI_CACHE_TIME') ?: 600);
         $this->investmentModel = new InvestmentModel();
+        $this->supportModel = new SupportModel();
+        $this->activityModel = new ActivityModel();
     }
 
     public function partnerHome(): ResponseInterface
@@ -166,8 +172,13 @@ class PartnerController extends BaseController
 
         $data = [
             'userProfile' => $this->partnerModel->getUserById($userId),
-            'product_holdings' => $this->productHoldingsModel->getProductHoldingsWithIcons()
+            'product_holdings' => $this->productHoldingsModel->getProductHoldingsWithIcons(),
+            'recent_activity_yesterday' => $this->activityModel->yesterdaysActivityByUserId($userId),
+            'recent_activity' => $this->activityModel->getActivityByUserId($userId)
         ];
+
+        // Log the data
+        log_message('info', 'Portfolio Data: ' . print_r($data, true));
 
         return $this->renderView('portfolio_view', 'partner/dashboard/portfolio', $data);
     }
@@ -344,6 +355,61 @@ class PartnerController extends BaseController
             $response = [
                 'status' => 'error',
                 'message' => 'There was a problem saving your plan. Please try again.',
+            ];
+        }
+
+        return $this->response->setJSON($response);
+    }
+
+    public function submitSupportRequest()
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+
+        // Get data from POST request
+        $name = $this->request->getPost('name');
+        $email = $this->request->getPost('email');
+        $message = $this->request->getPost('message');
+
+        // Prepare data for database insertion
+        $data = [
+            'name' => $name,
+            'email' => $email, 
+            'message' => $message,
+            'created_at' => date('Y-m-d H:i:s')
+        ];
+
+        if ($this->supportModel->insert($data)) {
+            // Load the email library
+            $email = \Config\Services::email();
+            
+            $email->setFrom($data['email'], $data['name']);
+            $email->setTo('aswin.kncs@gmail.com'); // Replace with the support team's email address
+            
+            $email->setSubject('New Support Request');
+            $email->setMessage("
+                You have received a new support request. Here are the details:<br><br>
+                <strong>Name:</strong> {$data['name']}<br>
+                <strong>Email:</strong> {$data['email']}<br>
+                <strong>Message:</strong> {$data['message']}
+            ");
+            
+            if ($email->send()) {
+                $response = [
+                    'status' => 'success',
+                    'message' => 'Support request submitted and email sent successfully!'
+                ];
+            } else {
+                $response = [
+                    'status' => 'error',
+                    'message' => 'Support request submitted, but failed to send email.'
+                ];
+            }
+        } else {
+            $response = [
+                'status' => 'error',
+                'message' => 'An error occurred while submitting your request.'
             ];
         }
 

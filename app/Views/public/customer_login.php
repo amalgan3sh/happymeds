@@ -26,11 +26,9 @@
                             <button class="btn btn-primary w-100" onclick="requestOTP()">Login with OTP</button>
                         </div>
                         <div class="mb-3">
-                            <div id="g_id_onload"
-                                 data-client_id="553520280062-2cjp0c7c2if534jmsvb9bdnbrs48c4v2.apps.googleusercontent.com"
-                                 data-callback="handleCredentialResponse">
-                            </div>
-                            <div class="g_id_signin" data-type="standard"></div>
+                        <div class="panel panel-default">
+                        
+                        </div>
                         </div>
                         <div class="text-center mb-3">Not registered yet? <a href="<?php echo base_url('brand_partner_registration'); ?>">Register as Brand partner</a></div>
                         <div id="error-message" class="text-danger mt-3"></div> <!-- Error message container -->
