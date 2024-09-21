@@ -141,6 +141,22 @@ class PublicController extends BaseController
 
         return redirect()->to('/customer_registration');
     }
+    public function publicLogin(): string
+    {
+        return $this->renderView('public_login_view', [
+            'public/public_header',
+            'public/public_login',
+            'public/public_footer'
+        ]);
+    }
+    public function publicRegisteration(): string
+    {
+        return $this->renderView('public_login_view', [
+            'public/public_header',
+            'public/public_register',
+            'public/public_footer'
+        ]);
+    }
 
     public function register_brand_partner(): ResponseInterface
     {

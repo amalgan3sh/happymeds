@@ -1,32 +1,111 @@
-
-
 <section class="py-0" id="home">
-    <div class="bg-holder" style="background-image:url(<?php echo base_url('assets/');?>assets/img/illustrations/LANDING_BG.jpg);background-position:bottom;background-size:cover;">
-    </div>
-    <!--/.bg-holder-->
-
     <div class="container position-relative">
         <div class="row align-items-center py-8">
-            <div class="col-md-5 col-lg-9 order-md-1 text-center text-md-end">
-                <img class="img-fluid responsive-img" src="<?php echo base_url('assets/');?>assets/img/illustrations/dash-ne.png" width="350" alt="" />
-            </div>            
-            <div class="col-md-7 col-lg-7 text-center text-md-start">
-                <span class="badge bg-light rounded-pill text-dark align-items-center d-flex flex-row-reverse justify-content-end mx-auto mx-md-0 ps-0 w-75 w-sm-50 w-md-75 w-xl-50 mb-3">#1 in Global Healthcare Solutions<img class="img-fluid float-start me-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/arrow-right.png" alt=""/></span>
-                <h1 class="mb-4 display-3 fw-bold lh-sm">Empowering Global Healthcare Import and Export Solutions</h1>
-                <p class="mt-4 mb-1 fs-1">Welcome to ARANEA - Your trusted partner in revolutionizing healthcare worldwide. Our amazing platform simplifies your business operations ensuring that quality. We provide comprehensive solutions to help transform the healthcare industry</p>
-                <a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Explore Solutions</a>
-                <a class="btn btn-link ps-md-4" href="#" role="button"> Watch Demo</a>
+            <div class="col-md-6 col-lg-6 text-center text-md-start">
+                <span class="badge bg-light rounded-pill text-dark align-items-center d-flex flex-row-reverse justify-content-end mx-auto mx-md-0 ps-0 w-75 w-sm-50 w-md-75 w-xl-50 mb-3">#1 in Global Healthcare Solutions<img class="img-fluid float-start me-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/arrow-right.png" alt="Arrow"/></span>
+                <h1 class="mb-4 display-3 fw-bold lh-sm letter-hover">Empowering Global Healthcare Import and Export Solutions</h1>
+                <p class="mt-4 mb-1 fs-1 letter-hover">Welcome to ARANEA - Your trusted partner in revolutionizing healthcare worldwide. Our amazing platform simplifies your business operations ensuring that quality. We provide comprehensive solutions to help transform the healthcare industry.</p>
+                <a class="btn btn-lg btn-primary rounded-pill hover-top mt-4" href="#" role="button">Explore Solutions</a>
+                <a class="btn btn-link ps-md-4 mt-3" href="#" role="button"> Watch Demo</a>
+            </div>
+
+            <!-- Mobile Screen Image with hover effect -->
+            <div class="col-md-6 col-lg-6 text-center order-md-1 mt-4 mt-md-0">
+                <img class="img-fluid mobile-screen" src="<?php echo base_url('assets/');?>download.png" alt="Mobile Screen">
+            </div>
+        </div>
+
+        <!-- Horizontal row of icons at the bottom -->
+        <div class="row icon-row mt-5 justify-content-center">
+            <div class="col-auto">
+                <img src="https://www.iconpacks.net/icons/2/free-healthcare-icon-3610-thumb.png" alt="Healthcare Icon" class="horizontal-icon">
+            </div>
+            <div class="col-auto">
+                <img src="https://cdn-icons-png.flaticon.com/512/2449/2449899.png" alt="Pharmaceutical Icon" class="horizontal-icon">
+            </div>
+            <div class="col-auto">
+                <img src="https://cdn-icons-png.flaticon.com/512/2858/2858026.png" alt="Nutraceutical Icon" class="horizontal-icon">
+            </div>
+            <div class="col-auto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB1dPQOXQvHCir7Jy5jip1YHeAI6Lv1lEE4eue6k-hqD2slAcGame2o3hDvxXHLFnLOWI&usqp=CAU" alt="Medical Icon" class="horizontal-icon">
+            </div>
+            <div class="col-auto">
+                <img src="https://cdn-icons-png.flaticon.com/256/10299/10299433.png" alt="Prescription Icon" class="horizontal-icon">
+            </div>
+            <div class="col-auto">
+                <img src="https://cdn-icons-png.flaticon.com/512/2858/2858005.png" alt="Supplement Icon" class="horizontal-icon">
+            </div>
+            <div class="col-auto">
+                <img src="https://cdn-icons-png.flaticon.com/512/3099/3099275.png" alt="Doctor Icon" class="horizontal-icon">
+            </div>
+            <div class="col-auto">
+                <img src="https://getdrawings.com/free-icon/pharmaceutical-icon-74.png" alt="Heart Rate Icon" class="horizontal-icon">
+            </div>
+            <div class="col-auto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvYTZoYmcHEN4G5MTrg5kQsEkMO9lKWq_kJ9SqXZk7AggHRSMk_9Y8Zg3kVuVJWBMiBlU&usqp=CAU" alt="Syringe Icon" class="horizontal-icon">
+            </div>
+            <div class="col-auto">
+                <img src="https://cdn-icons-png.flaticon.com/512/3501/3501241.png" alt="Stethoscope Icon" class="horizontal-icon">
             </div>
         </div>
     </div>
 </section>
 
 
+
+
+
 <style>
-    .responsive-img {
-        max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
-        height: auto; /* Maintain aspect ratio */
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+}
+
+p {
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+/* Mobile Screen Hover */
+.mobile-screen {
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-screen:hover {
+    transform: scale(1.1);
+}
+
+/* Icons horizontally aligned */
+.icon-row {
+    margin-top: 10px;
+}
+
+.horizontal-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.horizontal-icon:hover {
+    transform: scale(1.3);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
     }
+
+    .horizontal-icon {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+}
 </style>
 
 

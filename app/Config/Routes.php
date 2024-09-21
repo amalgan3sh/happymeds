@@ -24,10 +24,25 @@ $routes->get('b2b_partner_details', 'PublicController::B2BPartnerDetails');
 $routes->post('product_favorite', 'PartnerController::addFavorite');
 $routes->post('support_request', 'PartnerController::submitSupportRequest');
 
+$routes->get('business_home', 'BusinessController::BusinessHome');
+
+$routes->get('/public_login', 'PublicController::publicLogin');
+$routes->get('/public_register', 'PublicController::publicRegisteration');
+$routes->get('/google_login', 'GoogleLoginController::login');
+$routes->get('/google_callback', 'GoogleLoginController::callback');
+
+$routes->post('login_user', 'AuthController::loginProcess');
+$routes->post('verify_phone', 'AuthController::validateOtp');
+
+$routes->get('/register', 'AuthController::register'); 
+$routes->post('/register_user', 'AuthController::register');  // Handle form submission
 //Google Login
 $routes->post('/google_login_process', 'GoogleLogin::loginProcess');
 $routes->get('/google_login', 'GoogleLogin::login');
 $routes->get('/logout', 'GoogleLogin::logout');
+
+$routes->post('update_user_type', 'BusinessController::updateUserType');
+$routes->get('choose_user_type', 'BusinessController::chooseUserType');
 
 //partner-routes
 $routes->get('partner_home', 'PartnerController::partnerHome');
