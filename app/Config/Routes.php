@@ -66,6 +66,8 @@ $routes->post('/store_bank_account', 'PartnerController::storeBankAccount');
 $routes->post('select_plan', 'PartnerController::select_plan');
 
 
+$routes->get('/ecommerce_home', 'StoreController::EcommerceHome');
+
 
 //auth
 $routes->get('/logout', 'AuthController::logout');

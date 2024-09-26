@@ -25,8 +25,7 @@
                                     <li class="py-2 text-secondary"><a class="" href="<?php echo base_url('b2b_partner_details') ?>">More Details...</a></li>
                                 </ul>
                                 <div class="mt-auto">
-                                    <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="https://user.lakshmipharmaceuticals.com/">Register Now</a>
-                                    <a class="btn btn-outline-primary w-100" href="https://user.lakshmipharmaceuticals.com/">Log in</a>
+                                    <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="<?php echo base_url('ecommerce_home') ?>">Explore Now</a>
                                 </div>
                             </div>
                         </div>
