@@ -27,20 +27,33 @@ class BusinessController extends Controller
             $user = $this->userModel->where('email', $email)->first();
             
             if ($user && password_verify($password, $user['password'])) {
-                // Successful login
-                $this->session->set('user_id', $user['user_id']);
+                // Successful login: set session data
+                $this->session->set([
+                    'user_id' => $user['user_id'],
+                    'user_name' => $user['user_name'],
+                    'email' => $user['email'],
+                    'phone' => $user['phone'],
+                    'user_type' => $user['user_type']
+                ]);
+
+                // Redirect to business home
                 return redirect()->to('/business_home');
             } else {
+                // Invalid login attempt
                 return redirect()->back()->with('error', 'Invalid email or password.');
             }
         }
 
+        // If no credentials are provided
         return redirect()->back()->with('error', 'Please provide valid credentials.');
     }
 
     public function BusinessHome()
     {
-        return view('business/business_home');
+        $header = view('business/business_header');
+        $home = view('business/business_home');
+
+        return $header . $home;
     }
 
     public function updateUserType()

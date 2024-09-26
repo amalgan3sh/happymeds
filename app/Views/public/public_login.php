@@ -112,8 +112,8 @@
                                         </a>
                                     </div>
                                     <div class="col-xl-6 col-12">
-                                        <a href="javascript:void(0);" class="btn btn-outline-dark btn-sm btn-block mt-xl-0 mt-3">
-                                            <i class="fab fa-apple me-1"></i> Sign in with Apple
+                                        <a href="<?= base_url('login/facebook') ?>" class="btn btn-outline-dark btn-sm btn-block">
+                                            <i class="fab fa-facebook me-1"></i> Sign in with Facebook
                                         </a>
                                     </div>
                                 </div>

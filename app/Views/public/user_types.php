@@ -49,7 +49,7 @@
                                     <li class="py-2 text-secondary"><a class="" href="<?php echo base_url('supplier_details') ?>">More Details...</a></li>
                                 </ul>
                                 <div class="mt-auto">
-                                    <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="<?php echo base_url('public_login') ?>">Register Now</a>
+                                    <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="<?php echo base_url('public_register') ?>">Register Now</a>
                                     <a class="btn btn-outline-primary w-100" href="<?php echo base_url('public_login') ?>">Log in</a>
                                 </div>
                             </div>

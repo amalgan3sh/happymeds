@@ -15,6 +15,7 @@
         "ext-mbstring": "*",
         "google/apiclient": "^2.0",
         "laminas/laminas-escaper": "^2.13",
+        "league/oauth2-facebook": "^2.2",
         "psr/log": "^3.0"
     },
     "require-dev": {
