@@ -16,32 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    // In your CodeIgniter 4 configuration file (app/Config/App.php)
-
-    public $baseURL = '';
-
-    // Fetch the site URL dynamically
-    public function __construct() {
-        parent::__construct();
-
-        // Check if it's running on HTTPS
-        $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
-
-        // Get the host name
-        $host = $_SERVER['HTTP_HOST'];
-
-        // Check if the host name contains "buildmax"
-        if (strpos($host, 'happymeds') !== false) {
-            // Construct the base URL without appending "buildmax/"
-            $baseURL = $protocol . "://" . $host;
-        } else {
-            // Construct the base URL and append "buildmax/"
-            $baseURL = $protocol . "://" . $host . "/happymeds";
-        }
-
-        // Set the base URL
-        $this->baseURL = $baseURL;
-    }
+    public string $baseURL = 'http://localhost/happymeds/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -66,7 +41,6 @@ class App extends BaseConfig
      * from your site URIs, set this variable to an empty string.
      */
     public string $indexPage = '';
-
 
     /**
      * --------------------------------------------------------------------------

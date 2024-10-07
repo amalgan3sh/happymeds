@@ -37,6 +37,21 @@ class AuthController extends Controller
 
         // Check if any rows were affected
         if ($userModel->db->affectedRows() > 0) {
+
+            $insertedUserId = $userModel->getInsertID();
+
+        // Fetch the newly created user data
+        $user = $userModel->find($insertedUserId);
+
+        // Check if the user type is empty
+        if (empty($user['user_type'])) {
+            // Store user_id temporarily in session to use for updating user_type later
+            session()->set('user_id', $user['user_id']);
+
+            // Redirect to the 'choose user type' view
+            return redirect()->to('/choose_user_type');
+        }
+        
             // On success, redirect to the public login page
             return redirect()
                 ->to("/business_home")

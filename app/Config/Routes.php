@@ -31,6 +31,9 @@ $routes->get('/public_register', 'PublicController::publicRegisteration');
 $routes->get('/google_login', 'GoogleLoginController::login');
 $routes->get('/google_callback', 'GoogleLoginController::callback');
 
+$routes->get('login/facebook', 'FacebookLoginController::login');
+$routes->get('login/facebook_callback', 'FacebookLoginController::callback');
+
 $routes->post('login_user', 'AuthController::loginProcess');
 $routes->post('verify_phone', 'AuthController::validateOtp');
 
@@ -63,6 +66,11 @@ $routes->post('/store_bank_account', 'PartnerController::storeBankAccount');
 $routes->get('upload_kyc', 'PartnerController::upload_kyc');
 $routes->post('/kyc_upload/submit', 'PartnerController::submitKyc');
 $routes->post('select_plan', 'PartnerController::select_plan');
+
+
+$routes->get('/ecommerce_home', 'StoreController::EcommerceHome');
+$routes->get('/home_page_ecommerce', 'StoreController::HomePageEcommerce');
+$routes->get('/shop_ecommerce', 'StoreController::ShopEcommerce');
 
 
 
