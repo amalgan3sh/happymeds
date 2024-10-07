@@ -30,13 +30,13 @@
                             <h6 class="mb-10 text-brand-2">Deal of the Day</h6>
                         </div>
                         <div class="deal-content detail-info">
-                            <h4 class="product-title"><a href="shop-product-right.html" class="text-heading">Organic fruit for your family's health</a></h4>
+                            <h4 class="product-title"><a href="shop-product-right.html" class="text-heading">supplements for your family's health</a></h4>
                             <div class="clearfix product-price-cover">
                                 <div class="product-price primary-color float-left">
-                                    <span class="current-price text-brand">$38</span>
+                                    <span class="current-price text-brand">2500 INR</span>
                                     <span>
                                         <span class="save-price font-md color3 ml-15">26% Off</span>
-                                        <span class="old-price font-md ml-15">$52</span>
+                                        <span class="old-price font-md ml-15">3000 INR</span>
                                     </span>
                                 </div>
                             </div>
@@ -175,8 +175,8 @@
                             <div id="news-flash" class="d-inline-block">
                                 <ul>
                                     <li>100% Secure delivery without contacting the courier</li>
-                                    <li>Supper Value Deals - Save more with coupons</li>
-                                    <li>Trendy 25silver jewelry, save up 35% off today</li>
+                                    <li>Supper Value Deals - Save more with coupons,</li>
+                                    <li>save up 35% off today</li>
                                 </ul>
                             </div>
                         </div>
@@ -184,35 +184,8 @@
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info header-info-right">
                             <ul>
-                                <li>Need help? Call Us: <strong class="text-brand"> + 1800 900</strong></li>
-                                <li>
-                                    <a class="language-dropdown-active" href="#">English <i class="fi-rs-angle-small-down"></i></a>
-                                    <ul class="language-dropdown">
-                                        <li>
-                                            <a href="#"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/flag-fr.png" alt="" />Français</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/flag-dt.png" alt="" />Deutsch</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/flag-ru.png" alt="" />Pусский</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="language-dropdown-active" href="#">USD <i class="fi-rs-angle-small-down"></i></a>
-                                    <ul class="language-dropdown">
-                                        <li>
-                                            <a href="#"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/flag-fr.png" alt="" />INR</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/flag-dt.png" alt="" />MBP</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/flag-ru.png" alt="" />EU</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <li>Need help? Call Us: <strong class="text-brand"> +91 9072420016</strong></li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -230,16 +203,11 @@
                             <form action="#">
                                 <select class="select-active">
                                     <option>All Categories</option>
-                                    <option>Milks and Dairies</option>
-                                    <option>Wines & Alcohol</option>
-                                    <option>Clothing & Beauty</option>
-                                    <option>Pet Foods & Toy</option>
-                                    <option>Fast food</option>
-                                    <option>Baking material</option>
-                                    <option>Vegetables</option>
-                                    <option>Fresh Seafood</option>
-                                    <option>Noodles & Rice</option>
-                                    <option>Ice cream</option>
+                                    <option>Pharmaceuticals</option>
+                                    <option>Nutraceuticals</option>
+                                    <option>Cosmetics</option>
+                                    <option>Hospital Care</option>
+                                    <option>Cosmeceuticals</option>
                                 </select>
                                 <input type="text" placeholder="Search for items..." />
                             </form>
@@ -250,14 +218,14 @@
                                     <form action="#">
                                         <select class="select-active">
                                             <option>Your Location</option>
-                                            <option>Alabama</option>
-                                            <option>Alaska</option>
+                                            <option>America</option>
                                             <option>Arizona</option>
                                             <option>Delaware</option>
                                             <option>Florida</option>
+                                            <option>France</option>
                                             <option>Georgia</option>
                                             <option>Hawaii</option>
-                                            <option>Indiana</option>
+                                            <option>India</option>
                                             <option>Maryland</option>
                                             <option>Nevada</option>
                                             <option>New Jersey</option>
@@ -293,8 +261,8 @@
                                                     <a href="shop-product-right.html"><img alt="Nest" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-3.jpg" /></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
-                                                    <h4><a href="shop-product-right.html">Daisy Casual Bag</a></h4>
-                                                    <h4><span>1 × </span>$800.00</h4>
+                                                    <h4><a href="shop-product-right.html">Mango Pulp Protein Drink</a></h4>
+                                                    <h4><span>1 × </span>800.00</h4>
                                                 </div>
                                                 <div class="shopping-cart-delete">
                                                     <a href="#"><i class="fi-rs-cross-small"></i></a>
@@ -305,8 +273,8 @@
                                                     <a href="shop-product-right.html"><img alt="Nest" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-2.jpg" /></a>
                                                 </div>
                                                 <div class="shopping-cart-title">
-                                                    <h4><a href="shop-product-right.html">Corduroy Shirts</a></h4>
-                                                    <h4><span>1 × </span>$3200.00</h4>
+                                                    <h4><a href="shop-product-right.html">Charcoal Face Mask for acne</a></h4>
+                                                    <h4><span>1 × </span>200.00</h4>
                                                 </div>
                                                 <div class="shopping-cart-delete">
                                                     <a href="#"><i class="fi-rs-cross-small"></i></a>
@@ -315,7 +283,7 @@
                                         </ul>
                                         <div class="shopping-cart-footer">
                                             <div class="shopping-cart-total">
-                                                <h4>Total <span>$4000.00</span></h4>
+                                                <h4>Total <span>1000.00</span></h4>
                                             </div>
                                             <div class="shopping-cart-button">
                                                 <a href="shop-cart.html" class="outline">View cart</a>
@@ -374,60 +342,22 @@
                                 <div class="d-flex categori-dropdown-inner">
                                     <ul>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-1.svg" alt="" />Milks and Dairies</a>
+                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-1.svg" alt="" />Pharmaceuticals</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-2.svg" alt="" />Clothing & beauty</a>
+                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-2.svg" alt="" />Nutraceuticals</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods & Toy</a>
+                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-3.svg" alt="" />Cosmetics</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a>
+                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-4.svg" alt="" />Hospital Care</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a>
-                                        </li>
-                                    </ul>
-                                    <ul class="end">
-                                        <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-6.svg" alt="" />Wines & Drinks</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-7.svg" alt="" />Fresh Seafood</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-8.svg" alt="" />Fast food</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-9.svg" alt="" />Vegetables</a>
-                                        </li>
-                                        <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-10.svg" alt="" />Bread and Juice</a>
+                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-5.svg" alt="" />Cosmeceuticals</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="more_slide_open" style="display: none">
-                                    <div class="d-flex categori-dropdown-inner">
-                                        <ul>
-                                            <li>
-                                                <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-1.svg" alt="" />Milks and Dairies</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-2.svg" alt="" />Clothing & beauty</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="end">
-                                            <li>
-                                                <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-3.svg" alt="" />Wines & Drinks</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-4.svg" alt="" />Fresh Seafood</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="more_categories"><span class="icon"></span> <span class="heading-sm-1">Show more...</span></div>
                             </div>
                         </div>
                         <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
@@ -435,70 +365,20 @@
                                 <ul>
                                     <li class="hot-deals"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="shop-grid-right.html">Deals</a></li>
                                     <li>
-                                        <a class="active" href="index.html">Home <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="index.html">Home 1</a></li>
-                                            <li><a href="index-2.html">Home 2</a></li>
-                                            <li><a href="index-3.html">Home 3</a></li>
-                                            <li><a href="index-4.html">Home 4</a></li>
-                                            <li><a href="index-5.html">Home 5</a></li>
-                                            <li><a href="index-6.html">Home 6</a></li>
-                                        </ul>
+                                        <a class="active" href="home_page_ecommerce">Home </a>
+                                        
                                     </li>
                                     <li>
                                         <a href="page-about.html">About</a>
                                     </li>
                                     <li>
-                                        <a href="shop-grid-right.html">Shop <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="shop-grid-right.html">Shop Grid – Right Sidebar</a></li>
-                                            <li><a href="shop-grid-left.html">Shop Grid – Left Sidebar</a></li>
-                                            <li><a href="shop-list-right.html">Shop List – Right Sidebar</a></li>
-                                            <li><a href="shop-list-left.html">Shop List – Left Sidebar</a></li>
-                                            <li><a href="shop-fullwidth.html">Shop - Wide</a></li>
-                                            <li>
-                                                <a href="#">Single Product <i class="fi-rs-angle-right"></i></a>
-                                                <ul class="level-menu">
-                                                    <li><a href="shop-product-right.html">Product – Right Sidebar</a></li>
-                                                    <li><a href="shop-product-left.html">Product – Left Sidebar</a></li>
-                                                    <li><a href="shop-product-full.html">Product – No sidebar</a></li>
-                                                    <li><a href="shop-product-vendor.html">Product – Vendor Info</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="shop-filter.html">Shop – Filter</a></li>
-                                            <li><a href="shop-wishlist.html">Shop – Wishlist</a></li>
-                                            <li><a href="shop-cart.html">Shop – Cart</a></li>
-                                            <li><a href="shop-checkout.html">Shop – Checkout</a></li>
-                                            <li><a href="shop-compare.html">Shop – Compare</a></li>
-                                            <li>
-                                                <a href="#">Shop Invoice<i class="fi-rs-angle-right"></i></a>
-                                                <ul class="level-menu">
-                                                    <li><a href="shop-invoice-1.html">Shop Invoice 1</a></li>
-                                                    <li><a href="shop-invoice-2.html">Shop Invoice 2</a></li>
-                                                    <li><a href="shop-invoice-3.html">Shop Invoice 3</a></li>
-                                                    <li><a href="shop-invoice-4.html">Shop Invoice 4</a></li>
-                                                    <li><a href="shop-invoice-5.html">Shop Invoice 5</a></li>
-                                                    <li><a href="shop-invoice-6.html">Shop Invoice 6</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Vendors <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="vendors-grid.html">Vendors Grid</a></li>
-                                            <li><a href="vendors-list.html">Vendors List</a></li>
-                                            <li><a href="vendor-details-1.html">Vendor Details 01</a></li>
-                                            <li><a href="vendor-details-2.html">Vendor Details 02</a></li>
-                                            <li><a href="vendor-dashboard.html">Vendor Dashboard</a></li>
-                                            <li><a href="vendor-guide.html">Vendor Guide</a></li>
-                                        </ul>
+                                        <a href="shop_ecommerce">Shop </a>
                                     </li>
                                     <li class="position-static">
                                         <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
                                         <ul class="mega-menu">
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Fruit & Vegetables</a>
+                                                <a class="menu-title" href="#">Drugs & Supplements</a>
                                                 <ul>
                                                     <li><a href="shop-product-right.html">Meat & Poultry</a></li>
                                                     <li><a href="shop-product-right.html">Fresh Vegetables</a></li>
@@ -509,7 +389,7 @@
                                                 </ul>
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Breakfast & Dairy</a>
+                                                <a class="menu-title" href="#">Medical Equipments</a>
                                                 <ul>
                                                     <li><a href="shop-product-right.html">Milk & Flavoured Milk</a></li>
                                                     <li><a href="shop-product-right.html">Butter and Margarine</a></li>
@@ -520,7 +400,7 @@
                                                 </ul>
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Meat & Seafood</a>
+                                                <a class="menu-title" href="#">Beauty & Hygiene</a>
                                                 <ul>
                                                     <li><a href="shop-product-right.html">Breakfast Sausage</a></li>
                                                     <li><a href="shop-product-right.html">Dinner Sausage</a></li>
@@ -557,23 +437,6 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="blog-category-grid.html">Blog <i class="fi-rs-angle-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-category-grid.html">Blog Category Grid</a></li>
-                                            <li><a href="blog-category-list.html">Blog Category List</a></li>
-                                            <li><a href="blog-category-big.html">Blog Category Big</a></li>
-                                            <li><a href="blog-category-fullwidth.html">Blog Category Wide</a></li>
-                                            <li>
-                                                <a href="#">Single Post <i class="fi-rs-angle-right"></i></a>
-                                                <ul class="level-menu level-menu-modify">
-                                                    <li><a href="blog-post-left.html">Left Sidebar</a></li>
-                                                    <li><a href="blog-post-right.html">Right Sidebar</a></li>
-                                                    <li><a href="blog-post-fullwidth.html">No Sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
                                         <a href="#">Pages <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
                                             <li><a href="page-about.html">About Us</a></li>
@@ -598,7 +461,7 @@
                     </div>
                     <div class="hotline d-none d-lg-flex">
                         <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-headphone.svg" alt="hotline" />
-                        <p>1900 - 888<span>24/7 Support Center</span></p>
+                        <p>+91 9072420016<span>24/7 Support Center</span></p>
                     </div>
                     <div class="header-action-icon-2 d-block d-lg-none">
                         <div class="burger-icon burger-icon-white">
@@ -831,7 +694,7 @@
                         <a href="page-login.html"><i class="fi-rs-user"></i>Log In / Sign Up </a>
                     </div>
                     <div class="single-mobile-header-info">
-                        <a href="#"><i class="fi-rs-headphones"></i>(+01) - 2345 - 6789 </a>
+                        <a href="#"><i class="fi-rs-headphones"></i>(+91) 9072420016 </a>
                     </div>
                 </div>
                 <div class="mobile-social-icon mb-50">

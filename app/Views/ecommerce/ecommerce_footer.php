@@ -31,7 +31,7 @@
                             </div>
                             <div class="banner-text">
                                 <h3 class="icon-box-title">Best prices & offers</h3>
-                                <p>Orders $50 or more</p>
+                                <p>Orders 150 or more</p>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="banner-text">
                                 <h3 class="icon-box-title">Easy returns</h3>
-                                <p>Within 30 days</p>
+                                <p>Within 7 days</p>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                         <div class="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0 wow animate__animated animate__fadeInUp" data-wow-delay="0">
                             <div class="logo mb-30">
                                 <a href="index.html" class="mb-15"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/logo.svg" alt="logo" /></a>
-                                <p class="font-lg text-heading">Awesome grocery store website template</p>
+                                <p class="font-lg text-heading">Trusted store with quality products</p>
                             </div>
                             <ul class="contact-infor">
                                 <li><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-location.svg" alt="" /><strong>Address: </strong> <span>5171 W Campbell Ave undefined Kent, Utah 53127 United States</span></li>

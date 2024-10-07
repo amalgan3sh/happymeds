@@ -67,6 +67,9 @@ $routes->post('select_plan', 'PartnerController::select_plan');
 
 
 $routes->get('/ecommerce_home', 'StoreController::EcommerceHome');
+$routes->get('/home_page_ecommerce', 'StoreController::HomePageEcommerce');
+$routes->get('/shop_ecommerce', 'StoreController::ShopEcommerce');
+
 
 
 //auth

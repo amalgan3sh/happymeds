@@ -15,4 +15,20 @@ class StoreController extends Controller
         echo view('ecommerce/ecommerce_home');
         echo view('ecommerce/ecommerce_footer');
     }
+
+    public function HomePageEcommerce()
+    {
+        echo view('ecommerce/ecommerce_header');
+        echo view('ecommerce/home_page_ecommerce');
+        echo view('ecommerce/ecommerce_footer');
+    }
+
+    public function ShopEcommerce()
+    {
+        echo view('ecommerce/ecommerce_header');
+        echo view('ecommerce/shop_ecommerce');
+        echo view('ecommerce/ecommerce_footer');
+    }
+
+
 }

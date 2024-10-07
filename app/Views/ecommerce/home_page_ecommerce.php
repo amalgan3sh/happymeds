@@ -1,5 +1,5 @@
 
-    <main class="main">
+<main class="main">
         <section class="home-slider position-relative mb-30">
             <div class="container">
                 <div class="home-slide-cover mt-30">
@@ -1519,11 +1519,11 @@
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
                                         </div>
-                                        <span class="font-small ml-5 text-muted"> (3.0)</span>
+                                        <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div class="product-price">
-                                        <span>222.85</span>
-                                        <span class="old-price">263.8</span>
+                                        <span>32.85</span>
+                                        <span class="old-price">33.8</span>
                                     </div>
                                 </div>
                             </article>
@@ -1544,11 +1544,11 @@
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
                                         </div>
-                                        <span class="font-small ml-5 text-muted"> (4.5)</span>
+                                        <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div class="product-price">
-                                        <span>312.85</span>
-                                        <span class="old-price">393.8</span>
+                                        <span>32.85</span>
+                                        <span class="old-price">33.8</span>
                                     </div>
                                 </div>
                             </article>
@@ -1567,8 +1567,8 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div class="product-price">
-                                        <span>380.85</span>
-                                        <span class="old-price">410.0</span>
+                                        <span>32.85</span>
+                                        <span class="old-price">33.8</span>
                                     </div>
                                 </div>
                             </article>
@@ -1584,11 +1584,11 @@
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
                                         </div>
-                                        <span class="font-small ml-5 text-muted"> (2.5)</span>
+                                        <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div class="product-price">
-                                        <span>199.85</span>
-                                        <span class="old-price">171.8</span>
+                                        <span>32.85</span>
+                                        <span class="old-price">33.8</span>
                                     </div>
                                 </div>
                             </article>
