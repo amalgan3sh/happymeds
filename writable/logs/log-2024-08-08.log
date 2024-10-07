@@ -1,0 +1,59 @@
+INFO - 2024-08-08 16:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-08 16:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-08 16:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-08 16:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-08 16:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-08 16:46:36 --> ErrorException: Undefined variable $login_button
+[Method: GET, Route: customer_login]
+in APPPATH\Views\public\customer_login.php on line 32.
+ 1 APPPATH\Views\public\customer_login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $login_button', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\public\\customer_login.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\public\\customer_login.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('public/customer_login', [], true)
+ 5 APPPATH\Controllers\PublicController.php(264): view('public/customer_login')
+ 6 APPPATH\Controllers\PublicController.php(248): App\Controllers\PublicController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PublicController.php(261): App\Controllers\PublicController->renderCache('customer_login_view', Object(Closure))
+ 8 APPPATH\Controllers\PublicController.php(67): App\Controllers\PublicController->renderView('customer_login_view', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PublicController->customerLogin()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-08 17:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-08 17:02:27 --> ErrorException: Undefined variable $google_login_url
+[Method: GET, Route: customer_login]
+in APPPATH\Views\public\customer_login.php on line 34.
+ 1 APPPATH\Views\public\customer_login.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $google_login_url', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\public\\customer_login.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\public\\customer_login.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('public/customer_login', [], true)
+ 5 APPPATH\Controllers\PublicController.php(264): view('public/customer_login')
+ 6 APPPATH\Controllers\PublicController.php(248): App\Controllers\PublicController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PublicController.php(261): App\Controllers\PublicController->renderCache('customer_login_view', Object(Closure))
+ 8 APPPATH\Controllers\PublicController.php(67): App\Controllers\PublicController->renderView('customer_login_view', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PublicController->customerLogin()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-08 17:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-08 17:13:46 --> ErrorException: Undefined variable $login_button
+[Method: GET, Route: customer_login]
+in APPPATH\Views\public\customer_login.php on line 32.
+ 1 APPPATH\Views\public\customer_login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $login_button', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\public\\customer_login.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\public\\customer_login.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('public/customer_login', [], true)
+ 5 APPPATH\Controllers\PublicController.php(264): view('public/customer_login')
+ 6 APPPATH\Controllers\PublicController.php(248): App\Controllers\PublicController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PublicController.php(261): App\Controllers\PublicController->renderCache('customer_login_view', Object(Closure))
+ 8 APPPATH\Controllers\PublicController.php(67): App\Controllers\PublicController->renderView('customer_login_view', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PublicController->customerLogin()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-08 17:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

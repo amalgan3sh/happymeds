@@ -19,6 +19,16 @@ class ProductHoldingsModel extends Model
             ->getResultArray();
     }
 
+    public function getProductHoldingsByUserID($user_id)
+    {
+        return $this->db->table('product_holdings')
+            ->select('product_holdings.*, product_data.icon, product_data.ProductName')
+            ->join('product_data', 'product_holdings.product_id = product_data.product_id', 'inner')
+            ->where('product_holdings.user_id', $user_id) // Filter by user_id
+            ->get()
+            ->getResultArray();
+    }
+
 
     /**
      * Mark the product as favorite
@@ -52,6 +62,13 @@ class ProductHoldingsModel extends Model
         }
 
         return false;
+    }
+
+    public function checkProductHolding($product_id, $user_id)
+    {
+        return $this->where('product_id', $product_id)
+                    ->where('user_id', $user_id)
+                    ->countAllResults() > 0;
     }
 
 }

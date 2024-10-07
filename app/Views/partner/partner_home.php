@@ -11,6 +11,7 @@
 				<div class="closed-icon">
 					<i class="fa-solid fa-xmark"></i>
 				</div>
+				
 			<div class="wallet-card">
 				<div class="wallet-wrapper">
 					<div class="mb-3">
@@ -32,6 +33,7 @@
 						<span class="fs-14 d-block">+2.25%</span>
 					</div>
 				</div>
+				
 				<div class="change-btn-1">
 					<a href="javascript:void(0);" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal1">
 						<svg class="me-2 svg-main-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
@@ -114,8 +116,18 @@
 		<!--**********************************
             Content body start
         ***********************************-->
+		<div class="page-titles">
+				<div class="sub-dz-head">
+					<div class="d-flex align-items-center dz-head-title">
+						<h2 class="text-white m-0">Dashboard</h2>
+						<p class="ms-2 text-warning">Welcome Back <?php echo htmlspecialchars($_SESSION['user_data']['company_name']) ?></p>
+					</div>
+					
+				</div>	
+			</div>
 			<div class="content-body">
             <!-- row -->
+			 
 				<div class="container-fluid">
 				<!-- Row -->
 					<div class="row">
@@ -374,9 +386,9 @@
 											document.getElementById('marketCharts').innerHTML = '';
 											var widgetDiv1 = document.createElement('div');
 											document.getElementById('marketCharts').appendChild(widgetDiv1);
-
-											trends.embed.renderExploreWidget(
-
+											try {
+											trends.embed.renderExploreWidgetTo(
+												widgetDiv1,
 												"TIMESERIES", 
 												{
 													"comparisonItem": [
@@ -394,6 +406,10 @@
 													"guestPath": "https://trends.google.com:443/trends/embed/"
 												}
 											);
+										} catch (error) {
+											console.error('Error rendering chart:', error);
+											document.getElementById('marketCharts').innerHTML = '<p>There was an error loading the chart. Please try again later.</p>';
+										}
 										}
 
 										// Event listeners for the tabs

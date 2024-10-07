@@ -68,6 +68,7 @@
 								<li><a href="<?php echo base_url('partner_profile')?>">Profile</a></li>
 								<li><a href="<?php echo base_url('portfolio')?>">Portofolio</a></li>
 								<li><a href="edit_profile">Edit Profile</a></li>
+								<li><a href="<?php echo base_url('upload_kyc')?>">Upload KYC</a></li>
 							</ul>
 						</li>
 						
@@ -285,12 +286,16 @@
     // Listen for close click
     span.onclick = function () {
         modal.style.display = "none";
+		responseMessage.style.display = "none";
+		submitBtn.style.display = "block";
     }
 
     // Close modal if user clicks outside of the modal
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
+			responseMessage.style.display = "none";
+			submitBtn.style.display = "block";
         }
     }
 

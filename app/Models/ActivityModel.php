@@ -21,16 +21,16 @@ class ActivityModel extends Model
     {
         // Get the current date and time
         $now = new DateTime();
-        
+
         // Set the time to midnight to get the start of today
         $todayStart = $now->setTime(0, 0, 0);
-        
+
         // Subtract one day to get the start of yesterday
         $yesterdayStart = $todayStart->sub(new DateInterval('P1D'));
-        
+
         // Reset the time to midnight at the start of yesterday
         $yesterdayStart->setTime(0, 0, 0);
-        
+
         // Get the end of yesterday
         $endOfYesterday = (clone $yesterdayStart)->add(new DateInterval('P1D'));
 
@@ -38,12 +38,22 @@ class ActivityModel extends Model
         $yesterdayStartStr = $yesterdayStart->format('Y-m-d H:i:s');
         $endOfYesterdayStr = $endOfYesterday->format('Y-m-d H:i:s');
 
-        return $this->select('type, amount, status, TIME(timestamp) as time')
-                    ->where('user_id', $user_id)
-                    ->where('timestamp >=', $yesterdayStartStr)
-                    ->where('timestamp <', $endOfYesterdayStr)
-                    ->findAll();
+        // Query to get the activity for the given user
+        $builder = $this->db->table('recent_activity');  // Replace 'your_table' with the actual table name
+        $result = $builder->select('type, amount, status, TIME(timestamp) as time')
+                        ->where('user_id', $user_id)
+                        ->where('timestamp >=', $yesterdayStartStr)
+                        ->where('timestamp <', $endOfYesterdayStr)
+                        ->get()
+                        ->getResult();
+
+        // Log the SQL query
+        $lastQuery = $this->db->getLastQuery();
+        error_log('Executed SQL Query: ' . $lastQuery);
+
+        return $result;
     }
+
 
     public function getActivityByUserId($user_id)
     {

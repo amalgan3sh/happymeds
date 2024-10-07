@@ -1,6 +1,14 @@
+
 <!--**********************************
     Content body start
 ***********************************-->
+<div class="page-titles">
+        <div class="sub-dz-head">
+            <div class="d-flex align-items-center dz-head-title">
+                <h2 class="text-white m-0">Products Details</h2>
+            </div>
+        </div>
+    </div>
 <div class="content-body">
     <!-- row -->
     <div class="container-fluid">

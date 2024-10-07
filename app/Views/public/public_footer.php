@@ -1,3 +1,146 @@
+ 
+<style>
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.chatbot-icon:hover {
+  transform: scale(1.1);
+}
+
+.chatbot-icon i {
+  color: white;
+  font-size: 24px;
+}
+
+.chatbot-container {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#close-chat {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  max-width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot-message {
+  background-color: #e9ecef;
+  color: #343a40;
+}
+
+.faq-prompts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
+
+.faq-prompt {
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-prompt:hover {
+  background-color: #ced4da;
+}
+
+.chat-input-area {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+}
+
+#user-input {
+  flex-grow: 1;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+#send-message {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#send-message:hover {
+  background-color: #0056b3;
+}
+</style>
+
+ 
  <!-- <section> begin ============================-->
  <section class="py-8 bg-1000">
 
@@ -73,7 +216,6 @@
 
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap" rel="stylesheet">
-
 <!-- Floating Chatbot -->
 <div id="chatbot-icon" class="chatbot-icon">
   <i class="fas fa-comments"></i>
@@ -92,9 +234,10 @@
   </div>
   <div class="chat-input-area">
     <input type="text" id="user-input" placeholder="Type your message...">
-    <button id="send-message">Send</button>
+    <button id="send-message"><i class="fas fa-paper-plane"></i></button>
   </div>
 </div>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const chatbotIcon = document.getElementById('chatbot-icon');
@@ -149,9 +292,10 @@ document.addEventListener('DOMContentLoaded', function() {
   function handleUserMessage(message) {
     // This is where you'd integrate with a real chatbot API
     // For now, we'll just provide a generic response
-    addMessage("Thank you for your message. Our team will get back to you soon with a detailed response.");
+    setTimeout(() => {
+      addMessage("Thank you for your message. Our team will get back to you soon with a detailed response.");
+    }, 500);
   }
-  
 
   sendMessage.addEventListener('click', function() {
     const message = userInput.value.trim();

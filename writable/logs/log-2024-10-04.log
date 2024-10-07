@@ -1,0 +1,301 @@
+INFO - 2024-10-04 04:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:55:48 --> Investment Check - User ID: 2, Product ID: 
+INFO - 2024-10-04 04:55:48 --> Investment Check - User ID: 2, Product ID: , Is Invested: No
+INFO - 2024-10-04 04:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:56:58 --> Investment Check - User ID: 2, Product ID: 
+INFO - 2024-10-04 04:56:59 --> Investment Check - User ID: 2, Product ID: , Is Invested: No
+INFO - 2024-10-04 04:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 04:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 04:59:32 --> ErrorException: Array to string conversion
+[Method: POST, Route: check_investment]
+in APPPATH\Controllers\PartnerController.php on line 131.
+ 1 APPPATH\Controllers\PartnerController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->checkInvestment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 04:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 04:59:36 --> ErrorException: Array to string conversion
+[Method: POST, Route: check_investment]
+in APPPATH\Controllers\PartnerController.php on line 131.
+ 1 APPPATH\Controllers\PartnerController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->checkInvestment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 05:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 05:05:22 --> ErrorException: Array to string conversion
+[Method: GET, Route: check_investment]
+in APPPATH\Controllers\PartnerController.php on line 131.
+ 1 APPPATH\Controllers\PartnerController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->checkInvestment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 05:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 05:05:26 --> ErrorException: Array to string conversion
+[Method: GET, Route: check_investment]
+in APPPATH\Controllers\PartnerController.php on line 131.
+ 1 APPPATH\Controllers\PartnerController.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->checkInvestment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 05:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:06:06 --> Investment Check - User ID: 2, Product ID: 2
+INFO - 2024-10-04 05:06:06 --> Investment Check - User ID: 2, Product ID: 2, Is Invested: Yes
+INFO - 2024-10-04 05:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:06:35 --> Investment Check - User ID: 2, Product ID: 3
+INFO - 2024-10-04 05:06:35 --> Investment Check - User ID: 2, Product ID: 3, Is Invested: Yes
+INFO - 2024-10-04 05:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:07:01 --> Investment Check - User ID: 2, Product ID: 5
+INFO - 2024-10-04 05:07:01 --> Investment Check - User ID: 2, Product ID: 5, Is Invested: No
+INFO - 2024-10-04 05:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 05:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 05:24:07 --> ErrorException: require_once(page_title.php): Failed to open stream: No such file or directory
+[Method: GET, Route: product_details_view]
+in APPPATH\Views\partner\product\product_details_view.php on line 4.
+ 1 APPPATH\Views\partner\product\product_details_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(page_title.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details_view.php', 4)
+ 2 APPPATH\Views\partner\product\product_details_view.php(4): require_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details_view', [], true)
+ 6 APPPATH\Controllers\PartnerController.php(357): view('partner/product/product_details_view', [...])
+ 7 APPPATH\Controllers\PartnerController.php(334): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 8 APPPATH\Controllers\PartnerController.php(349): App\Controllers\PartnerController->renderCache('banking_view', Object(Closure))
+ 9 APPPATH\Controllers\PartnerController.php(181): App\Controllers\PartnerController->renderView('banking_view', 'partner/product/product_details_view', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->ProductDetailsView()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 05:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 05:24:29 --> ErrorException: require_once(partner\page_title.php): Failed to open stream: No such file or directory
+[Method: GET, Route: product_details_view]
+in APPPATH\Views\partner\product\product_details_view.php on line 4.
+ 1 APPPATH\Views\partner\product\product_details_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(partner\\page_title.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details_view.php', 4)
+ 2 APPPATH\Views\partner\product\product_details_view.php(4): require_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details_view', [], true)
+ 6 APPPATH\Controllers\PartnerController.php(357): view('partner/product/product_details_view', [...])
+ 7 APPPATH\Controllers\PartnerController.php(334): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 8 APPPATH\Controllers\PartnerController.php(349): App\Controllers\PartnerController->renderCache('banking_view', Object(Closure))
+ 9 APPPATH\Controllers\PartnerController.php(181): App\Controllers\PartnerController->renderView('banking_view', 'partner/product/product_details_view', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->ProductDetailsView()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 10:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 16:02:53 --> ErrorException: require_once(path/to/title_bar_functions.php): Failed to open stream: No such file or directory
+[Method: GET, Route: product_details]
+in APPPATH\Views\partner\product\product_details.php on line 2.
+ 1 APPPATH\Views\partner\product\product_details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(path/to/title_bar_functions.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php', 2)
+ 2 APPPATH\Views\partner\product\product_details.php(2): require_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details', [], true)
+ 6 APPPATH\Controllers\PartnerController.php(357): view('partner/product/product_details', [...])
+ 7 APPPATH\Controllers\PartnerController.php(334): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 8 APPPATH\Controllers\PartnerController.php(349): App\Controllers\PartnerController->renderCache('product_details_view', Object(Closure))
+ 9 APPPATH\Controllers\PartnerController.php(194): App\Controllers\PartnerController->renderView('product_details_view', 'partner/product/product_details', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->productDetails()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 16:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 16:03:57 --> ErrorException: require_once(partner/page_title.php): Failed to open stream: No such file or directory
+[Method: GET, Route: product_details]
+in APPPATH\Views\partner\product\product_details.php on line 2.
+ 1 APPPATH\Views\partner\product\product_details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(partner/page_title.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php', 2)
+ 2 APPPATH\Views\partner\product\product_details.php(2): require_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details', [], true)
+ 6 APPPATH\Controllers\PartnerController.php(357): view('partner/product/product_details', [...])
+ 7 APPPATH\Controllers\PartnerController.php(334): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 8 APPPATH\Controllers\PartnerController.php(349): App\Controllers\PartnerController->renderCache('product_details_view', Object(Closure))
+ 9 APPPATH\Controllers\PartnerController.php(194): App\Controllers\PartnerController->renderView('product_details_view', 'partner/product/product_details', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->productDetails()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 16:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 16:04:53 --> ErrorException: require_once(views/partner/page_title.php): Failed to open stream: No such file or directory
+[Method: GET, Route: product_details]
+in APPPATH\Views\partner\product\product_details.php on line 2.
+ 1 APPPATH\Views\partner\product\product_details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(views/partner/page_title.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php', 2)
+ 2 APPPATH\Views\partner\product\product_details.php(2): require_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details', [], true)
+ 6 APPPATH\Controllers\PartnerController.php(357): view('partner/product/product_details', [...])
+ 7 APPPATH\Controllers\PartnerController.php(334): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 8 APPPATH\Controllers\PartnerController.php(349): App\Controllers\PartnerController->renderCache('product_details_view', Object(Closure))
+ 9 APPPATH\Controllers\PartnerController.php(194): App\Controllers\PartnerController->renderView('product_details_view', 'partner/product/product_details', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->productDetails()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 16:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 16:05:16 --> ErrorException: require_once(partner\page_title.php): Failed to open stream: No such file or directory
+[Method: GET, Route: product_details]
+in APPPATH\Views\partner\product\product_details.php on line 2.
+ 1 APPPATH\Views\partner\product\product_details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(partner\\page_title.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php', 2)
+ 2 APPPATH\Views\partner\product\product_details.php(2): require_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details', [], true)
+ 6 APPPATH\Controllers\PartnerController.php(357): view('partner/product/product_details', [...])
+ 7 APPPATH\Controllers\PartnerController.php(334): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 8 APPPATH\Controllers\PartnerController.php(349): App\Controllers\PartnerController->renderCache('product_details_view', Object(Closure))
+ 9 APPPATH\Controllers\PartnerController.php(194): App\Controllers\PartnerController->renderView('product_details_view', 'partner/product/product_details', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->productDetails()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 16:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 16:05:23 --> ErrorException: require_once(\partner\page_title.php): Failed to open stream: No such file or directory
+[Method: GET, Route: product_details]
+in APPPATH\Views\partner\product\product_details.php on line 2.
+ 1 APPPATH\Views\partner\product\product_details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(\\partner\\page_title.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php', 2)
+ 2 APPPATH\Views\partner\product\product_details.php(2): require_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details', [], true)
+ 6 APPPATH\Controllers\PartnerController.php(357): view('partner/product/product_details', [...])
+ 7 APPPATH\Controllers\PartnerController.php(334): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 8 APPPATH\Controllers\PartnerController.php(349): App\Controllers\PartnerController->renderCache('product_details_view', Object(Closure))
+ 9 APPPATH\Controllers\PartnerController.php(194): App\Controllers\PartnerController->renderView('product_details_view', 'partner/product/product_details', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->productDetails()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 16:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 16:09:00 --> ErrorException: require_once(partner\page_title.php): Failed to open stream: No such file or directory
+[Method: GET, Route: product_details_view]
+in APPPATH\Views\partner\product\product_details_view.php on line 4.
+ 1 APPPATH\Views\partner\product\product_details_view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(partner\\page_title.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details_view.php', 4)
+ 2 APPPATH\Views\partner\product\product_details_view.php(4): require_once()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details_view', [], true)
+ 6 APPPATH\Controllers\PartnerController.php(357): view('partner/product/product_details_view', [...])
+ 7 APPPATH\Controllers\PartnerController.php(334): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 8 APPPATH\Controllers\PartnerController.php(349): App\Controllers\PartnerController->renderCache('banking_view', Object(Closure))
+ 9 APPPATH\Controllers\PartnerController.php(181): App\Controllers\PartnerController->renderView('banking_view', 'partner/product/product_details_view', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->ProductDetailsView()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 16:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 16:09:15 --> ErrorException: session_start(): Ignoring session_start() because a session is already active
+[Method: GET, Route: product_details_view]
+in APPPATH\Views\partner\product\product_details_view.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details_view.php', 50)
+ 2 APPPATH\Views\partner\product\product_details_view.php(50): session_start()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details_view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details_view', [], true)
+ 6 APPPATH\Controllers\PartnerController.php(357): view('partner/product/product_details_view', [...])
+ 7 APPPATH\Controllers\PartnerController.php(334): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 8 APPPATH\Controllers\PartnerController.php(349): App\Controllers\PartnerController->renderCache('banking_view', Object(Closure))
+ 9 APPPATH\Controllers\PartnerController.php(181): App\Controllers\PartnerController->renderView('banking_view', 'partner/product/product_details_view', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->ProductDetailsView()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 16:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:10:13 --> Investment Check - User ID: 2, Product ID: 2
+INFO - 2024-10-04 16:10:13 --> Investment Check - User ID: 2, Product ID: 2, Is Invested: Yes
+INFO - 2024-10-04 16:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:10:15 --> Investment Check - User ID: 2, Product ID: 2
+INFO - 2024-10-04 16:10:15 --> Investment Check - User ID: 2, Product ID: 2, Is Invested: Yes
+INFO - 2024-10-04 16:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:10:41 --> Investment Check - User ID: 2, Product ID: 7
+INFO - 2024-10-04 16:10:41 --> Investment Check - User ID: 2, Product ID: 7, Is Invested: No
+INFO - 2024-10-04 16:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:03 --> Investment Check - User ID: 2, Product ID: 7
+INFO - 2024-10-04 16:12:03 --> Investment Check - User ID: 2, Product ID: 7, Is Invested: No
+INFO - 2024-10-04 16:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 16:12:29 --> Investment Check - User ID: 2, Product ID: 7
+INFO - 2024-10-04 16:12:29 --> Investment Check - User ID: 2, Product ID: 7, Is Invested: No
+INFO - 2024-10-04 16:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
