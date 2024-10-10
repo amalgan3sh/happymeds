@@ -10,23 +10,30 @@
             <div class="row flex-center">
                 <div class="col-lg-6">
                     <div class="card-body mx-auto">
-                        <form id="b2b-register-form" action="<?php echo base_url('register_brand_partner'); ?>" method="POST">
+                        <form id="b2b-register-form" action="<?php echo base_url('register_brand_partner'); ?>" method="POST" onsubmit="return validatePassword()">
                             <div class="mb-3">
                                 <label for="companyName" class="form-label">Full Name</label>
                                 <input type="text" class="form-control" id="companyName" name="companyName" required>
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Phone Number</label>
+                                <label for="phone" class="form-label">Phone Number</label>
                                 <input type="text" class="form-control" id="phone" name="phone" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email Address</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 position-relative">
                                 <label for="password" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="password" name="password" required>
+                                <span toggle="#password" class="fa fa-fw fa-eye password-toggle-icon"></span>
                             </div>
+                            <div class="mb-3 position-relative">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                                <span toggle="#confirmPassword" class="fa fa-fw fa-eye password-toggle-icon"></span>
+                            </div>
+                            <div id="password-error" class="text-danger mb-3"></div> <!-- Error message for password validation -->
                             <button type="submit" class="btn btn-lg btn-primary rounded-pill">Register</button>
                         </form>
                         <div class="text-center my-3">or</div>
@@ -44,52 +51,47 @@
     </section>
 </main>
 
+<!-- Password Toggle Script -->
 <script>
-  function onSuccess(googleUser) {
-    const profile = googleUser.getBasicProfile();
-    const id_token = googleUser.getAuthResponse().id_token;
-
-    // Send the user's information to your server-side script
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', '<?php echo base_url('google_register_process'); ?>');
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-        // Handle successful registration here (e.g., redirect to dashboard)
-        window.location.href = '<?php echo base_url('dashboard'); ?>';
-        } else {
-        // Handle registration failure
-        console.error('Registration failed: ' + xhr.responseText);
-        }
-    };
-    xhr.send('id_token=' + id_token + '&email=' + profile.getEmail() + '&name=' + profile.getName());
-    }
-
-  function onFailure(error) {
-    console.log(error);
-    const errorMessage = document.getElementById('error-message');
-    
-    if (error.error === 'popup_closed_by_user') {
-      errorMessage.textContent = 'Sign-in popup closed before completing the sign-in. Please try again.';
-    } else {
-      errorMessage.textContent = 'An error occurred during sign-in. Please try again.';
-    }
-  }
-
-  function renderButton() {
-    gapi.signin2.render('my-signin2', {
-      'scope': 'profile email',
-      'width': 240,
-      'height': 50,
-      'longtitle': true,
-      'theme': 'dark',
-      'onsuccess': onSuccess,
-      'onfailure': onFailure
+  document.querySelectorAll('.password-toggle-icon').forEach(function(eyeIcon) {
+    eyeIcon.addEventListener('click', function() {
+      let input = document.querySelector(eyeIcon.getAttribute('toggle'));
+      if (input.getAttribute('type') === 'password') {
+        input.setAttribute('type', 'text');
+        eyeIcon.classList.remove('fa-eye');
+        eyeIcon.classList.add('fa-eye-slash');
+      } else {
+        input.setAttribute('type', 'password');
+        eyeIcon.classList.remove('fa-eye-slash');
+        eyeIcon.classList.add('fa-eye');
+      }
     });
-  }
+  });
 
-  // Initialize the Google Sign-In button
-  window.onload = function() {
-    renderButton();
-  };
+  // Password validation
+  function validatePassword() {
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    var errorElement = document.getElementById("password-error");
+
+    if (password !== confirmPassword) {
+      errorElement.textContent = "Passwords do not match!";
+      return false;  // Prevent form submission
+    }
+    return true;  // Allow form submission
+  }
 </script>
+
+<!-- CSS for aligning the eye icon properly -->
+<style>
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px; /* Adjust this value to control horizontal spacing */
+    top: 55px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+    padding: 5px; /* Add padding around the icon */
+}
+
+</style>

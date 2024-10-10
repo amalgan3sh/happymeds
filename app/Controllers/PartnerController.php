@@ -11,7 +11,8 @@ use App\Models\{
     BankAccountModel,
     InvestmentModel,
     SupportModel,
-    ActivityModel
+    ActivityModel,
+    KYCModel
 };
 use CodeIgniter\Cache\CacheInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -112,10 +113,50 @@ class PartnerController extends BaseController
         }
         $product_id = $this->request->getGet('product_id');
         $product = (new ProductModel())->find($product_id);
-
+        
         return $this->renderView('banking_view', 'partner/product/product_invest',['product' => $product]);
     }
+    public function checkInvestment()
+    {
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
 
+        // Get user_id from session
+        $session = session();
+        $userId = $session->get('user_id');
+
+        $product_id = $this->request->getGet('product_id');
+        $product = (new ProductModel())->find($product_id);
+
+        log_message('info', "Investment Check - User ID: {$userId}, Product ID: {$product_id}");
+        // Load your model
+        $productHoldingsModel = new ProductHoldingsModel();
+        
+        // Check if the product is already held by the user
+        $isInvested=$productHoldingsModel->checkProductHolding($product_id, $userId);
+        
+        log_message('info', "Investment Check - User ID: {$userId}, Product ID: {$product_id}, Is Invested: " . ($isInvested ? 'Yes' : 'No'));
+
+        if ($isInvested) {
+            return $this->response->setJSON([
+                'invested' => true,
+                'message' => 'You are already invested in this product.'
+            ]);
+        } else {
+            return $this->response->setJSON([
+                'invested' => false
+            ]);
+        }
+    }
+
+    public function upload_kyc(){
+        if (!$this->checkSession()) {
+            return redirect()->to('/customer_login');
+        }
+
+        return $this->renderView('upload_kyc', 'partner/upload_kyc');
+    }
     public function ProductDetailsView(): ResponseInterface
     {
         if (!$this->checkSession()) {
@@ -172,9 +213,10 @@ class PartnerController extends BaseController
 
         $data = [
             'userProfile' => $this->partnerModel->getUserById($userId),
-            'product_holdings' => $this->productHoldingsModel->getProductHoldingsWithIcons(),
+            'product_holdings' => $this->productHoldingsModel->getProductHoldingsByUserID($userId),
             'recent_activity_yesterday' => $this->activityModel->yesterdaysActivityByUserId($userId),
-            'recent_activity' => $this->activityModel->getActivityByUserId($userId)
+            'recent_activity' => $this->activityModel->getActivityByUserId($userId),
+            'investment_requests' => $this->investmentModel->getInvestmentsDetailsByUserId($userId),
         ];
 
         // Log the data
@@ -414,6 +456,102 @@ class PartnerController extends BaseController
         }
 
         return $this->response->setJSON($response);
+    }
+
+    public function submitKyc()
+    {
+        // Log incoming request
+        log_message('info', 'submitKyc request received.');
+        
+        // Log POST data
+        log_message('info', 'POST Data: ' . json_encode($this->request->getPost()));
+        
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'full_name' => 'required|min_length[3]|max_length[255]',
+            'address'   => 'required|min_length[5]|max_length[1000]',
+            'phone_no'  => 'required|regex_match[/^[0-9]{10}$/]',
+            'document'  => 'uploaded[document]|max_size[document,2048]|ext_in[document,pdf,jpg,jpeg,png]',
+        ]);
+
+        if (!$validation->withRequest($this->request)->run()) {
+            // Log validation errors
+            log_message('error', 'Validation Errors: ' . json_encode($validation->getErrors()));
+            return $this->response->setJSON([
+                'status' => 'error',
+                'errors' => $validation->getErrors()
+            ]);
+        }
+
+        $kycModel = new KYCModel();
+
+        // Check if KYC details already exist for the given phone number
+        $existingSubmission = $kycModel->where('phone_no', $this->request->getPost('phone_no'))->first();
+        if ($existingSubmission) {
+            log_message('info', 'Duplicate submission for phone number: ' . $this->request->getPost('phone_no'));
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'KYC details have already been submitted for this phone number.'
+            ]);
+        }
+
+        // Handle file upload
+        $file = $this->request->getFile('document');
+        if ($file->isValid() && !$file->hasMoved()) {
+            // Generate a new random name for the uploaded file and move it to the uploads folder
+            $newName = $file->getRandomName();
+            if ($file->move(WRITEPATH . 'uploads', $newName)) {
+                log_message('info', 'File uploaded successfully: ' . $newName);
+            } else {
+                log_message('error', 'Failed to move uploaded file.');
+                return $this->response->setJSON([
+                    'status' => 'error',
+                    'message' => 'Failed to upload document.'
+                ]);
+            }
+        } else {
+            log_message('error', 'Invalid file or file upload error.');
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'Failed to upload document.'
+            ]);
+        }
+
+        // Prepare the data to be inserted into the database
+        $data = [
+            'full_name'     => $this->request->getPost('full_name'),
+            'address'       => $this->request->getPost('address'),
+            'phone_no'      => $this->request->getPost('phone_no'),
+            'document_path' => 'uploads/' . $newName, // Save the relative path of the uploaded file
+        ];
+
+        // Attempt to insert the data into the database
+        if ($kycModel->insert($data)) {
+            log_message('info', 'KYC details inserted successfully.');
+            return $this->response->setJSON([
+                'status'  => 'success',
+                'message' => 'KYC details submitted successfully.'
+            ]);
+        } else {
+            log_message('error', 'Failed to insert KYC details into the database.');
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'Failed to save KYC details.'
+            ]);
+        }
+    }
+
+
+    public function checkSubmission($phone_no)
+    {
+        $kycModel = new KYCModel();
+        $existingSubmission = $kycModel->where('phone_no', $phone_no)->first();
+
+        if ($existingSubmission) {
+            return $this->respond(['exists' => true]);
+        } else {
+            return $this->respond(['exists' => false]);
+        }
     }
     
 }

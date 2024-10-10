@@ -12,10 +12,12 @@
 							<path d="M22,9.33681558 C21.5453723,9.12084552 21.0367986,9 20.5,9 C18.5670034,9 17,10.5670034 17,12.5 C17,14.4329966 18.5670034,16 20.5,16 C21.0367986,16 21.5453723,15.8791545 22,15.6631844 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,9.33681558 Z" fill="#fff"/>
 						</g>
 					</svg>
-					<div class="ms-3">
+					<div class="ms-3" onclick="toggleWalletCard()">
 						<h4 class="text-white mb-0 d-block">$2353.25</h4>
 						<small>Withdraw Money</small>
 					</div>
+
+					
 				</div>
 				<div class="d-flex justify-content-center align-items-center">
 				<div class="item-1">
@@ -68,6 +70,7 @@
 								<li><a href="<?php echo base_url('partner_profile')?>">Profile</a></li>
 								<li><a href="<?php echo base_url('portfolio')?>">Portofolio</a></li>
 								<li><a href="edit_profile">Edit Profile</a></li>
+								<li><a href="<?php echo base_url('upload_kyc')?>">Upload KYC</a></li>
 							</ul>
 						</li>
 						
@@ -285,12 +288,16 @@
     // Listen for close click
     span.onclick = function () {
         modal.style.display = "none";
+		responseMessage.style.display = "none";
+		submitBtn.style.display = "block";
     }
 
     // Close modal if user clicks outside of the modal
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
+			responseMessage.style.display = "none";
+			submitBtn.style.display = "block";
         }
     }
 

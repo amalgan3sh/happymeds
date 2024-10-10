@@ -1,0 +1,116 @@
+INFO - 2024-08-17 17:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 17:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 17:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 17:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 17:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 17:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-17 17:59:52 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in C:\xampp\htdocs\happymeds\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1916)
+#1 C:\xampp\htdocs\happymeds\system\Email\Email.php(1916): stream_socket_enable_crypto(Resource id #201, true, 121)
+#2 C:\xampp\htdocs\happymeds\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\happymeds\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\happymeds\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\happymeds\app\Controllers\PartnerController.php(410): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(933): App\Controllers\PartnerController->submitSupportRequest()
+#7 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+#8 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\happymeds\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\happymeds\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\happymeds\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-08-17 17:59:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-08-17 17:59:52 --> 220 smtp.gmail.com ESMTP d2e1a72fcca58-7127ae13a80sm4300249b3a.86 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2402:e280:2195:1b4:4555:7167:7103:b14f]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError d2e1a72fcca58-7127ae13a80sm4300249b3a.86 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError d2e1a72fcca58-7127ae13a80sm4300249b3a.86 - gsmtp
+
+INFO - 2024-08-17 18:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 18:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-17 18:06:36 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in C:\xampp\htdocs\happymeds\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1916)
+#1 C:\xampp\htdocs\happymeds\system\Email\Email.php(1916): stream_socket_enable_crypto(Resource id #201, true, 121)
+#2 C:\xampp\htdocs\happymeds\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\happymeds\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\happymeds\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\happymeds\app\Controllers\PartnerController.php(410): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(933): App\Controllers\PartnerController->submitSupportRequest()
+#7 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+#8 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\happymeds\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\happymeds\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\happymeds\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-08-17 18:06:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-08-17 18:06:36 --> 220 smtp.gmail.com ESMTP d9443c01a7336-201f03756e0sm41877705ad.165 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2402:e280:2195:1b4:4555:7167:7103:b14f]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError d9443c01a7336-201f03756e0sm41877705ad.165 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError d9443c01a7336-201f03756e0sm41877705ad.165 - gsmtp
+
+INFO - 2024-08-17 18:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 18:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-17 18:12:20 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in C:\xampp\htdocs\happymeds\system\Email\Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1916)
+#1 C:\xampp\htdocs\happymeds\system\Email\Email.php(1916): stream_socket_enable_crypto(Resource id #201, true, 121)
+#2 C:\xampp\htdocs\happymeds\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\happymeds\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\happymeds\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\happymeds\app\Controllers\PartnerController.php(410): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(933): App\Controllers\PartnerController->submitSupportRequest()
+#7 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+#8 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\happymeds\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\happymeds\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\happymeds\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-08-17 18:12:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-08-17 18:12:20 --> 220 smtp.gmail.com ESMTP d9443c01a7336-201f0302e5asm41887605ad.44 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2402:e280:2195:1b4:4555:7167:7103:b14f]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError d9443c01a7336-201f0302e5asm41887605ad.44 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. For more information, go to
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError d9443c01a7336-201f0302e5asm41887605ad.44 - gsmtp
+
+INFO - 2024-08-17 18:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 18:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 18:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 18:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 18:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 18:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-17 18:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

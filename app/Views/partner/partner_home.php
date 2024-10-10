@@ -11,6 +11,7 @@
 				<div class="closed-icon">
 					<i class="fa-solid fa-xmark"></i>
 				</div>
+				
 			<div class="wallet-card">
 				<div class="wallet-wrapper">
 					<div class="mb-3">
@@ -32,6 +33,7 @@
 						<span class="fs-14 d-block">+2.25%</span>
 					</div>
 				</div>
+				
 				<div class="change-btn-1">
 					<a href="javascript:void(0);" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal1">
 						<svg class="me-2 svg-main-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
@@ -114,8 +116,18 @@
 		<!--**********************************
             Content body start
         ***********************************-->
+		<div class="page-titles">
+				<div class="sub-dz-head">
+					<div class="d-flex align-items-center dz-head-title">
+						<h2 class="text-white m-0">Dashboard</h2>
+						<p class="ms-2 text-warning">Welcome Back <?php echo htmlspecialchars($_SESSION['user_data']['company_name']) ?></p>
+					</div>
+					
+				</div>	
+			</div>
 			<div class="content-body">
             <!-- row -->
+			 
 				<div class="container-fluid">
 				<!-- Row -->
 					<div class="row">
@@ -374,9 +386,9 @@
 											document.getElementById('marketCharts').innerHTML = '';
 											var widgetDiv1 = document.createElement('div');
 											document.getElementById('marketCharts').appendChild(widgetDiv1);
-
-											trends.embed.renderExploreWidget(
-
+											try {
+											trends.embed.renderExploreWidgetTo(
+												widgetDiv1,
 												"TIMESERIES", 
 												{
 													"comparisonItem": [
@@ -394,6 +406,10 @@
 													"guestPath": "https://trends.google.com:443/trends/embed/"
 												}
 											);
+										} catch (error) {
+											console.error('Error rendering chart:', error);
+											document.getElementById('marketCharts').innerHTML = '<p>There was an error loading the chart. Please try again later.</p>';
+										}
 										}
 
 										// Event listeners for the tabs
@@ -526,39 +542,46 @@
 				</div>
 			</div>
 		<!-- modal-box-strat -->
-		<div class="modal fade" id="exampleModal2" tabindex="-1"  aria-hidden="true">
-		  <div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-			  <div class="modal-header ">
-				<h5 class="modal-title">Make Payment</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			  </div>
-			  <div class="modal-body">
-					<label class="form-label">Payment method</label>
-					<div>
-						<select class="image-select default-select dashboard-select w-100 mb-3" aria-label="Default">
-						  <option selected>Open this select menu</option>
-						  <option value="1">Bank Card</option>
-						  <option value="2">Online</option>
-						  <option value="3">Cash On Time</option>
-						</select>
-					</div>
-					<label class="form-label">Amount</label>
-					<input type="number" class="form-control mb-3" id="exampleInputEmail4"  placeholder="Rupee">
-					<label class="form-label">Card Holder Name</label>                    
-					<input type="number" class="form-control mb-3" id="exampleInputEmail5"  placeholder="Amount">
-					<label class="form-label">Card Name</label>                           
-					<input type="text" class="form-control mb-3" id="exampleInputEmail6"  placeholder="Amount">
-			  </div>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
-			  </div>
-			</div>
-		  </div>
-		</div>
+<!-- Updated Modal for Deposit Confirmation -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirm Deposit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please confirm the deposit details below:</p>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Deposit Amount</label>
+                        <input type="number" class="form-control" id="depositAmount" placeholder="Enter amount in Rupees">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="userEmail" placeholder="Enter your email">
+                    </div>
+
+                    <p class="mt-3 text-warning">
+                        Note: Please ensure that the details are correct before proceeding. You will be redirected to Razorpay to complete the payment securely.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="proceedWithDeposit()">Proceed to Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 		
-		<div class="modal fade" id="exampleModal1" tabindex="-1"  aria-hidden="true">
+		<div class="modal fade" id="exampleModal2" tabindex="-1"  aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
 					<div class="modal-content">
 					  <div class="modal-header ">
@@ -618,6 +641,55 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+        function proceedWithDeposit() {
+            // Get the input values
+            var depositAmount = document.getElementById("depositAmount").value;
+            var userName = document.getElementById("userName").value;
+            var userEmail = document.getElementById("userEmail").value;
+
+            // Validate inputs
+            if (!depositAmount || !userName || !userEmail) {
+                alert("Please fill in all required fields.");
+                return;
+            }
+
+            // Initialize Razorpay payment
+            var options = {
+                key: "rzp_test_weHunbcno354Ko", // Replace with your Razorpay Key ID
+                amount: depositAmount * 100, // Amount in paise
+                currency: "INR",
+                name: "Your Company Name",
+                description: "Deposit Payment",
+                handler: function (response) {
+                    alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
+                    // Here you can add code to handle the successful payment
+                    // e.g., update your database, show a success message, etc.
+                },
+                prefill: {
+                    name: userName,
+                    email: userEmail
+                },
+                theme: {
+                    color: "#3399cc"
+                }
+            };
+
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+
+            // Close the modal
+            var modal = document.getElementById("exampleModal1");
+            var modalInstance = bootstrap.Modal.getInstance(modal);
+            modalInstance.hide();
+        }
+    </script>
+
+
+	 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="vendor/global/global.min.js"></script>
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 	

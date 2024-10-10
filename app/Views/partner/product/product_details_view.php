@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
      	<!--Title-->
 	<title>Jiade : Crypto Trading UI Admin  Bootstrap 5 Template | Dexignlabs</title>
@@ -46,6 +45,13 @@
         <!--**********************************
             Content body start
         ***********************************-->
+		<div class="page-titles">
+        <div class="sub-dz-head">
+				<div class="d-flex align-items-center dz-head-title">
+					<h2 class="text-white m-0">Product Details</h2>
+				</div>
+			</div>
+		</div>
 		<div class="content-body">
 			<div class="container-fluid">
 				
@@ -162,11 +168,11 @@
                                                 <?= esc($product['TherapeuticUse']) ?>
 												</p>
 												<div class="d-flex align-items-end flex-wrap mt-4">
-												
-													<!--Quanatity End-->
-													<div class="shopping-cart  me-3 mt-xl-0 mt-2">
-														<a class="btn btn-primary"  href="<?php echo base_url('product_invest?product_id='.$product['product_id']) ?>"><i
-																class="fa fa-shopping-basket me-2"></i>Are you intrested to be a brand partner?</a>
+													<div class="shopping-cart me-3 mt-xl-0 mt-2">
+														<button id="invest-button" class="btn btn-primary" data-product-id="<?= $product['product_id'] ?>">
+															<i class="fa fa-shopping-basket me-2"></i> Are you interested in being a brand partner?
+														</button>
+														<div id="investment-feedback"></div>
 													</div>
 												</div>
 											</div>
@@ -355,7 +361,30 @@
 		});
 
 	</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#invest-button').click(function() {
+        var productId = $(this).data('product-id');
+        $.ajax({
+            url: '<?= site_url('check_investment') ?>',
+            type: 'GET',
+            data: { product_id: productId },
+            dataType: 'json',
+            success: function(response) {
+                if (response.invested) {
+                    $('#investment-feedback').html('<div class="alert alert-info mt-2">' + response.message + '</div>');
+                } else {
+                    window.location.href = '<?= site_url('product_invest') ?>?product_id=' + productId;
+                }
+            },
+            error: function() {
+                $('#investment-feedback').html('<div class="alert alert-danger mt-2">An error occurred. Please try again.</div>');
+            }
+        });
+    });
+});
+</script>
 
-	
 </body>
 </html>

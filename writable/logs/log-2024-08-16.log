@@ -1,0 +1,4145 @@
+INFO - 2024-08-16 09:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 09:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 09:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 09:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 09:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 09:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 10:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 11:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 11:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 11:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 12:01:14 --> Error: Typed property App\Controllers\PartnerController::$activityModel must not be accessed before initialization
+[Method: GET, Route: portfolio]
+in APPPATH\Controllers\PartnerController.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 12:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:06:24 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [id] => 1
+            [type] => TopUp
+            [amount] => 2345.67
+            [status] => Pending
+            [timestamp] => 2024-08-14 00:00:00
+            [user_id] => 2
+        )
+
+)
+
+INFO - 2024-08-16 12:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:08:07 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [id] => 1
+            [type] => TopUp
+            [amount] => 2345.67
+            [status] => Pending
+            [timestamp] => 2024-08-14 00:00:00
+            [user_id] => 2
+        )
+
+)
+
+CRITICAL - 2024-08-16 12:08:07 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: portfolio]
+in APPPATH\Views\partner\dashboard\portfolio.php on line 224.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/dashboard/portfolio', [], true)
+ 4 APPPATH\Controllers\PartnerController.php(316): view('partner/dashboard/portfolio', [...])
+ 5 APPPATH\Controllers\PartnerController.php(293): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 6 APPPATH\Controllers\PartnerController.php(308): App\Controllers\PartnerController->renderCache('portfolio_view', Object(Closure))
+ 7 APPPATH\Controllers\PartnerController.php(182): App\Controllers\PartnerController->renderView('portfolio_view', 'partner/dashboard/portfolio', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 12:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:23:32 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [id] => 1
+            [type] => TopUp
+            [amount] => 2345.67
+            [status] => Pending
+            [timestamp] => 2024-08-14 00:00:00
+            [user_id] => 2
+        )
+
+)
+
+CRITICAL - 2024-08-16 12:23:32 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: portfolio]
+in APPPATH\Views\partner\dashboard\portfolio.php on line 224.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/dashboard/portfolio', [], true)
+ 4 APPPATH\Controllers\PartnerController.php(316): view('partner/dashboard/portfolio', [...])
+ 5 APPPATH\Controllers\PartnerController.php(293): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 6 APPPATH\Controllers\PartnerController.php(308): App\Controllers\PartnerController->renderCache('portfolio_view', Object(Closure))
+ 7 APPPATH\Controllers\PartnerController.php(182): App\Controllers\PartnerController->renderView('portfolio_view', 'partner/dashboard/portfolio', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 12:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:25:19 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [id] => 1
+            [type] => TopUp
+            [amount] => 2345.67
+            [status] => Pending
+            [timestamp] => 2024-08-14 00:00:00
+            [user_id] => 2
+        )
+
+)
+
+CRITICAL - 2024-08-16 12:25:19 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: portfolio]
+in APPPATH\Views\partner\dashboard\portfolio.php on line 224.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/dashboard/portfolio', [], true)
+ 4 APPPATH\Controllers\PartnerController.php(316): view('partner/dashboard/portfolio', [...])
+ 5 APPPATH\Controllers\PartnerController.php(293): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 6 APPPATH\Controllers\PartnerController.php(308): App\Controllers\PartnerController->renderCache('portfolio_view', Object(Closure))
+ 7 APPPATH\Controllers\PartnerController.php(182): App\Controllers\PartnerController->renderView('portfolio_view', 'partner/dashboard/portfolio', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 12:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:27:15 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [id] => 1
+            [type] => TopUp
+            [amount] => 2345.67
+            [status] => Pending
+            [timestamp] => 2024-08-14 00:00:00
+            [user_id] => 2
+        )
+
+)
+
+CRITICAL - 2024-08-16 12:27:15 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: portfolio]
+in APPPATH\Views\partner\dashboard\portfolio.php on line 224.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/dashboard/portfolio', [], true)
+ 4 APPPATH\Controllers\PartnerController.php(316): view('partner/dashboard/portfolio', [...])
+ 5 APPPATH\Controllers\PartnerController.php(293): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 6 APPPATH\Controllers\PartnerController.php(308): App\Controllers\PartnerController->renderCache('portfolio_view', Object(Closure))
+ 7 APPPATH\Controllers\PartnerController.php(182): App\Controllers\PartnerController->renderView('portfolio_view', 'partner/dashboard/portfolio', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 12:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:29:55 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [type] => TopUp
+                    [amount] => 2345.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-14 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+CRITICAL - 2024-08-16 12:29:55 --> ErrorException: Undefined array key "time"
+[Method: GET, Route: portfolio]
+in APPPATH\Views\partner\dashboard\portfolio.php on line 227.
+ 1 APPPATH\Views\partner\dashboard\portfolio.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "time"', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\dashboard\\portfolio.php', 227)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\dashboard\\portfolio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/dashboard/portfolio', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(316): view('partner/dashboard/portfolio', [...])
+ 6 APPPATH\Controllers\PartnerController.php(293): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(308): App\Controllers\PartnerController->renderCache('portfolio_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(182): App\Controllers\PartnerController->renderView('portfolio_view', 'partner/dashboard/portfolio', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 12:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:30:17 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [type] => TopUp
+                    [amount] => 2345.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-14 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 12:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:30:48 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [type] => TopUp
+                    [amount] => 2345.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-14 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 12:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:33:46 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [type] => TopUp
+                    [amount] => 2345.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-14 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 12:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:34:02 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [type] => TopUp
+                    [amount] => 2345.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-14 00:00:00
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 12:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-16 12:42:40 --> Error: Class "App\Models\DateTime" not found
+[Method: GET, Route: portfolio]
+in APPPATH\Models\ActivityModel.php on line 21.
+ 1 APPPATH\Controllers\PartnerController.php(176): App\Models\ActivityModel->yesterdaysActivityByUserId(2)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 12:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:44:11 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+)
+
+INFO - 2024-08-16 12:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:46:05 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 1
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 0
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 12:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:46:37 --> Toggled favorite status for product ID: 2
+INFO - 2024-08-16 12:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:46:39 --> Toggled favorite status for product ID: 3
+INFO - 2024-08-16 12:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:46:41 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 12:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:55:11 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 12:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:57:21 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 12:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 12:58:58 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 13:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 13:02:26 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+CRITICAL - 2024-08-16 13:02:26 --> ErrorException: Undefined variable $activity
+[Method: GET, Route: portfolio]
+in APPPATH\Views\partner\dashboard\portfolio.php on line 246.
+ 1 APPPATH\Views\partner\dashboard\portfolio.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activity', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\dashboard\\portfolio.php', 246)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\dashboard\\portfolio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/dashboard/portfolio', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(317): view('partner/dashboard/portfolio', [...])
+ 6 APPPATH\Controllers\PartnerController.php(294): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(309): App\Controllers\PartnerController->renderCache('portfolio_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(183): App\Controllers\PartnerController->renderView('portfolio_view', 'partner/dashboard/portfolio', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 13:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 13:02:35 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 13:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 13:03:07 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 13:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 13:05:40 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 13:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 13:06:09 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 15:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:05:15 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 15:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:06:21 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+CRITICAL - 2024-08-16 15:06:21 --> ErrorException: Undefined array key "type"
+[Method: GET, Route: portfolio]
+in APPPATH\Views\partner\dashboard\portfolio.php on line 218.
+ 1 APPPATH\Views\partner\dashboard\portfolio.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "type"', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\dashboard\\portfolio.php', 218)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\dashboard\\portfolio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/dashboard/portfolio', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(317): view('partner/dashboard/portfolio', [...])
+ 6 APPPATH\Controllers\PartnerController.php(294): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(309): App\Controllers\PartnerController->renderCache('portfolio_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(183): App\Controllers\PartnerController->renderView('portfolio_view', 'partner/dashboard/portfolio', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 15:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:06:34 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 15:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:08:03 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 15:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:09:03 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 15:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:09:21 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 15:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:09:46 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 15:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:10:13 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-15 00:00:00
+                    [user_id] => 2
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [timestamp] => 2024-08-16 18:03:41
+                    [user_id] => 2
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [timestamp] => 2024-08-16 18:28:54
+                    [user_id] => 2
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 15:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:13:02 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [time] => 00:00:00
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [time] => 18:03:41
+                )
+
+            [1] => Array
+                (
+                    [time] => 18:28:54
+                )
+
+        )
+
+)
+
+CRITICAL - 2024-08-16 15:13:02 --> ErrorException: Undefined array key "type"
+[Method: GET, Route: portfolio]
+in APPPATH\Views\partner\dashboard\portfolio.php on line 218.
+ 1 APPPATH\Views\partner\dashboard\portfolio.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "type"', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\dashboard\\portfolio.php', 218)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\dashboard\\portfolio.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/dashboard/portfolio', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(317): view('partner/dashboard/portfolio', [...])
+ 6 APPPATH\Controllers\PartnerController.php(294): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(309): App\Controllers\PartnerController->renderCache('portfolio_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(183): App\Controllers\PartnerController->renderView('portfolio_view', 'partner/dashboard/portfolio', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-08-16 15:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:14:52 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 2
+                    [product_id] => 2
+                    [product_name] => CardioCare
+                    [holding_value] => 5247.75
+                    [change_percentage] => 7.45
+                    [week_change] => 6.10
+                    [favorite] => 0
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [4] => Array
+                (
+                    [holding_id] => 5
+                    [product_id] => 5
+                    [product_name] => TeleHealth Solutions
+                    [holding_value] => 3610.85
+                    [change_percentage] => 4.60
+                    [week_change] => 3.80
+                    [favorite] => 1
+                    [icon] => https://cdn-icons-png.flaticon.com/512/3595/3595970.png
+                    [ProductName] => BRO P
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+            [0] => Array
+                (
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [time] => 00:00:00
+                )
+
+        )
+
+    [recent_activity] => Array
+        (
+            [0] => Array
+                (
+                    [type] => Withdraw
+                    [amount] => 1000.67
+                    [status] => Completed
+                    [time] => 18:03:41
+                )
+
+            [1] => Array
+                (
+                    [type] => TopUp
+                    [amount] => 1000.67
+                    [status] => Pending
+                    [time] => 18:28:54
+                )
+
+        )
+
+)
+
+INFO - 2024-08-16 15:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-16 15:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
