@@ -1,0 +1,1206 @@
+INFO - 2024-10-05 14:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:21:21 --> Investment Check - User ID: 2, Product ID: 3
+INFO - 2024-10-05 14:21:21 --> Investment Check - User ID: 2, Product ID: 3, Is Invested: Yes
+INFO - 2024-10-05 14:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:23:45 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+
+INFO - 2024-10-05 14:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:26:12 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+
+INFO - 2024-10-05 14:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:26:40 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+
+INFO - 2024-10-05 14:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 14:30:42 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+
+INFO - 2024-10-05 15:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 15:13:17 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+
+INFO - 2024-10-05 15:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 15:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 15:16:13 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+
+INFO - 2024-10-05 15:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-05 15:17:24 --> ArgumentCountError: Too few arguments to function log_message(), 1 passed in C:\xampp\htdocs\happymeds\app\Models\ActivityModel.php on line 48 and at least 2 expected
+[Method: GET, Route: portfolio]
+in SYSTEMPATH\Common.php on line 772.
+ 1 APPPATH\Models\ActivityModel.php(48): log_message('Yesterday\'s activity for user 2: []')
+ 2 APPPATH\Controllers\PartnerController.php(216): App\Models\ActivityModel->yesterdaysActivityByUserId(2)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-05 15:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-05 15:20:51 --> mysqli_sql_exception: Table 'lammygkk_aranea.your_table' doesn't exist in C:\xampp\htdocs\happymeds\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\happymeds\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `type`, ...', 0)
+#1 C:\xampp\htdocs\happymeds\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `type`, ...')
+#2 C:\xampp\htdocs\happymeds\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `type`, ...')
+#3 C:\xampp\htdocs\happymeds\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `type`, ...', Array, false)
+#4 C:\xampp\htdocs\happymeds\app\Models\ActivityModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\happymeds\app\Controllers\PartnerController.php(216): App\Models\ActivityModel->yesterdaysActivityByUserId(2)
+#6 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+#7 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+#8 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\happymeds\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\happymeds\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\happymeds\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-05 15:20:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'lammygkk_aranea.your_table' doesn't exist
+[Method: GET, Route: portfolio]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `type`, `amount`, `status`, TIME(timestamp) as time
+FROM `your_table`
+WHERE `user_id` = :user_id:
+AND `timestamp` >= :timestamp:
+AND `timestamp` < :timestamp.1:', [...], false)
+ 2 APPPATH\Models\ActivityModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\PartnerController.php(216): App\Models\ActivityModel->yesterdaysActivityByUserId(2)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-05 15:20:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'lammygkk_aranea.your_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `type`, `amount`, `status`, TIME(timestamp) as time
+FROM `your_table`
+WHERE `user_id` = 2
+AND `timestamp` >= \'2024-10-04 00:00:00\'
+AND `timestamp` < \'2024-10-05 00:00:00\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `type`, `amount`, `status`, TIME(timestamp) as time
+FROM `your_table`
+WHERE `user_id` = 2
+AND `timestamp` >= \'2024-10-04 00:00:00\'
+AND `timestamp` < \'2024-10-05 00:00:00\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `type`, `amount`, `status`, TIME(timestamp) as time
+FROM `your_table`
+WHERE `user_id` = :user_id:
+AND `timestamp` >= :timestamp:
+AND `timestamp` < :timestamp.1:', [...], false)
+ 4 APPPATH\Models\ActivityModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\PartnerController.php(216): App\Models\ActivityModel->yesterdaysActivityByUserId(2)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-05 15:20:51 --> [Caused by] mysqli_sql_exception: Table 'lammygkk_aranea.your_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT `type`, `amount`, `status`, TIME(timestamp) as time
+FROM `your_table`
+WHERE `user_id` = 2
+AND `timestamp` >= \'2024-10-04 00:00:00\'
+AND `timestamp` < \'2024-10-05 00:00:00\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `type`, `amount`, `status`, TIME(timestamp) as time
+FROM `your_table`
+WHERE `user_id` = 2
+AND `timestamp` >= \'2024-10-04 00:00:00\'
+AND `timestamp` < \'2024-10-05 00:00:00\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `type`, `amount`, `status`, TIME(timestamp) as time
+FROM `your_table`
+WHERE `user_id` = 2
+AND `timestamp` >= \'2024-10-04 00:00:00\'
+AND `timestamp` < \'2024-10-05 00:00:00\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT `type`, `amount`, `status`, TIME(timestamp) as time
+FROM `your_table`
+WHERE `user_id` = :user_id:
+AND `timestamp` >= :timestamp:
+AND `timestamp` < :timestamp.1:', [...], false)
+ 5 APPPATH\Models\ActivityModel.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\PartnerController.php(216): App\Models\ActivityModel->yesterdaysActivityByUserId(2)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->Portfolio()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-05 15:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 15:21:09 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+
+INFO - 2024-10-05 15:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 15:37:13 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+
+INFO - 2024-10-05 15:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 15:39:08 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+
+INFO - 2024-10-05 15:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-05 15:41:14 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 2
+            [user_name] => arjunreddy
+            [email] => demo@gmail.com
+            [phone] => 7788559966
+            [password] => $2y$10$ThvyiQoTKKCLK2EKpoLSL.DoEC21uTepLhBzuBrJ0cx0rfPNKcU8W
+            [company_name] => Arjun Reddy
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-06-09 22:24:40
+            [firstname] => Arjun
+            [lastname] => Reddy
+            [designation] => Doctor
+            [skills] => MBBS, Cardiology
+            [gender] => male
+            [dob] => 0000-00-00
+            [country] => india
+            [city] => krasnodar
+            [about_me] => Dr. Arjun Reddy, a surgeon of exceptional skill and unwavering dedication, leverages his brilliance in complex procedures to achieve optimal patient outcomes, though his unconventional approach might require further discussion.
+            [profile_photo] => 1717954468_b27f872bceb3ceb2bdf5.jpg
+            [language] => English,Hindi
+            [age] => 34
+            [experience] => 12
+            [location] => Banglore
+            [login_oauth_uid] => -
+        )
+
+    [product_holdings] => Array
+        (
+            [0] => Array
+                (
+                    [holding_id] => 1
+                    [product_id] => 1
+                    [product_name] => HealthPlus
+                    [holding_value] => 2385.50
+                    [change_percentage] => 5.32
+                    [week_change] => 4.25
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2906/2906533.png
+                    [ProductName] => ACEBRO-P
+                )
+
+            [1] => Array
+                (
+                    [holding_id] => 3
+                    [product_id] => 3
+                    [product_name] => NanoHealth
+                    [holding_value] => 7518.20
+                    [change_percentage] => -2.15
+                    [week_change] => -1.75
+                    [favorite] => 1
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://cdn-icons-png.flaticon.com/512/2873/2873078.png
+                    [ProductName] => AMBRO LS
+                )
+
+            [2] => Array
+                (
+                    [holding_id] => 4
+                    [product_id] => 4
+                    [product_name] => BioTech Innovations
+                    [holding_value] => 4021.00
+                    [change_percentage] => 3.50
+                    [week_change] => 2.95
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 0
+                    [date_of_investment] => 2000-01-01 00:00:00
+                    [icon] => https://thumb.ac-illust.com/b6/b6d5b82115663429eda41b910d544fd5_t.jpeg
+                    [ProductName] => BRO EE
+                )
+
+            [3] => Array
+                (
+                    [holding_id] => 6
+                    [product_id] => 2
+                    [product_name] => 
+                    [holding_value] => 1000.00
+                    [change_percentage] => 5.00
+                    [week_change] => 1.00
+                    [favorite] => 0
+                    [user_id] => 2
+                    [investment_amount] => 5000
+                    [date_of_investment] => 2024-09-24 15:28:10
+                    [icon] => https://cdn.pixabay.com/photo/2017/05/15/23/47/stethoscope-icon-2316460_1280.png
+                    [ProductName] => ALSTOCLAV 625
+                )
+
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+)
+

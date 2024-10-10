@@ -61,8 +61,10 @@ $routes->get('reports', 'PartnerController::Reports');
 $routes->get('banking', 'PartnerController::Banking');
 $routes->get('product_details_view', 'PartnerController::ProductDetailsView');
 $routes->get('product_invest', 'PartnerController::ProductInvest');
+$routes->get('check_investment', 'PartnerController::checkInvestment');
 $routes->post('/store_bank_account', 'PartnerController::storeBankAccount');
-
+$routes->get('upload_kyc', 'PartnerController::upload_kyc');
+$routes->post('/kyc_upload/submit', 'PartnerController::submitKyc');
 $routes->post('select_plan', 'PartnerController::select_plan');
 
 

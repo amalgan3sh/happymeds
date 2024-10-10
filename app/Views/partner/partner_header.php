@@ -990,15 +990,7 @@
                     </div>
 				</nav>
 			</div>
-			<div class="page-titles">
-				<div class="sub-dz-head">
-					<div class="d-flex align-items-center dz-head-title">
-						<h2 class="text-white m-0">Dashboard</h2>
-						<p class="ms-2 text-warning">Welcome Back <?php echo htmlspecialchars($_SESSION['user_data']['company_name']) ?></p>
-					</div>
-					
-				</div>	
-			</div>
+			
 		</div>
 		
 			<!--**********************************

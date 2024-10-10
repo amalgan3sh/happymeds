@@ -1,3 +1,11 @@
+<div class="page-titles">
+<div class="sub-dz-head">
+    <div class="d-flex align-items-center dz-head-title">
+        <h2 class="text-white m-0">Profile</h2>
+    </div>
+</div>
+</div>
+
 <!--**********************************
     Content body start
 ***********************************-->

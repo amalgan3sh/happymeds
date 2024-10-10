@@ -1,5 +1,13 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="page-titles">
+<div class="sub-dz-head">
+	<div class="d-flex align-items-center dz-head-title">
+		<h2 class="text-white m-0">Portfolio</h2>
+	</div>
+</div>
+</div>
 		<!--**********************************
             Content body start
         ***********************************-->
@@ -166,27 +174,34 @@
 									</tr>
 								</thead>
 								<tbody>
-									<?php foreach ($product_holdings as $holding): ?>
+									<?php if (empty($product_holdings)): ?>
 										<tr>
-											<td>
-												<div class="icon-wrapper">
-													<img src="<?= esc($holding['icon']) ?>" alt="<?= esc($holding['product_name']) ?> Icon">
-												</div>
-											</td>
-											<td><?= esc($holding['ProductName']) ?></td>
-											<td>$<?= number_format($holding['holding_value'], 2) ?></td>
-											<td><?= esc($holding['change_percentage']) ?>%</td>
-											<td>$<?= number_format($holding['week_change'], 2) ?></td>
-											<td>
-												<button class="like-button" data-product-id="<?php echo $holding['product_id']; ?>" 
-												data-initial-status="<?= esc($holding['favorite']) ? 'true' : 'false' ?>">
-													<span class="heart-icon">&hearts;</span>
-												</button>
-											</td>
+											<td colspan="6" style="text-align:center;">No Data Available</td>
 										</tr>
-									<?php endforeach; ?>
+									<?php else: ?>
+										<?php foreach ($product_holdings as $holding): ?>
+											<tr>
+												<td>
+													<div class="icon-wrapper">
+														<img src="<?= esc($holding['icon']) ?>" alt="<?= esc($holding['ProductName']) ?> Icon">
+													</div>
+												</td>
+												<td><?= esc($holding['ProductName']) ?></td>
+												<td>$<?= number_format($holding['holding_value'], 2) ?></td>
+												<td><?= esc($holding['change_percentage']) ?>%</td>
+												<td>$<?= number_format($holding['week_change'], 2) ?></td>
+												<td>
+													<button class="like-button" data-product-id="<?= esc($holding['product_id']); ?>" 
+															data-initial-status="<?= esc($holding['favorite']) ? 'true' : 'false' ?>">
+														<span class="heart-icon">&hearts;</span>
+													</button>
+												</td>
+											</tr>
+										<?php endforeach; ?>
+									<?php endif; ?>
 								</tbody>
-							</table>							
+							</table>
+							
 							</div>
 						</div>
 					</div>
@@ -422,141 +437,127 @@
 						</div>	
 					</div>
 					<div class="col-xl-6">
-						<div class="row">
-							<div class="col-xl-12">
-								<div class="card overflow-hidden h-auto">
-									<div class="card-body pb-4">
-										<div class="row">
-										<div class="col-xl-5 col-md-5">
-											<h4 class="card-title mb-0">Weekly Healthcare Investment Summary</h4>
-											<p>Overview of our healthcare investments and returns for the week.</p>
-											<div class="d-flex mb-3 align-items-center">
-												<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<rect y="0" width="22.2609" height="16" rx="8" fill="#28A745"/>
-												</svg>
-												<span class="fs-16 text-dark mx-2 font-w600">$300</span>
-												<span class="fs-14">Investment</span>
-											</div>
-											<div class="d-flex mb-3 align-items-center">
-												<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<rect y="0" width="22.2609" height="16" rx="8" fill="#FFC107"/>
-												</svg>
-												<span class="fs-16 text-dark mx-2 font-w600">$650</span>
-												<span class="fs-14">Total Returns</span>
-											</div>
-											<div class="d-flex align-items-center">
-												<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<rect y="0" width="22.2609" height="16" rx="8" fill="#007BFF"/>
-												</svg>
-												<span class="fs-16 text-dark mx-2 font-w600">30%</span>
-												<span class="fs-14">ROI Percentage</span>
-											</div>
-										</div>
+						<div class="card overflow-hidden h-auto">
+							<div class="card-body pb-4">
+								<div class="table-responsive">
+									<table class="table portfolio-table">
+										<thead>
+											<tr>
+												<th>Sl No</th>
+												<th>Product Name</th>
+												<th>Status</th>
+												<th>Requested Date</th>
+											</tr>
+										</thead>
+										<tbody>
+											<?php if (empty($investment_requests)): ?>
+												<tr>
+													<td colspan="4" class="text-center">No Data Available</td>
+												</tr>
+											<?php else: ?>
+												<?php 
+													$sl_no = 1;
+													foreach ($investment_requests as $request): ?>
+													<tr>
+														<td class="align-middle" style="padding: 8px;">
+															<span class="font-w600 text-dark"><?= $sl_no++; ?></span>
+														</td>
+														<td class="font-w600 text-dark"><?= htmlspecialchars($request['productName']); ?></td>
+														<td>
+                                                            <?php if ($request['status'] == ''): ?>
+                                                                <span style="color: orange;">Pending</span>
+                                                            <?php elseif ($request['status'] == 'approved'): ?>
+                                                                <span style="color: green;">Approved</span>
+                                                            <?php elseif ($request['status'] == 'rejected'): ?>
+                                                                <span style="color: red;">Rejected</span>
+                                                            <?php endif; ?>
+                                                        </td>
+														<td class="font-w600 text-dark"><?= date('d M Y', strtotime($request['time_stamp'])); ?></td>
+													</tr>
+												<?php endforeach; ?>
+											<?php endif; ?>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
 
-											<div class="col-xl-7 col-md-7 align-self-center" style="position: relative;">
-												<div id="columnChart">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-6 col-xxl-6 col-md-6">
-								<div class="row">
-									<div class="col-xl-12 col-sm-12">
-										<div class="card">
-											<div class="card-body">
-												<div class="align-items-center d-flex justify-content-between">	
-													<div class="c-heading">
-														<span class="text-dark font-w600 mb-2 d-block text-nowrap ">345</span>
-														<p class="mb-0 font-w500 text-nowrap">Total Deposit</p>
-													</div>
-													<div class="d-inline-block position-relative donut-chart-sale mb-0">
-														<span class="donut1" data-peity='{ "fill": ["rgb(9, 60, 189)", "rgba(245, 245, 245, 1)"],   "innerRadius": 40, "radius": 10}'>5/8</span>
-														<small class="text-dark">62%</small>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xl-12   col-sm-12">
-										<div class="card">
-											<div class="card-body">
-												<div class="align-items-center d-flex justify-content-between">	
-													<div class="c-heading">
-														<span class="text-dark font-w600 mb-2 d-block">4,563</span>
-														<p class="mb-0 font-w500">Total Income</p>
-													</div>
-													<div class="d-inline-block position-relative donut-chart-sale mb-0">
-														<span class="donut1" data-peity='{ "fill": ["rgba(255, 97, 117, 1)", "rgba(245, 245, 245, 1)"],   "innerRadius": 40, "radius": 10}'>3/8</span>
-														<small class="text-dark">38%</small>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-6 col-xxl-6 col-md-6">
+					<div class="col-xl-6">
+						<div class="row">
+							<!-- Total Deposit Card -->
+							<div class="col-md-6">
 								<div class="card">
-									<div class="card-header border-0 pb-0">
+									<div class="card-body d-flex justify-content-between align-items-center">
+										<div>
+											<span class="text-dark font-w600 d-block">345</span>
+											<p class="font-w500 mb-0">Total Deposit</p>
+										</div>
+										<div class="position-relative donut-chart-sale">
+											<span class="donut1" data-peity='{ "fill": ["rgb(9, 60, 189)", "rgba(245, 245, 245, 1)"], "innerRadius": 40, "radius": 10}'>5/8</span>
+											<small class="text-dark">62%</small>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Total Income Card -->
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-body d-flex justify-content-between align-items-center">
+										<div>
+											<span class="text-dark font-w600 d-block">4,563</span>
+											<p class="font-w500 mb-0">Total Income</p>
+										</div>
+										<div class="position-relative donut-chart-sale">
+											<span class="donut1" data-peity='{ "fill": ["rgba(255, 97, 117, 1)", "rgba(245, 245, 245, 1)"], "innerRadius": 40, "radius": 10}'>3/8</span>
+											<small class="text-dark">38%</small>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Current Graph Card -->
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header border-0 pb-0 d-flex justify-content-between">
 										<h4 class="card-title">Current Graph</h4>
-										<div class="dropdown custom-dropdown mb-0 tbl-orders-style">
-											<div class="btn sharp tp-btn" data-bs-toggle="dropdown" role="button" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										<div class="dropdown">
+											<button class="btn sharp tp-btn" data-bs-toggle="dropdown">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="var(--text-dark)" stroke-width="2"></path>
+													<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="var(--text-dark)" stroke-width="2"></path>
+													<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="var(--text-dark)" stroke-width="2"></path>
 												</svg>
-											</div>
-											<div class="dropdown-menu dropdown-menu-end">
-												<a class="dropdown-item" href="javascript:void(0);">Details</a>
-												<a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
-											</div>
+											</button>
+											<ul class="dropdown-menu dropdown-menu-end">
+												<li><a class="dropdown-item" href="#">Details</a></li>
+												<li><a class="dropdown-item text-danger" href="#">Cancel</a></li>
+											</ul>
 										</div>
 									</div>
 									<div class="card-body text-center">
 										<div id="pieChart" class="d-inline-block"></div>
-										<div class="chart-items">
-												<div class=" col-xl-12 col-sm-12">
-													<div class="row text-dark text-start fs-13 mt-4">
-														
-														<span class="mb-3 col-6 pe-0">
-															<svg class="me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<rect width="14" height="14" rx="4" fill="#FF5166"/>
-															</svg>
-															Neutraceutical
-														</span>
-														<span class="mb-3 col-6 pe-0">
-															<svg class="me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<rect width="14" height="14" rx="4" fill="#ED3DD1"/>
-															</svg>
-															Cosmetics
-														</span>
-														<span class="mb-3 col-6 pe-0">
-															<svg class="me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<rect width="14" height="14" rx="4" fill="#2BC844"/>
-															</svg>
-															HealthCare
-														</span>
-														<span class="mb-3 col-6 pe-0">
-															<svg class="me-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<rect width="14" height="14" rx="4" fill="#3C8AFF"/>
-															</svg>
-															Hospital Care
-														</span>
-														
-													</div>
-												</div>
+										<div class="row mt-4 text-start text-dark fs-13">
+											<div class="col-6 mb-3">
+												<svg class="me-2" width="14" height="14" fill="#FF5166"><rect width="14" height="14" rx="4"/></svg>Neutraceutical
 											</div>
+											<div class="col-6 mb-3">
+												<svg class="me-2" width="14" height="14" fill="#ED3DD1"><rect width="14" height="14" rx="4"/></svg>Cosmetics
+											</div>
+											<div class="col-6 mb-3">
+												<svg class="me-2" width="14" height="14" fill="#2BC844"><rect width="14" height="14" rx="4"/></svg>HealthCare
+											</div>
+											<div class="col-6 mb-3">
+												<svg class="me-2" width="14" height="14" fill="#3C8AFF"><rect width="14" height="14" rx="4"/></svg>Hospital Care
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							
 						</div>
 					</div>
-					
-				</div>
+
             </div>
         </div>
         <!--**********************************
