@@ -11,9 +11,18 @@
 </div>
 
 <!-- Search bar -->
-<div class="container-fluid mb-4 d-flex justify-content-center">
-    <input type="text" id="searchBar" class="form-control" placeholder="Search products..." onkeyup="filterProducts()" style="max-width: 300px;">
+<div class="container-fluid mb-4 d-flex justify-content-end">
+    <div class="search-container">
+        <input type="text" id="searchBar" class="form-control" placeholder="Search products..." onkeyup="filterProducts()">
+    </div>
 </div>
+
+<style>
+    .search-container {
+        max-width: 300px;
+        width: 100%;
+    }
+</style>
 
 <div class="content-body">
     <!-- row -->
