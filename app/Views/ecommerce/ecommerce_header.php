@@ -184,7 +184,7 @@
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info header-info-right">
                             <ul>
-                                <li>Need help? Call Us: <strong class="text-brand"> +91 9072420016</strong></li>
+                                <li>Need help? Call Us: <strong class="text-brand"> +91  7736702333</strong></li>
                                 
                             </ul>
                         </div>
@@ -207,6 +207,19 @@
                                     <option>Nutraceuticals</option>
                                     <option>Cosmetics</option>
                                     <option>Hospital Care</option>
+                                    <option>Cosmeceuticals</option>
+                                </select>
+                                <input type="text" placeholder="Search for items..." />
+                            </form>
+                        </div>
+                        <div class="search-style-2">
+                            <form action="#">
+                                <select class="select-active">
+                                    <option>Usage</option>
+                                    <option>Tablet</option>
+                                    <option>Syrup</option>
+                                    <option>Injection</option>
+                                    <option>Ointment</option>
                                     <option>Cosmeceuticals</option>
                                 </select>
                                 <input type="text" placeholder="Search for items..." />
@@ -461,7 +474,7 @@
                     </div>
                     <div class="hotline d-none d-lg-flex">
                         <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-headphone.svg" alt="hotline" />
-                        <p>+91 9072420016<span>24/7 Support Center</span></p>
+                        <p>+91 9744334141<span>24/7 Support Center</span></p>
                     </div>
                     <div class="header-action-icon-2 d-block d-lg-none">
                         <div class="burger-icon burger-icon-white">
@@ -694,7 +707,7 @@
                         <a href="page-login.html"><i class="fi-rs-user"></i>Log In / Sign Up </a>
                     </div>
                     <div class="single-mobile-header-info">
-                        <a href="#"><i class="fi-rs-headphones"></i>(+91) 9072420016 </a>
+                        <a href="#"><i class="fi-rs-headphones"></i>(+91)  7736702333 </a>
                     </div>
                 </div>
                 <div class="mobile-social-icon mb-50">

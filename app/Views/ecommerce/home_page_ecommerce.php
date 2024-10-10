@@ -39,6 +39,7 @@
         <section class="popular-categories section-padding">
             <div class="container wow animate__animated animate__fadeIn">
                 <div class="section-title">
+                    <!--
                     <div class="title">
                         <h3>Featured Categories</h3>
                         <ul class="list-inline nav nav-tabs links">
@@ -49,6 +50,7 @@
                             <li class="list-inline-item nav-item"><a class="nav-link" href="shop-grid-right.html">Cosmeceuticals</a></li>
                         </ul>
                     </div>
+                    -->
                     <div class="slider-arrow slider-arrow-2 flex-right carausel-10-columns-arrow" id="carausel-10-columns-arrows"></div>
                 </div>
                 <div class="carausel-10-columns-cover position-relative">
@@ -57,71 +59,43 @@
                             <figure class="img-hover-scale overflow-hidden">
                                 <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-13.png" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Daily drugs</a></h6>
+                            <h6><a href="shop-grid-right.html">Lotion</a></h6>
                             <span>26 items</span>
                         </div>
                         <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                             <figure class="img-hover-scale overflow-hidden">
                                 <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-12.png" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Dietary supplements</a></h6>
+                            <h6><a href="shop-grid-right.html">Tablet</a></h6>
                             <span>28 items</span>
                         </div>
                         <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                             <figure class="img-hover-scale overflow-hidden">
                                 <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-11.png" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Functional foods</a></h6>
+                            <h6><a href="shop-grid-right.html">Syrup</a></h6>
                             <span>14 items</span>
                         </div>
                         <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
                             <figure class="img-hover-scale overflow-hidden">
                                 <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-9.png" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Herbal supplements</a></h6>
+                            <h6><a href="shop-grid-right.html">Injection</a></h6>
                             <span>54 items</span>
                         </div>
                         <div class="card-2 bg-14 wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
                             <figure class="img-hover-scale overflow-hidden">
                                 <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-1.png" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Skincare products</a></h6>
+                            <h6><a href="shop-grid-right.html">Ointment</a></h6>
                             <span>72 items</span>
                         </div>
                         <div class="card-2 bg-15 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
                             <figure class="img-hover-scale overflow-hidden">
                                 <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-2.png" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Haircare products</a></h6>
+                            <h6><a href="shop-grid-right.html">Cream</a></h6>
                             <span>36 items</span>
-                        </div>
-                        <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".8s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-4.png" alt="" /></a>
-                            </figure>
-                            <h6><a href="shop-grid-right.html">Personal care products</a></h6>
-                            <span>123 items</span>
-                        </div>
-                        <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-5.png" alt="" /></a>
-                            </figure>
-                            <h6><a href="shop-grid-right.html">Makeup</a></h6>
-                            <span>34 items</span>
-                        </div>
-                        <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay="1s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-14.png" alt="" /></a>
-                            </figure>
-                            <h6><a href="shop-grid-right.html">Medical Equipment</a></h6>
-                            <span>89 items</span>
-                        </div>
-                        <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay="0s">
-                            <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-15.png" alt="" /></a>
-                            </figure>
-                            <h6><a href="shop-grid-right.html">Diagnostic and Testing Devices</a></h6>
-                            <span>87 items</span>
                         </div>
                     </div>
                 </div>
@@ -139,7 +113,7 @@
                                     Start your healthy <br />journey<br />
                                     with US
                                 </h4>
-                                <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +125,7 @@
                                     Make your Breakfast<br />
                                     Healthy and Easy
                                 </h4>
-                                <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +134,7 @@
                             <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-3.png" alt="" />
                             <div class="banner-text">
                                 <h4>The best brands <br />Products Online</h4>
-                                <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -217,9 +191,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Lotion</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Venusia Max Intensive Moisturizing Lotion</a></h2>
+                                    <h2><a href="shop-product-right.html">ACEBRO - P</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -227,7 +201,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Venusia</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Acebro</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -262,9 +236,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Ointment</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Volini Pain Relief Gel Tube Of 75 G</a></h2>
+                                    <h2><a href="shop-product-right.html">ALSTOCLAV - 625</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -272,7 +246,7 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html"> Volini</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.html"> Alstoclav</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -307,9 +281,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Medical Equipments</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Dr. Morepen Glucometer Test Strips Box Of 50</a></h2>
+                                    <h2><a href="shop-product-right.html">AMBRO - LS</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -317,7 +291,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Dr. Morepen</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Ambro</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -349,9 +323,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Juice</a>
+                                        <a href="shop-grid-right.html">Syrup</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Everherb Karela Jamun Juice - 1l</a></h2>
+                                    <h2><a href="shop-product-right.html">BRO EE</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -394,16 +368,16 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Tonic</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Everherb (By Pharmeasy) Diabetic Care - Bottle Of 60
+                                    <h2><a href="shop-product-right.html">BRO P</a></h2>
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
                                         </div>
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Everherb</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Bro P</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -448,9 +422,9 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop-grid-right.html">Medical Equipment</a>
+                                            <a href="shop-grid-right.html">Ointment</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Onetouch Select Test Strips - 25N</a></h2>
+                                        <h2><a href="shop-product-right.html">BROBET</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -458,7 +432,7 @@
                                             <span class="font-small ml-5 text-muted"> (4.0)</span>
                                         </div>
                                         <div>
-                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">Onetouch</a></span>
+                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">Brobet</a></span>
                                         </div>
                                         <div class="product-card-bottom">
                                             <div class="product-price">
@@ -493,9 +467,9 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop-grid-right.html">Formula</a>
+                                            <a href="shop-grid-right.html">Injection</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Nestle Nan Pro Stage 1 Infant Formula</a></h2>
+                                        <h2><a href="shop-product-right.html">BROCEF</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 80%"></div>
@@ -503,7 +477,7 @@
                                             <span class="font-small ml-5 text-muted"> (3.5)</span>
                                         </div>
                                         <div>
-                                            <span class="font-small text-muted">By <a href="vendor-details-1.html"> Volini</a></span>
+                                            <span class="font-small text-muted">By <a href="vendor-details-1.html"> Brocef</a></span>
                                         </div>
                                         <div class="product-card-bottom">
                                             <div class="product-price">
@@ -535,9 +509,9 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop-grid-right.html">Baby Wipes</a>
+                                            <a href="shop-grid-right.html">Injection</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Himalaya Baby Gentle Wipes - Baby Wipes</a></h2>
+                                        <h2><a href="shop-product-right.html">BROCEF - PLUS</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 85%"></div>
@@ -545,7 +519,7 @@
                                             <span class="font-small ml-5 text-muted"> (4.0)</span>
                                         </div>
                                         <div>
-                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">Himalaya</a></span>
+                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">Brocef</a></span>
                                         </div>
                                         <div class="product-card-bottom">
                                             <div class="product-price">
@@ -580,9 +554,9 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop-grid-right.html">Juice</a>
+                                            <a href="shop-grid-right.html">Injection</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Everherb Karela Amla Juice - 1l</a></h2>
+                                        <h2><a href="shop-product-right.html">BROCEFF - SS</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
@@ -590,7 +564,7 @@
                                             <span class="font-small ml-5 text-muted"> (4.0)</span>
                                         </div>
                                         <div>
-                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">Everherb</a></span>
+                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">Broceff</a></span>
                                         </div>
                                         <div class="product-card-bottom">
                                             <div class="product-price">
@@ -625,16 +599,16 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop-grid-right.html">Supplements</a>
+                                            <a href="shop-grid-right.html">Tablet</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Nutrabay Gold Tri-Blend Whey Protein Strawberry
+                                        <h2><a href="shop-product-right.html">BROCIT -10</a></h2>
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 90%"></div>
                                             </div>
                                             <span class="font-small ml-5 text-muted"> (4.0)</span>
                                         </div>
                                         <div>
-                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">Nutrabay</a></span>
+                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">Brocit</a></span>
                                         </div>
                                         <div class="product-card-bottom">
                                             <div class="product-price">
@@ -706,9 +680,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="shop-grid-right.html">Domperidone, Tablets BP</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown</a></h2>
+                                                <h2><a href="shop-product-right.html">BRODONE</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -745,9 +719,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">SBL</a>
+                                                    <a href="shop-grid-right.html">Ofloxacin Oral</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">SBL Natrum Muriaticum 6X Tablet 25 gm</a></h2>
+                                                <h2><a href="shop-product-right.html">BROFLOW - 50</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -784,9 +758,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">LDD</a>
+                                                    <a href="shop-grid-right.html">Ofloxacin Tablet</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">LDD Bioscience Dilution Lycopodium Drops 30 ml</a></h2>
+                                                <h2><a href="shop-product-right.html">BROFLOW 200</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -823,9 +797,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Dr. Reckewe</a>
+                                                    <a href="shop-grid-right.html">Ofloxacin & Metronidazole</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Dr. Reckeweg BC 21 Tablet 20 gm </a></h2>
+                                                <h2><a href="shop-product-right.html">BROFLOW - M</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -862,9 +836,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">CETAPHIL</a>
+                                                    <a href="shop-grid-right.html">Ofloxacin + Ornidazole Tablet</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">CETAPHIL BRIGHTENING NIGHT COMFORT Cream</a></h2>
+                                                <h2><a href="shop-product-right.html">BROFLOW - PLUS</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -909,9 +883,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">SEBAMED</a>
+                                                    <a href="shop-grid-right.html">Omeprazole 40 GM</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">SEBAMED CLEAR FACE CLEANSING BAR 100gm</a></h2>
+                                                <h2><a href="shop-product-right.html">BROMEZ</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -948,9 +922,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Health Drink</a>
+                                                    <a href="shop-grid-right.html">Acetaminphen Tablet</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Pediasure Drink Refill - Chocolate Flavour 200 g</a></h2>
+                                                <h2><a href="shop-product-right.html">BROMOLE 650</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -987,9 +961,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Elbow support</a>
+                                                    <a href="shop-grid-right.html">Paracetamol Infusion 1G</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Flamingo Tennis Elbow Support (OC - 2024) (XL)</a></h2>
+                                                <h2><a href="shop-product-right.html">BROMOL -IV</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -1026,9 +1000,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Face Mask</a>
+                                                    <a href="shop-grid-right.html">Inruprofen + Paracetamol</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Romsons Kare N95 Face Mask 1's</a></h2>
+                                                <h2><a href="shop-product-right.html">BROMOL - PLUS</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -1065,9 +1039,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Pain balm</a>
+                                                    <a href="shop-grid-right.html">Pantoprazole 40 MG</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Iodex Body Pain Expert 8 gm</a></h2>
+                                                <h2><a href="shop-product-right.html">BROPAN 40</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -1111,9 +1085,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Supplements</a>
+                                                    <a href="shop-grid-right.html">Cepodoxime Proxetil for Oral suspension</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Nutrabay Gold Tri-Blend Whey Protein Strawberry</a></h2>
+                                                <h2><a href="shop-product-right.html">BROXIME 50</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -1150,9 +1124,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Sunscreen</a>
+                                                    <a href="shop-grid-right.html">Cepodoxime Proxetil for Oral suspension</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Suncros Tint Sunscreen Spf 50 Plus Gel 50gm</a></h2>
+                                                <h2><a href="shop-product-right.html">BROXIME 100</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -1189,9 +1163,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Medical Equipment</a>
+                                                    <a href="shop-grid-right.html">Metranidozole Benzonate <br>Oral</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Pharmeasy Digital Thermometer Flexi Tip</a></h2>
+                                                <h2><a href="shop-product-right.html">BROZOL</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -1228,9 +1202,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Oil</a>
+                                                    <a href="shop-grid-right.html">Calcitrol + Calcium carbonate + <br>Zinc</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Everherb (By Pharmeasy) Pain Relief Oil</a></h2>
+                                                <h2><a href="shop-product-right.html">CALTONIA</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -1267,9 +1241,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Balm</a>
+                                                    <a href="shop-grid-right.html">Cetrizine + Paracetamol + Phenylephrine</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Curegarden Rhulief Pain Relieving Balm 30 gm</a></h2>
+                                                <h2><a href="shop-product-right.html">CHIACOLD</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -1322,8 +1296,7 @@
                                     <div class="deals-countdown" data-countdown="2025/03/25 00:00:00"></div>
                                 </div>
                                 <div class="deals-content">
-                                    <h2><a href="shop-product-right.html">Optimum Whey Protein Double Rich Chocolate Flavour 907gm Powder
-                                    </a></h2>
+                                    <h2><a href="shop-product-right.html">Dr. AID</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1331,12 +1304,12 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Optimum Nutrition</a></span>
+                                        <span class="font-small text-muted">One step <a href="vendor-details-1.html">Preganancy Test Card</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
                                             <span>3333.85</span>
-                                            <span class="old-price">3899.8</span>
+                                            <span class="old-price">199.8</span>
                                         </div>
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -1360,7 +1333,7 @@
                                     <div class="deals-countdown" data-countdown="2026/04/25 00:00:00"></div>
                                 </div>
                                 <div class="deals-content">
-                                    <h2><a href="shop-product-right.html">Venusia Max Intensive Moisturizing Lotion For All Skin Type 500gm</a></h2>
+                                    <h2><a href="shop-product-right.html">ESOBRO</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -1368,12 +1341,12 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Venusia</a></span>
+                                        <span class="font-small text-muted">Esomeprazole 40 MG<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
-                                            <span>1524.85</span>
-                                            <span class="old-price">2026.8</span>
+                                            <span>524.85</span>
+                                            <span class="old-price">626.8</span>
                                         </div>
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -1397,7 +1370,7 @@
                                     <div class="deals-countdown" data-countdown="2027/03/25 00:00:00"></div>
                                 </div>
                                 <div class="deals-content">
-                                    <h2><a href="shop-product-right.html">Omron Blood Pressure Monitor Model Jpn 1N - High Quality, Accurate </a></h2>
+                                    <h2><a href="shop-product-right.html">KETO INJ</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -1405,12 +1378,12 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Omron</a></span>
+                                        <span class="font-small text-muted">Ketorolac Tromethamine INJ<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
-                                            <span>3512.85</span>
-                                            <span class="old-price">4313.8</span>
+                                            <span>512.85</span>
+                                            <span class="old-price">613.8</span>
                                         </div>
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -1434,7 +1407,7 @@
                                     <div class="deals-countdown" data-countdown="2025/02/25 00:00:00"></div>
                                 </div>
                                 <div class="deals-content">
-                                    <h2><a href="shop-product-right.html">Myglamm Manish Mahothra Beauty Luminious Moisturising Primer</a></h2>
+                                    <h2><a href="shop-product-right.html">LEVOBRO 10</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -1442,7 +1415,7 @@
                                         <span class="font-small ml-5 text-muted"> (3.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Myglamm</a></span>
+                                        <span class="font-small text-muted">Levocetrizine Dihydrocholride Tablet<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -1473,7 +1446,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Myglamm Original Coffee-Mate Coffee Scrub</a>
+                                        <a href="shop-product-right.html">LEVOBRO - M</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1493,7 +1466,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Acnedew Antiacne & Antipimple Cream for Men & Women</a>
+                                        <a href="shop-product-right.html">LEVOBRO M KID</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1513,7 +1486,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Acnedew Foaming Face Wash for Oily skin - Men & Women</a>
+                                        <a href="shop-product-right.html">LEVOBRO M KID</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1538,7 +1511,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Accurex U10 Urea Intensive Care Lotion</a>
+                                        <a href="shop-product-right.html">LEVOBRO SYP</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1558,7 +1531,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">AMVEL-PH Cleansing, Brightening & Moisturizing Syndet Bar</a>
+                                        <a href="shop-product-right.html">ONDABRO 2</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1578,7 +1551,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">MELAGLOW Rich Depigmentation and Glow Restoration Cream</a>
+                                        <a href="shop-product-right.html">ONDABRO 4</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1603,7 +1576,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Raissa 4D Hyaluronic Acid Face Gel</a>
+                                        <a href="shop-product-right.html">PRO G I</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1623,7 +1596,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">La Shield Pollution Protect SPF 50 Mineral Sunscreen Gel</a>
+                                        <a href="shop-product-right.html">SAIF 250</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1643,7 +1616,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Origine Naturespired Retinol Face Serum for Anti-Ageing</a>
+                                        <a href="shop-product-right.html">SAIF - AS</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1668,7 +1641,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">EQUALSTWO 100% Natural Melasma Cream</a>
+                                        <a href="shop-product-right.html">SAIF C</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1688,7 +1661,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Fixderma Shadow Sunscreen SPF 50+ Cream PA+++</a>
+                                        <a href="shop-product-right.html">SAIF PL/a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1708,7 +1681,7 @@
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Origine Naturespired Face Serum to Rejuvenate Tanned Skin</a>
+                                        <a href="shop-product-right.html">SAIFVIT 60</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
