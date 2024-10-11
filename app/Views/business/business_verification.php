@@ -9,6 +9,16 @@
                         <h4 class="card-title">KYC Verification</h4>
                     </div>
                     <div class="card-body">
+                    <?php if ($kycExists): ?>
+                            <div class="alert alert-info" role="alert">
+                                KYC verification is in progress. We will notify you once it's completed.
+                            </div>
+                            <div class="text-center mt-3">
+                                <button type="button" class="btn btn-secondary" onclick="confirmResubmit()">Submit Again</button>
+                            </div>
+                            <div id="kycFormContainer" style="display:none;">
+                        <?php else: ?>
+
                     <form action="<?php echo base_url('submit_verification') ?>" method="post" enctype="multipart/form-data">
 
                         <div id="smartwizard" class="form-wizard order-create">
@@ -167,6 +177,10 @@
                             </div>
                         </div>
                         </form>
+
+                        <?php endif; ?>
+
+                        
                     </div>
                 </div>
             </div>
@@ -208,6 +222,40 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
+
+    <script>
+    function confirmResubmit() {
+        if (confirm("Your old KYC record will be deleted. Are you sure you want to proceed?")) {
+            deleteOldKYC();
+        }
+    }
+
+    function deleteOldKYC() {
+        // Make an AJAX request to delete the old KYC record
+        fetch("<?= base_url('delete_kyc') ?>", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-Requested-With": "XMLHttpRequest"
+            },
+            body: JSON.stringify({ user_id: <?= $user['user_id'] ?> })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Redirect to the specified URL if deletion was successful
+                window.location.href = data.redirect;
+            } else {
+                alert("Failed to delete the old KYC record. Please try again.");
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("An error occurred while deleting the old KYC record.");
+        });
+    }
+    </script>
+
     <script src="vendor/global/global.min.js"></script>
 
     <script src="vendor/jquery-steps/build/jquery.steps.min.js"></script>

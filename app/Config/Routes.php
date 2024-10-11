@@ -56,6 +56,7 @@ $routes->post('user/updateProfile', 'BusinessController::updateProfile');
 
 $routes->get('/kyc', 'KycController::index');
 $routes->post('/submit_verification', 'BusinessController::submit_verification');
+$routes->post('delete_kyc', 'BusinessController::delete_kyc');
 
 $routes->post('product/addProduct', 'ProductController::addProduct');
 $routes->get('product/delete/(:num)', 'ProductController::deleteProduct/$1');

@@ -71,12 +71,45 @@ class BusinessController extends Controller
     {
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
-    
-        // Pass the user's data to the views
+        $userId = $user['user_id'];
+
+        // Load the KYC Verification Model
+        $model = new \App\Models\KycVerificationModel();
+
+        // Check if the KYC verification has already been submitted by the user
+        $kycExists = $model->where('user_id', $userId)->first();
+
+        // Pass the user's data and KYC status to the views
         $header = view('business/business_header', ['user' => $user]);
-        $home = view('business/business_verification', ['user' => $user]);
-    
+        $home = view('business/business_verification', [
+            'user' => $user,
+            'kycExists' => $kycExists
+        ]);
+
         return $header . $home;
+    }
+
+    public function delete_kyc()
+    {
+        $user = $this->authenticate();
+        // Get the user ID from the request
+        $request = $this->request->getJSON();
+        $userId = $request->user_id;
+
+        // Load the KYC Verification Model
+        $model = new \App\Models\KycVerificationModel();
+
+        // Attempt to delete the KYC record
+        if ($model->where('user_id', $userId)->delete()) {
+            // Return a JSON response indicating success
+            return $this->response->setJSON([
+                'success' => true,
+                'redirect' => base_url('business_verification')
+            ]);
+        } else {
+            // Return a JSON response indicating failure
+            return $this->response->setJSON(['success' => false]);
+        }
     }
 
     public function BusinessListProducts()
@@ -180,7 +213,7 @@ class BusinessController extends Controller
         $model->insert($data);
 
         // Redirect to a success page
-        return redirect()->to(base_url('business_home'))->with('message', 'KYC submitted successfully.');
+        return redirect()->to(base_url('business_verification'))->with('message', 'KYC submitted successfully.');
     }
 
     public function BusinessOrders()
