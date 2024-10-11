@@ -101,7 +101,7 @@ class BusinessController extends Controller
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
 
-        $userId = $user['user_id']; // Assuming the user ID is stored in the 'id' field of the user data
+        $userId = $user['user_id'];
 
         $productModel = new ManufacturerProductModel();
         // Fetch products that belong to the logged-in user
@@ -131,12 +131,67 @@ class BusinessController extends Controller
     {
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
+
+        $userModel = new UserModel();
+        $userId = $user['user_id'];
+        $userData = $userModel->find($userId); // Fetch the user data from the database
+
+        if (!$userData) {
+            return redirect()->back()->with('error', 'User not found.');
+        }
     
         // Pass the user's data to the views
         $header = view('business/business_header', ['user' => $user]);
         $home = view('business/business_edit_profile', ['user' => $user]);
     
         return $header . $home;
+    }
+
+    public function updateProfile()
+    {
+        $user = $this->authenticate();
+        // Assume the user is authenticated and the user ID is stored in the session
+        $userId = session()->get('user_id');
+    
+        if (!$userId) {
+            return redirect()->back()->with('error', 'You must be logged in to update your profile.');
+        }
+    
+        $userModel = new UserModel();
+    
+        // Collect the data from the form
+        $data = [
+            'firstname'      => $this->request->getPost('firstname'),
+            'lastname'       => $this->request->getPost('lastname'),
+            'user_name'      => $this->request->getPost('user_name'),
+            'company_name'   => $this->request->getPost('company_name'),
+            'designation'    => $this->request->getPost('designation'),
+            'skills'         => $this->request->getPost('skills'),
+            'gender'         => $this->request->getPost('gender'),
+            'dob'            => $this->request->getPost('dob'),
+            'phone'          => $this->request->getPost('phone'),
+            'email'          => $this->request->getPost('email'),
+            'country'        => $this->request->getPost('country'),
+            'city'           => $this->request->getPost('city'),
+            'about_me'       => $this->request->getPost('about_me'),
+            'experience'     => $this->request->getPost('experience'),
+            'language'       => $this->request->getPost('language'),
+        ];
+    
+        // Handle profile image upload
+        $profileImage = $this->request->getFile('profile_image');
+        if ($profileImage && $profileImage->isValid()) {
+            $imageName = $profileImage->getRandomName();
+            $profileImage->move(WRITEPATH . 'uploads', $imageName);
+            $data['profile_photo'] = $imageName; // Update the data array with the image path
+        }
+    
+        // Update the user record
+        if ($userModel->update($userId, $data)) {
+            return redirect()->back()->with('success', 'Profile updated successfully.');
+        } else {
+            return redirect()->back()->with('error', 'Failed to update the profile. Please try again.');
+        }
     }
     
     /**

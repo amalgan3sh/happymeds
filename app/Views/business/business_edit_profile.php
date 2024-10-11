@@ -9,19 +9,23 @@
                     <div class="card card-bx profile-card author-profile m-b30">
                         <div class="card-body">
                             <div class="p-5">
-                            <div class="author-profile">
-                                <div class="author-media">
-                                    <img src="images/tab/1.jpg" alt="">
-                                    <div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
-                                        <input type="file" class="update-flie">
-                                        <i class="fa fa-camera"></i>
+                                <div class="author-profile">
+                                    <div class="author-media">
+                                        <img src="images/tab/1.jpg" alt="">
+                                        <div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
+                                            <input type="file" class="update-flie">
+                                            <i class="fa fa-camera"></i>
+                                        </div>
+                                    </div>
+                                    <div class="author-info">
+                                        <h6 class="title">
+                                            <?= esc(!empty($user['firstname']) ? $user['firstname'] : $user['user_name']) ?>
+                                        </h6>
+                                        <span>
+                                            <?= esc(!empty($user['lastname']) ? $user['lastname'] : '') ?>
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="author-info">
-                                    <h6 class="title">Nella Vita</h6>
-                                    <span>Developer</span>
-                                </div>
-                            </div>
                             </div>
                             <div class="info-list">
                                 <ul>
@@ -47,43 +51,43 @@
                     <div class="card-header">
                         <h4 class="card-title">Edit Profile</h4>
                     </div>
-                    <form class="profile-form" action="update_profile.php" method="post" enctype="multipart/form-data">
+                    <form class="profile-form" action="<?= site_url('user/updateProfile') ?>" method="post" enctype="multipart/form-data">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="FirstName">First Name</label>
-                                        <input type="text" class="form-control" name="firstname" value="John" id="FirstName">
+                                        <input type="text" class="form-control" name="firstname" value="<?= esc($user['firstname']) ?>" id="FirstName">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="LastName">Last Name</label>
-                                        <input type="text" class="form-control" name="lastname" value="Doe" id="LastName">
+                                        <input type="text" class="form-control" name="lastname" value="<?= esc($user['lastname']) ?>" id="LastName">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="UserName">User Name</label>
-                                        <input type="text" class="form-control" name="user_name" value="johndoe" id="UserName">
+                                        <input type="text" class="form-control" name="user_name" value="<?= esc($user['user_name']) ?>" id="UserName">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="CompanyName">Company Name</label>
-                                        <input type="text" class="form-control" name="company_name" value="ABC Corp" id="CompanyName">
+                                        <input type="text" class="form-control" name="company_name" value="<?= esc($user['company_name']) ?>" id="CompanyName">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="Designation">Designation</label>
-                                        <input type="text" class="form-control" name="designation" value="Manager" id="Designation">
+                                        <input type="text" class="form-control" name="designation" value="<?= esc($user['designation']) ?>" id="Designation">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="Skills">Skills</label>
-                                        <input type="text" class="form-control" name="skills" value="HTML, JavaScript, PHP" id="Skills">
+                                        <input type="text" class="form-control" name="skills" value="<?= esc($user['skills']) ?>" id="Skills">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -91,58 +95,58 @@
                                         <label class="form-label">Gender</label>
                                         <select class="form-control" name="gender" id="Gender">
                                             <option value="">Please select</option>
-                                            <option value="Male" selected>Male</option>
-                                            <option value="Female">Female</option>
-                                            <option value="Other">Other</option>
+                                            <option value="Male" <?= ($user['gender'] == 'Male') ? 'selected' : '' ?>>Male</option>
+                                            <option value="Female" <?= ($user['gender'] == 'Female') ? 'selected' : '' ?>>Female</option>
+                                            <option value="Other" <?= ($user['gender'] == 'Other') ? 'selected' : '' ?>>Other</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="DOB">DOB</label>
-                                        <input type="date" class="form-control" name="dob" value="1990-01-01" id="DOB">
+                                        <input type="date" class="form-control" name="dob" value="<?= esc($user['dob']) ?>" id="DOB">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label">Phone</label>
-                                        <input type="tel" class="form-control" name="phone" value="1234567890">
+                                        <input type="tel" class="form-control" name="phone" value="<?= esc($user['phone']) ?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="Email">Email address</label>
-                                        <input type="email" class="form-control" name="email" value="johndoe@example.com" id="Email">
+                                        <input type="email" class="form-control" name="email" value="<?= esc($user['email']) ?>" id="Email">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label">Country</label>
-                                        <input type="text" class="form-control" name="country" value="USA">
+                                        <input type="text" class="form-control" name="country" value="<?= esc($user['country']) ?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label">City</label>
-                                        <input type="text" class="form-control" name="city" value="New York">
+                                        <input type="text" class="form-control" name="city" value="<?= esc($user['city']) ?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="mb-3">
                                         <label class="form-label" for="AboutMe">About Me</label>
-                                        <textarea class="form-control" name="about_me" id="AboutMe" rows="3">A brief description about John Doe.</textarea>
+                                        <textarea class="form-control" name="about_me" id="AboutMe" rows="3"><?= esc($user['about_me']) ?></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label">Experience (years)</label>
-                                        <input type="number" class="form-control" name="experience" value="5">
+                                        <input type="number" class="form-control" name="experience" value="<?= esc($user['experience']) ?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label">Preferred Language</label>
-                                        <input type="text" class="form-control" name="language" value="English">
+                                        <input type="text" class="form-control" name="language" value="<?= esc($user['language']) ?>">
                                     </div>
                                 </div>
                             </div>

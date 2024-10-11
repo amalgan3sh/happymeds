@@ -52,6 +52,7 @@ $routes->get('business_add_product', 'BusinessController::BusinessAddProduct');
 $routes->get('business_manage_product', 'BusinessController::BusinessManageProduct');
 $routes->get('business_orders', 'BusinessController::BusinessOrders');
 $routes->get('business_edit_profile', 'BusinessController::BusinessEditProfile');
+$routes->post('user/updateProfile', 'BusinessController::updateProfile');
 
 $routes->get('/kyc', 'KycController::index');
 $routes->post('/submit_verification', 'KycController::submit');
