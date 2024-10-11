@@ -121,6 +121,68 @@ class BusinessController extends Controller
         return $header . $home;
     }
 
+    public function submit_verification()
+    {
+        $user = $this->authenticate();
+
+        // Process file uploads
+        $identityProof = $this->request->getFile('identityProof');
+        $addressProof = $this->request->getFile('addressProof');
+        $bankStatement = $this->request->getFile('bankStatement');
+
+        $uploadPath = ROOTPATH . 'documents/';
+
+        // Move files to the documents folder
+        $identityProofName = $identityProof->getRandomName();
+        $identityProof->move($uploadPath, $identityProofName);
+
+        $addressProofName = $addressProof->getRandomName();
+        $addressProof->move($uploadPath, $addressProofName);
+
+        // Optional file upload
+        $bankStatementName = null;
+        if ($bankStatement && $bankStatement->isValid()) {
+            $bankStatementName = $bankStatement->getRandomName();
+            $bankStatement->move($uploadPath, $bankStatementName);
+        }
+
+        // Prepare data for insertion
+        $data = [
+            'first_name' => $this->request->getPost('firstName'),
+            'last_name' => $this->request->getPost('lastName'),
+            'dob' => $this->request->getPost('dob'),
+            'nationality' => $this->request->getPost('nationality'),
+            'email' => $this->request->getPost('email'),
+            'phone' => $this->request->getPost('phone'),
+            'address' => $this->request->getPost('address'),
+            'city' => $this->request->getPost('city'),
+            'state' => $this->request->getPost('state'),
+            'company_name' => $this->request->getPost('companyName'),
+            'registration_number' => $this->request->getPost('registrationNumber'),
+            'company_email' => $this->request->getPost('companyEmail'),
+            'company_phone' => $this->request->getPost('companyPhone'),
+            'website' => $this->request->getPost('website'),
+            'bank_name' => $this->request->getPost('bankName'),
+            'account_number' => $this->request->getPost('accountNumber'),
+            'swift_code' => $this->request->getPost('swiftCode'),
+            'tin' => $this->request->getPost('tin'),
+            'vat_number' => $this->request->getPost('vatNumber'),
+            'identity_proof' => $identityProofName,
+            'address_proof' => $addressProofName,
+            'bank_statement' => $bankStatementName,
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+            'user_id' => session()->get('user_id')
+        ];
+
+        // Insert data into the database
+        $model = new \App\Models\KycVerificationModel();
+        $model->insert($data);
+
+        // Redirect to a success page
+        return redirect()->to(base_url('business_home'))->with('message', 'KYC submitted successfully.');
+    }
+
     public function BusinessOrders()
     {
         // Use the authenticate method to check the session and get user data

@@ -42,7 +42,7 @@ $routes->post('/register_user', 'AuthController::register');  // Handle form sub
 //Google Login
 $routes->post('/google_login_process', 'GoogleLogin::loginProcess');
 $routes->get('/google_login', 'GoogleLogin::login');
-$routes->get('/logout', 'GoogleLogin::logout');
+// $routes->get('/logout', 'GoogleLogin::logout');
 
 $routes->post('update_user_type', 'BusinessController::updateUserType');
 $routes->get('choose_user_type', 'BusinessController::chooseUserType');
@@ -55,7 +55,7 @@ $routes->get('business_edit_profile', 'BusinessController::BusinessEditProfile')
 $routes->post('user/updateProfile', 'BusinessController::updateProfile');
 
 $routes->get('/kyc', 'KycController::index');
-$routes->post('/submit_verification', 'KycController::submit');
+$routes->post('/submit_verification', 'BusinessController::submit_verification');
 
 $routes->post('product/addProduct', 'ProductController::addProduct');
 $routes->get('product/delete/(:num)', 'ProductController::deleteProduct/$1');
