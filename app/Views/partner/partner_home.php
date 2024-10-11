@@ -645,48 +645,86 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 	<script>
-        function proceedWithDeposit() {
-            // Get the input values
-            var depositAmount = document.getElementById("depositAmount").value;
-            var userName = document.getElementById("userName").value;
-            var userEmail = document.getElementById("userEmail").value;
+function proceedWithDeposit() {
+    // Get the input values
+    var depositAmountElement = document.getElementById("depositAmount");
+    var userNameElement = document.getElementById("userName");
+    var userEmailElement = document.getElementById("userEmail");
 
-            // Validate inputs
-            if (!depositAmount || !userName || !userEmail) {
-                alert("Please fill in all required fields.");
-                return;
-            }
+    // Check if the elements exist
+    if (!depositAmountElement || !userNameElement || !userEmailElement) {
+        alert("Required fields are missing from the form.");
+        return;
+    }
 
-            // Initialize Razorpay payment
-            var options = {
-                key: "rzp_test_weHunbcno354Ko", // Replace with your Razorpay Key ID
-                amount: depositAmount * 100, // Amount in paise
-                currency: "INR",
-                name: "Your Company Name",
-                description: "Deposit Payment",
-                handler: function (response) {
-                    alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
-                    // Here you can add code to handle the successful payment
-                    // e.g., update your database, show a success message, etc.
-                },
-                prefill: {
-                    name: userName,
-                    email: userEmail
-                },
-                theme: {
-                    color: "#3399cc"
-                }
+    var depositAmount = depositAmountElement.value;
+    var userName = userNameElement.value;
+    var userEmail = userEmailElement.value;
+
+    // Validate inputs
+    if (!depositAmount || !userName || !userEmail) {
+        alert("Please fill in all required fields.");
+        return;
+    }
+
+    // Initialize Razorpay payment
+    var options = {
+        key: "rzp_test_weHunbcno354Ko", // Replace with your Razorpay Key ID
+        amount: depositAmount * 100, // Amount in paise
+        currency: "INR",
+        name: "Your Company Name",
+        description: "Deposit Payment",
+        handler: function (response) {
+            // Payment was successful, send data to server
+            var paymentData = {
+                amount: depositAmount,
+                payment_id: response.razorpay_payment_id,
+                name: userName,
+                email: userEmail
             };
 
-            var rzp1 = new Razorpay(options);
-            rzp1.open();
-
-            // Close the modal
-            var modal = document.getElementById("exampleModal1");
-            var modalInstance = bootstrap.Modal.getInstance(modal);
-            modalInstance.hide();
+            // Send payment data to server using AJAX
+            fetch('/transaction/save', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest' // Required for CodeIgniter to detect AJAX request
+                },
+                body: JSON.stringify(paymentData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert("Payment Successful and data saved.");
+                } else {
+                    alert("Payment Successful but failed to save data.");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("Payment Successful but an error occurred while saving data.");
+            });
+        },
+        prefill: {
+            name: userName,
+            email: userEmail
+        },
+        theme: {
+            color: "#3399cc"
         }
-    </script>
+    };
+
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+
+    // Close the modal
+    var modal = document.getElementById("exampleModal1");
+    if (modal) {
+        var modalInstance = bootstrap.Modal.getInstance(modal);
+        modalInstance.hide();
+    }
+}
+</script>
 
 
 	 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>

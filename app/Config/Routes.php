@@ -46,6 +46,19 @@ $routes->get('/logout', 'GoogleLogin::logout');
 
 $routes->post('update_user_type', 'BusinessController::updateUserType');
 $routes->get('choose_user_type', 'BusinessController::chooseUserType');
+$routes->get('business_verification', 'BusinessController::BusinessVerification');
+$routes->get('business_list_products', 'BusinessController::BusinessListProducts');
+$routes->get('business_add_product', 'BusinessController::BusinessAddProduct');
+$routes->get('business_manage_product', 'BusinessController::BusinessManageProduct');
+$routes->get('business_orders', 'BusinessController::BusinessOrders');
+$routes->get('business_edit_profile', 'BusinessController::BusinessEditProfile');
+$routes->post('user/updateProfile', 'BusinessController::updateProfile');
+
+$routes->get('/kyc', 'KycController::index');
+$routes->post('/submit_verification', 'KycController::submit');
+
+$routes->post('product/addProduct', 'ProductController::addProduct');
+$routes->get('product/delete/(:num)', 'ProductController::deleteProduct/$1');
 
 //partner-routes
 $routes->get('partner_home', 'PartnerController::partnerHome');
@@ -73,11 +86,12 @@ $routes->get('/home_page_ecommerce', 'StoreController::HomePageEcommerce');
 $routes->get('/shop_ecommerce', 'StoreController::ShopEcommerce');
 $routes->get('/about', 'StoreController::aboutEcommerce');
 
+$routes->post('transaction/save', 'TransactionController::save');
+
 
 
 //auth
-$routes->get('/logout', 'AuthController::logout');
-
+$routes->get('auth/logout', 'AuthController::logout');
 
 
 
