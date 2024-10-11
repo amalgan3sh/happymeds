@@ -50,10 +50,130 @@ class BusinessController extends Controller
 
     public function BusinessHome()
     {
-        $header = view('business/business_header');
-        $home = view('business/business_home');
-
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_home', ['user' => $user]);
+    
         return $header . $home;
+    }
+
+    public function BusinessVerification()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_verification', ['user' => $user]);
+    
+        return $header . $home;
+    }
+
+    public function BusinessListProducts()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_list_products', ['user' => $user]);
+    
+        return $header . $home;
+    }
+    public function BusinessAddProduct()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_add_product', ['user' => $user]);
+    
+        return $header . $home;
+    }
+
+    public function BusinessManageProduct()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_manage_products', ['user' => $user]);
+    
+        return $header . $home;
+    }
+
+    public function BusinessOrders()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_orders', ['user' => $user]);
+    
+        return $header . $home;
+    }
+
+    public function BusinessEditProfile()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_edit_profile', ['user' => $user]);
+    
+        return $header . $home;
+    }
+    
+    /**
+     * Public method to authenticate the user and get user data.
+     * 
+     * @return array The authenticated user data if successful.
+     * @throws \CodeIgniter\HTTP\RedirectResponse Redirects to login if not authenticated.
+     */
+    public function authenticate()
+    {
+        // Get the user data from the session
+        $user = $this->getAuthenticatedUser();
+    
+        // If no user is returned, redirect to the login page
+        if (!$user) {
+            return redirect()->to('/login')->with('error', 'Please log in first')->send();
+        }
+    
+        // Return the authenticated user data
+        return $user;
+    }
+    
+    /**
+     * Private method to get the authenticated user.
+     * 
+     * @return array|null The user data if authenticated, otherwise null.
+     */
+    private function getAuthenticatedUser()
+    {
+        // Get the user_id from the session
+        $user_id = session()->get('user_id');
+    
+        // If no user_id is found in the session, return null
+        if (!$user_id) {
+            return null;
+        }
+    
+        // Load the UserModel
+        $userModel = new UserModel();
+    
+        // Fetch the user's information from the database
+        $user = $userModel->where('user_id', $user_id)->first();
+    
+        // Return the user data if found, otherwise null
+        return $user ?: null;
     }
 
     public function updateUserType()
