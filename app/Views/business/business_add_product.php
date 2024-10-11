@@ -9,6 +9,9 @@
                         <h4 class="card-title">Add New Healthcare Product</h4>
                     </div>
                     <div class="card-body">
+                    <form action="<?= site_url('product/addProduct') ?>" method="post" enctype="multipart/form-data">
+                    <?= csrf_field() ?> <!-- CSRF protection token -->
+
                         <div id="smartwizard" class="form-wizard order-create">
                             <ul class="nav nav-wizard">
                                 <li><a class="nav-link" href="#step_product_details">
@@ -116,6 +119,7 @@
                                 </div>
                             </div>
                         </div>
+                    </form>
                     </div>
                 </div>
             </div>

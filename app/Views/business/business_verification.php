@@ -9,6 +9,8 @@
                         <h4 class="card-title">KYC Verification</h4>
                     </div>
                     <div class="card-body">
+                    <form action="<?php echo base_url('submit_verification') ?>" method="post" enctype="multipart/form-data">
+
                         <div id="smartwizard" class="form-wizard order-create">
                             <ul class="nav nav-wizard">
                                 <li><a class="nav-link" href="#step_personal"> 
@@ -164,6 +166,7 @@
                                 </div>
                             </div>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>

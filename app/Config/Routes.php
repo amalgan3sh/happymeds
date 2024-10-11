@@ -53,6 +53,11 @@ $routes->get('business_manage_product', 'BusinessController::BusinessManageProdu
 $routes->get('business_orders', 'BusinessController::BusinessOrders');
 $routes->get('business_edit_profile', 'BusinessController::BusinessEditProfile');
 
+$routes->get('/kyc', 'KycController::index');
+$routes->post('/submit_verification', 'KycController::submit');
+
+$routes->post('product/addProduct', 'ProductController::addProduct');
+
 //partner-routes
 $routes->get('partner_home', 'PartnerController::partnerHome');
 $routes->get('product_details', 'PartnerController::productDetails');

@@ -457,7 +457,7 @@
 					<h2 class="text-white">User</h2>
 					<p class="text-warning ms-2">Welcome Back <?= esc($user['user_name']) ?> !</p>
 				</div>
-				<ol class="breadcrumb">
+				<!-- <ol class="breadcrumb">
 					<li class="breadcrumb-item active ms-auto">
 						<a class="d-flex align-self-center" href="javascript:void(0);">
 							<svg class="me-2 svg-main-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -470,7 +470,7 @@
 						</a>
 					</li>
 					<li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
-				</ol>
+				</ol> -->
 			</div>
 		</div>
 			<!--**********************************
@@ -492,7 +492,7 @@
                 </g>
             </svg>
             <div class="ms-3">
-                <h4 class="text-white mb-0">$2353.25</h4>
+                <h4 class="text-white mb-0"><?= esc($user['wallet_balance']) ?></h4>
                 <small>Your Earnings</small>
             </div>
         </div>
