@@ -17,11 +17,11 @@ WORKDIR /var/www/html
 # Copy the current directory contents into the container
 COPY . /var/www/html
 
-# Copy the Apache configuration file
-COPY ./docker/apache.conf /etc/apache2/sites-available/000-default.conf
-
 # Give permissions to the web directory
 RUN chown -R www-data:www-data /var/www/html
+
+# Configure Apache to use the public directory as the document root
+RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
 
 # Expose port 80
 EXPOSE 80
