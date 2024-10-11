@@ -54,10 +54,16 @@ class BusinessController extends Controller
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
     
-        // Pass the user's data to the views
-        $header = view('business/business_header', ['user' => $user]);
-        $home = view('business/business_home', ['user' => $user]);
+        // Load the ProductModel
+        $model = new ManufacturerProductModel();
     
+        // Fetch all products
+        $data['products'] = $model->findAll();
+        
+        // Pass the user's data and products to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_home', ['user' => $user, 'products' => $data['products']]);
+        
         return $header . $home;
     }
 

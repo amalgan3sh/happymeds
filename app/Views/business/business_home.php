@@ -82,10 +82,10 @@
 					<div class="col-xl-9 col-xxl-8">
     <div class="card">
         <div class="card-header border-0 flex-wrap">
-            <h4 class="card-title">Healthcare Products</h4>
+            <h4 class="card-title">Your Products</h4>
             <div class="d-flex align-items-center">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" onclick="window.location.href='business_add_product#step_product_details' ">
                     + Add New
                 </button>
 
@@ -106,69 +106,37 @@
         </div>
         <div class="card-body pt-0">
             <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Product Name</th>
-                            <th>Category</th>
-                            <th>Price</th>
-                            <th>Stock Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Blood Pressure Monitor</td>
-                            <td>Medical Equipment</td>
-                            <td>$120.00</td>
-                            <td>In Stock</td>
-                            <td>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-danger">Delete</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Digital Thermometer</td>
-                            <td>Health Monitoring</td>
-                            <td>$15.99</td>
-                            <td>Out of Stock</td>
-                            <td>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-danger">Delete</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Hand Sanitizer</td>
-                            <td>Hygiene Products</td>
-                            <td>$8.99</td>
-                            <td>In Stock</td>
-                            <td>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-danger">Delete</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Face Mask</td>
-                            <td>Personal Protective Equipment</td>
-                            <td>$1.50</td>
-                            <td>In Stock</td>
-                            <td>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-danger">Delete</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Pulse Oximeter</td>
-                            <td>Medical Devices</td>
-                            <td>$35.00</td>
-                            <td>Out of Stock</td>
-                            <td>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-primary">Edit</a>
-                                <a href="javascript:void(0);" class="btn btn-sm btn-danger">Delete</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php if (!empty($products) && is_array($products)) : ?>
+            <?php foreach ($products as $product) : ?>
+                <tr>
+                    <td><?= esc($product['product_name']); ?></td>
+                    <td><?= esc($product['category']); ?></td>
+                    <td>$<?= number_format($product['price'], 2); ?></td>
+                    <td><?= ($product['stock_quantity'] > 0) ? 'In Stock' : 'Out of Stock'; ?></td>
+                    <td>
+                        <a href="<?= base_url('product/edit/' . $product['id']); ?>" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="<?= base_url('product/delete/' . $product['id']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else : ?>
+            <tr>
+                <td colspan="5">No products available.</td>
+            </tr>
+        <?php endif; ?>
+    </tbody>
+</table>
             </div>
         </div>
     </div>
