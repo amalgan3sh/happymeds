@@ -57,6 +57,7 @@ $routes->get('/kyc', 'KycController::index');
 $routes->post('/submit_verification', 'KycController::submit');
 
 $routes->post('product/addProduct', 'ProductController::addProduct');
+$routes->get('product/delete/(:num)', 'ProductController::deleteProduct/$1');
 
 //partner-routes
 $routes->get('partner_home', 'PartnerController::partnerHome');

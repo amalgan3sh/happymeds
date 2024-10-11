@@ -15,7 +15,7 @@
                                     <tr>
                                         <th style="width:50px;">
                                             <div class="form-check custom-checkbox checkbox-primary check-lg me-3">
-                                                <input type="checkbox" class="form-check-input" id="checkAll" required="">
+                                                <input type="checkbox" class="form-check-input" id="checkAll">
                                                 <label class="form-check-label" for="checkAll"></label>
                                             </div>
                                         </th>
@@ -28,75 +28,48 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check custom-checkbox checkbox-primary check-lg me-3">
-                                                <input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-                                                <label class="form-check-label" for="customCheckBox2"></label>
-                                            </div>
-                                        </td>
-                                        <td><strong>101</strong></td>
-                                        <td>
-                                            <div class="d-flex align-items-center"><img src="images/product/1.jpg" class="rounded-lg me-2" width="24" alt=""> <span class="w-space-no">Pain Relief Tablet</span></div>
-                                        </td>
-                                        <td>Medicine</td>
-                                        <td>
-                                            <div class="d-flex align-items-center"><i class="fa fa-circle text-success me-1"></i> In Stock</div>
-                                        </td>
-                                        <td>$12.99</td>
-                                        <td>
-                                            <div class="d-flex">
-                                                <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-                                                <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check custom-checkbox checkbox-primary check-lg me-3">
-                                                <input type="checkbox" class="form-check-input" id="customCheckBox3" required="">
-                                                <label class="form-check-label" for="customCheckBox3"></label>
-                                            </div>
-                                        </td>
-                                        <td><strong>102</strong></td>
-                                        <td>
-                                            <div class="d-flex align-items-center"><img src="images/product/2.jpg" class="rounded-lg me-2" width="24" alt=""> <span class="w-space-no">Vitamin D Supplement</span></div>
-                                        </td>
-                                        <td>Supplement</td>
-                                        <td>
-                                            <div class="d-flex align-items-center"><i class="fa fa-circle text-warning me-1"></i> Low Stock</div>
-                                        </td>
-                                        <td>$8.50</td>
-                                        <td>
-                                            <div class="d-flex">
-                                                <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-                                                <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check custom-checkbox checkbox-primary check-lg me-3">
-                                                <input type="checkbox" class="form-check-input" id="customCheckBox4" required="">
-                                                <label class="form-check-label" for="customCheckBox4"></label>
-                                            </div>
-                                        </td>
-                                        <td><strong>103</strong></td>
-                                        <td>
-                                            <div class="d-flex align-items-center"><img src="images/product/3.jpg" class="rounded-lg me-2" width="24" alt=""> <span class="w-space-no">Herbal Cough Syrup</span></div>
-                                        </td>
-                                        <td>Medicine</td>
-                                        <td>
-                                            <div class="d-flex align-items-center"><i class="fa fa-circle text-danger me-1"></i> Out of Stock</div>
-                                        </td>
-                                        <td>$5.99</td>
-                                        <td>
-                                            <div class="d-flex">
-                                                <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-                                                <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <?php if (!empty($products) && is_array($products)) : ?>
+                                        <?php foreach ($products as $product) : ?>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check custom-checkbox checkbox-primary check-lg me-3">
+                                                        <input type="checkbox" class="form-check-input" id="checkProduct<?= $product['id'] ?>">
+                                                        <label class="form-check-label" for="checkProduct<?= $product['id'] ?>"></label>
+                                                    </div>
+                                                </td>
+                                                <td><strong><?= $product['id'] ?></strong></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="<?= base_url('uploads/' . $product['product_image']) ?>" class="rounded-lg me-2" width="24" alt="">
+                                                        <span class="w-space-no"><?= esc($product['product_name']) ?></span>
+                                                    </div>
+                                                </td>
+                                                <td><?= esc($product['category']) ?></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <?php if ($product['stock_quantity'] > 10) : ?>
+                                                            <i class="fa fa-circle text-success me-1"></i> In Stock
+                                                        <?php elseif ($product['stock_quantity'] > 0) : ?>
+                                                            <i class="fa fa-circle text-warning me-1"></i> Low Stock
+                                                        <?php else : ?>
+                                                            <i class="fa fa-circle text-danger me-1"></i> Out of Stock
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </td>
+                                                <td>$<?= number_format($product['price'], 2) ?></td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <a href="<?= site_url('product/edit/' . $product['id']) ?>" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
+                                                        <a href="<?= site_url('product/delete/' . $product['id']) ?>" class="btn btn-danger shadow btn-xs sharp" onclick="return confirm('Are you sure you want to delete this product?');"><i class="fa fa-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    <?php else : ?>
+                                        <tr>
+                                            <td colspan="7" class="text-center">No products found</td>
+                                        </tr>
+                                    <?php endif; ?>
                                 </tbody>
                             </table>
                         </div>

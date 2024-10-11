@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use CodeIgniter\Controller;
 use CodeIgniter\Session\Session;
+use App\Models\ManufacturerProductModel;
 
 class BusinessController extends Controller
 {
@@ -99,11 +100,18 @@ class BusinessController extends Controller
     {
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
-    
-        // Pass the user's data to the views
+
+        $userId = $user['user_id']; // Assuming the user ID is stored in the 'id' field of the user data
+
+        $productModel = new ManufacturerProductModel();
+        // Fetch products that belong to the logged-in user
+        $products = $productModel->where('user_id', $userId)->findAll();
+
+        // Pass the user's data and products to the views
         $header = view('business/business_header', ['user' => $user]);
-        $home = view('business/business_manage_products', ['user' => $user]);
-    
+        $home = view('business/business_manage_products', ['user' => $user, 'products' => $products]);
+
+        // Return the combined views
         return $header . $home;
     }
 

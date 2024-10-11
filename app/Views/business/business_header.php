@@ -519,7 +519,7 @@
                         <span class="nav-text">Products</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="business_list_products">List Products</a></li>
+                        <!-- <li><a href="business_list_products">List Products</a></li> -->
                         <li><a href="business_add_product">Add New Product</a></li>
                         <li><a href="business_manage_product">Manage Products</a></li>
                     </ul>

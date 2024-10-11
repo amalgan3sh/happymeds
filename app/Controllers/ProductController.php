@@ -49,4 +49,22 @@ class ProductController extends BaseController
 
         return redirect()->back()->with('success', 'Product added successfully, awaiting admin approval.');
     }
+
+    public function deleteProduct($id)
+    {
+        $productModel = new ManufacturerProductModel();
+
+        // Check if the product exists
+        $product = $productModel->find($id);
+        if (!$product) {
+            return redirect()->back()->with('error', 'Product not found.');
+        }
+
+        // Delete the product
+        if ($productModel->delete($id)) {
+            return redirect()->back()->with('success', 'Product deleted successfully.');
+        } else {
+            return redirect()->back()->with('error', 'Failed to delete the product.');
+        }
+    }
 }
