@@ -1,2 +1,234 @@
 INFO - 2024-10-12 07:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-12 07:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 08:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 08:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 08:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 08:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 08:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 08:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 08:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 08:59:15 --> submitKyc request received.
+INFO - 2024-10-12 08:59:15 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+INFO - 2024-10-12 08:59:16 --> File uploaded successfully: 1728723556_bbef6ba41d394ac3ead7.jpg
+INFO - 2024-10-12 08:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 08:59:16 --> KYC details inserted successfully.
+INFO - 2024-10-12 09:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 09:01:15 --> submitKyc request received.
+INFO - 2024-10-12 09:01:15 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 09:01:16 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 09:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 09:02:11 --> submitKyc request received.
+INFO - 2024-10-12 09:02:11 --> POST Data: {"full_name":"","address":"","phone_no":""}
+ERROR - 2024-10-12 09:02:11 --> Validation Errors: {"full_name":"The full_name field is required.","address":"The address field is required.","phone_no":"The phone_no field is required.","document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 09:02:12 --> submitKyc request received.
+INFO - 2024-10-12 09:02:12 --> POST Data: {"full_name":"","address":"","phone_no":""}
+ERROR - 2024-10-12 09:02:12 --> Validation Errors: {"full_name":"The full_name field is required.","address":"The address field is required.","phone_no":"The phone_no field is required.","document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 09:02:13 --> submitKyc request received.
+INFO - 2024-10-12 09:02:13 --> POST Data: {"full_name":"","address":"","phone_no":""}
+ERROR - 2024-10-12 09:02:13 --> Validation Errors: {"full_name":"The full_name field is required.","address":"The address field is required.","phone_no":"The phone_no field is required.","document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 09:46:48 --> submitKyc request received.
+INFO - 2024-10-12 09:46:48 --> POST Data: {"full_name":"","address":"","phone_no":""}
+ERROR - 2024-10-12 09:46:48 --> Validation Errors: {"full_name":"The full_name field is required.","address":"The address field is required.","phone_no":"The phone_no field is required.","document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 09:46:49 --> submitKyc request received.
+INFO - 2024-10-12 09:46:49 --> POST Data: {"full_name":"","address":"","phone_no":""}
+ERROR - 2024-10-12 09:46:49 --> Validation Errors: {"full_name":"The full_name field is required.","address":"The address field is required.","phone_no":"The phone_no field is required.","document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 09:46:50 --> submitKyc request received.
+INFO - 2024-10-12 09:46:50 --> POST Data: {"full_name":"","address":"","phone_no":""}
+ERROR - 2024-10-12 09:46:50 --> Validation Errors: {"full_name":"The full_name field is required.","address":"The address field is required.","phone_no":"The phone_no field is required.","document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 09:46:51 --> submitKyc request received.
+INFO - 2024-10-12 09:46:51 --> POST Data: {"full_name":"","address":"","phone_no":""}
+ERROR - 2024-10-12 09:46:51 --> Validation Errors: {"full_name":"The full_name field is required.","address":"The address field is required.","phone_no":"The phone_no field is required.","document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 09:46:52 --> submitKyc request received.
+INFO - 2024-10-12 09:46:52 --> POST Data: {"full_name":"","address":"","phone_no":""}
+ERROR - 2024-10-12 09:46:52 --> Validation Errors: {"full_name":"The full_name field is required.","address":"The address field is required.","phone_no":"The phone_no field is required.","document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 09:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 09:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 09:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 09:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 09:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 09:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 09:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 10:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 10:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 10:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 10:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 10:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:06:54 --> submitKyc request received.
+INFO - 2024-10-12 14:06:54 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+ERROR - 2024-10-12 14:06:54 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:07:04 --> submitKyc request received.
+INFO - 2024-10-12 14:07:04 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+ERROR - 2024-10-12 14:07:04 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 14:07:56 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "@popperjs"
+[Method: GET, Route: assets/vendors/@popperjs/popper.min.js.map]
+in SYSTEMPATH\Router\Router.php on line 736.
+ 1 SYSTEMPATH\Router\Router.php(203): CodeIgniter\Router\Router->checkDisallowedChars('assets/vendors/@popperjs/popper.min.js.map')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/vendors/@popperjs/popper.min.js.map')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 14:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:08:41 --> submitKyc request received.
+INFO - 2024-10-12 14:08:41 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+ERROR - 2024-10-12 14:08:41 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:09:54 --> submitKyc request received.
+INFO - 2024-10-12 14:09:54 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+ERROR - 2024-10-12 14:09:54 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:10:22 --> submitKyc request received.
+INFO - 2024-10-12 14:10:22 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+ERROR - 2024-10-12 14:10:22 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:11:09 --> submitKyc request received.
+INFO - 2024-10-12 14:11:09 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+ERROR - 2024-10-12 14:11:09 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:12:38 --> submitKyc request received.
+INFO - 2024-10-12 14:12:38 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 14:12:38 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 14:12:53 --> submitKyc request received.
+INFO - 2024-10-12 14:12:53 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790209"}
+CRITICAL - 2024-10-12 14:12:53 --> Error: Call to a member function isValid() on null
+[Method: POST, Route: kyc_upload/submit]
+in APPPATH\Controllers\PartnerController.php on line 500.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->submitKyc()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 14:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:13:25 --> submitKyc request received.
+INFO - 2024-10-12 14:13:25 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+INFO - 2024-10-12 14:13:25 --> Duplicate submission for phone number: 9400790206
+INFO - 2024-10-12 14:13:45 --> submitKyc request received.
+INFO - 2024-10-12 14:13:45 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790209"}
+CRITICAL - 2024-10-12 14:13:46 --> Error: Call to a member function isValid() on null
+[Method: POST, Route: kyc_upload/submit]
+in APPPATH\Controllers\PartnerController.php on line 500.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->submitKyc()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 14:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:15:39 --> submitKyc request received.
+INFO - 2024-10-12 14:15:39 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+ERROR - 2024-10-12 14:15:39 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:15:44 --> submitKyc request received.
+INFO - 2024-10-12 14:15:44 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+ERROR - 2024-10-12 14:15:44 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:16:06 --> submitKyc request received.
+INFO - 2024-10-12 14:16:06 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+ERROR - 2024-10-12 14:16:06 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:20:41 --> submitKyc request received.
+INFO - 2024-10-12 14:20:41 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+ERROR - 2024-10-12 14:20:41 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:23:56 --> submitKyc request received.
+INFO - 2024-10-12 14:23:56 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+ERROR - 2024-10-12 14:23:56 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:24:58 --> submitKyc request received.
+INFO - 2024-10-12 14:24:58 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+ERROR - 2024-10-12 14:24:58 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:35:19 --> submitKyc request received.
+INFO - 2024-10-12 14:35:19 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+ERROR - 2024-10-12 14:35:19 --> Validation Errors: {"document":"document is not a valid uploaded file."}
+INFO - 2024-10-12 14:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 14:36:39 --> submitKyc request received.
+INFO - 2024-10-12 14:36:39 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+INFO - 2024-10-12 14:36:40 --> Duplicate submission for phone number: 9400790206
+INFO - 2024-10-12 15:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:09:15 --> submitKyc request received.
+INFO - 2024-10-12 15:09:15 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+INFO - 2024-10-12 15:09:15 --> Duplicate submission for phone number: 9400790206
+INFO - 2024-10-12 15:09:20 --> submitKyc request received.
+INFO - 2024-10-12 15:09:20 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+INFO - 2024-10-12 15:09:20 --> Duplicate submission for phone number: 9400790206
+INFO - 2024-10-12 15:09:23 --> submitKyc request received.
+INFO - 2024-10-12 15:09:23 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+INFO - 2024-10-12 15:09:23 --> Duplicate submission for phone number: 9400790206
+INFO - 2024-10-12 15:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:10:10 --> submitKyc request received.
+INFO - 2024-10-12 15:10:10 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+INFO - 2024-10-12 15:10:10 --> Duplicate submission for phone number: 9400790206
+INFO - 2024-10-12 15:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:12:24 --> submitKyc request received.
+INFO - 2024-10-12 15:12:24 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:12:24 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:12:25 --> submitKyc request received.
+INFO - 2024-10-12 15:12:25 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:12:25 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:12:26 --> submitKyc request received.
+INFO - 2024-10-12 15:12:26 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:12:26 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:12:27 --> submitKyc request received.
+INFO - 2024-10-12 15:12:27 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:12:27 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:12:27 --> submitKyc request received.
+INFO - 2024-10-12 15:12:27 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:12:28 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:12:29 --> submitKyc request received.
+INFO - 2024-10-12 15:12:29 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:12:29 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:12:29 --> submitKyc request received.
+INFO - 2024-10-12 15:12:29 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:12:29 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:13:20 --> submitKyc request received.
+INFO - 2024-10-12 15:13:20 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:13:20 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:13:37 --> submitKyc request received.
+INFO - 2024-10-12 15:13:37 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790209"}
+CRITICAL - 2024-10-12 15:13:37 --> Error: Call to a member function isValid() on null
+[Method: POST, Route: kyc_upload/submit]
+in APPPATH\Controllers\PartnerController.php on line 488.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->submitKyc()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 15:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:14:59 --> submitKyc request received.
+INFO - 2024-10-12 15:14:59 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790209"}
+INFO - 2024-10-12 15:14:59 --> File uploaded successfully: 1728746099_a4ee0b412b77601c773c.jpg
+INFO - 2024-10-12 15:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:15:00 --> KYC details inserted successfully.
+INFO - 2024-10-12 15:16:12 --> submitKyc request received.
+INFO - 2024-10-12 15:16:12 --> POST Data: {"full_name":"Anantha Krishnan P","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790209"}
+INFO - 2024-10-12 15:16:12 --> Duplicate submission for phone number: 9400790209
+INFO - 2024-10-12 15:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:16:35 --> submitKyc request received.
+INFO - 2024-10-12 15:16:35 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:16:35 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:16:42 --> submitKyc request received.
+INFO - 2024-10-12 15:16:42 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790206"}
+INFO - 2024-10-12 15:16:42 --> Duplicate submission for phone number: 9400790206
+INFO - 2024-10-12 15:16:47 --> submitKyc request received.
+INFO - 2024-10-12 15:16:47 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790208"}
+INFO - 2024-10-12 15:16:47 --> File uploaded successfully: 1728746207_12f51d9bb4a3aebfd51a.jpg
+INFO - 2024-10-12 15:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:16:47 --> KYC details inserted successfully.
+INFO - 2024-10-12 15:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:18:20 --> submitKyc request received.
+INFO - 2024-10-12 15:18:20 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790204"}
+INFO - 2024-10-12 15:18:21 --> Duplicate submission for phone number: 9400790204
+INFO - 2024-10-12 15:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 15:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

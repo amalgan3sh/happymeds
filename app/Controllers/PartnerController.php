@@ -467,21 +467,9 @@ class PartnerController extends BaseController
         log_message('info', 'POST Data: ' . json_encode($this->request->getPost()));
         
         $validation = \Config\Services::validation();
-        $validation->setRules([
-            'full_name' => 'required|min_length[3]|max_length[255]',
-            'address'   => 'required|min_length[5]|max_length[1000]',
-            'phone_no'  => 'required|regex_match[/^[0-9]{10}$/]',
-            'document'  => 'uploaded[document]|max_size[document,2048]|ext_in[document,pdf,jpg,jpeg,png]',
-        ]);
+        
 
-        if (!$validation->withRequest($this->request)->run()) {
-            // Log validation errors
-            log_message('error', 'Validation Errors: ' . json_encode($validation->getErrors()));
-            return $this->response->setJSON([
-                'status' => 'error',
-                'errors' => $validation->getErrors()
-            ]);
-        }
+        
 
         $kycModel = new KYCModel();
 
@@ -496,7 +484,7 @@ class PartnerController extends BaseController
         }
 
         // Handle file upload
-        $file = $this->request->getFile('document');
+        $file = $this->request->getFile('kycDocument');
         if ($file->isValid() && !$file->hasMoved()) {
             // Generate a new random name for the uploaded file and move it to the uploads folder
             $newName = $file->getRandomName();

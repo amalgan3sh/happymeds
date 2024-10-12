@@ -1,5 +1,8 @@
 # Ignore writable folder
 writable/
+writable/logs
+writable/debugbar
+
 
 # Ignore environment variables
 .env
