@@ -168,12 +168,21 @@
                                                 <?= esc($product['TherapeuticUse']) ?>
 												</p>
 												<div class="d-flex align-items-end flex-wrap mt-4">
-													<div class="shopping-cart me-3 mt-xl-0 mt-2">
+												<div class="shopping-cart me-3 mt-xl-0 mt-2">
+													<?php if (in_array($_SESSION['user_data']['kyc_verify'], ['-', 'pending', 'rejected'])): ?>
+														<button id="kyc-upload-button" class="btn btn-warning">
+															<i class="fa fa-upload me-2"></i> Please upload your KYC document 
+															<a href="<?= site_url('upload_kyc') ?>" class="text-white"><u>Click here</u></a>
+														</button>
+														<div id="kyc-feedback"></div>
+													<?php else: ?>
 														<button id="invest-button" class="btn btn-primary" data-product-id="<?= $product['product_id'] ?>">
 															<i class="fa fa-shopping-basket me-2"></i> Are you interested in being a brand partner?
 														</button>
 														<div id="investment-feedback"></div>
-													</div>
+													<?php endif; ?>
+												</div>
+
 												</div>
 											</div>
 										</div>

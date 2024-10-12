@@ -517,12 +517,17 @@ class PartnerController extends BaseController
             ]);
         }
 
+        // Get user_id from session
+        $session = session();
+        $userId = $session->get('user_id');
+
         // Prepare the data to be inserted into the database
         $data = [
             'full_name'     => $this->request->getPost('full_name'),
             'address'       => $this->request->getPost('address'),
             'phone_no'      => $this->request->getPost('phone_no'),
             'document_path' => 'uploads/' . $newName, // Save the relative path of the uploaded file
+            'user_id'       => $userId,
         ];
 
         // Attempt to insert the data into the database

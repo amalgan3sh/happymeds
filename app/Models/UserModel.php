@@ -10,7 +10,7 @@ class UserModel extends Model
     protected $primaryKey = 'user_id';
 
     // Define the fields that can be inserted or updated
-    protected $allowedFields = ['user_name', 'email', 'phone', 'password', 'user_type'];
+    protected $allowedFields = ['user_name', 'email', 'phone', 'password', 'user_type','kyc_verify'];
 
     // Optional: Automatically manage created_at and updated_at
     protected $useTimestamps = true;
