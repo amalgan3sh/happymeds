@@ -7,6 +7,9 @@ use CodeIgniter\Model;
 class TransactionModel extends Model
 {
     protected $table = 'transactions';
-    protected $primaryKey = 'TransactionID';
-    protected $allowedFields = ['transactionID', 'date', 'from_user', 'to_user', 'Product', 'amount', 'status'];
+    protected $primaryKey = 'id';
+    protected $allowedFields = [
+        'user_id', 'amount', 'payment_id', 'name', 'email', 'status', 'created_at'
+    ];
+    protected $useTimestamps = false;
 }

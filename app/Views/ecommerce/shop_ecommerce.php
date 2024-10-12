@@ -15,16 +15,16 @@
                         <div class="col-xl-9 text-end d-none d-xl-block">
                             <ul class="tags-list">
                                 <li class="hover-up">
-                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Nivea Moisturizer</a>
+                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Paracetamol</a>
                                 </li>
                                 <li class="hover-up active">
-                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Whey Protein</a>
+                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Vicks Vapour</a>
                                 </li>
                                 <li class="hover-up">
                                     <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Thermometer</a>
                                 </li>
                                 <li class="hover-up">
-                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Museli</a>
+                                    <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Tiger balm</a>
                                 </li>
                                 <li class="hover-up mr-0">
                                     <a href="blog-category-grid.html"><i class="fi-rs-cross mr-10"></i>Volini</a>
@@ -89,8 +89,8 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-1-1.jpg" alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg" alt="" />
+                                            <img class="default-img" src="assets/imgs/shop/pdt_43.png" alt="" />
+                                            <img class="hover-img" src="assets/imgs/shop/pdt_43.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -104,9 +104,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Supplements</a>
+                                        <a href="shop-grid-right.html">Syrup</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Mass gainer by Whey Protein</a></h2>
+                                    <h2><a href="shop-product-right.html">TRYZIN FAU</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -114,7 +114,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Whey Protein</a></span>
+                                        <span class="font-small text-muted">Azythromyzin Oral Suspension<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -134,8 +134,8 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-2-1.jpg" alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg" alt="" />
+                                            <img class="default-img" src="assets/imgs/shop/pdt_42.png" alt="" />
+                                            <img class="hover-img" src="assets/imgs/shop/pdt_42.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -149,9 +149,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Skin care</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Raissa 4D Hyaluronic Acid Face Gel</a></h2>
+                                    <h2><a href="shop-product-right.html">TRYZIN 500</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -159,7 +159,7 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Raissa</a></span>
+                                        <span class="font-small text-muted">Azythromyzin <br>Tablet <a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -179,8 +179,8 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-3-1.jpg" alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg" alt="" />
+                                            <img class="default-img" src="assets/imgs/shop/pdt_41.png" alt="" />
+                                            <img class="hover-img" src="assets/imgs/shop/pdt_41.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -194,9 +194,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Balm</a>
+                                        <a href="shop-grid-right.html">Syrup</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Curegarden Rhulief Pain Relieving Balm</a></h2>
+                                    <h2><a href="shop-product-right.html">SAIFVIT 100</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -204,7 +204,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Curegarden</a></span>
+                                        <span class="font-small text-muted">Multivitamins <br>Syrup <a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -224,8 +224,8 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-4-1.jpg" alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg" alt="" />
+                                            <img class="default-img" src="assets/imgs/shop/pdt_40.png" alt="" />
+                                            <img class="hover-img" src="assets/imgs/shop/pdt_40.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -238,7 +238,7 @@
                                     <div class="product-category">
                                         <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Dr. Reckeweg BC 21 Tablet 20 gm </a></h2>
+                                    <h2><a href="shop-product-right.html">SAIFVIT 60</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -246,12 +246,12 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Dr. Reckeweg</a></span>
+                                        <span class="font-small text-muted">Multivitamins Oral suspension<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
-                                            <span>77.85</span>
-                                            <span class="old-price">85.8</span>
+                                            <span>177.85</span>
+                                            <span class="old-price">185.8</span>
                                         </div>
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -281,9 +281,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Cream</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Cetaphil Brightening Night Cream</a></h2>
+                                    <h2><a href="shop-product-right.html">SAIF PL</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -291,12 +291,12 @@
                                         <span class="font-small ml-5 text-muted"> (4.3)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">CETAPHIL</a></span>
+                                        <span class="font-small text-muted">Ambroxol + Levocetrizine + Paracetamol<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
-                                            <span>123.85</span>
-                                            <span class="old-price">155.8</span>
+                                            <span>90.85</span>
+                                            <span class="old-price">100.8</span>
                                         </div>
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -323,9 +323,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Sunscreen</a>
+                                        <a href="shop-grid-right.html">Paracetamol +Caffein Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">La Shield Pollution Protect SPF 50 Mineral Sunscreen</a></h2>
+                                    <h2><a href="shop-product-right.html">SAIF C</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -365,9 +365,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Face Serum</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Origine Naturespired Retinol Face Serum for Anti-Ageing</a></h2>
+                                    <h2><a href="shop-product-right.html">SAIF AS</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -375,12 +375,12 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Origine</a></span>
+                                        <span class="font-small text-muted">Aceclofenac + Paracetamol<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
                                             <span>632.85</span>
-                                            <span class="old-price">$675.8</span>
+                                            <span class="old-price">675.8</span>
                                         </div>
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -410,9 +410,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Cream</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">EQUALSTWO 100% Natural Melasma Cream</a></h2>
+                                    <h2><a href="shop-product-right.html">SAIF 250</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -420,7 +420,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">EQUALSTWO</a></span>
+                                        <span class="font-small text-muted">Acetaminophen Oral 250<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -455,9 +455,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Sunscreen</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Fixderma Shadow Sunscreen SPF 50+ Cream PA+++</a></h2>
+                                    <h2><a href="shop-product-right.html">PRO G I</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -465,7 +465,7 @@
                                         <span class="font-small ml-5 text-muted"> (3.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Fixderma</a></span>
+                                        <span class="font-small text-muted">Ibuprofen Tablet 400 MG<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -497,9 +497,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Serum</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Origine Naturespired Face Serum to Rejuvenate Skin</a></h2>
+                                    <h2><a href="shop-product-right.html">ONDABRO 4</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 50%"></div>
@@ -507,7 +507,7 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Origine</a></span>
+                                        <span class="font-small text-muted">Ondasteron Tablet 4 MG<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -542,9 +542,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Supplements</a>
+                                        <a href="shop-grid-right.html">Syrup</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Orgain Organic Plant-Based Protein</a></h2>
+                                    <h2><a href="shop-product-right.html">ONDABRO 2</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -552,12 +552,12 @@
                                         <span class="font-small ml-5 text-muted"> (4.1)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Orgain</a></span>
+                                        <span class="font-small text-muted">Ondanestron Oral <br>Solution<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
-                                            <span>3528.85</span>
-                                            <span class="old-price">3932.8</span>
+                                            <span>528.85</span>
+                                            <span class="old-price">932.8</span>
                                         </div>
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -587,9 +587,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Supplements</a>
+                                        <a href="shop-grid-right.html">Syrup</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Natural Force Organic Whey Protein</a></h2>
+                                    <h2><a href="shop-product-right.html">LEVOBRO SYP</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 80%"></div>
@@ -597,12 +597,12 @@
                                         <span class="font-small ml-5 text-muted"> (3.5)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Natural</a></span>
+                                        <span class="font-small text-muted">Levocetrizine + Montelukast<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
-                                            <span>5300.85</span>
-                                            <span class="old-price">5555.8</span>
+                                            <span>300.85</span>
+                                            <span class="old-price">555.8</span>
                                         </div>
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -632,9 +632,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Face cream</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">e.l.f. Holy Hydration! Face Cream</a></h2>
+                                    <h2><a href="shop-product-right.html">LEVOBRO M KID</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 85%"></div>
@@ -642,7 +642,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">e.l.f</a></span>
+                                        <span class="font-small text-muted">Levocetrizine + Montelukast Tablet<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -674,9 +674,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Night Cream</a>
+                                        <a href="shop-grid-right.html">Tablet</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Vitamin C Overnight Resync Night Cream</a></h2>
+                                    <h2><a href="shop-product-right.html">LEVOBRO M</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -684,7 +684,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Resync</a></span>
+                                    <span class="font-small text-muted">Levocetrizine + Montelukast Tablet<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -719,9 +719,9 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="shop-grid-right.html">Day Cream</a>
+                                        <a href="shop-grid-right.html">Levobro 10</a>
                                     </div>
-                                    <h2><a href="shop-product-right.html">Rosehip Hydrate Radiance Day Cream</a></h2>
+                                    <h2><a href="shop-product-right.html">LEVOBRO 10</a></h2>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             <div class="product-rating" style="width: 90%"></div>
@@ -729,7 +729,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Rosehip</a></span>
+                                        <span class="font-small text-muted">Levocetrizine + Dihydrochlodride Tablet<a href="vendor-details-1.html"></a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -794,7 +794,7 @@
                                                 <span class="font-small ml-5 text-muted"> (4.0)</span>
                                             </div>
                                             <div>
-                                                <span class="font-small text-muted">By <a href="vendor-details-1.html">Yoplait</a></span>
+                                                <span class="font-small text-muted"><a href="vendor-details-1.html">ONDABRO 2</a></span>
                                             </div>
                                             <div class="product-card-bottom">
                                                 <div class="product-price">
@@ -831,7 +831,7 @@
                                                 <span class="font-small ml-5 text-muted"> (4.2)</span>
                                             </div>
                                             <div>
-                                                <span class="font-small text-muted">By <a href="vendor-details-1.html">Old El Paso</a></span>
+                                                <span class="font-small text-muted"> <a href="vendor-details-1.html">SAIF C</a></span>
                                             </div>
                                             <div class="product-card-bottom">
                                                 <div class="product-price">
@@ -868,7 +868,7 @@
                                                 <span class="font-small ml-5 text-muted"> (3.0)</span>
                                             </div>
                                             <div>
-                                                <span class="font-small text-muted">By <a href="vendor-details-1.html">Progresso</a></span>
+                                                <span class="font-small text-muted"> <a href="vendor-details-1.html">ACEBRO</a></span>
                                             </div>
                                             <div class="product-card-bottom">
                                                 <div class="product-price">
@@ -905,7 +905,7 @@
                                                 <span class="font-small ml-5 text-muted"> (3.5)</span>
                                             </div>
                                             <div>
-                                                <span class="font-small text-muted">By <a href="vendor-details-1.html">Yoplait</a></span>
+                                                <span class="font-small text-muted"> <a href="vendor-details-1.html">Dr.AID</a></span>
                                             </div>
                                             <div class="product-card-bottom">
                                                 <div class="product-price">
@@ -962,21 +962,15 @@
                                 <label class="fw-900">Brand</label>
                                 <div class="custome-checkbox">
                                     <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="" />
-                                    <label class="form-check-label" for="exampleCheckbox1"><span>Nestle (56)</span></label>
+                                    <label class="form-check-label" for="exampleCheckbox1"><span>Cipla (56)</span></label>
                                     <br />
                                     <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox2" value="" />
-                                    <label class="form-check-label" for="exampleCheckbox2"><span>Whey Protein (78)</span></label>
-                                    <br />
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox3" value="" />
-                                    <label class="form-check-label" for="exampleCheckbox3"><span>Nykaa (54)</span></label>
+                                    <label class="form-check-label" for="exampleCheckbox2"><span>Dr.AID (78)</span></label>
                                 </div>
                                 <label class="fw-900 mt-15">Flavour</label>
                                 <div class="custome-checkbox">
                                     <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox11" value="" />
                                     <label class="form-check-label" for="exampleCheckbox11"><span>Chocolate(7)</span></label>
-                                    <br />
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox21" value="" />
-                                    <label class="form-check-label" for="exampleCheckbox21"><span>Charcoal (27)</span></label>
                                     <br />
                                     <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox31" value="" />
                                     <label class="form-check-label" for="exampleCheckbox31"><span>Strawberry (45)</span></label>
@@ -990,37 +984,13 @@
                         <h5 class="section-title style-1 mb-30">New products</h5>
                         <div class="single-post clearfix">
                             <div class="image">
-                                <img src="assets/imgs/shop/thumbnail-3.jpg" alt="#" />
-                            </div>
-                            <div class="content pt-10">
-                                <h5><a href="shop-product-detail.html">Whey Protein Mass Gainer</a></h5>
-                                <p class="price mb-0 mt-5">299.50</p>
-                                <div class="product-rate">
-                                    <div class="product-rating" style="width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-post clearfix">
-                            <div class="image">
                                 <img src="assets/imgs/shop/thumbnail-4.jpg" alt="#" />
                             </div>
                             <div class="content pt-10">
-                                <h6><a href="shop-product-detail.html">Coffee night mask for extra glow</a></h6>
+                                <h6><a href="shop-product-detail.html">BROZOL</a></h6>
                                 <p class="price mb-0 mt-5">489.50</p>
                                 <div class="product-rate">
                                     <div class="product-rating" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-post clearfix">
-                            <div class="image">
-                                <img src="assets/imgs/shop/thumbnail-5.jpg" alt="#" />
-                            </div>
-                            <div class="content pt-10">
-                                <h6><a href="shop-product-detail.html">Mixed fruit protein drink</a></h6>
-                                <p class="price mb-0 mt-5">1255</p>
-                                <div class="product-rate">
-                                    <div class="product-rating" style="width: 60%"></div>
                                 </div>
                             </div>
                         </div>
@@ -1032,7 +1002,7 @@
                             <h4>
                                 Save 17% <br />
                                 on <span class="text-brand">Organic</span><br />
-                                Juice Powder
+                                Syrup
                             </h4>
                         </div>
                     </div>

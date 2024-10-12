@@ -30,5 +30,12 @@ class StoreController extends Controller
         echo view('ecommerce/ecommerce_footer');
     }
 
+    public function aboutEcommerce()
+    {
+        echo view('ecommerce/ecommerce_header');
+        echo view('ecommerce/about');
+        echo view('ecommerce/ecommerce_footer');
+    }
+
 
 }

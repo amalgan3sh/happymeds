@@ -3,12 +3,27 @@
     Content body start
 ***********************************-->
 <div class="page-titles">
-        <div class="sub-dz-head">
-            <div class="d-flex align-items-center dz-head-title">
-                <h2 class="text-white m-0">Products Details</h2>
-            </div>
+    <div class="sub-dz-head">
+        <div class="d-flex align-items-center dz-head-title">
+            <h2 class="text-white m-0">Products Details</h2>
         </div>
     </div>
+</div>
+
+<!-- Search bar -->
+<div class="container-fluid mb-4 d-flex justify-content-end">
+    <div class="search-container">
+        <input type="text" id="searchBar" class="form-control" placeholder="Search products..." onkeyup="filterProducts()">
+    </div>
+</div>
+
+<style>
+    .search-container {
+        max-width: 300px;
+        width: 100%;
+    }
+</style>
+
 <div class="content-body">
     <!-- row -->
     <div class="container-fluid">
@@ -16,10 +31,10 @@
         <div class="row">
             <div class="col-xl-12">
                 <!-- Row -->
-                <div class="row">
+                <div class="row" id="productContainer">
                     <?php foreach ($product_data as $product): ?>
                     <!-- column -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 product-item" data-name="<?= esc(strtolower($product['ProductName'])) ?>">
                         <div class="card pull-up">
                             <a href="<?= base_url('product_details_view?product_id='.$product['product_id']) ?>" class="text-decoration-none text-dark">
                                 <div class="card-body align-items-center flex-wrap">
@@ -60,6 +75,11 @@
                     <!-- /column -->
                     <?php endforeach; ?>
                 </div>
+                <!-- Message when no products found -->
+                <div id="noResultsMessage" class="text-center mt-4" style="display: none;">
+                    <p>The product is not available. Do you want to request the product?</p>
+                    <button class="btn btn-primary" onclick="requestProduct()">Request Product</button>
+                </div>
             </div>
         </div>
     </div>
@@ -68,51 +88,73 @@
     Content body end
 ***********************************-->
 
+<!--**********************************
+    Footer start
+***********************************-->
+<div class="footer">
+    <div class="copyright">
+        <p>Copyright © Designed &amp; Developed by <a href=""
+                target="_blank">SpyderHub</a> <span class="current-year">2024</span>
+        </p>
+    </div>
+</div>
+<!--**********************************
+    Footer end
+***********************************-->
 
-		
+<!--**********************************
+    Main wrapper end
+***********************************-->
 
-		
-        <!--**********************************
-            Footer start
-        ***********************************-->
-       <div class="footer">
-			<div class="copyright">
-				<p>Copyright © Designed &amp; Developed by <a href=""
-						target="_blank">SpyderHub</a> <span class="current-year">2024</span>
-				</p>
-			</div>
-		</div>
-        <!--**********************************
-            Footer end
-        ***********************************-->
+<!--**********************************
+    Scripts
+***********************************-->
+<!-- Required vendors -->
+<script src="vendor/global/global.min.js"></script>
+<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="js/custom.min.js"></script>
+<script src="js/dlabnav-init.js"></script>
 
-		<!--**********************************
-           Support ticket button start
-        ***********************************-->
-		
-        <!--**********************************
-           Support ticket button end
-        ***********************************-->
+<!-- JavaScript for search functionality -->
+<script>
+    // JavaScript function to filter products
+    function filterProducts() {
+        const searchInput = document.getElementById('searchBar').value.toLowerCase();
+        const products = document.querySelectorAll('.product-item');
+        let hasVisibleProducts = false;
 
+        products.forEach(product => {
+            const productName = product.getAttribute('data-name');
+            if (productName.includes(searchInput)) {
+                product.style.display = 'block';
+                hasVisibleProducts = true;
+            } else {
+                product.style.display = 'none';
+            }
+        });
 
-	</div>
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
+        // Show or hide the noResultsMessage based on whether there are visible products
+        const noResultsMessage = document.getElementById('noResultsMessage');
+        if (hasVisibleProducts) {
+            noResultsMessage.style.display = 'none';
+        } else {
+            noResultsMessage.style.display = 'block';
+        }
+    }
 
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
-    <script src="vendor/global/global.min.js"></script>
-	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	
+    // Function to handle the "Request Product" button click
+    function requestProduct() {
+        alert('Redirecting to the product request form...');
+        // Redirect to the product request page
+        window.location.href = 'request_product_page_url'; // Replace with the actual URL
+    }
+</script>
 
-	<!-- Dashboard 1 -->
-	
-    <script src="js/custom.min.js"></script>
-	<script src="js/dlabnav-init.js"></script>
-	
-   
+<!-- Custom CSS -->
+<style>
+    .search-container {
+        max-width: 300px;
+    }
+</style>
 </body>
 </html>

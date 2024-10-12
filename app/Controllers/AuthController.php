@@ -70,27 +70,29 @@ class AuthController extends Controller
         // Get request data
         $email = $this->request->getPost("email");
         $password = $this->request->getPost("password");
-
+    
         // Load the UserModel
         $userModel = new UserModel();
-
+    
         // Login via email and password
         if (!empty($email) && !empty($password)) {
             $user = $userModel->where("email", $email)->first();
-
+    
             if ($user) {
                 if (password_verify($password, $user["password"])) {
                     // Check if user_type is set
                     if (empty($user['user_type'])) {
                         // Store user_id temporarily in session to use for updating user_type later
                         session()->set('user_id', $user['user_id']);
-
+    
                         // Redirect to the 'choose user type' view
                         return redirect()->to('/choose_user_type');
                     }
-
+    
                     // Successful login, set session
                     $this->setUserSession($user);
+                    // Store user_id in session
+                    session()->set('user_id', $user['user_id']);
                     return redirect()->to("/business_home")->with("success", "Login successful");
                 } else {
                     return redirect()->back()->with("error", "Incorrect password");
@@ -98,6 +100,8 @@ class AuthController extends Controller
             } else {
                 return redirect()->back()->with("error", "User not found");
             }
+        } else {
+            return redirect()->back()->with("error", "Email and password are required");
         }
     }
 
@@ -163,7 +167,6 @@ class AuthController extends Controller
 
         // Redirect to customer login page
         return redirect()
-            ->to("/customer_login")
-            ->with("info", "You have been logged out.");
+            ->to("/");
     }
 }
