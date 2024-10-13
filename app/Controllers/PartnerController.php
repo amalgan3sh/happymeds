@@ -12,7 +12,8 @@ use App\Models\{
     InvestmentModel,
     SupportModel,
     ActivityModel,
-    KYCModel
+    KYCModel,
+    ReviewModel
 };
 use CodeIgniter\Cache\CacheInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -549,33 +550,43 @@ class PartnerController extends BaseController
 
     //Review
     public function postReview()
-    {
-        if ($this->request->getMethod() === 'post') {
-            $model = new ReviewModel();
+{
+    // Log incoming request
+    log_message('info', 'postReview request received.');
+    log_message('info', 'Review data: ' . $this->request->getMethod());
+    if ($this->request->getMethod() === 'POST') {
+        $model = new ReviewModel();
 
-            // Retrieve form data
-            $data = [
-                'user_id' => $this->request->getPost('user_id'),
-                'rating' => $this->request->getPost('rating'),
-                'comment' => $this->request->getPost('comment'),
-            ];
+        $session = session();
+        $userId = $session->get('user_id');
+        // Retrieve form data
+        $data = [
+            'user_id' => $userId,
+            'rating' => $this->request->getPost('rating'),
+            'comment' => $this->request->getPost('comment'),
+        ];
 
-            // Insert data and handle errors
-            if ($model->save($data)) {
-                return $this->response->setJSON([
-                    'status' => 'success',
-                    'message' => 'Review submitted successfully',
-                ]);
-            } else {
-                return $this->response->setJSON([
-                    'status' => 'error',
-                    'errors' => $model->errors(),
-                ]);
-            }
+        // Log the review submission data
+        log_message('info', 'Review data: ' . json_encode($data));
+
+        // Insert data and handle errors
+        if ($model->save($data)) {
+            // Log successful submission
+            log_message('info', 'Review submitted successfully for user ID: ' . $data['user_id']);
+            return $this->response->setJSON([
+                'status' => 'success',
+                'message' => 'Review submitted successfully',
+            ]);
+        } else {
+            // Log errors in case of failure
+            log_message('error', 'Review submission failed: ' . json_encode($model->errors()));
+            return $this->response->setJSON([
+                'status' => 'error',
+                'errors' => $model->errors(),
+            ]);
         }
-
-        // If the request is not post, show the form
-        return view('reviews/create');
     }
+}
+
     
 }

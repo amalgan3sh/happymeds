@@ -52,5 +52,5 @@ $(document).ready(function(){
 
 
 function responseMessage(msg) {
-  alert(msg);  
+  // alert(msg);  
 }

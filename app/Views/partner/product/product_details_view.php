@@ -37,7 +37,68 @@
 	<link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
    <link class="main-css" href="css/style.css" rel="stylesheet">
+   <style>
+    /* Modal styles */
+    .modal {
+        display: block; /* Initially, you can use 'block' or control with JavaScript */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+        justify-content: center;
+        align-items: center;
+    }
 
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        position: relative;
+        width: 50%; /* Or adjust as needed */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Success icon styling */
+    .success-icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px; /* Adjust height as needed */
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #4CAF50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: scaleUp 0.5s ease-in-out;
+    }
+
+    .checkmark {
+        font-size: 48px;
+        color: white;
+        display: inline-block;
+    }
+
+    @keyframes scaleUp {
+        from {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+</style>
 </head>
 
 
@@ -226,8 +287,11 @@
 									<input type="hidden" id="ratingValue" name="rating" value="" />
 									<button type="submit" class="btn btn-success btn-block">Submit Review</button>
 								</form>
-
-								<div id="message"></div> <!-- For displaying success or error message -->
+								<div id="successIcon" class="success-icon-container" style="display: none;">
+									<div class="circle">
+										<span class="checkmark">✔</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -381,8 +445,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const stars = document.querySelectorAll('#stars li');
     const ratingValue = document.getElementById('ratingValue');
     const reviewForm = document.getElementById('reviewForm');
-    const messageDiv = document.getElementById('message');
-
+    const successIcon = document.getElementById('successIcon');
+    const reviewModal = document.getElementById('reviewModal'); // Modal container
+	reviewModal.style.display = 'none'; // Show the modal
     // Handle star rating click
     stars.forEach(star => {
         star.addEventListener('click', function () {
@@ -411,22 +476,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const result = await response.json();
 
-        // Clear any previous messages
-        messageDiv.innerHTML = '';
-
         if (result.status === 'success') {
-            messageDiv.innerHTML = `<div class="alert alert-success">${result.message}</div>`;
-            reviewForm.reset(); // Reset form after submission
-            stars.forEach(s => s.classList.remove('selected')); // Reset star selection
+            // Hide the form inside the modal
+            reviewForm.style.display = 'none';
+            
+            // Show the success icon inside the modal
+            successIcon.style.display = 'flex';
         } else if (result.status === 'error') {
             let errors = '';
             for (const key in result.errors) {
                 errors += `<p>${result.errors[key]}</p>`;
             }
-            messageDiv.innerHTML = `<div class="alert alert-danger">${errors}</div>`;
+            // Handle errors (display errors in the form if needed)
+            console.error(errors);
         }
     });
 });
+
 </script>
 
 </body>
