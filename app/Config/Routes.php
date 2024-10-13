@@ -80,6 +80,7 @@ $routes->post('/store_bank_account', 'PartnerController::storeBankAccount');
 $routes->get('upload_kyc', 'PartnerController::upload_kyc');
 $routes->post('/kyc_upload/submit', 'PartnerController::submitKyc');
 $routes->post('select_plan', 'PartnerController::select_plan');
+$routes->post('/reviews/create', 'PartnerController::postReview');
 
 
 $routes->get('/ecommerce_home', 'StoreController::EcommerceHome');

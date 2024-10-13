@@ -546,5 +546,36 @@ class PartnerController extends BaseController
             return $this->respond(['exists' => false]);
         }
     }
+
+    //Review
+    public function postReview()
+    {
+        if ($this->request->getMethod() === 'post') {
+            $model = new ReviewModel();
+
+            // Retrieve form data
+            $data = [
+                'user_id' => $this->request->getPost('user_id'),
+                'rating' => $this->request->getPost('rating'),
+                'comment' => $this->request->getPost('comment'),
+            ];
+
+            // Insert data and handle errors
+            if ($model->save($data)) {
+                return $this->response->setJSON([
+                    'status' => 'success',
+                    'message' => 'Review submitted successfully',
+                ]);
+            } else {
+                return $this->response->setJSON([
+                    'status' => 'error',
+                    'errors' => $model->errors(),
+                ]);
+            }
+        }
+
+        // If the request is not post, show the form
+        return view('reviews/create');
+    }
     
 }

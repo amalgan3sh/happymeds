@@ -210,7 +210,7 @@
 							<div class="card-header pb-2 d-block d-sm-flex flex-wrap border-0">
 								<div class="mb-3">
 									<h4 class="card-title">Recent Activity</h4>
-									<p class="mb-0 fs-13">Lorem ipsum dolor sit amet, consectetur</p>
+									<p class="mb-0 fs-13"></p>
 								</div>
 								<ul class="nav nav-pills">
 									<li class="nav-item" role="presentation">
@@ -439,6 +439,10 @@
 					<div class="col-xl-6">
 						<div class="card overflow-hidden h-auto">
 							<div class="card-body pb-4">
+							<div class="mb-3">
+									<h4 class="card-title">Investment Request</h4>
+									<p class="mb-0 fs-13"></p>
+								</div>
 								<div class="table-responsive">
 									<table class="table portfolio-table">
 										<thead>

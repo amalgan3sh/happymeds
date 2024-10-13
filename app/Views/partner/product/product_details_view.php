@@ -193,52 +193,46 @@
 					</div>
 					<!-- review -->
 					<div class="modal fade" id="reviewModal">
-						<div class="modal-dialog modal-dialog-center" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title">Review</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal">
-									</button>
-								</div>
-								<div class="modal-body">
-									<form>
-										<div class="text-center mb-4">
-											<img class="img-fluid rounded" width="78" src="./images/avatar/1.jpg"
-												alt="DexignZone">
-										</div>
-										<div class="form-group">
-											<div class="rating-widget mb-4 text-center">
-												<!-- Rating Stars Box -->
-												<div class="rating-stars">
-													<ul id="stars">
-														<li class="star" title="Poor" data-value="1">
-															<i class="fa fa-star fa-fw"></i>
-														</li>
-														<li class="star" title="Fair" data-value="2">
-															<i class="fa fa-star fa-fw"></i>
-														</li>
-														<li class="star" title="Good" data-value="3">
-															<i class="fa fa-star fa-fw"></i>
-														</li>
-														<li class="star" title="Excellent" data-value="4">
-															<i class="fa fa-star fa-fw"></i>
-														</li>
-														<li class="star" title="WOW!!!" data-value="5">
-															<i class="fa fa-star fa-fw"></i>
-														</li>
-													</ul>
-												</div>
+					<div class="modal-dialog modal-dialog-center" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Review</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+							<div class="modal-body">
+								<form id="reviewForm">
+									<div class="text-center mb-4">
+										<img class="img-fluid rounded" width="78" src="<?= base_url('assets/') ?><?= esc($imagePath[2]) ?>" alt="DexignZone">
+									</div>
+
+									<div class="form-group">
+										<div class="rating-widget mb-4 text-center">
+											<div class="rating-stars">
+												<ul id="stars">
+													<li class="star" title="Poor" data-value="1"><i class="fa fa-star fa-fw"></i></li>
+													<li class="star" title="Fair" data-value="2"><i class="fa fa-star fa-fw"></i></li>
+													<li class="star" title="Good" data-value="3"><i class="fa fa-star fa-fw"></i></li>
+													<li class="star" title="Excellent" data-value="4"><i class="fa fa-star fa-fw"></i></li>
+													<li class="star" title="WOW!!!" data-value="5"><i class="fa fa-star fa-fw"></i></li>
+												</ul>
 											</div>
 										</div>
-										<div class="form-group">
-											<textarea class="form-control" placeholder="Comment" rows="5"></textarea>
-										</div>
-										<button class="btn btn-success btn-block">RATE</button>
-									</form>
-								</div>
+									</div>
+
+									<div class="form-group">
+										<textarea class="form-control" id="comment" name="comment" placeholder="Comment" rows="5"></textarea>
+									</div>
+
+									<input type="hidden" id="ratingValue" name="rating" value="" />
+									<button type="submit" class="btn btn-success btn-block">Submit Review</button>
+								</form>
+
+								<div id="message"></div> <!-- For displaying success or error message -->
 							</div>
 						</div>
 					</div>
+				</div>
+
 					<div class="row">
 					<div class="col-lg-12">
 						<div class="card">
@@ -291,19 +285,7 @@
 				</p>
 			</div>
 		</div>
-        <!--**********************************
-            Footer end
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button start
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button end
-        ***********************************-->
-
-        
+    
     </div>
     <!--**********************************
         Main wrapper end
@@ -391,6 +373,58 @@ $(document).ready(function() {
                 $('#investment-feedback').html('<div class="alert alert-danger mt-2">An error occurred. Please try again.</div>');
             }
         });
+    });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const stars = document.querySelectorAll('#stars li');
+    const ratingValue = document.getElementById('ratingValue');
+    const reviewForm = document.getElementById('reviewForm');
+    const messageDiv = document.getElementById('message');
+
+    // Handle star rating click
+    stars.forEach(star => {
+        star.addEventListener('click', function () {
+            const value = this.getAttribute('data-value');
+            ratingValue.value = value; // Set rating value in hidden input
+            // Highlight selected stars
+            stars.forEach(s => s.classList.remove('selected'));
+            for (let i = 0; i < value; i++) {
+                stars[i].classList.add('selected');
+            }
+        });
+    });
+
+    // Handle form submission
+    reviewForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(reviewForm);
+        const response = await fetch('<?= site_url("/reviews/create") ?>', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+            }
+        });
+
+        const result = await response.json();
+
+        // Clear any previous messages
+        messageDiv.innerHTML = '';
+
+        if (result.status === 'success') {
+            messageDiv.innerHTML = `<div class="alert alert-success">${result.message}</div>`;
+            reviewForm.reset(); // Reset form after submission
+            stars.forEach(s => s.classList.remove('selected')); // Reset star selection
+        } else if (result.status === 'error') {
+            let errors = '';
+            for (const key in result.errors) {
+                errors += `<p>${result.errors[key]}</p>`;
+            }
+            messageDiv.innerHTML = `<div class="alert alert-danger">${errors}</div>`;
+        }
     });
 });
 </script>
