@@ -13,7 +13,7 @@
 						</g>
 					</svg>
 					<div class="ms-3" onclick="toggleWalletCard()">
-						<h4 class="text-white mb-0 d-block">$2353.25</h4>
+						<h4 class="text-white mb-0 d-block"><?php echo htmlspecialchars($_SESSION['user_data']['wallet_balance']) ?></h4>
 						<small>Withdraw Money</small>
 					</div>
 
@@ -30,7 +30,7 @@
 							<path d="M12,16 C13.6568542,16 15,14.6568542 15,13 C15,11.3431458 13.6568542,10 12,10 C10.3431458,10 9,11.3431458 9,13 C9,14.6568542 10.3431458,16 12,16 Z" fill="#fff"/>
 						</g>
 					</svg>
-					<h4 class="mb-0 text-white">$<span class="counter">20</span>K</h4>
+					<h4 class="mb-0 text-white">$<span class="counter"><?php echo htmlspecialchars($_SESSION['user_data']['total_investment']) ?></span>K</h4>
 					<small>Total Investments</small>
 				</div>
 				<div class="item-1">
@@ -41,7 +41,7 @@
 							<path d="M5.5,10 C6.32842712,10 7,9.32842712 7,8.5 C7,7.67157288 6.32842712,7 5.5,7 C4.67157288,7 4,7.67157288 4,8.5 C4,9.32842712 4.67157288,10 5.5,10 Z M18.5,10 C19.3284271,10 20,9.32842712 20,8.5 C20,7.67157288 19.3284271,7 18.5,7 C17.6715729,7 17,7.67157288 17,8.5 C17,9.32842712 17.6715729,10 18.5,10 Z" fill="#fff" opacity="0.3"/>
 						</g>
 					</svg>
-					<h4 class="mb-0 text-white">$<span class="counter">500</span>k</h4>
+					<h4 class="mb-0 text-white">$<span class="counter"><?php echo htmlspecialchars($_SESSION['user_data']['total_investment']) ?></span>k</h4>
 					<small>Total Turnover</small>
 				</div>
 				</div>

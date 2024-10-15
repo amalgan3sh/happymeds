@@ -16,7 +16,7 @@
 				<div class="wallet-wrapper">
 					<div class="mb-3">
 						<h5 class="fs-14 font-w400 mb-0">My Portfolio</h5>
-						<h4 class="fs-24 font-w600">$34,010.00</h4>
+						<h4 class="fs-24 font-w600"><?php echo htmlspecialchars($_SESSION['user_data']['wallet_balance']) ?></h4>
 					</div>
 					<div class="text-end mb-2">
 						<span>
