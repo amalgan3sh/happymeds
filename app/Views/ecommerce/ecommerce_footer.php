@@ -15,7 +15,7 @@
                                     <button class="btn" type="submit">Subscribe</button>
                                 </form>
                             </div>
-                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-9.png" alt="newsletter" />
+                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner_9.png" alt="newsletter" />
                         </div>
                     </div>
                 </div>

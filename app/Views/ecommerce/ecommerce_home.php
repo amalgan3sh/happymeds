@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="home-slide-cover mt-30">
                     <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider-1.png)">
+                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider_1.png)">
                             <div class="slider-content">
                                 <h1 class="display-2 mb-40">
                                     Don’t miss amazing<br />
@@ -17,7 +17,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider-2.png)">
+                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider_2.png)">
                             <div class="slider-content">
                                 <h1 class="display-2 mb-40">
                                     Verified brands<br />
@@ -107,7 +107,20 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
-                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-1.png" alt="" />
+                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner_2.jpg" alt="" />
+                            <div class="banner-text">
+                                <h4>
+                                    Routine checkup<br />
+                                    guarantees healthy<br />
+                                    tomorrow.
+                                </h4>
+                                <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner_1.png" alt="" />
                             <div class="banner-text">
                                 <h4>
                                     Start your healthy <br />journey<br />
@@ -117,21 +130,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
-                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-2.png" alt="" />
-                            <div class="banner-text">
-                                <h4>
-                                    Make your Breakfast<br />
-                                    Healthy and Easy
-                                </h4>
-                                <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-4 d-md-none d-lg-flex">
                         <div class="banner-img mb-sm-0 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
-                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-3.png" alt="" />
+                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner_3.png" alt="" />
                             <div class="banner-text">
                                 <h4>The best brands <br />Products Online</h4>
                                 <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
@@ -603,7 +604,7 @@
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Tablet</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">BROCIT-100</a></h2>
+                                        <h2><a href="shop-product-right.html">BROCIT-10</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
                                                 <div class="product-rating" style="width: 85%"></div>
@@ -1446,11 +1447,11 @@
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
                                     <a href="shop-product-right.html">
-                                        <img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_30.png" alt="" /></a>
+                                        <img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_29.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">LEVOBRO - M</a>
+                                        <a href="shop-product-right.html">LEVOBRO 10</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1466,7 +1467,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_31.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_30.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1486,7 +1487,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_32.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_31.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1511,7 +1512,7 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_33.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_32.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1531,7 +1532,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_34.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_33.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1551,7 +1552,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_35.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_34.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1576,7 +1577,7 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_36.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_35.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1596,7 +1597,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_37.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_36.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1616,7 +1617,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_38.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_37.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1641,7 +1642,7 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_39.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_38.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1661,11 +1662,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_40.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_39.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">SAIF PL/a>
+                                        <a href="shop-product-right.html">SAIF PL
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1681,7 +1682,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_41.png" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_40.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
