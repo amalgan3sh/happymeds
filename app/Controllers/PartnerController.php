@@ -13,7 +13,8 @@ use App\Models\{
     SupportModel,
     ActivityModel,
     KYCModel,
-    ReviewModel
+    ReviewModel,
+    UserModel
 };
 use CodeIgniter\Cache\CacheInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -28,6 +29,7 @@ class PartnerController extends BaseController
     protected InvestmentModel $investmentModel;
     protected SupportModel $supportModel;
     protected ActivityModel $activityModel;
+    protected UserModel $userModel;
 
     public function __construct()
     {
@@ -39,6 +41,7 @@ class PartnerController extends BaseController
         $this->investmentModel = new InvestmentModel();
         $this->supportModel = new SupportModel();
         $this->activityModel = new ActivityModel();
+        $this->userModel = new UserModel();
     }
 
     public function partnerHome(): ResponseInterface
@@ -155,8 +158,22 @@ class PartnerController extends BaseController
         if (!$this->checkSession()) {
             return redirect()->to('/customer_login');
         }
+        
+        $session = session();
+        $userId = $session->get('user_id');
+        $userModel = new UserModel();
+        $user = $userModel->where('user_id', $userId)->first();
+        // Load the KYC Verification Model
+        $model = new \App\Models\KycVerificationModel();
 
-        return $this->renderView('upload_kyc', 'partner/upload_kyc');
+        // Check if the KYC verification has already been submitted by the user
+        $kycExists = $model->where('user_id', $userId)->first();
+
+       
+        return $this->renderView('upload_kyc', 'partner/upload_kyc',[
+            'user' => $user,
+            'kycExists' => $kycExists
+        ]);
     }
     public function ProductDetailsView(): ResponseInterface
     {

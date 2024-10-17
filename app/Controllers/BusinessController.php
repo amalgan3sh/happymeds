@@ -34,7 +34,8 @@ class BusinessController extends Controller
                     'user_name' => $user['user_name'],
                     'email' => $user['email'],
                     'phone' => $user['phone'],
-                    'user_type' => $user['user_type']
+                    'user_type' => $user['user_type'],
+                    'kyc_verify' => $user['kyc_verify']
                 ]);
 
                 // Redirect to business home

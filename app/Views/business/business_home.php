@@ -3,6 +3,9 @@
         ***********************************-->
 		
 		<!-- Modal -->
+        <?php
+            $kyc_status = esc($user['kyc_verify']); // Replace with your actual method to get the status
+        ?>
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -330,8 +333,30 @@
             Content body end
         ***********************************-->
 		
+        <!-- KYC Upload Modal -->
+        <div class="modal fade" id="kycModal" tabindex="-1" aria-labelledby="kycModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="kycModalLabel">Upload KYC Details</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Your KYC status is currently <?= esc($kyc_status) ?>. Please upload your KYC details to proceed.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="redirectToVerification">Go to Verification</button>
+            </div>
+            </div>
+        </div>
+        </div>
 
-		
+        <script>
+        document.getElementById('redirectToVerification').addEventListener('click', function() {
+            window.location.href = '<?= base_url('/business_verification')?>'; // Redirect to the verification page
+        });
+        </script>
+                
         <!--**********************************
             Footer start
         ***********************************-->
@@ -377,7 +402,29 @@
 	<script src="js/dashboard/portfolio.js"></script>
     <script src="js/custom.min.js"></script>
 	<script src="js/dlabnav-init.js"></script>
-	
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const kycStatus = "<?= esc($kyc_status) ?>"; // Get the KYC status from PHP
+
+            if (kycStatus === "pending" || kycStatus === "rejected" || kycStatus === "-") {
+            // Show the KYC modal if the status is pending or rejected
+            var kycModal = new bootstrap.Modal(document.getElementById('kycModal'));
+            kycModal.show();
+            }
+
+            // Handle the upload button click
+            document.getElementById('uploadKYC').addEventListener('click', function() {
+            const fileInput = document.getElementById('kycFile');
+            if (fileInput.files.length > 0) {
+                // Implement your file upload logic here
+                alert('KYC file uploaded successfully!'); // Placeholder for actual upload logic
+                kycModal.hide(); // Close the modal after upload
+            } else {
+                alert('Please select a file to upload.');
+            }
+            });
+        });
+    </script>
    
 </body>
 </html>
