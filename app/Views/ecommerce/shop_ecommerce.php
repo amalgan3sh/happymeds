@@ -984,7 +984,7 @@
                         <h5 class="section-title style-1 mb-30">New products</h5>
                         <div class="single-post clearfix">
                             <div class="image">
-                                <img src="assets/imgs/shop/thumbnail-4.jpg" alt="#" />
+                                <img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_23.png" alt="" />
                             </div>
                             <div class="content pt-10">
                                 <h6><a href="shop-product-detail.html">BROZOL</a></h6>
