@@ -4716,7 +4716,7 @@ table.no-border td, table.no-border th, table.no-border thead {
 
 /*BLOG*/
 .archive-header {
-  background: url(../imgs/blog/header-bg.png) no-repeat center center;
+  background: url(../imgs/blog/header-blog.png) no-repeat center center;
   border-radius: 20px;
   padding: 70px 80px;
   background-size: cover;
@@ -7534,7 +7534,7 @@ span.fi-rs-apps {
 }
 
 .price_range {
-  background: url(../imgs/banner/fillter-widget-bg.png) no-repeat right bottom;
+  background: url(../imgs/banner/filter-widget.png) no-repeat right bottom;
   background-size: 150px;
 }
 
