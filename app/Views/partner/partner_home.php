@@ -479,7 +479,7 @@
 														<tbody>
 															<?php 
 															$filteredTransactions = array_filter($transactions, function($transaction) use ($period) {
-																$transactionDate = new DateTime($transaction['Date']);
+																$transactionDate = new DateTime($transaction['created_at']);
 																$now = new DateTime();
 																switch($period) {
 																	case 'Week':
@@ -503,29 +503,13 @@
 																		</g>
 																	</svg>
 																</td>
-																<td><?= $transaction['TransactionID'] ?></td>
-																<td><?= $transaction['Date'] ?></td>
-																<td><?= $transaction['From'] ?></td>
-																<td>
-																	<div class="d-flex align-items-center">
-																		<img src="images/avatar/<?= ($index % 3) + 1 ?>.jpg" class="me-2" width="30" alt="">
-																		<span class="w-space-no"><?= $transaction['To'] ?></span>
-																	</div>
-																</td>
-																<td>
-																	<div class="d-flex align-items-center">
-																		<img src="images/svg/btc.svg" alt="" class="me-2 img-btc">
-																		<?= $transaction['Product'] ?>
-																	</div>
-																</td>
-																<td class="text-success font-w600">
-																	$<?= number_format($transaction['Amount'], 2) ?>
-																</td>
-																<td class="text-end">
-																	<div class="badge badge-sm badge-<?= strtolower($transaction['Status']) === 'completed' ? 'success' : (strtolower($transaction['Status']) === 'pending' ? 'warning' : 'danger') ?>">
-																		<?= strtoupper($transaction['Status']) ?>
-																	</div>
-																</td>
+																<td><?= $transaction['id'] ?></td>
+																<td><?= $transaction['created_at'] ?></td>
+																<td></td>
+																<td></td>
+																<td></td>
+																<td></td>
+																<td></td>
 															</tr>
 															<?php endforeach; ?>
 														</tbody>

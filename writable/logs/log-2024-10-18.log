@@ -1,0 +1,123 @@
+INFO - 2024-10-18 06:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:49:15 --> Investment Check - User ID: 2, Product ID: 11
+INFO - 2024-10-18 06:49:16 --> Investment Check - User ID: 2, Product ID: 11, Is Invested: No
+INFO - 2024-10-18 06:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 06:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:49:25 --> Investment Check - User ID: 2, Product ID: 10
+INFO - 2024-10-18 07:49:26 --> Investment Check - User ID: 2, Product ID: 10, Is Invested: No
+INFO - 2024-10-18 07:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-18 07:49:35 --> mysqli_sql_exception: Column 'plan' cannot be null in C:\xampp\htdocs\happymeds\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\happymeds\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `in...', 0)
+#1 C:\xampp\htdocs\happymeds\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\happymeds\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\happymeds\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\happymeds\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\happymeds\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\happymeds\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\happymeds\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\happymeds\app\Controllers\PartnerController.php(409): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(933): App\Controllers\PartnerController->select_plan()
+#10 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+#11 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\happymeds\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\happymeds\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\happymeds\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-10-18 07:49:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'plan' cannot be null
+[Method: POST, Route: select_plan]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `investment_request` (`plan`, `product_id`, `user_id`, `time_stamp`) VALUES (:plan:, :product_id:, :user_id:, :time_stamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PartnerController.php(409): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->select_plan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-18 07:49:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'plan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `investment_request` (`plan`, `product_id`, `user_id`, `time_stamp`) VALUES (NULL, NULL, NULL, \'2024-10-18 07:49:35\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `investment_request` (`plan`, `product_id`, `user_id`, `time_stamp`) VALUES (NULL, NULL, NULL, \'2024-10-18 07:49:35\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `investment_request` (`plan`, `product_id`, `user_id`, `time_stamp`) VALUES (:plan:, :product_id:, :user_id:, :time_stamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PartnerController.php(409): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->select_plan()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-18 07:49:35 --> [Caused by] mysqli_sql_exception: Column 'plan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `investment_request` (`plan`, `product_id`, `user_id`, `time_stamp`) VALUES (NULL, NULL, NULL, \'2024-10-18 07:49:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `investment_request` (`plan`, `product_id`, `user_id`, `time_stamp`) VALUES (NULL, NULL, NULL, \'2024-10-18 07:49:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `investment_request` (`plan`, `product_id`, `user_id`, `time_stamp`) VALUES (NULL, NULL, NULL, \'2024-10-18 07:49:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `investment_request` (`plan`, `product_id`, `user_id`, `time_stamp`) VALUES (:plan:, :product_id:, :user_id:, :time_stamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PartnerController.php(409): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->select_plan()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-18 07:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 07:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 08:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 08:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 08:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 08:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 08:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 08:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-18 09:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

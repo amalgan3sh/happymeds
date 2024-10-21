@@ -84,6 +84,91 @@
         </div>
     </div>
 </div>
+<!-- Modal for Request Product -->
+<div class="modal fade" id="requestProductModal" tabindex="-1" aria-labelledby="requestProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="requestProductModalLabel">Request New Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="<?= site_url('product/requestProduct') ?>" method="post" enctype="multipart/form-data">
+                    <?= csrf_field() ?> <!-- CSRF protection token -->
+
+                    <div id="smartwizard_modal" class="form-wizard">
+                        <ul class="nav nav-wizard">
+                            <li><a class="nav-link" href="#step_product_details_modal">
+                                <span>1</span> 
+                            </a></li>
+                            <li><a class="nav-link" href="#step_images_documents_modal">
+                                <span>2</span>
+                            </a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <!-- Step 1: Product Details -->
+                            <div id="step_product_details_modal" class="tab-pane" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-2">
+                                        <label class="form-label required">Product Name</label>
+                                        <input type="text" name="productName" class="form-control" placeholder="Product Name" required>
+                                    </div>
+                                    <div class="col-lg-6 mb-2">
+                                        <label class="form-label required">Category</label>
+                                        <select name="category" class="form-control" required>
+                                            <option value="">Select Category</option>
+                                            <option value="Medicine">Medicine</option>
+                                            <option value="Supplement">Supplement</option>
+                                            <option value="Medical Device">Medical Device</option>
+                                            <option value="Personal Care">Personal Care</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mb-2">
+                                        <label class="form-label required">Dosage Form</label>
+                                        <input type="text" name="dosageForm" class="form-control" placeholder="e.g., Tablet, Syrup" required>
+                                    </div>
+                                    <div class="col-lg-6 mb-2">
+                                        <label class="form-label required">Strength</label>
+                                        <input type="text" name="strength" class="form-control" placeholder="e.g., 500mg, 10ml" required>
+                                    </div>
+                                    <div class="col-lg-12 mb-2">
+                                        <label class="form-label">Description</label>
+                                        <textarea name="description" class="form-control" rows="4" placeholder="Provide a brief description of the product"></textarea>
+                                    </div>
+                                    <div class="col-lg-12 mb-2">
+                                        <label class="form-label">Therapeutic Use</label>
+                                        <input type="text" name="therapeuticUse" class="form-control" placeholder="e.g., Pain relief, Vitamin supplement">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Images and Documents -->
+                            <div id="step_images_documents_modal" class="tab-pane" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-12 mb-2">
+                                        <label class="form-label">Product Image</label>
+                                        <input type="file" name="productImage" class="form-control" accept=".jpg, .jpeg, .png">
+                                    </div>
+                                    <div class="col-lg-12 mb-2">
+                                        <label class="form-label">Product Brochure (optional)</label>
+                                        <input type="file" name="productBrochure" class="form-control" accept=".pdf">
+                                    </div>
+                                    <div class="col-lg-12 mb-2">
+                                        <label class="form-label">Certifications (if any)</label>
+                                        <input type="file" name="certifications" class="form-control" accept=".pdf, .jpg, .png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <!--**********************************
     Content body end
 ***********************************-->
@@ -144,12 +229,54 @@
 
     // Function to handle the "Request Product" button click
     function requestProduct() {
-        alert('Redirecting to the product request form...');
-        // Redirect to the product request page
-        window.location.href = 'request_product_page_url'; // Replace with the actual URL
+        $('#requestProductModal').modal('show'); // Trigger the modal
     }
-</script>
 
+    $(document).ready(function() {
+    // Initialize SmartWizard for modal
+    $('#smartwizard_modal').smartWizard({
+        toolbarSettings: {
+            toolbarExtraButtons: [] // No extra buttons needed initially
+        }
+    });
+
+    // Function to handle the "Request Product" button click
+    $(".btn-primary").on("click", function() {
+        $('#requestProductModal').modal('show'); // Trigger the modal
+    });
+
+    // Function to handle step changes
+    $("#smartwizard_modal").on("showStep", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {
+        const isLastStep = stepNumber === 1; // Check if it's the second step (step 1 is the second one, 0-indexed)
+
+        // If it's the last step, change "Next" to "Submit"
+        if (isLastStep) {
+            $(".sw-btn-next").text("Submit");
+        } else {
+            $(".sw-btn-next").text("Next");
+        }
+    });
+
+    // Handle "Submit" button click
+    $(".sw-btn-next").on("click", function() {
+        const isLastStep = $("#smartwizard_modal").smartWizard("getStepIndex") === 1;
+        if (isLastStep) {
+            // If it's the last step, trigger the form submit
+            $("#requestProductModal form").submit();
+        }
+    });
+});
+
+
+
+</script>
+<!-- Form Steps -->
+<script src="vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	
+	<script src="js/custom.min.js"></script>
+	<script src="js/dlabnav-init.js"></script>
+	
 <!-- Custom CSS -->
 <style>
     .search-container {

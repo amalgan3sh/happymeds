@@ -1,0 +1,265 @@
+INFO - 2024-10-21 05:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:38:08 --> Investment Check - User ID: 2, Product ID: 11
+INFO - 2024-10-21 05:38:08 --> Investment Check - User ID: 2, Product ID: 11, Is Invested: No
+INFO - 2024-10-21 05:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-21 05:53:54 --> mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\happymeds\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\happymeds\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\happymeds\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\happymeds\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\happymeds\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\happymeds\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\happymeds\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\happymeds\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\happymeds\app\Controllers\TransactionController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(933): App\Controllers\TransactionController->save()
+#9 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#10 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\happymeds\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\happymeds\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\happymeds\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-10-21 05:53:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'field list'
+[Method: POST, Route: transaction/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (:user_id:, :amount:, :payment_id:, :name:, :email:, :status:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\TransactionController.php(48): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransactionController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-21 05:53:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'6000\', \'pay_PBZytgxBl6aHpP\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:53:54\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'6000\', \'pay_PBZytgxBl6aHpP\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:53:54\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (:user_id:, :amount:, :payment_id:, :name:, :email:, :status:, :created_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\TransactionController.php(48): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransactionController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-21 05:53:54 --> [Caused by] mysqli_sql_exception: Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'6000\', \'pay_PBZytgxBl6aHpP\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:53:54\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'6000\', \'pay_PBZytgxBl6aHpP\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:53:54\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'6000\', \'pay_PBZytgxBl6aHpP\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:53:54\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (:user_id:, :amount:, :payment_id:, :name:, :email:, :status:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransactionController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransactionController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-21 05:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 05:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-21 05:55:46 --> mysqli_sql_exception: Unknown column 'payment_id' in 'field list' in C:\xampp\htdocs\happymeds\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\happymeds\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\happymeds\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\happymeds\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\happymeds\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\happymeds\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\happymeds\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\happymeds\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\happymeds\app\Controllers\TransactionController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(933): App\Controllers\TransactionController->save()
+#9 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+#10 C:\xampp\htdocs\happymeds\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\happymeds\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\happymeds\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\happymeds\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-10-21 05:55:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'payment_id' in 'field list'
+[Method: POST, Route: transaction/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (:user_id:, :amount:, :payment_id:, :name:, :email:, :status:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\TransactionController.php(48): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransactionController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-21 05:55:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'payment_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'3000\', \'pay_PBa0rjuOYklXCi\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:55:46\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'3000\', \'pay_PBa0rjuOYklXCi\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:55:46\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (:user_id:, :amount:, :payment_id:, :name:, :email:, :status:, :created_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\TransactionController.php(48): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransactionController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-21 05:55:46 --> [Caused by] mysqli_sql_exception: Unknown column 'payment_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'3000\', \'pay_PBa0rjuOYklXCi\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:55:46\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'3000\', \'pay_PBa0rjuOYklXCi\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:55:46\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (2, \'3000\', \'pay_PBa0rjuOYklXCi\', \'arjunreddy\', \'demo@gmail.com\', \'success\', \'2024-10-21 05:55:46\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transactions` (`user_id`, `amount`, `payment_id`, `name`, `email`, `status`, `created_at`) VALUES (:user_id:, :amount:, :payment_id:, :name:, :email:, :status:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransactionController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransactionController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransactionController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-21 05:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 06:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 14:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 14:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 14:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 14:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 14:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-21 14:56:06 --> ErrorException: Undefined array key "Date"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_home.php on line 482.
+ 1 APPPATH\Views\partner\partner_home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Date"', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\partner_home.php', 482)
+ 2 [internal function]: CodeIgniter\View\View->{closure}([...])
+ 3 APPPATH\Views\partner\partner_home.php(481): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\partner_home.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_home', [], true)
+ 7 APPPATH\Controllers\PartnerController.php(377): view('partner/partner_home', [...])
+ 8 APPPATH\Controllers\PartnerController.php(354): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 9 APPPATH\Controllers\PartnerController.php(369): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+10 APPPATH\Controllers\PartnerController.php(58): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-21 14:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-21 14:58:03 --> ErrorException: Undefined array key "TransactionID"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_home.php on line 506.
+ 1 APPPATH\Views\partner\partner_home.php(506): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "TransactionID"', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\partner_home.php', 506)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\partner_home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_home', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(377): view('partner/partner_home', [...])
+ 6 APPPATH\Controllers\PartnerController.php(354): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(369): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(58): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-21 15:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-21 15:01:24 --> ErrorException: Undefined array key "From"
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_home.php on line 508.
+ 1 APPPATH\Views\partner\partner_home.php(508): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "From"', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\partner_home.php', 508)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\partner_home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_home', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(377): view('partner/partner_home', [...])
+ 6 APPPATH\Controllers\PartnerController.php(354): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(369): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(58): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-21 15:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 15:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 15:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 15:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 15:03:48 --> Investment Check - User ID: 2, Product ID: 12
+INFO - 2024-10-21 15:03:48 --> Investment Check - User ID: 2, Product ID: 12, Is Invested: No
+INFO - 2024-10-21 15:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 15:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 15:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 15:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 15:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 15:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 16:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 17:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 17:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 17:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 17:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 17:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 17:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 17:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 17:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-21 17:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

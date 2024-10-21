@@ -89,6 +89,7 @@ $routes->get('/shop_ecommerce', 'StoreController::ShopEcommerce');
 $routes->get('/about', 'StoreController::aboutEcommerce');
 
 $routes->post('transaction/save', 'TransactionController::save');
+$routes->post('transactions/download_receipt', 'TransactionController::save');
 
 
 
