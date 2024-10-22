@@ -19,18 +19,13 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/bootstrap-select.min.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/prism.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/style.css">
+    
 </head>
 
 <body>
     <main class="page-wrapper">
         <!-- Start Header Top Area  -->
-        <div class="header-top-news bg-image1">
-            <div class="icon-close">
-                <button class="close-button bgsection-activation">
-                    <i class="fa-sharp fa-regular fa-x"></i>
-                </button>
-            </div>
-        </div>
+       
         <!-- End Header Top Area  -->
 
         <div id="my_switcher" class="my_switcher">
@@ -55,7 +50,7 @@
                     <div class="col-lg-2 col-md-6 col-6">
                         <div class="logo">
                             <a href="index.html">
-                                <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/logo.png" alt="Healthcare Logo">
+                                <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo.png" alt="Healthcare Logo">
                                 <img class="logo-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/light/logo/logo-dark.png" alt="Healthcare Logo">
                             </a>
                         </div>
