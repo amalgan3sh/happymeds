@@ -1,109 +1,247 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en">
 
 <head>
-    <!-- Start cookieyes banner --> 
-    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/6c5771fd376fd4a6e4b3f44f/script.js"></script> 
-    <!-- End cookieyes banner -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-style-mode" content="1"> <!-- 0 == light, 1 == dark -->
 
-    <title>Aranea</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/');?>assets/img/favicons/happymeds_logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <link rel="manifest" href="<?php echo base_url('assets/');?>assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="<?php echo base_url('assets/');?>assets/img/favicons/mstile-150x150.png">
-    <meta name="theme-color" content="#ffffff">
-
-
-    <link href="<?php echo base_url('assets/');?>assets/css/theme.css" rel="stylesheet" />
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            <?php if (session()->getFlashdata('success')): ?>
-                alert("<?= session()->getFlashdata('success'); ?>");
-            <?php endif; ?>
-
-            <?php if (session()->getFlashdata('error')): ?>
-                alert("<?= session()->getFlashdata('error'); ?>");
-            <?php endif; ?>
-        });
-    </script>
-    
+    <title>Healthcare Brand Partner Program</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/landing/') ?>assets/images/logo/favicon.png">
+    <!-- CSS ============================================ -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/fontawesome-all.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/animation.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/slick-theme.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/bootstrap-select.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/prism.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/style.css">
 </head>
 
 <body>
-
-    <main class="main" id="top">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="<?php echo base_url('assets/');?>assets/img/illustrations/ARANEA.png">
-                    <img src="<?php echo base_url('assets/');?>assets/img/illustrations/ARANEA.png" alt="Logo" style="height: 40px; margin-right: 10px;">
-                    <div class="d-flex align-items-center">
-                    <div style="color: #002ba4;">ARANEA</div>
-                    <div class="text-1000"></div>
-                    </div>
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+    <main class="page-wrapper">
+        <!-- Start Header Top Area  -->
+        <div class="header-top-news bg-image1">
+            <div class="icon-close">
+                <button class="close-button bgsection-activation">
+                    <i class="fa-sharp fa-regular fa-x"></i>
                 </button>
-                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium active" aria-current="page" href="<?php echo base_url('') ?>">Home</a></li>
-                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#features'); ?>">Features</a></li>
-                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#pricing'); ?>">Collaborations</a></li>
-                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#faq'); ?>">FAQ</a></li>
-                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="<?php echo base_url('#contact'); ?>">Contact us</a></li>
+            </div>
+        </div>
+        <!-- End Header Top Area  -->
 
-                    </ul>
-                    <form class="ps-lg-5" id="createAccountForm" action="<?php echo base_url('user_types') ?>">
-                        <button class="btn btn-lg btn-primary rounded-pill order-0" type="submit" id="createAccountButton">Create Account / sign in</button>
-                    </form>
+        <div id="my_switcher" class="my_switcher">
+            <ul>
+                <li>
+                    <a href="javascript: void(0);" data-theme="light" class="setColor light">
+                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/switch/sun-01.svg" alt="Sun images"><span title="Light Mode"> Light</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
+                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/switch/vector.svg" alt="Vector Images"><span title="Dark Mode"> Dark</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Start Header Area  -->
+        <header class="rainbow-header header-default header-transparent header-sticky">
+            <div class="container position-relative">
+                <div class="row align-items-center row--0">
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/logo.png" alt="Healthcare Logo">
+                                <img class="logo-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/light/logo/logo-dark.png" alt="Healthcare Logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 d-none d-lg-block">
+                        <nav class="mainmenu-nav d-none d-lg-flex justify-content-center">
+                            <ul class="mainmenu">
+                                <li><a href="<?php echo base_url('/')?>">Home</a></li>
+                                <li class="has-dropdown has-menu-child-item position-relative"><a href="#">Healthcare Program <i class="fa-regular fa-chevron-down"></i></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="vision.html">
+                                                <span>Vision</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mission.html">
+                                                <span>Mission</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="key-features.html">
+                                                <span>Key Features</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="collaborations.html">
+                                                <span>Collaboration Opportunities</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="partnerships.html">
+                                                <span>Partnership Expansion</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="sustainability.html">
+                                                <span>Sustainability Projects</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="with-megamenu has-menu-child-item"><a href="#">Pages <i class="fa-regular fa-chevron-down"></i></a>
+                                    <div class="rainbow-megamenu">
+                                        <div class="wrapper">
+                                            <div class="row row--0">
+                                                <div class="col-lg-3 single-mega-item">
+                                                    <ul class="mega-menu-item">
+                                                        <li>
+                                                            <h3 class="rbt-short-title">About Us</h3>
+                                                        </li>
+                                                        <li>
+                                                            <a href="about-us.html">
+                                                                <span>About Us</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">
+                                                                <span>Blog</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pricing.html">
+                                                                <span>Pricing</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="contact.html">
+                                                                <span>Contact</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="signin.html">
+                                                                <span>Sign In</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="signup.html">
+                                                                <span>Sign Up</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="terms-policy.html">
+                                                                <span>Terms & Policy</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="privacy-policy.html">
+                                                                <span>Privacy Policy</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 single-mega-item">
+                                                    <ul class="mega-menu-item">
+                                                        <li>
+                                                            <h3 class="rbt-short-title">Procurement System</h3>
+                                                        </li>
+                                                        <li>
+                                                            <a href="procurement-system.html">
+                                                                <span>Bulk Orders</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="inventory-management.html">
+                                                                <span>Inventory Management</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="analytics.html">
+                                                                <span>Supply Chain Analytics</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="hospital-management.html">
+                                                                <span>Hospital Management</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 single-mega-item">
+                                                    <ul class="mega-menu-item br--0">
+                                                        <li>
+                                                            <h3 class="rbt-short-title">Upcoming Features</h3>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="disabled">
+                                                                <span>Blockchain Integration</span>
+                                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="disabled">
+                                                                <span>AI Tools</span>
+                                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="disabled">
+                                                                <span>Advanced Analytics</span>
+                                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-lg-3 single-mega-item">
+                                                    <div class="header-menu-img">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/menu-img/menu-img-2.png" alt="Menu Split Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="roadmap.html">Roadmap</a></li>
+                                <li><a href="how-to-use.html">How to use</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-6 position-static">
+                        <div class="header-right">
+                            <!-- Start Header Btn  -->
+                            <div class="header-btn">
+                                <a class="rainbow-gradient-btn" target="_blank" href="get_started"><span>Get Started</span></a>
+                            </div>
+                            <!-- End Header Btn  -->
+
+                            <!-- Start Mobile-Menu-Bar -->
+                            <div class="mobile-menu-bar ml--5 d-flex justify-content-end d-lg-none">
+                                <div class="hamberger">
+                                    <button class="hamberger-button">
+                                        <i class="fa-sharp fa-regular fa-bars"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Start Mobile-Menu-Bar -->
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </header>
     </main>
-
-    <script>
-        // Assuming base_url is defined in your JavaScript
-        const base_url = "<?php echo base_url(); ?>";
-
-        document.querySelectorAll('a.nav-link').forEach(function(anchor) {
-            anchor.addEventListener('click', function(event) {
-                const href = anchor.getAttribute('href');
-                
-                // Check if href is a fragment identifier
-                if (href.startsWith('#')) {
-                    event.preventDefault(); // Prevent the default link click behavior
-                    const targetElement = document.querySelector(href);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({ behavior: 'smooth' });
-                    }
-                } else if (href.startsWith('http') || href.startsWith('https') || href.startsWith(base_url)) {
-                    // Handle full URLs and base URLs by navigating to them directly
-                    window.location.href = href;
-                } else {
-                    // Handle relative paths as fragment identifiers
-                    event.preventDefault();
-                    const targetElement = document.querySelector(href);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({ behavior: 'smooth' });
-                    } else {
-                        // Fallback to navigating to the URL if element is not found
-                        window.location.href = href;
-                    }
-                }
-            });
-        });
-    </script>
 </body>
+
 </html>

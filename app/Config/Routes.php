@@ -90,6 +90,11 @@ $routes->get('/about', 'StoreController::aboutEcommerce');
 
 $routes->post('transaction/save', 'TransactionController::save');
 
+$routes->get('get_started', 'PublicController::get_started');
+$routes->get('partner_signin', 'PublicController::partner_signin');
+$routes->get('partner_register', 'PublicController::partner_register');
+
+
 
 
 //auth

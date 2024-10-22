@@ -1,635 +1,2009 @@
-<section class="py-0" id="home">
-    <div class="container position-relative">
-        <div class="row align-items-center py-8">
-            <div class="col-md-6 col-lg-6 text-center text-md-start">
-                <span class="badge bg-light rounded-pill text-dark align-items-center d-flex flex-row-reverse justify-content-end mx-auto mx-md-0 ps-0 w-75 w-sm-50 w-md-75 w-xl-50 mb-3">#1 in Global Healthcare Solutions<img class="img-fluid float-start me-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/arrow-right.png" alt="Arrow"/></span>
-                <h1 class="mb-4 display-3 fw-bold lh-sm letter-hover">Empowering Global Healthcare Import and Export Solutions</h1>
-                <p class="mt-4 mb-1 fs-1 letter-hover">Welcome to ARANEA - Your trusted partner in revolutionizing healthcare worldwide. Our amazing platform simplifies your business operations ensuring that quality. We provide comprehensive solutions to help transform the healthcare industry.</p>
-                <a class="btn btn-lg btn-primary rounded-pill hover-top mt-4" href="#" role="button">Explore Solutions</a>
-                <a class="btn btn-link ps-md-4 mt-3" href="#" role="button"> Watch Demo</a>
-            </div>
 
-            <!-- Mobile Screen Image with hover effect -->
-            <div class="col-md-6 col-lg-6 text-center order-md-1 mt-4 mt-md-0">
-                <img class="img-fluid mobile-screen" src="<?php echo base_url('assets/');?>download.png" alt="Mobile Screen">
-            </div>
-        </div>
-
-        <!-- Horizontal row of icons at the bottom -->
-        <div class="row icon-row mt-5 justify-content-center">
-            <div class="col-auto">
-                <img src="https://www.iconpacks.net/icons/2/free-healthcare-icon-3610-thumb.png" alt="Healthcare Icon" class="horizontal-icon">
-            </div>
-            <div class="col-auto">
-                <img src="https://cdn-icons-png.flaticon.com/512/2449/2449899.png" alt="Pharmaceutical Icon" class="horizontal-icon">
-            </div>
-            <div class="col-auto">
-                <img src="https://cdn-icons-png.flaticon.com/512/2858/2858026.png" alt="Nutraceutical Icon" class="horizontal-icon">
-            </div>
-            <div class="col-auto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB1dPQOXQvHCir7Jy5jip1YHeAI6Lv1lEE4eue6k-hqD2slAcGame2o3hDvxXHLFnLOWI&usqp=CAU" alt="Medical Icon" class="horizontal-icon">
-            </div>
-            <div class="col-auto">
-                <img src="https://cdn-icons-png.flaticon.com/256/10299/10299433.png" alt="Prescription Icon" class="horizontal-icon">
-            </div>
-            <div class="col-auto">
-                <img src="https://cdn-icons-png.flaticon.com/512/2858/2858005.png" alt="Supplement Icon" class="horizontal-icon">
-            </div>
-            <div class="col-auto">
-                <img src="https://cdn-icons-png.flaticon.com/512/3099/3099275.png" alt="Doctor Icon" class="horizontal-icon">
-            </div>
-            <div class="col-auto">
-                <img src="https://getdrawings.com/free-icon/pharmaceutical-icon-74.png" alt="Heart Rate Icon" class="horizontal-icon">
-            </div>
-            <div class="col-auto">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvYTZoYmcHEN4G5MTrg5kQsEkMO9lKWq_kJ9SqXZk7AggHRSMk_9Y8Zg3kVuVJWBMiBlU&usqp=CAU" alt="Syringe Icon" class="horizontal-icon">
-            </div>
-            <div class="col-auto">
-                <img src="https://cdn-icons-png.flaticon.com/512/3501/3501241.png" alt="Stethoscope Icon" class="horizontal-icon">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<style>
-
-/* Typography */
-h1 {
-    font-size: 2.5rem;
-    color: #333;
-    font-weight: 700;
-}
-
-p {
-    color: #6c757d;
-    font-size: 1.2rem;
-}
-
-/* Mobile Screen Hover */
-.mobile-screen {
-    transition: transform 0.3s ease-in-out;
-}
-
-.mobile-screen:hover {
-    transform: scale(1.1);
-}
-
-/* Icons horizontally aligned */
-.icon-row {
-    margin-top: 10px;
-}
-
-.horizontal-icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 15px;
-    transition: transform 0.3s ease;
-}
-
-.horizontal-icon:hover {
-    transform: scale(1.3);
-}
-
-/* Responsive adjustments */
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .horizontal-icon {
-        width: 40px;
-        height: 40px;
-        margin: 0 10px;
-    }
-}
-</style>
-
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-7">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 mx-auto align-items-center text-center">
-                <p class="mb-4">Certifications of Our Collaborated Manufacturing Facility</p>
-            </div>
-        </div>
-        <div class="row align-items-center justify-content-center">
-            <div class="logo-slider-container">
-                <button class="slider-arrow left-arrow">&larr;</button>
-                <div class="logo-slider">
-                    <div class="logo-container">
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/fssai.png" alt="FSSAI" /></div>
-                        <!-- <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/gmp.png" alt="GMP" /></div> -->
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/iso.png" alt="ISO" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/fieo.png" alt="FEIO" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/haccp.png" alt="HACCP" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/gmp-blue.png" alt="GMP CERTIFIED" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/nsf.png" alt="NSF" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/kosher.png" alt="ISO" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/halal.png" alt="FEIO" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/who-gmp.png" alt="HACCP" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/nsic.png" alt="HACCP" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/fda.png" alt="HACCP" /></div>
-                        <div class="logo-item"><img height="150px" width="150px" src="<?php echo base_url('assets/');?>assets/img/gallery/pharmexil.png" alt="HACCP" /></div>
-
-
+        <!-- End Header Area  -->
+        <div class="popup-mobile-menu">
+            <div class="inner-popup">
+                <div class="header-top">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/logo.png" alt="ChatBot Logo">
+                        </a>
+                    </div>
+                    <div class="close-menu">
+                        <button class="close-button">
+                            <i class="fa-sharp fa-regular fa-x"></i>
+                        </button>
                     </div>
                 </div>
-                <button class="slider-arrow right-arrow">&rarr;</button>
-            </div>
-        </div>
-    </div>
-    <!-- end of .container-->
-</section>
 
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
+                <div class="content">
+                    <ul class="mainmenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="has-dropdown has-menu-child-item position-relative"><a href="#">Tools <i class="fa-regular fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="text-generator.html">
+                                        <span>Text Generator</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="image-generator.html">
+                                        <span>Image Generator</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="code-generator.html">
+                                        <span>Code Generator</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="image-editor.html">
+                                        <span>Image Editor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="vedio-generator.html">
+                                        <span>Vedio Generator</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="email-generator.html">
+                                        <span>Email Generator</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" class="disabled" aria-disabled="true">
+                                        <span>Audio Generator</span>
+                                        <div class="rainbow-badge-card badge-sm ml--5">COMING</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" class="disabled" aria-disabled="true">
+                                        <span>Edu. feedback</span>
+                                        <div class="rainbow-badge-card badge-sm ml--5">COMING</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a tabindex="-1" class="disabled" aria-disabled="true">
+                                        <span>Website Generator</span>
+                                        <div class="rainbow-badge-card badge-sm ml--5">COMING</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="with-megamenu has-menu-child-item"><a href="#">Pages <i class="fa-regular fa-chevron-down"></i></a>
+                            <div class="rainbow-megamenu">
+                                <div class="wrapper">
+                                    <div class="row row--0">
+                                        <div class="col-lg-3 single-mega-item">
+                                            <ul class="mega-menu-item">
+                                                <li>
+                                                    <h3 class="rbt-short-title">Inner Pages</h3>
+                                                </li>
+                                                <li>
+                                                    <a href="styleguide.html">
+                                                        <span>Style Guide</span>
+                                                        <div class="rainbow-badge-card badge-sm ml--5">Hot</div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog.html">
+                                                        <span>Blog</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html">
+                                                        <span>Blog Details</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pricing.html">
+                                                        <span>Pricing</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="contact.html">
+                                                        <span>Contact</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="signin.html">
+                                                        <span>Sign In</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="signup.html">
+                                                        <span>Sign Up</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="Team.html">
+                                                        <span>Team</span>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="terms-policy.html">
+                                                        <span>Terms & Policy</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="privacy-policy.html">
+                                                        <span>Privacy Policy</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-3 single-mega-item">
+                                            <ul class="mega-menu-item">
+                                                <li>
+                                                    <h3 class="rbt-short-title">DASHBOARD PAGES</h3>
+                                                </li>
+                                                <li>
+                                                    <a href="profile-details.html">
+                                                        <span>Profile</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="notification.html">
+                                                        <span>Notification</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="chat-export.html">
+                                                        <span>Chat Export</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="appearance.html">
+                                                        <span>Apperance</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="plans-billing.html">
+                                                        <span>Plans and Billing</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="sessions.html">
+                                                        <span>Sessions</span>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="application.html">
+                                                        <span>Application</span>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="release-notes.html">
+                                                        <span>Release notes</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="help.html">
+                                                        <span>Help & FAQs</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-3 single-mega-item">
+                                            <ul class="mega-menu-item br--0">
+                                                <li>
+                                                    <h3 class="rbt-short-title">Upcoming Advance Elements</h3>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="disabled">
+                                                        <span>Product Description</span>
+                                                        <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="disabled">
+                                                        <span>Youtube Vedio to Post</span>
+                                                        <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="disabled">
+                                                        <span>Grammar Check</span>
+                                                        <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="disabled">
+                                                        <span>Generate From RSS</span>
+                                                        <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="disabled">
+                                                        <span>Vedio Script</span>
+                                                        <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="disabled">
+                                                        <span>Audio to Text</span>
+                                                        <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="disabled">
+                                                        <span>Subscription</span>
+                                                        <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="disabled">
+                                                        <span>Maintanence</span>
+                                                        <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="disabled">
+                                                        <span>Coming Soon</span>
+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-3 single-mega-item">
+                                            <div class="header-menu-img">
+                                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/menu-img/menu-img-2.png" alt="Menu Split Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="utilize.html">How to use</a></li>
+                    </ul>
 
 
-      <section class="py-5" id="features">
-        <div class="container-lg">
-          <div class="row align-items-center">
-            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid  shadow-effect" src="<?php echo base_url('assets/');?>assets/img/illustrations/dashboard_2.jpg" width="550" alt="" /></div>
-            <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
-              <h6 class="fw-bold fs-4 display-3 lh-sm">Explore Aranea's <br />Unique Features</h6>
-              <p class="my-4">Experience seamless investing and ecommerce solutions with <br class="d-none d-xl-block" />Haappymed's advanced features tailored to empower your financial growth and business success.</p>
-              <div class="d-flex align-items-center mb-5">
-                <div><img class="img-fluid" src="<?php echo base_url('assets/');?>assets/img/illustrations/fast-performance.png" width="90" alt="" /></div>
-                <div class="px-4">
-                  <h5 class="fw-bold text-danger">Lightning-fast Transactions</h5>
-                  <p>Execute transactions swiftly and securely <br class="d-none d-xl-block"> for seamless investing  <br class="d-none d-xl-block"> and ecommerce experiences.</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center mb-5">
-                <div><img class="img-fluid" src="<?php echo base_url('assets/');?>assets/img/illustrations/prototype.png" width="90" alt="" /></div>
-                <div class="px-4">
-                  <h5 class="fw-bold text-primary">Effortless Investment Management</h5>
-                  <p>Manage your investments effortlessly with <br class="d-none d-xl-block">intuitive tools and analytics for  <br class="d-none d-xl-block"> informed decision-making. </p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center mb-5">
-                <div><img class="img-fluid" src="<?php echo base_url('assets/');?>assets/img/illustrations/vector.png" width="90" alt="" /></div>
-                <div class="px-4">
-                  <h5 class="fw-bold text-success">Robust Ecommerce Solutions</h5>
-                  <p>Optimize your ecommerce operations with<br class="d-none d-xl-block">  robust solutions for inventory management, sales tracking,<br class="d-none d-xl-block">  and customer engagement.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <style>
-        .shadow-effect {
-          box-shadow: 0 0 100px 100px #f7f7f7;
-      }
-      </style>
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-6">
-
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="<?php echo base_url('assets/');?>assets/img/illustrations/laptop.png" width="550" alt="" /></div>
-            <div class="col-md-6 text-center text-md-start offset-md-1">
-              <h6 class="fw-bold fs-4 display-3 lh-sm">Transforming Healthcare<br />with Innovative Solutions</h6>
-              <p class="my-4 pe-xl-5"> Experience the future of healthcare with Aranea's cutting-edge platform, designed and built using the latest code integration. Revolutionize the way you manage investments and access healthcare services with our seamless and intuitive solutions.</p><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
 
 
 
 
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-6">
-
-        <div class="container">
-          <div class="row justify-content-center mb-6">
-            <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
-              <h6 class="fw-bold fs-4 display-3 lh-sm">Why Choose <br />Aranea</h6>
-              <p class="mb-0">Experience the power of Aranea, designed to elevate your healthcare investments and ecommerce ventures. Here's why Aranea stands out:</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/app.png" width="90" alt="" />
-                <h5 class="fw-bold">Intuitive Interface</h5>
-                <p class="mb-md-0">Navigate seamlessly through our platform with an intuitive user interface, ensuring a hassle-free experience.</p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/time-award.png" width="90" alt="" />
-                <h5 class="fw-bold">Reliable Performance</h5>
-                <p class="mb-md-0">Count on Aranea for reliable performance, ensuring consistent and dependable service to meet your healthcare and ecommerce needs.</p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/cloud.png" width="90" alt="" />
-                <h5 class="fw-bold">Secure Cloud Storage</h5>
-                <p class="mb-md-0">Rest assured with our secure cloud storage solutions, safeguarding your data with the highest levels of encryption.</p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/customization.png" width="90" alt="" />
-                <h5 class="fw-bold">Tailored Solutions</h5>
-                <p class="mb-md-0">Customize your experience with Aranea's tailored solutions, ensuring that your healthcare investments and ecommerce ventures meet your unique needs and requirements.</p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/ux.png" width="90" alt="" />
-                <h5 class="fw-bold">User Experience Design</h5>
-                <p class="mb-md-0">Benefit from Aranea's user-centric design approach, ensuring a seamless and intuitive user experience across all aspects of our platform.</p>
-              </div>
-            </div>
-            <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="<?php echo base_url('assets/');?>assets/img/illustrations/support.png" width="90" alt="" />
-                <h5 class="fw-bold">Customer Support</h5>
-                <p class="mb-md-0">Receive dedicated support from Aranea's team of experts, ensuring that you have the assistance you need every step of the way.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
 
 
+                    <div class="rbt-sm-separator"></div>
+                    <div class="rbt-default-sidebar-wrapper">
+                        <nav class="mainmenu-nav">
+                            <ul class="dashboard-mainmenu rbt-default-sidebar-list">
+                                <li><a href="text-generator.html"><i class="fa-sharp fa-regular fa-monitor"></i><span>Welcome</span></a></li>
+                                <li><a href="plans-billing.html"><i class="fa-sharp fa-regular fa-briefcase"></i><span>Manage Subsription</span></a></li>
+                            </ul>
+                            <div class="rbt-sm-separator"></div>
+                            <ul class="dashboard-mainmenu rbt-default-sidebar-list">
+                                <li><a href="text-generator.html"><img src="assets/images/generator-icon/text.png" alt="AI Generator"><span>Text Generator</span></a></li>
+                                <li><a href="image-generator.html"><img src="assets/images/generator-icon/photo.png" alt="AI Generator"><span>Image Generator</span>
+                                        <div class="rainbow-badge-card badge-sm ml--10">Hot</div>
+                                    </a></li>
+                                <li><a href="code-generator.html"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/code-editor.png" alt="AI Generator"><span>Code Generator</span></a></li>
+                                <li><a href="image-editor.html"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/photo.png" alt="AI Generator"><span>Image Editor</span></a></li>
+                                <li><a href="vedio-generator.html"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/video-camera.png" alt="AI Generator"><span>Vedio Generator</span></a></li>
+                                <li><a href="email-generator.html"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/email.png" alt="AI Generator"><span>Email Generator</span></a></li>
+                                <li><a tabindex="-1" class="disabled" aria-disabled="true" role="button"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/website-design.png" alt="AI Generator"><span>Website Generator</span></a></li>
+                            </ul>
+                        </nav>
 
+                        <div class="rbt-sm-separator"></div>
 
-     
-
-
-
-
-        <section class="py-5 py-md-8" id="pricing">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-6 text-center mb-4 mb-md-5">
-                <h2 class="fw-bold fs-2 fs-md-3 fs-lg-4 mb-3">Choose Your Account Type</h2>
-                <p class="mb-0">Select the account type that suits your needs and get started.</p>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            <div class="col">
-                <div class="card h-100 shadow border-0">
-                    <div class="card-header border-bottom-0 pt-4 pb-3">
-                        <h5 class="fw-bold text-center">B2B Partner</h5>
-                        <p class="text-center mb-0">Buy products from our store (ecommerce)</p>
+                        <nav class="mainmenu-nav">
+                            <ul class="dashboard-mainmenu rbt-default-sidebar-list">
+                                <li class="has-submenu"><a class="collapse-btn collapsed" data-bs-toggle="collapse" href="#collapseExampleMenu" role="button" aria-expanded="false" aria-controls="collapseExampleMenu"><i class="fa-sharp fa-solid fa-circle-plus"></i><span>Setting</span></a>
+                                    <div class="collapse" id="collapseExampleMenu">
+                                        <ul class="submenu rbt-default-sidebar-list">
+                                            <li>
+                                                <a href="profile-details.html">
+                                                    <i class="fa-sharp fa-regular fa-user"></i>
+                                                    <span>Profile Details</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notification.html">
+                                                    <i class="fa-sharp fa-regular fa-shopping-bag"></i>
+                                                    <span>Notification</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat-export.html">
+                                                    <i class="fa-sharp fa-regular fa-users"></i>
+                                                    <span>Chat Export</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="appearance.html">
+                                                    <i class="fa-sharp fa-regular fa-home"></i>
+                                                    <span>Apperance</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="plans-billing.html">
+                                                    <i class="fa-sharp fa-regular fa-briefcase"></i>
+                                                    <span>Plans and Billing</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="sessions.html">
+                                                    <i class="fa-sharp fa-regular fa-users"></i>
+                                                    <span>Sessions</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="application.html">
+                                                    <i class="fa-sharp fa-regular fa-list"></i>
+                                                    <span>Application</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa-sharp fa-regular fa-award"></i><span>Help & FAQ</span></a></li>
+                            </ul>
+                            <div class="rbt-sm-separator"></div>
+                            <ul class="dashboard-mainmenu rbt-default-sidebar-list">
+                                <li><a href="release-notes.html"><i class="fa-sharp fa-regular fa-bell"></i><span>Release notes</span></a></li>
+                                <li><a href="terms-policy.html"><i class="fa-sharp fa-regular fa-briefcase"></i><span>Terms & Policy</span></a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="card-body d-flex flex-column">
-                        <ul class="list-unstyled mb-4 flex-grow-1">
-                            <li class="py-2 text-secondary">Access to a wide range of products</li>
-                            <li class="py-2 text-secondary">Exclusive B2B pricing</li>
-                            <li class="py-2 text-secondary">Easy bulk ordering</li>
-                            <li class="py-2 text-secondary">Dedicated customer support</li>
-                            <li class="py-2 text-secondary"><a class="" style="" href="<?php echo base_url('b2b_partner_details') ?>">More Details...</a></li>
-                        </ul>
-                        <div class="mt-auto">
-                            <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="https://user.lakshmipharmaceuticals.com/">Register Now</a>
-                            <a class="btn btn-outline-primary w-100" href="https://user.lakshmipharmaceuticals.com/">Log in</a>
+                </div>
+
+                <!-- Start Header Btn  -->
+                <div class="header-btn d-block d-md-none">
+                    <a class="btn-default @@btnClass" target="_blank" href="text-generator.html">Get Started Free</a>
+                </div>
+                <!-- End Header Btn  -->
+            </div>
+        </div>
+
+        <!-- Imroz Preloader -->
+        <div class="preloader">
+            <div class='loader'>
+                <div class='circle'></div>
+                <div class='circle'></div>
+                <div class='circle'></div>
+                <div class='circle'></div>
+                <div class='circle'></div>
+            </div>
+        </div>
+
+        <!-- Start Slider Area  -->
+        <div class="slider-area slider-style-1 variation-default slider-bg-image bg-banner1 slider-bg-shape" data-black-overlay="1">
+            <!-- <div class="bg-blend-top bg_dot-mask"></div> -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="inner text-center mt--140">
+                            <h1 class="title display-one">Examine the Potential of
+                                <br> <span class="header-caption">
+                                    <span class="cd-headline rotate-1">
+                                        <span class="cd-words-wrapper" style="width: 221px;">
+                                            <b class="theme-gradient is-visible">AI Chating</b>
+                                            <b class="theme-gradient is-hidden">AI Writing</b>
+                                            <b class="theme-gradient is-hidden">AI Chating</b>
+                                        </span>
+                                </span>
+                                </span> AI Hack
+                            </h1>
+                            <p class="description">Unleash Brainwave's AI potential. Use the open AI <br>
+                                conversation
+                                app Rainbow theme</p>
+                            <div class="form-group">
+                                <textarea name="text" id="slider-text-area" cols="30" rows="2" placeholder="Enter a prompt, for example: a fundraising deck to a mobile finance app called Intuitive"></textarea>
+                                <a class="btn-default @@btnClass" href="text-generator.html">Start with AI</a>
+                            </div>
+                            <div class="inner-shape">
+                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-one.png" alt="Icon Shape" class="iconshape iconshape-one">
+                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-two.png" alt="Icon Shape" class="iconshape iconshape-two">
+                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-three.png" alt="Icon Shape" class="iconshape iconshape-three">
+                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-four.png" alt="Icon Shape" class="iconshape iconshape-four">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-11 col-xl-11 justify-content-center">
+                        <div class="slider-frame">
+                            <img class="slider-image-effect shape-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/bg/slider-main-image.png" alt="Banner Images">
+                            <img class="slider-image-effect shape-light" src="<?php echo base_url('assets/landing/') ?>assets/images/light/bg/slider-main-image.png" alt="Banner Images" style="width: 1055px; height: 897px;">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 shadow border-0">
-                    <div class="card-header border-bottom-0 pt-4 pb-3">
-                        <h5 class="fw-bold text-center">Supplier/ Manufacturer</h5>
-                        <p class="text-center mb-0">Sell your products through our platform</p>
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <ul class="list-unstyled mb-4 flex-grow-1">
-                            <li class="py-2 text-secondary">Access to a large network of buyers</li>
-                            <li class="py-2 text-secondary">Competitive pricing strategies</li>
-                            <li class="py-2 text-secondary">Marketing and sales support</li>
-                            <li class="py-2 text-secondary">Reliable logistics and distribution</li>
-                            <li class="py-2 text-secondary"><a class="" style="" href="<?php echo base_url('supplier_details') ?>">More Details...</a></li>
-                        </ul>
-                        <div class="mt-auto">
-                            <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="https://user.lakshmipharmaceuticals.com/">Register Now</a>
-                            <a class="btn btn-outline-primary w-100" href="https://user.lakshmipharmaceuticals.com/">Log in</a>
+            <div class="bg-shape">
+                <img class="bg-shape-one" src="<?php echo base_url('assets/landing/') ?>assets/images/bg/bg-shape-four.png" alt="Bg Shape">
+                <img class="bg-shape-two" src="<?php echo base_url('assets/landing/') ?>assets/images/bg/bg-shape-five.png" alt="Bg Shape">
+            </div>
+        </div>
+        <!-- End Slider Area  -->
+
+        <!-- Start Brand Area -->
+        <div class="rainbow-brand-area rainbow-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title rating-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                            <p class="b1 mb--0 small-title">truest 800,000+ HIGHLY PRODUCTIVE Company</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow border-0">
-                    <div class="card-header border-bottom-0 pt-4 pb-3">
-                        <h5 class="fw-bold text-center">Agent/ Agency</h5>
-                        <p class="text-center mb-0">Represent our products in your region</p>
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <ul class="list-unstyled mb-4 flex-grow-1">
-                            <li class="py-2 text-secondary">Earn commissions on sales</li>
-                            <li class="py-2 text-secondary">Access to exclusive product lines</li>
-                            <li class="py-2 text-secondary">Sales and marketing support</li>
-                            <li class="py-2 text-secondary">Training and development opportunities</li>
-                            <li class="py-2 text-secondary"><a class="" style="" href="<?php echo base_url('agent_details') ?>">More Details...</a></li>
+                <div class="row">
+                    <div class="col-lg-12 mt--10">
+                        <ul class="brand-list brand-style-2 slider-brand slider-brand-activation">
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/strapi.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/mapbox.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/stenciljs.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/spotify.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/woocommerce.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/slack.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/strapi.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/mapbox.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/stenciljs.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/spotify.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/woocommerce.png" alt="Brand Image"></a></li>
+                            <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/slack.png" alt="Brand Image"></a></li>
                         </ul>
-                        <div class="mt-auto">
-                            <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="https://user.lakshmipharmaceuticals.com/">Register Now</a>
-                            <a class="btn btn-outline-primary w-100" href="https://user.lakshmipharmaceuticals.com/">Log in</a>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 shadow border-0">
-                    <div class="card-header border-bottom-0 pt-4 pb-3">
-                        <h5 class="fw-bold text-center">Brand Partner</h5>
-                        <p class="text-center mb-0">Invest in products and earn benefits from sales</p>
+        </div>
+
+        <!-- Start Tab__Style--one Area  -->
+        <div class="rainbow-service-area rainbow-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center pb--60" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                            <h4 class="subtitle">
+                                <span class="theme-gradient">RAINBOW UNLOCKS THE POTENTIAL ai</span>
+                            </h4>
+                            <h2 class="title mb--0">Generative AI made for <br> creators.</h2>
+                        </div>
                     </div>
-                    <div class="card-body d-flex flex-column">
-                        <ul class="list-unstyled mb-4 flex-grow-1">
-                            <li class="py-2 text-secondary">Invest in nutraceutical herbal products</li>
-                            <li class="py-2 text-secondary">Earn benefits on B2B orders</li>
-                            <li class="py-2 text-secondary">5-year subscription plan</li>
-                            <li class="py-2 text-secondary">Turnover benefits</li>
-                            <li><a class="" style="" href="<?php echo base_url('brand_partner_details') ?>">More Details...</a></li>
-                        </ul>
-                        <div class="mt-auto">
-                            <a class="btn btn-primary w-100 mb-2" style="background-color: #FCAE61; border-color: #FFFFFF;" href="<?php echo base_url('brand_partner_registration') ?>">Register Now</a>
-                            <a class="btn btn-outline-primary w-100" href="<?php echo base_url('customer_login'); ?>">Log in</a>
+                </div>
+
+                <div class="row row--30 align-items-center">
+                    <div class="col-lg-12">
+                        <div class="rainbow-default-tab style-three generator-tab-defalt">
+                            <ul class="nav nav-tabs tab-button" role="tablist">
+                                <li class="nav-item tabs__tab " role="presentation">
+                                    <button class="nav-link rainbow-gradient-btn without-shape-circle" id="video-generator-tab" data-bs-toggle="tab" data-bs-target="#video-generate" type="button" role="tab" aria-controls="video-generate" aria-selected="false"><span class="generator-icon"><img
+                                                src="<?php echo base_url('assets/landing/') ?>assets/images/icons/video-g.png" alt="Vedio Generator Icon">Vedio
+                                            Generator</span><span class="border-bottom-style"></span></button>
+                                </li>
+                                <li class="nav-item tabs__tab" role="presentation">
+                                    <button class="nav-link rainbow-gradient-btn without-shape-circle active" id="audio-generator-tab" data-bs-toggle="tab" data-bs-target="#audio-generate" type="button" role="tab" aria-controls="audio-generate" aria-selected="true"><span class="generator-icon"><img
+                                                src="<?php echo base_url('assets/landing/') ?>assets/images/icons/audio-g.png" alt="Vedio Generator Icon">Audio
+                                            Generator</span><span class="border-bottom-style"></span></button>
+                                </li>
+                                <li class="nav-item tabs__tab " role="presentation">
+                                    <button class="nav-link rainbow-gradient-btn without-shape-circle" id="photo-generator-tab" data-bs-toggle="tab" data-bs-target="#photo-generate" type="button" role="tab" aria-controls="photo-generate" aria-selected="false"><span class="generator-icon"><img
+                                                src="<?php echo base_url('assets/landing/') ?>assets/images/icons/photo-g.png" alt="Vedio Generator Icon">Photo
+                                            Generator</span><span class="border-bottom-style"></span></button>
+                                </li>
+                                <li class="nav-item tabs__tab " role="presentation">
+                                    <button class="nav-link rainbow-gradient-btn without-shape-circle" id="text-generator-tab" data-bs-toggle="tab" data-bs-target="#text-generate" type="button" role="tab" aria-controls="text-generate" aria-selected="false"><span class="generator-icon"><img
+                                                src="<?php echo base_url('assets/landing/') ?>assets/images/icons/text-g.png" alt="Vedio Generator Icon">Text
+                                            Generator</span><span class="border-bottom-style"></span></button>
+                                </li>
+                                <li class="nav-item tabs__tab " role="presentation">
+                                    <button class="nav-link rainbow-gradient-btn without-shape-circle" id="code-generator-tab" data-bs-toggle="tab" data-bs-target="#code-generate" type="button" role="tab" aria-controls="code-generate" aria-selected="false"><span class="generator-icon"><img
+                                                src="<?php echo base_url('assets/landing/') ?>assets/images/icons/code-g.png" alt="Vedio Generator Icon">Code
+                                            Generator</span><span class="border-bottom-style"></span></button>
+                                </li>
+                            </ul>
+
+                            <div class="rainbow-tab-content tab-content">
+                                <div class="tab-pane fade" id="video-generate" role="tabpanel" aria-labelledby="video-generator-tab">
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="section-title">
+                                                    <h2 class="title">Video generating AI refers to artificial
+                                                        intelligence.</h2>
+                                                    <div class="features-section">
+                                                        <ul class="list-style--1">
+                                                            <li><i class="fa-regular fa-circle-check"></i>Transformer
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Conditional
+                                                                Generative Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Pre-trained
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Variational
+                                                                Autoencoders</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="read-more"><a class="btn-default color-blacked" href="#">Start Exploring Now <i
+                                                                class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 mt_md--30 mt_sm--30">
+                                                <div class="export-img">
+                                                    <div class="inner-without-padding">
+                                                        <div class="export-img img-bg-shape">
+                                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-vedio.png" alt="Chat example Image">
+                                                            <div class="image-shape"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade show active" id="audio-generate" role="tabpanel" aria-labelledby="audio-generator-tab">
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="section-title">
+                                                    <h2 class="title">Audio generating AI refers to artificial
+                                                        intelligence.</h2>
+                                                    <div class="features-section">
+                                                        <ul class="list-style--1">
+                                                            <li><i class="fa-regular fa-circle-check"></i>Transformer
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Conditional
+                                                                Generative Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Pre-trained
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Variational
+                                                                Autoencoders</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="read-more"><a class="btn-default color-blacked" href="#">Start Exploring Now <i
+                                                                class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 mt_md--30 mt_sm--30">
+                                                <div class="export-img">
+                                                    <div class="inner-without-padding">
+                                                        <div class="export-img img-bg-shape">
+                                                            <img class="shape-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-audio.png" alt="Chat example Image">
+                                                            <img class="shape-light" src="<?php echo base_url('assets/landing/') ?>assets/images/light/generator-img/chat-export-audio.png" alt="Chat example Image">
+                                                            <div class="image-shape"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="photo-generate" role="tabpanel" aria-labelledby="photo-generator-tab">
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="section-title">
+                                                    <h2 class="title">Photo generating AI refers to artificial
+                                                        intelligence.</h2>
+                                                    <div class="features-section">
+                                                        <ul class="list-style--1">
+                                                            <li><i class="fa-regular fa-circle-check"></i>Transformer
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Conditional
+                                                                Generative Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Pre-trained
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Variational
+                                                                Autoencoders</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="read-more"><a class="btn-default color-blacked" href="#">Start Exploring Now <i
+                                                                class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 mt_md--30 mt_sm--30">
+                                                <div class="export-img">
+                                                    <div class="inner-without-padding">
+                                                        <div class="export-img img-bg-shape">
+                                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-photo.png" alt="Chat example Image">
+                                                            <div class="image-shape"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="text-generate" role="tabpanel" aria-labelledby="text-generator-tab">
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="section-title">
+                                                    <h2 class="title">Text generating AI refers to artificial
+                                                        intelligence.</h2>
+                                                    <div class="features-section">
+                                                        <ul class="list-style--1">
+                                                            <li><i class="fa-regular fa-circle-check"></i>Transformer
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Conditional
+                                                                Generative Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Pre-trained
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Variational
+                                                                Autoencoders</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="read-more"><a class="btn-default color-blacked" href="#">Start Exploring Now <i
+                                                                class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 mt_md--30 mt_sm--30">
+                                                <div class="export-img">
+                                                    <div class="inner-without-padding">
+                                                        <div class="export-img img-bg-shape">
+                                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export.png" alt="Chat example Image">
+                                                            <div class="image-shape"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="code-generate" role="tabpanel" aria-labelledby="code-generator-tab">
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="section-title">
+                                                    <h2 class="title">Code generating AI refers to artificial
+                                                        intelligence.</h2>
+                                                    <div class="features-section">
+                                                        <ul class="list-style--1">
+                                                            <li><i class="fa-regular fa-circle-check"></i>Transformer
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Conditional
+                                                                Generative Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Pre-trained
+                                                                Models</li>
+                                                            <li><i class="fa-regular fa-circle-check"></i>Variational
+                                                                Autoencoders</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="read-more"><a class="btn-default color-blacked" href="#">Start Exploring Now <i
+                                                                class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 mt_md--30 mt_sm--30">
+                                                <div class="export-img">
+                                                    <div class="inner-without-padding">
+                                                        <div class="export-img img-bg-shape">
+                                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-code.png" alt="Chat example Image">
+                                                            <div class="image-shape"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<style>
-  @media (max-width: 767.98px) {
-    #pricing .card {
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    #pricing .row-cols-md-2 > * {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-}
-</style>
+        <!-- End Tab__Style--one Area  -->
 
 
-
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-8" id="faq">
-
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6 text-center mb-3">
-              <h6 class="fw-bold fs-4 display-3 lh-sm mb-3">Frequently asked questions</h6>
-              <p class="mb-5">Got questions? We've got answers! Check out our FAQs below.</p>
+        <!-- Start Service__Style--one Area  -->
+        <div class="rainbow-service-area rainbow-section-gap rainbow-section-gapBottom-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-left" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                            <h4 class="subtitle">
+                                <span class="theme-gradient">Assisting individuals</span>
+                            </h4>
+                            <h2 class="title mb--60">
+                                Chat Smarter, Not <br> Harder with
+                            </h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row flex-center">
-            <div class="col-lg-9">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="heading1">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><span class="mb-0 fw-bold text-start fs-1 text-1000">How do I create an account in the app?</span></button>
-                  </h2>
-                  <div class="accordion-collapse collapse show" id="collapse1" aria-labelledby="heading1" data-bs-parent="#accordionExample">
-                    <div class="accordion-body bg-100">To create an account, simply visit our website and click on the "Sign Up" or "Create Account" button. You'll be prompted to enter your mobile number and email address. Follow the on-screen instructions to complete the signup process.</div>
-                  </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="service-wrapper rainbow-service-slider-actvation slick-grid-15 rainbow-slick-dot rainbow-gradient-arrows">
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-01.svg" alt="Servece Icon">
+                                        </div>
+                                        <div class="description centered-shape">
+                                            <h5 class="title">Ask anything</h5>
+                                            <p class="desc">Lets users quickly find answers to their questions
+                                                without
+                                                having to search through multiple sources.</p>
+                                            <a class="read-more-btn" href="#">Explore More <span><i
+                                                        class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shaped">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-02.svg" alt="Servece Icon">
+                                        </div>
+                                        <div class="description centered-shape">
+                                            <h5 class="title">Connect everywhere</h5>
+                                            <p class="desc">Lets users quickly find answers to their questions
+                                                without
+                                                having to search through multiple sources.</p>
+                                            <a class="read-more-btn" href="#">Explore More <span><i
+                                                        class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shaped">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-03.svg" alt="Servece Icon">
+                                        </div>
+                                        <div class="description centered-shape">
+                                            <h5 class="title">Fast responding</h5>
+                                            <p class="desc">Lets users quickly find answers to their questions
+                                                without
+                                                having to search through multiple sources.</p>
+                                            <a class="read-more-btn" href="#">Explore More <span><i
+                                                        class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shaped">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <img src="assets/images/icons/service-icon-01.svg" alt="Servece Icon">
+                                        </div>
+                                        <div class="description centered-shape">
+                                            <h5 class="title">Ask anything</h5>
+                                            <p class="desc">Lets users quickly find answers to their questions
+                                                without
+                                                having to search through multiple sources.</p>
+                                            <a class="read-more-btn" href="#">Explore More <span><i
+                                                        class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shaped">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-02.svg" alt="Servece Icon">
+                                        </div>
+                                        <div class="description centered-shape">
+                                            <h5 class="title">Connect everywhere</h5>
+                                            <p class="desc">Lets users quickly find answers to their questions
+                                                without
+                                                having to search through multiple sources.</p>
+                                            <a class="read-more-btn" href="#">Explore More <span><i
+                                                        class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shaped">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <img src="assets/images/icons/service-icon-03.svg" alt="Servece Icon">
+                                        </div>
+                                        <div class="description centered-shape">
+                                            <h5 class="title">Fast responding</h5>
+                                            <p class="desc">Lets users quickly find answers to their questions
+                                                without
+                                                having to search through multiple sources.</p>
+                                            <a class="read-more-btn" href="#">Explore More <span><i
+                                                        class="fa-sharp fa-solid fa-arrow-right"></i></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shaped">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="heading2">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span class="mb-0 fw-bold text-start fs-1 text-1000">What information do I need to provide during the signup process?</span></button>
-                  </h2>
-                  <div class="accordion-collapse collapse" id="collapse2" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                    <div class="accordion-body bg-100">During signup, you'll need to provide your mobile number, email address, and create a password for your account..</div>
-                  </div>
-                </div>
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="heading3">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3"><span class="mb-0 fw-bold text-start fs-1 text-1000">How secure is my account information?</span></button>
-                  </h2>
-                  <div class="accordion-collapse collapse" id="collapse3" aria-labelledby="heading3" data-bs-parent="#accordionExample">
-                    <div class="accordion-body bg-100">We take security seriously and use encryption and other measures to protect your account information. However, it's important to use a strong, unique password and avoid sharing your login credentials with anyone.</div>
-                  </div>
-                </div>
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="heading4">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4"><span class="mb-0 fw-bold text-start fs-1 text-1000">How can I contact customer support through your website?</span></button>
-                  </h2>
-                  <div class="accordion-collapse collapse" id="collapse4" aria-labelledby="heading4" data-bs-parent="#accordionExample">
-                    <div class="accordion-body bg-100">You can contact our customer support team through the "Contact Us" page on our website. Alternatively, you may find answers to common questions in our FAQ section.</div>
-                  </div>
-                </div>
-                <div class="accordion-item mb-2">
-                  <h2 class="accordion-header" id="heading5">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5"><span class="mb-0 fw-bold text-start fs-1 text-1000">What investment plans do you offer on your website?</span></button>
-                  </h2>
-                  <div class="accordion-collapse collapse" id="collapse5" aria-labelledby="heading5" data-bs-parent="#accordionExample">
-                    <div class="accordion-body bg-100">We offer a variety of investment plans tailored to different risk appetites and investment goals. Our plans range from low-risk options such as fixed-income securities to higher-risk options like equities and mutual funds. We also provide personalized investment advice to help you choose the plan that best suits your financial objectives..</div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-        <!-- end of .container-->
+        <!-- End Service__Style--one Area  -->
 
-      </section>
+        <!-- Start Advanced Tab area -->
+        <div class="rainbow-advance-tab-area aiwave-bg-gradient rainbow-section-gap-big">
+            <div class="container">
+                <div class="html-tabs" data-tabs="true">
+                    <div class="row row--30">
+                        <div class="col-lg-12">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active advance-tab-content-1 right-top" id="home-3" role="tabpanel" aria-labelledby="home-tab-3">
+                                    <div class="rainbow-splite-style">
+                                        <div class="split-wrapper">
+                                            <div class="row g-0 radius-10 align-items-center">
+                                                <div class="col-lg-12 col-xl-5 col-12">
+                                                    <div class="thumbnail">
+                                                        <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-1.png" alt="split Images">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-xl-7 col-12">
+                                                    <div class="split-inner">
+                                                        <div class="subtitle">
+                                                            <span class="theme-gradient">How it work</span>
+                                                        </div>
+                                                        <h2 class="title sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Connect
+                                                            with Al
+                                                            chatbot</h2>
+                                                        <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Dentify the
+                                                            platform or interface through which you can access the
+                                                            chatbot. This could be a website, a messaging app, or a
+                                                            dedicated application.</p>
+                                                        <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
+                                                            <a class="btn-default color-blacked" href="contact.html">Try
+                                                                It Now <i
+                                                                    class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade advance-tab-content-1" id="profile-3" role="tabpanel" aria-labelledby="profile-tab-3">
+                                    <div class="rainbow-splite-style">
+                                        <div class="split-wrapper">
+                                            <div class="row g-0 radius-10 align-items-center">
+                                                <div class="col-lg-12 col-xl-5 col-12">
+                                                    <div class="thumbnail">
+                                                        <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-4.png" alt="split Images">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-xl-7 col-12">
+                                                    <div class="split-inner">
+                                                        <div class="subtitle">
+                                                            <span class="theme-gradient">Exploring Efficiency</span>
+                                                        </div>
+                                                        <h2 class="title sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Streamline
+                                                            Your
+                                                            Workflow</h2>
+                                                        <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Discover
+                                                            tools
+                                                            and techniques to optimize your workflow, making your
+                                                            tasks
+                                                            more efficient and manageable.</p>
+                                                        <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
+                                                            <a class="btn-default color-blacked" href="contact.html">Try
+                                                                It Now <i
+                                                                    class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade advance-tab-content-1" id="contact-3" role="tabpanel" aria-labelledby="contact-tab-3">
+                                    <div class="rainbow-splite-style">
+                                        <div class="split-wrapper">
+                                            <div class="row g-0 radius-10 align-items-center">
+                                                <div class="col-lg-12 col-xl-5 col-12">
+                                                    <div class="thumbnail">
+                                                        <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-3.png" alt="split Images">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-xl-7 col-12">
+                                                    <div class="split-inner">
+                                                        <div class="subtitle">
+                                                            <span class="theme-gradient">Navigating
+                                                                Cybersecurity</span>
+                                                        </div>
+                                                        <h2 class="title sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Protecting
+                                                            Your
+                                                            Digital Presence</h2>
+                                                        <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Gain
+                                                            insights
+                                                            into cybersecurity measures and strategies to safeguard
+                                                            your
+                                                            online identity and sensitive information.</p>
+                                                        <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
+                                                            <a class="btn-default color-blacked" href="contact.html">Try
+                                                                It Now <i
+                                                                    class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade advance-tab-content-1" id="explore-3" role="tabpanel" aria-labelledby="explore-tab-3">
+                                    <div class="rainbow-splite-style">
+                                        <div class="split-wrapper">
+                                            <div class="row g-0 radius-10 align-items-center">
+                                                <div class="col-lg-12 col-xl-5 col-12">
+                                                    <div class="thumbnail">
+                                                        <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-5.png" alt="split Images">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-xl-7 col-12">
+                                                    <div class="split-inner">
+                                                        <div class="subtitle">
+                                                            <span class="theme-gradient">Mastering Data
+                                                                Analysis</span>
+                                                        </div>
+                                                        <h2 class="title sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">
+                                                            Demystifying
+                                                            Data Analytics</h2>
+                                                        <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Learn the
+                                                            fundamentals of data analysis, including tools and
+                                                            methodologies, to extract meaningful insights from raw
+                                                            data.
+                                                        </p>
+                                                        <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
+                                                            <a class="btn-default color-blacked" href="contact.html">Try
+                                                                It Now <i
+                                                                    class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt--60">
+                            <div class="advance-tab-button advance-tab-button-1 right-top">
+                                <ul class="nav nav-tabs tab-button-list" id="myTab-3" role="tablist">
 
-<!-- Contact Us Section -->
-<section class="py-8 bg-light" id="contact">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center mb-5">
-        <h2 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm mb-3">Get in Touch</h2>
-        <p class="mb-0">Have questions about our platform? We're here to help!</p>
-      </div>
-    </div>
-    <div class="row justify-content-between align-items-center">
-      <div class="col-md-5 mb-4 mb-md-0">
-        <img src="https://unblast.com/wp-content/uploads/2020/09/Contact-Us-Vector-Illustration-Part-02-1.jpg" alt="Contact Us Illustration" class="img-fluid rounded shadow-sm">
-      </div>
-      <div class="col-md-6">
-        <form id="contactForm">
-          <div class="mb-3">
-            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-          </div>
-          <div class="mb-3">
-            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
-          </div>
-          <div class="mb-3">
-            <select class="form-control" id="category" required>
-              <option value="">Select Category</option>
-              <option value="Distributor">Distributor</option>
-              <option value="Agent">Agent</option>
-              <option value="Supplier/Manufacturer">Supplier/Manufacturer</option>
-              <option value="Franchise">Franchise</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg w-100" style="background-color: #FCAE61; border-color: #FFFFFF;">Send Inquiry</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+                                    <li class="col-lg-3 nav-item" role="presentation">
+                                        <a href="#" class="nav-link tab-button active" id="home-tab-3" data-bs-toggle="tab" data-bs-target="#home-3" role="tab" aria-controls="home-3" aria-selected="true">
+                                            <div class="tab">
+                                                <div class="count-text">
+                                                    <span class="theme-gradient">01</span>
+                                                </div>
+                                                <h4 class="title">Connect with AI </h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="col-lg-3 nav-item" role="presentation">
+                                        <a href="#" class="nav-link tab-button" id="profile-tab-3" data-bs-toggle="tab" data-bs-target="#profile-3" role="tab" aria-controls="profile-3" aria-selected="false">
+                                            <div class="tab">
+                                                <div class="count-text">
+                                                    <span class="theme-gradient">02</span>
+                                                </div>
+                                                <h4 class="title">Streamline Workflow</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="col-lg-3 nav-item" role="presentation">
+                                        <a href="#" class="nav-link tab-button" id="contact-tab-3" data-bs-toggle="tab" data-bs-target="#contact-3" role="tab" aria-controls="contact-3" aria-selected="false">
+                                            <div class="tab">
+                                                <div class="count-text">
+                                                    <span class="theme-gradient">03</span>
+                                                </div>
+                                                <h4 class="title">Cybersecurity</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-lg-3 nav-item" role="presentation">
+                                        <a href="#" class="nav-link tab-button" id="explore-tab-3" data-bs-toggle="tab" data-bs-target="#explore-3" role="tab" aria-controls="explore-3" aria-selected="false">
+                                            <div class="tab">
+                                                <div class="count-text">
+                                                    <span class="theme-gradient">04</span>
+                                                </div>
+                                                <h4 class="title">Data Analysis</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-shape">
+                <img src="assets/images/bg/split-bg-shape.png" alt="Bg Shape">
+            </div>
+        </div>
+        <!-- End Advanced Tab Area -->
 
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  (function() {
-    // https://dashboard.emailjs.com/admin/account
-    emailjs.init('ZqAGdlu-q_WGJsESw');
-  })();
-
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    // Get form values
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var phone = document.getElementById('phone').value;
-    var message = document.getElementById('message').value;
-
-    // Send email using EmailJS
-    emailjs.send('service_j4lzfgy', 'template_zye5m7k', {
-      from_name: name,
-      from_email: email,
-      phone: phone,
-      message: message
-    })
-    .then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-      alert('Your message has been sent successfully!');
-      document.getElementById('contactForm').reset();
-    }, function(error) {
-      console.log('FAILED...', error);
-      alert('Failed to send the message. Please try again later.');
-    });
-  });
-</script>
-
-<style>
-  .bg-light {
-    background-color: #f8f9fa;
-  }
-  .bg-dark {
-    background-color: #343a40;
-  }
-  .form-control:focus {
-    border-color: #FCAE61;
-    box-shadow: 0 0 0 0.2rem rgba(252, 174, 97, 0.25);
-  }
-  .btn-primary:hover {
-    background-color: #f9a14f;
-    border-color: #f9a14f;
-  }
-  .social-icons a:hover {
-    opacity: 0.8;
-  }
-</style>
+        <!-- Start Collabration-Style-One  -->
+        <div class="rainbow-collobration-area rainbow-section-gap-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                            <h4 class="subtitle ">
+                                <span class="theme-gradient">AI Collaboration</span>
+                            </h4>
+                            <h2 class="title mb--20">AI Chat app for seamless<br> collaboration</h2>
+                            <a class="btn-default btn-large color-blacked" href="contact.html">Try It Now <i
+                                    class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mt--60">
+                        <div class="collabration-image-section">
+                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-2.png" alt="collabration-image">
+                            <div class="logo-section">
+                                <div class="center-logo">
+                                    <img class="shape-dark" src="assets/images/split/split-2-logo.png" alt="Small Logo">
+                                    <img class="shape-light" src="assets/images/light/split/split-2-logo.png" alt="Small Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Collabration-Style-One  -->
 
 
+        <!-- Start CTA Style-one Area  -->
+        <div class="rainbow-rn-cta">
+            <div class="container">
+                <div class="row row--0 align-items-center content-wrapper">
+                    <div class="col-lg-8">
+                        <div class="inner">
+                            <div class="content text-left">
+                                <h4 class="title sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Join our aI Experts community</h4>
+                                <p class="sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">
+                                    Meet and learn from 80+ creators & companies who share how thay use AI to create
+                                    better content at lightning speed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="right-content">
+                            <div class="call-to-btn text-start text-lg-end sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
+                                <div class="team-image">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/team-01.png" alt="Group Image">
+                                </div>
+                                <a class="btn-default" href="#">Join Now Today Free</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-shape">
+                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/bg-shape-01.png" alt="BG Shape">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End CTA Style-one Area  -->
 
-      <script>
+        <!-- Pricing Part -->
+        <div class="aiwave-pricing-area wrapper rainbow-section-gap-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                            <h4 class="subtitle">
+                                <span class="theme-gradient">Pricing</span>
+                            </h4>
+                            <h2 class="title w-600 mb--40">
+                                Pricing plans for everyone
+                            </h2>
+                        </div>
 
-      document.addEventListener('DOMContentLoaded', function() {
-          const logoSlider = document.querySelector('.logo-slider');
-          const logoContainer = document.querySelector('.logo-container');
-          const leftArrow = document.querySelector('.left-arrow');
-          const rightArrow = document.querySelector('.right-arrow');
-          const scrollAmount = 200; // Adjust this value to control scroll distance
-          const autoScrollInterval = 3000; // 3 seconds
-          let autoScrollTimer;
+                        <nav class="aiwave-tab">
+                            <div class="tab-btn-grp nav nav-tabs text-center justify-content-center" id="nav-tab" role="tablist">
+                                <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">
+                                    Monthly
+                                </button>
+                                <button class="nav-link with-badge active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">
+                                    Yearly
+                                    <span class="rainbow-badge-card badge-border">-10%</span>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="tab-content p-0 bg-transparent border-0 border bg-light" id="nav-tabContent">
+                    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row row--15 mt_dec--40">
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
+                                <div class="rainbow-pricing style-aiwave">
+                                    <div class="pricing-table-inner">
+                                        <div class="pricing-top">
+                                            <div class="pricing-header">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-circle-radiation"></i>
+                                                </div>
+                                                <h4 class="title color-var-one">Basic</h4>
+                                                <p class="subtitle">For large teams & corportaions</p>
+                                                <div class="pricing">
+                                                    <span class="price-text">Free</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing-body">
+                                                <div class="features-section">
+                                                    <h6>Features</h6>
+                                                    <ul class="list-style--1">
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 7,700
+                                                            3-5 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
+                                                            Blog
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
+                                                            Advance
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-footer">
+                                            <a class="btn-default btn-border" href="#">Get Started</a>
+                                            <p class="bottom-text">Limited Offer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
+                                <div class="rainbow-pricing style-aiwave active">
+                                    <div class="pricing-table-inner">
+                                        <div class="pricing-top">
+                                            <div class="pricing-header">
+                                                <div class="icon">
+                                                    <i class="fa-sharp fa-regular fa-flower"></i>
+                                                </div>
+                                                <h4 class="title color-var-two">Premium</h4>
+                                                <p class="subtitle">For large teams & corportaions</p>
+                                                <div class="pricing">
+                                                    <span class="price-text">$60.50</span>
+                                                    <span class="text">/Per Month</span>
 
-          // Function to smoothly scroll the logos
-          function smoothScroll(element, to, duration) {
-              const start = element.scrollLeft;
-              const change = to - start;
-              const increment = 20;
-              let currentTime = 0;
+                                                </div>
+                                            </div>
+                                            <div class="pricing-body">
+                                                <div class="features-section has-show-more">
+                                                    <h6>Features</h6>
+                                                    <ul class="list-style--1 has-show-more-inner-content">
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 12,700
+                                                            7-9 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 7,700
+                                                            3-5 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
+                                                            Blog
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
+                                                            Advance
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                    </ul>
+                                                    <div class="rbt-show-more-btn">Show More</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-footer">
+                                            <a class="btn-default color-blacked" href="#">Get Started</a>
+                                            <p class="bottom-text">Limited Offer</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-badge">Best Offer</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
+                                <div class="rainbow-pricing style-aiwave">
+                                    <div class="pricing-table-inner">
+                                        <div class="pricing-top">
+                                            <div class="pricing-header">
+                                                <div class="icon">
+                                                    <i class="fa-sharp fa-regular fa-waveform-lines"></i>
+                                                </div>
+                                                <h4 class="title color-var-three">Enterprise</h4>
+                                                <p class="subtitle">For large teams & corportaions</p>
+                                                <div class="pricing">
+                                                    <span class="price-text">$80.50</span>
+                                                    <span class="text">/Per Month</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing-body">
+                                                <div class="features-section has-show-more">
+                                                    <h6>Features</h6>
+                                                    <ul class="list-style--1 has-show-more-inner-content">
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 15,700
+                                                            15-30 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 7,700
+                                                            3-5 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
+                                                            Blog
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
+                                                            Advance
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                    </ul>
+                                                    <div class="rbt-show-more-btn">Show More</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-footer">
+                                            <a class="btn-default btn-border" href="#">Get Started</a>
+                                            <p class="bottom-text">Limited Offer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade active show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row row--15 mt_dec--40">
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
+                                <div class="rainbow-pricing style-aiwave">
+                                    <div class="pricing-table-inner">
+                                        <div class="pricing-top">
+                                            <div class="pricing-header">
+                                                <div class="icon">
+                                                    <i class="fa-regular fa-circle-radiation"></i>
+                                                </div>
+                                                <h4 class="title color-var-one">Basic</h4>
+                                                <p class="subtitle">For large teams & corportaions</p>
+                                                <div class="pricing">
+                                                    <span class="price-text">Free</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing-body">
+                                                <div class="features-section">
+                                                    <h6>Features</h6>
+                                                    <ul class="list-style--1">
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 7,700
+                                                            3-5 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
+                                                            Blog
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
+                                                            Advance
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-footer">
+                                            <a class="btn-default btn-border" href="#">Get Started</a>
+                                            <p class="bottom-text">Limited Offer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
+                                <div class="rainbow-pricing style-aiwave active">
+                                    <div class="pricing-table-inner">
+                                        <div class="pricing-top">
+                                            <div class="pricing-header">
+                                                <div class="icon">
+                                                    <i class="fa-sharp fa-regular fa-flower"></i>
+                                                </div>
+                                                <h4 class="title color-var-two">Premium</h4>
+                                                <p class="subtitle">For large teams & corportaions</p>
+                                                <div class="pricing">
+                                                    <span class="price-text">$499.00</span>
+                                                    <span class="text">/Per Year</span>
 
-              function animateScroll() {
-                  currentTime += increment;
-                  const val = Math.easeInOutQuad(currentTime, start, change, duration);
-                  element.scrollLeft = val;
-                  if (currentTime < duration) {
-                      setTimeout(animateScroll, increment);
-                  }
-              }
+                                                </div>
+                                            </div>
+                                            <div class="pricing-body">
+                                                <div class="features-section has-show-more">
+                                                    <h6>Features</h6>
+                                                    <ul class="list-style--1 has-show-more-inner-content">
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 12,700
+                                                            7-9 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 7,700
+                                                            3-5 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
+                                                            Blog
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
+                                                            Advance
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                    </ul>
+                                                    <div class="rbt-show-more-btn">Show More</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-footer">
+                                            <a class="btn-default color-blacked" href="#">Get Started</a>
+                                            <p class="bottom-text">Limited Offer</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-badge">Best Offer</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
+                                <div class="rainbow-pricing style-aiwave">
+                                    <div class="pricing-table-inner">
+                                        <div class="pricing-top">
+                                            <div class="pricing-header">
+                                                <div class="icon">
+                                                    <i class="fa-sharp fa-regular fa-waveform-lines"></i>
+                                                </div>
+                                                <h4 class="title color-var-three">Enterprise</h4>
+                                                <p class="subtitle">For large teams & corportaions</p>
+                                                <div class="pricing">
+                                                    <span class="price-text">$599.00</span>
+                                                    <span class="text">/Per Year</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing-body">
+                                                <div class="features-section has-show-more">
+                                                    <h6>Features</h6>
+                                                    <ul class="list-style--1 has-show-more-inner-content">
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 15,700
+                                                            15-30 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 7,700
+                                                            3-5 day turnarouord
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 6+
+                                                            Naive development
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-regular fa-circle-check"></i> 5+
+                                                            Task delivered one-by-one
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
+                                                            Blog
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
+                                                            Advance
+                                                            Updates via dashboard & slack
+                                                        </li>
+                                                    </ul>
+                                                    <div class="rbt-show-more-btn">Show More</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-footer">
+                                            <a class="btn-default btn-border" href="#">Get Started</a>
+                                            <p class="bottom-text">Limited Offer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-              animateScroll();
-          }
+        <!-- Service Area -->
+        <div class="aiwave-service-area rainbow-section-gap">
+            <div class="container">
+                <div class="row row--15 service-wrapper">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700">
+                        <div class="service service__style--1 aiwave-style text-center">
+                            <div class="icon">
+                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/service-icon-01.png" alt="Servece Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title w-600">100% No-Risk, Money Back Guarantee!</h4>
+                                <p class="description b1 mb--0">Refunds will be issued within period of 14 days from
+                                    the
+                                    purchase date</p>
+                            </div>
+                        </div>
+                    </div>
 
-          // Easing function for smooth scrolling
-          Math.easeInOutQuad = function(t, b, c, d) {
-              t /= d / 2;
-              if (t < 1) return c / 2 * t * t + b;
-              t--;
-              return -c / 2 * (t * (t - 2) - 1) + b;
-          };
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                        <div class="service service__style--1 aiwave-style text-center">
+                            <div class="icon">
+                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/service-icon-02.png" alt="Servece Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title w-600">Upgrade or Cancel Anytime</h4>
+                                <p class="description b1 mb--0">Passages there are many variations variations of of
+                                    Lorem Ipsum available.</p>
+                            </div>
+                        </div>
+                    </div>
 
-          // Auto-scroll function
-          function startAutoScroll() {
-              autoScrollTimer = setInterval(() => {
-                  const newScrollLeft = logoSlider.scrollLeft + scrollAmount;
-                  if (newScrollLeft >= logoContainer.scrollWidth - logoSlider.clientWidth) {
-                      logoSlider.scrollLeft = 0;
-                  } else {
-                      smoothScroll(logoSlider, newScrollLeft, 1000);
-                  }
-              }, autoScrollInterval);
-          }
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="200">
+                        <div class="service service__style--1 aiwave-style text-center">
+                            <div class="icon">
+                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/service-icon-03.png" alt="Servece Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title w-600">Not sure yet, try the free version</h4>
+                                <p class="description b1 mb--0">Refunds will be issued within period of 14 days from
+                                    the
+                                    purchase date</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-          // Stop auto-scrolling when user interacts
-          function stopAutoScroll() {
-              clearInterval(autoScrollTimer);
-          }
 
-          leftArrow.addEventListener('click', function() {
-              stopAutoScroll();
-              smoothScroll(logoSlider, logoSlider.scrollLeft - scrollAmount, 500);
-          });
+        <!-- Start Testimonial Area  -->
+        <div class="rainbow-testimonial-area rainbow-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-left" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                            <h4 class="subtitle">
+                                <span class="theme-gradient">Assisting individuals</span>
+                            </h4>
+                            <h2 class="title mb--60">
+                                The opinions of the community
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="service-wrapper rainbow-service-slider-actvation slick-grid-15 rainbow-slick-dot rainbow-gradient-arrows">
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card active card-style-default testimonial-style-defalt has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="rating">
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <p class="description">Rainbow-Themes has become such an integral part
+                                                of
+                                                our work! By putting our</p>
+                                            <div class="bottom-content">
+                                                <div class="meta-info-section">
+                                                    <p class="title-text">Guy Hawkins</p>
+                                                    <p class="desc">Nursing Assistant</p>
+                                                    <div class="desc-img">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-t.png" alt="Brand Image">
+                                                    </div>
+                                                </div>
+                                                <div class="meta-img-section">
+                                                    <a class="btn-default rounded-player style-two xs-size popup-video" href="https://www.youtube.com/watch?v=ikEdN260zRg">
+                                                        <span><i class="fa-duotone fa-play"></i></span>
+                                                    </a>
+                                                    <a class="image" href="#">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-02sm.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shape">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default testimonial-style-defalt has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="rating">
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <p class="description">Rainbow-Themes has become such an integral part
+                                                of
+                                                our work! By putting our</p>
+                                            <div class="bottom-content">
+                                                <div class="meta-info-section">
+                                                    <p class="title-text">Guy Hawkins</p>
+                                                    <p class="desc">Nursing Assistant</p>
+                                                    <div class="desc-img">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-t.png" alt="Brand Image">
+                                                    </div>
+                                                </div>
+                                                <div class="meta-img-section">
+                                                    <a class="btn-default rounded-player style-two xs-size popup-video" href="https://www.youtube.com/watch?v=ikEdN260zRg">
+                                                        <span><i class="fa-duotone fa-play"></i></span>
+                                                    </a>
+                                                    <a class="image" href="#">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-02sm.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shape">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default testimonial-style-defalt has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="rating">
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <p class="description">Rainbow-Themes has become such an integral part
+                                                of
+                                                our work! By putting our</p>
+                                            <div class="bottom-content">
+                                                <div class="meta-info-section">
+                                                    <p class="title-text">Guy Hawkins</p>
+                                                    <p class="desc">Nursing Assistant</p>
+                                                    <div class="desc-img">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-t.png" alt="Brand Image">
+                                                    </div>
+                                                </div>
+                                                <div class="meta-img-section">
+                                                    <a class="btn-default rounded-player style-two xs-size small-size popup-video" href="https://www.youtube.com/watch?v=ikEdN260zRg">
+                                                        <span><i class="fa-duotone fa-play"></i></span>
+                                                    </a>
+                                                    <a class="image" href="#">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-02sm.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shape">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card active card-style-default testimonial-style-defalt has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="rating">
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <p class="description">Rainbow-Themes has become such an integral part
+                                                of
+                                                our work! By putting our</p>
+                                            <div class="bottom-content">
+                                                <div class="meta-info-section">
+                                                    <p class="title-text">Guy Hawkins</p>
+                                                    <p class="desc">Nursing Assistant</p>
+                                                    <div class="desc-img">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-t.png" alt="Brand Image">
+                                                    </div>
+                                                </div>
+                                                <div class="meta-img-section">
+                                                    <a class="btn-default rounded-player style-two xs-size popup-video" href="https://www.youtube.com/watch?v=ikEdN260zRg">
+                                                        <span><i class="fa-duotone fa-play"></i></span>
+                                                    </a>
+                                                    <a class="image" href="#">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-02sm.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shape">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default testimonial-style-defalt has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="rating">
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <p class="description">Rainbow-Themes has become such an integral part
+                                                of
+                                                our work! By putting our</p>
+                                            <div class="bottom-content">
+                                                <div class="meta-info-section">
+                                                    <p class="title-text">Guy Hawkins</p>
+                                                    <p class="desc">Nursing Assistant</p>
+                                                    <div class="desc-img">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-t.png" alt="Brand Image">
+                                                    </div>
+                                                </div>
+                                                <div class="meta-img-section">
+                                                    <a class="btn-default rounded-player style-two xs-size popup-video" href="https://www.youtube.com/watch?v=ikEdN260zRg">
+                                                        <span><i class="fa-duotone fa-play"></i></span>
+                                                    </a>
+                                                    <a class="image" href="#">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-02sm.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shape">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-single-layout">
+                                <div class="rainbow-box-card card-style-default testimonial-style-defalt has-bg-shaped">
+                                    <div class="inner">
+                                        <div class="rating">
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                            <a href="#rating">
+                                                <i class="fa-sharp fa-solid fa-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <p class="description">Rainbow-Themes has become such an integral part
+                                                of
+                                                our work! By putting our</p>
+                                            <div class="bottom-content">
+                                                <div class="meta-info-section">
+                                                    <p class="title-text">Guy Hawkins</p>
+                                                    <p class="desc">Nursing Assistant</p>
+                                                    <div class="desc-img">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-t.png" alt="Brand Image">
+                                                    </div>
+                                                </div>
+                                                <div class="meta-img-section">
+                                                    <a class="btn-default rounded-player style-two xs-size small-size popup-video" href="https://www.youtube.com/watch?v=ikEdN260zRg">
+                                                        <span><i class="fa-duotone fa-play"></i></span>
+                                                    </a>
+                                                    <a class="image" href="#">
+                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-02sm.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shape">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial.png" alt="" class="bg shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-dark">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial.png" alt="" class="bg shape-light">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/light/service/bg-testimonial-hover.png" alt="" class="bg-hover shape-light">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonial Area  -->
 
-          rightArrow.addEventListener('click', function() {
-              stopAutoScroll();
-              smoothScroll(logoSlider, logoSlider.scrollLeft + scrollAmount, 500);
-          });
+        <!-- Start Brand Area -->
+        <div class="rainbow-brand-area rainbow-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title rating-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                            <div class="rating">
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                            </div>
+                            <p class="subtitle mb--0">Based on 20,000+ reviews on</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mt--10">
+                        <ul class="brand-list brand-style-2">
+                            <li><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-01.png" alt="Brand Image"></a></li>
+                            <li><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-02.png" alt="Brand Image"></a></li>
+                            <li><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-03.png" alt="Brand Image"></a></li>
+                            <li><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-04.png" alt="Brand Image"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-shape-left">
+                <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/bg-shape-two.png" alt="Bg shape">
+            </div>
+        </div>
 
-          // Stop auto-scrolling when hovering over the slider
-          logoSlider.addEventListener('mouseenter', stopAutoScroll);
-          logoSlider.addEventListener('mouseleave', startAutoScroll);
+        <!-- Start CTA Area -->
+        <div class="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="aiwave-cta">
+                            <div class="inner">
+                                <div class="content-left">
+                                    <div class="section-title text-left" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                                        <h4 class="subtitle">
+                                            <span class="theme-gradient">Get Started with Rainbow</span>
+                                        </h4>
+                                        <h2 class="title w-600 mb--20">
+                                            Experience Products in AI
+                                        </h2>
+                                        <p class="description b1">
+                                            Based on the conversation with the AI chatbot, you will receive <br>
+                                            personalized recommendations.
+                                        </p>
+                                    </div>
+                                    <div class="app-store-btn">
+                                        <a class="store-btn" href="#">
+                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/play-app.png" alt="Play Store Button">
+                                        </a>
+                                        <a class="store-btn" href="#">
+                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/apple-app.png" alt="Apple Store Button">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content-right">
+                                    <div class="img-right">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/view-img.png" alt="Mobile View">
+                                    </div>
+                                </div>
+                                <div class="bg-shape-one">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/bg-shape.png" alt="Bg shape">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-          // Start auto-scrolling
-          startAutoScroll();
-      });
- </script>
+        
