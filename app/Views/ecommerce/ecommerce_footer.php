@@ -99,7 +99,7 @@
                     <div class="col">
                         <div class="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0 wow animate__animated animate__fadeInUp" data-wow-delay="0">
                             <div class="logo mb-30">
-                                <a href="index.html" class="mb-15"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/logo.svg" alt="logo" /></a>
+                                <a href="index.html" class="mb-15"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/logo_1.png" alt="logo" /></a>
                                 <p class="font-lg text-heading">Trusted store with quality products</p>
                             </div>
                             <ul class="contact-infor">

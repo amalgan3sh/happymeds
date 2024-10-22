@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="home-slide-cover mt-30">
                     <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider-1.png)">
+                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider_11.png)">
                             <div class="slider-content">
                                 <h1 class="display-2 mb-40">
                                     Don’t miss amazing<br />
@@ -17,7 +17,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider-2.png)">
+                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider_22.png)">
                             <div class="slider-content">
                                 <h1 class="display-2 mb-40">
                                     Verified brands<br />
@@ -57,42 +57,42 @@
                     <div class="carausel-10-columns" id="carausel-10-columns">
                         <div class="card-2 bg-9 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-13.png" alt="" /></a>
+                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/lotion_icon.jpg" alt="" /></a>
                             </figure>
                             <h6><a href="shop-grid-right.html">Lotion</a></h6>
                             <span>26 items</span>
                         </div>
                         <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-12.png" alt="" /></a>
+                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/tablet_icon.jpg" alt="" /></a>
                             </figure>
                             <h6><a href="shop-grid-right.html">Tablet</a></h6>
                             <span>28 items</span>
                         </div>
                         <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-11.png" alt="" /></a>
+                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/syrup_icon.jpg" alt="" /></a>
                             </figure>
                             <h6><a href="shop-grid-right.html">Syrup</a></h6>
                             <span>14 items</span>
                         </div>
                         <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-9.png" alt="" /></a>
+                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/injection_icon.jpg" alt="" /></a>
                             </figure>
                             <h6><a href="shop-grid-right.html">Injection</a></h6>
                             <span>54 items</span>
                         </div>
                         <div class="card-2 bg-14 wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-1.png" alt="" /></a>
+                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/ointment_icon.jpg" alt="" /></a>
                             </figure>
                             <h6><a href="shop-grid-right.html">Ointment</a></h6>
                             <span>72 items</span>
                         </div>
                         <div class="card-2 bg-15 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cat-2.png" alt="" /></a>
+                                <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cream_icon.jpg" alt="" /></a>
                             </figure>
                             <h6><a href="shop-grid-right.html">Cream</a></h6>
                             <span>36 items</span>
@@ -107,7 +107,20 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
-                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-1.png" alt="" />
+                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner_2.jpg" alt="" />
+                            <div class="banner-text">
+                                <h4>
+                                    Routine checkup<br />
+                                    guarantees healthy<br />
+                                    tomorrow.
+                                </h4>
+                                <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner_1.png" alt="" />
                             <div class="banner-text">
                                 <h4>
                                     Start your healthy <br />journey<br />
@@ -117,21 +130,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
-                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-2.png" alt="" />
-                            <div class="banner-text">
-                                <h4>
-                                    Make your Breakfast<br />
-                                    Healthy and Easy
-                                </h4>
-                                <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-4 d-md-none d-lg-flex">
                         <div class="banner-img mb-sm-0 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
-                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-3.png" alt="" />
+                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner_3.png" alt="" />
                             <div class="banner-text">
                                 <h4>The best brands <br />Products Online</h4>
                                 <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
@@ -176,8 +177,8 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-1-1.jpg" alt="" />
-                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-1-2.jpg" alt="" />
+                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_1.png" alt="" />
+                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_1.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -221,8 +222,8 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-2-1.jpg" alt="" />
-                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-2-2.jpg" alt="" />
+                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_2.png" alt="" />
+                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_2.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -266,8 +267,8 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-3-1.jpg" alt="" />
-                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-3-2.jpg" alt="" />
+                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_3.png" alt="" />
+                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_3.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -311,8 +312,8 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-4-1.jpg" alt="" />
-                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-4-2.jpg" alt="" />
+                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_4.png" alt="" />
+                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_4.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -333,7 +334,7 @@
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Everherb</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">BroEE</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
@@ -349,12 +350,12 @@
                         </div>
                         <!--end product card-->
                         <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
-                            <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                            <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-5-1.jpg" alt="" />
-                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-5-2.jpg" alt="" />
+                                            <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_5.png" alt="" />
+                                            <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_5.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -363,7 +364,7 @@
                                         <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
-                                        <span class="best">-14%</span>
+                                        <span class="new">New</span>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
@@ -371,18 +372,19 @@
                                         <a href="shop-grid-right.html">Tablet</a>
                                     </div>
                                     <h2><a href="shop-product-right.html">BRO P</a></h2>
+                                    <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
-                                            <div class="product-rating" style="width: 90%"></div>
+                                            <div class="product-rating" style="width: 85%"></div>
                                         </div>
                                         <span class="font-small ml-5 text-muted"> (4.0)</span>
                                     </div>
                                     <div>
-                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">Bro P</a></span>
+                                        <span class="font-small text-muted">By <a href="vendor-details-1.html">BroP</a></span>
                                     </div>
                                     <div class="product-card-bottom">
                                         <div class="product-price">
-                                            <span>323.85</span>
-                                            <span class="old-price">395.8</span>
+                                            <span>225.85</span>
+                                            <span class="old-price">250.8</span>
                                         </div>
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -391,6 +393,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!--end product card-->
                         <!--end product card-->
                     </div>
                     <!--End product-grid-4-->
@@ -407,8 +410,8 @@
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
                                             <a href="shop-product-right.html">
-                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-1-1.jpg" alt="" />
-                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-1-2.jpg" alt="" />
+                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_6.png" alt="" />
+                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_6.png" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-action-1">
@@ -452,8 +455,8 @@
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
                                             <a href="shop-product-right.html">
-                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-2-1.jpg" alt="" />
-                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-2-2.jpg" alt="" />
+                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_7.png" alt="" />
+                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_7.png" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-action-1">
@@ -497,8 +500,8 @@
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
                                             <a href="shop-product-right.html">
-                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-3-1.jpg" alt="" />
-                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-3-2.jpg" alt="" />
+                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_8.png" alt="" />
+                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_8.png" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-action-1">
@@ -539,8 +542,8 @@
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
                                             <a href="shop-product-right.html">
-                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-4-1.jpg" alt="" />
-                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-4-2.jpg" alt="" />
+                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_9.png" alt="" />
+                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_9.png" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-action-1">
@@ -580,12 +583,12 @@
                             </div>
                             <!--end product card-->
                             <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
-                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                                <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
                                             <a href="shop-product-right.html">
-                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-5-1.jpg" alt="" />
-                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-5-2.jpg" alt="" />
+                                                <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_10.png" alt="" />
+                                                <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_10.png" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-action-1">
@@ -594,16 +597,17 @@
                                             <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                         </div>
                                         <div class="product-badges product-badges-position product-badges-mrg">
-                                            <span class="best">-24%</span>
+                                            <span class="new">New</span>
                                         </div>
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
                                             <a href="shop-grid-right.html">Tablet</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">BROCIT -10</a></h2>
+                                        <h2><a href="shop-product-right.html">BROCIT-10</a></h2>
+                                        <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
-                                                <div class="product-rating" style="width: 90%"></div>
+                                                <div class="product-rating" style="width: 85%"></div>
                                             </div>
                                             <span class="font-small ml-5 text-muted"> (4.0)</span>
                                         </div>
@@ -612,8 +616,8 @@
                                         </div>
                                         <div class="product-card-bottom">
                                             <div class="product-price">
-                                                <span>2023.85</span>
-                                                <span class="old-price">2295.8</span>
+                                                <span>748.85</span>
+                                                <span class="old-price">752.8</span>
                                             </div>
                                             <div class="add-cart">
                                                 <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -624,7 +628,7 @@
                             </div>
                             <!--end product card-->
                         </div>
-                            <!--End product-grid-4-->
+                        <!--End product-grid-4-->
                     </div>
                     <!--En tab one-->
 
@@ -665,8 +669,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-1-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-1-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_11.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_11.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -704,8 +708,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-5-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-5-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_12.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_12.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -721,7 +725,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Ofloxacin Oral</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">BROFLOW - 50</a></h2>
+                                                <h2><a href="shop-product-right.html">BROFLO - 50</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -743,8 +747,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-2-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-2-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_13.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_13.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -760,7 +764,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Ofloxacin Tablet</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">BROFLOW 200</a></h2>
+                                                <h2><a href="shop-product-right.html">BROFLO 200</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -782,8 +786,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-3-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-3-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_14.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_14.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -799,7 +803,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Ofloxacin & Metronidazole</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">BROFLOW - M</a></h2>
+                                                <h2><a href="shop-product-right.html">BROFLO - M</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -821,8 +825,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-4-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-4-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_15.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_15.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -838,7 +842,7 @@
                                                 <div class="product-category">
                                                     <a href="shop-grid-right.html">Ofloxacin + Ornidazole Tablet</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">BROFLOW - PLUS</a></h2>
+                                                <h2><a href="shop-product-right.html">BROFLO - PLUS</a></h2>
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
                                                 </div>
@@ -868,8 +872,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-10-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-10-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_16.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_16.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -907,8 +911,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-15-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-15-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_17.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_17.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -946,8 +950,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-12-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-12-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_18.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_18.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -985,8 +989,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-13-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-13-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_19.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_19.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -1024,8 +1028,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-14-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-14-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_20.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_20.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -1070,8 +1074,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-7-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-7-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_21.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_21.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -1109,8 +1113,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-8-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-8-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_22.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_22.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -1148,8 +1152,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-9-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-9-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_23.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_23.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -1187,8 +1191,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-13-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-13-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_24.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_24.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -1226,8 +1230,8 @@
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
                                                     <a href="shop-product-right.html">
-                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-14-1.jpg" alt="" />
-                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/product-14-2.jpg" alt="" />
+                                                        <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_25.png" alt="" />
+                                                        <img class="hover-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_25.png" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="product-action-1">
@@ -1287,7 +1291,7 @@
                             <div class="product-img-action-wrap">
                                 <div class="product-img">
                                     <a href="shop-product-right.html">
-                                        <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-5.png" alt="" />
+                                    <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_26.png" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -1324,7 +1328,7 @@
                             <div class="product-img-action-wrap">
                                 <div class="product-img">
                                     <a href="shop-product-right.html">
-                                        <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-6.png" alt="" />
+                                    <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_27.png" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -1361,7 +1365,7 @@
                             <div class="product-img-action-wrap">
                                 <div class="product-img">
                                     <a href="shop-product-right.html">
-                                        <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-7.png" alt="" />
+                                    <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_28.png" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -1398,7 +1402,7 @@
                             <div class="product-img-action-wrap">
                                 <div class="product-img">
                                     <a href="shop-product-right.html">
-                                        <img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-8.png" alt="" />
+                                    <img class="default-img" src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_29.png" alt="" />
                                     </a>
                                 </div>
                             </div>
@@ -1442,11 +1446,12 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-1.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html">
+                                        <img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_29.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">LEVOBRO - M</a>
+                                        <a href="shop-product-right.html">LEVOBRO 10</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1462,7 +1467,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-2.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_30.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1482,7 +1487,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-3.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_31.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1507,7 +1512,7 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-4.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_32.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1527,7 +1532,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-5.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_33.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1547,7 +1552,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-6.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_34.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1572,7 +1577,7 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-7.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_35.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1592,7 +1597,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-8.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_36.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1612,7 +1617,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-9.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_37.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1637,7 +1642,7 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-10.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_38.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
@@ -1657,11 +1662,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-11.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_39.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">SAIF PL/a>
+                                        <a href="shop-product-right.html">SAIF PL
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -1677,7 +1682,7 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/thumbnail-12.jpg" alt="" /></a>
+                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/pdt_40.png" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>

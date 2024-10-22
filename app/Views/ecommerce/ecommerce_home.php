@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="home-slide-cover mt-30">
                     <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider_1.png)">
+                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider_11.png)">
                             <div class="slider-content">
                                 <h1 class="display-2 mb-40">
                                     Don’t miss amazing<br />
@@ -17,7 +17,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider_2.png)">
+                        <div class="single-hero-slider single-animation-wrap" style="background-image: url(<?php echo base_url('assets/store/') ?>assets/imgs/slider/slider_22.png)">
                             <div class="slider-content">
                                 <h1 class="display-2 mb-40">
                                     Verified brands<br />
