@@ -376,52 +376,51 @@
             </div>
         </div>
 
-        <!-- Start Slider Area  -->
-        <div class="slider-area slider-style-1 variation-default slider-bg-image bg-banner1 slider-bg-shape" data-black-overlay="1">
-            <!-- <div class="bg-blend-top bg_dot-mask"></div> -->
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="inner text-center mt--140">
-                            <h1 class="title display-one">Examine the Potential of
-                                <br> <span class="header-caption">
-                                    <span class="cd-headline rotate-1">
-                                        <span class="cd-words-wrapper" style="width: 221px;">
-                                            <b class="theme-gradient is-visible">AI Chating</b>
-                                            <b class="theme-gradient is-hidden">AI Writing</b>
-                                            <b class="theme-gradient is-hidden">AI Chating</b>
-                                        </span>
+<!-- Start Slider Area  -->
+<div class="slider-area slider-style-1 variation-default slider-bg-image bg-banner1 slider-bg-shape" data-black-overlay="1">
+    <!-- <div class="bg-blend-top bg_dot-mask"></div> -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="inner text-center mt--140">
+                    <h1 class="title display-one">Explore the Future with
+                        <br> <span class="header-caption">
+                            <span class="cd-headline rotate-1">
+                                <span class="cd-words-wrapper" style="width: 221px;">
+                                    <b class="theme-gradient is-visible">AI Solutions</b>
+                                    <b class="theme-gradient is-hidden">Smart Technology</b>
+                                    <b class="theme-gradient is-hidden">Innovation</b>
                                 </span>
-                                </span> AI Hack
-                            </h1>
-                            <p class="description">Unleash Brainwave's AI potential. Use the open AI <br>
-                                conversation
-                                app Rainbow theme</p>
-                            <div class="form-group">
-                                <textarea name="text" id="slider-text-area" cols="30" rows="2" placeholder="Enter a prompt, for example: a fundraising deck to a mobile finance app called Intuitive"></textarea>
-                                <a class="btn-default @@btnClass" href="text-generator.html">Start with AI</a>
-                            </div>
-                            <div class="inner-shape">
-                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-one.png" alt="Icon Shape" class="iconshape iconshape-one">
-                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-two.png" alt="Icon Shape" class="iconshape iconshape-two">
-                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-three.png" alt="Icon Shape" class="iconshape iconshape-three">
-                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-four.png" alt="Icon Shape" class="iconshape iconshape-four">
-                            </div>
-                        </div>
+                        </span>
+                        </span> at ARANEA Platform
+                    </h1>
+                    <p class="description">Join the ARANEA Platform to revolutionize your business with AI-driven tools.<br>
+                        Empower your supply chain, manufacturing, and product distribution strategies.</p>
+                    <div class="form-group">
+                        <textarea name="text" id="slider-text-area" cols="30" rows="2" placeholder="Enter your AI-driven business solution requirements here"></textarea>
+                        <a class="btn-default @@btnClass" href="solutions.html" target="_blank">Explore Solutions</a>
                     </div>
-                    <div class="col-lg-11 col-xl-11 justify-content-center">
-                        <div class="slider-frame">
-                            <img class="slider-image-effect shape-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/bg/slider-main-image.png" alt="Banner Images">
-                            <img class="slider-image-effect shape-light" src="<?php echo base_url('assets/landing/') ?>assets/images/light/bg/slider-main-image.png" alt="Banner Images" style="width: 1055px; height: 897px;">
-                        </div>
+                    <div class="inner-shape">
+                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-one.png" alt="Icon Shape" class="iconshape iconshape-one">
+                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-two.png" alt="Icon Shape" class="iconshape iconshape-two">
+                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-three.png" alt="Icon Shape" class="iconshape iconshape-three">
+                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-four.png" alt="Icon Shape" class="iconshape iconshape-four">
                     </div>
                 </div>
             </div>
-            <div class="bg-shape">
-                <img class="bg-shape-one" src="<?php echo base_url('assets/landing/') ?>assets/images/bg/bg-shape-four.png" alt="Bg Shape">
-                <img class="bg-shape-two" src="<?php echo base_url('assets/landing/') ?>assets/images/bg/bg-shape-five.png" alt="Bg Shape">
+            <div class="col-lg-11 col-xl-11 justify-content-center">
+                <div class="slider-frame">
+                    <img class="slider-image-effect shape-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/bg/slider-main-image.png" alt="Banner Images">
+                    <img class="slider-image-effect shape-light" src="<?php echo base_url('assets/landing/') ?>assets/images/light/bg/slider-main-image.png" alt="Banner Images" style="width: 1055px; height: 897px;">
+                </div>
             </div>
         </div>
+    </div>
+    <div class="bg-shape">
+        <img class="bg-shape-one" src="<?php echo base_url('assets/landing/') ?>assets/images/bg/bg-shape-four.png" alt="Bg Shape">
+        <img class="bg-shape-two" src="<?php echo base_url('assets/landing/') ?>assets/images/bg/bg-shape-five.png" alt="Bg Shape">
+    </div>
+</div>
         <!-- End Slider Area  -->
 
         <!-- Start Brand Area -->
@@ -1131,411 +1130,179 @@
         </div>
         <!-- End CTA Style-one Area  -->
 
-        <!-- Pricing Part -->
-        <div class="aiwave-pricing-area wrapper rainbow-section-gap-big">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
-                            <h4 class="subtitle">
-                                <span class="theme-gradient">Pricing</span>
-                            </h4>
-                            <h2 class="title w-600 mb--40">
-                                Pricing plans for everyone
-                            </h2>
-                        </div>
+        <!-- Start Pricing Style-2  -->
+        <div class="rainbow-pricing-area rainbow-section-gap">
+                <div class="container-fluid">
 
-                        <nav class="aiwave-tab">
-                            <div class="tab-btn-grp nav nav-tabs text-center justify-content-center" id="nav-tab" role="tablist">
-                                <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">
-                                    Monthly
-                                </button>
-                                <button class="nav-link with-badge active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">
-                                    Yearly
-                                    <span class="rainbow-badge-card badge-border">-10%</span>
-                                </button>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-                <div class="tab-content p-0 bg-transparent border-0 border bg-light" id="nav-tabContent">
-                    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="row row--15 mt_dec--40">
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
-                                <div class="rainbow-pricing style-aiwave">
-                                    <div class="pricing-table-inner">
-                                        <div class="pricing-top">
-                                            <div class="pricing-header">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-circle-radiation"></i>
-                                                </div>
-                                                <h4 class="title color-var-one">Basic</h4>
-                                                <p class="subtitle">For large teams & corportaions</p>
-                                                <div class="pricing">
-                                                    <span class="price-text">Free</span>
-                                                </div>
-                                            </div>
-                                            <div class="pricing-body">
-                                                <div class="features-section">
-                                                    <h6>Features</h6>
-                                                    <ul class="list-style--1">
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 7,700
-                                                            3-5 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
-                                                            Blog
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
-                                                            Advance
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="#">Get Started</a>
-                                            <p class="bottom-text">Limited Offer</p>
-                                        </div>
+                    <!-- Pricing Part -->
+                    <div class="wrapper rainbow-section-gap">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="section-title text-center" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                                        <h4 class="subtitle">
+                                        </h4>
+                                        <h2 class="title w-600 mb--20">
+                                        Choose Your Account Types
+                                        </h2>
+                                        <p class="description b1">
+                                        Select the account type that suits your needs and get started.
+                                        </p>
                                     </div>
+
+                                    
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
-                                <div class="rainbow-pricing style-aiwave active">
-                                    <div class="pricing-table-inner">
-                                        <div class="pricing-top">
-                                            <div class="pricing-header">
-                                                <div class="icon">
-                                                    <i class="fa-sharp fa-regular fa-flower"></i>
+                            <div class="tab-content p-0 bg-transparent border-0 border bg-light" id="nav-tabContent">
+                                
+                                <div class="tab-pane fade active show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <div class="row row--15">
+                                        <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--30">
+                                            <div class="rainbow-pricing style-aiwave">
+                                                <div class="pricing-table-inner">
+                                                    <div class="pricing-top">
+                                                        <div class="pricing-header">
+                                                            <div class="icon">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                            <h4 class="title color-var-one">B2B Store</h4>
+                                                            <p class="subtitle">Buy products from our ecommerce store</p>
+                                                            <div class="pricing">
+                                                            </div>
+                                                        </div>
+                                                        <div class="pricing-body">
+                                                            <div class="features-section">
+                                                                <h6>Features</h6>
+                                                                <ul class="list-style--1">
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i> Access to a wide range of products
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i> Exclusive B2B pricing
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i> Easy bulk ordering
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-sharp fa-regular fa-minus-circle"></i> Dedicated customer support
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-sharp fa-regular fa-minus-circle"></i> Advance
+                                                                        Updates via dashboard
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pricing-footer">
+                                                        <a class="btn-default btn-border" href="ecommerce_home">Get Started</a>
+                                                    </div>
                                                 </div>
-                                                <h4 class="title color-var-two">Premium</h4>
-                                                <p class="subtitle">For large teams & corportaions</p>
-                                                <div class="pricing">
-                                                    <span class="price-text">$60.50</span>
-                                                    <span class="text">/Per Month</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--30">
+                                            <div class="rainbow-pricing style-aiwave active">
+                                                <div class="pricing-table-inner">
+                                                    <div class="pricing-top">
+                                                        <div class="pricing-header">
+                                                            <div class="icon">
+                                                                <i class="fa-solid fa-tools"></i>
+                                                            </div>
+                                                            <h4 class="title color-var-two">Supplier/ Manufacturer/ Agent/ Agency/ Distributor/ Franchise</h4>
+                                                            <p class="subtitle">Sell or distribute products through our platform</p>
+                                                         
+                                                        </div>
+                                                        <div class="pricing-body">
+                                                            <div class="features-section has-show-more">
+                                                                <h6>Features</h6>
+                                                                <ul class="list-style--1 has-show-more-inner-content">
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i>Access to a large network of buyers
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i> Competitive pricing strategies
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i> Marketing and sales support
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i> Reliable logistics and distribution
+                                                                    </li>
 
-                                                </div>
-                                            </div>
-                                            <div class="pricing-body">
-                                                <div class="features-section has-show-more">
-                                                    <h6>Features</h6>
-                                                    <ul class="list-style--1 has-show-more-inner-content">
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 12,700
-                                                            7-9 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 7,700
-                                                            3-5 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
-                                                            Blog
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
-                                                            Advance
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                    </ul>
-                                                    <div class="rbt-show-more-btn">Show More</div>
+                                                                    <li>
+                                                                        <i class="fa-sharp fa-regular fa-minus-circle"></i> AI Blog
+                                                                        Updates via dashboard
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-sharp fa-regular fa-minus-circle"></i> Advance
+                                                                        Updates via dashboard
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="rbt-show-more-btn">Show More</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pricing-footer">
+                                                        <a class="btn-default" href="public_login" target="_blank">Get Started</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pricing-footer">
-                                            <a class="btn-default color-blacked" href="#">Get Started</a>
-                                            <p class="bottom-text">Limited Offer</p>
-                                        </div>
-                                    </div>
-                                    <div class="feature-badge">Best Offer</div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
-                                <div class="rainbow-pricing style-aiwave">
-                                    <div class="pricing-table-inner">
-                                        <div class="pricing-top">
-                                            <div class="pricing-header">
-                                                <div class="icon">
-                                                    <i class="fa-sharp fa-regular fa-waveform-lines"></i>
-                                                </div>
-                                                <h4 class="title color-var-three">Enterprise</h4>
-                                                <p class="subtitle">For large teams & corportaions</p>
-                                                <div class="pricing">
-                                                    <span class="price-text">$80.50</span>
-                                                    <span class="text">/Per Month</span>
-                                                </div>
-                                            </div>
-                                            <div class="pricing-body">
-                                                <div class="features-section has-show-more">
-                                                    <h6>Features</h6>
-                                                    <ul class="list-style--1 has-show-more-inner-content">
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 15,700
-                                                            15-30 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 7,700
-                                                            3-5 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
-                                                            Blog
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
-                                                            Advance
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                    </ul>
-                                                    <div class="rbt-show-more-btn">Show More</div>
+                                        <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--30">
+                                            <div class="rainbow-pricing style-aiwave">
+                                                <div class="pricing-table-inner">
+                                                    <div class="pricing-top">
+                                                        <div class="pricing-header">
+                                                            <div class="icon">
+                                                                <i class="fa-sharp fa-regular fa-handshake"></i>
+                                                            </div>
+                                                            <h4 class="title color-var-three">Brand Partner</h4>
+                                                            <p class="subtitle">Invest in products and earn benefits from sales</p>
+                                                            
+                                                        </div>
+                                                        <div class="pricing-body">
+                                                            <div class="features-section has-show-more">
+                                                                <h6>Features</h6>
+                                                                <ul class="list-style--1 has-show-more-inner-content">
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i>Invest in nutraceutical herbal products
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i>Earn benefits on B2B orders
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i> 5-year subscription plan
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-regular fa-circle-check"></i> Turnover benefits
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-sharp fa-regular fa-minus-circle"></i> AI Blog
+                                                                        Updates via dashboard
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa-sharp fa-regular fa-minus-circle"></i> Advance
+                                                                        Updates via dashboard
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="rbt-show-more-btn">Show More</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pricing-footer">
+                                                        <a class="btn-default btn-border" href="partner_signin">Get Started</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="#">Get Started</a>
-                                            <p class="bottom-text">Limited Offer</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade active show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="row row--15 mt_dec--40">
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
-                                <div class="rainbow-pricing style-aiwave">
-                                    <div class="pricing-table-inner">
-                                        <div class="pricing-top">
-                                            <div class="pricing-header">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-circle-radiation"></i>
-                                                </div>
-                                                <h4 class="title color-var-one">Basic</h4>
-                                                <p class="subtitle">For large teams & corportaions</p>
-                                                <div class="pricing">
-                                                    <span class="price-text">Free</span>
-                                                </div>
-                                            </div>
-                                            <div class="pricing-body">
-                                                <div class="features-section">
-                                                    <h6>Features</h6>
-                                                    <ul class="list-style--1">
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 7,700
-                                                            3-5 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
-                                                            Blog
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
-                                                            Advance
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="#">Get Started</a>
-                                            <p class="bottom-text">Limited Offer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
-                                <div class="rainbow-pricing style-aiwave active">
-                                    <div class="pricing-table-inner">
-                                        <div class="pricing-top">
-                                            <div class="pricing-header">
-                                                <div class="icon">
-                                                    <i class="fa-sharp fa-regular fa-flower"></i>
-                                                </div>
-                                                <h4 class="title color-var-two">Premium</h4>
-                                                <p class="subtitle">For large teams & corportaions</p>
-                                                <div class="pricing">
-                                                    <span class="price-text">$499.00</span>
-                                                    <span class="text">/Per Year</span>
 
-                                                </div>
-                                            </div>
-                                            <div class="pricing-body">
-                                                <div class="features-section has-show-more">
-                                                    <h6>Features</h6>
-                                                    <ul class="list-style--1 has-show-more-inner-content">
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 12,700
-                                                            7-9 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 7,700
-                                                            3-5 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
-                                                            Blog
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
-                                                            Advance
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                    </ul>
-                                                    <div class="rbt-show-more-btn">Show More</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pricing-footer">
-                                            <a class="btn-default color-blacked" href="#">Get Started</a>
-                                            <p class="bottom-text">Limited Offer</p>
-                                        </div>
-                                    </div>
-                                    <div class="feature-badge">Best Offer</div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--40">
-                                <div class="rainbow-pricing style-aiwave">
-                                    <div class="pricing-table-inner">
-                                        <div class="pricing-top">
-                                            <div class="pricing-header">
-                                                <div class="icon">
-                                                    <i class="fa-sharp fa-regular fa-waveform-lines"></i>
-                                                </div>
-                                                <h4 class="title color-var-three">Enterprise</h4>
-                                                <p class="subtitle">For large teams & corportaions</p>
-                                                <div class="pricing">
-                                                    <span class="price-text">$599.00</span>
-                                                    <span class="text">/Per Year</span>
-                                                </div>
-                                            </div>
-                                            <div class="pricing-body">
-                                                <div class="features-section has-show-more">
-                                                    <h6>Features</h6>
-                                                    <ul class="list-style--1 has-show-more-inner-content">
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 15,700
-                                                            15-30 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 7,700
-                                                            3-5 day turnarouord
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 6+
-                                                            Naive development
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-circle-check"></i> 5+
-                                                            Task delivered one-by-one
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> AI
-                                                            Blog
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i>
-                                                            Advance
-                                                            Updates via dashboard & slack
-                                                        </li>
-                                                    </ul>
-                                                    <div class="rbt-show-more-btn">Show More</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="#">Get Started</a>
-                                            <p class="bottom-text">Limited Offer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    
+            <!-- End Pricing Style-2  -->
 
         <!-- Service Area -->
         <div class="aiwave-service-area rainbow-section-gap">
