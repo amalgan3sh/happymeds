@@ -13,7 +13,7 @@
                     <div class="col-xl-10 col-lg-12 m-auto">
                         <section class="row align-items-center mb-50">
                             <div class="col-lg-6">
-                                <img src="assets/imgs/page/about_1.jpeg" alt="" class="border-radius-15 mb-md-3 mb-lg-0 mb-sm-4" />
+                                <img src="<?php echo base_url('assets/store/') ?>assets/imgs/page/about.jpg" alt="abt img" class="border-radius-15 mb-md-3 mb-lg-0 mb-sm-4" />
                             </div>
                             <div class="col-lg-6">
                                 <div class="pl-25">
@@ -31,10 +31,10 @@
                                     <div class="carausel-3-columns-cover position-relative">
                                         <div id="carausel-3-columns-arrows"></div>
                                         <div class="carausel-3-columns" id="carausel-3-columns">
-                                            <img src="assets/imgs/page/about-2.png" alt="" />
-                                            <img src="assets/imgs/page/about-3.png" alt="" />
-                                            <img src="assets/imgs/page/about-4.png" alt="" />
-                                            <img src="assets/imgs/page/about-2.png" alt="" />
+                                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/page/about_2.jpg" alt="" />
+                                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/page/about_3.png" alt="" />
+                                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/page/about_4.jpg" alt="" />
+                                            <img src="<?php echo base_url('assets/store/') ?>assets/imgs/page/about_5.jpeg" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -96,7 +96,7 @@
                         <section class="row align-items-center mb-50">
                             <div class="row mb-50 align-items-center">
                                 <div class="col-lg-7 pr-30">
-                                    <img src="assets/imgs/page/about-5.png" alt="" class="mb-md-3 mb-lg-0 mb-sm-4" />
+                                    <img src="<?php echo base_url('assets/store/') ?>assets/imgs/page/about_6.png" alt="" class="mb-md-3 mb-lg-0 mb-sm-4" />
                                 </div>
                                 <div class="col-lg-5">
                                     <h4 class="mb-20 text-muted">Our performance</h4>
