@@ -207,7 +207,6 @@
         const searchInput = document.getElementById('searchBar').value.toLowerCase();
         const products = document.querySelectorAll('.product-item');
         let hasVisibleProducts = false;
-
         products.forEach(product => {
             const productName = product.getAttribute('data-name');
             if (productName.includes(searchInput)) {

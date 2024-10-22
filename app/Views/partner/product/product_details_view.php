@@ -227,7 +227,7 @@
 												</p>
 												<p class="text-content">
                                                 <?= esc($product['TherapeuticUse']) ?>
-												</p>
+												</p> 
 												<div class="d-flex align-items-end flex-wrap mt-4">
 												<div class="shopping-cart me-3 mt-xl-0 mt-2">
 													<?php if (in_array($_SESSION['user_data']['kyc_verify'], ['-', 'pending', 'rejected'])): ?>

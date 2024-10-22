@@ -300,7 +300,6 @@
             </div>
             <h2>Payment Succeeded!</h2>
             <p>Thank you for your payment. You can view or download your receipt below.</p>
-            
             <!-- Buttons to View and Download Receipt -->
             <div class="receipt-options">
                 <!-- <button class="btn btn-success" onclick="viewReceipt()">View Receipt</button> -->
