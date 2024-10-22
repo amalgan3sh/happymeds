@@ -42,6 +42,32 @@ class PublicController extends BaseController
         ]);
     }
 
+    public function get_started(): string
+    {
+        return $this->renderView('get_started', [
+            'public/public_header',
+            'public/get_started',
+            'public/public_footer'
+        ]);
+    }
+    public function partner_signin(): string
+    {
+        return $this->renderView('partner_signin', [
+            'public/public_header',
+            'public/partner_signin',
+            'public/public_footer'
+        ]);
+    }
+
+    public function partner_register(): string
+    {
+        return $this->renderView('partner_register', [
+            'public/public_header',
+            'public/partner_register',
+            'public/public_footer'
+        ]);
+    }
+
     public function customer_registration(): string
     {
         return $this->renderView('customer_registration_view', [
@@ -144,17 +170,17 @@ class PublicController extends BaseController
     public function publicLogin(): string
     {
         return $this->renderView('public_login_view', [
-            'public/public_header',
+            // 'public/public_header',
             'public/public_login',
-            'public/public_footer'
+            // 'public/public_footer'
         ]);
     }
     public function publicRegisteration(): string
     {
         return $this->renderView('public_login_view', [
-            'public/public_header',
+            // 'public/public_header',
             'public/public_register',
-            'public/public_footer'
+            // 'public/public_footer'
         ]);
     }
 
@@ -178,7 +204,7 @@ class PublicController extends BaseController
 
         $this->cache->delete('brand_partner_registration_view');
 
-        return redirect()->to('/customer_login');
+        return redirect()->to('/partner_signin');
     }
 
     public function loginProcess(): ResponseInterface

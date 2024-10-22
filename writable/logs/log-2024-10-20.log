@@ -1,0 +1,92 @@
+INFO - 2024-10-20 10:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 10:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 10:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 10:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 10:57:03 --> Investment Check - User ID: 5, Product ID: 1
+ERROR - 2024-10-20 10:57:03 --> mysqli_sql_exception: Unknown column 'user_id' in 'where clause' in /Applications/MAMP/htdocs/happymeds/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /Applications/MAMP/htdocs/happymeds/system/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /Applications/MAMP/htdocs/happymeds/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /Applications/MAMP/htdocs/happymeds/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /Applications/MAMP/htdocs/happymeds/system/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Applications/MAMP/htdocs/happymeds/system/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 /Applications/MAMP/htdocs/happymeds/app/Models/ProductHoldingsModel.php(71): CodeIgniter\Model->countAllResults()
+#6 /Applications/MAMP/htdocs/happymeds/app/Controllers/PartnerController.php(141): App\Models\ProductHoldingsModel->checkProductHolding('1', 5)
+#7 /Applications/MAMP/htdocs/happymeds/system/CodeIgniter.php(933): App\Controllers\PartnerController->checkInvestment()
+#8 /Applications/MAMP/htdocs/happymeds/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+#9 /Applications/MAMP/htdocs/happymeds/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/happymeds/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 /Applications/MAMP/htdocs/happymeds/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/MAMP/htdocs/happymeds/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-10-20 10:57:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'where clause'
+[Method: GET, Route: check_investment]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `product_holdings`
+WHERE `product_id` = :product_id:
+AND `user_id` = :user_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH/Models/ProductHoldingsModel.php(71): CodeIgniter\Model->countAllResults()
+ 4 APPPATH/Controllers/PartnerController.php(141): App\Models\ProductHoldingsModel->checkProductHolding('1', 5)
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PartnerController->checkInvestment()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 10:57:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `product_holdings`
+WHERE `product_id` = \'1\'
+AND `user_id` = 5')
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `product_holdings`
+WHERE `product_id` = \'1\'
+AND `user_id` = 5')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `product_holdings`
+WHERE `product_id` = :product_id:
+AND `user_id` = :user_id:', [...], false)
+ 4 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH/Models/ProductHoldingsModel.php(71): CodeIgniter\Model->countAllResults()
+ 6 APPPATH/Controllers/PartnerController.php(141): App\Models\ProductHoldingsModel->checkProductHolding('1', 5)
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PartnerController->checkInvestment()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 10:57:03 --> [Caused by] mysqli_sql_exception: Unknown column 'user_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `product_holdings`
+WHERE `product_id` = \'1\'
+AND `user_id` = 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `product_holdings`
+WHERE `product_id` = \'1\'
+AND `user_id` = 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `product_holdings`
+WHERE `product_id` = \'1\'
+AND `user_id` = 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1713): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `product_holdings`
+WHERE `product_id` = :product_id:
+AND `user_id` = :user_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH/Models/ProductHoldingsModel.php(71): CodeIgniter\Model->countAllResults()
+ 7 APPPATH/Controllers/PartnerController.php(141): App\Models\ProductHoldingsModel->checkProductHolding('1', 5)
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PartnerController->checkInvestment()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-20 10:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 10:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 10:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 10:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 10:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
