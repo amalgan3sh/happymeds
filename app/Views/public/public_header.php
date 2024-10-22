@@ -50,7 +50,7 @@
                     <div class="col-lg-2 col-md-6 col-6">
                         <div class="logo">
                             <a href="index.html">
-                                <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo.png" alt="Healthcare Logo">
+                                <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="Healthcare Logo">
                                 <img class="logo-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/light/logo/logo-dark.png" alt="Healthcare Logo">
                             </a>
                         </div>

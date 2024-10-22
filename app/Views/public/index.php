@@ -521,7 +521,7 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-vedio.png" alt="Chat example Image">
+                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/brand_partner.webp" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -554,8 +554,8 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img class="shape-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-audio.png" alt="Chat example Image">
-                                                    <img class="shape-light" src="<?php echo base_url('assets/landing/') ?>assets/images/light/generator-img/chat-export-audio.png" alt="Chat example Image">
+                                                    <img class="shape-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/b2b_partner.webp" alt="Chat example Image">
+                                                    <img class="shape-light" src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/b2b_partner.webp" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -588,7 +588,7 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-photo.png" alt="Chat example Image">
+                                                    <img src="https://media.licdn.com/dms/image/D4D12AQE-6tK6I_wS0g/article-cover_image-shrink_720_1280/0/1715235394941?e=2147483647&v=beta&t=XRMydgCcIuhcqz5vkVLZlWwg79E3VKG3CYZVq0fDAg8" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -621,7 +621,7 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export.png" alt="Chat example Image">
+                                                    <img src="https://i1.sndcdn.com/artworks-exSvky0QMFUlIB92-JGVyaw-t500x500.jpg" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -654,7 +654,7 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-code.png" alt="Chat example Image">
+                                                    <img src="https://media.licdn.com/dms/image/D5612AQFJgprdIC2qlQ/article-cover_image-shrink_720_1280/0/1719033574633?e=2147483647&v=beta&t=Ujr9FQKmhzzb6hKl8lDHNdGdUJxvbdTyIBajjdxCvyQ" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -832,7 +832,7 @@
                                     <div class="row g-0 radius-10 align-items-center">
                                         <div class="col-lg-12 col-xl-5 col-12">
                                             <div class="thumbnail">
-                                                <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-1.png" alt="split Images">
+                                                <img class="radius" src="https://t3.ftcdn.net/jpg/04/76/98/34/360_F_476983486_lpgFNMTmvb6F1pFMnooOQotgpyoM2PVG.jpg" alt="split Images">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-xl-7 col-12">
@@ -1012,7 +1012,7 @@
                     <img src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-2.png" alt="collabration-image">
                     <div class="logo-section">
                         <div class="center-logo">
-                            <img class="shape-dark" src="assets/images/split/split-2-logo.png" alt="Small Logo">
+                            <img class="shape-dark" src="<?php echo base_url('assets/') ?>assets/img/illustrations/ARANEA_WHITE.png" alt="Small Logo">
                             <img class="shape-light" src="assets/images/light/split/split-2-logo.png" alt="Small Logo">
                         </div>
                     </div>
@@ -1571,7 +1571,7 @@
                         </div>
                         <div class="content-right">
                             <div class="img-right">
-                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/view-img.png" alt="Mobile View">
+                                <img src="https://media.licdn.com/dms/image/C4E12AQHQ93UQ1be7vQ/article-cover_image-shrink_720_1280/0/1617704785828?e=2147483647&v=beta&t=ch0dFZwVNrcS_djoAn5HQ8LIuynffa7KZj-7ahKDHJs" alt="Mobile View">
                             </div>
                         </div>
                         <div class="bg-shape-one">
