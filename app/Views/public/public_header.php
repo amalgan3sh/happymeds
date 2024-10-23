@@ -49,7 +49,7 @@
                 <div class="row align-items-center row--0">
                     <div class="col-lg-2 col-md-6 col-6">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="<?php echo base_url('/')?>">
                                 <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="Healthcare Logo">
                                 <img class="logo-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/light/logo/logo-dark.png" alt="Healthcare Logo">
                             </a>
@@ -104,26 +104,26 @@
                                                             <h3 class="rbt-short-title">About Us</h3>
                                                         </li>
                                                         <li>
-                                                            <a href="about-us.html">
-                                                                <span>About Us</span>
+                                                            <a href="our_team">
+                                                                <span>Our Team</span>
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="blog.html">
+                                                            <a href="blog">
                                                                 <span>Blog</span>
                                                             </a>
                                                         </li>
-                                                        <li>
+                                                        <!-- <li>
                                                             <a href="pricing.html">
                                                                 <span>Pricing</span>
                                                             </a>
-                                                        </li>
+                                                        </li> -->
                                                         <li>
                                                             <a href="contact.html">
                                                                 <span>Contact</span>
                                                             </a>
                                                         </li>
-                                                        <li>
+                                                        <!-- <li>
                                                             <a href="signin.html">
                                                                 <span>Sign In</span>
                                                             </a>
@@ -132,14 +132,14 @@
                                                             <a href="signup.html">
                                                                 <span>Sign Up</span>
                                                             </a>
-                                                        </li>
+                                                        </li> -->
                                                         <li>
-                                                            <a href="terms-policy.html">
+                                                            <a href="terms_and_conditions">
                                                                 <span>Terms & Policy</span>
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="privacy-policy.html">
+                                                            <a href="privacy_and_policy">
                                                                 <span>Privacy Policy</span>
                                                             </a>
                                                         </li>
@@ -151,23 +151,27 @@
                                                             <h3 class="rbt-short-title">Procurement System</h3>
                                                         </li>
                                                         <li>
-                                                            <a href="procurement-system.html">
+                                                            <a href="#">
                                                                 <span>Bulk Orders</span>
+                                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="inventory-management.html">
+                                                            <a href="#">
                                                                 <span>Inventory Management</span>
+                                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="analytics.html">
+                                                            <a href="#">
                                                                 <span>Supply Chain Analytics</span>
+                                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <a href="hospital-management.html">
+                                                            <a href="#">
                                                                 <span>Hospital Management</span>
+                                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -207,9 +211,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="roadmap.html">Roadmap</a></li>
+                                <li><a href="roadmap">Roadmap</a></li>
                                 <li><a href="how_to_use">How to use</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact_us">Contact</a></li>
                             </ul>
                         </nav>
                     </div>

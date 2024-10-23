@@ -105,6 +105,12 @@ $routes->get('key_features', 'PublicController::key_features');
 $routes->get('collaboration', 'PublicController::collaboration');
 $routes->get('partnership', 'PublicController::partnership');
 $routes->get('sustainability', 'PublicController::sustainability');
+$routes->get('our_team', 'PublicController::our_team');
+$routes->get('blog', 'PublicController::blog');
+$routes->get('terms_and_conditions', 'PublicController::terms_and_conditions');
+$routes->get('privacy_and_policy', 'PublicController::privacy_and_policy');
+$routes->get('roadmap', 'PublicController::roadmap');
+$routes->get('contact_us', 'PublicController::contact_us');
 
 
 

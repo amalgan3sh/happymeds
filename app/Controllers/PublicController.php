@@ -186,6 +186,58 @@ class PublicController extends BaseController
             'public/public_footer'
         ]);
     }
+    public function our_team(): string
+    {
+        return $this->renderView('our_team_view', [
+            'public/public_header',
+            'public/our_team',
+            'public/public_footer'
+        ]);
+    }
+
+    public function blog(): string
+    {
+        return $this->renderView('blog_view', [
+            'public/public_header',
+            'public/blog',
+            'public/public_footer'
+        ]);
+    }
+    public function terms_and_conditions(): string
+    {
+        return $this->renderView('terms_and_conditions_view', [
+            'public/public_header',
+            'public/terms_and_conditions',
+            'public/public_footer'
+        ]);
+    }
+
+    public function privacy_and_policy(): string
+    {
+        return $this->renderView('privacy_and_policy_view', [
+            'public/public_header',
+            'public/privacy_and_policy',
+            'public/public_footer'
+        ]);
+    }
+
+    public function roadmap(): string
+    {
+        return $this->renderView('roadmap_view', [
+            'public/public_header',
+            'public/roadmap',
+            'public/public_footer'
+        ]);
+    }
+
+    public function contact_us(): string
+    {
+        return $this->renderView('contact_us_view', [
+            'public/public_header',
+            'public/contact_us',
+            'public/public_footer'
+        ]);
+    }
 
     public function OTPVerification(): string
     {
