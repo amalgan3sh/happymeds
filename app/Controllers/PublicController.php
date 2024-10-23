@@ -136,6 +136,56 @@ class PublicController extends BaseController
             'public/public_footer'
         ]);
     }
+    public function vision(): string
+    {
+        return $this->renderView('vision_view', [
+            'public/public_header',
+            'public/vision',
+            'public/public_footer'
+        ]);
+    }
+    public function mission(): string
+    {
+        return $this->renderView('vision_view', [
+            'public/public_header',
+            'public/mission',
+            'public/public_footer'
+        ]);
+    }
+    public function key_features(): string
+    {
+        return $this->renderView('vision_view', [
+            'public/public_header',
+            'public/key_features',
+            'public/public_footer'
+        ]);
+    }
+
+    public function collaboration(): string
+    {
+        return $this->renderView('collaboration_view', [
+            'public/public_header',
+            'public/collaboration',
+            'public/public_footer'
+        ]);
+    }
+    public function partnership(): string
+    {
+        return $this->renderView('partnership_view', [
+            'public/public_header',
+            'public/partnership',
+            'public/public_footer'
+        ]);
+    }
+
+    public function sustainability(): string
+    {
+        return $this->renderView('partnership_view', [
+            'public/public_header',
+            'public/sustainability',
+            'public/public_footer'
+        ]);
+    }
 
     public function OTPVerification(): string
     {

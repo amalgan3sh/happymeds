@@ -63,32 +63,32 @@
                                 <li class="has-dropdown has-menu-child-item position-relative"><a href="#">Healthcare Program <i class="fa-regular fa-chevron-down"></i></a>
                                     <ul class="submenu">
                                         <li>
-                                            <a href="vision.html">
+                                            <a href="vision">
                                                 <span>Vision</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="mission.html">
+                                            <a href="mission">
                                                 <span>Mission</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="key-features.html">
+                                            <a href="key_features">
                                                 <span>Key Features</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="collaborations.html">
+                                            <a href="collaboration">
                                                 <span>Collaboration Opportunities</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="partnerships.html">
+                                            <a href="partnership">
                                                 <span>Partnership Expansion</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="sustainability.html">
+                                            <a href="sustainability">
                                                 <span>Sustainability Projects</span>
                                             </a>
                                         </li>
