@@ -23,6 +23,67 @@
             opacity: 0.5;
             cursor: not-allowed;
         }
+        /* Success Animation */
+        .success-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .checkmark-circle {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            animation: circle-grow 1s ease-out forwards;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            width: 50px;
+            height: 100px;
+            border-right: 8px solid white;
+            border-bottom: 8px solid white;
+            transform: rotate(45deg);
+            animation: checkmark-draw 0.5s 1.2s ease-out forwards;
+        }
+
+        @keyframes circle-grow {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes checkmark-draw {
+            0% {
+                width: 0;
+                height: 0;
+            }
+            100% {
+                width: 60px;
+                height: 100px;
+            }
+        }
+
+        /* Receipt Options */
+        .receipt-options {
+            margin-top: 20px;
+        }
+
+        .receipt-options .btn {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
     </style>
 </head>
 <!--**********************************
@@ -49,7 +110,7 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 choose-plan">
-        <div class="pricing-card basic">
+        <div class="pricing-card basic" id="planCard1" data-amount="3000" onclick="selectPlan(this)">
         <div class="heading">
           <h5>Co Brand Partner</h5>
           <h4>BASIC</h4>
@@ -81,7 +142,7 @@
         </ul>
         <button class="cta-btn select-plan" data-plan="basic">SELECT</button>
       </div>
-      <div class="pricing-card standard">
+      <div class="pricing-card standard" id="planCard2" data-amount="6000" onclick="selectPlan(this)">
         <div class="heading">
           <h5>Co Brand Partner</h5>
           <h4>STANDARD</h4>
@@ -113,7 +174,7 @@
         </ul>
         <button class="cta-btn select-plan" data-plan="standard">SELECT</button>
       </div>
-      <div class="pricing-card premium">
+      <div class="pricing-card premium"  id="planCard3" data-amount="9000" onclick="selectPlan(this)">
         <div class="heading">
           <h5>Co Brand Partner</h5>
           <h4>PREMIUM</h4>
@@ -224,11 +285,28 @@
                 <input type="checkbox" id="acceptTerms" disabled>
                 I have read and accept the terms and conditions
             </label>
-            
-            <button id="proceed-button" class="proceed-btn" disabled>Proceed</button>
+            <div>
+            <!-- Proceed Button inside a form or modal -->
+                <button type="button" id="proceed-button" class="btn btn-primary" onclick="proceedWithDeposit()">Proceed</button>
+            </div>
         </div>
     </div>
-				
+		<!-- Success Animation and Receipt Options -->
+        <div id="payment-success-container" class="popup-modal" style="display:none;">
+        <div class="popup-modal-content">
+            <div class="checkmark-circle">
+                <div class="background"></div>
+                <div class="checkmark"></div>
+            </div>
+            <h2>Payment Succeeded!</h2>
+            <p>Thank you for your payment. You can view or download your receipt below.</p>
+            <!-- Buttons to View and Download Receipt -->
+            <div class="receipt-options">
+                <!-- <button class="btn btn-success" onclick="viewReceipt()">View Receipt</button> -->
+                <button class="btn btn-primary" onclick="generatePDFReceipt()">Download Receipt</button>
+            </div>
+    </div>
+        </div>
             </div>
         </div>
         <!--**********************************
@@ -343,53 +421,200 @@
           proceedButton.disabled = !this.checked;
       });
 
-      proceedButton.addEventListener("click", function() {
-        const selectedPlanName = document.getElementById("selected-plan-name").innerHTML;
-              const productId = document.getElementById('product_id').value; // Replace with the actual product ID
-              const userId = <?php echo htmlspecialchars($_SESSION['user_data']['user_id']) ?>; // Replace with the actual user ID
-              const proceedButton = this; // The button that was clicked
-              const messageContainer = document.createElement('div');
+  });
+    </script>
+    <script>
+      var selectedDepositAmount = null;
 
-              fetch('<?php echo base_url('select_plan') ?>', {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/x-www-form-urlencoded'
-                  },
-                  body: new URLSearchParams({
-                      'plan': selectedPlanName,
-                      'product_id': productId,
-                      'user_id': userId
-                  })
-              })
-              .then(response => response.json())
+function selectPlan(cardElement) {
+    // Remove the selected class from all cards
+    var cards = document.querySelectorAll('.card');
+    cards.forEach(function(card) {
+        card.classList.remove('selected');
+    });
+
+    // Add the selected class to the clicked card
+    cardElement.classList.add('selected');
+
+    // Get the deposit amount from the selected card
+    selectedDepositAmount = cardElement.getAttribute('data-amount');
+    
+    // Optionally, update the UI to reflect the selected plan
+    // alert("You have selected the plan with ₹" + selectedDepositAmount);
+}
+
+      function proceedWithDeposit() {
+    // Get the input values
+    var depositAmount = selectedDepositAmount;
+    var userName = '<?php echo htmlspecialchars($_SESSION['user_data']['user_name']) ?>';
+    var userEmail = '<?php echo htmlspecialchars($_SESSION['user_data']['email']) ?>';
+    const selectedPlanName = document.getElementById("selected-plan-name").innerHTML;
+    const productId = document.getElementById('product_id').value; // Replace with the actual product ID
+    const userId = <?php echo htmlspecialchars($_SESSION['user_data']['user_id']) ?>; // Replace with the actual user ID
+    const proceedButton = this; // The button that was clicked
+    const messageContainer = document.createElement('div');
+
+    // Send form data to save in select_plan table using AJAX before starting payment
+    var formData = {
+        amount: depositAmount,
+        name: userName,
+        email: userEmail
+    };
+
+    fetch('<?php echo base_url('select_plan') ?>', {  // Replace with your actual URL to save data
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            'plan': selectedPlanName,
+            'product_id': productId,
+            'user_id': userId
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            // Proceed with Razorpay payment initialization if saving is successful
+            initializeRazorpayPayment(depositAmount, userName, userEmail);
+        } else {
+            alert("Failed to save plan details. Please try again.");
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert("An error occurred while saving the plan details.");
+    });
+}
+
+function initializeRazorpayPayment(depositAmount, userName, userEmail) {
+    // Initialize Razorpay payment
+    var options = {
+        key: "rzp_test_weHunbcno354Ko", // Replace with your Razorpay Key ID
+        amount: depositAmount * 100, // Amount in paise
+        currency: "INR",
+        name: "Aranea",
+        description: "Deposit Payment",
+        handler: function (response) {
+            // Payment was successful, send data to server
+            var paymentData = {
+                amount: depositAmount,
+                payment_id: response.razorpay_payment_id,
+                name: userName,
+                email: userEmail
+            };
+
+            // Send payment data to server using AJAX
+            fetch('<?php echo base_url('transaction/save') ?>', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest' // Required for CodeIgniter to detect AJAX request
+                },
+                body: JSON.stringify(paymentData)
+            })
+            .then(response => response.json())
             .then(data => {
-                if (data.status === 'success') {
-                    // Hide the proceed button
-                    proceedButton.style.display = 'none';
-
-                    // Display the success message
-                    messageContainer.className = 'success-message';
-                    messageContainer.innerText = data.message;
-                    proceedButton.parentNode.insertBefore(messageContainer, proceedButton.nextSibling);
+                console.log(data.paymentData);
+                window.paymentData = paymentData;
+                if (data.success) {
+                    showSuccessScreen(data.paymentData);
                 } else {
-                    // Display the error message
-                    messageContainer.className = 'error-message';
-                    messageContainer.innerText = data.message;
-                    proceedButton.parentNode.insertBefore(messageContainer, proceedButton.nextSibling);
+                    alert("Payment Successful but failed to save data.");
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-
-                // Display a generic error message
-                messageContainer.className = 'error-message';
-                messageContainer.innerText = 'An error occurred. Please try again later.';
-                proceedButton.parentNode.insertBefore(messageContainer, proceedButton.nextSibling);
+                alert("Payment Successful but an error occurred while saving data.");
             });
-      });
-  });
-    </script>
+        },
+        prefill: {
+            name: userName,
+            email: userEmail
+        },
+        theme: {
+            color: "#3399cc"
+        }
+    };
+
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+
+    // Close the modal if open
+    var modal = document.getElementById("exampleModal1");
+    if (modal) {
+        var modalInstance = bootstrap.Modal.getInstance(modal);
+        modalInstance.hide();
+    }
+}
+
+function showSuccessScreen() {
+    // Hide the modal
+    document.getElementById('confirmationModal').style.display = 'none';
+
+    // Show the payment success container with animation
+    document.getElementById('payment-success-container').style.display = 'block';
+}
+
+// Function to view receipt (can open in a new window or modal)
+function viewReceipt() {
+    window.open('<?php echo base_url("view_receipt") ?>', '_blank');
+}
+
+
+
+function generatePDFReceipt(paymentData) {
+    const paymentDataDownload = window.paymentData;
+
+    if (!paymentDataDownload) {
+        console.error("Payment data not available");
+        return;
+    }
+    console.log(paymentDataDownload);
+    // Create a new jsPDF instance
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // Add content to the PDF
+    doc.setFontSize(20);
+    doc.text("Payment Receipt", 20, 20);
     
+    doc.setFontSize(12);
+    doc.text(`Transaction ID: ${paymentDataDownload.payment_id}`, 20, 40);
+    doc.text(`Amount: ₹${paymentDataDownload.amount}`, 20, 50);
+    doc.text(`Payment Method: Razorpay`, 20, 60);
+    doc.text(`Name: ${paymentDataDownload.name}`, 20, 70);
+    doc.text(`Email: ${paymentDataDownload.email}`, 20, 80);
+    doc.text(`Date: ${new Date().toLocaleDateString()}`, 20, 90);
+    
+    // Save the PDF and allow the user to download it
+    doc.save("receipt.pdf");
+}
+
+
+      </script>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	
+	<!-- Apex Chart -->
+	<script src="vendor/apexchart/apexchart.js"></script>
+	<script src="vendor/chart-js/chart.bundle.min.js"></script>
+
+	<!-- counter -->
+	<script src="vendor/counter/counter.min.js"></script>
+	<script src="vendor/counter/waypoint.min.js"></script>
+	
+	<!-- Chart piety plugin files -->
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+	<script src="vendor/swiper/js/swiper-bundle.min.js"></script>
+	
+	<!-- Dashboard 1 -->
+	<script src="js/dashboard/dashboard-1.js"></script>
+    <script src="js/custom.min.js"></script>
+	<script src="js/dlabnav-init.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 </body>
 </html>
