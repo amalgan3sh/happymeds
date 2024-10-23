@@ -94,6 +94,7 @@ $routes->post('transactions/download_receipt', 'TransactionController::save');
 $routes->get('get_started', 'PublicController::get_started');
 $routes->get('partner_signin', 'PublicController::partner_signin');
 $routes->get('partner_register', 'PublicController::partner_register');
+$routes->get('how_to_use', 'PublicController::how_to_use');
 
 
 

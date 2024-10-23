@@ -208,7 +208,7 @@
                                     </div>
                                 </li>
                                 <li><a href="roadmap.html">Roadmap</a></li>
-                                <li><a href="how-to-use.html">How to use</a></li>
+                                <li><a href="how_to_use">How to use</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>

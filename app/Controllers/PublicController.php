@@ -145,6 +145,14 @@ class PublicController extends BaseController
             'public/public_footer'
         ]);
     }
+    public function how_to_use(): string
+    {
+        return $this->renderView('otp_verification_view', [
+            'public/public_header',
+            'public/how_to_use',
+            'public/public_footer'
+        ]);
+    }
 
     public function register_customer(): ResponseInterface
     {
