@@ -93,6 +93,7 @@ $routes->get('/kids_medicine', 'StoreController::KidsMedicineEcommerce');
 $routes->get('/adult_medicine', 'StoreController::AdultMedicine');
 
 $routes->post('transaction/save', 'TransactionController::save');
+$routes->post('transactions/download_receipt', 'TransactionController::save');
 
 $routes->get('get_started', 'PublicController::get_started');
 $routes->get('partner_signin', 'PublicController::partner_signin');

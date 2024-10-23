@@ -35,11 +35,11 @@ class TransactionController extends BaseController
         // Prepare data for saving in the database
         $transactionModel = new TransactionModel();
         $data = [
-            'user_id' => 1, // Replace with a valid user_id from your users table
-            'amount' => 1000.00,
-            'payment_id' => 'TEST12345',
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'user_id' => $user_id, // Replace with a valid user_id from your users table
+            'amount' => $input->amount,
+            'payment_id' => $input->payment_id,
+            'name' => $input->name,
+            'email' => $input->email,
             'status' => 'success',
             'created_at' => date('Y-m-d H:i:s')
         ];
@@ -48,7 +48,8 @@ class TransactionController extends BaseController
         if ($transactionModel->insert($data)) {
             return $this->response->setJSON([
                 'success' => true,
-                'message' => 'Transaction saved successfully'
+                'message' => 'Transaction saved successfully',
+                'paymentData'    => $data
             ]);
         } else {
             // Get the error messages
