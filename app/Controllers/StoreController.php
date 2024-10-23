@@ -37,5 +37,27 @@ class StoreController extends Controller
         echo view('ecommerce/ecommerce_footer');
     }
 
+    public function accountEcommerce()
+    {
+        echo view('ecommerce/account');
+    }
 
+    public function contacttEcommerce()
+    {
+        echo view('ecommerce/contact');
+    }
+
+    public function KidsMedicineEcommerce()
+    {
+        echo view('ecommerce/ecommerce_header');
+        echo view('ecommerce/kids_medicine');
+        echo view('ecommerce/ecommerce_footer');
+    }
+
+    public function AdultMedicine()
+    {
+        echo view('ecommerce/ecommerce_header');
+        echo view('ecommerce/adult_medicine');
+        echo view('ecommerce/ecommerce_footer');
+    }
 }
