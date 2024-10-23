@@ -87,6 +87,10 @@ $routes->get('/ecommerce_home', 'StoreController::EcommerceHome');
 $routes->get('/home_page_ecommerce', 'StoreController::HomePageEcommerce');
 $routes->get('/shop_ecommerce', 'StoreController::ShopEcommerce');
 $routes->get('/about', 'StoreController::aboutEcommerce');
+$routes->get('/account', 'StoreController::accountEcommerce');
+$routes->get('/contact', 'StoreController::contactEcommerce');
+$routes->get('/kids_medicine', 'StoreController::KidsMedicineEcommerce');
+$routes->get('/adult_medicine', 'StoreController::AdultMedicine');
 
 $routes->post('transaction/save', 'TransactionController::save');
 
