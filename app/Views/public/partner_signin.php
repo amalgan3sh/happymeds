@@ -86,49 +86,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 right-wrapper">
-                        <div class="client-feedback-area">
-                            <div class="single-feedback">
-                                <div class="inner">
-                                    <div class="meta-img-section">
-                                        <a class="image" href="#">
-                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-02sm.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="rating">
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                    </div>
-                                    <div class="content">
-                                        <p class="description">Rainbow-Themes is now a crucial component of our work! We
-                                            made it simple to collaborate across departments by grouping our work</p>
-                                        <div class="bottom-content">
-                                            <div class="meta-info-section">
-                                                <h4 class="title-text mb--0">Guy Hawkins</h4>
-                                                <p class="desc mb--20">Nursing Assistant</p>
-                                                <div class="desc-img">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-t.png" alt="Brand Image">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-lg-6 right-wrapper" style="position: relative; background-image: url('https://rainbowthemes.net/html/aiwave/assets/images/cta-img/view-img.png'); background-size: 70%; background-position: center; background-repeat: no-repeat;">
+    <div class="client-feedback-area">
+        <div class="single-feedback">
+            <!-- Content goes here -->
+        </div>
+    </div>
+    
+    <!-- Additional images around the main background image -->
+    <!-- <div class="extra-image image-3" style="position: absolute; top: 20%; left: 20%; width: 12%;">
+        <img src="images/background/pic3.png" alt="Image 3">
+    </div>
+    <div class="extra-image image-4" style="position: absolute; top: 20%; right: 20%; width: 12%;">
+        <img src="images/background/pic4.png" alt="Image 4">
+    </div>
+    <div class="extra-image image-5" style="position: absolute; bottom: 20%; left: 20%; width: 12%;">
+        <img src="images/background/pic5.png" alt="Image 5">
+    </div> -->
+</div>
                 </div>
             </div>
             <a class="close-button" href="index.html">

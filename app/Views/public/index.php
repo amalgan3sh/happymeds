@@ -399,10 +399,10 @@
                     </h1>
                     <p class="description">Join the ARANEA Platform to revolutionize your business with AI-driven tools.
                         <br> Empower your supply chain, manufacturing, and product distribution strategies.</p>
-                    <div class="form-group">
-                        <textarea name="text" id="slider-text-area" cols="30" rows="2" placeholder="Enter your AI-driven business solution requirements here"></textarea>
-                        <a class="btn-default @@btnClass" href="solutions.html" target="_blank">Explore Solutions</a>
-                    </div>
+                        <div class="form-group">
+                            <textarea name="text" id="slider-text-area" cols="30" rows="2" placeholder="Enter your ARANEA collaboration or investment opportunities here"></textarea>
+                            <a class="btn-default @@btnClass" href="get_started" target="_blank">Explore Solutions</a>
+                        </div>
                     <div class="inner-shape">
                         <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-one.png" alt="Icon Shape" class="iconshape iconshape-one">
                         <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-two.png" alt="Icon Shape" class="iconshape iconshape-two">
