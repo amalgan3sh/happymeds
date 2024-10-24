@@ -10,7 +10,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="assets/images/collaboration/collaboration-01.png" alt="Collaboration Image">
+                                            <img class="w-100 radius" src="https://futuramo.com/blog/wp-content/uploads/2018/06/Why-You-Should-Consider-Collaborating-1108x800.jpg" alt="Collaboration Image">
                                         </div>
                                         <ul class="rainbow-meta-list">
                                             <li>
@@ -54,7 +54,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="assets/images/collaboration/collaboration-02.png" alt="Collaboration Image">
+                                            <img class="w-100 radius" src="https://media.licdn.com/dms/image/v2/C5612AQEDLWu4CEOZog/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1520130803074?e=2147483647&v=beta&t=jFD14dar_wpBDuravgQk3kL9wjoApOlrekP2WFoV7O4" alt="Collaboration Image">
                                         </div>
                                     </div>
                                 </div>
@@ -78,40 +78,63 @@
                                             </div>
                                         </div>
 
-                                        <!-- Start Contact Form Area -->
-                                        <div class="rainbow-comment-form pt--60">
-                                            <div class="inner">
-                                                <div class="section-title">
-                                                    <span class="subtitle">Interested in Collaboration?</span>
-                                                    <h2 class="title">Contact Us</h2>
-                                                </div>
-                                                <form class="mt--40">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <input type="text" placeholder="Name">
-                                                            </div>
-                                                            <div class="rnform-group">
-                                                                <input type="email" placeholder="Email">
-                                                            </div>
+                                        <!-- Start Comment Form Area -->
+                                    <div class="rainbow-comment-form pt--60">
+                                        <div class="inner">
+                                            <div class="section-title">
+                                                <span class="subtitle">Intrested in collaborating with us?</span>
+                                                <h2 class="title">Get in touch with us</h2>
+                                            </div>
+                                            <form id="contact-form" class="mt--40">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="name" placeholder="Name" required>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <textarea placeholder="Message"></textarea>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="email" name="email" placeholder="Email" required>
                                                         </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="blog-btn">
-                                                                <a class="btn-default" href="contact.html">
-                                                                    <span>SEND MESSAGE</span>
-                                                                </a>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="website" placeholder="Website">
                                                         </div>
                                                     </div>
-                                                </form>
-                                            </div>
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <textarea name="message" placeholder="Comment" required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="blog-btn">
+                                                            <button type="submit" class="btn-default"><span>SEND MESSAGE</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <!-- End Contact Form Area -->
+                                    </div>
+
+                                    <!-- Include EmailJS SDK -->
+                                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+                                    <script type="text/javascript">
+                                        (function(){
+                                            emailjs.init("ZqAGdlu-q_WGJsESw"); // Your EmailJS User ID
+                                        })();
+                                    </script>
+
+                                    <script type="text/javascript">
+                                        document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                            event.preventDefault(); // Prevent form from submitting normally
+
+                                            // Send email using EmailJS
+                                            emailjs.sendForm('service_ejuut2p', 'template_zye5m7k', this)
+                                                .then(function() {
+                                                    alert('Message sent successfully!');
+                                                }, function(error) {
+                                                    alert('Failed to send message. Error: ' + JSON.stringify(error));
+                                                });
+                                        });
+                                    </script>
+                                    <!-- End Comment Form Area -->
                                     </div>
                                 </div>
                             </div>
@@ -169,10 +192,10 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/collaboration/collaboration-07.png" alt="Collaboration">
+                                            <img src="https://media.licdn.com/dms/image/D5612AQE7HG07UyFhhA/article-cover_image-shrink_720_1280/0/1718364494931?e=2147483647&v=beta&t=UuCA6kpJl5naYEHDeakCt04JDx6JCP6x25c0h8MR2No" alt="Collaboration">
                                         </div>
                                         <div class="content">
-                                            <a class="d-block" href="collaboration-details.html">10 ways to strengthen partnerships with ARANEA</a>
+                                            <a class="d-block" href="blog">10 ways to strengthen partnerships with ARANEA</a>
                                             <span class="cate">Business Innovation</span>
                                         </div>
                                     </div>
@@ -180,10 +203,10 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/collaboration/collaboration-08.png" alt="Collaboration">
+                                            <img src="https://miro.medium.com/v2/resize:fit:868/1*39fpA6srj0NPkfCRZl_Dhw@2x.jpeg" alt="Collaboration">
                                         </div>
                                         <div class="content">
-                                            <a class="d-block" href="collaboration-details.html">Enhancing Supply Chain Efficiency</a>
+                                            <a class="d-block" href="blog">Enhancing Supply Chain Efficiency</a>
                                             <span class="cate">Supply Chain</span>
                                         </div>
                                     </div>
@@ -191,10 +214,10 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/collaboration/collaboration-09.png" alt="Collaboration">
+                                            <img src="https://investingnews.com/media-library/robot-hand-touching-human-hand-with-a-spark-in-between.jpg?id=33553684&width=1200&height=800&quality=80&coordinates=0%2C0%2C0%2C1" alt="Collaboration">
                                         </div>
                                         <div class="content">
-                                            <a class="d-block" href="collaboration-details.html">Investing in Future Technologies</a>
+                                            <a class="d-block" href="blog">Investing in Future Technologies</a>
                                             <span class="cate">Technology</span>
                                         </div>
                                     </div>

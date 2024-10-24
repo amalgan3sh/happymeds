@@ -400,9 +400,31 @@
                     <p class="description">Join the ARANEA Platform to revolutionize your business with AI-driven tools.
                         <br> Empower your supply chain, manufacturing, and product distribution strategies.</p>
                         <div class="form-group">
-                            <textarea name="text" id="slider-text-area" cols="30" rows="2" placeholder="Enter your ARANEA collaboration or investment opportunities here"></textarea>
-                            <a class="btn-default @@btnClass" href="get_started" target="_blank">Explore Solutions</a>
+                            <textarea name="text" id="slider-text-area" cols="30" rows="2" readonly></textarea>
+                            <a class="btn-default @@btnClass" href="<?php echo base_url('get_started') ?>" target="_blank">Explore Solutions</a>
                         </div>
+
+                        <script>
+                            // Typewriter effect function
+                            function typeWriterEffect(text, element, speed) {
+                                let i = 0;
+                                function typeWriter() {
+                                    if (i < text.length) {
+                                        element.value += text.charAt(i);
+                                        i++;
+                                        setTimeout(typeWriter, speed);
+                                    }
+                                }
+                                typeWriter();
+                            }
+
+                            // Call the typewriter effect with the target textarea
+                            document.addEventListener("DOMContentLoaded", function() {
+                                const textArea = document.getElementById('slider-text-area');
+                                const text = "To get started with ARANEA platform, click the button below";
+                                typeWriterEffect(text, textArea, 100); // 100ms between each character
+                            });
+                        </script>
                     <div class="inner-shape">
                         <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-one.png" alt="Icon Shape" class="iconshape iconshape-one">
                         <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-two.png" alt="Icon Shape" class="iconshape iconshape-two">
@@ -857,7 +879,7 @@
                                     <div class="row g-0 radius-10 align-items-center">
                                         <div class="col-lg-12 col-xl-5 col-12">
                                             <div class="thumbnail">
-                                                <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-4.png" alt="split Images">
+                                                <img class="radius" src="https://www.protelesis.com/images-content/blog/streamline-business-operations.jpg" alt="split Images">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-xl-7 col-12">
@@ -868,7 +890,7 @@
                                                 <h2 class="title sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Streamline Your Business Operations</h2>
                                                 <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Unlock advanced tools and methods to optimize your business operations. With ARANEA’s platform, efficiently manage supply chains, product listings, and distribution while staying ahead of the competition.</p>
                                                 <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
-                                                    <a class="btn-default color-blacked" href="contact.html">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                    <a class="btn-default color-blacked" href="get_started">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -882,7 +904,7 @@
                                     <div class="row g-0 radius-10 align-items-center">
                                         <div class="col-lg-12 col-xl-5 col-12">
                                             <div class="thumbnail">
-                                                <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-3.png" alt="split Images">
+                                                <img class="radius" src="https://1602894.fs1.hubspotusercontent-na1.net/hub/1602894/hubfs/170814062_m_normal_none%20%281%29.jpg?height=400&name=170814062_m_normal_none%20%281%29.jpg" alt="split Images">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-xl-7 col-12">
@@ -894,7 +916,7 @@
                                                 <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Stay ahead of potential threats with robust cybersecurity strategies tailored for ARANEA’s platform. Ensure the protection of your business operations, data integrity, and client information across the supply
                                                     chain and digital presence.</p>
                                                 <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
-                                                    <a class="btn-default color-blacked" href="contact.html">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                    <a class="btn-default color-blacked" href="get_started">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -908,7 +930,7 @@
                                     <div class="row g-0 radius-10 align-items-center">
                                         <div class="col-lg-12 col-xl-5 col-12">
                                             <div class="thumbnail">
-                                                <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-5.png" alt="split Images">
+                                                <img class="radius" src="https://media.licdn.com/dms/image/C4E12AQFafkHnbcxWbA/article-cover_image-shrink_720_1280/0/1601642976113?e=2147483647&v=beta&t=d7rrfI6jz_ynW60PTzvAq_9n4nFP3PbZP0DvnoU48hs" alt="split Images">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-xl-7 col-12">
@@ -920,7 +942,7 @@
             Demystifying Business Insights</h2>
                                                 <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Unlock the power of data analytics on the ARANEA platform. Use advanced tools to transform raw business data into actionable insights that enhance decision-making for brand partners, suppliers, and B2B operations.</p>
                                                 <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
-                                                    <a class="btn-default color-blacked" href="contact.html">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                    <a class="btn-default color-blacked" href="get_started">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1187,10 +1209,10 @@
                                                     <h6>Features</h6>
                                                     <ul class="list-style--1 has-show-more-inner-content">
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Invest in nutraceutical herbal products
+                                                            <i class="fa-regular fa-circle-check"></i>Invest in healthcare products
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Earn benefits on B2B orders
+                                                            <i class="fa-regular fa-circle-check"></i>Earn benefits on B2B invoices
                                                         </li>
                                                         <li>
                                                             <i class="fa-regular fa-circle-check"></i> 5-year subscription plan

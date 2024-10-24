@@ -10,7 +10,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="assets/images/partnership/partnership-01.png" alt="Partnership Image">
+                                            <img class="w-100 radius" src="https://www.n-able.com/wp-content/uploads/2021/04/Blog-Merger_header.jpeg" alt="Partnership Image">
                                         </div>
                                         <ul class="rainbow-meta-list">
                                             <li>
@@ -54,7 +54,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="assets/images/partnership/partnership-02.png" alt="Partnership Image">
+                                            <img class="w-100 radius" src="https://www.gannett-cdn.com/media/2016/06/02/USATODAY/USATODAY/636004243557322216-ThinkstockPhotos-499155570.jpg" alt="Partnership Image">
                                         </div>
                                     </div>
                                 </div>
@@ -78,40 +78,63 @@
                                             </div>
                                         </div>
 
-                                        <!-- Start Contact Form Area -->
-                                        <div class="rainbow-comment-form pt--60">
-                                            <div class="inner">
-                                                <div class="section-title">
-                                                    <span class="subtitle">Interested in Expanding Partnerships?</span>
-                                                    <h2 class="title">Contact Us</h2>
-                                                </div>
-                                                <form class="mt--40">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <input type="text" placeholder="Name">
-                                                            </div>
-                                                            <div class="rnform-group">
-                                                                <input type="email" placeholder="Email">
-                                                            </div>
+                                        <!-- Start Comment Form Area -->
+                                    <div class="rainbow-comment-form pt--60">
+                                        <div class="inner">
+                                            <div class="section-title">
+                                                <span class="subtitle">Are you interested in a partnership with us?</span>
+                                                <h2 class="title">Get in Touch</h2>
+                                            </div>
+                                            <form id="contact-form" class="mt--40">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="name" placeholder="Name" required>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <textarea placeholder="Message"></textarea>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="email" name="email" placeholder="Email" required>
                                                         </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="blog-btn">
-                                                                <a class="btn-default" href="contact.html">
-                                                                    <span>SEND MESSAGE</span>
-                                                                </a>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="website" placeholder="Website">
                                                         </div>
                                                     </div>
-                                                </form>
-                                            </div>
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <textarea name="message" placeholder="Comment" required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="blog-btn">
+                                                            <button type="submit" class="btn-default"><span>SEND MESSAGE</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <!-- End Contact Form Area -->
+                                    </div>
+
+                                    <!-- Include EmailJS SDK -->
+                                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+                                    <script type="text/javascript">
+                                        (function(){
+                                            emailjs.init("ZqAGdlu-q_WGJsESw"); // Your EmailJS User ID
+                                        })();
+                                    </script>
+
+                                    <script type="text/javascript">
+                                        document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                            event.preventDefault(); // Prevent form from submitting normally
+
+                                            // Send email using EmailJS
+                                            emailjs.sendForm('service_ejuut2p', 'template_zye5m7k', this)
+                                                .then(function() {
+                                                    alert('Message sent successfully!');
+                                                }, function(error) {
+                                                    alert('Failed to send message. Error: ' + JSON.stringify(error));
+                                                });
+                                        });
+                                    </script>
+                                    <!-- End Comment Form Area -->
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +198,7 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/partnership/partnership-07.png" alt="Partnership">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9_sKuFAhtlADCT4Ks5XMwgcz12c6-sCsKG6Rs2cHzT4lcO8OemmFTvtebYts1F3URMRU&usqp=CAU" alt="Partnership">
                                         </div>
                                         <div class="content">
                                             <a class="d-block" href="partnership-details.html">Expanding Your Reach with ARANEA</a>
@@ -186,7 +209,7 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/partnership/partnership-08.png" alt="Partnership">
+                                            <img src="https://media.licdn.com/dms/image/C5112AQFj1CR6PpDb1w/article-cover_image-shrink_720_1280/0/1537716573393?e=2147483647&v=beta&t=dTPBhZzGM4AXKpgx_0HLzoh9wfGxkmXRYTDFs9ILsFM" alt="Partnership">
                                         </div>
                                         <div class="content">
                                             <a class="d-block" href="partnership-details.html">Building Strong Business Networks</a>
@@ -197,7 +220,7 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/partnership/partnership-09.png" alt="Partnership">
+                                            <img src="https://media.licdn.com/dms/image/D4E12AQF56Mo9HDSxOA/article-cover_image-shrink_600_2000/0/1712059220842?e=2147483647&v=beta&t=AktQLx7PJ3ccw8BpQo7Fn7Y3w4b8IQ6f3m9tTKyNQcY" alt="Partnership">
                                         </div>
                                         <div class="content">
                                             <a class="d-block" href="partnership-details.html">Driving Innovation through Partnerships</a>

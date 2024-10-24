@@ -10,7 +10,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="assets/images/blog/blog-detailes-01.png" alt="Blog Images">
+                                            <img class="w-100 radius" src="https://bachpanhospitals.com/wp-content/uploads/2024/03/Our-Mission-Bachpan-Childrens-Hospital.jpg" alt="Blog Images">
                                         </div>
                                         <ul class="rainbow-meta-list">
                                             <li>
@@ -54,7 +54,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="assets/images/blog/blog-detailes-02.png" alt="Blog Images">
+                                            <img class="w-100 radius" src="https://media.licdn.com/dms/image/D4D12AQGWaMSju-paSw/article-cover_image-shrink_720_1280/0/1682455746064?e=2147483647&v=beta&t=149qWjPfXonX7rNmNBkK5jQVNIYpUtLcJFyYs9vJEzc" alt="Blog Images">
                                         </div>
                                     </div>
                                 </div>
@@ -78,43 +78,63 @@
                                             </div>
                                         </div>
 
-                                        <!-- Start Contact Form Area  -->
-                                        <div class="rainbow-comment-form pt--60">
-                                            <div class="inner">
-                                                <div class="section-title">
-                                                    <span class="subtitle">Have a Comment?</span>
-                                                    <h2 class="title">Leave a Reply</h2>
-                                                </div>
-                                                <form class="mt--40">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <input type="text" placeholder="Name">
-                                                            </div>
-                                                            <div class="rnform-group">
-                                                                <input type="email" placeholder="Email">
-                                                            </div>
-                                                            <div class="rnform-group">
-                                                                <input type="text" placeholder="Website">
-                                                            </div>
+                                        <!-- Start Comment Form Area -->
+                                    <div class="rainbow-comment-form pt--60">
+                                        <div class="inner">
+                                            <div class="section-title">
+                                                <span class="subtitle">Have a Comment?</span>
+                                                <h2 class="title">Leave a Reply</h2>
+                                            </div>
+                                            <form id="contact-form" class="mt--40">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="name" placeholder="Name" required>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <textarea placeholder="Comment"></textarea>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="email" name="email" placeholder="Email" required>
                                                         </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="blog-btn">
-                                                                <a class="btn-default" href="blog-details.html">
-                                                                    <span>SEND MESSAGE</span>
-                                                                </a>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="website" placeholder="Website">
                                                         </div>
                                                     </div>
-                                                </form>
-                                            </div>
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <textarea name="message" placeholder="Comment" required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="blog-btn">
+                                                            <button type="submit" class="btn-default"><span>SEND MESSAGE</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <!-- End Contact Form Area  -->
+                                    </div>
+
+                                    <!-- Include EmailJS SDK -->
+                                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+                                    <script type="text/javascript">
+                                        (function(){
+                                            emailjs.init("ZqAGdlu-q_WGJsESw"); // Your EmailJS User ID
+                                        })();
+                                    </script>
+
+                                    <script type="text/javascript">
+                                        document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                            event.preventDefault(); // Prevent form from submitting normally
+
+                                            // Send email using EmailJS
+                                            emailjs.sendForm('service_ejuut2p', 'template_zye5m7k', this)
+                                                .then(function() {
+                                                    alert('Message sent successfully!');
+                                                }, function(error) {
+                                                    alert('Failed to send message. Error: ' + JSON.stringify(error));
+                                                });
+                                        });
+                                    </script>
+                                    <!-- End Comment Form Area -->
                                     </div>
                                 </div>
                             </div>
@@ -178,10 +198,10 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/blog/blog-07.png" alt="Blog">
+                                            <img src="https://c8.alamy.com/comp/2C04T23/brainstorming-innovation-idea-process-and-creative-thinking-concept-with-light-bulb-lamp-for-start-up-business-project-illustration-for-web-landing-p-2C04T23.jpg" alt="Blog">
                                         </div>
                                         <div class="content">
-                                            <a class="d-block" href="blog-details.html">10 ways to empower your business with ARANEA</a>
+                                            <a class="d-block" href="blog">10 ways to empower your business with ARANEA</a>
                                             <span class="cate">Business Innovation</span>
                                         </div>
                                     </div>
@@ -189,10 +209,10 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/blog/blog-08.png" alt="Blog">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvJf78lQn8Jqfjh6E5yj10ZbHwtDBbri0Le9TC8d9iwK4knVQHax-joFmVoC8t7yoCkkM&usqp=CAU" alt="Blog">
                                         </div>
                                         <div class="content">
-                                            <a class="d-block" href="blog-details.html">Best Sustainable Practices for Modern Enterprises</a>
+                                            <a class="d-block" href="blog">Best Sustainable Practices for Modern Enterprises</a>
                                             <span class="cate">Sustainability</span>
                                         </div>
                                     </div>
@@ -200,10 +220,10 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/blog/blog-09.png" alt="Blog">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgs82KfCq75L84hMbSJU3g-CoWQkKj-XGwsw&s" alt="Blog">
                                         </div>
                                         <div class="content">
-                                            <a class="d-block" href="blog-details.html">Harnessing Technology for Global Impact</a>
+                                            <a class="d-block" href="blog">Harnessing Technology for Global Impact</a>
                                             <span class="cate">Technology</span>
                                         </div>
                                     </div>

@@ -86,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 right-wrapper" style="position: relative; background-image: url('https://rainbowthemes.net/html/aiwave/assets/images/cta-img/view-img.png'); background-size: 70%; background-position: center; background-repeat: no-repeat;">
+                    <div class="col-lg-6 right-wrapper" style="position: relative; background-image: url('assets/landing/assets/images/brand_partner_mobile.png'); background-size: 70%; background-position: center; background-repeat: no-repeat;">
     <div class="client-feedback-area">
         <div class="single-feedback">
             <!-- Content goes here -->

@@ -9,7 +9,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="assets/images/blog/blog-detailes-01.png" alt="Blog Images">
+                                            <img class="w-100 radius" src="https://media.licdn.com/dms/image/D4D12AQEtTKDhfoL_bw/article-cover_image-shrink_720_1280/0/1695032536439?e=2147483647&v=beta&t=02oXif4vTzdnevgLfmSJHjOcKFX22tq4hB9UySjehbA" alt="Blog Images">
                                         </div>
                                         <ul class="rainbow-meta-list">
                                             <li>
@@ -60,7 +60,7 @@
                             <div class="col-lg-12">
                                 <div class="content text-center">
                                     <div class="thumbnail">
-                                        <img class="w-100 radius" src="assets/images/blog/blog-detailes-02.png" alt="Blog Images">
+                                        <img class="w-100 radius" src="https://cdn.vidyard.com/thumbnails/22247264/mRMudXw2FAVuDcz_DXZzddeKbJNI211A.jpg" alt="Blog Images">
                                     </div>
                                 </div>
                             </div>
@@ -93,33 +93,55 @@
                                                 <span class="subtitle">Have a Comment?</span>
                                                 <h2 class="title">Leave a Reply</h2>
                                             </div>
-                                            <form class="mt--40">
+                                            <form id="contact-form" class="mt--40">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-md-12 col-12">
                                                         <div class="rnform-group">
-                                                            <input type="text" placeholder="Name">
+                                                            <input type="text" name="name" placeholder="Name" required>
                                                         </div>
                                                         <div class="rnform-group">
-                                                            <input type="email" placeholder="Email">
+                                                            <input type="email" name="email" placeholder="Email" required>
                                                         </div>
                                                         <div class="rnform-group">
-                                                            <input type="text" placeholder="Website">
+                                                            <input type="text" name="website" placeholder="Website">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6 col-md-12 col-12">
                                                         <div class="rnform-group">
-                                                            <textarea placeholder="Comment"></textarea>
+                                                            <textarea name="message" placeholder="Comment" required></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="blog-btn">
-                                                            <a class="btn-default" href="blog-details.html"><span>SEND MESSAGE</span></a>
+                                                            <button type="submit" class="btn-default"><span>SEND MESSAGE</span></button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
+
+                                    <!-- Include EmailJS SDK -->
+                                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+                                    <script type="text/javascript">
+                                        (function(){
+                                            emailjs.init("ZqAGdlu-q_WGJsESw"); // Your EmailJS User ID
+                                        })();
+                                    </script>
+
+                                    <script type="text/javascript">
+                                        document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                            event.preventDefault(); // Prevent form from submitting normally
+
+                                            // Send email using EmailJS
+                                            emailjs.sendForm('service_ejuut2p', 'template_zye5m7k', this)
+                                                .then(function() {
+                                                    alert('Message sent successfully!');
+                                                }, function(error) {
+                                                    alert('Failed to send message. Error: ' + JSON.stringify(error));
+                                                });
+                                        });
+                                    </script>
                                     <!-- End Comment Form Area -->
                                 </div>
                             </div>
@@ -165,10 +187,10 @@
                             <li>
                                 <div class="list-blog-sm">
                                     <div class="img">
-                                        <img src="assets/images/blog/blog-07.png" alt="Blog">
+                                        <img src="https://fastercapital.co/i/Iwoh-Sustainability--Promoting-Environmental-Conservation-and-Stewardship--Sustainable-Practices-for-a-Greener-Future.webp" alt="Blog">
                                     </div>
                                     <div class="content">
-                                        <a class="d-block" href="blog-details.html">5 Sustainable Practices for a Greener Future</a>
+                                        <a class="d-block" href="blog">5 Sustainable Practices for a Greener Future</a>
                                         <span class="cate">Sustainability</span>
                                     </div>
                                 </div>
@@ -176,10 +198,10 @@
                             <li>
                                 <div class="list-blog-sm">
                                     <div class="img">
-                                        <img src="assets/images/blog/blog-08.png" alt="Blog">
+                                        <img src="https://media.licdn.com/dms/image/D5612AQFsrcFk7M8TKg/article-cover_image-shrink_720_1280/0/1688377133429?e=2147483647&v=beta&t=0ZsEmx9QotsEKBFCmescZQZT10RkHs4Kg-VcZU_P4ZU" alt="Blog">
                                     </div>
                                     <div class="content">
-                                        <a class="d-block" href="blog-details.html">How AI is Revolutionizing Healthcare</a>
+                                        <a class="d-block" href="blog">How AI is Revolutionizing Healthcare</a>
                                         <span class="cate">Healthcare</span>
                                     </div>
                                 </div>

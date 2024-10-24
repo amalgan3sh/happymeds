@@ -119,7 +119,7 @@
                                                             </a>
                                                         </li> -->
                                                         <li>
-                                                            <a href="contact.html">
+                                                            <a href="contact_us">
                                                                 <span>Contact</span>
                                                             </a>
                                                         </li>

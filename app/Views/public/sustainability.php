@@ -10,7 +10,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="assets/images/sustainability/sustainability-01.png" alt="Sustainability Image">
+                                            <img class="w-100 radius" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm5xVzhUAzKYK9_QqYoUyGWw1off7iJLOp1dFrN2sDdkVQh115N5eBFJFndBTMpopGvkcIkdkefoXyQA-Q-MjSU0DxLfb-xeljVyin6UozhOeNmR6ZsqiY4ikPRVgICigJSMFvd2HxrWzBwn-JIQYpYd9u2WBYVOFVI_aQQkqYrRCaQcSs1GZpMnDm/s1600/sust-ngos.png" alt="Sustainability Image">
                                         </div>
                                         <ul class="rainbow-meta-list">
                                             <li>
@@ -54,7 +54,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="assets/images/sustainability/sustainability-02.png" alt="Sustainability Image">
+                                            <img class="w-100 radius" src="https://i0.wp.com/mia-platform.eu/wp-content/uploads/BlogPost_Cloud-Sustainability.jpg?fit=1024%2C529&ssl=1" alt="Sustainability Image">
                                         </div>
                                     </div>
                                 </div>
@@ -78,40 +78,63 @@
                                             </div>
                                         </div>
 
-                                        <!-- Start Contact Form Area -->
-                                        <div class="rainbow-comment-form pt--60">
-                                            <div class="inner">
-                                                <div class="section-title">
-                                                    <span class="subtitle">Interested in Our Projects?</span>
-                                                    <h2 class="title">Contact Us</h2>
-                                                </div>
-                                                <form class="mt--40">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <input type="text" placeholder="Name">
-                                                            </div>
-                                                            <div class="rnform-group">
-                                                                <input type="email" placeholder="Email">
-                                                            </div>
+                                        <!-- Start Comment Form Area -->
+                                    <div class="rainbow-comment-form pt--60">
+                                        <div class="inner">
+                                            <div class="section-title">
+                                                <span class="subtitle">Have a Project in mind?</span>
+                                                <h2 class="title">Contact Us</h2>
+                                            </div>
+                                            <form id="contact-form" class="mt--40">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="name" placeholder="Name" required>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <textarea placeholder="Message"></textarea>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="email" name="email" placeholder="Email" required>
                                                         </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="blog-btn">
-                                                                <a class="btn-default" href="contact.html">
-                                                                    <span>SEND MESSAGE</span>
-                                                                </a>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="website" placeholder="Website">
                                                         </div>
                                                     </div>
-                                                </form>
-                                            </div>
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <textarea name="message" placeholder="Comment" required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="blog-btn">
+                                                            <button type="submit" class="btn-default"><span>SEND MESSAGE</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <!-- End Contact Form Area -->
+                                    </div>
+
+                                    <!-- Include EmailJS SDK -->
+                                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+                                    <script type="text/javascript">
+                                        (function(){
+                                            emailjs.init("ZqAGdlu-q_WGJsESw"); // Your EmailJS User ID
+                                        })();
+                                    </script>
+
+                                    <script type="text/javascript">
+                                        document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                            event.preventDefault(); // Prevent form from submitting normally
+
+                                            // Send email using EmailJS
+                                            emailjs.sendForm('service_ejuut2p', 'template_zye5m7k', this)
+                                                .then(function() {
+                                                    alert('Message sent successfully!');
+                                                }, function(error) {
+                                                    alert('Failed to send message. Error: ' + JSON.stringify(error));
+                                                });
+                                        });
+                                    </script>
+                                    <!-- End Comment Form Area -->
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +198,7 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/sustainability/sustainability-07.png" alt="Sustainability Project">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyGzJmVtobhsAJfvwJhbT2CiFf4oRS1yAkRA&s" alt="Sustainability Project">
                                         </div>
                                         <div class="content">
                                             <a class="d-block" href="sustainability-details.html">Revolutionizing Healthcare with Sustainability</a>
@@ -186,7 +209,7 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/sustainability/sustainability-08.png" alt="Sustainability Project">
+                                            <img src="https://media.licdn.com/dms/image/D5612AQEYzFTF0fG7sw/article-cover_image-shrink_720_1280/0/1716194545804?e=2147483647&v=beta&t=PrcRJD_jSmRZ-6cZWcJOsZ5UKCu93t4oaMQmnhWAVjI" alt="Sustainability Project">
                                         </div>
                                         <div class="content">
                                             <a class="d-block" href="sustainability-details.html">Building Green Real Estate Solutions</a>
@@ -197,7 +220,7 @@
                                 <li>
                                     <div class="list-blog-sm">
                                         <div class="img">
-                                            <img src="assets/images/sustainability/sustainability-09.png" alt="Sustainability Project">
+                                            <img src="https://etimg.etb2bimg.com/photo/102186407.cms" alt="Sustainability Project">
                                         </div>
                                         <div class="content">
                                             <a class="d-block" href="sustainability-details.html">Expanding Environmental Initiatives</a>

@@ -39,7 +39,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="content text-center">
-                                        <img class="w-100 radius" src="assets/images/features/key-feature-image.png" alt="Key Features Image">
+                                        <img class="w-100 radius" src="https://img.freepik.com/premium-photo/find-key-success_391052-9838.jpg" alt="Key Features Image">
                                     </div>
                                 </div>
                             </div>
@@ -64,40 +64,63 @@
                                             </div>
                                         </div>
 
-                                        <!-- Start Contact Form Area -->
-                                        <div class="rainbow-comment-form pt--60">
-                                            <div class="inner">
-                                                <div class="section-title">
-                                                    <span class="subtitle">Have a Question?</span>
-                                                    <h2 class="title">Reach Out to Us</h2>
-                                                </div>
-                                                <form class="mt--40">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <input type="text" placeholder="Name">
-                                                            </div>
-                                                            <div class="rnform-group">
-                                                                <input type="email" placeholder="Email">
-                                                            </div>
+                                        <!-- Start Comment Form Area -->
+                                    <div class="rainbow-comment-form pt--60">
+                                        <div class="inner">
+                                            <div class="section-title">
+                                                <span class="subtitle">Have a Comment?</span>
+                                                <h2 class="title">Leave a Reply</h2>
+                                            </div>
+                                            <form id="contact-form" class="mt--40">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="name" placeholder="Name" required>
                                                         </div>
-                                                        <div class="col-lg-6 col-md-12 col-12">
-                                                            <div class="rnform-group">
-                                                                <textarea placeholder="Message"></textarea>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="email" name="email" placeholder="Email" required>
                                                         </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="blog-btn">
-                                                                <a class="btn-default" href="contact.html">
-                                                                    <span>SEND MESSAGE</span>
-                                                                </a>
-                                                            </div>
+                                                        <div class="rnform-group">
+                                                            <input type="text" name="website" placeholder="Website">
                                                         </div>
                                                     </div>
-                                                </form>
-                                            </div>
+                                                    <div class="col-lg-6 col-md-12 col-12">
+                                                        <div class="rnform-group">
+                                                            <textarea name="message" placeholder="Comment" required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="blog-btn">
+                                                            <button type="submit" class="btn-default"><span>SEND MESSAGE</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <!-- End Contact Form Area -->
+                                    </div>
+
+                                    <!-- Include EmailJS SDK -->
+                                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+                                    <script type="text/javascript">
+                                        (function(){
+                                            emailjs.init("ZqAGdlu-q_WGJsESw"); // Your EmailJS User ID
+                                        })();
+                                    </script>
+
+                                    <script type="text/javascript">
+                                        document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                            event.preventDefault(); // Prevent form from submitting normally
+
+                                            // Send email using EmailJS
+                                            emailjs.sendForm('service_ejuut2p', 'template_zye5m7k', this)
+                                                .then(function() {
+                                                    alert('Message sent successfully!');
+                                                }, function(error) {
+                                                    alert('Failed to send message. Error: ' + JSON.stringify(error));
+                                                });
+                                        });
+                                    </script>
+                                    <!-- End Comment Form Area -->
                                     </div>
                                 </div>
                             </div>
