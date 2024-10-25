@@ -116,7 +116,7 @@
           <h4>BASIC</h4>
         </div>
         <p class="price">
-          ₹500,000
+          ₹5L
         </p>
         <ul class="features">
           <li>
@@ -148,7 +148,7 @@
           <h4>STANDARD</h4>
         </div>
         <p class="price">
-        ₹10,00,000
+        ₹10L
         </p>
         <ul class="features">
           <li>
@@ -180,7 +180,7 @@
           <h4>PREMIUM</h4>
         </div>
         <p class="price">
-        ₹15,00,000
+        ₹15L
         </p>
         <ul class="features">
           <li>
