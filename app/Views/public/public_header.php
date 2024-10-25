@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/bootstrap-select.min.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/prism.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
 </head>
 

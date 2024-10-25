@@ -180,22 +180,22 @@
                             </div>
 
                             <!-- Modal for 'More Posts Coming Soon' -->
-<div class="modal fade" id="morePostsModal" tabindex="-1" aria-labelledby="morePostsModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content custom-modal-content">
-            <div class="modal-header custom-modal-header">
-                <h5 class="modal-title" id="morePostsModalLabel">More Posts Coming Soon</h5>
-                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body custom-modal-body">
-                More posts will be available soon. Stay tuned!
-            </div>
-            <div class="modal-footer custom-modal-footer">
-                <button type="button" class="btn btn-primary custom-btn" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+                            <div class="modal fade" id="morePostsModal" tabindex="-1" aria-labelledby="morePostsModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content custom-modal-content">
+                                        <div class="modal-header custom-modal-header">
+                                            <h5 class="modal-title" id="morePostsModalLabel">More Posts Coming Soon</h5>
+                                            <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body custom-modal-body">
+                                            More posts will be available soon. Stay tuned!
+                                        </div>
+                                        <div class="modal-footer custom-modal-footer">
+                                            <button type="button" class="btn btn-primary custom-btn" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
@@ -205,12 +205,12 @@
 
                     <!-- View More Posts Button -->
                     <div class="col-lg-12 text-center">
-                                <div class="rainbow-load-more text-center mt--60">
-                                    <button class="btn btn-default btn-icon showMoreModal">
-                                        <span>View More Posts <span class="icon"><i class="feather-loader"></i></span></span>
-                                    </button>
-                                </div>
-                            </div>
+                        <div class="rainbow-load-more text-center mt--60">
+                            <button class="btn btn-default btn-icon showMoreModal">
+                                <span>View More Posts <span class="icon"><i class="feather-loader"></i></span></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -241,45 +241,45 @@
                     </div>
 
                     <div class="rbt-single-widget widget_recent_entries mt--40">
-    <h3 class="title">Recent Posts</h3>
-    <div class="inner">
-        <ul>
-            <li>
-                <div class="list-blog-sm">
-                    <div class="d-block showModal" href="javascript:void(0)">
-                        <img src="https://coverimages.igi-global.com/newsroom/trust-online-health-programs.png" alt="Blog">
+                        <h3 class="title">Recent Posts</h3>
+                        <div class="inner">
+                            <ul>
+                                <li>
+                                    <div class="list-blog-sm">
+                                        <div class="d-block showModal" href="javascript:void(0)">
+                                            <img src="https://coverimages.igi-global.com/newsroom/trust-online-health-programs.png" alt="Blog">
+                                        </div>
+                                        <div class="content">
+                                            <a class="d-block showModal" href="javascript:void(0)">10 ways to Supercharge your Startup with ARANEA</a>
+                                            <span class="cate">Innovation</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-blog-sm">
+                                        <div class="d-block showModal" href="javascript:void(0)">
+                                            <img src="https://coverimages.igi-global.com/newsroom/trust-online-health-programs.png" alt="Blog">
+                                        </div>
+                                        <div class="content">
+                                            <a class="d-block showModal" href="javascript:void(0)">Building Strong B2B Networks</a>
+                                            <span class="cate">Partnerships</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-blog-sm">
+                                        <div class="d-block showModal" href="javascript:void(0)">
+                                            <img src="https://coverimages.igi-global.com/newsroom/trust-online-health-programs.png" alt="Blog">
+                                        </div>
+                                        <div class="content">
+                                            <a class="d-block showModal" href="javascript:void(0)">Enhancing Supply Chain Efficiency with ARANEA</a>
+                                            <span class="cate">Supply Chain</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="content">
-                        <a class="d-block showModal" href="javascript:void(0)">10 ways to Supercharge your Startup with ARANEA</a>
-                        <span class="cate">Innovation</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="list-blog-sm">
-                    <div class="d-block showModal" href="javascript:void(0)">
-                        <img src="https://coverimages.igi-global.com/newsroom/trust-online-health-programs.png" alt="Blog">
-                    </div>
-                    <div class="content">
-                        <a class="d-block showModal" href="javascript:void(0)">Building Strong B2B Networks</a>
-                        <span class="cate">Partnerships</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="list-blog-sm">
-                    <div class="d-block showModal" href="javascript:void(0)">
-                        <img src="https://coverimages.igi-global.com/newsroom/trust-online-health-programs.png" alt="Blog">
-                    </div>
-                    <div class="content">
-                        <a class="d-block showModal" href="javascript:void(0)">Enhancing Supply Chain Efficiency with ARANEA</a>
-                        <span class="cate">Supply Chain</span>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
 
                     <div class="rbt-single-widget widget_archive mt--40">
                         <h3 class="title">Archives</h3>
@@ -313,7 +313,7 @@
 <!-- End Blog Area -->
 
 <style>
-                                /* Modal Custom Styles */
+    /* Modal Custom Styles */
 .custom-modal-content {
     background: linear-gradient(135deg, #1E1E3F, #292952); /* Dark gradient */
     color: #FFFFFF;
@@ -368,13 +368,13 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
-                            </style>
+</style>
 
-                            <!-- Bootstrap JS (required for modal functionality) -->
-                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS (required for modal functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-                            <!-- Script to trigger modal on click -->
-                            <script>
+<!-- Script to trigger modal on click -->
+<script>
     // Select all elements with the class "showModal" for blog modals
     var modalTriggers = document.querySelectorAll('.showModal');
 

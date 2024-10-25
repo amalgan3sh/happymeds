@@ -1,27 +1,7 @@
-<!-- Start Breadcrumb Area  -->
-<div class="main-content">
-    <!-- Start Breadcarumb area  -->
-    <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-inner text-center">
-                        <h3 class="title h3">Get Started with a Free Quotation</h3>
-                        <ul class="page-list">
-                            <li class="rainbow-breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="rainbow-breadcrumb-item active">Contact</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcarumb area  -->
-</div>
+
 
 <!-- Start Contact Area  -->
 <div class="main-content">
-
     <div class="rainbow-contact-area rainbow-section-gapTop-big">
         <div class="container">
             <div class="row mt--40 row--15">
@@ -52,135 +32,131 @@
                             </div>
 
                             <div class="tab-content">
+                                <!-- General Contact Form -->
                                 <div class="tab-pane fade active show" id="general-contact" role="tabpanel" aria-labelledby="general-contact-tab">
-                                    <!-- Start General Contact Row  -->
-                                    <form action="#" class="rbt-profile-row rbt-default-form row row--15">
+                                    <form action="<?= site_url('contact/submitInquiry') ?>" method="POST" class="rbt-profile-row rbt-default-form row row--15">
+                                        <input type="hidden" name="inquiry_type" value="general">
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="firstname1">First Name</label>
-                                                <input id="firstname1" type="text" placeholder="Your First Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="form-group">
-                                                <label for="lastname1">Last Name</label>
-                                                <input id="lastname1" type="text" placeholder="Your Last Name">
+                                                <label for="firstname">First Name</label>
+                                                <input id="firstname" name="firstname" type="text" placeholder="Your First Name" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="email1">Email</label>
-                                                <input id="email1" type="email" placeholder="Your Email">
+                                                <label for="lastname">Last Name</label>
+                                                <input id="lastname" name="lastname" type="text" placeholder="Your Last Name" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="phonenumber1">Phone Number</label>
-                                                <input id="phonenumber1" type="tel" placeholder="+1-202-555-0174">
+                                                <label for="email">Email</label>
+                                                <input id="email" name="email" type="email" placeholder="Your Email" required>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="message1">Message</label>
-                                                <textarea id="message1" cols="20" rows="5" placeholder="Your Message or Inquiry"></textarea>
+                                                <label for="phonenumber">Phone Number</label>
+                                                <input id="phonenumber" name="phonenumber" type="tel" placeholder="+1-202-555-0174">
                                             </div>
                                         </div>
-                                        <div class="col-12 mt--20">
-                                            <div class="form-group mb--0">
-                                                <a class="btn-default" href="#">Submit</a>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="message">Message</label>
+                                                <textarea id="message" name="message" cols="20" rows="5" placeholder="Your Message or Inquiry"></textarea>
                                             </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <button type="submit" class="btn-default">Submit</button>
                                         </div>
                                     </form>
-                                    <!-- End General Contact Row  -->
                                 </div>
 
+                                <!-- Business Inquiry Form -->
                                 <div class="tab-pane fade" id="business-inquiry" role="tabpanel" aria-labelledby="business-inquiry-tab">
-                                    <!-- Start Business Inquiry Row  -->
-                                    <form action="#" class="rbt-profile-row rbt-default-form row row--15">
+                                    <form action="<?= site_url('contact/submitInquiry') ?>" method="POST" class="rbt-profile-row rbt-default-form row row--15">
+                                        <input type="hidden" name="inquiry_type" value="business">
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="firstname2">First Name</label>
-                                                <input id="firstname2" type="text" placeholder="Your First Name">
+                                                <label for="firstname">First Name</label>
+                                                <input id="firstname" name="firstname" type="text" placeholder="Your First Name" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="lastname2">Last Name</label>
-                                                <input id="lastname2" type="text" placeholder="Your Last Name">
+                                                <label for="lastname">Last Name</label>
+                                                <input id="lastname" name="lastname" type="text" placeholder="Your Last Name" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
                                                 <label for="company">Company</label>
-                                                <input id="company" type="text" placeholder="Your Company Name">
+                                                <input id="company" name="company" type="text" placeholder="Your Company Name">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="email2">Email</label>
-                                                <input id="email2" type="email" placeholder="Your Business Email">
+                                                <label for="email">Email</label>
+                                                <input id="email" name="email" type="email" placeholder="Your Business Email" required>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                                             <div class="form-group">
-                                                <label for="message2">Business Inquiry</label>
-                                                <textarea id="message2" cols="20" rows="5" placeholder="Your Business Inquiry"></textarea>
+                                                <label for="message">Business Inquiry</label>
+                                                <textarea id="message" name="message" cols="20" rows="5" placeholder="Your Business Inquiry"></textarea>
                                             </div>
                                         </div>
-                                        <div class="col-12 mt--20">
-                                            <div class="form-group mb--0">
-                                                <a class="btn-default" href="#">Submit</a>
-                                            </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <button type="submit" class="btn-default">Submit</button>
                                         </div>
                                     </form>
-                                    <!-- End Business Inquiry Row  -->
                                 </div>
 
+                                <!-- Support Form -->
                                 <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
-                                    <!-- Start Support Row  -->
-                                    <form action="#" class="rbt-profile-row rbt-default-form row row--15">
+                                    <form action="<?= site_url('contact/submitInquiry') ?>" method="POST" class="rbt-profile-row rbt-default-form row row--15">
+                                        <input type="hidden" name="inquiry_type" value="support">
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="firstname3">First Name</label>
-                                                <input id="firstname3" type="text" placeholder="Your First Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="form-group">
-                                                <label for="lastname3">Last Name</label>
-                                                <input id="lastname3" type="text" placeholder="Your Last Name">
+                                                <label for="firstname">First Name</label>
+                                                <input id="firstname" name="firstname" type="text" placeholder="Your First Name" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="email3">Email</label>
-                                                <input id="email3" type="email" placeholder="Your Email">
+                                                <label for="lastname">Last Name</label>
+                                                <input id="lastname" name="lastname" type="text" placeholder="Your Last Name" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="phonenumber3">Phone Number</label>
-                                                <input id="phonenumber3" type="tel" placeholder="+1-202-555-0174">
+                                                <label for="email">Email</label>
+                                                <input id="email" name="email" type="email" placeholder="Your Email" required>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                             <div class="form-group">
-                                                <label for="support-message">Support Query</label>
-                                                <textarea id="support-message" cols="20" rows="5" placeholder="Describe your issue or support request"></textarea>
+                                                <label for="phonenumber">Phone Number</label>
+                                                <input id="phonenumber" name="phonenumber" type="tel" placeholder="+1-202-555-0174">
                                             </div>
                                         </div>
-                                        <div class="col-12 mt--20">
-                                            <div class="form-group mb--0">
-                                                <a class="btn-default" href="#">Submit</a>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="message">Support Query</label>
+                                                <textarea id="message" name="message" cols="20" rows="5" placeholder="Describe your issue or support request"></textarea>
                                             </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <button type="submit" class="btn-default">Submit</button>
                                         </div>
                                     </form>
-                                    <!-- End Support Row  -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Contact Information Section -->
                 <div class="col-lg-4 mt_md--30 mt_sm--30">
                     <div class="rainbow-address">
                         <div class="icon">
@@ -215,52 +191,16 @@
             </div>
         </div>
     </div>
-
-    <!-- Start CTA Area -->
-    <div class="rainbow-cta-area rainbow-section-gap-big">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="aiwave-cta">
-                        <div class="inner">
-                            <div class="content-left">
-                                <div class="section-title text-left" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
-                                    <h4 class="subtitle">
-                                        <span class="theme-gradient">What Our Customers Say</span>
-                                    </h4>
-                                    <h2 class="title w-600 mb--20">
-                                        See the Opinions of Our Partners and Clients
-                                    </h2>
-                                    <p class="description b1">
-                                        Learn how ARANEA has transformed the way businesses collaborate in healthcare, real estate, and sustainability.
-                                    </p>
-                                </div>
-                                <div class="app-store-btn">
-                                    <a class="store-btn" href="#">
-                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/play-app.png" alt="Play Store Button">
-                                    </a>
-                                    <a class="store-btn" href="#">
-                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/apple-app.png" alt="Apple Store Button">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="content-right">
-                                <div class="img-right">
-                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/view-img.png" alt="Mobile View">
-                                </div>
-                            </div>
-                            <div class="bg-shape-one">
-                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/bg-shape.png" alt="Bg shape">
-                            </div>
-                        </div>
-                        <div class="bg-shape-inside">
-                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/bg-shape-tree.png" alt="Bg shape">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </div>
 <!-- End Contact Area  -->
+
+<!-- Display JavaScript alert on form submission success or error -->
+<?php if (session()->has('success')): ?>
+    <script>
+        alert("<?= session('success') ?>");
+    </script>
+<?php elseif (session()->has('error')): ?>
+    <script>
+        alert("<?= session('error') ?>");
+    </script>
+<?php endif; ?>

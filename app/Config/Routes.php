@@ -111,7 +111,7 @@ $routes->get('terms_and_conditions', 'PublicController::terms_and_conditions');
 $routes->get('privacy_and_policy', 'PublicController::privacy_and_policy');
 $routes->get('roadmap', 'PublicController::roadmap');
 $routes->get('contact_us', 'PublicController::contact_us');
-
+$routes->post('contact/submitInquiry', 'ContactController::submitInquiry');
 
 
 
