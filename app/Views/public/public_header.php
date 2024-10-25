@@ -8,7 +8,7 @@
 
     <title>Healthcare Brand Partner Program</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/landing/') ?>assets/images/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/assets/img/illustrations/ARANEA_WHITE.png') ?>">
     <!-- CSS ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/fontawesome-all.min.css">
