@@ -40,7 +40,7 @@
                                 <div class="card-body align-items-center flex-wrap">
                                     <div class="d-flex align-items-center mb-4">
                                         <div class="ico-icon">
-                                            <img src="<?= esc($product['icon']) ?>" alt="<?= esc($product['ProductName']) ?>" style="width: 50px; height: 50px; object-fit: contain;">
+                                            <img src="<?= esc($product['thumbnail']) ?>" alt="<?= esc($product['ProductName']) ?>" style="width: 50px; height: 50px; object-fit: contain;">
                                         </div>
                                         <div class="ms-3">
                                             <h4 class="card-title mb-0"><?= esc($product['ProductName']) ?></h4>
