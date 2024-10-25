@@ -52,11 +52,16 @@ class PublicController extends BaseController
     }
     public function partner_signin(): string
     {
-        return $this->renderView('partner_signin', [
-            'public/public_header',
-            'public/partner_signin',
-            'public/public_footer'
-        ]);
+        // Get the Google Client ID from the .env file
+        $data['googleClientId'] = env('GOOGLE_CLIENT_ID');
+        $data['facebookAppId'] = env('FACEBOOK_APP_ID');
+
+        // Load the header, content, and footer views
+        echo view('public/public_header');           // Load header
+        echo view('public/partner_signin', $data);   // Pass data to the content view
+        echo view('public/public_footer');           // Load footer
+
+        return ''; // Optional return
     }
 
     public function partner_register(): string
