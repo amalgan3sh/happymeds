@@ -168,7 +168,7 @@
                         <p class="sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">
                             Anything you're missing in ARANEA? Drop <br> a message here to let us know!</p>
                         <div class="call-to-btn text-center mt--30 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
-                            <a class="btn-default btn-icon" href="contact.html">Send feature request</a>
+                            <a class="btn-default btn-icon" href="contact_us">Send feature request</a>
                         </div>
                     </div>
                 </div>
@@ -198,20 +198,20 @@
                             </div>
                             <div class="app-store-btn">
                                 <a class="store-btn" href="#">
-                                    <img src="assets/images/cta-img/play-app.png" alt="Play Store Button">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/play-app.png" alt="Play Store Button">
                                 </a>
                                 <a class="store-btn" href="#">
-                                    <img src="assets/images/cta-img/apple-app.png" alt="Apple Store Button">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/apple-app.png" alt="Apple Store Button">
                                 </a>
                             </div>
                         </div>
                         <div class="content-right">
                             <div class="img-right">
-                                <img src="assets/images/cta-img/view-img.png" alt="Mobile View">
+                                <img src="assets/landing/assets/images/brand_partner_mobile.png" alt="Mobile View">
                             </div>
                         </div>
                         <div class="bg-shape-one">
-                            <img src="assets/images/cta-img/bg-shape.png" alt="Bg shape">
+                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/bg-shape.png" alt="Bg shape">
                         </div>
                     </div>
                 </div>
