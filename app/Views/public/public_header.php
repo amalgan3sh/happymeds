@@ -245,3 +245,99 @@
 </body>
 
 </html>
+
+<div class="popup-mobile-menu">
+    <div class="inner-popup">
+        <div class="header-top">
+            <div class="logo">
+                <a href="<?php echo base_url('/')?>">
+                    <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="Healthcare Logo">
+                </a>
+            </div>
+            <div class="close-menu">
+                <button class="close-button">
+                    <i class="fa-sharp fa-regular fa-x"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <ul class="mainmenu">
+                <li><a href="<?php echo base_url('/')?>">Home</a></li>
+                
+                <!-- Healthcare Program Dropdown -->
+                <li class="has-dropdown has-menu-child-item position-relative">
+                    <a href="#">Healthcare Program <i class="fa-regular fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="vision"><span>Vision</span></a></li>
+                        <li><a href="mission"><span>Mission</span></a></li>
+                        <li><a href="key_features"><span>Key Features</span></a></li>
+                        <li><a href="collaboration"><span>Collaboration Opportunities</span></a></li>
+                        <li><a href="partnership"><span>Partnership Expansion</span></a></li>
+                        <li><a href="sustainability"><span>Sustainability Projects</span></a></li>
+                    </ul>
+                </li>
+
+                <!-- Pages Mega Menu -->
+                <li class="with-megamenu has-menu-child-item">
+                    <a href="#">Pages <i class="fa-regular fa-chevron-down"></i></a>
+                    <div class="rainbow-megamenu">
+                        <div class="wrapper">
+                            <div class="row row--0">
+                                <!-- About Us Section -->
+                                <div class="col-lg-3 single-mega-item">
+                                    <ul class="mega-menu-item">
+                                        <li><h3 class="rbt-short-title">About Us</h3></li>
+                                        <li><a href="our_team"><span>Our Team</span></a></li>
+                                        <li><a href="blog"><span>Blog</span></a></li>
+                                        <li><a href="contact_us"><span>Contact</span></a></li>
+                                        <li><a href="terms_and_conditions"><span>Terms & Policy</span></a></li>
+                                        <li><a href="privacy_and_policy"><span>Privacy Policy</span></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Procurement System Section -->
+                                <div class="col-lg-3 single-mega-item">
+                                    <ul class="mega-menu-item">
+                                        <li><h3 class="rbt-short-title">Procurement System</h3></li>
+                                        <li><a href="#" class="disabled"><span>Bulk Orders</span><div class="rainbow-badge-card badge-sm ml--5">Coming</div></a></li>
+                                        <li><a href="#" class="disabled"><span>Inventory Management</span><div class="rainbow-badge-card badge-sm ml--5">Coming</div></a></li>
+                                        <li><a href="#" class="disabled"><span>Supply Chain Analytics</span><div class="rainbow-badge-card badge-sm ml--5">Coming</div></a></li>
+                                        <li><a href="#" class="disabled"><span>Hospital Management</span><div class="rainbow-badge-card badge-sm ml--5">Coming</div></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Upcoming Features Section -->
+                                <div class="col-lg-3 single-mega-item">
+                                    <ul class="mega-menu-item br--0">
+                                        <li><h3 class="rbt-short-title">Upcoming Features</h3></li>
+                                        <li><a href="#" class="disabled"><span>Blockchain Integration</span><div class="rainbow-badge-card badge-sm ml--5">Coming</div></a></li>
+                                        <li><a href="#" class="disabled"><span>AI Tools</span><div class="rainbow-badge-card badge-sm ml--5">Coming</div></a></li>
+                                        <li><a href="#" class="disabled"><span>Advanced Analytics</span><div class="rainbow-badge-card badge-sm ml--5">Coming</div></a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu Image -->
+                                <div class="col-lg-3 single-mega-item">
+                                    <div class="header-menu-img">
+                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/menu-img/menu-img-2.png" alt="Menu Split Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Additional Navigation Items -->
+                <li><a href="roadmap">Roadmap</a></li>
+                <li><a href="how_to_use">How to use</a></li>
+                <li><a href="contact_us">Contact</a></li>
+            </ul>
+
+            <!-- Get Started Button -->
+            <div class="header-btn d-block">
+                <a class="rainbow-gradient-btn" target="_blank" href="get_started"><span>Get Started</span></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,23 @@
+<!-- Start Breadcrumb Area  -->
+<div class="main-content">
+    <!-- Start Breadcarumb area  -->
+    <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h3 class="title h3">Privacy and Policy</h3>
+                        <ul class="page-list">
+                            <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
+                            <li class="rainbow-breadcrumb-item active">Privacy and Policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcarumb area  -->
+</div>
 <!-- Main content -->
 <div class="rbt-main-content mb--0">
     <div class="rbt-daynamic-page-content center-width">

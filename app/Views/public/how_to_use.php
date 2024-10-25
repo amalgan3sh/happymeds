@@ -1,3 +1,24 @@
+ <!-- Start Breadcrumb Area  -->
+ <div class="main-content">
+            <!-- Start Breadcarumb area  -->
+            <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb-inner text-center">
+                                <h3 class="title h3">How to use</h3>
+                                <ul class="page-list">
+                                    <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
+                                    <li class="rainbow-breadcrumb-item active">How to use</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Breadcarumb area  -->
+        </div>
+
 <div class="main-content">
     <div class="rbt-utilize-area rainbow-section-gap-big">
         <div class="container">

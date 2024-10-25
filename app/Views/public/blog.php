@@ -8,7 +8,7 @@
                     <div class="breadcrumb-inner text-center">
                         <h3 class="title h3">Our Blog</h3>
                         <ul class="page-list">
-                            <li class="rainbow-breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
                             <li class="rainbow-breadcrumb-item active">Blog</li>
                         </ul>
                     </div>

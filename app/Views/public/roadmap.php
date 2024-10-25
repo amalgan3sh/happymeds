@@ -8,7 +8,7 @@
                     <div class="breadcrumb-inner text-center">
                         <h3 class="title h3">ARANEA Roadmap</h3>
                         <ul class="page-list">
-                            <li class="rainbow-breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
                             <li class="rainbow-breadcrumb-item active">Roadmap</li>
                         </ul>
                     </div>

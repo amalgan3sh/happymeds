@@ -1,4 +1,23 @@
-
+<!-- Start Breadcrumb Area  -->
+<div class="main-content">
+    <!-- Start Breadcarumb area  -->
+    <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h3 class="title h3">Contact Us</h3>
+                        <ul class="page-list">
+                            <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
+                            <li class="rainbow-breadcrumb-item active">Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcarumb area  -->
+</div>
 
 <!-- Start Contact Area  -->
 <div class="main-content">
