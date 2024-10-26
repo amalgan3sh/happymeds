@@ -7,5 +7,5 @@ class ProductModel extends Model
 {
     protected $table = 'product_data';
     protected $primaryKey = 'product_id';
-    protected $allowedFields = ['ProductName', 'Content', 'DosageForm', 'Strength', 'TherapeuticUse', 'TabletShapeAndColor', 'Packaging', 'UnitSize', 'ShipperSize','icon','product_images','product_img_main','rating'];
+    protected $allowedFields = ['ProductName', 'Content', 'DosageForm', 'Strength', 'TherapeuticUse', 'TabletShapeAndColor', 'Packaging', 'UnitSize', 'ShipperSize','icon','product_images','product_img_main','rating','thumbnail','sold_units', 'total_units'];
 }
