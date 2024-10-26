@@ -92,74 +92,204 @@
                 <h5 class="modal-title" id="requestProductModalLabel">Request New Product</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            
             <div class="modal-body">
-                <form action="<?= site_url('product/requestProduct') ?>" method="post" enctype="multipart/form-data">
-                    <?= csrf_field() ?> <!-- CSRF protection token -->
-
-                    <div id="smartwizard_modal" class="form-wizard">
-                        <ul class="nav nav-wizard">
-                            <li><a class="nav-link" href="#step_product_details_modal">
-                                <span>1</span> 
-                            </a></li>
-                            <li><a class="nav-link" href="#step_images_documents_modal">
-                                <span>2</span>
-                            </a></li>
+                <!-- Display validation errors if any -->
+                <?php if (session()->has('errors')): ?>
+                    <div class="alert alert-danger">
+                        <ul>
+                            <?php foreach (session('errors') as $error): ?>
+                                <li><?= esc($error) ?></li>
+                            <?php endforeach; ?>
                         </ul>
-                        <div class="tab-content">
-                            <!-- Step 1: Product Details -->
-                            <div id="step_product_details_modal" class="tab-pane" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-lg-6 mb-2">
-                                        <label class="form-label required">Product Name</label>
-                                        <input type="text" name="productName" class="form-control" placeholder="Product Name" required>
+                    </div>
+                <?php endif; ?>
+
+                <!-- Form with file upload -->
+                <form action="<?= site_url('product/requestProduct') ?>" method="post" enctype="multipart/form-data" id="productRequestForm">
+                    <?= csrf_field() ?>
+
+                    <!-- Form wizard navigation -->
+                    <div id="formWizard" class="mb-4">
+                        <ul class="nav nav-pills nav-justified form-wizard-steps">
+                            <li class="nav-item">
+                                <button type="button" class="nav-link active" data-step="1">
+                                    <span class="step-title">Product Details</span>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="nav-link" data-step="2">
+                                    <span class="step-title">Images & Documents</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Step 1: Product Details -->
+                    <div class="form-step" id="step1">
+                        <div class="row">
+                            <!-- Product Name -->
+                            <div class="col-md-6 mb-3">
+                                <label for="productName" class="form-label">Product Name <span class="text-danger">*</span></label>
+                                <input type="text" 
+                                       class="form-control <?= session('errors.productName') ? 'is-invalid' : '' ?>" 
+                                       id="productName" 
+                                       name="productName" 
+                                       value="<?= old('productName') ?>" 
+                                       required>
+                                <?php if (session('errors.productName')): ?>
+                                    <div class="invalid-feedback">
+                                        <?= session('errors.productName') ?>
                                     </div>
-                                    <div class="col-lg-6 mb-2">
-                                        <label class="form-label required">Category</label>
-                                        <select name="category" class="form-control" required>
-                                            <option value="">Select Category</option>
-                                            <option value="Medicine">Medicine</option>
-                                            <option value="Supplement">Supplement</option>
-                                            <option value="Medical Device">Medical Device</option>
-                                            <option value="Personal Care">Personal Care</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 mb-2">
-                                        <label class="form-label required">Dosage Form</label>
-                                        <input type="text" name="dosageForm" class="form-control" placeholder="e.g., Tablet, Syrup" required>
-                                    </div>
-                                    <div class="col-lg-6 mb-2">
-                                        <label class="form-label required">Strength</label>
-                                        <input type="text" name="strength" class="form-control" placeholder="e.g., 500mg, 10ml" required>
-                                    </div>
-                                    <div class="col-lg-12 mb-2">
-                                        <label class="form-label">Description</label>
-                                        <textarea name="description" class="form-control" rows="4" placeholder="Provide a brief description of the product"></textarea>
-                                    </div>
-                                    <div class="col-lg-12 mb-2">
-                                        <label class="form-label">Therapeutic Use</label>
-                                        <input type="text" name="therapeuticUse" class="form-control" placeholder="e.g., Pain relief, Vitamin supplement">
-                                    </div>
-                                </div>
+                                <?php endif; ?>
                             </div>
 
-                            <!-- Step 2: Images and Documents -->
-                            <div id="step_images_documents_modal" class="tab-pane" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-lg-12 mb-2">
-                                        <label class="form-label">Product Image</label>
-                                        <input type="file" name="productImage" class="form-control" accept=".jpg, .jpeg, .png">
+                            <!-- Category -->
+                            <div class="col-md-6 mb-3">
+                                <label for="category" class="form-label">Category <span class="text-danger">*</span></label>
+                                <select class="form-select <?= session('errors.category') ? 'is-invalid' : '' ?>" 
+                                        id="category" 
+                                        name="category" 
+                                        required>
+                                    <option value="">Select Category</option>
+                                    <option value="Medicine" <?= old('category') == 'Medicine' ? 'selected' : '' ?>>Medicine</option>
+                                    <option value="Supplement" <?= old('category') == 'Supplement' ? 'selected' : '' ?>>Supplement</option>
+                                    <option value="Medical Device" <?= old('category') == 'Medical Device' ? 'selected' : '' ?>>Medical Device</option>
+                                    <option value="Personal Care" <?= old('category') == 'Personal Care' ? 'selected' : '' ?>>Personal Care</option>
+                                </select>
+                                <?php if (session('errors.category')): ?>
+                                    <div class="invalid-feedback">
+                                        <?= session('errors.category') ?>
                                     </div>
-                                    <div class="col-lg-12 mb-2">
-                                        <label class="form-label">Product Brochure (optional)</label>
-                                        <input type="file" name="productBrochure" class="form-control" accept=".pdf">
+                                <?php endif; ?>
+                            </div>
+
+                            <!-- Dosage Form -->
+                            <div class="col-md-6 mb-3">
+                                <label for="dosageForm" class="form-label">Dosage Form <span class="text-danger">*</span></label>
+                                <input type="text" 
+                                       class="form-control <?= session('errors.dosageForm') ? 'is-invalid' : '' ?>" 
+                                       id="dosageForm" 
+                                       name="dosageForm" 
+                                       value="<?= old('dosageForm') ?>" 
+                                       placeholder="e.g., Tablet, Syrup" 
+                                       required>
+                                <?php if (session('errors.dosageForm')): ?>
+                                    <div class="invalid-feedback">
+                                        <?= session('errors.dosageForm') ?>
                                     </div>
-                                    <div class="col-lg-12 mb-2">
-                                        <label class="form-label">Certifications (if any)</label>
-                                        <input type="file" name="certifications" class="form-control" accept=".pdf, .jpg, .png">
+                                <?php endif; ?>
+                            </div>
+
+                            <!-- Strength -->
+                            <div class="col-md-6 mb-3">
+                                <label for="strength" class="form-label">Strength <span class="text-danger">*</span></label>
+                                <input type="text" 
+                                       class="form-control <?= session('errors.strength') ? 'is-invalid' : '' ?>" 
+                                       id="strength" 
+                                       name="strength" 
+                                       value="<?= old('strength') ?>" 
+                                       placeholder="e.g., 500mg, 10ml" 
+                                       required>
+                                <?php if (session('errors.strength')): ?>
+                                    <div class="invalid-feedback">
+                                        <?= session('errors.strength') ?>
                                     </div>
-                                </div>
+                                <?php endif; ?>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="col-12 mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea class="form-control <?= session('errors.description') ? 'is-invalid' : '' ?>" 
+                                          id="description" 
+                                          name="description" 
+                                          rows="4" 
+                                          placeholder="Provide a brief description of the product"><?= old('description') ?></textarea>
+                                <?php if (session('errors.description')): ?>
+                                    <div class="invalid-feedback">
+                                        <?= session('errors.description') ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+
+                            <!-- Therapeutic Use -->
+                            <div class="col-12 mb-3">
+                                <label for="therapeuticUse" class="form-label">Therapeutic Use</label>
+                                <input type="text" 
+                                       class="form-control <?= session('errors.therapeuticUse') ? 'is-invalid' : '' ?>" 
+                                       id="therapeuticUse" 
+                                       name="therapeuticUse" 
+                                       value="<?= old('therapeuticUse') ?>" 
+                                       placeholder="e.g., Pain relief, Vitamin supplement">
+                                <?php if (session('errors.therapeuticUse')): ?>
+                                    <div class="invalid-feedback">
+                                        <?= session('errors.therapeuticUse') ?>
+                                    </div>
+                                <?php endif; ?>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Step 2: Images and Documents -->
+                    <div class="form-step" id="step2" style="display: none;">
+                        <div class="row">
+                            <!-- Product Image -->
+                            <div class="col-12 mb-3">
+                                <label for="productImage" class="form-label">Product Image</label>
+                                <input type="file" 
+                                       class="form-control <?= session('errors.productImage') ? 'is-invalid' : '' ?>" 
+                                       id="productImage" 
+                                       name="productImage" 
+                                       accept=".jpg, .jpeg, .png">
+                                <div class="form-text">Accepted formats: JPG, JPEG, PNG</div>
+                                <?php if (session('errors.productImage')): ?>
+                                    <div class="invalid-feedback">
+                                        <?= session('errors.productImage') ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+
+                            <!-- Product Brochure -->
+                            <div class="col-12 mb-3">
+                                <label for="productBrochure" class="form-label">Product Brochure (optional)</label>
+                                <input type="file" 
+                                       class="form-control <?= session('errors.productBrochure') ? 'is-invalid' : '' ?>" 
+                                       id="productBrochure" 
+                                       name="productBrochure" 
+                                       accept=".pdf">
+                                <div class="form-text">Accepted format: PDF</div>
+                                <?php if (session('errors.productBrochure')): ?>
+                                    <div class="invalid-feedback">
+                                        <?= session('errors.productBrochure') ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+
+                            <!-- Certifications -->
+                            <div class="col-12 mb-3">
+                                <label for="certifications" class="form-label">Certifications (if any)</label>
+                                <input type="file" 
+                                       class="form-control <?= session('errors.certifications') ? 'is-invalid' : '' ?>" 
+                                       id="certifications" 
+                                       name="certifications" 
+                                       accept=".pdf, .jpg, .jpeg, .png">
+                                <div class="form-text">Accepted formats: PDF, JPG, JPEG, PNG</div>
+                                <?php if (session('errors.certifications')): ?>
+                                    <div class="invalid-feedback">
+                                        <?= session('errors.certifications') ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Navigation Buttons -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="prevStep" style="display: none;">Previous</button>
+                        <button type="button" class="btn btn-primary" id="nextStep">Next</button>
+                        <button type="submit" class="btn btn-success" id="submitBtn" style="display: none;">Submit Request</button>
                     </div>
                 </form>
             </div>
@@ -199,6 +329,76 @@
 <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 <script src="js/custom.min.js"></script>
 <script src="js/dlabnav-init.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('productRequestForm');
+    const step1 = document.getElementById('step1');
+    const step2 = document.getElementById('step2');
+    const nextBtn = document.getElementById('nextStep');
+    const prevBtn = document.getElementById('prevStep');
+    const submitBtn = document.getElementById('submitBtn');
+    const stepButtons = document.querySelectorAll('.form-wizard-steps .nav-link');
+    
+    let currentStep = 1;
+
+    // Validate required fields in step 1
+    function validateStep1() {
+        const required = ['productName', 'category', 'dosageForm', 'strength'];
+        return required.every(fieldName => {
+            const field = document.getElementById(fieldName);
+            return field.value.trim() !== '';
+        });
+    }
+
+    // Handle next button click
+    nextBtn.addEventListener('click', function() {
+        if (currentStep === 1 && validateStep1()) {
+            step1.style.display = 'none';
+            step2.style.display = 'block';
+            prevBtn.style.display = 'block';
+            nextBtn.style.display = 'none';
+            submitBtn.style.display = 'block'; // Show submit button at step 2
+            currentStep = 2;
+            
+            // Update wizard steps
+            stepButtons.forEach(button => {
+                button.classList.remove('active');
+                if (button.getAttribute('data-step') == '2') {
+                    button.classList.add('active');
+                }
+            });
+        }
+    });
+
+    // Handle previous button click
+    prevBtn.addEventListener('click', function() {
+        if (currentStep === 2) {
+            step2.style.display = 'none';
+            step1.style.display = 'block';
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'block';
+            submitBtn.style.display = 'none'; // Hide submit button at step 1
+            currentStep = 1;
+            
+            // Update wizard steps
+            stepButtons.forEach(button => {
+                button.classList.remove('active');
+                if (button.getAttribute('data-step') == '1') {
+                    button.classList.add('active');
+                }
+            });
+        }
+    });
+
+    // Form submission handler
+    form.addEventListener('submit', function(e) {
+        if (currentStep === 1 && !validateStep1()) {
+            e.preventDefault();
+            alert('Please fill in all required fields before proceeding.');
+        }
+    });
+});
+</script>
 
 <!-- JavaScript for search functionality -->
 <script>
@@ -269,13 +469,52 @@
 
 
 </script>
+<style>
+.form-wizard-steps .nav-link {
+    position: relative;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.form-wizard-steps .nav-link.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.step-number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    margin-right: 0.5rem;
+}
+
+.nav-link.active .step-number {
+    background-color: white;
+    color: #0d6efd;
+}
+
+.form-wizard-steps {
+    margin-bottom: 2rem;
+}
+
+.invalid-feedback {
+    display: block;
+}
+</style>
 <!-- Form Steps -->
-<script src="vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js"></script>
-	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	
-	<script src="js/custom.min.js"></script>
-	<script src="js/dlabnav-init.js"></script>
-	
+
+<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+<script src="js/custom.min.js"></script>
+<script src="js/dlabnav-init.js"></script>
+
 <!-- Custom CSS -->
 <style>
     .search-container {
