@@ -65,8 +65,19 @@ class StoreController extends Controller
 
     public function ShopEcommerce()
     {
+        // Initialize the ProductModel
+        $productModel = new ProductModel();
+
+        // Retrieve all products or apply any specific filters as needed
+        $products = $productModel->findAll();
+
+        // Prepare data array to pass to the view
+        $data = [
+            'products' => $products
+        ];
+
         echo view('ecommerce/ecommerce_header');
-        echo view('ecommerce/shop_ecommerce');
+        echo view('ecommerce/shop_ecommerce',$data);
         echo view('ecommerce/ecommerce_footer');
     }
 

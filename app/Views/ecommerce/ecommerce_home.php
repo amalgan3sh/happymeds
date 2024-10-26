@@ -184,7 +184,6 @@
                                             </div>
                                             <div class="product-action-1">
                                                 <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Compare" class="action-btn" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
                                                 <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
@@ -222,31 +221,7 @@
                                 </div>
                                 <?php endforeach; ?>
                         </div>
-                        <script>
-                        function addToCart(productId) {
-                            $.ajax({
-                                url: "<?php echo site_url('cart/add'); ?>",
-                                type: "POST",
-                                data: {
-                                    product_id: productId
-                                },
-                                dataType: "json",
-                                success: function(response) {
-                                    if (response.status === 'success') {
-                                        // Update cart count in the header
-                                        $('.cart-count').text(response.cartCount);
-                                        // Show success message
-                                        alert('Product added to cart successfully');
-                                    } else {
-                                        alert(response.message);
-                                    }
-                                },
-                                error: function() {
-                                    alert("An error occurred. Please try again.");
-                                }
-                            });
-                        }
-                        </script>
+                        
 
                         <!--end product card-->
                     </div>
@@ -935,3 +910,29 @@
                 </section>
                 <!--End 4 columns-->
 </main>
+
+                        <script>
+                        function addToCart(productId) {
+                            $.ajax({
+                                url: "<?php echo site_url('cart/add'); ?>",
+                                type: "POST",
+                                data: {
+                                    product_id: productId
+                                },
+                                dataType: "json",
+                                success: function(response) {
+                                    if (response.status === 'success') {
+                                        // Update cart count in the header
+                                        $('.cart-count').text(response.cartCount);
+                                        // Show success message
+                                        alert('Product added to cart successfully');
+                                    } else {
+                                        alert(response.message);
+                                    }
+                                },
+                                error: function() {
+                                    alert("An error occurred. Please try again.");
+                                }
+                            });
+                        }
+                        </script>
