@@ -112,7 +112,12 @@ $routes->get('privacy_and_policy', 'PublicController::privacy_and_policy');
 $routes->get('roadmap', 'PublicController::roadmap');
 $routes->get('contact_us', 'PublicController::contact_us');
 $routes->post('contact/submitInquiry', 'ContactController::submitInquiry');
-
+$routes->get('shop_cart', 'StoreController::ShopCart');
+$routes->post('cart/add', 'CartController::addToCart');
+$routes->get('cart', 'CartController::index');
+$routes->post('cart/update', 'CartController::update');
+$routes->get('cart/remove/(:num)', 'CartController::remove/$1');
+$routes->get('cart/clear', 'CartController::clear');
 
 
 //auth

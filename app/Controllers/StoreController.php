@@ -28,21 +28,38 @@ class StoreController extends Controller
             ->orderBy('created_at', 'DESC') // Order by most recent
             ->limit(3)
             ->findAll(); 
-            
+
         $data['topRatedProducts'] = $productModel
             ->orderBy('rating', 'DESC') // Order by highest rating
             ->limit(3)
             ->findAll();
+            
 
         echo view('ecommerce/ecommerce_header');
         echo view('ecommerce/ecommerce_home',$data);
         echo view('ecommerce/ecommerce_footer');
     }
 
-    public function HomePageEcommerce()
+
+    public function ShopCart()
     {
+        $session = session();
+        $cart = $session->get('cart') ?? [];
+        
+        
+        // Calculate the total amount
+        $totalAmount = 0;
+        foreach ($cart as $item) {
+            $totalAmount += '10' * $item['quantity'];
+        }
+    
+        // Pass cart items and total to the view
+        $data = [
+            'cartItems' => $cart,
+            'totalAmount' => $totalAmount
+        ];
         echo view('ecommerce/ecommerce_header');
-        echo view('ecommerce/home_page_ecommerce');
+        echo view('ecommerce/shop_cart');
         echo view('ecommerce/ecommerce_footer');
     }
 

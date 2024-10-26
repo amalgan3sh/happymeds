@@ -247,13 +247,7 @@
                                         </select>
                                     </form>
                                 </div>
-                                <div class="header-action-icon-2">
-                                    <a href="shop-compare.html">
-                                        <img class="svgInject" alt="Nest" src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-compare.svg" />
-                                        <span class="pro-count blue">3</span>
-                                    </a>
-                                    <a href="shop-compare.html"><span class="lable ml-0">Compare</span></a>
-                                </div>
+                                
                                 <div class="header-action-icon-2">
                                     <a href="shop-wishlist.html">
                                         <img class="svgInject" alt="Nest" src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-heart.svg" />
@@ -262,11 +256,18 @@
                                     <a href="shop-wishlist.html"><span class="lable">Wishlist</span></a>
                                 </div>
                                 <div class="header-action-icon-2">
-                                    <a class="mini-cart-icon" href="shop-cart.html">
+                                    <a class="mini-cart-icon" href="shop_cart">
                                         <img alt="Nest" src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-cart.svg" />
-                                        <span class="pro-count blue">2</span>
+                                        <?php
+                                            // Retrieve cart items from the session
+                                            $cartItems = $_SESSION['cart'] ?? [];
+
+                                            // Calculate the total quantity of items in the cart
+                                            $totalItemCount = count($cartItems);
+                                            ?>
+                                        <span class="pro-count blue"><?php echo $totalItemCount; ?></span>
                                     </a>
-                                    <a href="shop-cart.html"><span class="lable">Cart</span></a>
+                                    <a href="shop_cart"><span class="lable">Cart</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                         <ul>
                                             <li>
@@ -299,7 +300,7 @@
                                                 <h4>Total <span>1000.00</span></h4>
                                             </div>
                                             <div class="shopping-cart-button">
-                                                <a href="shop-cart.html" class="outline">View cart</a>
+                                                <a href="shop_cart" class="outline">View cart</a>
                                                 <a href="shop-checkout.html">Checkout</a>
                                             </div>
                                         </div>
@@ -378,7 +379,7 @@
                                 <ul>
                                     <li class="hot-deals"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="shop-grid-right.html">Deals</a></li>
                                     <li>
-                                        <a class="active" href="home_page_ecommerce">Home </a>
+                                        <a class="active" href="ecommerce_home">Home </a>
                                         
                                     </li>
                                     <li>
@@ -490,8 +491,8 @@
                                             <h4>Total <span>$383.00</span></h4>
                                         </div>
                                         <div class="shopping-cart-button">
-                                            <a href="shop-cart.html">View cart</a>
-                                            <a href="shop-checkout.html">Checkout</a>
+                                            <a href="shop_cart">View cart</a>
+                                            <a href="shop_cart">Checkout</a>
                                         </div>
                                     </div>
                                 </div>

@@ -188,7 +188,7 @@
                                                 <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
-                                                <span class="hot">Hot</span>
+                                                <span class="hot">Hotest</span>
                                             </div>
                                         </div>
                                         <div class="product-content-wrap">
@@ -212,7 +212,9 @@
                                                     <span><?php echo $product['DosageForm']; ?></span>
                                                 </div>
                                                 <div class="add-cart">
-                                                    <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                    <button class="add" onclick="addToCart(<?php echo $product['product_id']; ?>)">
+                                                        <i class="fi-rs-shopping-cart mr-5"></i>Add
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,6 +222,31 @@
                                 </div>
                                 <?php endforeach; ?>
                         </div>
+                        <script>
+                        function addToCart(productId) {
+                            $.ajax({
+                                url: "<?php echo site_url('cart/add'); ?>",
+                                type: "POST",
+                                data: {
+                                    product_id: productId
+                                },
+                                dataType: "json",
+                                success: function(response) {
+                                    if (response.status === 'success') {
+                                        // Update cart count in the header
+                                        $('.cart-count').text(response.cartCount);
+                                        // Show success message
+                                        alert('Product added to cart successfully');
+                                    } else {
+                                        alert(response.message);
+                                    }
+                                },
+                                error: function() {
+                                    alert("An error occurred. Please try again.");
+                                }
+                            });
+                        }
+                        </script>
 
                         <!--end product card-->
                     </div>
