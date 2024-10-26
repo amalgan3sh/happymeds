@@ -1,372 +1,4 @@
-<!-- End Header Area  -->
-<div class="popup-mobile-menu">
-    <div class="inner-popup">
-        <div class="header-top">
-            <div class="logo">
-                <a href="index.html">
-                            <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/logo.png" alt="ChatBot Logo">
-                        </a>
-            </div>
-            <div class="close-menu">
-                <button class="close-button">
-                    <i class="fa-sharp fa-regular fa-x"></i>
-                </button>
-            </div>
-        </div>
 
-        <div class="content">
-            <ul class="mainmenu">
-                <li><a href="index.html">Home</a></li>
-                <li class="has-dropdown has-menu-child-item position-relative"><a href="#">Tools <i class="fa-regular fa-chevron-down"></i></a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="text-generator.html">
-                                <span>Text Generator</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="image-generator.html">
-                                <span>Image Generator</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="code-generator.html">
-                                <span>Code Generator</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="image-editor.html">
-                                <span>Image Editor</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="vedio-generator.html">
-                                <span>Vedio Generator</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="email-generator.html">
-                                <span>Email Generator</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a tabindex="-1" class="disabled" aria-disabled="true">
-                                <span>Audio Generator</span>
-                                <div class="rainbow-badge-card badge-sm ml--5">COMING</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a tabindex="-1" class="disabled" aria-disabled="true">
-                                <span>Edu. feedback</span>
-                                <div class="rainbow-badge-card badge-sm ml--5">COMING</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a tabindex="-1" class="disabled" aria-disabled="true">
-                                <span>Website Generator</span>
-                                <div class="rainbow-badge-card badge-sm ml--5">COMING</div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="with-megamenu has-menu-child-item"><a href="#">Pages <i class="fa-regular fa-chevron-down"></i></a>
-                    <div class="rainbow-megamenu">
-                        <div class="wrapper">
-                            <div class="row row--0">
-                                <div class="col-lg-3 single-mega-item">
-                                    <ul class="mega-menu-item">
-                                        <li>
-                                            <h3 class="rbt-short-title">Inner Pages</h3>
-                                        </li>
-                                        <li>
-                                            <a href="styleguide.html">
-                                                <span>Style Guide</span>
-                                                <div class="rainbow-badge-card badge-sm ml--5">Hot</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="blog.html">
-                                                <span>Blog</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-details.html">
-                                                <span>Blog Details</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="pricing.html">
-                                                <span>Pricing</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">
-                                                <span>Contact</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="signin.html">
-                                                <span>Sign In</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="signup.html">
-                                                <span>Sign Up</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Team.html">
-                                                <span>Team</span>
-
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="terms-policy.html">
-                                                <span>Terms & Policy</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="privacy-policy.html">
-                                                <span>Privacy Policy</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-lg-3 single-mega-item">
-                                    <ul class="mega-menu-item">
-                                        <li>
-                                            <h3 class="rbt-short-title">DASHBOARD PAGES</h3>
-                                        </li>
-                                        <li>
-                                            <a href="profile-details.html">
-                                                <span>Profile</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="notification.html">
-                                                <span>Notification</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="chat-export.html">
-                                                <span>Chat Export</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="appearance.html">
-                                                <span>Apperance</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="plans-billing.html">
-                                                <span>Plans and Billing</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="sessions.html">
-                                                <span>Sessions</span>
-
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="application.html">
-                                                <span>Application</span>
-
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="release-notes.html">
-                                                <span>Release notes</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="help.html">
-                                                <span>Help & FAQs</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-lg-3 single-mega-item">
-                                    <ul class="mega-menu-item br--0">
-                                        <li>
-                                            <h3 class="rbt-short-title">Upcoming Advance Elements</h3>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="disabled">
-                                                <span>Product Description</span>
-                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="disabled">
-                                                <span>Youtube Vedio to Post</span>
-                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
-
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="disabled">
-                                                <span>Grammar Check</span>
-                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="disabled">
-                                                <span>Generate From RSS</span>
-                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="disabled">
-                                                <span>Vedio Script</span>
-                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="disabled">
-                                                <span>Audio to Text</span>
-                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="disabled">
-                                                <span>Subscription</span>
-                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="disabled">
-                                                <span>Maintanence</span>
-                                                <div class="rainbow-badge-card badge-sm ml--5">Coming</div>
-
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="disabled">
-                                                <span>Coming Soon</span>
-
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-lg-3 single-mega-item">
-                                    <div class="header-menu-img">
-                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/menu-img/menu-img-2.png" alt="Menu Split Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="utilize.html">How to use</a></li>
-            </ul>
-
-
-
-
-
-
-
-
-            <div class="rbt-sm-separator"></div>
-            <div class="rbt-default-sidebar-wrapper">
-                <nav class="mainmenu-nav">
-                    <ul class="dashboard-mainmenu rbt-default-sidebar-list">
-                        <li><a href="text-generator.html"><i class="fa-sharp fa-regular fa-monitor"></i><span>Welcome</span></a></li>
-                        <li><a href="plans-billing.html"><i class="fa-sharp fa-regular fa-briefcase"></i><span>Manage Subsription</span></a></li>
-                    </ul>
-                    <div class="rbt-sm-separator"></div>
-                    <ul class="dashboard-mainmenu rbt-default-sidebar-list">
-                        <li>
-                            <a href="text-generator.html"><img src="assets/images/generator-icon/text.png" alt="AI Generator"><span>Text Generator</span></a>
-                        </li>
-                        <li>
-                            <a href="image-generator.html"><img src="assets/images/generator-icon/photo.png" alt="AI Generator"><span>Image Generator</span>
-                                <div class="rainbow-badge-card badge-sm ml--10">Hot</div>
-                            </a>
-                        </li>
-                        <li><a href="code-generator.html"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/code-editor.png" alt="AI Generator"><span>Code Generator</span></a></li>
-                        <li><a href="image-editor.html"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/photo.png" alt="AI Generator"><span>Image Editor</span></a></li>
-                        <li><a href="vedio-generator.html"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/video-camera.png" alt="AI Generator"><span>Vedio Generator</span></a></li>
-                        <li><a href="email-generator.html"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/email.png" alt="AI Generator"><span>Email Generator</span></a></li>
-                        <li><a tabindex="-1" class="disabled" aria-disabled="true" role="button"><img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-icon/website-design.png" alt="AI Generator"><span>Website Generator</span></a></li>
-                    </ul>
-                </nav>
-
-                <div class="rbt-sm-separator"></div>
-
-                <nav class="mainmenu-nav">
-                    <ul class="dashboard-mainmenu rbt-default-sidebar-list">
-                        <li class="has-submenu"><a class="collapse-btn collapsed" data-bs-toggle="collapse" href="#collapseExampleMenu" role="button" aria-expanded="false" aria-controls="collapseExampleMenu"><i class="fa-sharp fa-solid fa-circle-plus"></i><span>Setting</span></a>
-                            <div class="collapse" id="collapseExampleMenu">
-                                <ul class="submenu rbt-default-sidebar-list">
-                                    <li>
-                                        <a href="profile-details.html">
-                                            <i class="fa-sharp fa-regular fa-user"></i>
-                                            <span>Profile Details</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="notification.html">
-                                            <i class="fa-sharp fa-regular fa-shopping-bag"></i>
-                                            <span>Notification</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="chat-export.html">
-                                            <i class="fa-sharp fa-regular fa-users"></i>
-                                            <span>Chat Export</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="appearance.html">
-                                            <i class="fa-sharp fa-regular fa-home"></i>
-                                            <span>Apperance</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="plans-billing.html">
-                                            <i class="fa-sharp fa-regular fa-briefcase"></i>
-                                            <span>Plans and Billing</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="sessions.html">
-                                            <i class="fa-sharp fa-regular fa-users"></i>
-                                            <span>Sessions</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="application.html">
-                                            <i class="fa-sharp fa-regular fa-list"></i>
-                                            <span>Application</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#"><i class="fa-sharp fa-regular fa-award"></i><span>Help & FAQ</span></a></li>
-                    </ul>
-                    <div class="rbt-sm-separator"></div>
-                    <ul class="dashboard-mainmenu rbt-default-sidebar-list">
-                        <li><a href="release-notes.html"><i class="fa-sharp fa-regular fa-bell"></i><span>Release notes</span></a></li>
-                        <li><a href="terms-policy.html"><i class="fa-sharp fa-regular fa-briefcase"></i><span>Terms & Policy</span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <!-- Start Header Btn  -->
-        <div class="header-btn d-block d-md-none">
-            <a class="btn-default @@btnClass" target="_blank" href="text-generator.html">Get Started Free</a>
-        </div>
-        <!-- End Header Btn  -->
-    </div>
-</div>
 
 <!-- Imroz Preloader -->
 <div class="preloader">
@@ -386,23 +18,46 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="inner text-center mt--140">
-                    <h1 class="title display-one">Explore the Future with
-                        <br> <span class="header-caption">
-                            <span class="cd-headline rotate-1">
-                                <span class="cd-words-wrapper" style="width: 221px;">
-                                    <b class="theme-gradient is-visible">AI Solutions</b>
-                                    <b class="theme-gradient is-hidden">Smart Technology</b>
-                                    <b class="theme-gradient is-hidden">Innovation</b>
-                                </span>
-                        </span>
-                        </span> at ARANEA Platform
-                    </h1>
-                    <p class="description">Join the ARANEA Platform to revolutionize your business with AI-driven tools.
-                        <br> Empower your supply chain, manufacturing, and product distribution strategies.</p>
-                    <div class="form-group">
-                        <textarea name="text" id="slider-text-area" cols="30" rows="2" placeholder="Enter your AI-driven business solution requirements here"></textarea>
-                        <a class="btn-default @@btnClass" href="solutions.html" target="_blank">Explore Solutions</a>
-                    </div>
+                <h1 class="title display-one">Discover the Future with 
+    <br> <span class="header-caption">
+        <span class="cd-headline rotate-1">
+            <span class="cd-words-wrapper" style="width: 221px;">
+                <b class="theme-gradient is-visible">AI Tools</b>
+                <b class="theme-gradient is-hidden">Smart Tech</b>
+                <b class="theme-gradient is-hidden">Innovation</b>
+            </span>
+        </span>
+    </span> at ARANEA
+</h1>
+<p class="description">Join ARANEA and transform your business with AI-powered tools. 
+    <br> Optimize your supply chain, manufacturing, and distribution.
+</p>
+<div class="form-group">
+    <textarea name="text" id="slider-text-area" cols="30" rows="2" readonly></textarea>
+    <a class="btn-default @@btnClass" href="<?php echo base_url('get_started') ?>" target="_blank">Explore Solutions</a>
+</div>
+
+                        <script>
+                            // Typewriter effect function
+                            function typeWriterEffect(text, element, speed) {
+                                let i = 0;
+                                function typeWriter() {
+                                    if (i < text.length) {
+                                        element.value += text.charAt(i);
+                                        i++;
+                                        setTimeout(typeWriter, speed);
+                                    }
+                                }
+                                typeWriter();
+                            }
+
+                            // Call the typewriter effect with the target textarea
+                            document.addEventListener("DOMContentLoaded", function() {
+                                const textArea = document.getElementById('slider-text-area');
+                                const text = "To get started with ARANEA platform, click the button below";
+                                typeWriterEffect(text, textArea, 100); // 100ms between each character
+                            });
+                        </script>
                     <div class="inner-shape">
                         <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-one.png" alt="Icon Shape" class="iconshape iconshape-one">
                         <img src="<?php echo base_url('assets/landing/') ?>assets/images/bg/icon-shape/icon-shape-two.png" alt="Icon Shape" class="iconshape iconshape-two">
@@ -521,7 +176,7 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-vedio.png" alt="Chat example Image">
+                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/brand_partner.webp" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -554,8 +209,8 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img class="shape-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-audio.png" alt="Chat example Image">
-                                                    <img class="shape-light" src="<?php echo base_url('assets/landing/') ?>assets/images/light/generator-img/chat-export-audio.png" alt="Chat example Image">
+                                                    <img class="shape-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/b2b_partner.webp" alt="Chat example Image">
+                                                    <img class="shape-light" src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/b2b_partner.webp" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -588,7 +243,7 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-photo.png" alt="Chat example Image">
+                                                    <img src="https://media.licdn.com/dms/image/D4D12AQE-6tK6I_wS0g/article-cover_image-shrink_720_1280/0/1715235394941?e=2147483647&v=beta&t=XRMydgCcIuhcqz5vkVLZlWwg79E3VKG3CYZVq0fDAg8" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -621,7 +276,7 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export.png" alt="Chat example Image">
+                                                    <img src="https://i1.sndcdn.com/artworks-exSvky0QMFUlIB92-JGVyaw-t500x500.jpg" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -654,7 +309,7 @@
                                         <div class="export-img">
                                             <div class="inner-without-padding">
                                                 <div class="export-img img-bg-shape">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/generator-img/chat-export-code.png" alt="Chat example Image">
+                                                    <img src="https://media.licdn.com/dms/image/D5612AQFJgprdIC2qlQ/article-cover_image-shrink_720_1280/0/1719033574633?e=2147483647&v=beta&t=Ujr9FQKmhzzb6hKl8lDHNdGdUJxvbdTyIBajjdxCvyQ" alt="Chat example Image">
                                                     <div class="image-shape"></div>
                                                 </div>
                                             </div>
@@ -832,7 +487,7 @@
                                     <div class="row g-0 radius-10 align-items-center">
                                         <div class="col-lg-12 col-xl-5 col-12">
                                             <div class="thumbnail">
-                                                <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-1.png" alt="split Images">
+                                                <img class="radius" src="https://t3.ftcdn.net/jpg/04/76/98/34/360_F_476983486_lpgFNMTmvb6F1pFMnooOQotgpyoM2PVG.jpg" alt="split Images">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-xl-7 col-12">
@@ -857,7 +512,7 @@
                                     <div class="row g-0 radius-10 align-items-center">
                                         <div class="col-lg-12 col-xl-5 col-12">
                                             <div class="thumbnail">
-                                                <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-4.png" alt="split Images">
+                                                <img class="radius" src="https://www.protelesis.com/images-content/blog/streamline-business-operations.jpg" alt="split Images">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-xl-7 col-12">
@@ -868,7 +523,7 @@
                                                 <h2 class="title sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Streamline Your Business Operations</h2>
                                                 <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Unlock advanced tools and methods to optimize your business operations. With ARANEA’s platform, efficiently manage supply chains, product listings, and distribution while staying ahead of the competition.</p>
                                                 <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
-                                                    <a class="btn-default color-blacked" href="contact.html">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                    <a class="btn-default color-blacked" href="get_started">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -882,7 +537,7 @@
                                     <div class="row g-0 radius-10 align-items-center">
                                         <div class="col-lg-12 col-xl-5 col-12">
                                             <div class="thumbnail">
-                                                <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-3.png" alt="split Images">
+                                                <img class="radius" src="https://1602894.fs1.hubspotusercontent-na1.net/hub/1602894/hubfs/170814062_m_normal_none%20%281%29.jpg?height=400&name=170814062_m_normal_none%20%281%29.jpg" alt="split Images">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-xl-7 col-12">
@@ -894,7 +549,7 @@
                                                 <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Stay ahead of potential threats with robust cybersecurity strategies tailored for ARANEA’s platform. Ensure the protection of your business operations, data integrity, and client information across the supply
                                                     chain and digital presence.</p>
                                                 <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
-                                                    <a class="btn-default color-blacked" href="contact.html">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                    <a class="btn-default color-blacked" href="get_started">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -908,7 +563,7 @@
                                     <div class="row g-0 radius-10 align-items-center">
                                         <div class="col-lg-12 col-xl-5 col-12">
                                             <div class="thumbnail">
-                                                <img class="radius" src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-5.png" alt="split Images">
+                                                <img class="radius" src="https://media.licdn.com/dms/image/C4E12AQFafkHnbcxWbA/article-cover_image-shrink_720_1280/0/1601642976113?e=2147483647&v=beta&t=d7rrfI6jz_ynW60PTzvAq_9n4nFP3PbZP0DvnoU48hs" alt="split Images">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-xl-7 col-12">
@@ -920,7 +575,7 @@
             Demystifying Business Insights</h2>
                                                 <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Unlock the power of data analytics on the ARANEA platform. Use advanced tools to transform raw business data into actionable insights that enhance decision-making for brand partners, suppliers, and B2B operations.</p>
                                                 <div class="view-more-button mt--35 sal-animate" data-sal="slide-up" data-sal-duration="400" data-sal-delay="400">
-                                                    <a class="btn-default color-blacked" href="contact.html">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
+                                                    <a class="btn-default color-blacked" href="get_started">Try It Now <i class="fa-sharp fa-light fa-arrow-right ml--5"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1012,7 +667,7 @@
                     <img src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-2.png" alt="collabration-image">
                     <div class="logo-section">
                         <div class="center-logo">
-                            <img class="shape-dark" src="assets/images/split/split-2-logo.png" alt="Small Logo">
+                            <img class="shape-dark" src="<?php echo base_url('assets/') ?>assets/img/illustrations/ARANEA_WHITE.png" alt="Small Logo">
                             <img class="shape-light" src="assets/images/light/split/split-2-logo.png" alt="Small Logo">
                         </div>
                     </div>
@@ -1187,10 +842,10 @@
                                                     <h6>Features</h6>
                                                     <ul class="list-style--1 has-show-more-inner-content">
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Invest in nutraceutical herbal products
+                                                            <i class="fa-regular fa-circle-check"></i>Invest in healthcare products
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Earn benefits on B2B orders
+                                                            <i class="fa-regular fa-circle-check"></i>Earn benefits on B2B invoices
                                                         </li>
                                                         <li>
                                                             <i class="fa-regular fa-circle-check"></i> 5-year subscription plan
@@ -1571,7 +1226,7 @@
                         </div>
                         <div class="content-right">
                             <div class="img-right">
-                                <img src="<?php echo base_url('assets/landing/') ?>assets/images/cta-img/view-img.png" alt="Mobile View">
+                                <img src="https://media.licdn.com/dms/image/C4E12AQHQ93UQ1be7vQ/article-cover_image-shrink_720_1280/0/1617704785828?e=2147483647&v=beta&t=ch0dFZwVNrcS_djoAn5HQ8LIuynffa7KZj-7ahKDHJs" alt="Mobile View">
                             </div>
                         </div>
                         <div class="bg-shape-one">
@@ -1583,3 +1238,11 @@
         </div>
     </div>
 </div>
+
+<style>
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+</style>

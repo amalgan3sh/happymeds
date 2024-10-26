@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/bootstrap-select.min.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/plugins/prism.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/landing/') ?>assets/css/style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 </head>
 
 <body>
@@ -50,11 +52,11 @@
                             <div class="signup-box-bottom">
                                 <div class="signup-box-content">
                                     <div class="social-btn-grp">
-                                        <a class="btn-default btn-border" href="#">
+                                    <a id="googleSignInBtn" class="btn-default btn-border">
                                             <span class="icon-left"><img src="<?php echo base_url('assets/landing/') ?>assets/images/sign-up/google.png"
-                                                    alt="Google Icon"></span>Login with Google
+                                                                        alt="Google Icon"></span>Login with Google
                                         </a>
-                                        <a class="btn-default btn-border" href="#">
+                                        <a id="facebookLoginBtn" class="btn-default btn-border" href="#">
                                             <span class="icon-left"><img src="<?php echo base_url('assets/landing/') ?>assets/images/sign-up/facebook.png"
                                                     alt="Google Icon"></span>Login with Facebook
                                         </a>
@@ -86,49 +88,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 right-wrapper">
-                        <div class="client-feedback-area">
-                            <div class="single-feedback">
-                                <div class="inner">
-                                    <div class="meta-img-section">
-                                        <a class="image" href="#">
-                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-02sm.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="rating">
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                        <a href="#rating">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </a>
-                                    </div>
-                                    <div class="content">
-                                        <p class="description">Rainbow-Themes is now a crucial component of our work! We
-                                            made it simple to collaborate across departments by grouping our work</p>
-                                        <div class="bottom-content">
-                                            <div class="meta-info-section">
-                                                <h4 class="title-text mb--0">Guy Hawkins</h4>
-                                                <p class="desc mb--20">Nursing Assistant</p>
-                                                <div class="desc-img">
-                                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/brand-t.png" alt="Brand Image">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-lg-6 right-wrapper" style="position: relative; background-image: url('assets/landing/assets/images/brand_partner_mobile.png'); background-size: 70%; background-position: center; background-repeat: no-repeat;">
+    <div class="client-feedback-area">
+        <div class="single-feedback">
+            <!-- Content goes here -->
+        </div>
+    </div>
+    
+    <!-- Additional images around the main background image -->
+    <!-- <div class="extra-image image-3" style="position: absolute; top: 20%; left: 20%; width: 12%;">
+        <img src="images/background/pic3.png" alt="Image 3">
+    </div>
+    <div class="extra-image image-4" style="position: absolute; top: 20%; right: 20%; width: 12%;">
+        <img src="images/background/pic4.png" alt="Image 4">
+    </div>
+    <div class="extra-image image-5" style="position: absolute; bottom: 20%; left: 20%; width: 12%;">
+        <img src="images/background/pic5.png" alt="Image 5">
+    </div> -->
+</div>
                 </div>
             </div>
             <a class="close-button" href="index.html">
@@ -147,6 +124,84 @@
 
     <!-- JS
 ============================================ -->
+<style>
+    #googleSignInBtn div {
+    /* Any custom styles here should be avoided */
+}
+</style>
+
+<script>
+    function handleCredentialResponse(response) {
+        console.log("Encoded JWT ID token: " + response.credential);
+
+        // Send the ID token to the server for verification and authentication
+        fetch('<?= base_url('auth/verify_google_token') ?>', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            body: JSON.stringify({token: response.credential})
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Redirect user after successful sign-in and verification
+                window.location.href = "<?= base_url('happymeds/business_home') ?>";
+            } else {
+                console.error("Authentication failed:", data);
+            }
+        })
+        .catch(error => console.error("Error:", error));
+    }
+
+    window.onload = function () {
+        google.accounts.id.initialize({
+            client_id: "<?= $googleClientId ?>",  // Pass client ID from the backend
+            callback: handleCredentialResponse
+        });
+
+        google.accounts.id.renderButton(
+            document.getElementById("googleSignInBtn"),
+            { theme: "outline", size: "large" } // Customize button
+        );
+        google.accounts.id.prompt(); // Automatically shows prompt
+    }
+</script>
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '<?= $facebookAppId ?>',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v16.0' // Use the correct version of Facebook's Graph API
+        });
+        
+        // Now that FB is initialized, you can safely call FB.login
+        document.getElementById('facebookLoginBtn').addEventListener('click', function() {
+            FB.login(function(response) {
+                if (response.status === 'connected') {
+                    FB.api('/me', {fields: 'id,name,email'}, function(userInfo) {
+                        console.log('User Info:', userInfo);
+                        // Handle login on server-side
+                    });
+                } else {
+                    console.log('User canceled login or did not fully authorize.');
+                }
+            }, {scope: 'public_profile,email'});
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
     <script src="<?php echo base_url('assets/landing/') ?>assets/js/vendor/modernizr.min.js"></script>
     <script src="<?php echo base_url('assets/landing/') ?>assets/js/vendor/jquery.min.js"></script>
     <script src="<?php echo base_url('assets/landing/') ?>assets/js/vendor/bootstrap.min.js"></script>

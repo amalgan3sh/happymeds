@@ -7,8 +7,8 @@
                     <div class="rainbow-footer-widget">
                         <div class="logo">
                             <a href="index.html">
-                                <img class="logo-light" src="<?php echo base_url('landing/') ?>assets/images/logo/aranea-logo-light.png" alt="ARANEA Logo">
-                                <img class="logo-dark" src="<?php echo base_url('landing/') ?>assets/images/logo/aranea-logo-dark.png" alt="ARANEA Logo">
+                                <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="ARANEA Logo">
+                                <img class="logo-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="ARANEA Logo">
                             </a>
                         </div>
                         <p class="b1 desc-text">ARANEA: A comprehensive platform that bridges healthcare, real estate, and community services, offering innovative and sustainable solutions.</p>
@@ -27,17 +27,17 @@
                             <h4 class="title">Quick Links</h4>
                             <div class="inner">
                                 <ul class="footer-link link-hover">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="services.html">Our Services</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="<?php echo base_url('/')?>">Home</a></li>
+                                    <li><a href="vision">About Us</a></li>
+                                    <li><a href="key_features">Our Services</a></li>
+                                    <li><a href="contact_us">Contact</a></li>
+                                    <!-- <li><a href="careers.html">Careers</a></li> -->
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                <!-- <div class="col-lg-2 col-md-6 col-sm-6 col-12">
                     <div class="rainbow-footer-widget">
                         <div class="widget-menu-top">
                             <h4 class="title">Our Solutions</h4>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="rainbow-footer-widget">
                         <div class="widget-menu-top">
@@ -79,9 +79,9 @@
             <div class="col-lg-6 col-md-8 col-sm-12 col-12">
                 <div class="copyright-left">
                     <ul class="ft-menu link-hover">
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms-policy.html">Terms and Conditions</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy_and_policy">Privacy Policy</a></li>
+                        <li><a href="terms_and_conditions">Terms and Conditions</a></li>
+                        <li><a href="contact_us">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

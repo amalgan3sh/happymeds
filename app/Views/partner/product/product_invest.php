@@ -110,13 +110,13 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 choose-plan">
-        <div class="pricing-card basic" id="planCard1" data-amount="3000" onclick="selectPlan(this)">
+        <div class="pricing-card basic" id="planCard1" data-amount="500000" onclick="selectPlan(this)">
         <div class="heading">
           <h5>Co Brand Partner</h5>
           <h4>BASIC</h4>
         </div>
         <p class="price">
-          $3000
+          ₹5L
         </p>
         <ul class="features">
           <li>
@@ -142,13 +142,13 @@
         </ul>
         <button class="cta-btn select-plan" data-plan="basic">SELECT</button>
       </div>
-      <div class="pricing-card standard" id="planCard2" data-amount="6000" onclick="selectPlan(this)">
+      <div class="pricing-card standard" id="planCard2" data-amount="1000000" onclick="selectPlan(this)">
         <div class="heading">
           <h5>Co Brand Partner</h5>
           <h4>STANDARD</h4>
         </div>
         <p class="price">
-          $6000
+        ₹10L
         </p>
         <ul class="features">
           <li>
@@ -174,13 +174,13 @@
         </ul>
         <button class="cta-btn select-plan" data-plan="standard">SELECT</button>
       </div>
-      <div class="pricing-card premium"  id="planCard3" data-amount="9000" onclick="selectPlan(this)">
+      <div class="pricing-card premium"  id="planCard3" data-amount="1500000" onclick="selectPlan(this)">
         <div class="heading">
           <h5>Co Brand Partner</h5>
           <h4>PREMIUM</h4>
         </div>
         <p class="price">
-          $9000
+        ₹15L
         </p>
         <ul class="features">
           <li>

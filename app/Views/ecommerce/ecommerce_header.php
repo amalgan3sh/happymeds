@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Nest - Multipurpose eCommerce HTML Template</title>
+    <title>Nest - Multipurpose eCommerce</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -163,8 +163,8 @@
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info">
                             <ul>
-                                <li><a href="page-about.htlm">About Us</a></li>
-                                <li><a href="page-account.html">My Account</a></li>
+                                <li><a href="about">About Us</a></li>
+                                <li><a href="account">My Account</a></li>
                                 <li><a href="shop-wishlist.html">Wishlist</a></li>
                                 <li><a href="shop-order.html">Order Tracking</a></li>
                             </ul>
@@ -247,13 +247,7 @@
                                         </select>
                                     </form>
                                 </div>
-                                <div class="header-action-icon-2">
-                                    <a href="shop-compare.html">
-                                        <img class="svgInject" alt="Nest" src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-compare.svg" />
-                                        <span class="pro-count blue">3</span>
-                                    </a>
-                                    <a href="shop-compare.html"><span class="lable ml-0">Compare</span></a>
-                                </div>
+                                
                                 <div class="header-action-icon-2">
                                     <a href="shop-wishlist.html">
                                         <img class="svgInject" alt="Nest" src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-heart.svg" />
@@ -262,11 +256,18 @@
                                     <a href="shop-wishlist.html"><span class="lable">Wishlist</span></a>
                                 </div>
                                 <div class="header-action-icon-2">
-                                    <a class="mini-cart-icon" href="shop-cart.html">
+                                    <a class="mini-cart-icon" href="shop_cart">
                                         <img alt="Nest" src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-cart.svg" />
-                                        <span class="pro-count blue">2</span>
+                                        <?php
+                                            // Retrieve cart items from the session
+                                            $cartItems = $_SESSION['cart'] ?? [];
+
+                                            // Calculate the total quantity of items in the cart
+                                            $totalItemCount = count($cartItems);
+                                            ?>
+                                        <span class="pro-count blue"><?php echo $totalItemCount; ?></span>
                                     </a>
-                                    <a href="shop-cart.html"><span class="lable">Cart</span></a>
+                                    <a href="shop_cart"><span class="lable">Cart</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                         <ul>
                                             <li>
@@ -299,7 +300,7 @@
                                                 <h4>Total <span>1000.00</span></h4>
                                             </div>
                                             <div class="shopping-cart-button">
-                                                <a href="shop-cart.html" class="outline">View cart</a>
+                                                <a href="shop_cart" class="outline">View cart</a>
                                                 <a href="shop-checkout.html">Checkout</a>
                                             </div>
                                         </div>
@@ -378,7 +379,7 @@
                                 <ul>
                                     <li class="hot-deals"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="shop-grid-right.html">Deals</a></li>
                                     <li>
-                                        <a class="active" href="home_page_ecommerce">Home </a>
+                                        <a class="active" href="ecommerce_home">Home </a>
                                         
                                     </li>
                                     <li>
@@ -391,69 +392,31 @@
                                         <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
                                         <ul class="mega-menu">
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Drugs & Supplements</a>
+                                                <a class="menu-title" href="#">Kids</a>
                                                 <ul>
-                                                    <li><a href="shop-product-right.html">Meat & Poultry</a></li>
-                                                    <li><a href="shop-product-right.html">Fresh Vegetables</a></li>
-                                                    <li><a href="shop-product-right.html">Herbs & Seasonings</a></li>
-                                                    <li><a href="shop-product-right.html">Cuts & Sprouts</a></li>
-                                                    <li><a href="shop-product-right.html">Exotic Fruits & Veggies</a></li>
-                                                    <li><a href="shop-product-right.html">Packaged Produce</a></li>
+                                                    <li><a href="kids_medicine">Cough</a></li>
+                                                    <li><a href="kids_medicine">Fever</a></li>
+                                                    <li><a href="kids_medicine">Pain relief</a></li>
                                                 </ul>
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Medical Equipments</a>
+                                                <a class="menu-title" href="#">Adults</a>
                                                 <ul>
-                                                    <li><a href="shop-product-right.html">Milk & Flavoured Milk</a></li>
-                                                    <li><a href="shop-product-right.html">Butter and Margarine</a></li>
-                                                    <li><a href="shop-product-right.html">Eggs Substitutes</a></li>
-                                                    <li><a href="shop-product-right.html">Marmalades</a></li>
-                                                    <li><a href="shop-product-right.html">Sour Cream</a></li>
-                                                    <li><a href="shop-product-right.html">Cheese</a></li>
+                                                    <li><a href="adult_medicine">Pain relief</a></li>
+                                                    <li><a href="adult_medicine">Allergy</a></li>
+                                                    <li><a href="adult_medicine">Fever</a></li>
+                                                    <li><a href="adult_medicine">Cold</a></li>
+                                                    <li><a href="adult_medicine">Sour Throat</a></li>
+                                                    <li><a href="adult_medicine">Joint pain</a></li>
                                                 </ul>
-                                            </li>
-                                            <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Beauty & Hygiene</a>
-                                                <ul>
-                                                    <li><a href="shop-product-right.html">Breakfast Sausage</a></li>
-                                                    <li><a href="shop-product-right.html">Dinner Sausage</a></li>
-                                                    <li><a href="shop-product-right.html">Chicken</a></li>
-                                                    <li><a href="shop-product-right.html">Sliced Deli Meat</a></li>
-                                                    <li><a href="shop-product-right.html">Wild Caught Fillets</a></li>
-                                                    <li><a href="shop-product-right.html">Crab and Shellfish</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="sub-mega-menu sub-mega-menu-width-34">
-                                                <div class="menu-banner-wrap">
-                                                    <a href="shop-product-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/banner/banner-menu.png" alt="Nest" /></a>
-                                                    <div class="menu-banner-content">
-                                                        <h4>Hot deals</h4>
-                                                        <h3>
-                                                            Don't miss<br />
-                                                            Trending
-                                                        </h3>
-                                                        <div class="menu-banner-price">
-                                                            <span class="new-price text-success">Save to 50%</span>
-                                                        </div>
-                                                        <div class="menu-banner-btn">
-                                                            <a href="shop-product-right.html">Shop now</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="menu-banner-discount">
-                                                        <h3>
-                                                            <span>25%</span>
-                                                            off
-                                                        </h3>
-                                                    </div>
-                                                </div>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">Pages <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
-                                            <li><a href="page-about.html">About Us</a></li>
-                                            <li><a href="page-contact.html">Contact</a></li>
+                                            <li><a href="about">About Us</a></li>
+                                            <li><a href="contact">Contact</a></li>
                                             <li><a href="page-account.html">My Account</a></li>
                                             <li><a href="page-login.html">Login</a></li>
                                             <li><a href="page-register.html">Register</a></li>
@@ -466,7 +429,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="page-contact.html">Contact</a>
+                                        <a href="contact">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -528,8 +491,8 @@
                                             <h4>Total <span>$383.00</span></h4>
                                         </div>
                                         <div class="shopping-cart-button">
-                                            <a href="shop-cart.html">View cart</a>
-                                            <a href="shop-checkout.html">Checkout</a>
+                                            <a href="shop_cart">View cart</a>
+                                            <a href="shop_cart">Checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -673,8 +636,8 @@
                             <li class="menu-item-has-children">
                                 <a href="#">Pages</a>
                                 <ul class="dropdown">
-                                    <li><a href="page-about.html">About Us</a></li>
-                                    <li><a href="page-contact.html">Contact</a></li>
+                                    <li><a href="about">About Us</a></li>
+                                    <li><a href="contact">Contact</a></li>
                                     <li><a href="page-account.html">My Account</a></li>
                                     <li><a href="page-login.html">Login</a></li>
                                     <li><a href="page-register.html">Register</a></li>

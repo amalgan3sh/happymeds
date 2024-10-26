@@ -87,6 +87,10 @@ $routes->get('/ecommerce_home', 'StoreController::EcommerceHome');
 $routes->get('/home_page_ecommerce', 'StoreController::HomePageEcommerce');
 $routes->get('/shop_ecommerce', 'StoreController::ShopEcommerce');
 $routes->get('/about', 'StoreController::aboutEcommerce');
+$routes->get('/account', 'StoreController::accountEcommerce');
+$routes->get('/contact', 'StoreController::contactEcommerce');
+$routes->get('/kids_medicine', 'StoreController::KidsMedicineEcommerce');
+$routes->get('/adult_medicine', 'StoreController::AdultMedicine');
 
 $routes->post('transaction/save', 'TransactionController::save');
 $routes->post('transactions/download_receipt', 'TransactionController::save');
@@ -94,8 +98,26 @@ $routes->post('transactions/download_receipt', 'TransactionController::save');
 $routes->get('get_started', 'PublicController::get_started');
 $routes->get('partner_signin', 'PublicController::partner_signin');
 $routes->get('partner_register', 'PublicController::partner_register');
-
-
+$routes->get('how_to_use', 'PublicController::how_to_use');
+$routes->get('vision', 'PublicController::vision');
+$routes->get('mission', 'PublicController::mission');
+$routes->get('key_features', 'PublicController::key_features');
+$routes->get('collaboration', 'PublicController::collaboration');
+$routes->get('partnership', 'PublicController::partnership');
+$routes->get('sustainability', 'PublicController::sustainability');
+$routes->get('our_team', 'PublicController::our_team');
+$routes->get('blog', 'PublicController::blog');
+$routes->get('terms_and_conditions', 'PublicController::terms_and_conditions');
+$routes->get('privacy_and_policy', 'PublicController::privacy_and_policy');
+$routes->get('roadmap', 'PublicController::roadmap');
+$routes->get('contact_us', 'PublicController::contact_us');
+$routes->post('contact/submitInquiry', 'ContactController::submitInquiry');
+$routes->get('shop_cart', 'StoreController::ShopCart');
+$routes->post('cart/add', 'CartController::addToCart');
+$routes->get('cart', 'CartController::index');
+$routes->post('cart/update', 'CartController::update');
+$routes->get('cart/remove/(:num)', 'CartController::remove/$1');
+$routes->get('cart/clear', 'CartController::clear');
 
 
 //auth

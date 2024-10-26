@@ -52,11 +52,16 @@ class PublicController extends BaseController
     }
     public function partner_signin(): string
     {
-        return $this->renderView('partner_signin', [
-            'public/public_header',
-            'public/partner_signin',
-            'public/public_footer'
-        ]);
+        // Get the Google Client ID from the .env file
+        $data['googleClientId'] = env('GOOGLE_CLIENT_ID');
+        $data['facebookAppId'] = env('FACEBOOK_APP_ID');
+
+        // Load the header, content, and footer views
+        echo view('public/public_header');           // Load header
+        echo view('public/partner_signin', $data);   // Pass data to the content view
+        echo view('public/public_footer');           // Load footer
+
+        return ''; // Optional return
     }
 
     public function partner_register(): string
@@ -136,12 +141,122 @@ class PublicController extends BaseController
             'public/public_footer'
         ]);
     }
+    public function vision(): string
+    {
+        return $this->renderView('vision_view', [
+            'public/public_header',
+            'public/vision',
+            'public/public_footer'
+        ]);
+    }
+    public function mission(): string
+    {
+        return $this->renderView('vision_view', [
+            'public/public_header',
+            'public/mission',
+            'public/public_footer'
+        ]);
+    }
+    public function key_features(): string
+    {
+        return $this->renderView('vision_view', [
+            'public/public_header',
+            'public/key_features',
+            'public/public_footer'
+        ]);
+    }
+
+    public function collaboration(): string
+    {
+        return $this->renderView('collaboration_view', [
+            'public/public_header',
+            'public/collaboration',
+            'public/public_footer'
+        ]);
+    }
+    public function partnership(): string
+    {
+        return $this->renderView('partnership_view', [
+            'public/public_header',
+            'public/partnership',
+            'public/public_footer'
+        ]);
+    }
+
+    public function sustainability(): string
+    {
+        return $this->renderView('partnership_view', [
+            'public/public_header',
+            'public/sustainability',
+            'public/public_footer'
+        ]);
+    }
+    public function our_team(): string
+    {
+        return $this->renderView('our_team_view', [
+            'public/public_header',
+            'public/our_team',
+            'public/public_footer'
+        ]);
+    }
+
+    public function blog(): string
+    {
+        return $this->renderView('blog_view', [
+            'public/public_header',
+            'public/blog',
+            'public/public_footer'
+        ]);
+    }
+    public function terms_and_conditions(): string
+    {
+        return $this->renderView('terms_and_conditions_view', [
+            'public/public_header',
+            'public/terms_and_conditions',
+            'public/public_footer'
+        ]);
+    }
+
+    public function privacy_and_policy(): string
+    {
+        return $this->renderView('privacy_and_policy_view', [
+            'public/public_header',
+            'public/privacy_and_policy',
+            'public/public_footer'
+        ]);
+    }
+
+    public function roadmap(): string
+    {
+        return $this->renderView('roadmap_view', [
+            'public/public_header',
+            'public/roadmap',
+            'public/public_footer'
+        ]);
+    }
+
+    public function contact_us(): string
+    {
+        return $this->renderView('contact_us_view', [
+            'public/public_header',
+            'public/contact_us',
+            'public/public_footer'
+        ]);
+    }
 
     public function OTPVerification(): string
     {
         return $this->renderView('otp_verification_view', [
             'public/public_header',
             'public/otp_verification',
+            'public/public_footer'
+        ]);
+    }
+    public function how_to_use(): string
+    {
+        return $this->renderView('otp_verification_view', [
+            'public/public_header',
+            'public/how_to_use',
             'public/public_footer'
         ]);
     }

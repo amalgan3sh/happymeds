@@ -137,10 +137,10 @@
                                                                 <h6>Features</h6>
                                                                 <ul class="list-style--1 has-show-more-inner-content">
                                                                     <li>
-                                                                        <i class="fa-regular fa-circle-check"></i>Invest in nutraceutical herbal products
+                                                                         <i class="fa-regular fa-circle-check"></i>Invest in healthcare products
                                                                     </li>
                                                                     <li>
-                                                                        <i class="fa-regular fa-circle-check"></i>Earn benefits on B2B orders
+                                                                        <i class="fa-regular fa-circle-check"></i>Earn benefits on B2B invoices
                                                                     </li>
                                                                     <li>
                                                                         <i class="fa-regular fa-circle-check"></i> 5-year subscription plan

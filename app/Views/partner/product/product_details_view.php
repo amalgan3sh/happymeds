@@ -126,7 +126,7 @@
 										<div class="tab-content" id="myTabContent">
 											<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
 												aria-labelledby="home-tab" tabindex="0">
-												<img class="img-fluid rounded  " src="<?php echo base_url('assets/');?><?= esc($product['product_img_main']) ?>" alt="">
+												<img class="img-fluid rounded  " src="<?php echo base_url('/');?><?= esc($product['product_img_main']) ?>" alt="">
 											</div>
 											<?php
 											// Extract image paths from the comma-separated string
@@ -138,7 +138,7 @@
 											?>
 											<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
 												aria-labelledby="profile-tab" tabindex="0">
-												<img class="img-fluid rounded " src="<?php echo base_url('assets/');?><?= esc($imagePath) ?>" alt="">
+												<img class="img-fluid rounded " src="<?php echo base_url('/');?><?= esc($imagePath) ?>" alt="">
 											</div>
 											<?php
 												}
@@ -150,7 +150,7 @@
 												<a href="#first" class="nav-link active" id="home-tab"
 													data-bs-toggle="tab" data-bs-target="#home-tab-pane" role="tab"
 													aria-controls="home-tab-pane" aria-selected="true"><img
-														class="img-fluid me-2 rounded" src="<?php echo base_url('assets/');?><?= esc($product['product_img_main']) ?>" alt=""
+														class="img-fluid me-2 rounded" src="<?php echo base_url('/');?><?= esc($product['product_img_main']) ?>" alt=""
 														width="80"></a>
 											</li>
 											<?php
@@ -169,7 +169,7 @@
 												<a href="#<?= $tabName?>" class="nav-link" id="profile-tab" data-bs-toggle="tab"
 													data-bs-target="#profile-tab-pane" role="tab"
 													aria-controls="profile-tab-pane" aria-selected="false"><img
-														class="img-fluid me-2 rounded" src="<?php echo base_url('assets/');?><?= esc($imagePath) ?>" alt=""
+														class="img-fluid me-2 rounded" src="<?php echo base_url('/');?><?= esc($imagePath) ?>" alt=""
 														width="80"></a>
 											</li>
 											<?php
@@ -263,7 +263,7 @@
 							<div class="modal-body">
 								<form id="reviewForm">
 									<div class="text-center mb-4">
-										<img class="img-fluid rounded" width="78" src="<?= base_url('assets/') ?><?= esc($imagePath[2]) ?>" alt="DexignZone">
+										<img class="img-fluid rounded" width="78" src="<?= base_url('/') ?><?= esc($imagePath[2]) ?>" alt="DexignZone">
 									</div>
 
 									<div class="form-group">
@@ -309,7 +309,7 @@
 												<div class="card-body product-grid-card">
 													<div class="new-arrival-product">
 														<div class="new-arrivals-img-contnent">
-															<img class="img-fluid product-image" src="<?php echo base_url('assets/');?><?= esc($product['product_img_main']) ?>" alt="<?php echo esc($product['ProductName']); ?>">
+															<img class="img-fluid product-image" src="<?php echo base_url('/');?><?= esc($product['product_img_main']) ?>" alt="<?php echo esc($product['ProductName']); ?>">
 														</div>
 														<div class="new-arrival-content text-center mt-3">
 															<h4><a href="<?php echo base_url('product_detail/' . esc($product['product_id'])); ?>"><?php echo esc($product['ProductName']); ?></a></h4>
