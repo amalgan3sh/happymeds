@@ -123,6 +123,10 @@ $routes->get('checkout', 'CheckoutController::index');
 $routes->post('checkout/process', 'CheckoutController::process');
 $routes->post('checkout/storeVerification', 'CheckoutController::storeVerification');
 $routes->get('account', 'StoreController::account');
+$routes->get('login', 'StoreController::login');
+$routes->get('customer_register', 'StoreController::customer_register');
+$routes->post('save_data', 'StoreController::SaveData');
+$routes->match(['get', 'post'], 'store/login', 'StoreController::authenticate_user');
 
 
 //auth

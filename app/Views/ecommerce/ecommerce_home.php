@@ -56,44 +56,44 @@
                 <div class="carausel-10-columns" id="carausel-10-columns">
                     <div class="card-2 bg-9 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/lotion_icon.jpg" alt="" /></a>
+                            <a href="shop_ecommerce"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/lotion_icon.jpg" alt="" /></a>
                         </figure>
-                        <h6><a href="shop-grid-right.html">Lotion</a></h6>
+                        <h6><a href="shop_ecommerce">Lotion</a></h6>
                         <span>26 items</span>
                     </div>
                     <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/tablet_icon.jpg" alt="" /></a>
+                            <a href="shop_ecommerce"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/tablet_icon.jpg" alt="" /></a>
                         </figure>
-                        <h6><a href="shop-grid-right.html">Tablet</a></h6>
+                        <h6><a href="shop_ecommerce">Tablet</a></h6>
                         <span>28 items</span>
                     </div>
                     <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/syrup_icon.jpg" alt="" /></a>
+                            <a href="shop_ecommerce"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/syrup_icon.jpg" alt="" /></a>
                         </figure>
-                        <h6><a href="shop-grid-right.html">Syrup</a></h6>
+                        <h6><a href="shop_ecommerce">Syrup</a></h6>
                         <span>14 items</span>
                     </div>
                     <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/injection_icon.jpg" alt="" /></a>
+                            <a href="shop_ecommerce"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/injection_icon.jpg" alt="" /></a>
                         </figure>
-                        <h6><a href="shop-grid-right.html">Injection</a></h6>
+                        <h6><a href="shop_ecommerce">Injection</a></h6>
                         <span>54 items</span>
                     </div>
                     <div class="card-2 bg-14 wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/ointment_icon.jpg" alt="" /></a>
+                            <a href="shop_ecommerce"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/ointment_icon.jpg" alt="" /></a>
                         </figure>
-                        <h6><a href="shop-grid-right.html">Ointment</a></h6>
+                        <h6><a href="shop_ecommerce">Ointment</a></h6>
                         <span>72 items</span>
                     </div>
                     <div class="card-2 bg-15 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cream_icon.jpg" alt="" /></a>
+                            <a href="shop_ecommerce"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/shop/cream_icon.jpg" alt="" /></a>
                         </figure>
-                        <h6><a href="shop-grid-right.html">Cream</a></h6>
+                        <h6><a href="shop_ecommerce">Cream</a></h6>
                         <span>36 items</span>
                     </div>
                 </div>

@@ -20,7 +20,7 @@
 
 <body>
     <!-- Modal -->
-    <div class="modal fade custom-modal" id="onloadModal" tabindex="-1" aria-labelledby="onloadModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade custom-modal" id="onloadModal" tabindex="-1" aria-labelledby="onloadModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Quick view -->
     <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -331,7 +331,7 @@
                                                 <a href="<?php echo base_url('account#settings'); ?>"><i class="fi fi-rs-settings-sliders mr-10"></i>Settings</a>
                                             </li>
                                             <li>
-                                                <a href="<?php echo base_url('page-login'); ?>"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
+                                                <a href="<?php echo base_url('login'); ?>"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
                                             </li>
                                         </ul>
                                     </div>

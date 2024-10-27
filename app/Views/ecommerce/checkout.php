@@ -1,3 +1,4 @@
+
 <main class="main pages">
     <div class="page-header breadcrumb-wrap">
         <div class="container">
@@ -29,15 +30,6 @@
                                         <p class="mb-30">Please fill in your details to proceed with the order</p>
                                     </div>
                                     <form method="post" action="<?php echo site_url('checkout/storeVerification'); ?>">
-                                        <div class="form-group">
-                                            <input type="text" required name="username" placeholder="Full Name" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" required name="email" placeholder="Email Address" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="tel" required name="phone" placeholder="Phone Number" />
-                                        </div>
                                         <div class="form-group">
                                             <input type="text" required name="drug_license" placeholder="Drug License Number" />
                                         </div>

@@ -42,7 +42,7 @@
                                 <div class="tab-pane fade active show" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                                     <div class="card">
                                         <div class="card-header">
-                                            <h3 class="mb-0">Welcome to Your B2B Account!</h3>
+                                            <h3 class="mb-0">Welcome <?php echo htmlspecialchars($user['user_name']); ?>!</h3>
                                         </div>
                                         <div class="card-body">
                                             <p>
