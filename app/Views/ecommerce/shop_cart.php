@@ -55,7 +55,6 @@ $totalAmount = array_sum(array_map(fn($item) => $item['price'] * $item['quantity
                     <ul>
                         <li><span>Subtotal</span> <span>$<?php echo number_format($totalAmount, 2); ?></span></li>
                         <li><span>Shipping</span> <span>Free</span></li>
-                        <li><span>Estimate for</span> <span>United Kingdom</span></li>
                         <li><span>Total</span> <span>$<?php echo number_format($totalAmount, 2); ?></span></li>
                     </ul>
                     <a href="<?php echo site_url('checkout'); ?>" class="btn btn-primary btn-block">Proceed To Checkout</a>

@@ -119,6 +119,11 @@ $routes->post('cart/update', 'CartController::update');
 $routes->get('cart/remove/(:num)', 'CartController::remove/$1');
 $routes->get('cart/clear', 'CartController::clear');
 
+$routes->get('checkout', 'CheckoutController::index');
+$routes->post('checkout/process', 'CheckoutController::process');
+$routes->post('checkout/storeVerification', 'CheckoutController::storeVerification');
+$routes->get('account', 'StoreController::account');
+
 
 //auth
 $routes->get('auth/logout', 'AuthController::logout');
