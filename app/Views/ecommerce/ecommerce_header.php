@@ -328,9 +328,9 @@
                                             <li>
                                                 <a href="<?php echo base_url('account#track-orders'); ?>"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a>
                                             </li>
-                                            <li>
+                                            <!-- <li>
                                                 <a href="<?php echo base_url('account#vouchers'); ?>"><i class="fi fi-rs-label mr-10"></i>My Voucher</a>
-                                            </li>
+                                            </li> -->
                                             <li>
                                                 <a href="<?php echo base_url('shop-wishlist'); ?>"><i class="fi fi-rs-heart mr-10"></i>My Wishlist</a>
                                             </li>
