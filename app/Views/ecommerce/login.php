@@ -16,6 +16,10 @@
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?php echo base_url('assets/store/') ?>assets/css/plugins/animate.min.css" />
     <link rel="stylesheet" href="<?php echo base_url('assets/store/') ?>assets/css/main.css?v=6.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -119,6 +123,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 col-lg-10 col-md-12 m-auto">
+                    <?php if (session()->getFlashdata('not_registered')) : ?>
+                        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="registerModalLabel">Not Registered or Invalid Credentials</h5>
+                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        You are not registered or provided invalid credentials. Would you like to register now?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="<?php echo site_url('customer_register'); ?>" class="btn btn-primary">Register</a>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            $(document).ready(function() {
+                                var myModal = new bootstrap.Modal(document.getElementById('registerModal'));
+                                myModal.show();
+                            });
+                        </script>
+                    <?php endif; ?>
                         <div class="row">
                             <div class="col-lg-6 pr-30 d-none d-lg-block">
                                 <img class="border-radius-15" src="https://co-well.vn/wp-content/uploads/2019/10/ecommerce.png" alt="" />

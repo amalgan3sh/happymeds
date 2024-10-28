@@ -172,8 +172,8 @@
                             <ul>
                                 <li><a href="about">About Us</a></li>
                                 <li><a href="account">My Account</a></li>
-                                <li><a href="shop-wishlist.html">Wishlist</a></li>
-                                <li><a href="shop-order.html">Order Tracking</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="saccount">Order Tracking</a></li>
                             </ul>
                         </div>
                     </div>
@@ -338,7 +338,7 @@
                                                 <a href="<?php echo base_url('account#settings'); ?>"><i class="fi fi-rs-settings-sliders mr-10"></i>Settings</a>
                                             </li>
                                             <li>
-                                                <a href="<?php echo base_url('login'); ?>"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
+                                                <a href="<?php echo base_url('logout'); ?>"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -365,19 +365,19 @@
                                 <div class="d-flex categori-dropdown-inner">
                                     <ul>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-1.svg" alt="" />Pharmaceuticals</a>
+                                            <a href="shop_ecommerce"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-1.svg" alt="" />Pharmaceuticals</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-2.svg" alt="" />Nutraceuticals</a>
+                                            <a href="shop_ecommerce"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-2.svg" alt="" />Nutraceuticals</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-3.svg" alt="" />Cosmetics</a>
+                                            <a href="shop_ecommerce"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-3.svg" alt="" />Cosmetics</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-4.svg" alt="" />Hospital Care</a>
+                                            <a href="shop_ecommerce"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-4.svg" alt="" />Hospital Care</a>
                                         </li>
                                         <li>
-                                            <a href="shop-grid-right.html"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-5.svg" alt="" />Cosmeceuticals</a>
+                                            <a href="shop_ecommerce"> <img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/category-5.svg" alt="" />Cosmeceuticals</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -386,7 +386,7 @@
                         <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
                             <nav>
                                 <ul>
-                                    <li class="hot-deals"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="shop-grid-right.html">Deals</a></li>
+                                    <!-- <li class="hot-deals"><img src="<?php echo base_url('assets/store/') ?>assets/imgs/theme/icons/icon-hot.svg" alt="hot deals" /><a href="shop-grid-right.html">Deals</a></li> -->
                                     <li>
                                         <a class="active" href="ecommerce_home">Home </a>
                                         
@@ -397,7 +397,7 @@
                                     <li>
                                         <a href="shop_ecommerce">Shop </a>
                                     </li>
-                                    <li class="position-static">
+                                    <!-- <li class="position-static">
                                         <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
                                         <ul class="mega-menu">
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
@@ -420,21 +420,21 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <li>
                                         <a href="#">Pages <i class="fi-rs-angle-down"></i></a>
                                         <ul class="sub-menu">
                                             <li><a href="about">About Us</a></li>
                                             <li><a href="contact">Contact</a></li>
-                                            <li><a href="page-account.html">My Account</a></li>
-                                            <li><a href="page-login.html">Login</a></li>
-                                            <li><a href="page-register.html">Register</a></li>
-                                            <li><a href="page-forgot-password.html">Forgot password</a></li>
-                                            <li><a href="page-reset-password.html">Reset password</a></li>
+                                            <li><a href="account">My Account</a></li>
+                                            <!-- <li><a href="page-login.html">Login</a></li>
+                                            <li><a href="page-register.html">Register</a></li> -->
+                                            <!-- <li><a href="page-forgot-password.html">Forgot password</a></li>
+                                            <li><a href="page-reset-password.html">Reset password</a></li> -->
                                             <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
                                             <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
                                             <li><a href="page-terms.html">Terms of Service</a></li>
-                                            <li><a href="page-404.html">404 Page</a></li>
+                                            <!-- <li><a href="page-404.html">404 Page</a></li> -->
                                         </ul>
                                     </li>
                                     <li>
@@ -647,15 +647,15 @@
                                 <ul class="dropdown">
                                     <li><a href="about">About Us</a></li>
                                     <li><a href="contact">Contact</a></li>
-                                    <li><a href="page-account.html">My Account</a></li>
-                                    <li><a href="page-login.html">Login</a></li>
+                                    <li><a href="account">My Account</a></li>
+                                    <!-- <li><a href="page-login.html">Login</a></li>
                                     <li><a href="page-register.html">Register</a></li>
                                     <li><a href="page-forgot-password.html">Forgot password</a></li>
-                                    <li><a href="page-reset-password.html">Reset password</a></li>
+                                    <li><a href="page-reset-password.html">Reset password</a></li> -->
                                     <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
                                     <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
                                     <li><a href="page-terms.html">Terms of Service</a></li>
-                                    <li><a href="page-404.html">404 Page</a></li>
+                                    <!-- <li><a href="page-404.html">404 Page</a></li> -->
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">

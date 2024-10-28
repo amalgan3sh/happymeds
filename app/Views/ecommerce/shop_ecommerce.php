@@ -318,39 +318,7 @@
                         </ul>
                     </div>
                     <!-- Fillter By Price -->
-                    <div class="sidebar-widget price_range range mb-30">
-                        <h5 class="section-title style-1 mb-30">Fill by price</h5>
-                        <div class="price-filter">
-                            <div class="price-filter-inner">
-                                <div id="slider-range" class="mb-20"></div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="caption">From: <strong id="slider-range-value1" class="text-brand"></strong></div>
-                                    <div class="caption">To: <strong id="slider-range-value2" class="text-brand"></strong></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group">
-                            <div class="list-group-item mb-10 mt-10">
-                                <label class="fw-900">Brand</label>
-                                <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="" />
-                                    <label class="form-check-label" for="exampleCheckbox1"><span>Cipla (56)</span></label>
-                                    <br />
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox2" value="" />
-                                    <label class="form-check-label" for="exampleCheckbox2"><span>Dr.AID (78)</span></label>
-                                </div>
-                                <label class="fw-900 mt-15">Flavour</label>
-                                <div class="custome-checkbox">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox11" value="" />
-                                    <label class="form-check-label" for="exampleCheckbox11"><span>Chocolate(7)</span></label>
-                                    <br />
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox31" value="" />
-                                    <label class="form-check-label" for="exampleCheckbox31"><span>Strawberry (45)</span></label>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="shop-grid-right.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
-                    </div>
+                    
                     <!-- Product sidebar Widget -->
                     <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
                         <h5 class="section-title style-1 mb-30">New products</h5>

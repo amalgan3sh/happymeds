@@ -129,6 +129,8 @@ $routes->post('save_data', 'StoreController::SaveData');
 $routes->post('authenticate_user', 'StoreController::authenticate_user');
 $routes->post('submit-verification-form', 'StoreController::submitVerificationForm');
 $routes->post('resubmit-verification', 'StoreController::resubmitVerification');
+$routes->post('checkout/confirmOrder', 'CheckoutController::confirmOrder');
+$routes->get('logout', 'StoreController::logout');
 
 
 

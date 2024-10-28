@@ -144,7 +144,7 @@
     <!--End banners-->
     <section class="product-tabs section-padding position-relative">
         <div class="container">
-            <div class="section-title style-2 wow animate__animated animate__fadeIn">
+            <!-- <div class="section-title style-2 wow animate__animated animate__fadeIn">
                 <h3>Popular Products</h3>
                 <ul class="nav nav-tabs links" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -166,7 +166,7 @@
                         <button class="nav-link" id="nav-tab-six" data-bs-toggle="tab" data-bs-target="#tab-six" type="button" role="tab" aria-controls="tab-six" aria-selected="false">Cosmeceuticals</button>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <!--End nav-tabs-->
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
@@ -192,7 +192,7 @@
                                         </div>
                                         <div class="product-content-wrap">
                                             <div class="product-category">
-                                                <a href="shop-grid-right.html">
+                                                <a href="shop_ecommerce">
                                                     <?php echo $product['DosageForm']; ?>
                                                 </a>
                                             </div>
@@ -256,7 +256,7 @@
                                 <div class="banner-img style-2">
                                     <div class="banner-text">
                                         <h2 class="mb-100">Bring healthy routine into your home</h2>
-                                        <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                        <a href="shop_ecommerce" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +286,7 @@
                                                         </div>
                                                         <div class="product-content-wrap">
                                                             <div class="product-category">
-                                                                <a href="shop-grid-right.html">
+                                                                <a href="shop_ecommerce">
                                                                     <?php echo $product['DosageForm']; ?>
                                                                 </a>
                                                             </div>
@@ -336,7 +336,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Omeprazole 40 GM</a>
+                                                            <a href="shop_ecommerce">Omeprazole 40 GM</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">BROMEZ</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -375,7 +375,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Acetaminphen Tablet</a>
+                                                            <a href="shop_ecommerce">Acetaminphen Tablet</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">BROMOLE 650</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -414,7 +414,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Paracetamol Infusion 1G</a>
+                                                            <a href="shop_ecommerce">Paracetamol Infusion 1G</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">BROMOL -IV</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -453,7 +453,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Inruprofen + Paracetamol</a>
+                                                            <a href="shop_ecommerce">Inruprofen + Paracetamol</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">BROMOL - PLUS</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -492,7 +492,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Pantoprazole 40 MG</a>
+                                                            <a href="shop_ecommerce">Pantoprazole 40 MG</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">BROPAN 40</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -538,7 +538,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Cepodoxime Proxetil for Oral suspension</a>
+                                                            <a href="shop_ecommerce">Cepodoxime Proxetil for Oral suspension</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">BROXIME 50</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -577,7 +577,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Cepodoxime Proxetil for Oral suspension</a>
+                                                            <a href="shop_ecommerce">Cepodoxime Proxetil for Oral suspension</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">BROXIME 100</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -616,7 +616,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Metranidozole Benzonate <br>Oral</a>
+                                                            <a href="shop_ecommerce">Metranidozole Benzonate <br>Oral</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">BROZOL</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -655,7 +655,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Calcitrol + Calcium carbonate + <br>Zinc</a>
+                                                            <a href="shop_ecommerce">Calcitrol + Calcium carbonate + <br>Zinc</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">CALTONIA</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -694,7 +694,7 @@
                                                     </div>
                                                     <div class="product-content-wrap">
                                                         <div class="product-category">
-                                                            <a href="shop-grid-right.html">Cetrizine + Paracetamol + Phenylephrine</a>
+                                                            <a href="shop_ecommerce">Cetrizine + Paracetamol + Phenylephrine</a>
                                                         </div>
                                                         <h2><a href="shop-product-right.html">CHIACOLD</a></h2>
                                                         <div class="product-rate d-inline-block">
@@ -729,7 +729,7 @@
                     <div class="container">
                         <div class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0">
                             <h3 class="">Deals Of The Day</h3>
-                            <a class="show-all" href="shop-grid-right.html">
+                            <a class="show-all" href="shop_ecommerce">
                         All Deals
                         <i class="fi-rs-angle-right"></i>
                     </a>

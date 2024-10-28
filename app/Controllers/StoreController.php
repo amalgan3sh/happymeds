@@ -7,6 +7,7 @@ use CodeIgniter\Controller;
 use CodeIgniter\Session\Session;
 use App\Models\ProductModel;
 use App\Models\CustomerVerificationModel;
+use App\Models\B2BOrderModel;
 
 
 class StoreController extends Controller
@@ -120,6 +121,12 @@ class StoreController extends Controller
       
       // Get user data
       $user = $userModel->find($userId);
+
+      $orderModel = new B2BOrderModel();
+      $orders = $orderModel->where('user_id', $userId)->orderBy('created_at', 'DESC')->findAll();
+
+        // Fetch user data
+        $user = $userModel->find($userId);
       
       // Get verification status
       $verification = $verificationModel->where('user_id', $userId)
@@ -132,7 +139,8 @@ class StoreController extends Controller
       $data = [
           'user' => $user,
           'kycStatus' => $kycStatus,  // Pass the kycStatus to the view
-          'verification' => $verification
+          'verification' => $verification,
+          'orders' => $orders
       ];
   
       echo view('ecommerce/ecommerce_header');
@@ -235,26 +243,19 @@ class StoreController extends Controller
 
     public function authenticate_user()
     {
-        // Load the session service
         $session = session();
         
-        // Get the form data
         $emailOrUsername = $this->request->getPost('emailOrUsername');
         $password = $this->request->getPost('password');
         $rememberMe = $this->request->getPost('remember_me');
-
-        // Initialize User Model
-        $userModel = new UserModel();
         
-        // First try to find user by email
+        $userModel = new UserModel();
         $user = $userModel->where('email', $emailOrUsername)
                          ->orWhere('user_name', $emailOrUsername)
                          ->first();
-
-        // Check if user exists and verify password
+    
         if ($user) {
-            if (password_verify($password, $user['password'])) {
-                // Set session data
+            if (password_verify($password, $user['password']) && $user['user_type'] === 'b2b_partner') {
                 $sessionData = [
                     'user_id' => $user['user_id'],
                     'username' => $user['user_name'],
@@ -262,36 +263,35 @@ class StoreController extends Controller
                     'logged_in' => true
                 ];
                 $session->set($sessionData);
-
-                // Handle Remember Me
+    
                 if ($rememberMe) {
-                    // Set cookie for 30 days
                     $this->response->setCookie('remember_token', 
                         $user['id'], 
                         time() + (86400 * 30)
                     );
                 }
-
-                // Redirect to home page with success message
+    
                 return redirect()->to('ecommerce_home')
                                 ->with('success', 'Login successful!');
             } else {
-                // Wrong password
+                $errorMessage = password_verify($password, $user['password']) 
+                    ? 'Access denied. Only B2B partners can log in.' 
+                    : 'Invalid password';
                 return redirect()->back()
-                                ->with('error', 'Invalid password')
+                                ->with('error', $errorMessage)
                                 ->withInput();
             }
         } else {
-            // User not found
-            return redirect()->back()
-                            ->with('error', 'User not found')
-                            ->withInput();
+            // User not found, set a flashdata for modal display
+            $session->setFlashdata('not_registered', true);
+            return redirect()->back()->withInput();
         }
     }
 
     // Optional: Logout function
     public function logout()
     {
+        helper('cookie');
         $session = session();
         $session->destroy();
         

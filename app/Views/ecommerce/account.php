@@ -118,43 +118,44 @@
 
                                 <!-- Business Orders Tab -->
                                 <div class="tab-pane fade" id="business-orders" role="tabpanel" aria-labelledby="business-orders-tab">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h3 class="mb-0">Your Business Orders</h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Order</th>
-                                                            <th>Date</th>
-                                                            <th>Status</th>
-                                                            <th>Total</th>
-                                                            <th>Actions</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>#1357</td>
-                                                            <td>March 15, 2023</td>
-                                                            <td>Processing</td>
-                                                            <td>$1,250.00 for 100 items</td>
-                                                            <td><a href="#" class="btn-small d-block">View</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>#2468</td>
-                                                            <td>June 29, 2023</td>
-                                                            <td>Completed</td>
-                                                            <td>$3,640.00 for 500 items</td>
-                                                            <td><a href="#" class="btn-small d-block">View</a></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="card">
+        <div class="card-header">
+            <h3 class="mb-0">Your Business Orders</h3>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Order</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if (!empty($orders)): ?>
+                            <?php foreach ($orders as $order): ?>
+                                <tr>
+                                    <td>#<?= htmlspecialchars($order['order_id']) ?></td>
+                                    <td><?= date('F d, Y', strtotime($order['created_at'])) ?></td>
+                                    <td><?= ucfirst($order['status']) ?></td>
+                                    <td>$<?= number_format($order['total_amount'], 2) ?></td>
+                                    <td><a href="<?= site_url('order/view/' . $order['order_id']) ?>" class="btn-small d-block">View</a></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="5">You have no orders.</td>
+                            </tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
                                 <!-- Track Orders Tab -->
                                 <div class="tab-pane fade" id="track-orders" role="tabpanel" aria-labelledby="track-orders-tab">

@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 use App\Models\CustomerVerificationModel;
+use App\Models\B2BOrderModel;
+
 
 
 class CheckoutController extends BaseController
@@ -19,6 +21,35 @@ class CheckoutController extends BaseController
                 'cartItems' => $cartItems,
                 'totalAmount' => $totalAmount
             ]).view('ecommerce/ecommerce_footer');
+    }
+
+    public function confirmOrder()
+    {
+        $session = session();
+        $userId = $session->get('user_id');  // Assumes user_id is stored in session after login
+        $cartItems = $session->get('cart') ?? [];
+
+        // Calculate total amount
+        $totalAmount = array_sum(array_map(fn($item) => $item['price'] * $item['quantity'], $cartItems));
+
+        // Prepare order data
+        $orderData = [
+            'user_id' => $userId,
+            'order_items' => json_encode($cartItems),  // Serialize cart items as JSON
+            'total_amount' => $totalAmount,
+            'status' => 'pending',
+        ];
+
+        // Load the model and save order data
+        $orderModel = new B2BOrderModel();
+        if ($orderModel->insert($orderData)) {
+            // Clear cart and set success message
+            $session->remove('cart');
+            return redirect()->to('/checkout')->with('success', 'Order placed successfully! Thank you for your purchase.');
+        } else {
+            // Handle failure case
+            return redirect()->back()->with('error', 'There was an error placing your order. Please try again.');
+        }
     }
 
     public function process()
