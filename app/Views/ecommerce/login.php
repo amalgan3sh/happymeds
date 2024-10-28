@@ -130,26 +130,14 @@
                                             <h1 class="mb-5">Login</h1>
                                             <p class="mb-30">Don't have an account? <a href="customer_register">Create here</a></p>
                                         </div>
-                                        <form method="post" action="<?php echo site_url('store/login'); ?>" autocomplete="off">
+                                        <form method="post" action="<?php echo site_url('authenticate_user'); ?>" autocomplete="off">
     <div class="form-group">
         <input type="text" required name="emailOrUsername" placeholder="Username or Email *" />
     </div>
     <div class="form-group">
         <input type="password" required name="password" placeholder="Your password *" />
     </div>
-    <div class="login_footer form-group">
-        <div class="chek-form">
-            <input type="text" required name="security_code_input" placeholder="Security code *" />
-        </div>
-        <span class="security-code">
-            <b class="text-new">8</b>
-            <b class="text-hot">6</b>
-            <b class="text-sale">7</b>
-            <b class="text-best">5</b>
-        </span>
-        <!-- Include the hidden correct security code for validation in the controller -->
-        <input type="hidden" name="correct_security_code" value="8675" />
-    </div>
+
     <div class="login_footer form-group mb-50">
         <div class="chek-form">
             <div class="custome-checkbox">

@@ -6,6 +6,8 @@ use App\Models\UserModel;
 use CodeIgniter\Controller;
 use CodeIgniter\Session\Session;
 use App\Models\ProductModel;
+use App\Models\CustomerVerificationModel;
+
 
 class StoreController extends Controller
 {
@@ -44,22 +46,25 @@ class StoreController extends Controller
     public function ShopCart()
     {
         $session = session();
+        $userId = $session->get('user_id');
         $cart = $session->get('cart') ?? [];
-        
-        
+
         // Calculate the total amount
-        $totalAmount = 0;
-        foreach ($cart as $item) {
-            $totalAmount += '10' * $item['quantity'];
-        }
-    
-        // Pass cart items and total to the view
+        $totalAmount = array_sum(array_map(fn($item) => '10' * $item['quantity'], $cart));
+
+        // Fetch KYC status from CustomerVerificationModel
+        $verificationModel = new CustomerVerificationModel();
+        $kycStatus = $verificationModel->where('user_id', $userId)->orderBy('created_at', 'DESC')->first();
+
         $data = [
             'cartItems' => $cart,
-            'totalAmount' => $totalAmount
+            'totalAmount' => $totalAmount,
+            'kycStatus' => $kycStatus ? $kycStatus['status'] : null,
         ];
+        
+
         echo view('ecommerce/ecommerce_header');
-        echo view('ecommerce/shop_cart');
+        echo view('ecommerce/shop_cart',$data);
         echo view('ecommerce/ecommerce_footer');
     }
 
@@ -92,30 +97,129 @@ class StoreController extends Controller
         $userModel = new UserModel();
         $userId = $session->get('user_id');
         $user = $userModel->find($userId);
-        echo json_encode($user);
-        die();
+
 
         echo view('ecommerce/ecommerce_header');
         echo view('ecommerce/account',['user' => $user]);
         echo view('ecommerce/ecommerce_footer');
     }
 
-    public function accountEcommerce()
+  // In StoreController.php
+
+  public function accountEcommerce()
+  {
+      $session = session();    
+  
+      if (!$session->has('user_id')) {
+          return redirect()->to('/login')->with('error', 'Please log in to access your account.');
+      }
+      
+      $userModel = new UserModel();
+      $verificationModel = new CustomerVerificationModel();
+      $userId = $session->get('user_id');
+      
+      // Get user data
+      $user = $userModel->find($userId);
+      
+      // Get verification status
+      $verification = $verificationModel->where('user_id', $userId)
+                                        ->orderBy('created_at', 'DESC')
+                                        ->first();
+      
+      // Set kycStatus based on the latest verification status
+      $kycStatus = $verification ? $verification['status'] : 'none';
+  
+      $data = [
+          'user' => $user,
+          'kycStatus' => $kycStatus,  // Pass the kycStatus to the view
+          'verification' => $verification
+      ];
+  
+      echo view('ecommerce/ecommerce_header');
+      echo view('ecommerce/account', $data);
+      echo view('ecommerce/ecommerce_footer');
+  }
+
+    public function submitVerificationForm()
     {
         $session = session();
-
-        // Check if user is logged in
-        if (!$session->has('user_id')) {
-            return redirect()->to('/login')->with('error', 'Please log in to access your account.');
-        }
-        
-        $userModel = new UserModel();
         $userId = $session->get('user_id');
-        $user = $userModel->find($userId);
+        $model = new CustomerVerificationModel();
 
-        echo view('ecommerce/ecommerce_header');
-        echo view('ecommerce/account',['user' => $user]);
-        echo view('ecommerce/ecommerce_footer');
+        $existingVerification = $model->where('user_id', $userId)->first();
+
+        if ($existingVerification) {
+            if ($existingVerification['status'] === 'success') {
+                return redirect()->back()->with('info', 'Your KYC verification has already been approved.');
+            } elseif ($existingVerification['status'] === 'pending') {
+                return redirect()->back()->withInput()->with('pendingVerification', true);
+            }
+        }
+
+        return $this->processFormSubmission($userId);
+    }
+
+    private function processFormSubmission($userId)
+    {
+        $data = [
+            'user_id' => $userId,
+            'full_name' => $this->request->getPost('full_name'),
+            'dob' => $this->request->getPost('dob'),
+            'nationality' => $this->request->getPost('nationality'),
+            'drug_license_number' => $this->request->getPost('drug_license_number'),
+            'medical_license_number' => $this->request->getPost('medical_license_number'),
+            'business_address' => $this->request->getPost('business_address'),
+            'contact_number' => $this->request->getPost('contact_number'),
+            'official_email' => $this->request->getPost('official_email'),
+            'tax_identification_number' => $this->request->getPost('tax_identification_number'),
+            'pan_card_number' => $this->request->getPost('pan_card_number'),
+            'handling_certification' => $this->request->getPost('handling_certification'),
+            'gmp_compliance' => $this->request->getPost('gmp_compliance'),
+            'status' => 'pending'
+        ];
+
+        $model = new CustomerVerificationModel();
+        $model->insert($data);
+
+        return redirect()->to('/account')->with('success', 'Your KYC verification form has been submitted successfully.');
+    }
+    public function resubmitVerification()
+    {
+        $session = session();
+        $userId = $session->get('user_id');
+    
+        $model = new CustomerVerificationModel();
+    
+        // Update existing pending verification
+        $model->where('user_id', $userId)
+              ->where('status', 'pending')
+              ->delete();  // Delete the old pending verification
+    
+        // Insert new verification data
+        $data = [
+            'user_id' => $userId,
+            'full_name' => $this->request->getPost('full_name'),
+            'dob' => $this->request->getPost('dob'),
+            'nationality' => $this->request->getPost('nationality'),
+            'drug_license_number' => $this->request->getPost('drug_license_number'),
+            'medical_license_number' => $this->request->getPost('medical_license_number'),
+            'business_address' => $this->request->getPost('business_address'),
+            'contact_number' => $this->request->getPost('contact_number'),
+            'official_email' => $this->request->getPost('official_email'),
+            'tax_identification_number' => $this->request->getPost('tax_identification_number'),
+            'pan_card_number' => $this->request->getPost('pan_card_number'),
+            'handling_certification' => $this->request->getPost('handling_certification'),
+            'gmp_compliance' => $this->request->getPost('gmp_compliance'),
+            'status' => 'pending'
+        ];
+    
+        $model->insert($data);
+    
+        // Return JSON response
+        return $this->response->setJSON([
+            'success' => true,
+            'message' => 'Verification details updated successfully'
+        ]);
     }
 
     public function contacttEcommerce()
@@ -124,7 +228,6 @@ class StoreController extends Controller
     }
     public function login()
     {
-        session()->destroy();
         // echo view('ecommerce/ecommerce_header');
         echo view('ecommerce/login');
         // echo view('ecommerce/ecommerce_footer');
@@ -132,36 +235,73 @@ class StoreController extends Controller
 
     public function authenticate_user()
     {
-        // Clear the session data
-        session()->destroy();
+        // Load the session service
+        $session = session();
+        
+        // Get the form data
+        $emailOrUsername = $this->request->getPost('emailOrUsername');
+        $password = $this->request->getPost('password');
+        $rememberMe = $this->request->getPost('remember_me');
 
-        // Check if the form is submitted
-        if ($this->request->getMethod() === 'post') {
-            $emailOrUsername = $this->request->getPost('email');
-            $password = $this->request->getPost('password');
-            
-            // Load UserModel to access users table
-            $userModel = new UserModel();
+        // Initialize User Model
+        $userModel = new UserModel();
+        
+        // First try to find user by email
+        $user = $userModel->where('email', $emailOrUsername)
+                         ->orWhere('user_name', $emailOrUsername)
+                         ->first();
 
-            // Find user by email or username
-            $user = $userModel->where('email', $emailOrUsername)
-                              ->orWhere('user_name', $emailOrUsername)
-                              ->first();
+        // Check if user exists and verify password
+        if ($user) {
+            if (password_verify($password, $user['password'])) {
+                // Set session data
+                $sessionData = [
+                    'user_id' => $user['user_id'],
+                    'username' => $user['user_name'],
+                    'email' => $user['email'],
+                    'logged_in' => true
+                ];
+                $session->set($sessionData);
 
-            if ($user && password_verify($password, $user['password'])) {
-                // Start session and store user_id in session
-                session()->set('user_id', $user['user_id']);
-                
-                // Redirect to ecommerce_home with success message
-                return redirect()->to('/ecommerce_home')->with('success', 'Welcome back!');
+                // Handle Remember Me
+                if ($rememberMe) {
+                    // Set cookie for 30 days
+                    $this->response->setCookie('remember_token', 
+                        $user['id'], 
+                        time() + (86400 * 30)
+                    );
+                }
+
+                // Redirect to home page with success message
+                return redirect()->to('ecommerce_home')
+                                ->with('success', 'Login successful!');
             } else {
-                // Authentication failed, redirect back with an error message
-                return redirect()->back()->with('error', 'Invalid email/username or password.');
+                // Wrong password
+                return redirect()->back()
+                                ->with('error', 'Invalid password')
+                                ->withInput();
             }
+        } else {
+            // User not found
+            return redirect()->back()
+                            ->with('error', 'User not found')
+                            ->withInput();
+        }
+    }
+
+    // Optional: Logout function
+    public function logout()
+    {
+        $session = session();
+        $session->destroy();
+        
+        // Remove remember me cookie if exists
+        if (get_cookie('remember_token')) {
+            delete_cookie('remember_token');
         }
 
-        // Load the login view
-        $this->EcommerceHome();
+        return redirect()->to('login')
+                        ->with('success', 'Successfully logged out');
     }
 
     public function customer_register()

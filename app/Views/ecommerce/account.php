@@ -11,6 +11,69 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 m-auto">
+<!-- Success and Error Messages -->
+<?php if (session()->getFlashdata('success')) : ?>
+                        <div class="alert alert-success">
+                            <?= session()->getFlashdata('success') ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if (session()->getFlashdata('errors')) : ?>
+                        <div class="alert alert-danger">
+                            <?php foreach (session()->getFlashdata('errors') as $error) : ?>
+                                <p><?= esc($error) ?></p>
+                            <?php endforeach ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if (session()->getFlashdata('pendingVerification')) : ?>
+                        <div class="modal fade" id="resubmitModal" tabindex="-1" aria-labelledby="resubmitModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="resubmitModalLabel">Verification Already in Process</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Your verification is currently in process. Do you want to resubmit the details and update your application?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                                        <button type="button" class="btn btn-primary" id="resubmitButton">Resubmit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            $(document).ready(function() {
+                                // Show modal
+                                var myModal = new bootstrap.Modal(document.getElementById('resubmitModal'));
+                                myModal.show();
+
+                                // Handle resubmit button click
+                                $('#resubmitButton').click(function() {
+                                    $.ajax({
+                                        url: '<?= base_url('resubmit-verification') ?>',
+                                        type: 'POST',
+                                        data: $('form[name="kyc-verification-form"]').serialize(),
+                                        dataType: 'json',
+                                        success: function(response) {
+                                            if(response.success) {
+                                                location.reload();
+                                            } else {
+                                                alert('Error updating verification details');
+                                            }
+                                        },
+                                        error: function(xhr, status, error) {
+                                            console.error('Error:', error);
+                                            alert('Error updating verification details');
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
+                    <?php endif; ?>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="dashboard-menu">
@@ -25,7 +88,7 @@
                                         <a class="nav-link" id="track-orders-tab" data-bs-toggle="tab" href="#track-orders" role="tab" aria-controls="track-orders" aria-selected="false"><i class="fi-rs-shopping-cart-check mr-10"></i>Track Your Orders</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="company-details-tab" data-bs-toggle="tab" href="#company-details" role="tab" aria-controls="company-details" aria-selected="true"><i class="fi-rs-building mr-10"></i>Company Details</a>
+                                        <a class="nav-link" id="kyc-verification-tab" data-bs-toggle="tab" href="#kyc-verification" role="tab" aria-controls="kyc-verification" aria-selected="true"><i class="fi-rs-file-check mr-10"></i>KYC Verification</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="account-management-tab" data-bs-toggle="tab" href="#account-management" role="tab" aria-controls="account-management" aria-selected="true"><i class="fi-rs-user mr-10"></i>Account Management</a>
@@ -116,24 +179,92 @@
                                     </div>
                                 </div>
 
-                                <!-- Company Details Tab -->
-                                <div class="tab-pane fade" id="company-details" role="tabpanel" aria-labelledby="company-details-tab">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h3 class="mb-0">Company Details</h3>
-                                        </div>
-                                        <div class="card-body">
-                                            <address>
-                                                <strong>Company Name:</strong> ABC Corporation<br />
-                                                <strong>Address:</strong> 123 Business St., Suite 500<br />
-                                                City, State, 12345<br />
-                                                <strong>Phone:</strong> +1 234 567 890<br />
-                                                <strong>Email:</strong> contact@abccorp.com
-                                            </address>
-                                            <a href="#" class="btn-small">Edit Company Details</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                 <!-- KYC Verification Tab -->
+                                 <div class="tab-pane fade" id="kyc-verification" role="tabpanel" aria-labelledby="kyc-verification-tab">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="mb-0">KYC Verification</h3>
+        </div>
+        <div class="card-body">
+            <?php if ($kycStatus === 'success'): ?>
+                <!-- Congratulatory Message for Verified Users -->
+                <div class="alert alert-success">
+                    <h4>Congratulations!</h4>
+                    <p>Your KYC verification has been successfully completed. You are now officially recognized as a valued B2B partner of Aranea.</p>
+                    <p>Welcome to the Aranea family! We are thrilled to have you onboard. As a verified partner, you can now access all of our exclusive B2B features and start making the most of our platform.</p>
+                    <p>Thank you for choosing Aranea. We look forward to a prosperous partnership!</p>
+                </div>
+            <?php else: ?>
+                <!-- KYC Verification Form for Non-Verified Users -->
+                <form method="post" action="submit-verification-form" name="kyc-verification-form">
+                    <div class="row">
+                        <!-- Personal Details -->
+                        <div class="form-group col-md-6">
+                            <label>Full Legal Name <span class="required">*</span></label>
+                            <input required class="form-control" name="full_name" type="text" placeholder="Enter Full Legal Name" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Date of Birth <span class="required">*</span></label>
+                            <input required class="form-control" name="dob" type="date" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Nationality <span class="required">*</span></label>
+                            <input required class="form-control" name="nationality" type="text" placeholder="Enter Nationality" />
+                        </div>
+
+                        <!-- License and Certification Information -->
+                        <div class="form-group col-md-6">
+                            <label>Drug License Number <span class="required">*</span></label>
+                            <input required class="form-control" name="drug_license_number" type="text" placeholder="Enter Drug License Number" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Pharmacy/Medical License Number <span class="required">*</span></label>
+                            <input required class="form-control" name="medical_license_number" type="text" placeholder="Enter Medical License Number" />
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="form-group col-md-6">
+                            <label>Registered Business Address <span class="required">*</span></label>
+                            <input required class="form-control" name="business_address" type="text" placeholder="Enter Business Address" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Contact Number <span class="required">*</span></label>
+                            <input required class="form-control" name="contact_number" type="text" placeholder="Enter Contact Number" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Official Email Address <span class="required">*</span></label>
+                            <input required class="form-control" name="official_email" type="email" placeholder="Enter Official Email Address" />
+                        </div>
+
+                        <!-- Bank and Financial Details -->
+                        <div class="form-group col-md-6">
+                            <label>Tax Identification Number (TIN) <span class="required">*</span></label>
+                            <input required class="form-control" name="tax_identification_number" type="text" placeholder="Enter TIN" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>PAN Card Number <span class="required">*</span></label>
+                            <input required class="form-control" name="pan_card_number" type="text" placeholder="Enter PAN Card Number" />
+                        </div>
+
+                        <!-- Additional Compliance Details -->
+                        <div class="form-group col-md-6">
+                            <label>Product Handling Certification <span class="required">*</span></label>
+                            <input required class="form-control" name="handling_certification" type="text" placeholder="Certification ID or Details" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Good Manufacturing Practice (GMP) Compliance <span class="required">*</span></label>
+                            <input required class="form-control" name="gmp_compliance" type="text" placeholder="GMP Compliance Details" />
+                        </div>
+
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-fill-out submit font-weight-bold">Submit for Verification</button>
+                        </div>
+                    </div>
+                </form>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
 
                                 <!-- Account Management Tab -->
                                 <div class="tab-pane fade" id="account-management" role="tabpanel" aria-labelledby="account-management-tab">

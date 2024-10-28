@@ -126,7 +126,10 @@ $routes->get('account', 'StoreController::account');
 $routes->get('login', 'StoreController::login');
 $routes->get('customer_register', 'StoreController::customer_register');
 $routes->post('save_data', 'StoreController::SaveData');
-$routes->match(['get', 'post'], 'store/login', 'StoreController::authenticate_user');
+$routes->post('authenticate_user', 'StoreController::authenticate_user');
+$routes->post('submit-verification-form', 'StoreController::submitVerificationForm');
+$routes->post('resubmit-verification', 'StoreController::resubmitVerification');
+
 
 
 //auth

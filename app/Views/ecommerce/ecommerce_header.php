@@ -16,6 +16,13 @@
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?php echo base_url('assets/store/') ?>assets/css/plugins/animate.min.css" />
     <link rel="stylesheet" href="<?php echo base_url('assets/store/') ?>assets/css/main.css?v=6.0" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    
+    <!-- jQuery (must be loaded before Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -303,7 +310,7 @@
                                             </div>
                                             <div class="shopping-cart-button">
                                                 <a href="<?php echo site_url('cart'); ?>" class="outline">View cart</a>
-                                                <a href="shop-checkout.html">Checkout</a>
+                                                <a href="<?php echo site_url('shop_cart'); ?>">Checkout</a> <!-- Add id here for JavaScript -->
                                             </div>
                                         </div>
                                     </div>
