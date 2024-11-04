@@ -20,15 +20,16 @@
                 <div class="inner text-center mt--140">
                 <h1 class="title display-one">Discover the Future with 
     <br> <span class="header-caption">
-        <span class="cd-headline rotate-1">
-            <span class="cd-words-wrapper" style="width: 221px;">
-                <b class="theme-gradient is-visible">AI Tools</b>
-                <b class="theme-gradient is-hidden">Smart Tech</b>
-                <b class="theme-gradient is-hidden">Innovation</b>
-            </span>
+    <span class="cd-headline rotate-1">
+    <span class="cd-headline rotate-1">
+        <span class="cd-words-wrapper" style="width: 221px;">
+            <b class="theme-gradient is-visible">Healthcare Solutions</b>
+            <b class="theme-gradient is-hidden">Partner Program</b>
+            <b class="theme-gradient is-hidden">Invest with Us</b>
         </span>
-    </span> at ARANEA
-</h1>
+    </span>
+        </span> at ARANEA
+    </h1>
 <p class="description">Join ARANEA and transform your business with AI-powered tools. 
     <br> Optimize your supply chain, manufacturing, and distribution.
 </p>
