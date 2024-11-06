@@ -18,7 +18,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="inner text-center mt--140">
-                <h1 class="title display-one">Discover the Future with 
+                <h1 class="title display-one">ARANEA Healthcare Platform : Building a Smarter Healthcare Ecosystem 
     <br> <span class="header-caption">
     <span class="cd-headline rotate-1">
     <span class="cd-headline rotate-1">
@@ -30,8 +30,36 @@
     </span>
         </span> at ARANEA
     </h1>
-<p class="description">Join ARANEA and transform your business with AI-powered tools. 
-    <br> Optimize your supply chain, manufacturing, and distribution.
+
+    <style>
+        /* Base font size for larger screens */
+.title.display-one {
+    font-size: 2.5rem; /* Adjust this value as needed */
+}
+
+/* Adjust font size for medium screens */
+@media (max-width: 992px) {
+    .title.display-one {
+        font-size: 2rem; /* Slightly smaller for medium screens */
+    }
+}
+
+/* Further adjust font size for smaller screens */
+@media (max-width: 768px) {
+    .title.display-one {
+        font-size: 1.75rem; /* Smaller for tablets */
+    }
+}
+
+/* Smallest size for mobile screens */
+@media (max-width: 576px) {
+    .title.display-one {
+        font-size: 1.5rem; /* Even smaller for mobile devices */
+    }
+}
+    </style>
+<p class="description">Build a future-ready healthcare ecosystem with Aranea's Smart Tools. 
+    <br> Optimize your healthcare supplychain with distribution and seamless import and export solutions.
 </p>
 <div class="form-group">
     <textarea name="text" id="slider-text-area" cols="30" rows="2" readonly></textarea>
@@ -159,7 +187,7 @@
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="section-title">
-                                            <h2 class="title">Brand Partners: Empower Your Business Growth.</h2>
+                                            <h2 class="title">Aranea Healthcare Brand Partners: Empower Your Business Growth.</h2>
                                             <div class="features-section">
                                                 <ul class="list-style--1">
                                                     <li><i class="fa-regular fa-circle-check"></i>Exclusive Partnership Opportunities</li>
@@ -746,8 +774,8 @@
                                                 <div class="icon">
                                                     <i class="fa-solid fa-cart-shopping"></i>
                                                 </div>
-                                                <h4 class="title color-var-one">B2B Store</h4>
-                                                <p class="subtitle">Buy products from our ecommerce store</p>
+                                                <h4 class="title color-var-one">Healthcare B2B Store</h4>
+                                                <p class="subtitle">Dedicated web based application, door to door delivery system,Advanced updated dashboards</p>
                                                 <div class="pricing">
                                                 </div>
                                             </div>
@@ -756,16 +784,16 @@
                                                     <h6>Features</h6>
                                                     <ul class="list-style--1">
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i> Access to a wide range of products
+                                                            <i class="fa-regular fa-circle-check"></i> Sell or buy products through our platform
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i> Exclusive B2B pricing
+                                                            <i class="fa-regular fa-circle-check"></i> User friendly web based application
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i> Easy bulk ordering
+                                                            <i class="fa-regular fa-circle-check"></i> Access to large network of buyers and sellers
                                                         </li>
                                                         <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> Dedicated customer support
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> Production and sales and support
                                                         </li>
                                                         <li>
                                                             <i class="fa-sharp fa-regular fa-minus-circle"></i> Advance Updates via dashboard
@@ -797,12 +825,12 @@
                                                     <h6>Features</h6>
                                                     <ul class="list-style--1 has-show-more-inner-content">
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Access to a large network of buyers
+                                                            <i class="fa-regular fa-circle-check"></i>Import and Export Solutions
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i> Competitive pricing strategies
+                                                            <i class="fa-regular fa-circle-check"></i> Door to Door delivery system
                                                         </li>
-                                                        <li>
+                                                        <!-- <li>
                                                             <i class="fa-regular fa-circle-check"></i> Marketing and sales support
                                                         </li>
                                                         <li>
@@ -816,7 +844,7 @@
                                                             <i class="fa-sharp fa-regular fa-minus-circle"></i> Advance Updates via dashboard
                                                         </li>
                                                     </ul>
-                                                    <div class="rbt-show-more-btn">Show More</div>
+                                                    <div class="rbt-show-more-btn">Show More</div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -843,12 +871,12 @@
                                                     <h6>Features</h6>
                                                     <ul class="list-style--1 has-show-more-inner-content">
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Invest in healthcare products
+                                                            <i class="fa-regular fa-circle-check"></i>Turnover benefits based on chosen products(good content)
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Earn benefits on B2B invoices
+                                                            <i class="fa-regular fa-circle-check"></i>Benefits get to the wallet through bank
                                                         </li>
-                                                        <li>
+                                                        <!-- <li>
                                                             <i class="fa-regular fa-circle-check"></i> 5-year subscription plan
                                                         </li>
                                                         <li>
@@ -861,7 +889,7 @@
                                                             <i class="fa-sharp fa-regular fa-minus-circle"></i> Advance Updates via dashboard
                                                         </li>
                                                     </ul>
-                                                    <div class="rbt-show-more-btn">Show More</div>
+                                                    <div class="rbt-show-more-btn">Show More</div> -->
                                                 </div>
                                             </div>
                                         </div>

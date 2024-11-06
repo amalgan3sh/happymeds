@@ -1,23 +1,23 @@
- <!-- Start Breadcrumb Area  -->
- <div class="main-content">
-            <!-- Start Breadcarumb area  -->
-            <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="breadcrumb-inner text-center">
-                                <h3 class="title h3">Vision</h3>
-                                <ul class="page-list">
-                                    <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
-                                    <li class="rainbow-breadcrumb-item active">Vision</li>
-                                </ul>
-                            </div>
-                        </div>
+<!-- Start Breadcrumb Area  -->
+<div class="main-content">
+    <!-- Start Breadcrumb area  -->
+    <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h3 class="title h3">Vision</h3>
+                        <ul class="page-list">
+                            <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
+                            <li class="rainbow-breadcrumb-item active">Vision</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- End Breadcarumb area  -->
         </div>
+    </div>
+    <!-- End Breadcrumb area  -->
+</div>
 
 <div class="rainbow-blog-section rainbow-section-gap-big bg-color-1">
     <div class="container">
@@ -35,7 +35,7 @@
                                         <ul class="rainbow-meta-list">
                                             <li>
                                                 <i class="feather-user"></i>
-                                                <a href="#">ARANEA Eco Vista Team</a>
+                                                <a href="#">ARANEA Healthcare Team</a>
                                             </li>
                                             <li>
                                                 <i class="feather-calendar"></i>
@@ -52,22 +52,22 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="content">
-                                    <h2 class="title">Our Vision for Sustainable Innovation</h2>
-                                    <p>At ARANEA Eco Vista, we aim to lead innovative and sustainable developments by seamlessly blending traditional values with modern advancements. Our vision is to create impactful projects that drive economic growth while contributing to environmental stewardship and community well-being.</p>
+                                    <h2 class="title">Our Vision for Transforming Healthcare</h2>
+                                    <p>At ARANEA Healthcare Platform, we aim to revolutionize healthcare by building a smarter, more accessible, and patient-centered ecosystem. Our vision is to provide solutions that elevate patient care, foster community health, and support healthcare professionals through seamless, technology-driven interactions.</p>
 
-                                    <h6>1. Community-Centered Development</h6>
-                                    <p>We are dedicated to developing collaborative platforms that connect professionals, individuals, and organizations, facilitating meaningful change and progress both locally and globally. ARANEA Eco Vista is committed to fostering a vibrant and sustainable future where individuals and communities thrive.</p>
+                                    <h6>1. Patient-Centered Care and Community Wellness</h6>
+                                    <p>We prioritize healthcare that is personalized, compassionate, and inclusive. Our platform facilitates connections between patients, providers, and caregivers, ensuring a holistic approach to wellness that enhances community health and individual well-being.</p>
 
-                                    <h6>2. Sustainable Practices in Healthcare and Real Estate</h6>
-                                    <p>Our platform integrates eco-friendly practices across healthcare, real estate, and technology services, ensuring that our solutions contribute to a greener future. By focusing on sustainability, we aim to address global challenges such as climate change, resource management, and public health.</p>
+                                    <h6>2. Sustainable and Accessible Healthcare Solutions</h6>
+                                    <p>We are committed to bridging healthcare access gaps through telemedicine, digital health tools, and efficient health management systems. By integrating sustainable practices, we aim to create lasting healthcare solutions, especially for underserved communities, while reducing our environmental footprint.</p>
 
-                                    <h6>3. Innovation in Technology and Social Responsibility</h6>
-                                    <p>By leveraging cutting-edge technology, ARANEA Eco Vista aims to build a global platform that encourages responsible entrepreneurship, ethical business practices, and social responsibility. Our goal is to inspire future generations to pursue innovation while maintaining a deep commitment to environmental sustainability and social equity.</p>
+                                    <h6>3. Innovation in Medical Technology</h6>
+                                    <p>Through cutting-edge technology, ARANEA Healthcare strives to drive advancements that support medical professionals and enhance patient experiences. Our platform promotes responsible innovation, emphasizing ethical and patient-focused practices to inspire future healthcare improvements.</p>
 
-                                    <h6>4. A Global Impact</h6>
-                                    <p>Our projects, such as the ARANEA Healthcare Platform and The Nest Ecocity, exemplify our commitment to sustainable growth and innovation. These initiatives aim to provide high-quality healthcare solutions, sustainable living environments, and economic opportunities for individuals and businesses alike.</p>
+                                    <h6>4. Global Health Impact</h6>
+                                    <p>Our projects, like the ARANEA Healthcare Platform, are designed to improve global healthcare standards and support sustainable health solutions. We aim to impact lives worldwide by making healthcare more effective, equitable, and aligned with the needs of diverse populations.</p>
 
-                                    <p>Together, we are building the future, one step at a time. Through strategic leadership, ARANEA Eco Vista will continue to be a driving force in shaping a more sustainable, collaborative, and prosperous world for all.</p>
+                                    <p>Together, we envision a future where healthcare is accessible, equitable, and impactful. ARANEA Healthcare is dedicated to leading this transformation, one innovation at a time, toward a healthier world for everyone.</p>
                                 </div>
                             </div>
                         </div>
@@ -94,15 +94,15 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="content">
-                                    <p>We are committed to driving positive change in society by offering innovative solutions that combine cutting-edge technology and sustainable practices. Our vision reflects our unwavering belief that we can create a better future through collaboration, integrity, and forward-thinking leadership.</p>
+                                    <p>ARANEA Healthcare is devoted to creating positive societal change by offering innovative healthcare solutions that merge advanced technology with sustainable practices. Our vision embodies our commitment to building a healthier future through integrity, collaboration, and visionary leadership.</p>
 
                                     <div class="category-meta">
                                         <span class="text">Tags:</span>
                                         <div class="tagcloud">
-                                            <a href="#">Sustainability</a>
-                                            <a href="#">Innovation</a>
                                             <a href="#">Healthcare</a>
-                                            <a href="#">Community</a>
+                                            <a href="#">Innovation</a>
+                                            <a href="#">Patient Care</a>
+                                            <a href="#">Community Health</a>
                                             <a href="#">Technology</a>
                                         </div>
                                     </div>

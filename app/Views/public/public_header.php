@@ -48,14 +48,19 @@
         <header class="rainbow-header header-default header-transparent header-sticky">
             <div class="container position-relative">
                 <div class="row align-items-center row--0">
-                    <div class="col-lg-2 col-md-6 col-6">
-                        <div class="logo">
-                            <a href="<?php echo base_url('/')?>">
-                                <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="Healthcare Logo">
-                                <img class="logo-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/light/logo/logo-dark.png" alt="Healthcare Logo">
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-lg-2 col-md-6 col-6">
+    <div class="logo">
+        <a href="<?php echo base_url('/')?>">
+            <img class="logo-light logo-img" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="Healthcare Logo">
+            <img class="logo-dark logo-img" src="<?php echo base_url('assets/landing/') ?>assets/images/light/logo/logo-dark.png" alt="Healthcare Logo">
+        </a>
+    </div>
+</div>
+<style>
+    .header-default .logo a img {
+    max-height: 100px;
+}
+</style>
 
                     <div class="col-lg-8 d-none d-lg-block">
                         <nav class="mainmenu-nav d-none d-lg-flex justify-content-center">
