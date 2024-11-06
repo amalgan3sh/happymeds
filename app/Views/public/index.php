@@ -766,7 +766,7 @@
                     <img src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-2.png" alt="collabration-image">
                     <div class="logo-section">
                         <div class="center-logo">
-                            <img class="shape-dark" src="<?php echo base_url('assets/') ?>assets/img/illustrations/ARANEA_WHITE.png" alt="Small Logo">
+                            <img class="shape-dark" style="max-width: 150%;" src="<?php echo base_url('assets/') ?>assets/img/illustrations/ARANEA_WHITE.png" alt="Small Logo">
                             <img class="shape-light" src="assets/images/light/split/split-2-logo.png" alt="Small Logo">
                         </div>
                     </div>
