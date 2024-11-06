@@ -11,6 +11,12 @@
                                 <img class="logo-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="ARANEA Logo">
                             </a>
                         </div>
+
+                        <style>
+.logo a img {
+    max-height: 80px;
+}
+</style>
                         <p class="b1 desc-text">ARANEA: A comprehensive platform that bridges healthcare, real estate, and community services, offering innovative and sustainable solutions.</p>
                         <h6 class="subtitle">Join our Newsletter</h6>
                         <form class="newsletter-form" action="#">
