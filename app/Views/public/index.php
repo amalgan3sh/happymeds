@@ -121,22 +121,28 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 mt--10">
-                <ul class="brand-list brand-style-2 slider-brand slider-brand-activation">
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/strapi.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/mapbox.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/stenciljs.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/spotify.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/woocommerce.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/slack.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/strapi.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/mapbox.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/stenciljs.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/spotify.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/woocommerce.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/slack.png" alt="Brand Image"></a></li>
-                </ul>
-            </div>
+        <div class="col-lg-12 mt--10">
+            <ul class="brand-list brand-style-2 slider-brand slider-brand-activation">
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>1.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>2.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>3.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>4.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>5.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>6.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>7.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>8.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>9.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>10.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>11.png" alt="Brand Image"></a></li>
+                <!-- <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>12.png" alt="Brand Image"></a></li> -->
+            </ul>
+        </div>
+        <style>
+            .icon-size {
+                width: 80px; /* Adjust width as desired */
+                height: auto; /* Maintains aspect ratio */
+            }
+        </style>
         </div>
     </div>
 </div>
