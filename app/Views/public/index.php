@@ -932,7 +932,7 @@
                                                 <div class="icon">
                                                     <i class="fa-sharp fa-regular fa-handshake"></i>
                                                 </div>
-                                                <h4 class="title color-var-three">Brand Partner</h4>
+                                                <h4 class="title color-var-three">Healthcare Brand Partner</h4>
                                                 <p class="subtitle">Invest in products and earn benefits from sales</p>
 
                                             </div>
