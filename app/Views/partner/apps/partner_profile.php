@@ -61,13 +61,13 @@
                                     <div class="text-center">
                                         <div class="row">
                                             <div class="col">
-                                                <h3 class="m-b-0">12</h3><span>Investments</span>
+                                                <h3 class="m-b-0"><?php echo $userProfile['total_investment']; ?></h3><span>Investments</span>
                                             </div>
                                             <div class="col">
-                                                <h3 class="m-b-0">$748k</h3><span>Portfolio Value</span>
+                                                <h3 class="m-b-0"><?php echo $userProfile['total_turnover']; ?></h3><span>Total Turnover</span>
                                             </div>
                                             <div class="col">
-                                                <h3 class="m-b-0">21.3%</h3><span>Avg. ROI</span>
+                                                <h3 class="m-b-0"><?php echo $userProfile['wallet_balance']; ?></h3><span>Wallet Balance</span>
                                             </div>
                                         </div>
                                         <div class="mt-4">
