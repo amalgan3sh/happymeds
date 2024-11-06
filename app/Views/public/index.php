@@ -18,6 +18,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="inner text-center mt--140">
+                    
                 <h1 class="title display-one">ARANEA Healthcare Platform : Building a Smarter Healthcare Ecosystem 
     <br> <span class="header-caption">
     <span class="cd-headline rotate-1">
@@ -33,38 +34,101 @@
 
     <style>
         /* Base font size for larger screens */
-.title.display-one {
-    font-size: 2.5rem; /* Adjust this value as needed */
-}
+        .title.display-one {
+            font-size: 2.5rem; /* Adjust this value as needed */
+        }
 
-/* Adjust font size for medium screens */
-@media (max-width: 992px) {
-    .title.display-one {
-        font-size: 2rem; /* Slightly smaller for medium screens */
-    }
-}
+        /* Adjust font size for medium screens */
+        @media (max-width: 992px) {
+            .title.display-one {
+                font-size: 2rem; /* Slightly smaller for medium screens */
+            }
+        }
 
-/* Further adjust font size for smaller screens */
-@media (max-width: 768px) {
-    .title.display-one {
-        font-size: 1.75rem; /* Smaller for tablets */
-    }
-}
+        /* Further adjust font size for smaller screens */
+        @media (max-width: 768px) {
+            .title.display-one {
+                font-size: 1.75rem; /* Smaller for tablets */
+            }
+        }
 
-/* Smallest size for mobile screens */
-@media (max-width: 576px) {
-    .title.display-one {
-        font-size: 1.5rem; /* Even smaller for mobile devices */
-    }
-}
+        /* Smallest size for mobile screens */
+        @media (max-width: 576px) {
+            .title.display-one {
+                font-size: 1.5rem; /* Even smaller for mobile devices */
+            }
+        }
     </style>
+
+    
 <p class="description">Build a future-ready healthcare ecosystem with Aranea's Smart Tools. 
     <br> Optimize your healthcare supplychain with distribution and seamless import and export solutions.
 </p>
+    <!-- Left Floating Icon -->
+    <div class="floating-icon left-float">
+        <img src="<?php echo base_url('assets/icons/healthcare_logo.png'); ?>" alt="Healthcare Icon 1">
+    </div>
+
+    <!-- Right Floating Icon -->
+    <div class="floating-icon right-float">
+        <img src="<?php echo base_url('assets/icons/healthcare_logo.png'); ?>" alt="Healthcare Icon 2">
+    </div>
+
+    <style>
+            /* Base font size for larger screens */
+    .title.display-one {
+        font-size: 2.5rem;
+    }
+
+    /* Responsive font adjustments */
+    @media (max-width: 992px) {
+        .title.display-one {
+            font-size: 2rem;
+        }
+    }
+    @media (max-width: 768px) {
+        .title.display-one {
+            font-size: 1.75rem;
+        }
+    }
+    @media (max-width: 576px) {
+        .title.display-one {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* Floating icon styles */
+    .floating-icon {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        opacity: 0.8;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .left-float {
+        top: 30%;
+        left: 5%;
+    }
+
+    .right-float {
+        top: 30%;
+        right: 5%;
+    }
+
+    /* Floating animation */
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+    }
+    </style>
 <div class="form-group">
     <textarea name="text" id="slider-text-area" cols="30" rows="2" readonly></textarea>
     <a class="btn-default @@btnClass" href="<?php echo base_url('get_started') ?>" target="_blank">Explore Solutions</a>
 </div>
+
+
 
                         <script>
                             // Typewriter effect function
