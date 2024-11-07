@@ -195,9 +195,9 @@
                 <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>6.png" alt="Brand Image"></a></li>
                 <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>7.png" alt="Brand Image"></a></li>
                 <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>8.png" alt="Brand Image"></a></li>
-                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>9.png" alt="Brand Image"></a></li>
+                <!-- <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>9.png" alt="Brand Image"></a></li>
                 <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>10.png" alt="Brand Image"></a></li>
-                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>11.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>11.png" alt="Brand Image"></a></li> -->
                 <!-- <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>12.png" alt="Brand Image"></a></li> -->
             </ul>
         </div>
@@ -206,6 +206,11 @@
                 width: 100%; /* Make the width responsive */
     height: auto; /* Keep the height proportional to the width */
     max-width: 200px;
+}
+.brand-style-2 li a img {
+    opacity: 0.6;
+    transition: 0.3s;
+    max-height: 100px;
 }
         </style>
         </div>
