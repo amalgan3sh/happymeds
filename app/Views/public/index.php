@@ -26,7 +26,7 @@
         <span class="cd-words-wrapper" style="width: 221px;">
             <b class="theme-gradient is-visible">Healthcare Solutions</b>
             <b class="theme-gradient is-hidden">Brand Partner Program</b>
-            <b class="theme-gradient is-hidden">Invest with Us</b>
+            <b class="theme-gradient is-hidden">Subscribe with Us</b>
         </span>
     </span>
         </span> at ARANEA
@@ -180,7 +180,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title rating-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                    <p class="b1 mb--0 small-title">truest 800,000+ HIGHLY PRODUCTIVE Company</p>
+                    <p class="b1 mb--0 small-title">Company certifications</p>
                 </div>
             </div>
         </div>
@@ -203,9 +203,10 @@
         </div>
         <style>
             .icon-size {
-                width: 80px; /* Adjust width as desired */
-                height: auto; /* Maintains aspect ratio */
-            }
+                width: 100%; /* Make the width responsive */
+    height: auto; /* Keep the height proportional to the width */
+    max-width: 200px;
+}
         </style>
         </div>
     </div>

@@ -68,7 +68,7 @@
                                                             </li>
                                                             <li>
                                                                 <a href="#investment-plans">
-                                                                    <span>Investment Plans</span>
+                                                                    <span>Subscription Plans</span>
                                                                 </a>
                                                             </li>
                                                             <li>
@@ -184,17 +184,17 @@
                             </div>
                             <div id="investment-plans" class="rbt-elements-area rbt-shadow-box">
                                 <div class="wrapper">
-                                    <h4 class="title-sm">Investment Plans</h4>
+                                    <h4 class="title-sm">Subscription Plans</h4>
                                     <div class="desc">
                                         <div class="image">
-                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/investment_plans.png" alt="Registration Process" style="width: 500px; height: auto;">
+                                            <img src="<?php echo base_url('assets/landing/') ?>assets/images/investment_plan_rupees.png" alt="Registration Process" style="width: 500px; height: auto;">
                                         </div>
-                                        <p class="b1">Choose from three investment plans to partner with manufacturers: Basic, Premium, and Enterprise. Each plan offers different levels of involvement and returns.</p>
+                                        <p class="b1">Choose from three Subscription plans to partner with manufacturers: Basic, Premium, and Enterprise. Each plan offers different levels of involvement and returns.</p>
                                         <h6>Available Plans:</h6>
                                         <ul class="content-list">
                                             <li>Basic Plan - Entry level investment</li>
-                                            <li>Premium Plan - Enhanced benefits and returns</li>
-                                            <li>Enterprise Plan - Maximum investment opportunity</li>
+                                            <li>Standard Plan - Enhanced benefits and returns</li>
+                                            <li>Premium Plan - Maximum investment opportunity</li>
                                         </ul>
                                     </div>
                                 </div>
