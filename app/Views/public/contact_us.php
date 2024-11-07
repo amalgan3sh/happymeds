@@ -192,8 +192,8 @@
                         </div>
                         <div class="inner">
                             <h4 class="title">Contact Number</h4>
-                            <p class="b2"><a href="tel:+919744334141">+91 9744334141</a></p>
-                            <p class="b2"><a href="tel:+85599677336">+85599677336</a></p>
+                            <p class="b2"><a href="tel:+917736702333">+917736702333</a></p>
+                            <!-- <p class="b2"><a href="tel:+85599677336">+85599677336</a></p> -->
                         </div>
                     </div>
                     <div class="rainbow-address">
@@ -202,7 +202,7 @@
                         </div>
                         <div class="inner">
                             <h4 class="title">Email Address</h4>
-                            <p class="b2"><a href="mailto:contact@aranea.in">contact@aranea.in</a></p>
+                            <p class="b2"><a href="mailto:contact@aranea.in">info@aranea.in</a></p>
                             <p class="b2"><a href="mailto:support@aranea.in">support@aranea.in</a></p>
                         </div>
                     </div>

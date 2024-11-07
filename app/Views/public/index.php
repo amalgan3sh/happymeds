@@ -496,7 +496,7 @@
                         <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
                             <div class="inner">
                                 <div class="icon">
-                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-03.svg" alt="Servece Icon">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-01.svg" alt="Servece Icon">
                                 </div>
                                 <div class="description centered-shape">
                                     <h5 class="title">Instant Support</h5>
@@ -516,7 +516,7 @@
                         <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
                             <div class="inner">
                                 <div class="icon">
-                                    <img src="assets/images/icons/service-icon-01.svg" alt="Service Icon">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-01.svg" alt="Service Icon">
                                 </div>
                                 <div class="description centered-shape">
                                     <h5 class="title">Comprehensive Knowledge Hub</h5>
@@ -556,7 +556,7 @@
                         <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
                             <div class="inner">
                                 <div class="icon">
-                                    <img src="assets/images/icons/service-icon-01.svg" alt="Service Icon">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-01.svg" alt="Service Icon">
                                 </div>
                                 <div class="description centered-shape">
                                     <h5 class="title">Swift Response</h5>
