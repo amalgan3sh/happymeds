@@ -210,7 +210,7 @@
 
                                                 <div class="col-lg-3 single-mega-item">
                                                     <div class="header-menu-img">
-                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/menu-img/menu-img-2.png" alt="Menu Split Image">
+                                                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQFdk3nHmQAQlg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721178685273?e=2147483647&v=beta&t=V6vQhkf-DD50UIHvoKUQqOVhil0jLlRFpuL_m9qWw-o" alt="Menu Split Image">
                                                     </div>
                                                 </div>
                                             </div>
