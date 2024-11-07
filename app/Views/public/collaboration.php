@@ -1,23 +1,23 @@
- <!-- Start Breadcrumb Area  -->
- <div class="main-content">
-            <!-- Start Breadcarumb area  -->
-            <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="breadcrumb-inner text-center">
-                                <h3 class="title h3">Collaboration</h3>
-                                <ul class="page-list">
-                                    <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
-                                    <li class="rainbow-breadcrumb-item active">Collaboration</li>
-                                </ul>
-                            </div>
-                        </div>
+<!-- Start Breadcrumb Area  -->
+<div class="main-content">
+    <!-- Start Breadcarumb area  -->
+    <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h3 class="title h3">Collaboration</h3>
+                        <ul class="page-list">
+                            <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
+                            <li class="rainbow-breadcrumb-item active">Collaboration</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- End Breadcarumb area  -->
         </div>
+    </div>
+    <!-- End Breadcarumb area  -->
+</div>
 <!-- Start Collaboration Opportunities Section -->
 <div class="rainbow-collaboration-section rainbow-section-gap-big bg-color-1">
     <div class="container">
@@ -38,8 +38,7 @@
                                                 <a href="#">ARANEA Team</a>
                                             </li>
                                             <li>
-                                                <i class="feather-calendar"></i>
-                                                10 Dec 2023
+                                                <i class="feather-calendar"></i> 10 Dec 2023
                                             </li>
                                         </ul>
                                     </div>
@@ -53,16 +52,24 @@
                                 <div class="col-lg-12">
                                     <div class="content">
                                         <h2 class="title">ARANEA Collaboration Opportunities</h2>
-                                        <p>At ARANEA, we foster collaboration between healthcare providers, B2B partners, and manufacturers to create innovative and sustainable solutions. By leveraging the strengths of each partner, we enable growth and efficiency in the global marketplace.</p>
+                                        <p>At ARANEA, we foster collaboration between healthcare providers, B2B partners, and manufacturers to create innovative and sustainable solutions. By leveraging the strengths of each partner, we enable growth and
+                                            efficiency in the global marketplace.</p>
 
-                                        <h6>1. Partner with Industry Leaders:</h6>
-                                        <p>Join ARANEA to connect with industry leaders in healthcare, real estate, and technology sectors. Our platform allows you to collaborate on groundbreaking projects that push the boundaries of innovation and sustainability.</p>
+                                        <h6>1. Healthcare Facilities and Manufacturers:</h6>
+                                        <p>Collaborate on pharmaceuticals products and specialized healthcare equipment and technology to improve patient outcomes and operational efficiency.m..</p>
 
-                                        <h6>2. Enhance Supply Chain Efficiency:</h6>
-                                        <p>Through ARANEA, manufacturers and suppliers can streamline their supply chains, reduce inefficiencies, and improve distribution networks by connecting directly with B2B partners.</p>
+                                        <h6>2. Joint ventures with Hospitals:</h6>
+                                        <p>We collaborate with leading hospitals, including MVR Multi- Specialty Hospital, on projects ranging from facility management to innovative medical franchise models..</p>
 
-                                        <h6>3. Explore Investment Opportunities:</h6>
-                                        <p>ARANEA provides brand partners with exclusive access to investment opportunities in cutting-edge products and services. With multiple investment plans, partners can choose the option that aligns with their business goals.</p>
+                                        <h6>3. International
+                                        Market Expansion:</h6>
+                                        <p>Partner with suppliers from different countries to distribute healthcare products globally through our system..</p>
+                                        <h6>4. Hospital management System:</h6>
+                                        <p>A hospital management system provided by Aranea Eco Vista, designed to streamline bulk orders, track inventory, optimize procurement processes, and manage patient care, offering comprehensive solutions for total
+                                            hospital management.
+                                        </p>
+                                        <h6>5. Sustainability Projects:</h6>
+                                        <p>Work on joint projects that focus on eco-friendly healthcare solutions</p>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +93,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="content">
-                                        <p>At ARANEA, we believe in the power of collaboration to drive innovation and sustainability. Our platform connects key players in the industry, creating opportunities for partnerships that shape the future of business and healthcare.</p>
+                                        <p>At ARANEA, we believe in the power of collaboration to drive innovation and sustainability. Our platform connects key players in the industry, creating opportunities for partnerships that shape the future of business
+                                            and healthcare.</p>
                                         <div class="category-meta">
                                             <span class="text">Explore More:</span>
                                             <div class="tagcloud">
@@ -94,67 +102,67 @@
                                                 <a href="#">Sustainability</a>
                                                 <a href="#">Business Innovation</a>
                                                 <a href="#">Collaboration</a>
-                                                <a href="#">Real Estate</a>
+                                                <!-- <a href="#">Real Estate</a> -->
                                             </div>
                                         </div>
 
                                         <!-- Start Comment Form Area -->
-                                    <div class="rainbow-comment-form pt--60">
-                                        <div class="inner">
-                                            <div class="section-title">
-                                                <span class="subtitle">Intrested in collaborating with us?</span>
-                                                <h2 class="title">Get in touch with us</h2>
-                                            </div>
-                                            <form id="contact-form" class="mt--40">
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-md-12 col-12">
-                                                        <div class="rnform-group">
-                                                            <input type="text" name="name" placeholder="Name" required>
-                                                        </div>
-                                                        <div class="rnform-group">
-                                                            <input type="email" name="email" placeholder="Email" required>
-                                                        </div>
-                                                        <div class="rnform-group">
-                                                            <input type="text" name="website" placeholder="Website">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-12 col-12">
-                                                        <div class="rnform-group">
-                                                            <textarea name="message" placeholder="Comment" required></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="blog-btn">
-                                                            <button type="submit" class="btn-default"><span>SEND MESSAGE</span></button>
-                                                        </div>
-                                                    </div>
+                                        <div class="rainbow-comment-form pt--60">
+                                            <div class="inner">
+                                                <div class="section-title">
+                                                    <span class="subtitle">Intrested in collaborating with us?</span>
+                                                    <h2 class="title">Get in touch with us</h2>
                                                 </div>
-                                            </form>
+                                                <form id="contact-form" class="mt--40">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-12 col-12">
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="name" placeholder="Name" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="email" name="email" placeholder="Email" required>
+                                                            </div>
+                                                            <div class="rnform-group">
+                                                                <input type="text" name="website" placeholder="Website">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-12 col-12">
+                                                            <div class="rnform-group">
+                                                                <textarea name="message" placeholder="Comment" required></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="blog-btn">
+                                                                <button type="submit" class="btn-default"><span>SEND MESSAGE</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <!-- Include EmailJS SDK -->
-                                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-                                    <script type="text/javascript">
-                                        (function(){
-                                            emailjs.init("ZqAGdlu-q_WGJsESw"); // Your EmailJS User ID
-                                        })();
-                                    </script>
+                                        <!-- Include EmailJS SDK -->
+                                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+                                        <script type="text/javascript">
+                                            (function(){
+                                                emailjs.init("ZqAGdlu-q_WGJsESw"); // Your EmailJS User ID
+                                            })();
+                                        </script>
 
-                                    <script type="text/javascript">
-                                        document.getElementById('contact-form').addEventListener('submit', function(event) {
-                                            event.preventDefault(); // Prevent form from submitting normally
-
-                                            // Send email using EmailJS
-                                            emailjs.sendForm('service_ejuut2p', 'template_zye5m7k', this)
-                                                .then(function() {
-                                                    alert('Message sent successfully!');
-                                                }, function(error) {
-                                                    alert('Failed to send message. Error: ' + JSON.stringify(error));
-                                                });
-                                        });
-                                    </script>
-                                    <!-- End Comment Form Area -->
+                                        <script type="text/javascript">
+                                            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                                event.preventDefault(); // Prevent form from submitting normally
+    
+                                                // Send email using EmailJS
+                                                emailjs.sendForm('service_ejuut2p', 'template_zye5m7k', this)
+                                                    .then(function() {
+                                                        alert('Message sent successfully!');
+                                                    }, function(error) {
+                                                        alert('Failed to send message. Error: ' + JSON.stringify(error));
+                                                    });
+                                            });
+                                        </script>
+                                        <!-- End Comment Form Area -->
                                     </div>
                                 </div>
                             </div>

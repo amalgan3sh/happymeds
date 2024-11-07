@@ -775,17 +775,17 @@
 
                 <style>
                     .rainbow-collobration-area .collabration-image-section .logo-section .center-logo {
-    padding: 27px 47px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0e0c1500;
-    border-radius: 20px;
-    position: relative;
-    z-index: 2;
-    width: 210px;
-    height: 210px;
-}
+                        padding: 27px 47px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: #0e0c1500;
+                        border-radius: 20px;
+                        position: relative;
+                        z-index: 2;
+                        width: 210px;
+                        height: 210px;
+                    }
                 </style>
             </div>
         </div>
