@@ -208,7 +208,7 @@
                             <li>
                                 <div class="list-blog-sm">
                                     <div class="img">
-                                        <img src="https://fastercapital.co/i/Iwoh-Sustainability--Promoting-Environmental-Conservation-and-Stewardship--Sustainable-Practices-for-a-Greener-Future.webp" alt="Blog">
+                                        <img src="https://www.euroschoolindia.com/wp-content/uploads/2023/09/sustainable-transportation.jpg">
                                     </div>
                                     <div class="content">
                                         <a class="d-block" href="blog">5 Sustainable Practices for a Greener Future</a>
