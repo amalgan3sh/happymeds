@@ -17,7 +17,7 @@
     max-height: 80px;
 }
 </style>
-                        <p class="b1 desc-text">ARANEA: A comprehensive platform that bridges healthcare, real estate, and community services, offering innovative and sustainable solutions.</p>
+                        <p class="b1 desc-text">ARANEA: A comprehensive platform that bridges healthcare services, offering innovative and sustainable solutions.</p>
                         <h6 class="subtitle">Join our Newsletter</h6>
                         <form class="newsletter-form" action="#">
                             <div class="form-group">

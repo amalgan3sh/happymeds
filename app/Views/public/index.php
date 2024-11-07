@@ -25,7 +25,7 @@
     <span class="cd-headline rotate-1">
         <span class="cd-words-wrapper" style="width: 221px;">
             <b class="theme-gradient is-visible">Healthcare Solutions</b>
-            <b class="theme-gradient is-hidden">Partner Program</b>
+            <b class="theme-gradient is-hidden">Brand Partner Program</b>
             <b class="theme-gradient is-hidden">Invest with Us</b>
         </span>
     </span>
@@ -737,9 +737,9 @@
             </div>
         </div>
     </div>
-    <div class="bg-shape">
-        <img src="assets/images/bg/split-bg-shape.png" alt="Bg Shape">
-    </div>
+    <!-- <div class="bg-shape">
+        <img src="<?php echo base_url('assets/landing/assets/images/brand_partner_mobile.png') ?>" alt="Bg Shape">
+    </div> -->
 </div>
 <!-- End Advanced Tab Area -->
 

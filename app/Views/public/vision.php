@@ -6,10 +6,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-inner text-center">
-                        <h3 class="title h3">Vision</h3>
+                        <h3 class="title h3">Our Vision</h3>
                         <ul class="page-list">
                             <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
-                            <li class="rainbow-breadcrumb-item active">Vision</li>
+                            <li class="rainbow-breadcrumb-item active">Our Vision</li>
                         </ul>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                                 <div class="col-lg-12">
                                     <div class="content text-center">
                                         <div class="thumbnail">
-                                            <img class="w-100 radius" src="https://media.licdn.com/dms/image/D4D12AQEtTKDhfoL_bw/article-cover_image-shrink_720_1280/0/1695032536439?e=2147483647&v=beta&t=02oXif4vTzdnevgLfmSJHjOcKFX22tq4hB9UySjehbA" alt="Blog Images">
+                                            <img class="w-100 radius" src="https://media.licdn.com/dms/image/D4D12AQEtTKDhfoL_bw/article-cover_image-shrink_720_1280/0/1695032536439?e=2147483647&v=beta&t=02oXif4vTzdnevgLfmSJHjOcKFX22tq4hB9UySjehbA" alt="Vision Image">
                                         </div>
                                         <ul class="rainbow-meta-list">
                                             <li>
@@ -52,22 +52,22 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="content">
-                                    <h2 class="title">Our Vision for Transforming Healthcare</h2>
-                                    <p>At ARANEA Healthcare Platform, we aim to revolutionize healthcare by building a smarter, more accessible, and patient-centered ecosystem. Our vision is to provide solutions that elevate patient care, foster community health, and support healthcare professionals through seamless, technology-driven interactions.</p>
+                                    <h2 class="title">Our Vision for a Smarter Healthcare Ecosystem</h2>
+                                    <p>At ARANEA Healthcare Platform, we are building a smarter, more accessible healthcare ecosystem that prioritizes patient care, community health, and support for healthcare professionals through innovative, technology-driven solutions.</p>
 
-                                    <h6>1. Patient-Centered Care and Community Wellness</h6>
-                                    <p>We prioritize healthcare that is personalized, compassionate, and inclusive. Our platform facilitates connections between patients, providers, and caregivers, ensuring a holistic approach to wellness that enhances community health and individual well-being.</p>
+                                    <h6>1. Patient-Centered and Community-Focused</h6>
+                                    <p>We are committed to compassionate, inclusive healthcare that fosters connections between patients, providers, and caregivers. Our platform aims to enhance wellness within communities and improve individual health outcomes.</p>
 
-                                    <h6>2. Sustainable and Accessible Healthcare Solutions</h6>
-                                    <p>We are committed to bridging healthcare access gaps through telemedicine, digital health tools, and efficient health management systems. By integrating sustainable practices, we aim to create lasting healthcare solutions, especially for underserved communities, while reducing our environmental footprint.</p>
+                                    <h6>2. Accessible and Sustainable Healthcare</h6>
+                                    <p>Our commitment to bridging healthcare access gaps includes telemedicine, digital health tools, and efficient health management. We integrate sustainable practices, focusing on lasting healthcare solutions for underserved regions while minimizing our environmental impact.</p>
 
-                                    <h6>3. Innovation in Medical Technology</h6>
-                                    <p>Through cutting-edge technology, ARANEA Healthcare strives to drive advancements that support medical professionals and enhance patient experiences. Our platform promotes responsible innovation, emphasizing ethical and patient-focused practices to inspire future healthcare improvements.</p>
+                                    <h6>3. Driving Innovation in Medical Technology</h6>
+                                    <p>ARANEA Healthcare leverages cutting-edge technology to support medical professionals and improve patient experiences. Our platform encourages responsible, patient-focused innovation to advance healthcare standards.</p>
 
-                                    <h6>4. Global Health Impact</h6>
-                                    <p>Our projects, like the ARANEA Healthcare Platform, are designed to improve global healthcare standards and support sustainable health solutions. We aim to impact lives worldwide by making healthcare more effective, equitable, and aligned with the needs of diverse populations.</p>
+                                    <h6>4. Global Impact</h6>
+                                    <p>We strive to elevate healthcare standards globally, supporting sustainable, effective health solutions. Our mission is to make a worldwide impact by aligning healthcare practices with the needs of diverse populations.</p>
 
-                                    <p>Together, we envision a future where healthcare is accessible, equitable, and impactful. ARANEA Healthcare is dedicated to leading this transformation, one innovation at a time, toward a healthier world for everyone.</p>
+                                    <p>Our vision for healthcare is a future that is accessible, equitable, and transformative. ARANEA Healthcare is leading this charge toward a healthier world, one innovation at a time.</p>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                             <div class="col-lg-12">
                                 <div class="content text-center">
                                     <div class="thumbnail">
-                                        <img class="w-100 radius" src="https://cdn.vidyard.com/thumbnails/22247264/mRMudXw2FAVuDcz_DXZzddeKbJNI211A.jpg" alt="Blog Images">
+                                        <img class="w-100 radius" src="https://cdn.vidyard.com/thumbnails/22247264/mRMudXw2FAVuDcz_DXZzddeKbJNI211A.jpg" alt="Additional Blog Image">
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="content">
-                                    <p>ARANEA Healthcare is devoted to creating positive societal change by offering innovative healthcare solutions that merge advanced technology with sustainable practices. Our vision embodies our commitment to building a healthier future through integrity, collaboration, and visionary leadership.</p>
+                                    <p>ARANEA Healthcare’s mission is to create a positive societal impact through innovative, sustainable healthcare solutions. We aim to build a healthier future through integrity, collaboration, and visionary leadership.</p>
 
                                     <div class="category-meta">
                                         <span class="text">Tags:</span>

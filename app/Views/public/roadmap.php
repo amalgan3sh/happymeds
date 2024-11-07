@@ -1,6 +1,6 @@
- <!-- Start Breadcrumb Area  -->
- <div class="main-content">
-    <!-- Start Breadcarumb area  -->
+<!-- Start Breadcrumb Area  -->
+<div class="main-content">
+    <!-- Start Breadcrumb area  -->
     <div class="breadcrumb-area breadcarumb-style-1 pt--180 pb--100">
         <div class="container">
             <div class="row">
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <!-- End Breadcarumb area  -->
+    <!-- End Breadcrumb area  -->
 </div>
 
 <!-- Start Roadmap Area  -->
@@ -24,11 +24,11 @@
     <div class="container">
 
         <!-- Define the Vision -->
-        <div class="row changelog_info" id="v120">
+        <div class="row changelog_info" id="vision">
             <div class="col-lg-3 changelog_date">
                 <div class="c_date">
                     <h6>Define the Vision</h6>
-                    <p>25 FEB, 2024</p>
+                    <p>2024</p>
                 </div>
             </div>
             <div class="col-lg-2">
@@ -41,23 +41,23 @@
             </div>
             <div class="col-lg-3">
                 <div class="changelog_content">
-                    <p class="text">ARANEA’s goal is to bridge healthcare, real estate, and sustainable development through a seamless platform.</p>
+                    <p class="text">ARANEA’s goal is to bridge healthcare and sustainable development through a seamless platform.</p>
                     <p class="title">Core Pillars:</p>
                     <ul class="content-list">
                         <li>Innovative healthcare solutions</li>
                         <li>Sustainable business practices</li>
-                        <li>Global collaboration in real estate</li>
+                        <li>Global collaboration</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Build the Platform -->
-        <div class="row changelog_info" id="v112">
+        <!-- Phase 1: Core Platform Development -->
+        <div class="row changelog_info" id="phase1">
             <div class="col-lg-3 changelog_date">
                 <div class="c_date">
-                    <h6>Platform Development</h6>
-                    <p>25 MAR, 2024</p>
+                    <h6>Phase 1: Core Platform Development</h6>
+                    <p>2024</p>
                 </div>
             </div>
             <div class="col-lg-2">
@@ -70,23 +70,23 @@
             </div>
             <div class="col-lg-3">
                 <div class="changelog_content">
-                    <p class="text">Building ARANEA's core platform for users to collaborate, invest, and exchange within healthcare and real estate sectors.</p>
+                    <p class="text">Developing the foundation of ARANEA's platform for healthcare procurement and management.</p>
                     <p class="title">Features in Focus:</p>
                     <ul class="content-list">
-                        <li>User authentication and dashboard</li>
-                        <li>Healthcare product listings and investments</li>
-                        <li>Real estate sustainable projects</li>
+                        <li>Procurement and collaboration tools</li>
+                        <li>Basic hospital management system</li>
+                        <li>Subscription services for B2B users</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Collaborate Globally -->
-        <div class="row changelog_info" id="v122">
+        <!-- Phase 2: Partnership Expansion & Blockchain Integration -->
+        <div class="row changelog_info" id="phase2">
             <div class="col-lg-3 changelog_date">
                 <div class="c_date">
-                    <h6>Global Collaboration</h6>
-                    <p>25 MAY, 2024</p>
+                    <h6>Phase 2: Partnership Expansion & Blockchain Integration</h6>
+                    <p>2025</p>
                 </div>
             </div>
             <div class="col-lg-2">
@@ -99,22 +99,23 @@
             </div>
             <div class="col-lg-3">
                 <div class="changelog_content">
-                    <p class="text">Expand ARANEA’s network globally, allowing users to collaborate across borders in healthcare, sustainable projects, and real estate.</p>
+                    <p class="text">Expanding ARANEA's partnerships and integrating blockchain for secure transactions.</p>
                     <p class="title">What’s Next:</p>
                     <ul class="content-list">
-                        <li>Global partnerships in healthcare</li>
-                        <li>Sustainable real estate initiatives</li>
+                        <li>Form alliances with hospitals and suppliers</li>
+                        <li>Blockchain-enabled barter system for trade</li>
+                        <li>Advanced analytics for inventory and demand</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Official Platform Launch -->
-        <div class="row changelog_info" id="v111">
+        <!-- Phase 3: Global Expansion & Sustainability Initiatives -->
+        <div class="row changelog_info" id="phase3">
             <div class="col-lg-3 changelog_date">
                 <div class="c_date">
-                    <h6>Official Platform Launch</h6>
-                    <p>25 JUN, 2024</p>
+                    <h6>Phase 3: Global Expansion & Sustainability Initiatives</h6>
+                    <p>2026</p>
                 </div>
             </div>
             <div class="col-lg-2">
@@ -127,17 +128,23 @@
             </div>
             <div class="col-lg-3">
                 <div class="changelog_content">
-                    <p class="text">Launch the ARANEA platform to users, focusing on collaboration, innovation, and sustainability. Features include investment opportunities, real-time collaboration, and project management.</p>
+                    <p class="text">Expanding the platform globally and implementing eco-friendly healthcare solutions.</p>
+                    <p class="title">Focus Areas:</p>
+                    <ul class="content-list">
+                        <li>International healthcare partnerships</li>
+                        <li>Sustainable projects and telemedicine</li>
+                        <li>Cross-border import/export services</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Ongoing Updates -->
-        <div class="row changelog_info" id="v110">
+        <!-- Phase 4: Continuous Innovation & Scalability -->
+        <div class="row changelog_info" id="phase4">
             <div class="col-lg-3 changelog_date">
                 <div class="c_date">
-                    <h6>Ongoing Enhancements</h6>
-                    <p>25 JUL, 2024</p>
+                    <h6>Phase 4: Continuous Innovation & Scalability</h6>
+                    <p>2027</p>
                 </div>
             </div>
             <div class="col-lg-2">
@@ -150,7 +157,13 @@
             </div>
             <div class="col-lg-3">
                 <div class="changelog_content">
-                    <p class="text">Roll out updates based on user feedback. Introduce new features for better user experience and expand partnerships in healthcare and real estate.</p>
+                    <p class="text">Ongoing updates, platform scalability, and expansion of healthcare impact projects.</p>
+                    <p class="title">Key Developments:</p>
+                    <ul class="content-list">
+                        <li>Enhanced hospital management features</li>
+                        <li>Scalable cloud infrastructure</li>
+                        <li>Global health impact initiatives</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -193,7 +206,7 @@
                                     Experience Innovation and Sustainability
                                 </h2>
                                 <p class="description b1">
-                                    Leverage ARANEA's platform to accelerate your business in healthcare, real estate, and sustainability.
+                                    Leverage ARANEA's platform to accelerate your business in healthcare, and sustainability.
                                 </p>
                             </div>
                             <div class="app-store-btn">
