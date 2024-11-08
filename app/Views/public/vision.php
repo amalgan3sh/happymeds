@@ -16,13 +16,7 @@
             </div>
         </div>
     </div>
-    <style>
-        .breadcrumb-area {
-    height : 23vh;
-}
 
-
-    </style>
 </div>
 
 <div class="rainbow-blog-section rainbow-section-gap-big bg-color-1">
@@ -71,7 +65,7 @@
 
                 <style>
                     .rainbow-section-gap-big {
-                        padding: 80px 0 !important;
+                        padding: 30px 0 !important;
                     }
                 </style>
 
