@@ -73,7 +73,7 @@
                    
                     <style>
                     .rainbow-section-gap-big {
-                        padding: 80px 0 !important;
+                        padding: 30px 0 !important;
                     }
                 </style>
 

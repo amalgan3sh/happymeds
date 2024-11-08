@@ -119,6 +119,12 @@
                                         </div>
                                     </div>
 
+                                    <style>
+                    .rainbow-section-gap-big {
+                        padding: 30px 0 !important;
+                    }
+                </style>
+
                                     <!-- Include EmailJS SDK -->
                                     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
                                     <script type="text/javascript">
