@@ -16,17 +16,13 @@
             </div>
         </div>
     </div>
-    <!-- <style>
-        .breadcarumb-style-1 {
-    background-color: var(--color-blackest) !important;
-    background: url(../images/bg/breadcrumb-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 100px;
+    <style>
+        .breadcrumb-area {
+    height : 23vh;
 }
-    </style> -->
-    <!-- End Breadcrumb area  -->
+
+
+    </style>
 </div>
 
 <div class="rainbow-blog-section rainbow-section-gap-big bg-color-1">
