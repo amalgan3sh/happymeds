@@ -894,7 +894,7 @@
                                             </div>
                                         </div>
                                         <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="ecommerce_home">Get Started</a>
+                                            <a class="btn-default" href="ecommerce_home">Get Started</a>
                                         </div>
                                     </div>
                                 </div>
@@ -921,7 +921,7 @@
                                                         <li>
                                                             <i class="fa-regular fa-circle-check"></i> Door to Door delivery system
                                                         </li>
-                                                        <!-- <li>
+                                                        <li>
                                                             <i class="fa-regular fa-circle-check"></i> Marketing and sales support
                                                         </li>
                                                         <li>
@@ -935,7 +935,7 @@
                                                             <i class="fa-sharp fa-regular fa-minus-circle"></i> Advance Updates via dashboard
                                                         </li>
                                                     </ul>
-                                                    <div class="rbt-show-more-btn">Show More</div> -->
+                                                    <div class="rbt-show-more-btn">Show More</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -967,7 +967,7 @@
                                                         <li>
                                                             <i class="fa-regular fa-circle-check"></i>Benefits get to the wallet through bank
                                                         </li>
-                                                        <!-- <li>
+                                                        <li>
                                                             <i class="fa-regular fa-circle-check"></i> 5-year subscription plan
                                                         </li>
                                                         <li>
@@ -980,12 +980,12 @@
                                                             <i class="fa-sharp fa-regular fa-minus-circle"></i> Advance Updates via dashboard
                                                         </li>
                                                     </ul>
-                                                    <div class="rbt-show-more-btn">Show More</div> -->
+                                                    <div class="rbt-show-more-btn">Show More</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="partner_signin">Get Started</a>
+                                            <a class="btn-default" href="partner_signin">Get Started</a>
                                         </div>
                                     </div>
                                 </div>

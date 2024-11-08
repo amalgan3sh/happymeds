@@ -66,7 +66,7 @@
                                             </div>
                                         </div>
                                         <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="ecommerce_home">Get Started</a>
+                                            <a class="btn-default" href="ecommerce_home">Get Started</a>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@
                                             </div>
                                         </div>
                                         <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="partner_signin">Get Started</a>
+                                            <a class="btn-default" href="partner_signin">Get Started</a>
                                         </div>
                                     </div>
                                 </div>
