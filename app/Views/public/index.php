@@ -900,7 +900,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--30">
-                                <div class="rainbow-pricing style-aiwave active">
+                                <div class="rainbow-pricing style-aiwave">
                                     <div class="pricing-table-inner">
                                         <div class="pricing-top">
                                             <div class="pricing-header">
