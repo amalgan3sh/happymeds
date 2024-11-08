@@ -190,7 +190,7 @@
                         </div>
                         <div class="inner">
                             <h4 class="title">Location</h4>
-                            <p class="b2">ARANEA Headquarters, Kasargod District, Kerala, India</p>
+                            <p class="b2">Aranea Eco Vista Pvt Ltd</p>
                         </div>
                     </div>
                     <div class="rainbow-address">
