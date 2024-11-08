@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <style>
+    <!-- <style>
         .breadcarumb-style-1 {
     background-color: var(--color-blackest) !important;
     background: url(../images/bg/breadcrumb-bg.png);
@@ -25,7 +25,7 @@
     background-position: top center;
     height: 100px;
 }
-    </style>
+    </style> -->
     <!-- End Breadcrumb area  -->
 </div>
 
@@ -72,6 +72,12 @@
                     </div>
 
                 </div>
+
+                <style>
+                    .rainbow-section-gap-big {
+                        padding: 80px 0 !important;
+                    }
+                </style>
 
                 <!-- Additional Blog Image -->
                 <div class="post-page-banner">

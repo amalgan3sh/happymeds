@@ -70,6 +70,11 @@
                             </div>
                         </div>
                     </div>
+                    <style>
+                    .rainbow-section-gap-big {
+                        padding: 80px 0 !important;
+                    }
+                </style>
 
                     <!-- Additional Mission Image -->
                     <div class="post-page-banner">

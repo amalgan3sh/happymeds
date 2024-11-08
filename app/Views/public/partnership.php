@@ -162,6 +162,12 @@
                     </div>
                 </div>
             </div>
+
+            <style>
+                    .rainbow-section-gap-big {
+                        padding: 80px 0 !important;
+                    }
+                </style>
             <div class="col-lg-4 mt_md--40 mt_sm--40">
                 <aside class="rainbow-sidebar">
                     <div class="rbt-single-widget widget_search mt--40">

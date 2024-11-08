@@ -90,6 +90,11 @@
                                         </div>
                                     </form>
                                 </div>
+                                <style>
+                    .rainbow-section-gapTop-big {
+                        padding: 50px 0 !important;
+                    }
+                </style>
 
                                 <!-- Business Inquiry Form -->
                                 <div class="tab-pane fade" id="business-inquiry" role="tabpanel" aria-labelledby="business-inquiry-tab">
@@ -211,6 +216,8 @@
         </div>
     </div>
 </div>
+
+
 <!-- End Contact Area  -->
 
 <!-- Display JavaScript alert on form submission success or error -->
