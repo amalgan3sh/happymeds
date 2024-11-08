@@ -26,6 +26,27 @@
         <div class="row row--30">
             <div class="col-lg-8">
                 <div class="rainbow-blog-details-area">
+                <div class="blog-details-content pt--40">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content">
+                                        <h2 class="title">ARANEA Mission: Empowering Innovation and Sustainable Development</h2>
+                                        <p>At ARANEA, our mission is to drive transformative change by fostering a collaborative ecosystem that combines modern technology with sustainable practices. Our mission extends across healthcare, providing scalable solutions that bridge traditional values with technological advancements.</p>
+
+                                        <h6>1. Driving Innovation in Healthcare:</h6>
+                                        <p>We strive to enhance healthcare through an integrated platform that supports manufacturers, suppliers, and brand partners in streamlining operations. Our system enables real-time updates, seamless product listings, and investment opportunities, ensuring everyone has a role in advancing healthcare solutions.</p>
+
+                                        <h6>2. Supporting Sustainable Business Practices:</h6>
+                                        <p>ARANEA connects businesses with industry leaders, enabling them to adopt sustainable practices while driving growth and efficiency. Our platform encourages collaboration and ethical entrepreneurship, helping businesses make a positive social impact.</p>
+
+                                        <h6>3. Creating Global Opportunities:</h6>
+                                        <p>By providing access to a global marketplace, ARANEA empowers B2B partners, manufacturers, and brand partners to expand their reach. Our platform supports investments, optimizes supply chains, and connects businesses with tools needed to succeed in a connected world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="post-page-banner">
                         <div class="container">
                             <div class="row">
@@ -49,27 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-details-content pt--40">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="content">
-                                        <h2 class="title">ARANEA Mission: Empowering Innovation and Sustainable Development</h2>
-                                        <p>At ARANEA, our mission is to drive transformative change by fostering a collaborative ecosystem that combines modern technology with sustainable practices. Our mission extends across healthcare, providing scalable solutions that bridge traditional values with technological advancements.</p>
-
-                                        <h6>1. Driving Innovation in Healthcare:</h6>
-                                        <p>We strive to enhance healthcare through an integrated platform that supports manufacturers, suppliers, and brand partners in streamlining operations. Our system enables real-time updates, seamless product listings, and investment opportunities, ensuring everyone has a role in advancing healthcare solutions.</p>
-
-                                        <h6>2. Supporting Sustainable Business Practices:</h6>
-                                        <p>ARANEA connects businesses with industry leaders, enabling them to adopt sustainable practices while driving growth and efficiency. Our platform encourages collaboration and ethical entrepreneurship, helping businesses make a positive social impact.</p>
-
-                                        <h6>3. Creating Global Opportunities:</h6>
-                                        <p>By providing access to a global marketplace, ARANEA empowers B2B partners, manufacturers, and brand partners to expand their reach. Our platform supports investments, optimizes supply chains, and connects businesses with tools needed to succeed in a connected world.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <style>
                     .rainbow-section-gap-big {
                         padding: 80px 0 !important;
