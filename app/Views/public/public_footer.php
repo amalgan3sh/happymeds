@@ -66,7 +66,7 @@
                             <div class="inner">
                                 <ul class="footer-link contact-link">
                                     <li><i class="contact-icon fa-regular fa-location-dot"></i><a href="#">Aranea Eco Vista Pvt Ltd</a></li>
-                                    <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a href="mailto:info@aranea.in">info@aranea.in</a></li>
+                                    <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a href="mailto:healthcare@aranea.in">healthcare@aranea.in</a></li>
                                     <li><i class="contact-icon fa-regular fa-phone"></i><a href="tel:+917736702333">+917736702333</a></li>
                                 </ul>
                             </div>

@@ -202,8 +202,8 @@
                         </div>
                         <div class="inner">
                             <h4 class="title">Email Address</h4>
-                            <p class="b2"><a href="mailto:contact@aranea.in">info@aranea.in</a></p>
-                            <p class="b2"><a href="mailto:support@aranea.in">support@aranea.in</a></p>
+                            <p class="b2"><a href="mailto:contact@aranea.in">healthcare@aranea.in</a></p>
+                            <!-- <p class="b2"><a href="mailto:support@aranea.in">support@aranea.in</a></p> -->
                         </div>
                     </div>
                 </div>

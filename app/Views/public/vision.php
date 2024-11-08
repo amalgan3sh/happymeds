@@ -16,6 +16,16 @@
             </div>
         </div>
     </div>
+    <style>
+        .breadcarumb-style-1 {
+    background-color: var(--color-blackest) !important;
+    background: url(../images/bg/breadcrumb-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100px;
+}
+    </style>
     <!-- End Breadcrumb area  -->
 </div>
 
@@ -24,6 +34,19 @@
         <div class="row row--30">
             <div class="col-lg-8">
                 <div class="rainbow-blog-details-area">
+                <div class="blog-details-content pt--40">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="content">
+                                    <h2 class="title">Our Vision</h2>
+                                    <p>To be a global leader in healthcare innovation by creating an interconnected ecosystem that enables seamless collaboration between healthcare manufacturers, suppliers, hospitals, and B2B partners and brand partners driving sustainable and affordable healthcare solutions.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="post-page-banner">
                         <div class="container">
                             <div class="row">
@@ -47,31 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-details-content pt--40">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="content">
-                                    <h2 class="title">Our Vision for a Smarter Healthcare Ecosystem</h2>
-                                    <p>At ARANEA Healthcare Platform, we are building a smarter, more accessible healthcare ecosystem that prioritizes patient care, community health, and support for healthcare professionals through innovative, technology-driven solutions.</p>
 
-                                    <h6>1. Patient-Centered and Community-Focused</h6>
-                                    <p>We are committed to compassionate, inclusive healthcare that fosters connections between patients, providers, and caregivers. Our platform aims to enhance wellness within communities and improve individual health outcomes.</p>
-
-                                    <h6>2. Accessible and Sustainable Healthcare</h6>
-                                    <p>Our commitment to bridging healthcare access gaps includes telemedicine, digital health tools, and efficient health management. We integrate sustainable practices, focusing on lasting healthcare solutions for underserved regions while minimizing our environmental impact.</p>
-
-                                    <h6>3. Driving Innovation in Medical Technology</h6>
-                                    <p>ARANEA Healthcare leverages cutting-edge technology to support medical professionals and improve patient experiences. Our platform encourages responsible, patient-focused innovation to advance healthcare standards.</p>
-
-                                    <h6>4. Global Impact</h6>
-                                    <p>We strive to elevate healthcare standards globally, supporting sustainable, effective health solutions. Our mission is to make a worldwide impact by aligning healthcare practices with the needs of diverse populations.</p>
-
-                                    <p>Our vision for healthcare is a future that is accessible, equitable, and transformative. ARANEA Healthcare is leading this charge toward a healthier world, one innovation at a time.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Additional Blog Image -->
