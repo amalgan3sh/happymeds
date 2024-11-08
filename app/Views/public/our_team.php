@@ -25,7 +25,7 @@
             <!-- Start Single Team -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                 <div class="team">
-                    <div class="thumbnail"><img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-07.png" alt="Team Images">
+                    <div class="thumbnail"><img src="<?php echo base_url('assets/team/') ?>3.svg" alt="Team Images">
                     </div>
                     <div class="content">
                         <h4 class="title">Shynesh Moolayi</h4>
@@ -43,7 +43,7 @@
             <!-- Start Single Team -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                 <div class="team">
-                    <div class="thumbnail"><img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-08.png" alt="Team Images">
+                    <div class="thumbnail"><img src="<?php echo base_url('assets/team/') ?>2.svg" alt="Team Images">
                     </div>
                     <div class="content">
                         <h4 class="title">Ajithkumar</h4>
