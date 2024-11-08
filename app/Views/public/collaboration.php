@@ -24,29 +24,7 @@
         <div class="row row--30">
             <div class="col-lg-8">
                 <div class="rainbow-collaboration-details-area">
-                    <div class="post-page-banner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="content text-center">
-                                        <div class="thumbnail">
-                                            <img class="w-100 radius" src="https://futuramo.com/blog/wp-content/uploads/2018/06/Why-You-Should-Consider-Collaborating-1108x800.jpg" alt="Collaboration Image">
-                                        </div>
-                                        <ul class="rainbow-meta-list">
-                                            <li>
-                                                <i class="feather-user"></i>
-                                                <a href="#">ARANEA Team</a>
-                                            </li>
-                                            <li>
-                                                <i class="feather-calendar"></i> 10 Dec 2023
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collaboration-details-content pt--40">
+                <div class="collaboration-details-content pt--40">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -75,6 +53,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="post-page-banner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content text-center">
+                                        <div class="thumbnail">
+                                            <img class="w-100 radius" src="https://futuramo.com/blog/wp-content/uploads/2018/06/Why-You-Should-Consider-Collaborating-1108x800.jpg" alt="Collaboration Image">
+                                        </div>
+                                        <ul class="rainbow-meta-list">
+                                            <li>
+                                                <i class="feather-user"></i>
+                                                <a href="#">ARANEA Team</a>
+                                            </li>
+                                            <li>
+                                                <i class="feather-calendar"></i> 10 Dec 2023
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="post-page-banner">
                         <div class="container">
                             <div class="row">
