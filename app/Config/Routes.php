@@ -132,6 +132,10 @@ $routes->post('resubmit-verification', 'StoreController::resubmitVerification');
 $routes->post('checkout/confirmOrder', 'CheckoutController::confirmOrder');
 $routes->get('logout', 'StoreController::logout');
 
+$routes->get('reset_password', 'AuthController::ResetPassword');
+$routes->get('forgot_password', 'AuthController::forgot_password_process');
+$routes->post('auth/init-password-reset', 'AuthController::initPasswordReset');
+$routes->post('auth/verify-otp-reset-password', 'AuthController::verifyOTPAndResetPassword');
 
 
 //auth

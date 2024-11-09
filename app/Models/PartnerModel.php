@@ -31,7 +31,9 @@ class PartnerModel extends Model
         'language', 
         'age', 
         'experience', 
-        'location'
+        'location',
+        'reset_token',
+        'reset_token_expires'
     ]; // Fields allowed for mass assignment
 
     /**

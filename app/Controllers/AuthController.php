@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
+use App\Models\PartnerModel;
 use CodeIgniter\Controller;
 use CodeIgniter\Session\Session;
 
@@ -105,7 +106,84 @@ class AuthController extends Controller
         }
     }
 
+    public function forgot_password_process() {
+        $this->load->library('form_validation');
+        
+        // Validate email input
+        $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+        
+        if ($this->form_validation->run() == FALSE) {
+            // Show errors or redirect
+            $this->load->view('forgot_password');
+        } else {
+            // Get email from POST
+            $email = $this->input->post('email');
+            
+            // Check if the email exists in your database
+            $user = $this->user_model->get_user_by_email($email);
+            
+            if ($user) {
+                // Generate a unique reset token
+                $token = bin2hex(random_bytes(50));  // You can also use a different approach for generating tokens
+                
+                // Store the token and associate it with the user
+                $this->user_model->store_reset_token($email, $token);
+                
+                // Send reset email with a link containing the token
+                $reset_link = base_url("reset_password?token=" . $token);
+                $this->send_reset_email($email, $reset_link);
+                
+                // Redirect or show success message
+                $this->session->set_flashdata('message', 'Password reset link has been sent to your email.');
+                redirect('forgot_password');
+            } else {
+                // Handle error when email not found
+                $this->session->set_flashdata('message', 'Email not found.');
+                redirect('forgot_password');
+            }
+        }
+    }
 
+    public function send_reset_email($email, $reset_link) {
+        $this->load->library('email');
+        
+        $this->email->from('your-email@example.com', 'Your Website Name');
+        $this->email->to($email);
+        $this->email->subject('Password Reset Request');
+        
+        $message = "Click on the following link to reset your password: <a href='" . $reset_link . "'>Reset Password</a>";
+        
+        $this->email->message($message);
+        
+        if ($this->email->send()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function reset_password_process() {
+        $token = $this->input->post('token');
+        $new_password = $this->input->post('new_password');
+        
+        // Validate token and check if it exists
+        $user = $this->user_model->get_user_by_token($token);
+        
+        if ($user) {
+            // Update the password in the database
+            $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
+            $this->user_model->update_password($user['email'], $hashed_password);
+            
+            // Remove token from the database
+            $this->user_model->remove_reset_token($token);
+            
+            $this->session->set_flashdata('message', 'Your password has been reset successfully.');
+            redirect('login');
+        } else {
+            $this->session->set_flashdata('message', 'Invalid or expired token.');
+            redirect('forgot_password');
+        }
+    }
 
     // Set user session data after login
     private function setUserSession($user)
@@ -160,6 +238,7 @@ class AuthController extends Controller
         // Your login logic here
     }
 
+
     public function logout()
     {
         // Destroy the session
@@ -168,5 +247,111 @@ class AuthController extends Controller
         // Redirect to customer login page
         return redirect()
             ->to("/");
+    }
+
+    public function initPasswordReset()
+    {
+        try {
+            $json = $this->request->getJSON();
+            $email = $json->email ?? '';
+            
+            $userModel = new PartnerModel();
+            $user = $userModel->where('email', $email)->first();
+           
+            if ($user) {
+                // Generate OTP
+                $otp = sprintf("%06d", random_int(0, 999999));
+                // Store OTP in database
+                $updateData = [
+                    'reset_token' => $otp,
+                    'reset_token_expires' => date('Y-m-d H:i:s', strtotime('+30 minutes'))
+                ];    
+                // Check if required data is available
+                if (!empty($user['user_id']) && !empty($updateData['reset_token']) && !empty($updateData['reset_token_expires'])) {
+                    // Store OTP in database
+                    $userModel->update($user['user_id'], $updateData);
+                } else {
+                    return $this->response->setJSON([
+                        'success' => false,
+                        'message' => 'Failed to generate OTP. Please try again later.'
+                    ]);
+                }
+                
+                // Send email
+                $emailService = \Config\Services::email();
+                
+                $emailService->setFrom('noreply@aranea.com', 'Aranea - Brand Partner Program');
+                $emailService->setTo($user['email']);
+                $emailService->setSubject('Password Reset OTP');
+                
+                $emailBody = "Hello " . ($user['name'] ?? 'User') . ",\n\n"
+                . "Your OTP to reset your password is: " . $otp . "\n\n"
+                . "This OTP is valid for 30 minutes.\n\n"
+                . "If you didn't request this, please ignore this email.\n\n"
+                . "Regards,\n"
+                . "Aranea - Brand Partner Program";
+                
+                $emailService->setMessage($emailBody);
+                
+                if ($emailService->send()) {
+                    return $this->response->setJSON([
+                        'success' => true,
+                        'message' => 'OTP has been sent to your email'
+                    ]);
+                } else {
+                    log_message('error', 'Failed to send password reset email to ' . $user['email']);
+                    return $this->response->setJSON([
+                        'success' => false,
+                        'message' => 'Failed to send OTP. Please try again.'
+                    ]);
+                }
+            }
+            
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Email address not found'
+            ]);
+        } catch (\Exception $e) {
+            log_message('error', 'Error in initPasswordReset: ' . $e->getMessage());
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'An error occurred while processing your request. Please try again later.'
+            ]);
+        }
+    }
+    
+    public function verifyOTPAndResetPassword()
+    {
+        $json = $this->request->getJSON();
+        $email = $json->email ?? '';
+        $otp = $json->otp ?? '';
+        $newPassword = $json->new_password ?? '';
+        
+        $userModel = new UserModel();
+        
+        $user = $userModel->where([
+            'email' => $email,
+            'reset_token' => $otp,
+            'reset_token_expires >' => date('Y-m-d H:i:s')
+        ])->first();
+        
+        if ($user) {
+            // Update password
+            $userModel->update($user['user_id'], [
+                'password' => password_hash($newPassword, PASSWORD_DEFAULT),
+                'reset_token' => null,
+                'reset_token_expires' => null
+            ]);
+            
+            return $this->response->setJSON([
+                'success' => true,
+                'message' => 'Password has been reset successfully'
+            ]);
+        }
+        
+        return $this->response->setJSON([
+            'success' => false,
+            'message' => 'Invalid or expired OTP'
+        ]);
     }
 }
