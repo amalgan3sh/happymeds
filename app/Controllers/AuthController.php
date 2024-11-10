@@ -44,6 +44,14 @@ class AuthController extends Controller
         return $header . $home;
     }
 
+    // In app/Controllers/AuthController.php
+public function passwordResetResponse()
+{
+    // Load a view to show the response message
+    return view('business/password_reset_response');
+}
+
+
     public function send_reset_link()
     {
         $mail_id = $this->request->getPost('email');
@@ -143,12 +151,19 @@ class AuthController extends Controller
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
             $userModel->update_password($user->user_id, $hashed_password);
             $userModel->clear_reset_token($user->user_id);
-           
-
-            echo "Password updated successfully.";
+            session()->setFlashdata('success', 'Password reset successful.');
+        return redirect()->to('/password_reset_response');
+            // return redirect()
+            //     ->to("/password_reset")
+            //     ->with("success", "Password updated successfully! Please login.");
+            // echo "Password updated successfully.";
         } else {
-            
-            echo "Invalid or expired token.";
+            session()->setFlashdata('error', 'Password reset failed. Please try again.');
+        return redirect()->to('/password_reset_response');
+            // return redirect()
+            //     ->to("/password_reset")
+            //     ->with("success", "Invalid or expired token. Please login.");
+            // echo "Invalid or expired token.";
         }
     }
     

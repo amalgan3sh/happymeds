@@ -3,6 +3,7 @@ writable/
 writable/logs
 writable/debugbar
 app/Config/App.php
+env.php
 
 # Ignore environment variables
 .env
