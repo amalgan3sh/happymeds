@@ -8,10 +8,19 @@ use CodeIgniter\Session\Session;
 use App\Models\ProductModel;
 use App\Models\CustomerVerificationModel;
 use App\Models\B2BOrderModel;
+use App\Libraries\EmailService;
+
 
 
 class StoreController extends Controller
 {
+    protected $emailService;
+
+    public function __construct()
+    {
+        $this->emailService = new EmailService();
+    }
+
     public function EcommerceHome()
     {
         // Load the ecommerce_header and ecommerce_home views
@@ -189,6 +198,10 @@ class StoreController extends Controller
         $model = new CustomerVerificationModel();
         $model->insert($data);
 
+        // Send KYC confirmation email
+        $emailService = new EmailService();
+        $emailService->sendEmail($this->request->getPost('official_email'), 'KYC Form Submission', 'Your KYC form has been submitted successfully. We will inform you once it is completed');
+
         return redirect()->to('/account')->with('success', 'Your KYC verification form has been submitted successfully.');
     }
     public function resubmitVerification()
@@ -330,6 +343,11 @@ class StoreController extends Controller
 
         // Store user ID in session
         $session->set('user_id', $userId);
+
+        // Send confirmation email
+        $subject = "Welcome to Our Store!";
+        $message = "Hello {$userData['user_name']}, \n\nWelcome to our store! Thanks for signing up.";
+        $this->emailService->sendEmail($userData['email'], $subject, $message);
 
         // Redirect to ecommerce_home
         return redirect()->to('/ecommerce_home')->with('success', 'Registration successful. Welcome to our store!');
