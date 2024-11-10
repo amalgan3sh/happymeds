@@ -118,43 +118,146 @@
 
                                 <!-- Business Orders Tab -->
                                 <div class="tab-pane fade" id="business-orders" role="tabpanel" aria-labelledby="business-orders-tab">
-    <div class="card">
-        <div class="card-header">
-            <h3 class="mb-0">Your Business Orders</h3>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
+                                <div class="card">
+                                <div class="card-header">
+    <h3 class="mb-0">Your Business Orders</h3>
+</div>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Order</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if (!empty($orders)): ?>
+                    <?php foreach ($orders as $order): ?>
                         <tr>
-                            <th>Order</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                            <th>Total</th>
-                            <th>Actions</th>
+                            <td>#<?= htmlspecialchars($order['order_id']) ?></td>
+                            <td><?= date('F d, Y', strtotime($order['created_at'])) ?></td>
+                            <td><?= ucfirst($order['status']) ?></td>
+                            <td>$<?= number_format($order['total_amount'], 2) ?></td>
+                            <td>
+                                <button 
+                                    onclick="showStatusDialog('<?= htmlspecialchars($order['status']) ?>', <?= htmlspecialchars($order['order_id']) ?>)" 
+                                    class="btn-small d-block">View Status</button>
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <?php if (!empty($orders)): ?>
-                            <?php foreach ($orders as $order): ?>
-                                <tr>
-                                    <td>#<?= htmlspecialchars($order['order_id']) ?></td>
-                                    <td><?= date('F d, Y', strtotime($order['created_at'])) ?></td>
-                                    <td><?= ucfirst($order['status']) ?></td>
-                                    <td>$<?= number_format($order['total_amount'], 2) ?></td>
-                                    <td><a href="<?= site_url('order/view/' . $order['order_id']) ?>" class="btn-small d-block">View</a></td>
-                                </tr>
-                            <?php endforeach; ?>
-                        <?php else: ?>
-                            <tr>
-                                <td colspan="5">You have no orders.</td>
-                            </tr>
-                        <?php endif; ?>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr>
+                        <td colspan="5">You have no orders.</td>
+                    </tr>
+                <?php endif; ?>
+            </tbody>
+        </table>
     </div>
+</div>
+
+<!-- Modal Dialog -->
+<div id="statusModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeStatusDialog()">&times;</span>
+        <h4>Order Status</h4>
+        <div id="statusText"></div>
+    </div>
+</div>
+
+<!-- JavaScript for Modal -->
+<script>
+function showStatusDialog(status, orderId) {
+    console.log("Order ID:", orderId);
+    if (status === 'quoted') {
+        fetch(`<?= site_url('getQuotationByOrderId/') ?>${orderId}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const quotation = data.quotation;
+                    const productData = JSON.parse(quotation.product_names);
+                    let productDetails = '';
+                    for (let productId in productData) {
+                        const product = productData[productId];
+                        productDetails += `
+                            <p><strong>Product Name:</strong> ${product.ProductName}</p>
+                            <p><strong>Dosage Form:</strong> ${product.DosageForm}</p>
+                            <p><strong>Quantity:</strong> ${product.quantity}</p>
+                            <p><strong>Price:</strong> $${parseFloat(product.price).toFixed(2)}</p>
+                            <hr>`;
+                    }
+                    
+                    document.getElementById('statusText').innerHTML = `
+                        <h4>Quotation Details</h4>
+                        <p><strong>Quotation ID:</strong> ${quotation.quotation_id}</p>
+                        <p><strong>Order ID:</strong> ${quotation.order_id}</p>
+                        <p><strong>User ID:</strong> ${quotation.user_id}</p>
+                        ${productDetails}
+                        <p><strong>Total Amount:</strong> $${parseFloat(quotation.total_amount).toFixed(2)}</p>
+                        <p><strong>Status:</strong> ${quotation.status}</p>
+                        <p><strong>Created At:</strong> ${quotation.created_at}</p>
+                    `;
+                } else {
+                    document.getElementById('statusText').innerText = 'Quotation not found.';
+                }
+                document.getElementById('statusModal').style.display = 'block';
+            })
+            .catch(error => {
+                console.error("Error fetching quotation:", error);
+                document.getElementById('statusText').innerText = 'Error retrieving quotation details.';
+                document.getElementById('statusModal').style.display = 'block';
+            });
+    } else {
+        document.getElementById('statusText').innerText = `Status: ${status}`;
+        document.getElementById('statusModal').style.display = 'block';
+    }
+}
+
+function closeStatusDialog() {
+    document.getElementById('statusModal').style.display = 'none';
+}
+</script>
+
+<!-- Modal CSS Styling -->
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #000;
+}
+</style>
 </div>
 
                                 <!-- Track Orders Tab -->

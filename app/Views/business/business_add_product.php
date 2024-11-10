@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title">Add New Healthcare Product</h4>
-                    </div>
+                    </div> 
                     <div class="card-body">
                     <form action="<?= site_url('product/addProduct') ?>" method="post" enctype="multipart/form-data">
                     <?= csrf_field() ?> <!-- CSRF protection token -->

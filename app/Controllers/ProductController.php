@@ -50,6 +50,35 @@ class ProductController extends BaseController
         return redirect()->back()->with('success', 'Product added successfully, awaiting admin approval.');
     }
 
+    public function editProduct() {
+        $productModel = new ManufacturerProductModel();
+
+        // Get user_id from the session
+        $userId = session()->get('user_id');
+        $product_id = $this->request->getPost('id');
+        
+        if (!$userId) {
+            // Redirect if the user_id is not in session (user not logged in)
+            return redirect()->back()->with('error', 'You must be logged in to edit a product.');
+        }
+
+
+        $data = [
+            'product_name'      => $this->request->getPost('productName'),
+            'category'          => $this->request->getPost('category'),
+            'price'             => $this->request->getPost('price'),
+            'stock_status'      => $this->request->getPost('stock_status'),
+            'stock_quantity'    => $this->request->getPost('stock'),
+        ];
+
+        // Update the user record
+        if ($productModel->update($product_id, $data)) {
+            return  redirect()->to('/business_home')->with('success', 'Product('.$this->request->getPost('productName').') details updated successfully.');
+       } else {
+            return  redirect()->to('/business_home')->with('error', 'Failed to update the product details. Please try again.');
+       }
+    }
+
     public function deleteProduct($id)
     {
         $productModel = new ManufacturerProductModel();

@@ -75,7 +75,7 @@
 
                                     <div class="mb-3">
                                         <label for="phone" class="form-label required">Phone Number</label>
-                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                                        <input type="text" name="phone" class="form-control" id="phone"  placeholder="Enter your phone number" required>
                                     </div>
 
                                     <div class="mb-3">
@@ -91,7 +91,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-block btn-primary">Register Now</button>
+                                    <button type="submit" id="submitBtn" class="btn btn-block btn-primary">Register Now</button>
                                 </form>
 
                                 <!-- Register with Phone Number -->
@@ -150,6 +150,35 @@
     <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="js/custom.min.js"></script>
     <script src="js/dlabnav-init.js"></script>
+
+    <script>
+//$(document).ready(function () {
+    $('#submitBtn').click(function (e) {
+       
+        console.log('clicked');
+
+        // Clear previous validation messages
+        $('.error-message').remove();
+
+        // Flag to track validation
+        let isValid = true;
+
+        // Validate Phone Number
+        const phonePattern = /^\d{10}$/;
+        const phone = $('#phone').val();
+        if (!phonePattern.test(phone) ) {
+            $('#phone').after('<span class="error-message text-danger">Please enter a valid phone number</span>');
+            e.preventDefault(); // Prevent form from submitting
+        }
+        
+        else{
+            $('#phone .error-message').remove();
+        }
+
+
+    });
+//});
+</script>
 
 </body>
 

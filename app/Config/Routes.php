@@ -52,13 +52,17 @@ $routes->get('business_add_product', 'BusinessController::BusinessAddProduct');
 $routes->get('business_manage_product', 'BusinessController::BusinessManageProduct');
 $routes->get('business_orders', 'BusinessController::BusinessOrders');
 $routes->get('business_edit_profile', 'BusinessController::BusinessEditProfile');
+$routes->get('business_view_profile', 'BusinessController::BusinessViewProfile');
 $routes->post('user/updateProfile', 'BusinessController::updateProfile');
+$routes->post('user/updateProfilePicture', 'BusinessController::updateProfilePicture');
+$routes->get('business_edit_product', 'BusinessController::BusinessEditProduct');
 
 $routes->get('/kyc', 'KycController::index');
 $routes->post('/submit_verification', 'BusinessController::submit_verification');
 $routes->post('delete_kyc', 'BusinessController::delete_kyc');
 
 $routes->post('product/addProduct', 'ProductController::addProduct');
+$routes->post('product/editProduct', 'ProductController::editProduct');
 $routes->get('product/delete/(:num)', 'ProductController::deleteProduct/$1');
 
 //partner-routes
@@ -129,15 +133,22 @@ $routes->post('save_data', 'StoreController::SaveData');
 $routes->post('authenticate_user', 'StoreController::authenticate_user');
 $routes->post('submit-verification-form', 'StoreController::submitVerificationForm');
 $routes->post('resubmit-verification', 'StoreController::resubmitVerification');
+$routes->get('getQuotationByOrderId/(:num)', 'StoreController::getQuotationByOrderId/$1');
 $routes->post('checkout/confirmOrder', 'CheckoutController::confirmOrder');
 $routes->get('logout', 'StoreController::logout');
 
-$routes->get('reset_password', 'AuthController::ResetPassword');
-$routes->get('forgot_password', 'AuthController::forgot_password_process');
+// $routes->get('reset_password', 'AuthController::ResetPassword');
+// $routes->get('forgot_password', 'AuthController::forgot_password_process');
 $routes->post('auth/init-password-reset', 'AuthController::initPasswordReset');
 $routes->post('auth/verify-otp-reset-password', 'AuthController::verifyOTPAndResetPassword');
+$routes->get('password_reset_response', 'AuthController::passwordResetResponse');
 
 $routes->post('product/requestProduct', 'PartnerController::requestProduct');
+
+$routes->get('forgot_password', 'AuthController::forgotPassword');
+$routes->post('send_reset_link', 'AuthController::send_reset_link');
+$routes->get('reset_password', 'AuthController::resetPassword');
+$routes->post('update_password','AuthController::updatePassword');
 
 //auth
 $routes->get('auth/logout', 'AuthController::logout');

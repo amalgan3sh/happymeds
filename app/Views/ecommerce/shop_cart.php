@@ -21,11 +21,11 @@
                                     <tr>
                                         <td><img src="<?php echo base_url($item['thumbnail']); ?>" alt="<?php echo htmlspecialchars($item['ProductName']); ?>" width="50"></td>
                                         <td><?php echo htmlspecialchars($item['ProductName']); ?></td>
-                                        <td>$<?php echo number_format($item['price'], 2); ?></td>
+                                        <td><?php echo number_format($item['price'], 2); ?></td>
                                         <td>
                                             <input type="text" value="<?php echo htmlspecialchars($item['quantity']); ?>" readonly>
                                         </td>
-                                        <td>$<?php echo number_format($item['price'] * $item['quantity'], 2); ?></td>
+                                        <td><?php echo number_format($item['price'] * $item['quantity'], 2); ?></td>
                                         <td><a href="<?php echo site_url('cart/remove/' . $item['product_id']); ?>">Remove</a></td>
                                     </tr>
                                 <?php endforeach; ?>
@@ -44,9 +44,9 @@
                 <div class="cart-summary">
                     <h4>Summary</h4>
                     <ul>
-                        <li><span>Subtotal</span> <span>$<?php echo number_format($totalAmount, 2); ?></span></li>
+                        <li><span>Subtotal</span> <span><?php echo number_format($totalAmount, 2); ?></span></li>
                         <li><span>Shipping</span> <span>Free</span></li>
-                        <li><span>Total</span> <span>$<?php echo number_format($totalAmount, 2); ?></span></li>
+                        <li><span>Total</span> <span><?php echo number_format($totalAmount, 2); ?></span></li>
                     </ul>
                     <button class="btn btn-primary btn-block" id="checkoutButton">Proceed To Checkout</button>
                     <a href="<?php echo site_url('cart/clear'); ?>" class="btn btn-secondary btn-block mt-2">Clear Cart</a>

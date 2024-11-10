@@ -258,7 +258,7 @@
                                 </a>
 							</li>	 -->
 							
-							<li class="nav-item dropdown notification_dropdown">
+							<!-- <li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link " href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
 										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -340,7 +340,7 @@
 									</div>
                                     <a class="all-notification" href="javascript:void(0);">See all notifications <i class="ti-arrow-end"></i></a>
                                 </div>
-                            </li>
+                            </li> -->
 							<!-- <li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link bell-link " href="javascript:void(0);">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">

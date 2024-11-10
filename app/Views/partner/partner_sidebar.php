@@ -73,7 +73,7 @@
 								<li><a href="<?php echo base_url('upload_kyc')?>">Upload KYC</a></li>
 							</ul>
 						</li>
-						
+<!-- 						
 						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">monitoring</i>
 								<span class="nav-text">Trading</span>
@@ -82,7 +82,7 @@
 								<li><a href="<?php echo base_url('market')?>">Market</a></li>
 								<li><a href="<?php echo base_url('p2p')?>">P2P</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">medical_services</i>
 								<span class="nav-text">Products</span>

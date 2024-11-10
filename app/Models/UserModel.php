@@ -21,43 +21,43 @@ class UserModel extends Model
     protected $createdField  = 'created_date';  // Field for automatic created_at timestamps
     protected $updatedField  = 'updated_at';    // Field for automatic updated_at timestamps
 
-    // Function to get user by email for password reset
     public function get_user_by_email($email)
     {
-        return $this->where('email', $email)->first();
+        return $this->db->table('users') // 'users' is the table name
+                    ->where('email', $email)
+                    ->get()
+                    ->getRow();
     }
 
-    // Function to store the password reset token
-    public function store_reset_token($email, $token)
+    public function store_reset_token($user_id, $token)
     {
-        $data = [
-            'email' => $email,
-            'token' => $token,
-            'created_at' => time(),
-        ];
-        
-        // Insert the reset token into the password_resets table
-        return $this->db->table('password_resets')->insert($data);
+        return $this->db->table('users')  // 'users' should be the name of your table
+        ->where('user_id', $user_id)
+        ->update(['reset_token' => $token]);
     }
 
-    // Function to get user by token (to verify and reset password)
     public function get_user_by_token($token)
     {
-        return $this->db->table('password_resets')->where('token', $token)->get()->getRowArray();
+        return $this->db->table('users') // Use table() to specify the table
+        ->where('reset_token', $token) // Add your condition
+        ->get() // Execute the query
+        ->getRow(); // Fetch a single row
     }
 
-    // Function to update the user's password
-    public function update_password($email, $new_password)
+    public function update_password($user_id, $hashed_password)
     {
-        $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
-        
-        // Update the user's password
-        return $this->update(['email' => $email], ['password' => $hashed_password]);
+        // Use Query Builder to update the password field
+    return $this->db->table('users') // Specify the table
+    ->where('user_id', $user_id) // Find the user by ID
+    ->update(['password' => $hashed_password]); // Update the password field
     }
 
-    // Function to remove the reset token after password is updated
-    public function remove_reset_token($token)
+    public function clear_reset_token($user_id)
     {
-        return $this->db->table('password_resets')->where('token', $token)->delete();
-    }
+        // Use Query Builder to update the reset_token field to NULL
+    return $this->db->table('users') // Specify the table
+    ->where('user_id', $user_id) // Find the user by ID
+    ->update(['reset_token' => null]); // Clear the reset token
+    }   
+
 }
