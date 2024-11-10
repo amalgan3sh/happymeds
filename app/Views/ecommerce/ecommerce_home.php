@@ -172,54 +172,110 @@
                 <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
                     <div class="row product-grid-4">
                         <div class="row">
-                            <?php foreach ($products as $product): ?>
-                                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
-                                    <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".1s">
-                                        <div class="product-img-action-wrap">
-                                            <div class="product-img product-img-zoom">
-                                                <a href="shop-product-right.html">
-                            <img class="default-img" src="<?php echo base_url('/' . $product['thumbnail']); ?>" alt="<?php echo $product['ProductName']; ?>" />
-                            <img class="hover-img" src="<?php echo base_url('/' . $product['thumbnail']); ?>" alt="<?php echo $product['ProductName']; ?>" />
-                        </a>
-                                            </div>
-                                            <div class="product-action-1">
-                                                <a aria-label="Add To Wishlist" class="action-btn" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
-                                                <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
-                                            </div>
-                                            <div class="product-badges product-badges-position product-badges-mrg">
-                                                <span class="hot">Hotest</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-content-wrap">
-                                            <div class="product-category">
-                                                <a href="shop_ecommerce">
-                                                    <?php echo $product['DosageForm']; ?>
-                                                </a>
-                                            </div>
-                                            <h2><a href="shop-product-right.html"><?php echo $product['ProductName']; ?></a></h2>
-                                            <div class="product-rate-cover">
-                                                <div class="product-rate d-inline-block">
-                                                    <div class="product-rating" style="width: <?php echo ($product['rating'] / 5) * 100; ?>%"></div>
-                                                </div>
-                                                <span class="font-small ml-5 text-muted"> (<?php echo $product['rating']; ?>)</span>
-                                            </div>
-                                            <div>
-                                                <span class="font-small text-muted">By <a href="vendor-details-1.html"><?php echo $product['Content']; ?></a></span>
-                                            </div>
-                                            <div class="product-card-bottom">
-                                                <div class="product-price">
-                                                    <span><?php echo $product['DosageForm']; ?></span>
-                                                </div>
-                                                <div class="add-cart">
-                                                    <button class="add" onclick="addToCart(<?php echo $product['product_id']; ?>)">
-                                                        <i class="fi-rs-shopping-cart mr-5"></i>Add
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <?php endforeach; ?>
+                        <?php foreach ($products as $product): ?>
+    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+        <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn" data-wow-delay=".1s">
+            <div class="product-img-action-wrap">
+                <div class="product-img product-img-zoom">
+                    <!-- Trigger modal on click -->
+                    <a href="javascript:void(0);" onclick="showProductModal(<?php echo htmlspecialchars(json_encode($product)); ?>)">
+                        <img class="default-img" src="<?php echo base_url('/' . $product['thumbnail']); ?>" alt="<?php echo $product['ProductName']; ?>" />
+                        <img class="hover-img" src="<?php echo base_url('/' . $product['thumbnail']); ?>" alt="<?php echo $product['ProductName']; ?>" />
+                    </a>
+                </div>
+                <div class="product-badges product-badges-position product-badges-mrg">
+                    <span class="hot">Hotest</span>
+                </div>
+            </div>
+            <div class="product-content-wrap">
+                <div class="product-category">
+                    <a href="shop_ecommerce"><?php echo $product['DosageForm']; ?></a>
+                </div>
+                <h2><a href="javascript:void(0);" onclick="showProductModal(<?php echo htmlspecialchars(json_encode($product)); ?>)"><?php echo $product['ProductName']; ?></a></h2>
+                <div class="product-rate-cover">
+                    <div class="product-rate d-inline-block">
+                        <div class="product-rating" style="width: <?php echo ($product['rating'] / 5) * 100; ?>%"></div>
+                    </div>
+                    <span class="font-small ml-5 text-muted"> (<?php echo $product['rating']; ?>)</span>
+                </div>
+                <div>
+                    <span class="font-small text-muted">By <a href="vendor-details-1.html"><?php echo $product['Content']; ?></a></span>
+                </div>
+                <div class="product-card-bottom">
+                    <div class="product-price">
+                        <span><?php echo $product['DosageForm']; ?></span>
+                    </div>
+                    <div class="add-cart">
+                        <button class="add" onclick="addToCart(<?php echo $product['product_id']; ?>)">
+                            <i class="fi-rs-shopping-cart mr-5"></i>Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endforeach; ?>
+
+<!-- Modal structure -->
+<div id="productModal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalProductName"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalProductImage" src="" alt="" class="img-fluid mb-3" />
+                <p><strong>Content:</strong> <span id="modalProductContent"></span></p>
+                <p><strong>Dosage Form:</strong> <span id="modalDosageForm"></span></p>
+                <p><strong>Strength:</strong> <span id="modalStrength"></span></p>
+                <p><strong>Therapeutic Use:</strong> <span id="modalTherapeuticUse"></span></p>
+                <p><strong>Tablet Shape and Color:</strong> <span id="modalTabletShapeAndColor"></span></p>
+                <p><strong>Packaging:</strong> <span id="modalPackaging"></span></p>
+                <p><strong>Batch Number:</strong> <span id="modalBatchNumber"></span></p>
+                <p><strong>Manufacturing Date:</strong> <span id="modalManufacturingDate"></span></p>
+                <p><strong>Expiry Date:</strong> <span id="modalExpiryDate"></span></p>
+                <p><strong>Unit Size:</strong> <span id="modalUnitSize"></span></p>
+                <p><strong>Shipper Size:</strong> <span id="modalShipperSize"></span></p>
+                <p><strong>Rating:</strong> <span id="modalRating"></span> / 5</p>
+                <!-- <p><strong>Sold Units:</strong> <span id="modalSoldUnits"></span></p>
+                <p><strong>Total Units:</strong> <span id="modalTotalUnits"></span></p> -->
+                <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+                <p><strong>Created At:</strong> <span id="modalCreatedAt"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function showProductModal(product) {
+    document.getElementById('modalProductName').innerText = product.ProductName;
+    document.getElementById('modalProductImage').src = '<?php echo base_url('/'); ?>' + product.thumbnail;
+    document.getElementById('modalProductContent').innerText = product.Content;
+    document.getElementById('modalDosageForm').innerText = product.DosageForm;
+    document.getElementById('modalStrength').innerText = product.Strength;
+    document.getElementById('modalTherapeuticUse').innerText = product.TherapeuticUse;
+    document.getElementById('modalTabletShapeAndColor').innerText = product.TabletShapeAndColor;
+    document.getElementById('modalPackaging').innerText = product.Packaging;
+    document.getElementById('modalBatchNumber').innerText = product.BatchNumber;
+    document.getElementById('modalManufacturingDate').innerText = product.ManufacturingDate;
+    document.getElementById('modalExpiryDate').innerText = product.ExpiryDate;
+    document.getElementById('modalUnitSize').innerText = product.UnitSize;
+    document.getElementById('modalShipperSize').innerText = product.ShipperSize;
+    document.getElementById('modalRating').innerText = product.rating;
+    // document.getElementById('modalSoldUnits').innerText = product.sold_units;
+    // document.getElementById('modalTotalUnits').innerText = product.total_units;
+    document.getElementById('modalPrice').innerText = product.price;
+    document.getElementById('modalCreatedAt').innerText = product.created_at;
+    var modal = new bootstrap.Modal(document.getElementById('productModal'));
+    modal.show();
+}
+
+</script>
                         </div>
                         
 
