@@ -258,7 +258,7 @@
                                 </a>
 							</li>	 -->
 							
-							<li class="nav-item dropdown notification_dropdown">
+							<!-- <li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link " href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
 										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -340,7 +340,7 @@
 									</div>
                                     <a class="all-notification" href="javascript:void(0);">See all notifications <i class="ti-arrow-end"></i></a>
                                 </div>
-                            </li>
+                            </li> -->
 							<!-- <li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link bell-link " href="javascript:void(0);">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
@@ -434,7 +434,7 @@
 			<!-- Profile Picture with Verified Icon -->
 			<div class="profile-photo-wrapper" style="position: relative; display: inline-block;">
 				<?php if (empty($_SESSION['user_data']['profile_photo'])): ?>
-					<img src="images/user.jpg" class="img-fluid rounded-circle" alt="">
+					<img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=" class="img-fluid rounded-circle" alt="">
 				<?php else: ?>
 					<img src="<?= esc(base_url('public/uploads/profiles/' )) ?><?php echo htmlspecialchars($_SESSION['user_data']['profile_photo']) ?>" class="img-fluid rounded-circle" alt="">
 				<?php endif; ?>
