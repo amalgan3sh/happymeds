@@ -18,24 +18,117 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="inner text-center mt--140">
-                <h1 class="title display-one">Discover the Future with 
+                    
+                <h1 class="title display-one">ARANEA Healthcare Platform : Building a Smarter Healthcare Ecosystem 
     <br> <span class="header-caption">
-        <span class="cd-headline rotate-1">
-            <span class="cd-words-wrapper" style="width: 221px;">
-                <b class="theme-gradient is-visible">AI Tools</b>
-                <b class="theme-gradient is-hidden">Smart Tech</b>
-                <b class="theme-gradient is-hidden">Innovation</b>
-            </span>
+    <span class="cd-headline rotate-1">
+    <span class="cd-headline rotate-1">
+        <span class="cd-words-wrapper" style="width: 221px;">
+            <b class="theme-gradient is-visible">Healthcare Solutions</b>
+            <b class="theme-gradient is-hidden">Brand Partner Program</b>
+            <b class="theme-gradient is-hidden">Subscribe with Us</b>
         </span>
-    </span> at ARANEA
-</h1>
-<p class="description">Join ARANEA and transform your business with AI-powered tools. 
-    <br> Optimize your supply chain, manufacturing, and distribution.
+    </span>
+        </span> at ARANEA
+    </h1>
+
+    <style>
+        /* Base font size for larger screens */
+        .title.display-one {
+            font-size: 2.5rem; /* Adjust this value as needed */
+        }
+
+        /* Adjust font size for medium screens */
+        @media (max-width: 992px) {
+            .title.display-one {
+                font-size: 2rem; /* Slightly smaller for medium screens */
+            }
+        }
+
+        /* Further adjust font size for smaller screens */
+        @media (max-width: 768px) {
+            .title.display-one {
+                font-size: 1.75rem; /* Smaller for tablets */
+            }
+        }
+
+        /* Smallest size for mobile screens */
+        @media (max-width: 576px) {
+            .title.display-one {
+                font-size: 1.5rem; /* Even smaller for mobile devices */
+            }
+        }
+    </style>
+
+    
+<p class="description">Build a future-ready healthcare ecosystem with Aranea's Smart Tools. 
+    <br> Optimize your healthcare supplychain with distribution and seamless import and export solutions.
 </p>
+    <!-- Left Floating Icon -->
+    <div class="floating-icon left-float">
+        <img src="<?php echo base_url('assets/icons/healthcare_logo.png'); ?>" alt="Healthcare Icon 1">
+    </div>
+
+    <!-- Right Floating Icon -->
+    <div class="floating-icon right-float">
+        <img src="<?php echo base_url('assets/icons/healthcare_logo.png'); ?>" alt="Healthcare Icon 2">
+    </div>
+
+    <style>
+            /* Base font size for larger screens */
+    .title.display-one {
+        font-size: 2.5rem;
+    }
+
+    /* Responsive font adjustments */
+    @media (max-width: 992px) {
+        .title.display-one {
+            font-size: 2rem;
+        }
+    }
+    @media (max-width: 768px) {
+        .title.display-one {
+            font-size: 1.75rem;
+        }
+    }
+    @media (max-width: 576px) {
+        .title.display-one {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* Floating icon styles */
+    .floating-icon {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        opacity: 0.8;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .left-float {
+        top: 30%;
+        left: 5%;
+    }
+
+    .right-float {
+        top: 30%;
+        right: 5%;
+    }
+
+    /* Floating animation */
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+    }
+    </style>
 <div class="form-group">
     <textarea name="text" id="slider-text-area" cols="30" rows="2" readonly></textarea>
     <a class="btn-default @@btnClass" href="<?php echo base_url('get_started') ?>" target="_blank">Explore Solutions</a>
 </div>
+
+
 
                         <script>
                             // Typewriter effect function
@@ -87,27 +180,39 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title rating-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                    <p class="b1 mb--0 small-title">truest 800,000+ HIGHLY PRODUCTIVE Company</p>
+                    <p class="b1 mb--0 small-title">Company certifications</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 mt--10">
-                <ul class="brand-list brand-style-2 slider-brand slider-brand-activation">
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/strapi.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/mapbox.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/stenciljs.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/spotify.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/woocommerce.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/slack.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/strapi.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/mapbox.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/stenciljs.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/spotify.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/woocommerce.png" alt="Brand Image"></a></li>
-                    <li class="slide-single-layout"><a href="#"><img src="<?php echo base_url('assets/landing/') ?>assets/images/brand/slack.png" alt="Brand Image"></a></li>
-                </ul>
-            </div>
+        <div class="col-lg-12 mt--10">
+            <ul class="brand-list brand-style-2 slider-brand slider-brand-activation">
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>1.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>2.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>3.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>4.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>5.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>6.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>7.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>8.png" alt="Brand Image"></a></li>
+                <!-- <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>9.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>10.png" alt="Brand Image"></a></li>
+                <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>11.png" alt="Brand Image"></a></li> -->
+                <!-- <li class="slide-single-layout"><a href="#"><img class="icon-size" src="<?php echo base_url('assets/icons/') ?>12.png" alt="Brand Image"></a></li> -->
+            </ul>
+        </div>
+        <style>
+            .icon-size {
+                width: 100%; /* Make the width responsive */
+    height: auto; /* Keep the height proportional to the width */
+    max-width: 200px;
+}
+.brand-style-2 li a img {
+    opacity: 0.6;
+    transition: 0.3s;
+    max-height: 100px;
+}
+        </style>
         </div>
     </div>
 </div>
@@ -158,7 +263,7 @@
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="section-title">
-                                            <h2 class="title">Brand Partners: Empower Your Business Growth.</h2>
+                                            <h2 class="title">Aranea Healthcare Brand Partners: Empower Your Business Growth.</h2>
                                             <div class="features-section">
                                                 <ul class="list-style--1">
                                                     <li><i class="fa-regular fa-circle-check"></i>Exclusive Partnership Opportunities</li>
@@ -391,7 +496,7 @@
                         <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
                             <div class="inner">
                                 <div class="icon">
-                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-03.svg" alt="Servece Icon">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-01.svg" alt="Servece Icon">
                                 </div>
                                 <div class="description centered-shape">
                                     <h5 class="title">Instant Support</h5>
@@ -411,7 +516,7 @@
                         <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
                             <div class="inner">
                                 <div class="icon">
-                                    <img src="assets/images/icons/service-icon-01.svg" alt="Service Icon">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-01.svg" alt="Service Icon">
                                 </div>
                                 <div class="description centered-shape">
                                     <h5 class="title">Comprehensive Knowledge Hub</h5>
@@ -451,7 +556,7 @@
                         <div class="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
                             <div class="inner">
                                 <div class="icon">
-                                    <img src="assets/images/icons/service-icon-01.svg" alt="Service Icon">
+                                    <img src="<?php echo base_url('assets/landing/') ?>assets/images/icons/service-icon-01.svg" alt="Service Icon">
                                 </div>
                                 <div class="description centered-shape">
                                     <h5 class="title">Swift Response</h5>
@@ -638,9 +743,9 @@
             </div>
         </div>
     </div>
-    <div class="bg-shape">
-        <img src="assets/images/bg/split-bg-shape.png" alt="Bg Shape">
-    </div>
+    <!-- <div class="bg-shape">
+        <img src="<?php echo base_url('assets/landing/assets/images/brand_partner_mobile.png') ?>" alt="Bg Shape">
+    </div> -->
 </div>
 <!-- End Advanced Tab Area -->
 
@@ -667,11 +772,26 @@
                     <img src="<?php echo base_url('assets/landing/') ?>assets/images/split/split-2.png" alt="collabration-image">
                     <div class="logo-section">
                         <div class="center-logo">
-                            <img class="shape-dark" src="<?php echo base_url('assets/') ?>assets/img/illustrations/ARANEA_WHITE.png" alt="Small Logo">
+                            <img class="shape-dark" style="max-width: 150%;" src="<?php echo base_url('assets/') ?>assets/img/illustrations/ARANEA_WHITE.png" alt="Small Logo">
                             <img class="shape-light" src="assets/images/light/split/split-2-logo.png" alt="Small Logo">
                         </div>
                     </div>
                 </div>
+
+                <style>
+                    .rainbow-collobration-area .collabration-image-section .logo-section .center-logo {
+                        padding: 27px 47px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: #0e0c1500;
+                        border-radius: 20px;
+                        position: relative;
+                        z-index: 2;
+                        width: 210px;
+                        height: 210px;
+                    }
+                </style>
             </div>
         </div>
     </div>
@@ -745,8 +865,8 @@
                                                 <div class="icon">
                                                     <i class="fa-solid fa-cart-shopping"></i>
                                                 </div>
-                                                <h4 class="title color-var-one">B2B Store</h4>
-                                                <p class="subtitle">Buy products from our ecommerce store</p>
+                                                <h4 class="title color-var-one">Healthcare B2B Store</h4>
+                                                <p class="subtitle">Dedicated web based application, door to door delivery system,Advanced updated dashboards</p>
                                                 <div class="pricing">
                                                 </div>
                                             </div>
@@ -755,16 +875,16 @@
                                                     <h6>Features</h6>
                                                     <ul class="list-style--1">
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i> Access to a wide range of products
+                                                            <i class="fa-regular fa-circle-check"></i> Sell or buy products through our platform
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i> Exclusive B2B pricing
+                                                            <i class="fa-regular fa-circle-check"></i> User friendly web based application
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i> Easy bulk ordering
+                                                            <i class="fa-regular fa-circle-check"></i> Access to large network of buyers and sellers
                                                         </li>
                                                         <li>
-                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> Dedicated customer support
+                                                            <i class="fa-sharp fa-regular fa-minus-circle"></i> Production and sales and support
                                                         </li>
                                                         <li>
                                                             <i class="fa-sharp fa-regular fa-minus-circle"></i> Advance Updates via dashboard
@@ -774,13 +894,13 @@
                                             </div>
                                         </div>
                                         <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="ecommerce_home">Get Started</a>
+                                            <a class="btn-default" href="ecommerce_home">Get Started</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt--30">
-                                <div class="rainbow-pricing style-aiwave active">
+                                <div class="rainbow-pricing style-aiwave">
                                     <div class="pricing-table-inner">
                                         <div class="pricing-top">
                                             <div class="pricing-header">
@@ -796,10 +916,10 @@
                                                     <h6>Features</h6>
                                                     <ul class="list-style--1 has-show-more-inner-content">
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Access to a large network of buyers
+                                                            <i class="fa-regular fa-circle-check"></i>Import and Export Solutions
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i> Competitive pricing strategies
+                                                            <i class="fa-regular fa-circle-check"></i> Door to Door delivery system
                                                         </li>
                                                         <li>
                                                             <i class="fa-regular fa-circle-check"></i> Marketing and sales support
@@ -833,7 +953,7 @@
                                                 <div class="icon">
                                                     <i class="fa-sharp fa-regular fa-handshake"></i>
                                                 </div>
-                                                <h4 class="title color-var-three">Brand Partner</h4>
+                                                <h4 class="title color-var-three">Healthcare Brand Partner</h4>
                                                 <p class="subtitle">Invest in products and earn benefits from sales</p>
 
                                             </div>
@@ -842,10 +962,10 @@
                                                     <h6>Features</h6>
                                                     <ul class="list-style--1 has-show-more-inner-content">
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Invest in healthcare products
+                                                            <i class="fa-regular fa-circle-check"></i>Turnover benefits based on chosen products(good content)
                                                         </li>
                                                         <li>
-                                                            <i class="fa-regular fa-circle-check"></i>Earn benefits on B2B invoices
+                                                            <i class="fa-regular fa-circle-check"></i>Benefits get to the wallet through bank
                                                         </li>
                                                         <li>
                                                             <i class="fa-regular fa-circle-check"></i> 5-year subscription plan
@@ -865,7 +985,7 @@
                                             </div>
                                         </div>
                                         <div class="pricing-footer">
-                                            <a class="btn-default btn-border" href="partner_signin">Get Started</a>
+                                            <a class="btn-default" href="partner_signin">Get Started</a>
                                         </div>
                                     </div>
                                 </div>

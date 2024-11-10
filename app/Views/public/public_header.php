@@ -48,14 +48,19 @@
         <header class="rainbow-header header-default header-transparent header-sticky">
             <div class="container position-relative">
                 <div class="row align-items-center row--0">
-                    <div class="col-lg-2 col-md-6 col-6">
-                        <div class="logo">
-                            <a href="<?php echo base_url('/')?>">
-                                <img class="logo-light" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="Healthcare Logo">
-                                <img class="logo-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/light/logo/logo-dark.png" alt="Healthcare Logo">
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-lg-2 col-md-6 col-6">
+    <div class="logo">
+        <a href="<?php echo base_url('/')?>">
+            <img class="logo-light logo-img" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="Healthcare Logo">
+            <img class="logo-dark logo-img" src="<?php echo base_url('assets/landing/') ?>assets/images/light/logo/logo-dark.png" alt="Healthcare Logo">
+        </a>
+    </div>
+</div>
+<style>
+    .header-default .logo a img {
+    max-height: 100px;
+}
+</style>
 
                     <div class="col-lg-8 d-none d-lg-block">
                         <nav class="mainmenu-nav d-none d-lg-flex justify-content-center">
@@ -88,11 +93,11 @@
                                                 <span>Partnership Expansion</span>
                                             </a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="sustainability">
                                                 <span>Sustainability Projects</span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </li>
                                 <li class="with-megamenu has-menu-child-item"><a href="#">Pages <i class="fa-regular fa-chevron-down"></i></a>
@@ -205,7 +210,7 @@
 
                                                 <div class="col-lg-3 single-mega-item">
                                                     <div class="header-menu-img">
-                                                        <img src="<?php echo base_url('assets/landing/') ?>assets/images/menu-img/menu-img-2.png" alt="Menu Split Image">
+                                                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQFdk3nHmQAQlg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721178685273?e=2147483647&v=beta&t=V6vQhkf-DD50UIHvoKUQqOVhil0jLlRFpuL_m9qWw-o" alt="Menu Split Image">
                                                     </div>
                                                 </div>
                                             </div>

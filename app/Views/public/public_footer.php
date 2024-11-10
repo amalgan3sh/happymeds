@@ -11,7 +11,13 @@
                                 <img class="logo-dark" src="<?php echo base_url('assets/landing/') ?>assets/images/logo/aranea_logo_new.png" alt="ARANEA Logo">
                             </a>
                         </div>
-                        <p class="b1 desc-text">ARANEA: A comprehensive platform that bridges healthcare, real estate, and community services, offering innovative and sustainable solutions.</p>
+
+                        <style>
+.logo a img {
+    max-height: 80px;
+}
+</style>
+                        <p class="b1 desc-text">ARANEA: A comprehensive platform that bridges healthcare services, offering innovative and sustainable solutions.</p>
                         <h6 class="subtitle">Join our Newsletter</h6>
                         <form class="newsletter-form" action="#">
                             <div class="form-group">
@@ -59,9 +65,9 @@
                             <h4 class="title">Contact Us</h4>
                             <div class="inner">
                                 <ul class="footer-link contact-link">
-                                    <li><i class="contact-icon fa-regular fa-location-dot"></i><a href="#">1234 Innovation Way, Kasargod, Kerala, India</a></li>
-                                    <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a href="mailto:contact@aranea.in">contact@aranea.in</a></li>
-                                    <li><i class="contact-icon fa-regular fa-phone"></i><a href="tel:+919876543210">+91 98765 43210</a></li>
+                                    <li><i class="contact-icon fa-regular fa-location-dot"></i><a href="#">Aranea Eco Vista Pvt Ltd</a></li>
+                                    <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a href="mailto:healthcare@aranea.in">healthcare@aranea.in</a></li>
+                                    <li><i class="contact-icon fa-regular fa-phone"></i><a href="tel:+917736702333">+917736702333</a></li>
                                 </ul>
                             </div>
                         </div>

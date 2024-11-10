@@ -54,16 +54,20 @@ class BusinessController extends Controller
     {
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
+        
+        // Check if the user's KYC is verified
+        $isKycVerified = $user['kyc_verify'];
     
         // Load the ProductModel
         $model = new ManufacturerProductModel();
     
         // Fetch all products
-        $data['products'] = $model->findAll();
-        
-        // Pass the user's data and products to the views
+        $userId = $user['user_id'];
+        $data['products'] = $model->where('user_id', $userId)->findAll();
+    
+        // Pass the user's data and KYC status to the views
         $header = view('business/business_header', ['user' => $user]);
-        $home = view('business/business_home', ['user' => $user, 'products' => $data['products']]);
+        $home = view('business/business_home', ['user' => $user, 'products' => $data['products'], 'isKycVerified' => $isKycVerified]);
         
         return $header . $home;
     }
@@ -231,6 +235,14 @@ class BusinessController extends Controller
         // Insert data into the database
         $model = new \App\Models\KycVerificationModel();
         $model->insert($data);
+
+            // Now update the users table with kyc_status as 'in_process'
+        $userModel = new \App\Models\UserModel();
+        $userData = [
+            'kyc_status' => 'in_process',  // or you can set any other status like 'pending', etc.
+            'updated_at' => date('Y-m-d H:i:s')
+        ];
+        $userModel->update($user['id'], $userData);
 
         // Redirect to a success page
         return redirect()->to(base_url('business_verification'))->with('message', 'KYC submitted successfully.');

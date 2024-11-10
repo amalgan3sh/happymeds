@@ -25,7 +25,7 @@
             <!-- Start Single Team -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                 <div class="team">
-                    <div class="thumbnail"><img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-07.png" alt="Team Images">
+                    <div class="thumbnail"><img src="<?php echo base_url('assets/team/') ?>3.svg" alt="Team Images">
                     </div>
                     <div class="content">
                         <h4 class="title">Shynesh Moolayi</h4>
@@ -43,7 +43,7 @@
             <!-- Start Single Team -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                 <div class="team">
-                    <div class="thumbnail"><img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-08.png" alt="Team Images">
+                    <div class="thumbnail"><img src="<?php echo base_url('assets/team/') ?>2.svg" alt="Team Images">
                     </div>
                     <div class="content">
                         <h4 class="title">Ajithkumar</h4>
@@ -59,7 +59,7 @@
             <!-- End Single Team -->
 
             <!-- Start Single Team -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                 <div class="team">
                     <div class="thumbnail"><img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-09.png" alt="Team Images">
                     </div>
@@ -73,7 +73,7 @@
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- End Single Team -->
         </div>
     </div>
@@ -82,7 +82,7 @@
 <!-- Start Development Team Area -->
 <div class="rbt-team-area bg-color-1 rainbow-section-gap-big">
     <div class="container">
-        <div class="row mb--60">
+        <!-- <div class="row mb--60">
             <div class="col-lg-12">
                 <div class="section-title text-center">
                     <h4 class="subtitle">
@@ -91,10 +91,10 @@
                     <h2 class="title w-600 mb--20">Meet Our Developers</h2>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="row row--15 mt_dec--30">
             <!-- Start Single Developer -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                 <div class="team">
                     <div class="thumbnail"><img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-01.png" alt="Team Images"></div>
                     <div class="content">
@@ -107,11 +107,11 @@
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- End Single Developer -->
 
             <!-- Start Single Developer -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                 <div class="team">
                     <div class="thumbnail"><img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-02.png" alt="Team Images"></div>
                     <div class="content">
@@ -124,11 +124,11 @@
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- End Single Developer -->
 
             <!-- Start Single Developer -->
-            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                 <div class="team">
                     <div class="thumbnail"><img src="<?php echo base_url('assets/landing/') ?>assets/images/team/team-03.png" alt="Team Images"></div>
                     <div class="content">
@@ -141,7 +141,7 @@
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- End Single Developer -->
         </div>
     </div>

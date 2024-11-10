@@ -75,8 +75,7 @@
                                             <div class="icon"><i class="fa-sharp fa-regular fa-lock"></i></div>
                                             <input type="password" class="form-control" id="password" name="password" required>
                                         </div>
-                                        <div class="forget-text"><a class="btn-read-more" href="#"><span>Forgot
-                                                    password</span></a></div>
+                                        <div class="forget-text"><a class="btn-read-more" href="reset_password"><span>Forgot password</span></a></div>
                                         <button type="submit" class="btn-default">Sign In</button>
                                     </form>
                                 </div>
@@ -121,6 +120,172 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
     </div>
+
+
+    <!-- Add this modal markup before the closing body tag -->
+<div class="modal fade" id="resetPasswordModal">
+    <div class="modal-dialog">
+        <div class="modal-content bg-color-blackest">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-white">Reset Password</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Email Step -->
+                <div id="emailStep" class="reset-step">
+                    <div class="input-section mail-section">
+                        <div class="icon"><i class="fa-sharp fa-regular fa-envelope"></i></div>
+                        <input type="email" class="form-control" id="resetEmail" placeholder="Enter your email address" required>
+                    </div>
+                    <button type="button" class="btn-default" onclick="requestPasswordReset()">Send OTP</button>
+                </div>
+
+                <!-- OTP and New Password Step -->
+                <div id="otpStep" class="reset-step" style="display: none;">
+                    <div class="input-section">
+                        <div class="icon"><i class="fa-sharp fa-regular fa-key"></i></div>
+                        <input type="text" class="form-control" id="otpCode" placeholder="Enter OTP from email" required>
+                    </div>
+                    <div class="input-section password-section">
+                        <div class="icon"><i class="fa-sharp fa-regular fa-lock"></i></div>
+                        <input type="password" class="form-control" id="newPassword" placeholder="New Password" required>
+                    </div>
+                    <div class="input-section password-section">
+                        <div class="icon"><i class="fa-sharp fa-regular fa-lock"></i></div>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="button" class="btn-default" onclick="verifyOTPAndReset()">Reset Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Update the forgot password link to open modal
+document.querySelector('a[href="reset_password"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    var resetModal = new bootstrap.Modal(document.getElementById('resetPasswordModal'));
+    resetModal.show();
+});
+
+function requestPasswordReset() {
+    const email = document.getElementById('resetEmail').value;
+    
+    if (!email) {
+        showAlert('Please enter your email address', 'error');
+        return;
+    }
+
+    fetch('<?= base_url('auth/init-password-reset') ?>', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Requested-With': 'XMLHttpRequest'
+        },
+        body: JSON.stringify({ email: email })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            document.getElementById('emailStep').style.display = 'none';
+            document.getElementById('otpStep').style.display = 'block';
+            showAlert('OTP has been sent to your email', 'success');
+        } else {
+            showAlert(data.message, 'error');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        showAlert('An error occurred. Please try again.', 'error');
+    });
+}
+
+function verifyOTPAndReset() {
+    const email = document.getElementById('resetEmail').value;
+    const otp = document.getElementById('otpCode').value;
+    const newPassword = document.getElementById('newPassword').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    
+    if (!otp || !newPassword || !confirmPassword) {
+        showAlert('Please fill in all fields', 'error');
+        return;
+    }
+
+    if (newPassword !== confirmPassword) {
+        showAlert('Passwords do not match', 'error');
+        return;
+    }
+    
+    fetch('<?= base_url('auth/verify-otp-reset-password') ?>', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Requested-With': 'XMLHttpRequest'
+        },
+        body: JSON.stringify({
+            email: email,
+            otp: otp,
+            new_password: newPassword
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showAlert('Password reset successful. Please login with your new password.', 'success');
+            setTimeout(() => {
+                bootstrap.Modal.getInstance(document.getElementById('resetPasswordModal')).hide();
+                window.location.href = '<?= base_url('partner_signin') ?>';
+            }, 2000);
+        } else {
+            showAlert(data.message, 'error');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        showAlert('An error occurred. Please try again.', 'error');
+    });
+}
+
+function showAlert(message, type) {
+    // Create alert element
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type === 'success' ? 'success' : 'danger'} alert-dismissible fade show`;
+    alertDiv.role = 'alert';
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    
+    // Insert alert before the modal body content
+    const modalBody = document.querySelector('.modal-body');
+    modalBody.insertBefore(alertDiv, modalBody.firstChild);
+    
+    // Auto dismiss after 5 seconds
+    setTimeout(() => {
+        alertDiv.remove();
+    }, 5000);
+}
+</script>
+
+<style>
+.modal-content.bg-color-blackest {
+    background-color: var(--color-blackest);
+    color: var(--color-white);
+}
+
+.reset-step {
+    transition: all 0.3s ease;
+}
+
+.reset-step .input-section {
+    margin-bottom: 20px;
+}
+
+.alert {
+    margin-bottom: 20px;
+}
+</style>
 
     <!-- JS
 ============================================ -->

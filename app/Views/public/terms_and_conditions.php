@@ -32,7 +32,7 @@
             </div>
             <div class="content-page pb--50">
                 <div class="chat-box-list">
-                    <div class="content">
+                    <div class="content" >
                         <h4>Welcome to ARANEA Terms and Conditions</h4>
                         <p>These terms and conditions outline the rules and regulations for the use of ARANEA’s platform and services. By accessing this platform, you agree to these terms in full. If you do not accept all of the terms stated on this page, please do not use ARANEA.</p>
 
@@ -81,7 +81,16 @@
                         <h4>Contact Us</h4>
                         <p>If you have any questions or concerns about these Terms and Conditions, please contact us at <a href="mailto:support@aranea.in">support@aranea.in</a>.</p>
                     </div>
+                    <style>
+                        ol li {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+                    </style>
                 </div>
+            
             </div>
         </div>
 

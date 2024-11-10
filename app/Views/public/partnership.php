@@ -6,7 +6,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="breadcrumb-inner text-center">
-                                <h3 class="title h3">Partnershir</h3>
+                                <h3 class="title h3">Partnership</h3>
                                 <ul class="page-list">
                                     <li class="rainbow-breadcrumb-item"><a href="<?php echo base_url('/') ?>">Home</a></li>
                                     <li class="rainbow-breadcrumb-item active">Partnership</li>
@@ -24,6 +24,27 @@
         <div class="row row--30">
             <div class="col-lg-8">
                 <div class="rainbow-partnership-details-area">
+                <div class="partnership-details-content pt--40">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="content">
+                                        <h2 class="title">ARANEA Partnership Expansion</h2>
+                                        <p>ARANEA provides unparalleled opportunities for expanding your business through strategic partnerships. By working with ARANEA, you can unlock new markets, increase operational efficiency, and access industry-leading resources for sustainable growth.</p>
+
+                                        <h6>1. Expand Your Global Reach:</h6>
+                                        <p>ARANEA allows businesses to tap into international markets by partnering with industry leaders across healthcare, real estate, and technology sectors. Leverage our platform to establish a global footprint and explore new growth avenues.</p>
+
+                                        <h6>2. Strengthen Industry Networks:</h6>
+                                        <p>Build strong, lasting connections within your industry by joining ARANEA’s partnership network. Our platform fosters collaboration between B2B partners, manufacturers, and brand partners, enabling mutual growth and innovation.</p>
+
+                                        <h6>3. Unlock Exclusive Partnership Benefits:</h6>
+                                        <p>ARANEA offers exclusive benefits to its partners, including access to cutting-edge technologies, optimized supply chain solutions, and investment opportunities tailored to meet your business needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="post-page-banner">
                         <div class="container">
                             <div class="row">
@@ -47,27 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="partnership-details-content pt--40">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="content">
-                                        <h2 class="title">ARANEA Partnership Expansion</h2>
-                                        <p>ARANEA provides unparalleled opportunities for expanding your business through strategic partnerships. By working with ARANEA, you can unlock new markets, increase operational efficiency, and access industry-leading resources for sustainable growth.</p>
-
-                                        <h6>1. Expand Your Global Reach:</h6>
-                                        <p>ARANEA allows businesses to tap into international markets by partnering with industry leaders across healthcare, real estate, and technology sectors. Leverage our platform to establish a global footprint and explore new growth avenues.</p>
-
-                                        <h6>2. Strengthen Industry Networks:</h6>
-                                        <p>Build strong, lasting connections within your industry by joining ARANEA’s partnership network. Our platform fosters collaboration between B2B partners, manufacturers, and brand partners, enabling mutual growth and innovation.</p>
-
-                                        <h6>3. Unlock Exclusive Partnership Benefits:</h6>
-                                        <p>ARANEA offers exclusive benefits to its partners, including access to cutting-edge technologies, optimized supply chain solutions, and investment opportunities tailored to meet your business needs.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="post-page-banner">
                         <div class="container">
                             <div class="row">
@@ -162,6 +163,12 @@
                     </div>
                 </div>
             </div>
+
+            <style>
+                    .rainbow-section-gap-big {
+                        padding: 30px 0 !important;
+                    }
+                </style>
             <div class="col-lg-4 mt_md--40 mt_sm--40">
                 <aside class="rainbow-sidebar">
                     <div class="rbt-single-widget widget_search mt--40">

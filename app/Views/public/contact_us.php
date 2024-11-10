@@ -16,6 +16,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- End Breadcarumb area  -->
 </div>
 
@@ -90,6 +92,11 @@
                                         </div>
                                     </form>
                                 </div>
+                                <style>
+                    .rainbow-section-gapTop-big {
+                        padding: 50px 0 !important;
+                    }
+                </style>
 
                                 <!-- Business Inquiry Form -->
                                 <div class="tab-pane fade" id="business-inquiry" role="tabpanel" aria-labelledby="business-inquiry-tab">
@@ -183,7 +190,7 @@
                         </div>
                         <div class="inner">
                             <h4 class="title">Location</h4>
-                            <p class="b2">ARANEA Headquarters, Kasargod District, Kerala, India</p>
+                            <p class="b2">Aranea Eco Vista Pvt Ltd</p>
                         </div>
                     </div>
                     <div class="rainbow-address">
@@ -192,8 +199,8 @@
                         </div>
                         <div class="inner">
                             <h4 class="title">Contact Number</h4>
-                            <p class="b2"><a href="tel:+919744334141">+91 9744334141</a></p>
-                            <p class="b2"><a href="tel:+85599677336">+85599677336</a></p>
+                            <p class="b2"><a href="tel:+917736702333">+917736702333</a></p>
+                            <!-- <p class="b2"><a href="tel:+85599677336">+85599677336</a></p> -->
                         </div>
                     </div>
                     <div class="rainbow-address">
@@ -202,8 +209,8 @@
                         </div>
                         <div class="inner">
                             <h4 class="title">Email Address</h4>
-                            <p class="b2"><a href="mailto:contact@aranea.in">contact@aranea.in</a></p>
-                            <p class="b2"><a href="mailto:support@aranea.in">support@aranea.in</a></p>
+                            <p class="b2"><a href="mailto:contact@aranea.in">healthcare@aranea.in</a></p>
+                            <!-- <p class="b2"><a href="mailto:support@aranea.in">support@aranea.in</a></p> -->
                         </div>
                     </div>
                 </div>
@@ -211,6 +218,8 @@
         </div>
     </div>
 </div>
+
+
 <!-- End Contact Area  -->
 
 <!-- Display JavaScript alert on form submission success or error -->

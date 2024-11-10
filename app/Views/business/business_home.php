@@ -56,11 +56,46 @@
 		  </div>
 		</div>
         <div class="content-body">
+        <?php if (!$isKycVerified): ?>
+<!-- KYC Verification Modal -->
+<div class="modal fade" id="kycModal" tabindex="-1" role="dialog" aria-labelledby="kycModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="kycModalLabel">Complete KYC Verification</h5>
+                <!-- Removed the X icon here -->
+            </div>
+            <div class="modal-body">
+                Your KYC is not verified. Please complete your KYC process to access all features.
+            </div>
+            <div class="modal-footer">
+                <a href="<?= base_url('business_verification') ?>" class="btn btn-primary">Go to KYC Verification</a>
+                <!-- Added close button that will close the modal -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModalButton">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Show the modal when the page loads
+        $('#kycModal').modal('show');
+
+        // Close the modal when the Close button is clicked
+        $('#closeModalButton').click(function() {
+            $('#kycModal').modal('hide');
+        });
+    });
+</script>
+<?php endif; ?>
             <!-- row -->
 			<div class="container-fluid">
 				<!-- Row -->
 				<div class="row">
 					<div class="col-xl-3 col-xxl-4">
+
+                    
 						<div class="card portofolio">
 							<div class="card-header border-0 pb-0">
 								<h4 class="card-title">My Profile</h4>
@@ -184,7 +219,7 @@
 					<div class="card h-auto">
     <div class="card-header pb-2 d-block d-sm-flex flex-wrap border-0">
         <div class="mb-3">
-            <h4 class="card-title">Recent Activity</h4>
+            <h4 class="card-title">Milestone</h4>
             <p class="mb-0 fs-13">Tracking the latest account transactions</p>
         </div>
         <ul class="nav nav-pills">

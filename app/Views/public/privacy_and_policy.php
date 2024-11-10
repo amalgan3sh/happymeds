@@ -90,6 +90,14 @@
                         <h4>Contact Us</h4>
                         <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:support@aranea.in">support@aranea.in</a>.</p>
                     </div>
+                    <style>
+                        ol li {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+                    </style>
                 </div>
             </div>
         </div>
