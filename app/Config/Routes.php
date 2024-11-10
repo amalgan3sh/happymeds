@@ -137,6 +137,7 @@ $routes->get('forgot_password', 'AuthController::forgot_password_process');
 $routes->post('auth/init-password-reset', 'AuthController::initPasswordReset');
 $routes->post('auth/verify-otp-reset-password', 'AuthController::verifyOTPAndResetPassword');
 
+$routes->post('product/requestProduct', 'PartnerController::requestProduct');
 
 //auth
 $routes->get('auth/logout', 'AuthController::logout');

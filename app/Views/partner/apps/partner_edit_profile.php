@@ -1,6 +1,13 @@
-
+<div class="page-titles">
+<div class="sub-dz-head">
+	<div class="d-flex align-items-center dz-head-title">
+		<h2 class="text-white m-0">Portfolio</h2>
+	</div>
+</div>
+</div>
 		
-		<!--**********************************
+		
+        <!--**********************************
             Content body start
         ***********************************-->
         <div class="content-body">
@@ -15,17 +22,17 @@
 								<div class="card-body">
 									<div class="p-5">
 										<div class="author-profile">
-											<div class="author-media">
+                                        <div class="author-media">
                                             <?php if (empty($userProfile['profile_photo'])): ?>
-                                                <img src="<?= esc(base_url('images/tab/1.jpg')) ?>" alt="Default Profile Photo">
+                                                <img id="profilePreview" src="<?= esc(base_url('images/user.png')) ?>" alt="Default Profile Photo">
                                             <?php else: ?>
-                                                <img src="<?= esc(base_url('public/uploads/profiles/' . $userProfile['profile_photo'])) ?>" alt="Profile Photo">
+                                                <img id="profilePreview" src="<?= esc(base_url('public/uploads/profiles/' . $userProfile['profile_photo'])) ?>" alt="Profile Photo">
                                             <?php endif; ?>
-												<div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
-													<input type="file" class="update-flie">
-													<i class="fa fa-camera"></i>
-												</div>
-											</div>
+                                            <div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
+                                                <input type="file" class="update-flie" id="profile_photo" name="profile_photo" onchange="previewProfilePhoto()">
+                                                <i class="fa fa-camera"></i>
+                                            </div>
+                                        </div>
 											<div class="author-info">
 												<h6 class="title"><?php echo $userProfile['user_name']; ?></h6>
 												<span><?php echo $userProfile['designation']; ?></span>
@@ -123,7 +130,7 @@
                                             <div class="mb-3">
                                                 <label class="form-label" for="dob">Date of Birth</label>
                                                 <div class="input-hasicon mb-xl-0 mb-3">
-                                                    <input class="form-control mb-xl-0 mb-3 bt-datepicker" value="<?php echo $userProfile['dob']; ?>" name="dob" type="date" id="dob">
+                                                    <input class="form-control mb-xl-0 mb-3" value="<?php echo $userProfile['dob']; ?>" name="dob" type="date" id="dob">
                                                     <div class="icon"><i class="far fa-calendar"></i></div>
                                                 </div>
                                             </div>
@@ -131,25 +138,20 @@
                                         <div class="col-sm-6">
                                             <div class="mb-3">
                                                 <label class="form-label">Country</label>
-                                                <select class="default-select form-control" name="country" value="<?php echo $userProfile['country']; ?>" id="country">
-                                                    <option value="">Please select</option>
-                                                    <option value="russia">Russia</option>
-                                                    <option value="canada">Canada</option>
-                                                    <option value="china">China</option>
-                                                    <option value="india">India</option>
+                                                <select class="form-control" name="country" id="country">
+                                                    <option value="">Please select a country</option>
                                                 </select>
+                                                <div id="countryError" class="error-message"></div>
                                             </div>
                                         </div>
+
                                         <div class="col-sm-6">
                                             <div class="mb-3">
                                                 <label class="form-label">City</label>
-                                                <select class="form-control default-select" name="city" id="city" value = "<?php echo $userProfile['city']; ?>">
-                                                    <option value="">Please select</option>
-                                                    <option value="krasnodar">Krasnodar</option>
-                                                    <option value="tyumen">Tyumen</option>
-                                                    <option value="chelyabinsk">Chelyabinsk</option>
-                                                    <option value="moscow">Moscow</option>
+                                                <select class="form-control" name="city" id="city">
+                                                    <option value="">Please select a city</option>
                                                 </select>
+                                                <div id="cityError" class="error-message"></div>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -243,7 +245,90 @@
 	<script src="vendor/bootstrap-datepicker-master/js/bootstrap-datepicker.min.js"></script>
     <script src="js/custom.min.js"></script>
 	<script src="js/dlabnav-init.js"></script>
-	
-   
+	<script>
+        // URL of the GeoDB Cities API
+        const geoDBUrl = 'https://geodb-cities-api.wirefreethought.com/v1/geo/countries';
+
+        // Function to load countries
+        async function loadCountries() {
+            try {
+                const response = await fetch(geoDBUrl);
+                const data = await response.json();
+                const countries = data.data;
+
+                const countrySelect = document.getElementById('country');
+                countries.forEach(country => {
+                    const option = document.createElement('option');
+                    option.value = country.code;
+                    option.textContent = country.name;
+                    countrySelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error loading countries:', error);
+            }
+        }
+
+        // Function to load cities based on selected country
+        async function loadCities() {
+            const countryCode = document.getElementById('country').value;
+            const citySelect = document.getElementById('city');
+            citySelect.innerHTML = '<option value="">Select City</option>'; // Clear cities
+
+            if (countryCode) {
+                try {
+                    const response = await fetch(${geoDBUrl}/${countryCode}/cities);
+                    const data = await response.json();
+                    const cities = data.data;
+
+                    cities.forEach(city => {
+                        const option = document.createElement('option');
+                        option.value = city.name;
+                        option.textContent = city.name;
+                        citySelect.appendChild(option);
+                    });
+                } catch (error) {
+                    console.error('Error loading cities:', error);
+                }
+            }
+        }
+
+        // Function to handle form submission
+        function submitSelection() {
+            const country = document.getElementById('country').value;
+            const city = document.getElementById('city').value;
+            if (country && city) {
+                alert(You selected ${city}, ${country});
+            } else {
+                alert('Please select both a country and a city.');
+            }
+        }
+
+        // Load countries when the page loads
+        window.onload = loadCountries;
+
+        // Add event listener to load cities when country is selected
+        document.getElementById('country').addEventListener('change', loadCities);
+    </script>
+
+    <script>
+    function previewProfilePhoto() {
+        const file = document.getElementById("profile_photo").files[0];  // Get the selected file
+        const preview = document.getElementById("profilePreview");  // Get the image preview element
+
+        const reader = new FileReader();
+
+        // This function will run once the file is read
+        reader.onloadend = function () {
+            preview.src = reader.result;  // Set the preview image source to the uploaded file
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);  // Read the file as a Data URL (base64 string)
+        } else {
+            preview.src = "";  // Reset if no file is selected
+        }
+    }
+</script>
+
 </body>
 </html>

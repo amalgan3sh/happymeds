@@ -293,20 +293,24 @@
     </div>
 		<!-- Success Animation and Receipt Options -->
         <div id="payment-success-container" class="popup-modal" style="display:none;">
-        <div class="popup-modal-content">
-            <div class="checkmark-circle">
-                <div class="background"></div>
-                <div class="checkmark"></div>
-            </div>
-            <h2>Payment Succeeded!</h2>
-            <p>Thank you for your payment. You can view or download your receipt below.</p>
-            <!-- Buttons to View and Download Receipt -->
-            <div class="receipt-options">
-                <!-- <button class="btn btn-success" onclick="viewReceipt()">View Receipt</button> -->
-                <button class="btn btn-primary" onclick="generatePDFReceipt()">Download Receipt</button>
-            </div>
-    </div>
+    <div class="popup-modal-content">
+        <!-- Close button for the modal -->
+        <span class="popup-close" onclick="closeSuccessModal()">&times;</span>
+        
+        <div class="checkmark-circle">
+            <div class="background"></div>
+            <div class="checkmark"></div>
         </div>
+        <h2>Payment Succeeded!</h2>
+        <p>Thank you for your payment. You can view or download your receipt below.</p>
+        
+        <!-- Buttons to View and Download Receipt -->
+        <div class="receipt-options">
+            <!-- <button class="btn btn-success" onclick="viewReceipt()">View Receipt</button> -->
+            <button class="btn btn-primary" onclick="generatePDFReceipt()">Download Receipt</button>
+        </div>
+    </div>
+</div>
             </div>
         </div>
         <!--**********************************
@@ -351,7 +355,12 @@
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="js/custom.min.js"></script>
 	<script src="js/dlabnav-init.js"></script>
-	
+	<script>
+    // Function to close the success modal
+    function closeSuccessModal() {
+        document.getElementById('payment-success-container').style.display = 'none';
+    }
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const planCards = document.querySelectorAll(".plan-card");

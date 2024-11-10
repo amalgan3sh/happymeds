@@ -283,7 +283,7 @@
 									<div class="form-group">
 										<textarea class="form-control" id="comment" name="comment" placeholder="Comment" rows="5"></textarea>
 									</div>
-
+									<input type="hidden" id="product_id" name="product_id" value="<?= $product['product_id'] ?>" />
 									<input type="hidden" id="ratingValue" name="rating" value="" />
 									<button type="submit" class="btn btn-success btn-block">Submit Review</button>
 								</form>

@@ -1,0 +1,26 @@
+INFO - 2024-10-26 14:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-26 14:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-26 14:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-26 14:22:47 --> ErrorException: Undefined array key "thumbnail"
+[Method: GET, Route: product_details]
+in APPPATH\Views\partner\product\product_details.php on line 43.
+ 1 APPPATH\Views\partner\product\product_details.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "thumbnail"', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php', 43)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\product\\product_details.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/product/product_details', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(377): view('partner/product/product_details', [...])
+ 6 APPPATH\Controllers\PartnerController.php(354): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(369): App\Controllers\PartnerController->renderCache('product_details_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(213): App\Controllers\PartnerController->renderView('product_details_view', 'partner/product/product_details', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->productDetails()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-26 14:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-26 14:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-26 14:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-26 14:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-26 14:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-26 14:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

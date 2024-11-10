@@ -328,9 +328,9 @@ class PublicController extends BaseController
             // Retrieve phone number and password from POST request
             $phone = $this->request->getPost('phone');
             $password = $this->request->getPost('password');
-    
+            $user_type = 'partner';
             // Authenticate user
-            $user_id = $this->RegistrationModel->customerLogin($phone, $password);
+            $user_id = $this->RegistrationModel->customerLogin($phone, $password,$user_type);
     
             if ($user_id) {
                 // Store user_id in session

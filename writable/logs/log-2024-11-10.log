@@ -1,0 +1,946 @@
+INFO - 2024-11-10 05:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 05:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 05:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 05:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:40:48 --> requestProduct request received.
+INFO - 2024-11-10 06:40:48 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test","category":"Supplement","dosageForm":"Tablet","strength":"500mg","description":"testing","therapeuticUse":"Pain"}
+INFO - 2024-11-10 06:40:48 --> File uploaded successfully: 1731220848_311d2226d292fbd2314a.jpeg
+INFO - 2024-11-10 06:40:48 --> File uploaded successfully: 1731220848_27766cefb3e72ad61e34.pdf
+INFO - 2024-11-10 06:40:48 --> File uploaded successfully: 1731220848_58870607e925daef1bea.pdf
+INFO - 2024-11-10 06:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 06:40:48 --> Error: Undefined constant "App\Controllers\userId"
+[Method: POST, Route: product/requestProduct]
+in APPPATH\Controllers\PartnerController.php on line 704.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->requestProduct()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 06:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:43:47 --> requestProduct request received.
+INFO - 2024-11-10 06:43:47 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test","category":"Medicine","dosageForm":"Tablet","strength":"500mg","description":"test","therapeuticUse":"Pain"}
+INFO - 2024-11-10 06:43:47 --> File uploaded successfully: 1731221027_c3d7c0691a66da433d43.jpg
+INFO - 2024-11-10 06:43:47 --> File uploaded successfully: 1731221027_7f8854ad89df3092dbf9.pdf
+INFO - 2024-11-10 06:43:47 --> File uploaded successfully: 1731221027_2ad792650719a8c32ab3.pdf
+INFO - 2024-11-10 06:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:43:48 --> Product Request Submitted Successfully.
+INFO - 2024-11-10 06:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:58:10 --> submitKyc request received.
+INFO - 2024-11-10 06:58:10 --> POST Data: {"full_name":"Aswin Ramesh","address":"Thadathil Maroli House, Kudakkalam\r\nPO Eranholi","phone_no":"9400790268"}
+INFO - 2024-11-10 06:58:10 --> File uploaded successfully: 1731221890_4ea9c4a1103db9a505da.pdf
+INFO - 2024-11-10 06:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:58:10 --> KYC details inserted successfully.
+INFO - 2024-11-10 06:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:01:01 --> requestProduct request received.
+INFO - 2024-11-10 07:01:01 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Tst","category":"Medical Device","dosageForm":"Tablet","strength":"500mg","description":"sdfghkl;'","therapeuticUse":"sdfghiop"}
+INFO - 2024-11-10 07:01:01 --> File uploaded successfully: 1731222061_3c2622d8056ac17d72c2.jpeg
+INFO - 2024-11-10 07:01:01 --> File uploaded successfully: 1731222061_99571553c3bc4825bb1e.pdf
+INFO - 2024-11-10 07:01:01 --> File uploaded successfully: 1731222061_132dc1abc456d83b1378.pdf
+INFO - 2024-11-10 07:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:01:01 --> Product Request Submitted Successfully.
+INFO - 2024-11-10 07:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:01:48 --> requestProduct request received.
+INFO - 2024-11-10 07:01:48 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test","category":"Supplement","dosageForm":"Tablet","strength":"500mg","description":"asdfgh","therapeuticUse":"dfghkl"}
+INFO - 2024-11-10 07:01:48 --> File uploaded successfully: 1731222108_cf976bd46c75fc76eeb6.jpg
+INFO - 2024-11-10 07:01:48 --> File uploaded successfully: 1731222108_7f29b564418c53a2336e.pdf
+ERROR - 2024-11-10 07:01:48 --> Invalid file or file upload error.
+INFO - 2024-11-10 07:01:59 --> requestProduct request received.
+INFO - 2024-11-10 07:01:59 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test","category":"Supplement","dosageForm":"Tablet","strength":"500mg","description":"asdfgh","therapeuticUse":"dfghkl"}
+INFO - 2024-11-10 07:01:59 --> File uploaded successfully: 1731222119_c7192389b09b6bab24e0.jpg
+INFO - 2024-11-10 07:01:59 --> File uploaded successfully: 1731222119_83aebdbbfc654af7b926.pdf
+INFO - 2024-11-10 07:01:59 --> File uploaded successfully: 1731222119_b20d4dfeb83355859a50.pdf
+INFO - 2024-11-10 07:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:01:59 --> Product Request Submitted Successfully.
+INFO - 2024-11-10 07:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:05:18 --> requestProduct request received.
+INFO - 2024-11-10 07:05:18 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test","category":"Supplement","dosageForm":"Tablet","strength":"500mg","description":"assfh","therapeuticUse":"aoghdby"}
+INFO - 2024-11-10 07:05:18 --> File uploaded successfully: 1731222318_8bbd464c7fde077f9f63.jpeg
+INFO - 2024-11-10 07:05:18 --> File uploaded successfully: 1731222318_93e6aa484cad35c84682.pdf
+INFO - 2024-11-10 07:05:19 --> File uploaded successfully: 1731222319_85f27326615cf7e18da8.pdf
+INFO - 2024-11-10 07:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:05:19 --> Product Request Submitted Successfully.
+INFO - 2024-11-10 07:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:06:58 --> requestProduct request received.
+INFO - 2024-11-10 07:06:58 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test","category":"Supplement","dosageForm":"Tablet","strength":"500mg","description":"xdcfgh,.","therapeuticUse":"sdfghkl"}
+INFO - 2024-11-10 07:06:58 --> File uploaded successfully: 1731222418_eef09f41c58dd23dab4c.jpeg
+INFO - 2024-11-10 07:06:58 --> File uploaded successfully: 1731222418_b3995fc443dc1b44c02d.pdf
+INFO - 2024-11-10 07:06:58 --> File uploaded successfully: 1731222418_3b415683367d1d3b976a.pdf
+INFO - 2024-11-10 07:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:06:58 --> Product Request Submitted Successfully.
+INFO - 2024-11-10 07:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:14:53 --> requestProduct request received.
+INFO - 2024-11-10 07:14:53 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test","category":"Medical Device","dosageForm":"Tablet","strength":"500mg","description":"qwertyy","therapeuticUse":"yuiopasdf"}
+INFO - 2024-11-10 07:14:53 --> File uploaded successfully: 1731222893_5700757f3788373a5a4c.jpg
+INFO - 2024-11-10 07:14:53 --> File uploaded successfully: 1731222893_ba8968e920c6373d6549.pdf
+INFO - 2024-11-10 07:14:53 --> File uploaded successfully: 1731222893_b1d981436d52c84a03e2.pdf
+INFO - 2024-11-10 07:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:14:53 --> Product Request Submitted Successfully.
+INFO - 2024-11-10 07:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:16:10 --> requestProduct request received.
+INFO - 2024-11-10 07:16:10 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test","category":"Supplement","dosageForm":"Tablet","strength":"500mg","description":"saddasdf","therapeuticUse":"fsadfsadf"}
+INFO - 2024-11-10 07:16:10 --> File uploaded successfully: 1731222970_e8d04e427919a49f1624.jpg
+INFO - 2024-11-10 07:16:10 --> File uploaded successfully: 1731222970_e29bb9f1a2a3806ff05a.pdf
+INFO - 2024-11-10 07:16:10 --> File uploaded successfully: 1731222970_91ad28af77719268dc33.pdf
+INFO - 2024-11-10 07:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:16:10 --> Product Request Submitted Successfully.
+INFO - 2024-11-10 07:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:18:20 --> requestProduct request received.
+INFO - 2024-11-10 07:18:20 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test1234567","category":"Medical Device","dosageForm":"Tablet","strength":"500mg","description":"asfadsfasdf","therapeuticUse":"sadfsadfsdaf"}
+INFO - 2024-11-10 07:18:20 --> File uploaded successfully: 1731223100_cfa16b32c04d5498939c.jpeg
+INFO - 2024-11-10 07:18:20 --> File uploaded successfully: 1731223100_c8ce44d77ee77f0d488c.pdf
+INFO - 2024-11-10 07:18:20 --> File uploaded successfully: 1731223100_b1486a53c1aaa389f557.pdf
+INFO - 2024-11-10 07:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:18:20 --> Product Request Submitted Successfully.
+INFO - 2024-11-10 07:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:30:46 --> requestProduct request received.
+INFO - 2024-11-10 07:30:46 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test 456","category":"Personal Care","dosageForm":"Syrup","strength":"10ml","description":"Test With Optional","therapeuticUse":"Testing thea"}
+INFO - 2024-11-10 07:30:46 --> File uploaded successfully: 1731223846_1c9d05e11865655ff26f.jpg
+INFO - 2024-11-10 07:30:46 --> File uploaded successfully: 1731223846_9804c5b568808d8b63b5.pdf
+ERROR - 2024-11-10 07:30:46 --> Invalid file or file upload error.
+INFO - 2024-11-10 07:30:54 --> requestProduct request received.
+INFO - 2024-11-10 07:30:54 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test 456","category":"Personal Care","dosageForm":"Syrup","strength":"10ml","description":"Test With Optional","therapeuticUse":"Testing thea"}
+INFO - 2024-11-10 07:30:54 --> File uploaded successfully: 1731223854_cc3688dcf59b94d55304.jpg
+INFO - 2024-11-10 07:30:54 --> File uploaded successfully: 1731223854_064b946eb9371f0f8f76.pdf
+ERROR - 2024-11-10 07:30:54 --> Invalid file or file upload error.
+INFO - 2024-11-10 07:30:55 --> requestProduct request received.
+INFO - 2024-11-10 07:30:55 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test 456","category":"Personal Care","dosageForm":"Syrup","strength":"10ml","description":"Test With Optional","therapeuticUse":"Testing thea"}
+INFO - 2024-11-10 07:30:55 --> File uploaded successfully: 1731223855_f96f7de18cd7ea6b493b.jpg
+INFO - 2024-11-10 07:30:55 --> File uploaded successfully: 1731223855_0cee83896e444b4cdb67.pdf
+ERROR - 2024-11-10 07:30:55 --> Invalid file or file upload error.
+INFO - 2024-11-10 07:30:55 --> requestProduct request received.
+INFO - 2024-11-10 07:30:55 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test 456","category":"Personal Care","dosageForm":"Syrup","strength":"10ml","description":"Test With Optional","therapeuticUse":"Testing thea"}
+INFO - 2024-11-10 07:30:55 --> File uploaded successfully: 1731223855_7dcdc42829d62062e6be.jpg
+INFO - 2024-11-10 07:30:55 --> File uploaded successfully: 1731223855_199431fdc9ccd4cbb5ae.pdf
+ERROR - 2024-11-10 07:30:55 --> Invalid file or file upload error.
+INFO - 2024-11-10 07:31:00 --> requestProduct request received.
+INFO - 2024-11-10 07:31:00 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Test 456","category":"Personal Care","dosageForm":"Syrup","strength":"10ml","description":"Test With Optional","therapeuticUse":"Testing thea"}
+INFO - 2024-11-10 07:31:00 --> File uploaded successfully: 1731223860_9d640d4c89ccd2980912.jpg
+INFO - 2024-11-10 07:31:00 --> File uploaded successfully: 1731223860_fc9e24c7c35f80e5c77a.pdf
+ERROR - 2024-11-10 07:31:00 --> Invalid file or file upload error.
+INFO - 2024-11-10 07:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:33:20 --> requestProduct request received.
+INFO - 2024-11-10 07:33:20 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Dolo","category":"Medicine","dosageForm":"Tablet","strength":"500mg","description":"Test","therapeuticUse":""}
+INFO - 2024-11-10 07:33:20 --> File uploaded successfully: 1731224000_00c19a7faf3d1b16122f.jpg
+INFO - 2024-11-10 07:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 07:33:20 --> ErrorException: Undefined variable $newNameProd
+[Method: POST, Route: product/requestProduct]
+in APPPATH\Controllers\PartnerController.php on line 690.
+ 1 APPPATH\Controllers\PartnerController.php(690): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newNameProd', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 690)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->requestProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 07:33:26 --> requestProduct request received.
+INFO - 2024-11-10 07:33:26 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Dolo","category":"Medicine","dosageForm":"Tablet","strength":"500mg","description":"Test","therapeuticUse":""}
+INFO - 2024-11-10 07:33:26 --> File uploaded successfully: 1731224006_55f81ee2ee696eac4373.jpg
+INFO - 2024-11-10 07:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 07:33:26 --> ErrorException: Undefined variable $newNameProd
+[Method: POST, Route: product/requestProduct]
+in APPPATH\Controllers\PartnerController.php on line 690.
+ 1 APPPATH\Controllers\PartnerController.php(690): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newNameProd', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 690)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->requestProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 07:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:34:48 --> requestProduct request received.
+INFO - 2024-11-10 07:34:48 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Dolo","category":"Medicine","dosageForm":"Tablet","strength":"500mg","description":"","therapeuticUse":""}
+INFO - 2024-11-10 07:34:48 --> File uploaded successfully: 1731224088_c2eec966f559b03396ca.jpeg
+INFO - 2024-11-10 07:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 07:34:48 --> ErrorException: Undefined variable $newNameCer
+[Method: POST, Route: product/requestProduct]
+in APPPATH\Controllers\PartnerController.php on line 691.
+ 1 APPPATH\Controllers\PartnerController.php(691): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newNameCer', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 691)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->requestProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 07:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:36:37 --> requestProduct request received.
+INFO - 2024-11-10 07:36:37 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Dolo","category":"Medicine","dosageForm":"Tablet","strength":"500mg","description":"","therapeuticUse":""}
+INFO - 2024-11-10 07:36:37 --> File uploaded successfully: 1731224197_7d79722888849ce15327.jpg
+INFO - 2024-11-10 07:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 07:36:37 --> ErrorException: Undefined variable $newNameCer
+[Method: POST, Route: product/requestProduct]
+in APPPATH\Controllers\PartnerController.php on line 691.
+ 1 APPPATH\Controllers\PartnerController.php(691): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newNameCer', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 691)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->requestProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 07:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:39:02 --> requestProduct request received.
+INFO - 2024-11-10 07:39:02 --> POST Data: {"csrf_test_name":"43d85eda35a41114ef9d81f50a08ece0","productName":"Dolo","category":"Medicine","dosageForm":"Tablet","strength":"500mg","description":"","therapeuticUse":""}
+INFO - 2024-11-10 07:39:03 --> File uploaded successfully: 1731224343_40206b59df1bdc019859.jpeg
+INFO - 2024-11-10 07:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 07:39:03 --> Product Request Submitted Successfully.
+INFO - 2024-11-10 08:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:41:37 --> postReview request received.
+INFO - 2024-11-10 08:41:37 --> Review data: POST
+INFO - 2024-11-10 08:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:41:37 --> Review data: {"user_id":6,"rating":"5","comment":"Adipoli"}
+INFO - 2024-11-10 08:41:38 --> Review submitted successfully for user ID: 6
+INFO - 2024-11-10 08:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:42:48 --> postReview request received.
+INFO - 2024-11-10 08:42:48 --> Review data: POST
+INFO - 2024-11-10 08:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:42:48 --> Review data: {"user_id":6,"rating":"4","comment":"test"}
+INFO - 2024-11-10 08:42:48 --> Review submitted successfully for user ID: 6
+INFO - 2024-11-10 08:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:51:50 --> postReview request received.
+INFO - 2024-11-10 08:51:50 --> Review data: POST
+INFO - 2024-11-10 08:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 08:51:50 --> Review data: {"user_id":6,"rating":"5","comment":"test","product_id":null}
+INFO - 2024-11-10 08:51:50 --> Review submitted successfully for user ID: 6
+INFO - 2024-11-10 09:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 09:10:02 --> postReview request received.
+INFO - 2024-11-10 09:10:02 --> Review data: POST
+INFO - 2024-11-10 09:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 09:10:02 --> Review data: {"user_id":6,"rating":"4","comment":"asdfghk","product_id":null}
+INFO - 2024-11-10 09:10:03 --> Review submitted successfully for user ID: 6
+INFO - 2024-11-10 09:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 09:12:05 --> postReview request received.
+INFO - 2024-11-10 09:12:05 --> Review data: POST
+INFO - 2024-11-10 09:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 09:12:05 --> Review data: {"user_id":6,"rating":"3","comment":"xdfghi;","product_id":null}
+INFO - 2024-11-10 09:12:05 --> Review submitted successfully for user ID: 6
+INFO - 2024-11-10 09:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 09:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 09:15:07 --> postReview request received.
+INFO - 2024-11-10 09:15:07 --> Review data: POST
+INFO - 2024-11-10 09:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 09:15:07 --> Review data: {"user_id":6,"rating":"3","comment":"xsdfg","product_id":"2"}
+INFO - 2024-11-10 09:15:07 --> Review submitted successfully for user ID: 6
+INFO - 2024-11-10 09:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 09:16:53 --> postReview request received.
+INFO - 2024-11-10 09:16:53 --> Review data: POST
+INFO - 2024-11-10 09:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 09:16:53 --> Review data: {"user_id":6,"rating":"5","comment":"Testng","product_id":"2"}
+INFO - 2024-11-10 09:16:53 --> Review submitted successfully for user ID: 6
+INFO - 2024-11-10 13:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 13:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 13:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 13:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 13:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 13:50:50 --> postReview request received.
+INFO - 2024-11-10 13:50:50 --> Review data: POST
+INFO - 2024-11-10 13:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 13:50:50 --> ErrorException: Undefined property: App\Controllers\PartnerController::$productModel
+[Method: POST, Route: reviews/create]
+in APPPATH\Controllers\PartnerController.php on line 589.
+ 1 APPPATH\Controllers\PartnerController.php(589): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PartnerController::$productModel', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 589)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 13:50:58 --> postReview request received.
+INFO - 2024-11-10 13:50:58 --> Review data: POST
+INFO - 2024-11-10 13:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 13:50:58 --> ErrorException: Undefined property: App\Controllers\PartnerController::$productModel
+[Method: POST, Route: reviews/create]
+in APPPATH\Controllers\PartnerController.php on line 589.
+ 1 APPPATH\Controllers\PartnerController.php(589): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PartnerController::$productModel', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 589)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 13:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 13:52:24 --> postReview request received.
+INFO - 2024-11-10 13:52:24 --> Review data: POST
+INFO - 2024-11-10 13:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 13:52:24 --> Error: Object of class App\Models\ProductModel could not be converted to string
+[Method: POST, Route: reviews/create]
+in APPPATH\Controllers\PartnerController.php on line 589.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 13:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 13:53:46 --> postReview request received.
+INFO - 2024-11-10 13:53:46 --> Review data: POST
+INFO - 2024-11-10 13:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 13:53:46 --> Error: Object of class App\Models\ProductModel could not be converted to string
+[Method: POST, Route: reviews/create]
+in APPPATH\Controllers\PartnerController.php on line 589.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 13:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 13:57:26 --> postReview request received.
+INFO - 2024-11-10 13:57:26 --> Review data: POST
+INFO - 2024-11-10 13:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 13:57:26 --> ErrorException: Undefined property: App\Controllers\PartnerController::$model
+[Method: POST, Route: reviews/create]
+in APPPATH\Controllers\PartnerController.php on line 590.
+ 1 APPPATH\Controllers\PartnerController.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PartnerController::$model', 'C:\\xampp\\htdocs\\happymeds\\app\\Controllers\\PartnerController.php', 590)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 13:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 13:58:08 --> postReview request received.
+INFO - 2024-11-10 13:58:08 --> Review data: POST
+INFO - 2024-11-10 13:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 13:58:08 --> Error: Object of class App\Models\ReviewModel could not be converted to string
+[Method: POST, Route: reviews/create]
+in APPPATH\Controllers\PartnerController.php on line 590.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 14:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:02:02 --> postReview request received.
+INFO - 2024-11-10 14:02:02 --> Review data: POST
+INFO - 2024-11-10 14:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 14:02:02 --> Error: Object of class App\Models\ReviewModel could not be converted to string
+[Method: POST, Route: reviews/create]
+in APPPATH\Controllers\PartnerController.php on line 590.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 14:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:04:25 --> postReview request received.
+INFO - 2024-11-10 14:04:25 --> Review data: POST
+INFO - 2024-11-10 14:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 14:04:25 --> ErrorException: Undefined variable $profile_id
+[Method: POST, Route: reviews/create]
+in APPPATH\Models\ProductModel.php on line 16.
+ 1 APPPATH\Models\ProductModel.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profile_id', 'C:\\xampp\\htdocs\\happymeds\\app\\Models\\ProductModel.php', 16)
+ 2 APPPATH\Controllers\PartnerController.php(593): App\Models\ProductModel->updateReview('2', 5.0)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 14:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:05:09 --> postReview request received.
+INFO - 2024-11-10 14:05:09 --> Review data: POST
+INFO - 2024-11-10 14:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 14:05:09 --> TypeError: CodeIgniter\BaseModel::timeToString(): Argument #1 ($properties) must be of type array, float given, called in C:\xampp\htdocs\happymeds\system\BaseModel.php on line 1875
+[Method: POST, Route: reviews/create]
+in SYSTEMPATH\BaseModel.php on line 1762.
+ 1 SYSTEMPATH\BaseModel.php(1875): CodeIgniter\BaseModel->timeToString(5.0)
+ 2 SYSTEMPATH\BaseModel.php(997): CodeIgniter\BaseModel->transformDataToArray(5.0, 'update')
+ 3 SYSTEMPATH\Model.php(854): CodeIgniter\BaseModel->update([...], 5.0)
+ 4 APPPATH\Models\ProductModel.php(17): CodeIgniter\Model->update(2, 5.0)
+ 5 APPPATH\Controllers\PartnerController.php(593): App\Models\ProductModel->updateReview('2', 5.0)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 14:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:06:48 --> postReview request received.
+INFO - 2024-11-10 14:06:48 --> Review data: POST
+INFO - 2024-11-10 14:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 14:06:48 --> ErrorException: Undefined variable $productId
+[Method: POST, Route: reviews/create]
+in APPPATH\Models\ProductModel.php on line 16.
+ 1 APPPATH\Models\ProductModel.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productId', 'C:\\xampp\\htdocs\\happymeds\\app\\Models\\ProductModel.php', 16)
+ 2 APPPATH\Controllers\PartnerController.php(593): App\Models\ProductModel->updateReview('2', 5.0)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 14:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:07:14 --> postReview request received.
+INFO - 2024-11-10 14:07:14 --> Review data: POST
+INFO - 2024-11-10 14:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 14:07:15 --> ErrorException: Undefined variable $avgRating
+[Method: POST, Route: reviews/create]
+in APPPATH\Models\ProductModel.php on line 16.
+ 1 APPPATH\Models\ProductModel.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $avgRating', 'C:\\xampp\\htdocs\\happymeds\\app\\Models\\ProductModel.php', 16)
+ 2 APPPATH\Controllers\PartnerController.php(593): App\Models\ProductModel->updateReview('2', 5.0)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->postReview()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 14:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:07:48 --> postReview request received.
+INFO - 2024-11-10 14:07:48 --> Review data: POST
+INFO - 2024-11-10 14:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:07:49 --> Review data: {"user_id":2,"rating":"4","comment":"xhnyhgc","product_id":"2"}
+INFO - 2024-11-10 14:07:49 --> Review submitted successfully for user ID: 2
+INFO - 2024-11-10 14:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 14:16:16 --> ErrorException: Undefined variable $preview
+[Method: GET, Route: partner_home]
+in APPPATH\Views\partner\partner_home.php on line 97.
+ 1 APPPATH\Views\partner\partner_home.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $preview', 'C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\partner_home.php', 97)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\happymeds\\app\\Views\\partner\\partner_home.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partner/partner_home', [], true)
+ 5 APPPATH\Controllers\PartnerController.php(379): view('partner/partner_home', [...])
+ 6 APPPATH\Controllers\PartnerController.php(356): App\Controllers\PartnerController->App\Controllers\{closure}()
+ 7 APPPATH\Controllers\PartnerController.php(371): App\Controllers\PartnerController->renderCache('partner_home_view', Object(Closure))
+ 8 APPPATH\Controllers\PartnerController.php(60): App\Controllers\PartnerController->renderView('partner_home_view', 'partner/partner_home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PartnerController->partnerHome()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PartnerController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-10 14:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:23:07 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 6
+            [user_name] => amala
+            [email] => amalamariyat@gmail.com
+            [phone] => 9778198100
+            [password] => $2y$10$M9YgBVPMZ/kxL24v/MOqauzfNKpUwf/neWoHwwAnnoBWI/Esi.PV6
+            [company_name] => Amala
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-11-10 14:09:04
+            [updated_at] => 
+            [firstname] => 
+            [lastname] => 
+            [designation] => 
+            [skills] => 
+            [gender] => 
+            [dob] => 
+            [country] => 
+            [city] => 
+            [about_me] => 
+            [profile_photo] => 
+            [language] => 
+            [age] => 
+            [experience] => 
+            [location] => 
+            [wallet_balance] => 0.00
+            [kyc_verify] => pending
+            [total_investment] => 0.00
+            [total_turnover] => 0.00
+        )
+
+    [product_holdings] => Array
+        (
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+    [investment_requests] => Array
+        (
+        )
+
+)
+
+INFO - 2024-11-10 14:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:28:11 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 6
+            [user_name] => amala
+            [email] => amalamariyat@gmail.com
+            [phone] => 9778198100
+            [password] => $2y$10$M9YgBVPMZ/kxL24v/MOqauzfNKpUwf/neWoHwwAnnoBWI/Esi.PV6
+            [company_name] => Amala
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-11-10 14:09:04
+            [updated_at] => 
+            [firstname] => 
+            [lastname] => 
+            [designation] => 
+            [skills] => 
+            [gender] => 
+            [dob] => 
+            [country] => 
+            [city] => 
+            [about_me] => 
+            [profile_photo] => 
+            [language] => 
+            [age] => 
+            [experience] => 
+            [location] => 
+            [wallet_balance] => 0.00
+            [kyc_verify] => pending
+            [total_investment] => 0.00
+            [total_turnover] => 0.00
+        )
+
+    [product_holdings] => Array
+        (
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+    [investment_requests] => Array
+        (
+        )
+
+)
+
+INFO - 2024-11-10 14:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:29:23 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 6
+            [user_name] => amala
+            [email] => amalamariyat@gmail.com
+            [phone] => 9778198100
+            [password] => $2y$10$M9YgBVPMZ/kxL24v/MOqauzfNKpUwf/neWoHwwAnnoBWI/Esi.PV6
+            [company_name] => Amala
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-11-10 14:09:04
+            [updated_at] => 
+            [firstname] => 
+            [lastname] => 
+            [designation] => 
+            [skills] => 
+            [gender] => 
+            [dob] => 
+            [country] => 
+            [city] => 
+            [about_me] => 
+            [profile_photo] => 
+            [language] => 
+            [age] => 
+            [experience] => 
+            [location] => 
+            [wallet_balance] => 0.00
+            [kyc_verify] => pending
+            [total_investment] => 0.00
+            [total_turnover] => 0.00
+        )
+
+    [product_holdings] => Array
+        (
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+    [investment_requests] => Array
+        (
+        )
+
+)
+
+INFO - 2024-11-10 14:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:44:40 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 6
+            [user_name] => amala
+            [email] => amalamariyat@gmail.com
+            [phone] => 9778198100
+            [password] => $2y$10$M9YgBVPMZ/kxL24v/MOqauzfNKpUwf/neWoHwwAnnoBWI/Esi.PV6
+            [company_name] => Amala
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-11-10 14:09:04
+            [updated_at] => 
+            [firstname] => 
+            [lastname] => 
+            [designation] => 
+            [skills] => 
+            [gender] => 
+            [dob] => 
+            [country] => 
+            [city] => 
+            [about_me] => 
+            [profile_photo] => 
+            [language] => 
+            [age] => 
+            [experience] => 
+            [location] => 
+            [wallet_balance] => 0.00
+            [kyc_verify] => pending
+            [total_investment] => 0.00
+            [total_turnover] => 0.00
+        )
+
+    [product_holdings] => Array
+        (
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+    [investment_requests] => Array
+        (
+        )
+
+)
+
+INFO - 2024-11-10 14:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:45:19 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 6
+            [user_name] => amala
+            [email] => amalamariyat@gmail.com
+            [phone] => 9778198100
+            [password] => $2y$10$M9YgBVPMZ/kxL24v/MOqauzfNKpUwf/neWoHwwAnnoBWI/Esi.PV6
+            [company_name] => Amala
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-11-10 14:09:04
+            [updated_at] => 
+            [firstname] => 
+            [lastname] => 
+            [designation] => 
+            [skills] => 
+            [gender] => 
+            [dob] => 
+            [country] => 
+            [city] => 
+            [about_me] => 
+            [profile_photo] => 
+            [language] => 
+            [age] => 
+            [experience] => 
+            [location] => 
+            [wallet_balance] => 0.00
+            [kyc_verify] => pending
+            [total_investment] => 0.00
+            [total_turnover] => 0.00
+        )
+
+    [product_holdings] => Array
+        (
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+    [investment_requests] => Array
+        (
+        )
+
+)
+
+INFO - 2024-11-10 14:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:47:04 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 6
+            [user_name] => amala
+            [email] => amalamariyat@gmail.com
+            [phone] => 9778198100
+            [password] => $2y$10$M9YgBVPMZ/kxL24v/MOqauzfNKpUwf/neWoHwwAnnoBWI/Esi.PV6
+            [company_name] => Amala
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-11-10 14:09:04
+            [updated_at] => 
+            [firstname] => 
+            [lastname] => 
+            [designation] => 
+            [skills] => 
+            [gender] => 
+            [dob] => 
+            [country] => 
+            [city] => 
+            [about_me] => 
+            [profile_photo] => 
+            [language] => 
+            [age] => 
+            [experience] => 
+            [location] => 
+            [wallet_balance] => 0.00
+            [kyc_verify] => pending
+            [total_investment] => 0.00
+            [total_turnover] => 0.00
+        )
+
+    [product_holdings] => Array
+        (
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+    [investment_requests] => Array
+        (
+        )
+
+)
+
+INFO - 2024-11-10 14:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 14:50:08 --> Portfolio Data: Array
+(
+    [userProfile] => Array
+        (
+            [user_id] => 6
+            [user_name] => amala
+            [email] => amalamariyat@gmail.com
+            [phone] => 9778198100
+            [password] => $2y$10$M9YgBVPMZ/kxL24v/MOqauzfNKpUwf/neWoHwwAnnoBWI/Esi.PV6
+            [company_name] => Amala
+            [otp] => 
+            [user_type] => partner
+            [created_date] => 2024-11-10 14:09:04
+            [updated_at] => 
+            [firstname] => 
+            [lastname] => 
+            [designation] => 
+            [skills] => 
+            [gender] => 
+            [dob] => 0000-00-00
+            [country] => 
+            [city] => 
+            [about_me] => 
+            [profile_photo] => 
+            [language] => English
+            [age] => 0
+            [experience] => 
+            [location] => 
+            [wallet_balance] => 0.00
+            [kyc_verify] => pending
+            [total_investment] => 0.00
+            [total_turnover] => 0.00
+        )
+
+    [product_holdings] => Array
+        (
+        )
+
+    [recent_activity_yesterday] => Array
+        (
+        )
+
+    [recent_activity] => Array
+        (
+        )
+
+    [investment_requests] => Array
+        (
+        )
+
+)
+
+INFO - 2024-11-10 14:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:20:46 --> User with ID 6 is updating profile.
+INFO - 2024-11-10 15:20:46 --> No valid profile photo uploaded for user ID 6
+INFO - 2024-11-10 15:20:46 --> Profile updated successfully for user ID 6
+INFO - 2024-11-10 15:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:23:26 --> User with ID 6 is updating profile.
+INFO - 2024-11-10 15:23:26 --> No valid profile photo uploaded for user ID 6. Error: No file was uploaded.
+INFO - 2024-11-10 15:23:26 --> Profile updated successfully for user ID 6
+INFO - 2024-11-10 15:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:26:03 --> User with ID 6 is updating profile.
+INFO - 2024-11-10 15:26:03 --> No valid profile photo u111111111111111111111111111111111111ploaded for user ID 6. Error: No file was uploaded.
+INFO - 2024-11-10 15:26:03 --> Profile updated successfully for user ID 6
+INFO - 2024-11-10 15:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:28:07 --> User with ID 6 is updating profile.
+INFO - 2024-11-10 15:28:07 --> 
+INFO - 2024-11-10 15:28:07 --> 1
+INFO - 2024-11-10 15:28:07 --> No valid profile photo u111111111111111111111111111111111111ploaded for user ID 6. Error: No file was uploaded.
+INFO - 2024-11-10 15:28:08 --> Profile updated successfully for user ID 6
+INFO - 2024-11-10 15:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 15:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:14:14 --> Investment Check - User ID: 2, Product ID: 2
+INFO - 2024-11-10 16:14:14 --> Investment Check - User ID: 2, Product ID: 2, Is Invested: Yes
+INFO - 2024-11-10 16:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:14:29 --> Investment Check - User ID: 2, Product ID: 8
+INFO - 2024-11-10 16:14:29 --> Investment Check - User ID: 2, Product ID: 8, Is Invested: No
+INFO - 2024-11-10 16:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:22:50 --> Investment Check - User ID: 2, Product ID: 2
+INFO - 2024-11-10 16:22:50 --> Investment Check - User ID: 2, Product ID: 2, Is Invested: Yes
+INFO - 2024-11-10 16:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:24:57 --> Investment Check - User ID: 2, Product ID: 10
+INFO - 2024-11-10 16:24:58 --> Investment Check - User ID: 2, Product ID: 10, Is Invested: No
+INFO - 2024-11-10 16:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 16:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 17:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 17:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 17:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 17:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 17:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

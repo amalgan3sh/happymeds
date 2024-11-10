@@ -71,14 +71,16 @@ class AuthController extends Controller
         // Get request data
         $email = $this->request->getPost("email");
         $password = $this->request->getPost("password");
-    
+        $user_type = 'manufacturer';
         // Load the UserModel
         $userModel = new UserModel();
     
         // Login via email and password
         if (!empty($email) && !empty($password)) {
-            $user = $userModel->where("email", $email)->first();
-    
+            $user = $userModel->where("email", $email)
+                          ->where("user_type", $user_type) // Ensure user_type matches
+                          ->first();
+
             if ($user) {
                 if (password_verify($password, $user["password"])) {
                     // Check if user_type is set

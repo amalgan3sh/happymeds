@@ -82,10 +82,10 @@ class RegistrationModel extends Model {
     }
     
 
-    public function customerLogin($phone, $password): bool|int
+    public function customerLogin($phone, $password, $user_type): bool|int
     {
         // Attempt to retrieve the user with the provided phone number or email
-        $user = $this->getUserByPhoneOrEmail($phone);
+        $user = $this->getUserByPhoneEmailAndType($phone, $user_type);
 
         if ($user) {
             // Verify the password
@@ -140,6 +140,18 @@ class RegistrationModel extends Model {
                         ->get()
                         ->getRowArray();
     }
+    public function getUserByPhoneEmailAndType($phoneOrEmail, $user_type)
+    {
+        return $this->db->table('users')
+                        ->where('user_type', $user_type) // Ensure user type matches
+                        ->groupStart()
+                            ->where('phone', $phoneOrEmail)
+                            ->orWhere('email', $phoneOrEmail)
+                        ->groupEnd()
+                        ->get()
+                        ->getRow();
+    }
+
 
 
 }
