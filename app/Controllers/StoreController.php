@@ -9,7 +9,7 @@ use App\Models\ProductModel;
 use App\Models\CustomerVerificationModel;
 use App\Models\B2BOrderModel;
 use App\Libraries\EmailService;
-
+use App\Models\QuotationModel;
 
 
 class StoreController extends Controller
@@ -174,6 +174,18 @@ class StoreController extends Controller
         }
 
         return $this->processFormSubmission($userId);
+    }
+
+    public function getQuotationByOrderId($orderId)
+    {
+        $quotationModel = new QuotationModel();
+        $quotation = $quotationModel->where('order_id', $orderId)->first();
+
+        if ($quotation) {
+            return $this->response->setJSON(['success' => true, 'quotation' => $quotation]);
+        } else {
+            return $this->response->setJSON(['success' => false, 'message' => 'Quotation not found.']);
+        }
     }
 
     private function processFormSubmission($userId)
