@@ -228,7 +228,7 @@
                         <div class="header-right">
                             <!-- Start Header Btn  -->
                             <div class="header-btn">
-                                <a class="rainbow-gradient-btn" target="_blank" href="get_started"><span>Get Started</span></a>
+                                <a class="rainbow-gradient-btn" href="get_started"><span>Get Started</span></a>
                             </div>
                             <!-- End Header Btn  -->
 

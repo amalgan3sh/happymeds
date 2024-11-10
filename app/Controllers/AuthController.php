@@ -7,6 +7,7 @@ use App\Models\PartnerModel;
 use CodeIgniter\Controller;
 use CodeIgniter\Session\Session;
 use CodeIgniter\Email\Email;
+use App\Libraries\EmailService;
 
 
 class AuthController extends Controller

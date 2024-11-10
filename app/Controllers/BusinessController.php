@@ -242,7 +242,7 @@ class BusinessController extends Controller
             'kyc_status' => 'in_process',  // or you can set any other status like 'pending', etc.
             'updated_at' => date('Y-m-d H:i:s')
         ];
-        $userModel->update($user['id'], $userData);
+        $userModel->update($user['user_id'], $userData);
 
         // Redirect to a success page
         return redirect()->to(base_url('business_verification'))->with('message', 'KYC submitted successfully.');

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Libraries\EmailService;
 
 use App\Models\{
     RegistrationModel,
@@ -15,9 +16,11 @@ class PublicController extends BaseController
     protected $useCache;
     protected $cacheTime;
     protected SupportModel $supportModel;
+    protected $emailService;
 
     public function __construct() {
         $this->RegistrationModel = new RegistrationModel();
+        $this->emailService = new EmailService();
         $this->supportModel = new SupportModel();
         $this->cache = \Config\Services::cache(); // Load the cache service
         $this->useCache = getenv('CI_ENVIRONMENT') === 'production'; // Only use cache in production
@@ -312,6 +315,13 @@ class PublicController extends BaseController
         } else {
             if ($inserted) {
                 session()->setFlashdata('success', 'Registration successful!');
+
+                // Email content
+                $subject = 'Welcome to Our Platform!';
+                $body = "Dear $company_name,\n\nThank you for registering as a Brand Partner. We’re excited to have you with us!";                
+                // Send welcome email
+                $this->emailService->sendEmail($email, $subject, $body);
+
             } else {
                 session()->setFlashdata('error', 'Registration failed!');
             }
