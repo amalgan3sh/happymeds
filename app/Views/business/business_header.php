@@ -398,7 +398,7 @@
 													<span class="d-block text-end"><?= esc($user['email']) ?></span>
 												</div>
 											</div>
-											<img src="images/user.jpg" alt="">
+											<img src="<?php if($user['profile_photo'] != null && $user['profile_photo'] != '' ){ echo base_url('/uploads/user/' . $user['profile_photo']);  } else { echo 'images/user.jpg'; }?>" alt="">
 										</div>
 									</a>
 									<div class="dropdown-menu dropdown-menu-end" style="">

@@ -136,6 +136,25 @@ class BusinessController extends Controller
         return $header . $home;
     }
 
+    public function BusinessEditProduct()
+    {
+        $user = $this->authenticate();  
+        $id = $this->request->getGet('id');
+
+        $userId = $user['user_id'];
+
+        $productModel = new ManufacturerProductModel();
+        // Fetch products that belong to the logged-in user
+        $product = $productModel->where('id',$id)->findAll();
+        
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_edit_product', ['user' => $user, 'product'=>$product ]);
+    
+        return $header . $home;
+    }
+
     public function BusinessManageProduct()
     {
         // Use the authenticate method to check the session and get user data
@@ -249,6 +268,27 @@ class BusinessController extends Controller
         return $header . $home;
     }
 
+    public function BusinessViewProfile()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+
+        $userModel = new UserModel();
+        $userId = $user['user_id'];
+        $userData = $userModel->find($userId); // Fetch the user data from the database
+
+        if (!$userData) {
+            return redirect()->back()->with('error', 'User not found.');
+        }
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_view_profile', ['user' => $user]);
+    
+        return $header . $home;
+    }
+
+
     public function updateProfile()
     {
         $user = $this->authenticate();
@@ -285,6 +325,15 @@ class BusinessController extends Controller
         if ($profileImage && $profileImage->isValid()) {
             $imageName = $profileImage->getRandomName();
             $profileImage->move(WRITEPATH . 'uploads', $imageName);
+             // Define path to your image in WRITEPATH or FCPATH
+            $imagePath = WRITEPATH . 'uploads/' . $imageName;
+
+            // Copy to FCPATH if necessary to make it accessible
+            $publicPath = ROOTPATH . 'uploads/user/' . $imageName;
+            if (!file_exists($publicPath) && file_exists($imagePath)) {
+                copy($imagePath, $publicPath);
+            }
+            // $profileImage->move(ROOTPATH . 'uploads/user/', $imageName);
             $data['profile_photo'] = $imageName; // Update the data array with the image path
         }
     
@@ -294,6 +343,34 @@ class BusinessController extends Controller
         } else {
             return redirect()->back()->with('error', 'Failed to update the profile. Please try again.');
         }
+    }
+
+    public function updateProfilePicture() {
+        $user = $this->authenticate();
+        // Assume the user is authenticated and the user ID is stored in the session
+        $userId = session()->get('user_id');
+    
+        if (!$userId) {
+            return redirect()->back()->with('error', 'You must be logged in to update your profile.');
+        }
+    
+        $userModel = new UserModel();
+        $data = [];
+
+         // Handle profile image upload
+         $profileImage = $this->request->getFile('profile_picture');
+         if ($profileImage && $profileImage->isValid()) {
+             $imageName = $profileImage->getRandomName();
+             $profileImage->move(ROOTPATH . 'uploads/user/', $imageName);
+             $data['profile_photo'] = $imageName; // Update the data array with the image path
+         }
+     
+         // Update the user record
+         if ($userModel->update($userId, $data)) {
+              return redirect()->back()->with('success', 'Profile picture updated successfully.');
+         } else {
+              return redirect()->back()->with('error', 'Failed to update the profile picture. Please try again.');
+         }
     }
     
     /**

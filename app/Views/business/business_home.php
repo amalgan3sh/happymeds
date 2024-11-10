@@ -1,7 +1,25 @@
 <!--**********************************
             Content body start
         ***********************************-->
-		
+		<style>
+            .round-image {
+                width: 150px;        /* Set your desired width */
+                height: 150px;       /* Set the same height to make it a square */
+                border-radius: 50%;  /* Makes the image round */
+                object-fit: cover;   /* Ensures the image covers the circle without distortion */
+            }
+            /* Style for the small close button */
+            .small-close {
+                font-size: 2em;   /* Adjusts the size of the button */
+                line-height: 1;     /* Makes it more compact */
+                padding: 0;         /* Removes extra padding */
+                background: none;   /* Removes default button background */
+                border: none;       /* Removes default button border */
+                cursor: pointer;    /* Adds pointer cursor */
+                outline: none;      /* Removes outline on focus */
+            }
+
+        </style>
 		<!-- Modal -->
         <?php
             $kyc_status = esc($user['kyc_verify']); // Replace with your actual method to get the status
@@ -63,10 +81,22 @@
 							<div class="card-body">
 								<div class="text-center my-profile">
 									<div class="media d-block">
-										<div class="media-img">
-											<img src="images/user.jpg" alt="">
-											<a href="javascript:void(0);"><i class="fas fa-pencil-alt" aria-hidden="true"></i></a>
-										</div>
+										
+
+                                            <form id="upload-form" action="<?= site_url('user/updateProfilePicture') ?>" method="post" enctype="multipart/form-data">
+                                                <label for="profile-picture-upload">
+                                                <div class="media-img">
+                                                <img class="round-image" src="<?php if($user['profile_photo'] != null && $user['profile_photo'] != '' ){ echo base_url('/uploads/user/' . $user['profile_photo']);  } else { echo 'images/user.jpg'; }?>" alt="">
+                                              
+                                                <!-- Upload Button     -->
+                                                <a href="javascript:void(0);"><i class="fas fa-pencil-alt" aria-hidden="true">
+                                                <input type="file" name="profile_picture" id="profile-picture-upload" style="display: none;" onchange="submitForm()"></i></a>
+                                                </div>                                        
+</label>
+                                            </form>
+										
+                                       
+                                           
 										
 										<h3 class="mt-3 font-w800 text-dark"><?= esc($user['user_name']) ?></h3>
 										<span><?= esc($user['email']) ?></span>
@@ -75,9 +105,9 @@
 										<h4 class="mt-3 font-w400 fs-16 text-dark mb-0">Joined on <?= date('d M Y', strtotime($user['created_date'])) ?></h4>
 										<p class="my-3">Welcome to your dashboard! Here you can manage your profile, track recent activities, and stay updated on important notifications. Keep your information up to date to ensure smooth business operations and get the most out of our platform. If you need any assistance, feel free to reach out to our support team.</p>									</div>
 									<div class="text-center mt-4">
-                    <a href="javascript:void(0);" class="btn btn-primary btn-sm">Update Profile</a>
-                    <a href="javascript:void(0);" class="btn btn-secondary btn-sm">View Details</a>
-                </div>
+                                        <a href="<?= site_url('business_edit_profile') ?>" class="btn btn-primary btn-sm">Update Profile</a>
+                                        <a href="<?= site_url('business_view_profile') ?>" class="btn btn-secondary btn-sm">View Details</a>
+                                    </div>
 								</div>
 							</div>
 						</div>
@@ -117,9 +147,15 @@
             <th>Price</th>
             <th>Stock Status</th>
             <th>Actions</th>
-        </tr>
+        </tr> 
     </thead>
     <tbody>
+    <?php if(session()->getFlashdata('success')): ?>
+                        <div class="alert alert-success" id="successMessage">
+                        <button type="button" class="close small-close" onclick="closeAlert()">×</button>
+                            <?= session()->getFlashdata('success'); ?>
+                        </div>
+                    <?php endif; ?>
         <?php if (!empty($products) && is_array($products)) : ?>
             <?php foreach ($products as $product) : ?>
                 <tr>
@@ -128,9 +164,9 @@
                     <td>$<?= number_format($product['price'], 2); ?></td>
                     <td><?= ($product['stock_quantity'] > 0) ? 'In Stock' : 'Out of Stock'; ?></td>
                     <td>
-                        <a href="<?= base_url('product/edit/' . $product['id']); ?>" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="<?= base_url('business_edit_product?id='. $product['id'] ); ?>" class="btn btn-sm btn-primary">Edit</a>
                         <a href="<?= base_url('product/delete/' . $product['id']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
-                    </td>
+                    </td> 
                 </tr>
             <?php endforeach; ?>
         <?php else : ?>
@@ -424,6 +460,16 @@
             }
             });
         });
+        function submitForm() {
+            document.getElementById('upload-form').submit();
+        }
+
+        // Function to close the alert and remember the user's choice
+        function closeAlert() {
+            var successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'none';
+            localStorage.setItem('successMessageDismissed', 'true');
+        }
     </script>
    
 </body>

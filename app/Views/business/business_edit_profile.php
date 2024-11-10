@@ -1,4 +1,12 @@
 <!-- Content body start -->
+ <style>
+     .round-image {
+                width: 150px;        /* Set your desired width */
+                height: 150px;       /* Set the same height to make it a square */
+                border-radius: 50%;  /* Makes the image round */
+                object-fit: cover;   /* Ensures the image covers the circle without distortion */
+            }
+ </style>
 <div class="content-body">
     <!-- row -->
     <div class="container-fluid">
@@ -11,11 +19,11 @@
                             <div class="p-5">
                                 <div class="author-profile">
                                     <div class="author-media">
-                                        <img src="images/tab/1.jpg" alt="">
-                                        <div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
+                                        <img class="round-image" src="<?php if($user['profile_photo'] != null && $user['profile_photo'] != '' ){ echo base_url('/uploads/user/' . $user['profile_photo']);  } else { echo 'images/user.jpg'; }?>" alt="">
+                                        <!-- <div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
                                             <input type="file" class="update-flie">
                                             <i class="fa fa-camera"></i>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="author-info">
                                         <h6 class="title">
@@ -54,6 +62,15 @@
                     <form class="profile-form" action="<?= site_url('user/updateProfile') ?>" method="post" enctype="multipart/form-data">
                         <div class="card-body">
                             <div class="row">
+                            
+                                       
+                                <div class="col-sm-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="">Profile Picture</label>
+                                        <input type="file" class="form-control update-flie" name="profile_image">
+                                    </div>
+                                </div>
+                                   
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="FirstName">First Name</label>
@@ -104,7 +121,7 @@
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label class="form-label" for="DOB">DOB</label>
-                                        <input type="date" class="form-control" name="dob" value="<?= esc($user['dob']) ?>" id="DOB">
+                                        <input type="text" class="form-control" name="dob" value="<?= esc($user['dob']) ?>" id="DOB">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -153,7 +170,7 @@
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-sm" type="submit">UPDATE</button>
-                            <a href="page-forgot-password.html" class="text-hover float-end">Forgot your password?</a>
+                            <a href="<?= site_url('forgot_password') ?>" class="text-hover float-end">Forgot your password?</a>
                         </div>
                     </form>
                 </div>
@@ -202,6 +219,17 @@
 	<script src="vendor/bootstrap-datepicker-master/js/bootstrap-datepicker.min.js"></script>
     <script src="js/custom.min.js"></script>
 	<script src="js/dlabnav-init.js"></script>
+
+    <script>
+         $(document).ready(function(){
+            $('#DOB').datepicker({
+                format: 'dd-mm-yyyy',    // Date format
+                endDate: '0d',           // Disable future dates
+                autoclose: true,         // Automatically close after selecting a date
+                todayHighlight: true     // Highlight today's date
+            });
+         });
+        </script>
 	
    
 </body>
