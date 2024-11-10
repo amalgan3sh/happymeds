@@ -92,7 +92,7 @@
 
 							</ul>
 						</li>
-						<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+						<!-- <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">lab_profile</i>
 								<span class="nav-text">Reports</span>
 							</a>
@@ -102,21 +102,12 @@
 								<li><a href="<?php echo base_url('reports')?>">Report</a></li>
 							</ul>
 						</li>
-						
+						 -->
 						<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="fa-regular fa-gear fw-bold"></i>
 							<span class="nav-text">Settings</span>
 						</a>
-						<ul aria-expanded="false">
-							<li><a href="content.html">Content</a></li>
-							<li><a href="content-add.html">Add Content</a></li>
-							<li><a href="menu.html">Menus</a></li>	
-							<li><a href="email-template.html">Email Template</a></li>		
-							<li><a href="add-email.html">Add Email</a></li>		
-							<li><a href="blog.html">Blog</a></li>	
-							<li><a href="add-blog.html">Add Blog</a></li>	
-							<li><a href="blog-category.html">Blog Category</a></li>	
-						</ul>
+						
 					</li>
 						<!-- <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 								<i class="material-symbols-outlined">donut_large</i>

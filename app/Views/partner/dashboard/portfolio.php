@@ -72,7 +72,7 @@
 									<div class="media d-block">
 										<div class="media-img">
 										<?php if (empty($userProfile['profile_photo'])): ?>
-												<img src="images/user.jpg" alt="">
+												<img src="images/user.png" alt="">
 											<?php else: ?>
 												<img src="<?= esc(base_url('public/uploads/profiles/' . $userProfile['profile_photo'])) ?>" class="img-fluid rounded-circle" alt="">
 											<?php endif; ?>
@@ -225,6 +225,9 @@
 								
 								<div class="tab-pane fade show active" id="pills-Yesterday" role="tabpanel" aria-labelledby="pills-yesterday-tab">
 									<div class="table-responsive">
+									<?php if (empty($recent_activity_yesterday)): ?>
+										<p class="text-center">No recent activities</p>
+									<?php else: ?>
 										<table class="table portfolio-table">
 										<tbody>
 										<?php foreach ($recent_activity_yesterday as $recent_activity_y): ?>
@@ -262,10 +265,14 @@
 										<?php endforeach; ?>
 										</tbody>
 										</table>
+										<?php endif; ?>
 									</div>
 								</div>
 								<div class="tab-pane fade show" id="pills-today" role="tabpanel" aria-labelledby="pills-today-tab">
 									<div class="table-responsive">
+									<?php if (empty($recent_activity_yesterday)): ?>
+										<p class="text-center">No recent activities</p>
+									<?php else: ?>
 										<table class="table portfolio-table">
 											<tbody>
 												<?php foreach ($recent_activity as $recent_activity): ?>
@@ -303,6 +310,7 @@
 												<?php endforeach; ?>
 											</tbody>
 										</table>
+										<?php endif; ?>
 									</div>
 								</div>
 								<div class="tab-pane fade" id="Today">

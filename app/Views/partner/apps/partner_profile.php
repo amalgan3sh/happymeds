@@ -22,7 +22,7 @@
                         <div class="profile-info">
                             <div class="profile-photo">
                                 <?php if (empty($userProfile['profile_photo'])): ?>
-                                    <img src="<?= esc(base_url('images/tab/1.jpg')) ?>" alt="Default Profile Photo" class="img-fluid rounded-circle">
+                                    <img src="<?= esc(base_url('images/user.png')) ?>" alt="Default Profile Photo" class="img-fluid rounded-circle">
                                 <?php else: ?>
                                     <img src="<?= esc(base_url('public/uploads/profiles/' . $userProfile['profile_photo'])) ?>" class="img-fluid rounded-circle" alt="">
                                 <?php endif; ?>
@@ -213,18 +213,11 @@
                                         <div class="profile-skills mb-5">
                                             <h4 class="text-primary mb-2">Expertise</h4>
                                             <a href="javascript:void(0);" class="btn btn-primary light btn-xs mb-1"><?php echo $userProfile['skills']; ?></a>
-                                            <a href="javascript:void(0);" class="btn btn-primary light btn-xs mb-1">ASP.NET</a>
-                                            <a href="javascript:void(0);" class="btn btn-primary light btn-xs mb-1">C#</a>
-                                            <a href="javascript:void(0);" class="btn btn-primary light btn-xs mb-1">Entity Framewrok</a>
-                                            <a href="javascript:void(0);" class="btn btn-primary light btn-xs mb-1">JIRA</a>
-                                                    <a href="javascript:void(0);" class="btn btn-primary light btn-xs mb-1">React JS</a>
-                                                    <a href="javascript:void(0);" class="btn btn-primary light btn-xs mb-1">Project Management</a>
                                                 </div>
                                                 <div class="profile-lang  mb-5">
                                                     <h4 class="text-primary mb-2">Language</h4>
 													<a href="javascript:void(0);" class="badge badge-primary light badge-sm"><i class="flag-icon flag-icon-us"></i><?php echo $userProfile['language']; ?></a> 
-													<a href="javascript:void(0);" class="badge badge-secondary light badge-sm"><i class="flag-icon flag-icon-fr"></i> Malayalam</a>
-                                                    <a href="javascript:void(0);" class="badge badge-warning light badge-sm"><i class="flag-icon flag-icon-bd"></i> Hindi</a>
+													
                                                 </div>
                                                 <div class="profile-personal-info">
                                                     <h4 class="text-primary mb-4">Personal Information</h4>

@@ -14,7 +14,8 @@ use App\Models\{
     ActivityModel,
     KYCModel,
     ReviewModel,
-    UserModel
+    UserModel,
+    ProductRequestModel
 };
 use CodeIgniter\Cache\CacheInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -52,7 +53,8 @@ class PartnerController extends BaseController
 
         $data = [
             'transactions' => (new TransactionModel())->findAll(),
-            'market_previews' => (new MarketModel())->getMarketPreview()
+            'market_previews' => (new MarketModel())->getMarketPreview(),
+            'trending_products' => (new ProductModel())->getTrendingBrands(),
         ];
 
         return $this->renderView('partner_home_view', 'partner/partner_home', $data);
@@ -80,7 +82,7 @@ class PartnerController extends BaseController
             return redirect()->to('/customer_login');
         }
         
-        return $this->renderView('p2p_view', 'partner/market/p2p');
+        return $this->renderView('p2p_view', 'partner/coming_soon');
     }
 
     public function Transaction(): ResponseInterface
@@ -219,7 +221,7 @@ class PartnerController extends BaseController
             return redirect()->to('/customer_login');
         }
         $data['market_previews'] = (new MarketModel())->getMarketPreview();
-        return $this->renderView('market_view', 'partner/dashboard/market', $data);
+        return $this->renderView('market_view', 'partner/coming_soon', $data);
     }
 
     public function Portfolio(): ResponseInterface
@@ -272,45 +274,63 @@ class PartnerController extends BaseController
     }
 
     public function updateProfile(): ResponseInterface
-    {
-        if (!$this->checkSession()) {
-            return redirect()->to('/customer_login');
-        }
-        $userId = session()->get('user_id');
-        
-        $profilePhoto = $this->request->getFile('profile_photo');
-        $profilePhotoName = null;
-        if ($profilePhoto->isValid() && !$profilePhoto->hasMoved()) {
-            $newName = $profilePhoto->getRandomName();
-            $profilePhoto->move(ROOTPATH . 'public/uploads/profiles', $newName);
-            $profilePhotoName = $newName;
-        }
-
-        $data = [
-            'user_name' => $this->request->getPost('user_name'),
-            'email' => $this->request->getPost('email'),
-            'phone' => $this->request->getPost('phone'),
-            'company_name' => $this->request->getPost('company_name'),
-            'firstname' => $this->request->getPost('firstname'),
-            'lastname' => $this->request->getPost('lastname'),
-            'designation' => $this->request->getPost('designation'),
-            'skills' => $this->request->getPost('skills'),
-            'gender' => $this->request->getPost('gender'),
-            'dob' => $this->request->getPost('dob'),
-            'country' => $this->request->getPost('country'),
-            'city' => $this->request->getPost('city'),
-            'about_me' => $this->request->getPost('about_me'),
-            'profile_photo' => $profilePhotoName,
-            'language' => $this->request->getPost('language'),
-            'age' => $this->request->getPost('age'),
-            'experience' => $this->request->getPost('experience'),
-            'location' => $this->request->getPost('location')
-        ];
-
-        $this->partnerModel->updateUser($userId, $data);
-
-        return redirect()->to('/edit_profile')->with('success', 'Profile updated successfully');
+{
+    if (!$this->checkSession()) {
+        log_message('warning', 'User attempted to update profile without being logged in.');
+        return redirect()->to('/customer_login');
     }
+
+    $userId = session()->get('user_id');
+    log_message('info', "User with ID {$userId} is updating profile.");
+
+    $profilePhoto = $this->request->getFile('profile_photo');
+    $profilePhotoName = null;
+    log_message('info',$profilePhoto->isValid());
+    log_message('info',!$profilePhoto->hasMoved());
+    if ($profilePhoto->isValid() && !$profilePhoto->hasMoved()) {
+        $newName = $profilePhoto->getRandomName();
+        if ($profilePhoto->move(ROOTPATH . 'public/uploads/profiles', $newName)) {
+            log_message('info', "Profile photo uploaded successfully: {$newName}");
+            $profilePhotoName = $newName;
+        } else {
+            $error = $profilePhoto->getErrorString();
+            log_message('info', "No valid profile photo uploa222222222222222222222222222222222222222ded for user ID {$userId}. Error: {$error}");
+        }
+    } else {
+        $error = $profilePhoto->getErrorString();
+        log_message('info', "No valid profile photo u111111111111111111111111111111111111ploaded for user ID {$userId}. Error: {$error}");
+    }
+
+    $data = [
+        'user_name' => $this->request->getPost('user_name'),
+        'email' => $this->request->getPost('email'),
+        'phone' => $this->request->getPost('phone'),
+        'company_name' => $this->request->getPost('company_name'),
+        'firstname' => $this->request->getPost('firstname'),
+        'lastname' => $this->request->getPost('lastname'),
+        'designation' => $this->request->getPost('designation'),
+        'skills' => $this->request->getPost('skills'),
+        'gender' => $this->request->getPost('gender'),
+        'dob' => $this->request->getPost('dob'),
+        'country' => $this->request->getPost('country'),
+        'city' => $this->request->getPost('city'),
+        'about_me' => $this->request->getPost('about_me'),
+        'profile_photo' => $profilePhotoName,
+        'language' => $this->request->getPost('language'),
+        'age' => $this->request->getPost('age'),
+        'experience' => $this->request->getPost('experience'),
+        'location' => $this->request->getPost('location')
+    ];
+
+    if ($this->partnerModel->updateUser($userId, $data)) {
+        log_message('info', "Profile updated successfully for user ID {$userId}");
+        return redirect()->to('/edit_profile')->with('success', 'Profile updated successfully');
+    } else {
+        log_message('error', "Failed to update profile for user ID {$userId}");
+        return redirect()->to('/edit_profile')->with('error', 'Profile update failed. Please try again.');
+    }
+}
+
 
     public function storeBankAccount(): ResponseInterface
     {
@@ -403,7 +423,8 @@ class PartnerController extends BaseController
             'plan' => $plan,
             'product_id' => $product_id,
             'user_id' => $user_id,
-            'time_stamp' => date('Y-m-d H:i:s')
+            'time_stamp' => date('Y-m-d H:i:s'),
+            'status' => 'active',
         ];
 
         if ($this->investmentModel->save($data)) {
@@ -567,43 +588,155 @@ class PartnerController extends BaseController
 
     //Review
     public function postReview()
-{
-    // Log incoming request
-    log_message('info', 'postReview request received.');
-    log_message('info', 'Review data: ' . $this->request->getMethod());
-    if ($this->request->getMethod() === 'POST') {
-        $model = new ReviewModel();
+    {
+        // Log incoming request
+        log_message('info', 'postReview request received.');
+        log_message('info', 'Review data: ' . $this->request->getMethod());
+        if ($this->request->getMethod() === 'POST') {
+            $model = new ReviewModel();
 
-        $session = session();
-        $userId = $session->get('user_id');
-        // Retrieve form data
-        $data = [
-            'user_id' => $userId,
-            'rating' => $this->request->getPost('rating'),
-            'comment' => $this->request->getPost('comment'),
-        ];
+            $session = session();
+            $userId = $session->get('user_id');
+            // Retrieve form data
+            $data = [
+                'user_id'    => $userId,
+                'rating'     => $this->request->getPost('rating'),
+                'comment'    => $this->request->getPost('comment'),
+                'product_id' => $this->request->getPost('product_id'),
+            ];
+            
+            $productModel = new ProductModel();
+            $productId = $this->request->getPost('product_id');
+            
+            // Calculate the average rating and update it in the product table
+            $avgRating = $model->getAverageRating($productId);
+            $updateRating = $productModel->updateReview($productId, $avgRating);
 
-        // Log the review submission data
-        log_message('info', 'Review data: ' . json_encode($data));
 
-        // Insert data and handle errors
-        if ($model->save($data)) {
-            // Log successful submission
-            log_message('info', 'Review submitted successfully for user ID: ' . $data['user_id']);
-            return $this->response->setJSON([
-                'status' => 'success',
-                'message' => 'Review submitted successfully',
-            ]);
+            // Log the review submission data
+            log_message('info', 'Review data: ' . json_encode($data));
+
+            // Insert data and handle errors
+            if ($model->save($data)) {
+                // Log successful submission
+                log_message('info', 'Review submitted successfully for user ID: ' . $data['user_id']);
+                return $this->response->setJSON([
+                    'status' => 'success',
+                    'message' => 'Review submitted successfully',
+                ]);
+            } else {
+                // Log errors in case of failure
+                log_message('error', 'Review submission failed: ' . json_encode($model->errors()));
+                return $this->response->setJSON([
+                    'status' => 'error',
+                    'errors' => $model->errors(),
+                ]);
+            }
+        }
+    }
+
+    //Product Request
+    public function requestProduct()
+    {
+        // Log incoming request
+        log_message('info', 'requestProduct request received.');
+        
+        // Log POST data
+        log_message('info', 'POST Data: ' . json_encode($this->request->getPost()));
+        
+        $validation = \Config\Services::validation();
+        
+
+        
+
+        $productReqModel = new ProductRequestModel();
+
+        // Handle file upload
+        $product_image = $this->request->getFile('productImage');
+        if ($product_image->isValid() && !$product_image->hasMoved()) {
+            // Generate a new random name for the uploaded file and move it to the uploads folder
+            $newName = $product_image->getRandomName();
+            if ($product_image->move(WRITEPATH . 'uploads', $newName)) {
+                log_message('info', 'File uploaded successfully: ' . $newName);
+            } else {
+                log_message('error', 'Failed to move uploaded file.');
+                return $this->response->setJSON([
+                    'status' => 'error',
+                    'message' => 'Failed to upload document.'
+                ]);
+            }
         } else {
-            // Log errors in case of failure
-            log_message('error', 'Review submission failed: ' . json_encode($model->errors()));
+            log_message('error', 'Invalid file or file upload error.');
             return $this->response->setJSON([
                 'status' => 'error',
-                'errors' => $model->errors(),
+                'message' => 'Failed to upload document.'
+            ]);
+        }
+
+        $productBrochure = $this->request->getFile('productBrochure');
+        $newNameProd = '';
+        if ($productBrochure->isValid() && !$productBrochure->hasMoved()) {
+            // Generate a new random name for the uploaded file and move it to the uploads folder
+            $newNameProd = $productBrochure->getRandomName();
+            if ($productBrochure->move(WRITEPATH . 'uploads', $newNameProd)) {
+                log_message('info', 'File uploaded successfully: ' . $newNameProd);
+            } else {
+                log_message('error', 'Failed to move uploaded file.');
+                return $this->response->setJSON([
+                    'status' => 'error',
+                    'message' => 'Failed to upload document.'
+                ]);
+            }
+        }
+
+        $certifications = $this->request->getFile('certifications');
+        $newNameCer = '-';
+        if ($certifications->isValid() && !$certifications->hasMoved()) {
+            // Generate a new random name for the uploaded file and move it to the uploads folder
+            $newNameCer = $certifications->getRandomName();
+            if ($certifications->move(WRITEPATH . 'uploads', $newNameCer)) {
+                log_message('info', 'File uploaded successfully: ' . $newNameCer);
+            } else {
+                log_message('error', 'Failed to move uploaded file.');
+                return $this->response->setJSON([
+                    'status' => 'error',
+                    'message' => 'Failed to upload document.'
+                ]);
+            }
+        }
+
+        // Get user_id from session
+        $session = session();
+        $userId = $session->get('user_id');
+
+        // Prepare the data to be inserted into the database
+        $data = [
+            'prod_name'         => $this->request->getPost('productName'),
+            'category'          => $this->request->getPost('category'),
+            'dosage_form'       => $this->request->getPost('dosageForm'),
+            'strength'          => $this->request->getPost('strength'), 
+            'description'       => $this->request->getPost('description'),
+            'therapeutic_use'   => $this->request->getPost('therapeuticUse'),
+            'product_image'     => 'uploads/' . $newName,
+            'product_brochure'  => 'uploads/' . $newNameProd,
+            'certifications'    => 'uploads/' . $newNameCer,
+            'user_id'           => $userId,
+        ];
+
+        // Attempt to insert the data into the database
+        if ($productReqModel->insert($data)) {
+            log_message('info', 'Product Request Submitted Successfully.');
+            return $this->response->setJSON([
+                'status'  => 'success',
+                'message' => 'Product Request Submitted Successfully.'
+            ]);
+        } else {
+            log_message('error', 'Failed to Submit Product Request.');
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => 'Failed to Submit Product Request.'
             ]);
         }
     }
-}
-
     
 }

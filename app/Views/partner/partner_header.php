@@ -434,13 +434,15 @@
 			<!-- Profile Picture with Verified Icon -->
 			<div class="profile-photo-wrapper" style="position: relative; display: inline-block;">
 				<?php if (empty($_SESSION['user_data']['profile_photo'])): ?>
-					<img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=" class="img-fluid rounded-circle" alt="">
+					<img src="images/user.png" class="img-fluid rounded-circle" alt="">
 				<?php else: ?>
 					<img src="<?= esc(base_url('public/uploads/profiles/' )) ?><?php echo htmlspecialchars($_SESSION['user_data']['profile_photo']) ?>" class="img-fluid rounded-circle" alt="">
 				<?php endif; ?>
 
 				<!-- Verified Icon -->
-				<img src="images/verify.png" alt="Verified" style="width: 20px; height: 20px; position: absolute; bottom: 0; right: 0; border-radius: 50%; background-color: none;">
+				<?php if ($_SESSION['user_data']['kyc_verify']=='approved'): ?>
+					<img src="images/verify.png" alt="Verified" style="width: 20px; height: 20px; position: absolute; bottom: 0; right: 0; border-radius: 50%; background-color: none;">
+				<?php endif; ?>
 			</div>
 		</div>
 	</a>

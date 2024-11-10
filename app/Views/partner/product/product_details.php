@@ -106,7 +106,7 @@
                 <?php endif; ?>
 
                 <!-- Form with file upload -->
-                <form action="<?= site_url('product/requestProduct') ?>" method="post" enctype="multipart/form-data" id="productRequestForm">
+                <form action="" method="post" enctype="multipart/form-data" id="productRequestForm">
                     <?= csrf_field() ?>
 
                     <!-- Form wizard navigation -->
@@ -289,9 +289,14 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary" id="prevStep" style="display: none;">Previous</button>
                         <button type="button" class="btn btn-primary" id="nextStep">Next</button>
-                        <button type="submit" class="btn btn-success" id="submitBtn" style="display: none;">Submit Request</button>
+                        <button type="submit" class="btn btn-primary" id="submitBtn" >Submit Request</button>
                     </div>
                 </form>
+                <div id="responseMessage" class="mt-3">
+                    <div id="lottieSuccess" style="width: 100px; height: 100px; margin: auto;"></div>
+                    <p id="successText"></p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -329,16 +334,20 @@
 <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 <script src="js/custom.min.js"></script>
 <script src="js/dlabnav-init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('productRequestForm');
+    const productRequestForm = document.getElementById('productRequestForm');
     const step1 = document.getElementById('step1');
     const step2 = document.getElementById('step2');
     const nextBtn = document.getElementById('nextStep');
     const prevBtn = document.getElementById('prevStep');
     const submitBtn = document.getElementById('submitBtn');
     const stepButtons = document.querySelectorAll('.form-wizard-steps .nav-link');
-    
+    const responseMessage = document.getElementById('responseMessage');
+
+    responseMessage.style.display = 'none'
     let currentStep = 1;
 
     // Validate required fields in step 1
@@ -390,11 +399,49 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Form submission handler
-    form.addEventListener('submit', function(e) {
-        if (currentStep === 1 && !validateStep1()) {
-            e.preventDefault();
-            alert('Please fill in all required fields before proceeding.');
+    // Handle form submission
+    const showSuccessMessage = (message) => {
+    document.getElementById('responseMessage').innerHTML = `
+        <div class="success-message">
+            <div class="success-icon">✔️</div>
+            <span>${message}</span>
+        </div>`;
+    };
+
+    // Call this function upon successful form submission
+    const showLottieSuccessMessage = (message) => {
+        // Initialize the Lottie animation
+        lottie.loadAnimation({
+            container: document.getElementById('lottieSuccess'),
+            renderer: 'svg',
+            loop: false,
+            autoplay: true,
+            path: 'https://assets8.lottiefiles.com/packages/lf20_jcikwtux.json'  // Example success animation
+        });
+
+        // Display the success message text
+        document.getElementById('successText').innerText = message;
+    };
+
+    // Call this function upon successful form submission
+    productRequestForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const formData = new FormData(productRequestForm);
+
+        const response = await fetch('<?= site_url('product/requestProduct') ?>', {
+            method: 'POST',
+            body: formData,
+            headers: { 'X-Requested-With': 'XMLHttpRequest' },
+        });
+
+        const result = await response.json();
+        if (result.status === 'success') {
+            responseMessage.style.display = 'block'
+            productRequestForm.style.display = 'none';
+            showLottieSuccessMessage("Your product request has been successfully submitted!");
+        } else {
+            responseMessage.style.display = 'block'
+            document.getElementById('responseMessage').innerHTML = `<div class="error-message">Error: ${result.errors}</div>`;
         }
     });
 });
@@ -468,6 +515,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
 </script>
 <style>
 .form-wizard-steps .nav-link {
@@ -507,6 +555,45 @@ document.addEventListener('DOMContentLoaded', function() {
 .invalid-feedback {
     display: block;
 }
+.success-message {
+    display: flex;
+    align-items: center;
+    color: green;
+    font-size: 1.2em;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.success-icon {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    animation: bounce 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
 </style>
 <!-- Form Steps -->
 

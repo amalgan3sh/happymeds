@@ -143,6 +143,7 @@ $routes->post('auth/init-password-reset', 'AuthController::initPasswordReset');
 $routes->post('auth/verify-otp-reset-password', 'AuthController::verifyOTPAndResetPassword');
 $routes->get('password_reset_response', 'AuthController::passwordResetResponse');
 
+$routes->post('product/requestProduct', 'PartnerController::requestProduct');
 
 $routes->get('forgot_password', 'AuthController::forgotPassword');
 $routes->post('send_reset_link', 'AuthController::send_reset_link');
