@@ -56,6 +56,8 @@ $routes->get('business_view_profile', 'BusinessController::BusinessViewProfile')
 $routes->post('user/updateProfile', 'BusinessController::updateProfile');
 $routes->post('user/updateProfilePicture', 'BusinessController::updateProfilePicture');
 $routes->get('business_edit_product', 'BusinessController::BusinessEditProduct');
+$routes->get('business_support_request', 'BusinessController::supportRequest');
+$routes->post('business_support_request_submit', 'BusinessController::submitSupportRequest');
 
 $routes->get('/kyc', 'KycController::index');
 $routes->post('/submit_verification', 'BusinessController::submit_verification');

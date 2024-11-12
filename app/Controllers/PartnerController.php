@@ -466,7 +466,7 @@ class PartnerController extends BaseController
             $email = \Config\Services::email();
             
             $email->setFrom($data['email'], $data['name']);
-            $email->setTo('aswin.kncs@gmail.com'); // Replace with the support team's email address
+            $email->setTo('avsneha99@gmail.com'); // Replace with the support team's email address
             
             $email->setSubject('New Support Request');
             $email->setMessage("
