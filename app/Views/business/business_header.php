@@ -554,7 +554,6 @@
             <div class="support-box">
                 <div class="info">
                     <p class="fs-14">Need Help?</p>
-                    <a href="business-message" class="btn bg-white text-dark w-75 btn-sm">Support</a>
                     <a href="<?= base_url('business_support_request'); ?>" class="btn bg-white text-dark w-75 btn-sm">Support</a>
                 </div>
             </div>
