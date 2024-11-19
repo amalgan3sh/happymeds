@@ -521,14 +521,26 @@
                     </a>
                     <ul aria-expanded="false">
                         <!-- <li><a href="business_list_products">List Products</a></li> -->
+						<li><a href="business_requirements">Requirements</a></li>
                         <li><a href="business_add_product">Add New Product</a></li>
                         <li><a href="business_manage_product">Manage Products</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="business_orders" aria-expanded="false">
+				<li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
                         <i class="material-symbols-outlined">shopping_cart</i>
                         <span class="nav-text">Orders</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <!-- <li><a href="business_list_products">List Products</a></li> -->
+						<li><a href="business_orders">Purchase Order</a></li>
+                        <li><a href="business_orders_final">Final Purchase Order</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="business-message" aria-expanded="false">
+                        <i class="material-symbols-outlined">message</i>
+                        <span class="nav-text">Message</span>
                     </a>
                 </li>
                 <li>
@@ -536,12 +548,13 @@
                         <i class="material-symbols-outlined">settings</i>
                         <span class="nav-text">Settings</span>
                     </a>
+
                 </li>
             </ul>
             <div class="support-box">
                 <div class="info">
                     <p class="fs-14">Need Help?</p>
-                    <a href="support.html" class="btn bg-white text-dark w-75 btn-sm">Support</a>
+                    <a href="business-message" class="btn bg-white text-dark w-75 btn-sm">Support</a>
                 </div>
             </div>
             <div class="copyright">

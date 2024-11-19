@@ -6,6 +6,7 @@ use App\Models\UserModel;
 use CodeIgniter\Controller;
 use CodeIgniter\Session\Session;
 use App\Models\ManufacturerProductModel;
+use App\Models\SupportModel;
 
 class BusinessController extends Controller
 {
@@ -258,6 +259,73 @@ class BusinessController extends Controller
         $home = view('business/business_orders', ['user' => $user]);
     
         return $header . $home;
+    }
+    public function BusinessRequirements()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+
+        // Load the B2BOrderModel
+        $b2bOrderModel = new \App\Models\B2BOrderModel();
+
+        // Fetch all orders where user_id matches the logged-in user
+        $orders = $b2bOrderModel->findAll();
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_requirements', ['user' => $user,'orders' => $orders]);
+    
+        return $header . $home;
+    }
+
+    public function BusinessMessage()
+    {
+        $user = $this->authenticate(); // Assuming you have an authenticate method to get the logged-in user
+
+        // Load the SupportModel
+        $supportModel = new SupportModel();
+
+        // Fetch all support requests for the logged-in user
+        $supportRequests = $supportModel->where('user_id', $user['user_id'])->findAll();
+
+        // Pass the user's data and the support requests to the view
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_message', [
+            'user' => $user,
+            'supportRequests' => $supportRequests,
+        ]);
+
+        return $header . $home;
+    }
+    public function submitRequest()
+    {
+        $user = $this->authenticate();
+        // Initialize the model
+        $supportModel = new SupportModel();
+
+        try {
+            // Prepare data for insertion with hardcoded values
+            $data = [
+                'name' => $user['user_name'],  // Hardcoded name
+                'email' => $user['email'], // Hardcoded email
+                'message' => $this->request->getPost('message'),
+                'created_at' => date('Y-m-d H:i:s'),
+                'user_id' => $user['user_id'],
+                'status' => 'pending'
+            ];
+
+            // Insert the data
+            $supportModel->insert($data);
+
+            // Set success message and redirect
+            return redirect()->back()
+                ->with('success', 'Your message has been submitted successfully!');
+
+        } catch (\Exception $e) {
+            // Return with error message
+            return redirect()->back()
+                ->with('error', 'Error submitting message. Please try again.');
+        }
     }
 
     public function BusinessEditProfile()
