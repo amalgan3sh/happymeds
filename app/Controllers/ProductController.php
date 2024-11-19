@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
-use App\Models\ManufacturerProductModel;
+use App\Models\ProductModel;
 
 class ProductController extends BaseController
 {
     public function addProduct()
     {
-        $productModel = new ManufacturerProductModel();
+        $productModel = new ProductModel();
 
         // Get user_id from the session
         $userId = session()->get('user_id');
@@ -19,28 +19,46 @@ class ProductController extends BaseController
         }
 
         $data = [
-            'user_id'           =>  $userId, // Add the user_id to the data array
-            'product_name'      => $this->request->getPost('productName'),
+            //'user_id'           =>  $userId, // Add the user_id to the data array
+            'manufacturer_id'   =>  $userId,
+            'ProductName'      => $this->request->getPost('productName'),
             'category'          => $this->request->getPost('category'),
-            'dosage_form'       => $this->request->getPost('dosageForm'),
-            'strength'          => $this->request->getPost('strength'),
-            'description'       => $this->request->getPost('description'),
-            'therapeutic_use'   => $this->request->getPost('therapeuticUse'),
+            'DosageForm'       => $this->request->getPost('dosageForm'),
+            'Strength'          => $this->request->getPost('strength'),
+            'Content'          => $this->request->getPost('description'),
+            'TherapeuticUse'   => $this->request->getPost('therapeuticUse'),
             'price'             => $this->request->getPost('price'),
-            'stock_quantity'    => $this->request->getPost('stock'),
-            'min_order_quantity'=> $this->request->getPost('minOrderQty'),
+            'stockQuantity'    => $this->request->getPost('stock'),
+            'minOrderQuantity'=> $this->request->getPost('minOrderQty'),
             'sku'               => $this->request->getPost('sku'),
             'status'            => 'pending', // Default to 'pending' for admin approval
         ];
 
+        $productName = $this->request->getPost('productName');
         // Handle file uploads
         $files = ['productImage', 'productBrochure', 'certifications'];
         foreach ($files as $file) {
             if ($this->request->getFile($file)->isValid()) {
                 $uploadedFile = $this->request->getFile($file);
                 $fileName = $uploadedFile->getRandomName();
-                $uploadedFile->move(WRITEPATH . 'uploads', $fileName);
-                $data[$file] = $fileName;
+
+                // Set the destination directory
+                $destinationDir = FCPATH . 'products/'.$productName;
+
+                // Check if the directory exists
+                if (!is_dir($destinationDir)) {
+                    // Create the directory with 0755 permissions if it doesn't exist
+                    mkdir($destinationDir, 0755, true);
+                }
+
+                $uploadedFile->move($destinationDir, $fileName);
+                if($file == 'productImage') {
+                    $data['product_img_main'] = $fileName;
+                }
+                else{
+                    $data[$file] = $fileName;
+                }
+                
             }
         }
 

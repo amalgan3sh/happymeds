@@ -86,7 +86,7 @@
                                             <form id="upload-form" action="<?= site_url('user/updateProfilePicture') ?>" method="post" enctype="multipart/form-data">
                                                 <label for="profile-picture-upload">
                                                 <div class="media-img">
-                                                <img class="round-image" src="<?php if($user['profile_photo'] != null && $user['profile_photo'] != '' ){ echo base_url('/uploads/user/' . $user['profile_photo']);  } else { echo 'images/user.jpg'; }?>" alt="">
+                                                <img class="round-image" src="<?php if($user['profile_photo'] != null && $user['profile_photo'] != '' ){ echo base_url('/uploads/user/' . $user['profile_photo']);  } else { echo 'images/avatar.jpg'; }?>" alt="">
                                               
                                                 <!-- Upload Button     -->
                                                 <a href="javascript:void(0);"><i class="fas fa-pencil-alt" aria-hidden="true">
@@ -180,9 +180,9 @@
         </div>
     </div>
 </div>
-					<div class="col-xl-6">
-					<div class="card h-auto">
-    <div class="card-header pb-2 d-block d-sm-flex flex-wrap border-0">
+					<!-- <div class="col-xl-6">
+					<div class="card h-auto"> -->
+    <!-- <div class="card-header pb-2 d-block d-sm-flex flex-wrap border-0">
         <div class="mb-3">
             <h4 class="card-title">Recent Activity</h4>
             <p class="mb-0 fs-13">Tracking the latest account transactions</p>
@@ -195,10 +195,10 @@
                 <button class="nav-link" id="pills-today-tab" data-bs-toggle="pill" data-bs-target="#pills-today" type="button" role="tab" aria-controls="pills-today" aria-selected="false">Today</button>
             </li>
         </ul>
-    </div>
-    <div class="card-body tab-content pt-0 pb-sm-0 pb-3">
+    </div> -->
+    <!-- <div class="card-body tab-content pt-0 pb-sm-0 pb-3"> -->
         <!-- Yesterday's Activity -->
-        <div class="tab-pane fade show active" id="pills-Yesterday" role="tabpanel" aria-labelledby="pills-yesterday-tab">
+        <!-- <div class="tab-pane fade show active" id="pills-Yesterday" role="tabpanel" aria-labelledby="pills-yesterday-tab">
             <div class="table-responsive">
                 <table class="table portfolio-table">
                     <tbody>
@@ -265,9 +265,9 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </div> -->
         <!-- Today's Activity -->
-        <div class="tab-pane fade" id="pills-today" role="tabpanel" aria-labelledby="pills-today-tab">
+        <!-- <div class="tab-pane fade" id="pills-today" role="tabpanel" aria-labelledby="pills-today-tab">
             <div class="table-responsive">
                 <table class="table portfolio-table">
                     <tbody>
@@ -314,14 +314,14 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-    </div>
-</div>
-					</div>
-					<div class="col-xl-6">
-    <div class="row">
+        </div> -->
+    <!-- </div>
+</div> -->
+					<!-- </div> -->
+					<!-- <div class="col-xl-6"> -->
+    <!-- <div class="row"> -->
         <!-- Weekly Summary -->
-        <div class="col-xl-12">
+        <!-- <div class="col-xl-12">
             <div class="card overflow-hidden h-auto">
                 <div class="card-body pb-4">
                     <div class="row">
@@ -356,11 +356,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
-    </div>
-</div>
+    <!-- </div> -->
+<!-- </div> -->
 					
 				</div>
             </div>

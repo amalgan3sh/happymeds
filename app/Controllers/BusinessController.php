@@ -12,11 +12,13 @@ class BusinessController extends Controller
 {
     protected $session;
     protected $userModel;
+    protected $supportModel;
 
     public function __construct()
     {
         $this->session = \Config\Services::session();
         $this->userModel = new UserModel();
+        $this->supportModel = new SupportModel();
     }
 
     public function login()
@@ -94,6 +96,65 @@ class BusinessController extends Controller
 
         return $header . $home;
     }
+
+    public function supportRequest() {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+        $userId = $user['user_id'];
+
+        // Pass the user's data and KYC status to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/support_request', ['user' => $user]);
+
+        return $header . $home;
+    }
+
+    public function submitSupportRequest()
+    {
+
+        // Get data from POST request
+        $name = $this->request->getPost('name');
+        $email = $this->request->getPost('email');
+        $message = $this->request->getPost('message');
+
+        // Prepare data for database insertion
+        $data = [
+            'name' => $name,
+            'email' => $email, 
+            'message' => $message,
+            'created_at' => date('Y-m-d H:i:s')
+        ];
+
+        if ($this->supportModel->insert($data)) {
+            // Load the email library
+            $email = \Config\Services::email();
+            
+            $email->setFrom($data['email'], $data['name']);
+            $email->setTo('avsneha99@gmail.com'); // Replace with the support team's email address
+            
+            $email->setSubject('New Support Request');
+            $email->setMessage("
+                You have received a new support request. Here are the details:<br><br>
+                <strong>Name:</strong> {$data['name']}<br>
+                <strong>Email:</strong> {$data['email']}<br>
+                <strong>Message:</strong> {$data['message']}
+            ");
+            
+            if ($email->send()) {
+                return redirect()->back()->with('success', 'Support request submitted and email sent successfully!');
+
+                
+            } else {
+                return redirect()->back()->with('success', 'Support request submitted, but failed to send email.');
+               
+            }
+        } else {
+            return redirect()->back()->with('success', 'An error occurred while submitting your request.');
+        }
+
+        // return $this->response->setJSON($response);
+    }
+
 
     public function delete_kyc()
     {
@@ -239,14 +300,20 @@ class BusinessController extends Controller
 
             // Now update the users table with kyc_status as 'in_process'
         $userModel = new \App\Models\UserModel();
-        $userData = [
+        $user_data = [
             'kyc_status' => 'in_process',  // or you can set any other status like 'pending', etc.
             'updated_at' => date('Y-m-d H:i:s')
         ];
-        $userModel->update($user['user_id'], $userData);
+        log_message('debug', 'Update data: ' . print_r($user_data, true));
+
+       
+        // $userModel->update($user['user_id'], $userData);
+        $userModel->set($user_data)
+              ->where('user_id', $user['user_id']) // Specify the condition
+              ->update();
 
         // Redirect to a success page
-        return redirect()->to(base_url('business_verification'))->with('message', 'KYC submitted successfully.');
+        return redirect()->back()->with('message', 'KYC submitted successfully.');
     }
 
     public function BusinessOrders()

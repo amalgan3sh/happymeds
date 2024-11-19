@@ -19,7 +19,7 @@
                             <div class="p-5">
                                 <div class="author-profile">
                                     <div class="author-media">
-                                        <img class="round-image" src="<?php if($user['profile_photo'] != null && $user['profile_photo'] != '' ){ echo base_url('/uploads/user/' . $user['profile_photo']);  } else { echo 'images/user.jpg'; }?>" alt="">
+                                        <img class="round-image" src="<?php if($user['profile_photo'] != null && $user['profile_photo'] != '' ){ echo base_url('/uploads/user/' . $user['profile_photo']);  } else { echo 'images/avatar.jpg'; }?>" alt="">
                                         <!-- <div class="upload-link" title="" data-toggle="tooltip" data-placement="right" data-original-title="update">
                                             <input type="file" class="update-flie">
                                             <i class="fa fa-camera"></i>
@@ -35,22 +35,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="info-list">
+                            <!-- <div class="info-list">
                                 <ul>
                                     <li><a href="app-profile.html">Products</a><span>36</span></li>
                                     <li><a href="uc-lightgallery.html">Gallery</a><span>3</span></li>
                                     <li><a href="app-profile.html">Orders</a><span>5</span></li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="card-footer">
+                        <!-- <div class="card-footer">
                             <div class="input-group mb-3">
                                 <div class="form-control rounded text-center">Profile</div>
                             </div>
                             <div class="input-group">
                                 <a href="https://www.example.com/" target="_blank" class="form-control text-hover rounded">www.example.com</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -184,10 +184,10 @@
         <!--**********************************
             Footer start
         ***********************************-->
-       <div class="footer">
+        <div class="footer">
 			<div class="copyright">
-				<p>Copyright © Designed &amp; Developed by <a href="https://dexignlab.com/"
-						target="_blank">DexignLab</a> <span class="current-year">2024</span>
+				<p>Copyright © Designed &amp; Developed by <a href="#"
+						target="_blank">SpyderHub</a> <span class="current-year">2024</span>
 				</p>
 			</div>
 		</div>

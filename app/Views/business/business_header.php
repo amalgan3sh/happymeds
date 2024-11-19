@@ -399,7 +399,7 @@
 													<span class="d-block text-end"><?= esc($user['email']) ?></span>
 												</div>
 											</div>
-											<img src="<?php if($user['profile_photo'] != null && $user['profile_photo'] != '' ){ echo base_url('/uploads/user/' . $user['profile_photo']);  } else { echo 'images/user.jpg'; }?>" alt="">
+											<img src="<?php if($user['profile_photo'] != null && $user['profile_photo'] != '' ){ echo base_url('/uploads/user/' . $user['profile_photo']);  } else { echo 'images/avatar.jpg'; }?>" alt="">
 										</div>
 									</a>
 									<div class="dropdown-menu dropdown-menu-end" style="">
@@ -555,6 +555,7 @@
                 <div class="info">
                     <p class="fs-14">Need Help?</p>
                     <a href="business-message" class="btn bg-white text-dark w-75 btn-sm">Support</a>
+                    <a href="<?= base_url('business_support_request'); ?>" class="btn bg-white text-dark w-75 btn-sm">Support</a>
                 </div>
             </div>
             <div class="copyright">
