@@ -7,6 +7,8 @@ use CodeIgniter\Controller;
 use CodeIgniter\Session\Session;
 use App\Models\ManufacturerProductModel;
 use App\Models\SupportModel;
+use App\Models\B2BOrderModel;
+use App\Models\PurchaseOrderModel;
 
 class BusinessController extends Controller
 {
@@ -316,14 +318,133 @@ class BusinessController extends Controller
         return redirect()->back()->with('message', 'KYC submitted successfully.');
     }
 
+    public function updateStatus($orderId, $status)
+    {
+        $user = $this->authenticate();
+    
+        // Validate the status input
+        if (!in_array($status, ['have', 'donthave'])) {
+            return redirect()->to('/orders')->with('error', 'Invalid status selected.');
+        }
+    
+        // Load the models
+        $orderModel = new B2BOrderModel();
+        $purchaseOrderModel = new PurchaseOrderModel();
+    
+        // Check if the order exists
+        $order = $orderModel->find($orderId);
+        if (!$order) {
+            return redirect()->to('/business_requirements')->with('error', 'Order not found.');
+        }
+    
+        // Manufacturer ID
+        $manufacturerId = $user['user_id']; // Replace with logic to get the manufacturer ID
+    
+        if ($status === 'have') {
+            // Check if the purchase order already exists
+            $existingPurchaseOrder = $purchaseOrderModel
+                ->where('order_id', $orderId)
+                ->where('manufacturer_id', $manufacturerId)
+                ->first();
+    
+            if ($existingPurchaseOrder) {
+                return redirect()->to('/business_requirements')->with('error', 'This product is already moved to a purchase order.');
+            }
+    
+            // Prepare data for the purchase order
+            $purchaseOrderData = [
+                'order_id' => $orderId,
+                'customer_id' => $order['user_id'], // Changed to customer_id
+                'manufacturer_id' => $manufacturerId,
+                'product_details' => $order['order_items'], // Assuming this is in JSON format
+                'total_amount' => $order['total_amount'],
+            ];
+    
+            // Insert into purchase orders table
+            $purchaseInserted = $purchaseOrderModel->insert($purchaseOrderData);
+    
+            if ($purchaseInserted) {
+                // Update the order status to "Have It"
+                $orderModel->update($orderId, ['status' => 'Have It']);
+                return redirect()->to('/business_requirements')->with('success', 'Product moved to purchase order successfully.');
+            } else {
+                return redirect()->to('/business_requirements')->with('error', 'Failed to move product to purchase order.');
+            }
+        }
+    
+        if ($status === 'donthave') {
+            // Check if there's an existing purchase order
+            $existingPurchaseOrder = $purchaseOrderModel
+                ->where('order_id', $orderId)
+                ->where('manufacturer_id', $manufacturerId)
+                ->first();
+    
+            if ($existingPurchaseOrder) {
+                // Delete the purchase order
+                $purchaseOrderModel
+                    ->where('order_id', $orderId)
+                    ->where('manufacturer_id', $manufacturerId)
+                    ->delete();
+            }
+    
+            // Update the order status to "Don't Have It"
+            $updated = $orderModel->update($orderId, ['status' => "Don't Have It"]);
+    
+            if ($updated) {
+                return redirect()->to('/business_requirements')->with('success', 'Order status updated and purchase order removed.');
+            } else {
+                return redirect()->to('/business_requirements')->with('error', 'Failed to update the order status.');
+            }
+        }
+    
+        return redirect()->to('/business_requirements')->with('error', 'Invalid action.');
+    }
+
     public function BusinessOrders()
     {
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
+        
+        // Check if authentication returned a redirect response
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user; // Return the redirect response if authentication failed
+        }
+    
+        $purchaseOrderModel = new PurchaseOrderModel();
+        $manufacturerId = $user['user_id'];
+    
+        // Fetch all purchase orders
+        $purchaseOrders = $manufacturerId 
+            ? $purchaseOrderModel->where('manufacturer_id', $manufacturerId)->findAll()
+            : [];
     
         // Pass the user's data to the views
         $header = view('business/business_header', ['user' => $user]);
-        $home = view('business/business_orders', ['user' => $user]);
+        $home = view('business/business_orders', ['user' => $user, 'purchaseOrders' => $purchaseOrders]);
+    
+        return $header . $home;
+    }
+    public function BusinessOrdersFinal()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+        
+        // Check if authentication returned a redirect response
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user; // Return the redirect response if authentication failed
+        }
+    
+        $purchaseOrderModel = new PurchaseOrderModel();
+        $manufacturerId = $user['user_id'];
+    
+        // Fetch all purchase orders
+        $purchaseOrders = $manufacturerId 
+            ? $purchaseOrderModel->where('manufacturer_id', $manufacturerId)->findAll()
+            : [];
+    
+        // Pass the user's data to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/business_orders_final', ['user' => $user, 'purchaseOrders' => $purchaseOrders]);
     
         return $header . $home;
     }

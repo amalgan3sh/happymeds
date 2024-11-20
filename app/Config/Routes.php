@@ -51,11 +51,13 @@ $routes->get('business_list_products', 'BusinessController::BusinessListProducts
 $routes->get('business_add_product', 'BusinessController::BusinessAddProduct');
 $routes->get('business_manage_product', 'BusinessController::BusinessManageProduct');
 $routes->get('business_orders', 'BusinessController::BusinessOrders');
+$routes->get('business_orders_final', 'BusinessController::BusinessOrdersFinal');
 $routes->get('business_edit_profile', 'BusinessController::BusinessEditProfile');
 $routes->get('business_view_profile', 'BusinessController::BusinessViewProfile');
 $routes->post('user/updateProfile', 'BusinessController::updateProfile');
 $routes->post('user/updateProfilePicture', 'BusinessController::updateProfilePicture');
 $routes->get('business_edit_product', 'BusinessController::BusinessEditProduct');
+$routes->get('order/updateStatus/(:num)/(:alpha)', 'BusinessController::updateStatus/$1/$2');
 
 $routes->get('business_requirements', 'BusinessController::BusinessRequirements');
 $routes->get('business-message', 'BusinessController::BusinessMessage');

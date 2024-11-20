@@ -46,34 +46,30 @@
                 <td><?= date('d F Y', strtotime($order['created_at'])); ?></td>
                 <td>
                     <span class="badge light 
-                        <?= $order['status'] === 'Completed' ? 'badge-success' : 
-                            ($order['status'] === 'Pending' ? 'badge-warning' : 'badge-danger'); ?>">
+                        <?= $order['status'] === 'Have It' ? 'badge-success' : 
+                            ($order['status'] === "Don't Have It" ? 'badge-danger' : 'badge-warning'); ?>">
                         <?= ucfirst(esc($order['status'])); ?>
                     </span>
                 </td>
                 <td>
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-light sharp" data-bs-toggle="dropdown" aria-label="Order Actions">
-                            <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <rect x="0" y="0" width="24" height="24" />
-                                    <circle fill="#000000" cx="5" cy="12" r="2" />
-                                    <circle fill="#000000" cx="12" cy="12" r="2" />
-                                    <circle fill="#000000" cx="19" cy="12" r="2" />
-                                </g>
-                            </svg>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">View Details</a>
-                            <?php if ($order['status'] === 'Pending'): ?>
-                                <a class="dropdown-item" href="#">Mark as Shipped</a>
-                            <?php elseif ($order['status'] === 'Cancelled'): ?>
-                                <a class="dropdown-item" href="#">Reorder</a>
-                            <?php endif; ?>
-                            <a class="dropdown-item" href="#">Cancel Order</a>
-                        </div>
-                    </div>
-                </td>
+    <div class="dropdown">
+        <button type="button" class="btn btn-light sharp" data-bs-toggle="dropdown" aria-label="Order Actions">
+            <svg width="20px" height="20px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect x="0" y="0" width="24" height="24" />
+                    <circle fill="#000000" cx="5" cy="12" r="2" />
+                    <circle fill="#000000" cx="12" cy="12" r="2" />
+                    <circle fill="#000000" cx="19" cy="12" r="2" />
+                </g>
+            </svg>
+        </button>
+        <div class="dropdown-menu">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="<?= base_url('order/updateStatus/' . $order['order_id'] . '/have'); ?>">Mark as Have It</a>
+            <a class="dropdown-item" href="<?= base_url('order/updateStatus/' . $order['order_id'] . '/donthave'); ?>">Mark as Don't Have It</a>
+        </div>
+    </div>
+</td>
             </tr>
         <?php endforeach; ?>
     <?php else: ?>
