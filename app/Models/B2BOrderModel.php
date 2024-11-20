@@ -15,7 +15,8 @@ class B2BOrderModel extends Model
         'status', 
         'status_description', 
         'created_at', 
-        'updated_at'
+        'updated_at',
+        'manufacturer_id'
     ];
     protected $useTimestamps = true; // Automatically manage created_at and updated_at
     protected $createdField  = 'created_at'; // Define the column for creation timestamp

@@ -25,13 +25,18 @@ class ProductModel extends Model
         'total_units',
         'price',
         'productBrochure',
-        'certifications','stockQuantity','minOrderQuantity','sku','status','category'];
+        'certifications','stockQuantity','minOrderQuantity','sku','status','category','manufacturer_id'];
 
 
 
     public function updateReview($product_id, $avgRating)
     {
         return $this->update($product_id, ['rating' => $avgRating]);
+    }
+
+    public function getProductsByManufacturer($manufacturerId)
+    {
+        return $this->where('manufacturer_id', $manufacturerId)->findAll();
     }
 
     /**

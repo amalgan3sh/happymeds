@@ -158,6 +158,14 @@ $routes->post('send_reset_link', 'AuthController::send_reset_link');
 $routes->get('reset_password', 'AuthController::resetPassword');
 $routes->post('update_password','AuthController::updatePassword');
 
+$routes->get('distributor_requirement', 'DistributorController::DistributorRequirement');
+$routes->post('submit-product-requirement', 'DistributorController::submitProductRequirement');
+$routes->get('distributor/getProductsByManufacturer/(:num)', 'DistributorController::getProductsByManufacturer/$1');
+$routes->post('distributor/deleteRequirement', 'DistributorController::deleteRequirement');
+$routes->get('distributor/viewRequirement/(:num)', 'DistributorController::viewRequirement/$1');
+
+
+
 //auth
 $routes->get('auth/logout', 'AuthController::logout');
 

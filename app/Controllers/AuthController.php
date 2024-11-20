@@ -223,14 +223,15 @@ public function passwordResetResponse()
         // Get request data
         $email = $this->request->getPost("email");
         $password = $this->request->getPost("password");
-        $user_type = 'manufacturer';
+        // $user_type = 'manufacturer';
+        $user_type = ['manufacturer', 'distributor', 'agent', 'agency', 'franchise'];
         // Load the UserModel
         $userModel = new UserModel();
     
         // Login via email and password
         if (!empty($email) && !empty($password)) {
             $user = $userModel->where("email", $email)
-                          ->where("user_type", $user_type) // Ensure user_type matches
+                          ->whereIn("user_type", $user_type) // Ensure user_type matches
                           ->first();
 
             if ($user) {
