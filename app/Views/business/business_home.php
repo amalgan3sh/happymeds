@@ -59,6 +59,88 @@
         <div class="container-fluid">
             <!-- Row -->
             <div class="row">
+            <div class="col-xl-3  col-lg-6 col-sm-6">
+    <div class="widget-stat card bg-primary">
+        <div class="card-body  p-4">
+            <div class="media">
+                <span class="me-3">
+                    <i class="la la-box"></i> <!-- Icon for Total Product Requirement -->
+                </span>
+                <div class="media-body text-white">
+                    <p class="mb-1">Total Product Requirement</p>
+                    <h3 class="text-white"><?= $b2bOrderCount ?></h3>
+                    <div class="progress mb-2 bg-secondary">
+                        <div class="progress-bar progress-animated bg-white" style="width: 80%">
+                        </div>
+                    </div>
+                    <small>80% Increase in 20 Days</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-3 col-lg-6 col-sm-6">
+    <div class="widget-stat card bg-warning">
+        <div class="card-body p-4">
+            <div class="media">
+                <span class="me-3">
+                    <i class="la la-file-alt"></i> <!-- Icon for Total Purchase Orders -->
+                </span>
+                <div class="media-body text-white">
+                    <p class="mb-1">Total Purchase Orders</p>
+                    <h3 class="text-white"><?= $purchaseOrderCount ?></h3>
+                    <div class="progress mb-2 bg-primary">
+                        <div class="progress-bar progress-animated bg-white" style="width: 50%">
+                        </div>
+                    </div>
+                    <small>50% Increase in 25 Days</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-3 col-lg-6 col-sm-6">
+    <div class="widget-stat card bg-secondary">
+        <div class="card-body p-4">
+            <div class="media">
+                <span class="me-3">
+                    <i class="la la-dollar-sign"></i> <!-- Icon for Total Amount of Product Requirement -->
+                </span>
+                <div class="media-body text-white">
+                    <p class="mb-1">Total Amount of Product Requirement</p>
+                    <h3 class="text-white"><?= $totalProductRequirementAmount ?></h3>
+                    <div class="progress mb-2 bg-primary">
+                        <div class="progress-bar progress-animated bg-white" style="width: 76%">
+                        </div>
+                    </div>
+                    <small>76% Increase in 20 Days</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-3  col-lg-6 col-sm-6">
+    <div class="widget-stat card bg-danger ">
+        <div class="card-body p-4">
+            <div class="media">
+                <span class="me-3">
+                    <i class="la la-warehouse"></i> <!-- Icon for Total Amount of Purchase Orders -->
+                </span>
+                <div class="media-body text-white">
+                    <p class="mb-1">Total Amount of Purchase Orders</p>
+                    <h3 class="text-white"><?= $totalPurchaseOrderAmount ?></h3>
+                    <div class="progress mb-2 bg-secondary">
+                        <div class="progress-bar progress-animated bg-white" style="width: 30%">
+                        </div>
+                    </div>
+                    <small>30% Increase in 30 Days</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
                 <div class="col-xl-3 col-xxl-4">
                     <div class="card portofolio">
                         <div class="card-header border-0 pb-0">
@@ -113,6 +195,146 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-4 col-lg-12 col-sm-12">
+    <div class="card">
+        <div class="card-header border-0 pb-0">
+            <h2 class="card-title">About Me</h2>
+        </div>
+        <div class="card-body pb-0">
+            <p><?= !empty($user['about_me']) ? $user['about_me'] : 'No description available.'; ?></p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex px-0 justify-content-between">
+                    <strong>Gender</strong>
+                    <span class="mb-0"><?= !empty($user['gender']) ? $user['gender'] : 'Not specified'; ?></span>
+                </li>
+                <li class="list-group-item d-flex px-0 justify-content-between">
+                    <strong>Education</strong>
+                    <span class="mb-0"><?= !empty($user['skills']) ? $user['skills'] : 'Not specified'; ?></span>
+                </li>
+                <li class="list-group-item d-flex px-0 justify-content-between">
+                    <strong>Designation</strong>
+                    <span class="mb-0"><?= !empty($user['designation']) ? $user['designation'] : 'Not specified'; ?></span>
+                </li>
+                <li class="list-group-item d-flex px-0 justify-content-between">
+                    <strong>Wallet Balance</strong>
+                    <span class="mb-0">$<?= number_format($user['wallet_balance'] ?? 0, 2); ?></span>
+                </li>
+            </ul>
+        </div>
+        <div class="card-footer pt-0 pb-0 text-center">
+    <div class="row">
+        <div class="col-12 pt-3 pb-3">
+            <a href="business_edit_profile" class="btn btn-primary">
+                Update your profile
+            </a>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+                    
+<div class="col-xl-4 col-lg-6 col-sm-6">
+    <div class="card active_users">
+        <div class="card-header bg-primary border-0 pb-0">
+            <h4 class="card-title text-white">Active Users</h4>
+            <span id="counter"></span>
+        </div>
+        <div class="bg-primary">
+            <canvas id="activeUser"></canvas>
+        </div>
+        <div class="card-body pt-0">
+            <div class="list-group-flush mt-4">
+                <!-- Active Users Info Updated -->
+                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 fw-semi-bold border-0 border-bottom">
+                    <p class="mb-0">Orders Pending</p>
+                    <p class="mb-0"><?= $b2bOrderCount ?></p>
+                </div>
+                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 border-0 border-bottom">
+                    <p class="mb-0">Orders Shipped</p>
+                    <p class="mb-0"><?= $purchaseOrderCount ?></p>
+                </div>
+                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 border-0 border-bottom">
+                    <p class="mb-0">Low Stock Products</p>
+                    <p class="mb-0"><?= $categoryCount ?></p>
+                </div>
+
+                <!-- Sales Insights -->
+                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 border-0 border-bottom">
+                    <p class="mb-0">Total Revenue</p>
+                    <p class="mb-0"><?= '$' . number_format($totalPurchaseOrderAmount, 2) ?></p>                </div>
+                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 border-0 border-bottom">
+                    <p class="mb-0">Best-Selling Product</p>
+                    <p class="mb-0"><?= $topSellingProducts[0]['ProductName'] ?? 'N/A' ?></p>
+                </div>
+
+                <!-- Product Metrics -->
+                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 border-0 border-bottom">
+                    <p class="mb-0">Products Uploaded</p>
+                    <p class="mb-0"><?= count($products) ?></p>
+                </div>
+                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 border-0 border-bottom">
+                    <p class="mb-0">Total Sales</p>
+                    <p class="mb-0"><?= $totalSales ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <?php if ($isKycVerified === 'Pending') : ?>
+    <div class="col-xl-4 col-lg-12 col-xxl-4 col-sm-12">
+        <div class="card">
+            <div class="card-body text-center ai-icon text-primary">
+                <!-- Pending Icon -->
+                <svg id="pending-icon" class="my-2" viewBox="0 0 24 24" width="80" height="80"
+                    stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle>
+                    <line x1="12" y1="6" x2="12" y2="12" stroke="currentColor" stroke-width="2"></line>
+                    <line x1="12" y1="12" x2="15" y2="9" stroke="currentColor" stroke-width="2"></line>
+                </svg>
+                <h4 class="my-2">You are not verified yet</h4>
+                <a href="business_verification" class="btn my-2 btn-primary btn-lg px-4"><i
+                        class="fa fa-clock-o"></i> Verify Now</a>
+            </div>
+        </div>
+    </div>
+<?php elseif ($isKycVerified === 'In Process') : ?>
+    <div class="col-xl-4 col-lg-12 col-xxl-4 col-sm-12">
+        <div class="card">
+            <div class="card-body text-center ai-icon text-warning">
+                <!-- In Process Icon -->
+                <svg id="in-process-icon" class="my-2" viewBox="0 0 24 24" width="80" height="80"
+                    stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle>
+                    <line x1="12" y1="6" x2="12" y2="12" stroke="currentColor" stroke-width="2"></line>
+                    <line x1="12" y1="12" x2="15" y2="9" stroke="currentColor" stroke-width="2"></line>
+                    <circle cx="12" cy="12" r="1" fill="currentColor"></circle>
+                </svg>
+                <h4 class="my-2">Your KYC verification is in process</h4>
+                <a href="javascript:void(0);" class="btn my-2 btn-warning btn-lg px-4"><i
+                        class="fa fa-clock-o"></i> Check Status</a>
+            </div>
+        </div>
+    </div>
+<?php elseif ($isKycVerified === 'Completed') : ?>
+    <div class="col-xl-4 col-lg-12 col-xxl-4 col-sm-12">
+        <div class="card">
+            <div class="card-body text-center ai-icon text-success">
+                <!-- Completed Icon -->
+                <svg id="completed-icon" class="my-2" viewBox="0 0 24 24" width="80" height="80"
+                    stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle>
+                    <path d="M9 12l2 2l4 -4" stroke="currentColor" stroke-width="2"></path>
+                </svg>
+                <h4 class="my-2">Your KYC is successfully completed</h4>
+                <a href="javascript:void(0);" class="btn my-2 btn-success btn-lg px-4"><i
+                        class="fa fa-check"></i> View Details</a>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
                 <div class="col-xl-9 col-xxl-8">
                     <div class="card">
                         <div class="card-header border-0 flex-wrap">
@@ -140,7 +362,7 @@
                         </div>
                         <div class="card-body pt-0">
                             <div class="table-responsive">
-                                <table class="table table-striped">
+                                <table id="example3" class="display min-w850">
                                     <thead>
                                         <tr>
                                             <th>Product Name</th>
@@ -161,20 +383,20 @@
                                                     <?php foreach ($products as $product) : ?>
                                                         <tr>
                                                             <td>
-                                                                <?= esc($product['product_name']); ?>
+                                                                <?= esc($product['ProductName']); ?>
                                                             </td>
                                                             <td>
-                                                                <?= esc($product['category']); ?>
+                                                                <?= esc($product['DosageForm']); ?>
                                                             </td>
                                                             <td>$
                                                                 <?= number_format($product['price'], 2); ?>
                                                             </td>
                                                             <td>
-                                                                <?= ($product['stock_quantity'] > 0) ? 'In Stock' : 'Out of Stock'; ?>
+                                                                <?= ($product['total_units'] > 0) ? 'In Stock' : 'Out of Stock'; ?>
                                                             </td>
                                                             <td>
-                                                                <a href="<?= base_url('business_edit_product?id='. $product['id'] ); ?>" class="btn btn-sm btn-primary">Edit</a>
-                                                                <a href="<?= base_url('product/delete/' . $product['id']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
+                                                                <a href="<?= base_url('business_edit_product?id='. $product['product_id'] ); ?>" class="btn btn-sm btn-primary">Edit</a>
+                                                                <a href="<?= base_url('product/delete/' . $product['product_id']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
                                                             </td>
                                                         </tr>
                                                         <?php endforeach; ?>
@@ -436,14 +658,58 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
+	<script src="vendor/global/global.min.js"></script>
+	<script src="vendor/chart-js/chart.bundle.min.js"></script>
+	
+	<!-- Apex Chart -->
+	<script src="vendor/apexchart/apexchart.js"></script>
+
+	<!-- Chartist -->
+	<script src="vendor/chartist/js/chartist.min.js"></script>
+	<script src="vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+	<!-- Flot -->
+	<script src="vendor/flot/jquery.flot.js"></script>
+	<script src="vendor/flot/jquery.flot.pie.js"></script>
+	<script src="vendor/flot/jquery.flot.resize.js"></script>
+	<script src="vendor/flot-spline/jquery.flot.spline.min.js"></script>
+
+	<!-- Chart sparkline plugin files -->
+	<script src="vendor/jquery-sparkline/jquery.sparkline.min.js"></script>
+	<script src="js/plugins-init/sparkline-init.js"></script>
+
+	<!-- Chart piety plugin files -->
+	<script src="vendor/peity/jquery.peity.min.js"></script>
+	<script src="js/plugins-init/piety-init.js"></script>
+
+	<!-- counter -->
+	<script src="vendor/counter/counter.min.js"></script>
+	<script src="vendor/counter/waypoint.min.js"></script>
+
+	<!-- Dashboard 1 -->
+	<script src="js/dashboard/dashboard-1.js"></script>
+
+	<!-- Init file -->
+	<script src="js/plugins-init/widgets-script-init.js"></script>
+
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+	<script src="js/custom.min.js"></script>
+	<script src="js/dlabnav-init.js"></script>
+
+	<!-- Chartist -->
+	<script src="vendor/chartist/js/chartist.min.js"></script>
+	<script src="vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
     <script src="vendor/global/global.min.js"></script>
     <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="vendor/bootstrap-datepicker-master/js/bootstrap-datepicker.min.js"></script>
     <!-- Chart piety plugin files -->
     <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="vendor/datatables/responsive/responsive.js"></script>
+    <script src="js/plugins-init/datatables.init.js"></script>
 
     <!-- Apex Chart -->
-    <script src="vendor/apexchart/apexchart.js"></script>
 
     <!-- Dashboard 1 -->
     <script src="js/dashboard/portfolio.js"></script>

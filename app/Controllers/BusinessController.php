@@ -9,6 +9,7 @@ use App\Models\ManufacturerProductModel;
 use App\Models\SupportModel;
 use App\Models\B2BOrderModel;
 use App\Models\PurchaseOrderModel;
+use App\Models\ProductModel;
 
 class BusinessController extends Controller
 {
@@ -61,18 +62,77 @@ class BusinessController extends Controller
         $user = $this->authenticate();
         
         // Check if the user's KYC is verified
-        $isKycVerified = $user['kyc_verify'];
-    
+        $isKycVerified = !empty($user['kyc_verify']) ? $user['kyc_verify'] : 'Pending';
+        
         // Load the ProductModel
-        $model = new ManufacturerProductModel();
-    
+        $productModel = new ProductModel();
+        
         // Fetch all products
         $userId = $user['user_id'];
-        $data['products'] = $model->where('user_id', $userId)->findAll();
+        $data['products'] = $productModel->where('manufacturer_id', $userId)->findAll();
+        
+        // Get the count of products
+        $data['productCount'] = count($data['products']);
+        
+        // Load the B2BOrderModel
+        $b2bOrderModel = new B2BOrderModel();
+        
+        // Count b2b_orders where manufacturer_id = user_id
+        $data['b2bOrderCount'] = $b2bOrderModel->where('manufacturer_id', $userId)->countAllResults();
+        
+        // Load the PurchaseOrderModel
+        $purchaseOrderModel = new PurchaseOrderModel();
+        
+        // Count purchase_orders where manufacturer_id = user_id
+        $data['purchaseOrderCount'] = $purchaseOrderModel->where('manufacturer_id', $userId)->countAllResults();
+        
+        // Calculate total amount of purchase orders
+        $data['totalPurchaseOrderAmount'] = $purchaseOrderModel->selectSum('total_amount')
+            ->where('manufacturer_id', $userId)
+            ->get()
+            ->getRow()
+            ->total_amount ?? 0;
+            
+        // Calculate total amount of product requirements
+        $data['totalProductRequirementAmount'] = $b2bOrderModel->selectSum('total_amount')
+            ->where('manufacturer_id', $userId)
+            ->get()
+            ->getRow()
+            ->total_amount ?? 0;
+        
+        // Get total sales of products (sum of sold_units)
+        $data['totalSales'] = $productModel->selectSum('sold_units')
+            ->where('manufacturer_id', $userId)
+            ->get()
+            ->getRow()
+            ->sold_units ?? 0;
     
-        // Pass the user's data and KYC status to the views
+        // Get top-selling products (if you want, you can modify this logic to pick the top N)
+        $data['topSellingProducts'] = $productModel->where('manufacturer_id', $userId)
+            ->orderBy('sold_units', 'desc')
+            ->limit(5)
+            ->findAll();
+        
+        // Get product categories count
+        $data['categoryCount'] = $productModel->select('DosageForm')
+            ->where('manufacturer_id', $userId)
+            ->distinct()
+            ->countAllResults();
+        
+        // Pass the user's data, KYC status, and order counts to the views
         $header = view('business/business_header', ['user' => $user]);
-        $home = view('business/business_home', ['user' => $user, 'products' => $data['products'], 'isKycVerified' => $isKycVerified]);
+        $home = view('business/business_home', [
+            'user' => $user,
+            'products' => $data['products'],
+            'isKycVerified' => $isKycVerified,
+            'b2bOrderCount' => $data['b2bOrderCount'],
+            'purchaseOrderCount' => $data['purchaseOrderCount'],
+            'totalPurchaseOrderAmount' => $data['totalPurchaseOrderAmount'],
+            'totalProductRequirementAmount' => $data['totalProductRequirementAmount'],
+            'totalSales' => $data['totalSales'],
+            'topSellingProducts' => $data['topSellingProducts'],
+            'categoryCount' => $data['categoryCount'],
+        ]);
         
         return $header . $home;
     }
