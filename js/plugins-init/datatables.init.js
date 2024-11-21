@@ -286,6 +286,8 @@ let dataSet = [
 	
 	// table row
 	var table = $('#dataTable1, #dataTable2, #dataTable3, #dataTable4,  #example3, #example4 ').DataTable({
+		pageLength:5,  
+		lengthMenu: [5, 10, 25, 50],
 		language: {
 			paginate: {
 			  next: '<i class="fa fa-angle-double-right" aria-hidden="true"></i>',
