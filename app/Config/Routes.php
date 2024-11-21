@@ -163,8 +163,10 @@ $routes->post('submit-product-requirement', 'DistributorController::submitProduc
 $routes->get('distributor/getProductsByManufacturer/(:num)', 'DistributorController::getProductsByManufacturer/$1');
 $routes->post('distributor/deleteRequirement', 'DistributorController::deleteRequirement');
 $routes->get('distributor/viewRequirement/(:num)', 'DistributorController::viewRequirement/$1');
-
-
+$routes->get('view-products', 'DistributorController::DistributorViewProducts');
+$routes->get('view-purchase-order', 'DistributorController::DistributorPurchaseOrder');
+$routes->get('view_manufacturer', 'DistributorController::DistributorViewManufacturer');
+$routes->get('distributor_view_requirement', 'DistributorController::distributor_view_requirement');
 
 //auth
 $routes->get('auth/logout', 'AuthController::logout');

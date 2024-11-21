@@ -184,8 +184,7 @@
                                                     <button class="btn btn-danger btn-sm delete-btn" data-id="<?= esc($requirement->order_id) ?>">
                                                         Delete
                                                     </button>
-                                                    <a href="<?= site_url('distributor/viewRequirement/' . esc($requirement->order_id)) ?>" class="btn btn-info btn-sm">
-                                                        View
+                                                    <a href="<?= base_url('distributor_view_requirement') ?>" class="btn btn-info btn-sm">                                                        View
                                                     </a>
                                                 </td>
                                             </tr>

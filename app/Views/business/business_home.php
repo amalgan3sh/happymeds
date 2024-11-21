@@ -397,22 +397,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="upcomingFeatureModal" tabindex="-1" aria-labelledby="upcomingFeatureModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="upcomingFeatureModalLabel">Upcoming Feature</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    This feature is currently under development and will be launched soon.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <script>
         document.getElementById('redirectToVerification').addEventListener('click', function() {

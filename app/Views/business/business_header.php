@@ -593,10 +593,11 @@
                                         <span class="nav-text">Products</span>
                                     </a>
                                     <ul aria-expanded="false">
-                                        <li><a href="distributor_requirement">Product Requirement</a></li>
+                                        <li><a href="distributor_requirement">Requirements</a></li>
+                                        <li><a href="view-products">Products</a></li>
                                         <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Product Registration</a></li>
-                                        <li><a href="business_stock_management">Stock Management</a></li>
-                                        <li><a href="business_product_documents">Product Documents</a></li>
+                                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Stocks</a></li>
+                                        
                                     </ul>
                                 </li>
                                 <li>
@@ -605,10 +606,10 @@
                                         <span class="nav-text">Orders</span>
                                     </a>
                                     <ul aria-expanded="false">
-                                        <li><a href="business_orders">Purchase Order</a></li>
-                                        <li><a href="business_purchase_management">Purchase Management</a></li>
-                                        <li><a href="business_sales_management">Sales Management</a></li>
-                                        <li><a href="business_refund">Refund</a></li>
+                                        <li><a href="view-purchase-order">Purchase Order</a></li>
+                                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Purchase Management</a></li>
+                                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Sales Management</a></li>
+                                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Refund</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -617,14 +618,14 @@
                                         <span class="nav-text">Accounts</span>
                                     </a>
                                     <ul aria-expanded="false">
-                                        <li><a href="business_account_summary">Account Summary</a></li>
+                                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Account Summary</a></li>
                                         <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Rewards</a>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="business_documents" aria-expanded="false">
-                                        <i class="material-symbols-outlined">description</i>
-                                        <span class="nav-text">Documents</span>
+                                    <a href="view_manufacturer" aria-expanded="false">
+                                        <i class="material-symbols-outlined">details</i>
+                                        <span class="nav-text">Manufacturer</span>
                                     </a>
                                 </li>
                                 <li>
@@ -633,11 +634,11 @@
                                         <span class="nav-text">Forms</span>
                                     </a>
                                     <ul aria-expanded="false">
-                                        <li><a href="business_forms">Forms</a></li>
+                                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Forms</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="business_settings" aria-expanded="false">
+                                    <a href="business_edit_profile" aria-expanded="false">
                                         <i class="material-symbols-outlined">settings</i>
                                         <span class="nav-text">Settings</span>
                                     </a>
@@ -649,7 +650,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="logout" aria-expanded="false">
+                                    <a href="public_login" aria-expanded="false">
                                         <i class="material-symbols-outlined">logout</i>
                                         <span class="nav-text">Logout</span>
                                     </a>
@@ -665,7 +666,7 @@
         </a>
     </li>
     <li>
-        <a href="business_verification" aria-expanded="false">
+        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal" aria-expanded="false">
             <i class="material-symbols-outlined">verified_user</i>
             <span class="nav-text">KYC Verification</span>
         </a>
@@ -676,30 +677,30 @@
             <span class="nav-text">Products</span>
         </a>
         <ul aria-expanded="false">
-            <li><a href="business_product_registration">Product Registration</a></li>
-            <li><a href="business_stock_management">Stock Management</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Product Registration</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Stock Management</a></li>
         </ul>
     </li>
     <li>
-        <a href="business_orders" aria-expanded="false">
+        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal" aria-expanded="false">
             <i class="material-symbols-outlined">shopping_cart</i>
             <span class="nav-text">Orders</span>
         </a>
     </li>
     <li>
-        <a href="business-message" aria-expanded="false">
+        <a href="business-message"  aria-expanded="false">
             <i class="material-symbols-outlined">message</i>
             <span class="nav-text">Message</span>
         </a>
     </li>
     <li>
-        <a href="business-settings" aria-expanded="false">
+        <a href="business_edit_profile"  aria-expanded="false">
             <i class="material-symbols-outlined">settings</i>
             <span class="nav-text">Settings</span>
         </a>
     </li>
     <li>
-        <a href="logout" aria-expanded="false">
+        <a href="public_login" aria-expanded="false">
             <i class="material-symbols-outlined">logout</i>
             <span class="nav-text">Logout</span>
         </a>
@@ -715,7 +716,7 @@
         </a>
     </li>
     <li>
-        <a href="business_verification" aria-expanded="false">
+        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal" aria-expanded="false">
             <i class="material-symbols-outlined">verified_user</i>
             <span class="nav-text">KYC Verification</span>
         </a>
@@ -726,9 +727,9 @@
             <span class="nav-text">Products</span>
         </a>
         <ul aria-expanded="false">
-            <li><a href="business_product_registration">Product Registration</a></li>
-            <li><a href="business_stock_management">Stock Management</a></li>
-            <li><a href="business_agency_documents">Agency Documents</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Product Registration</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Stock Management</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Agency Documents</a></li>
         </ul>
     </li>
     <li>
@@ -737,8 +738,8 @@
             <span class="nav-text">Orders</span>
         </a>
         <ul aria-expanded="false">
-            <li><a href="business_orders">Purchase Order</a></li>
-            <li><a href="business_sales_management">Sales Management</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Purchase Order</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Sales Management</a></li>
         </ul>
     </li>
     <li>
@@ -748,13 +749,13 @@
         </a>
     </li>
     <li>
-        <a href="business-settings" aria-expanded="false">
+        <a href="business_edit_profile" aria-expanded="false">
             <i class="material-symbols-outlined">settings</i>
             <span class="nav-text">Settings</span>
         </a>
     </li>
     <li>
-        <a href="logout" aria-expanded="false">
+        <a href="public_login" aria-expanded="false">
             <i class="material-symbols-outlined">logout</i>
             <span class="nav-text">Logout</span>
         </a>
@@ -770,7 +771,7 @@
         </a>
     </li>
     <li>
-        <a href="business_verification" aria-expanded="false">
+        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal" aria-expanded="false">
             <i class="material-symbols-outlined">verified_user</i>
             <span class="nav-text">KYC Verification</span>
         </a>
@@ -781,9 +782,9 @@
             <span class="nav-text">Products</span>
         </a>
         <ul aria-expanded="false">
-            <li><a href="business_product_registration">Product Registration</a></li>
-            <li><a href="business_stock_management">Stock Management</a></li>
-            <li><a href="business_franchise_documents">Franchise Documents</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Product Registration</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Stock Management</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Franchise Documents</a></li>
         </ul>
     </li>
     <li>
@@ -792,12 +793,12 @@
             <span class="nav-text">Orders</span>
         </a>
         <ul aria-expanded="false">
-            <li><a href="business_orders">Purchase Order</a></li>
-            <li><a href="business_refund">Refund</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Purchase Order</a></li>
+            <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#upcomingFeatureModal">Refund</a></li>
         </ul>
     </li>
     <li>
-        <a href="business-settings" aria-expanded="false">
+        <a href="business_edit_profile" aria-expanded="false">
             <i class="material-symbols-outlined">settings</i>
             <span class="nav-text">Settings</span>
         </a>
@@ -809,7 +810,7 @@
         </a>
     </li>
     <li>
-        <a href="logout" aria-expanded="false">
+        <a href="public_login" aria-expanded="false">
             <i class="material-symbols-outlined">logout</i>
             <span class="nav-text">Logout</span>
         </a>
@@ -834,3 +835,20 @@
         <!--**********************************
             Sidebar end
         ***********************************-->
+
+        <div class="modal fade" id="upcomingFeatureModal" tabindex="-1" aria-labelledby="upcomingFeatureModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="upcomingFeatureModalLabel">Upcoming Feature</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This feature is currently under development and will be launched soon.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>

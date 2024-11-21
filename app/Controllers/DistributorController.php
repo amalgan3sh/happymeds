@@ -65,6 +65,112 @@ class DistributorController extends Controller
         return $header . $home;
     }
 
+    public function distributor_view_requirement()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+        
+        // Check if the user's KYC is verified
+        $isKycVerified = $user['kyc_verify'];
+    
+        // Load the ProductModel
+        $model = new ManufacturerProductModel();
+    
+        // Fetch all products
+        $userId = $user['user_id'];
+        $data['products'] = $model->where('user_id', $userId)->findAll();
+    
+        // Pass the user's data and KYC status to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/distributor/distributor_view_requirement', ['user' => $user, 'products' => $data['products'], 'isKycVerified' => $isKycVerified]);
+        
+        return $header . $home;
+    }
+
+    public function DistributorViewProducts()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+        // Check if the authenticate method returned a RedirectResponse
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user; // Return the redirect response to stop further execution
+        }
+    
+        // Load the ProductModel and UserModel
+        $productModel = new \App\Models\ProductModel();
+        $userModel = new \App\Models\UserModel();
+    
+        // Fetch products and related manufacturer details
+        $products = $productModel->select('product_data.*, users.firstname, users.lastname, users.company_name')
+            ->join('users', 'product_data.manufacturer_id = users.user_id', 'left')
+            ->findAll();
+    
+        // Pass data to the view
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/distributor/distributor_view_products', [
+            'user' => $user,
+            'products' => $products,
+        ]);
+    
+        return $header . $home;
+    }
+    public function DistributorPurchaseOrder()
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+        
+        // Check if the authenticate method returned a RedirectResponse
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user; // Return the redirect response to stop further execution
+        }
+    
+        // Load the necessary models
+        $purchaseOrderModel = new \App\Models\PurchaseOrderModel();
+        $productModel = new \App\Models\ProductModel();
+        $userModel = new \App\Models\UserModel();
+    
+        // Fetch purchase orders, joining with products and manufacturers
+        $purchaseOrders = $purchaseOrderModel->select('purchase_orders.*, product_data.ProductName, product_data.price, users.firstname, users.lastname, users.company_name')
+            ->join('product_data', 'purchase_orders.product_details = product_data.product_id', 'left')
+            ->join('users', 'purchase_orders.manufacturer_id = users.user_id', 'left')
+            ->where('purchase_orders.customer_id', $user['user_id']) // Assuming customer_id is the distributor's ID
+            ->findAll();
+    
+        // Pass the user data and purchase orders to the view
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/distributor/distributor_purchase_order', [
+            'user' => $user,
+            'purchaseOrders' => $purchaseOrders,
+        ]);
+    
+        return $header . $home;
+    }
+
+    public function DistributorViewManufacturer()
+    {
+        // Authenticate and fetch the user session
+        $user = $this->authenticate();
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user;
+        }
+    
+        // Load the UserModel
+        $userModel = new \App\Models\UserModel();
+    
+        // Fetch manufacturers (assuming 'user_type' column identifies them)
+        $manufacturers = $userModel->where('user_type', 'manufacturer')->findAll();
+    
+        // Pass data to the view
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/distributor/distributor_view_manufacturer', [
+            'user' => $user,
+            'manufacturers' => $manufacturers, // Send manufacturers data to the view
+        ]);
+    
+        return $header . $home;
+    }
+
+
     public function getProductsByManufacturer($manufacturerId)
     {
         // Use the authenticate method to check the session and get user data
@@ -105,58 +211,48 @@ class DistributorController extends Controller
     {
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
+    
         // Check if the authenticate method returned a RedirectResponse
         if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
             return $user; // Return the redirect response to stop further execution
         }
-        $userModel = new \App\Models\UserModel(); // Ensure you have a UserModel defined for users table.
-
+    
+        $userModel = new \App\Models\UserModel(); // Ensure you have a UserModel defined for the users table.
+    
         // Load the order data from the model
         $b2bOrderModel = new B2BOrderModel();
         $order = $b2bOrderModel->find($orderId);
     
-        if ($order) {
-
-            $distributor = $userModel->find($user['user_id']);
-            $manufacturer = $userModel->find($order['manufacturer_id']); // Fetch manufacturer details
-
-
-            if (!$distributor) {
-                return redirect()->back()->with('error', 'Distributor details not found.');
-            }
-
-
-            // Prepare data for the view
-            $data = [
-                'order' => $order,
-                'distributor' => $distributor,
-                'manufacturer' => $manufacturer,
-            ];
-    
-            // Render the HTML view with the order data
-            $html = view('business/distributor/view_requirement_pdf', $data);
-    
-            // Setup Dompdf options
-            $options = new \Dompdf\Options();
-            $options->set('isRemoteEnabled', true); // Enable fetching of remote images and CSS
-            $dompdf = new \Dompdf\Dompdf($options);
-    
-            // Load the HTML content to Dompdf
-            $dompdf->loadHtml($html);
-    
-            // Set paper size and orientation (A4 Portrait)
-            $dompdf->setPaper('A4', 'portrait');
-    
-            // Render the HTML as PDF
-            $dompdf->render();
-    
-            // Output the generated PDF to the browser
-            // Set "Attachment" => true to force download
-            $dompdf->stream("Product_Requirement_$orderId.pdf", ["Attachment" => false]);
-        } else {
-            // Redirect back with an error message if order not found
+        // Check if the order exists
+        if (!$order) {
             return redirect()->back()->with('error', 'Order not found.');
         }
+    
+        // Fetch distributor details
+        $distributor = $userModel->find($user['user_id']);
+        if (!$distributor) {
+            return redirect()->back()->with('error', 'Distributor details not found.');
+        }
+    
+        // Fetch manufacturer details
+        $manufacturer = $userModel->find($order['manufacturer_id']);
+        if (!$manufacturer) {
+            return redirect()->back()->with('error', 'Manufacturer details not found.');
+        }
+    
+        // Prepare data for the view
+        $data = [
+            'order' => $order,
+            'distributor' => $distributor,
+            'manufacturer' => $manufacturer,
+        ];
+    
+        // Render views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/distributor/view_requirement_pdf', $data);
+    
+        // Return the combined view
+        return $header . $home;
     }
 
     public function submitProductRequirement()
