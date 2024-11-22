@@ -249,6 +249,9 @@ public function passwordResetResponse()
                     $this->setUserSession($user);
                     // Store user_id in session
                     session()->set('user_id', $user['user_id']);
+                    if ($user['user_type'] == 'agent') {
+                        return redirect()->to("/agent_home")->with("success", "Login successful");
+                    }
                     return redirect()->to("/business_home")->with("success", "Login successful");
                 } else {
                     return redirect()->back()->with("error", "Incorrect password");

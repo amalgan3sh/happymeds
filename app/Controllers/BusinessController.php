@@ -363,7 +363,7 @@ class BusinessController extends Controller
             // Now update the users table with kyc_status as 'in_process'
         $userModel = new \App\Models\UserModel();
         $user_data = [
-            'kyc_status' => 'in_process',  // or you can set any other status like 'pending', etc.
+            'kyc_verify' => 'in_process',  // or you can set any other status like 'pending', etc.
             'updated_at' => date('Y-m-d H:i:s')
         ];
         log_message('debug', 'Update data: ' . print_r($user_data, true));
@@ -516,8 +516,14 @@ class BusinessController extends Controller
         // Load the B2BOrderModel
         $b2bOrderModel = new \App\Models\B2BOrderModel();
 
-        // Fetch all orders where user_id matches the logged-in user
-        $orders = $b2bOrderModel->findAll();
+        // Fetch all orders where manufacturer_id matches the logged-in user's user_id
+        // and order the results by 'created_at' in descending order
+        $orders = $b2bOrderModel
+        ->select('b2b_orders.*, users.user_name') // Select orders fields and user_name
+        ->join('users', 'users.user_id = b2b_orders.user_id') // Join users table on user_id
+        ->where('b2b_orders.manufacturer_id', $user['user_id']) // Filter by manufacturer_id
+        ->orderBy('b2b_orders.created_at', 'DESC') // Order by created_at descending
+        ->findAll();
     
         // Pass the user's data to the views
         $header = view('business/business_header', ['user' => $user]);

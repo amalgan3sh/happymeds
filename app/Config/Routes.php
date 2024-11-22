@@ -25,6 +25,14 @@ $routes->post('product_favorite', 'PartnerController::addFavorite');
 $routes->post('support_request', 'PartnerController::submitSupportRequest');
 
 $routes->get('business_home', 'BusinessController::BusinessHome');
+$routes->get('agent_home', 'AgentController::AgentHome');
+$routes->get('agent_add_customer', 'AgentController::AgentAddCustomer');
+$routes->get('agent_view_customer', 'AgentController::AgentViewCustomer');
+$routes->get('agent_add_customer_bank_account', 'AgentController::AgentAddCustomerBankAccount');
+$routes->get('agent_view_products', 'AgentController::AgentViewProducts');
+$routes->get('agent_product_master', 'AgentController::AgentProductMaster');
+$routes->get('agent_pre_costing', 'AgentController::AgentPreCosting');
+$routes->get('agent_costing', 'AgentController::AgentCosting');
 
 $routes->get('/public_login', 'PublicController::publicLogin');
 $routes->get('/public_register', 'PublicController::publicRegisteration');

@@ -14,7 +14,7 @@
                                 <thead>
                                     <tr>
                                         <th style="width:80px;">#</th>
-                                        <th>User ID</th>
+                                        <th>Customer Name</th>
                                         <th>Order items</th>
                                         <th>Total Amount</th>
                                         <th>Order Date</th>
@@ -27,18 +27,25 @@
         <?php foreach ($orders as $key => $order): ?>
             <tr>
                 <td><strong><?= $key + 1; ?></strong></td>
-                <td><?= esc($order['user_id']); ?></td>
+                <td><?= esc($order['user_name']); ?></td>
                 <td>
                     <?php 
                     // Decode the order items JSON string
-                    $order_items = json_decode($order['order_items'], true); 
-                    if (!empty($order_items)) {
-                        foreach ($order_items as $item) {
-                            // Display each item's name, quantity, and price
-                            echo esc($item['ProductName']) . ' (Quantity: ' . esc($item['quantity']) . ', Price: ' . esc($item['price']) . ')<br>';
+                    $order_items = json_decode($order['order_items'], true);
+
+                    // Check if JSON decoding was successful
+                    if (json_last_error() === JSON_ERROR_NONE && is_array($order_items)) {
+                        foreach ($order_items as $key => $item) {
+                            if (is_array($item)) {
+                                echo esc($item['ProductName']) 
+                                    . ' (Quantity: ' . esc($item['quantity']) 
+                                    . ', Price: ' . esc($item['price']) . ')<br>';
+                            } else {
+                                echo 'Invalid item format.<br>';
+                            }
                         }
                     } else {
-                        echo 'No items found.';
+                        echo 'Invalid or no items found.<br>';
                     }
                     ?>
                 </td>

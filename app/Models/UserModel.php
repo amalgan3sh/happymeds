@@ -13,8 +13,9 @@ class UserModel extends Model
     protected $allowedFields = [
         'user_name', 'email', 'phone', 'password', 'company_name', 'otp', 'user_type',
         'firstname', 'lastname', 'designation', 'skills', 'gender', 'dob', 'country', 
-        'city', 'about_me', 'profile_photo', 'language', 'age', 'experience', 
-        'location', 'wallet_balance'
+        'city', 'about_me', 'profile_photo', 'language', 'age', 'experience',
+        'location', 'wallet_balance', 'total_investment', 'total_turnover', 
+        'kyc_verify', 'reset_token', 'reset_token_expires'
     ];
     // Automatically manage created_at and updated_at
     protected $useTimestamps = true;

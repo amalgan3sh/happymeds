@@ -67,8 +67,8 @@
                     <i class="la la-box"></i> <!-- Icon for Total Product Requirement -->
                 </span>
                                 <div class="media-body text-white">
-                                    <p class="mb-1">Total Product Requirement</p>
-                                    <h3 class="text-white"><?= $b2bOrderCount ?></h3>
+                                    <p class="mb-1">Total Customer</p>
+                                    <h3 class="text-white"><?= $totalCustomers ?></h3>
                                     <div class="progress mb-2 bg-secondary">
                                         <div class="progress-bar progress-animated bg-white" style="width: 80%">
                                         </div>
@@ -87,8 +87,8 @@
                     <i class="la la-file-alt"></i> <!-- Icon for Total Purchase Orders -->
                 </span>
                                 <div class="media-body text-white">
-                                    <p class="mb-1">Total Purchase Orders</p>
-                                    <h3 class="text-white"><?= $purchaseOrderCount ?></h3>
+                                    <p class="mb-1">Distributor</p>
+                                    <h3 class="text-white"><?= $distributorCount ?></h3>
                                     <div class="progress mb-2 bg-primary">
                                         <div class="progress-bar progress-animated bg-white" style="width: 50%">
                                         </div>
@@ -107,8 +107,8 @@
                     <i class="la la-dollar-sign"></i> <!-- Icon for Total Amount of Product Requirement -->
                 </span>
                                 <div class="media-body text-white">
-                                    <p class="mb-1">Total Amount of Product Requirement</p>
-                                    <h3 class="text-white"><?= $totalProductRequirementAmount ?></h3>
+                                    <p class="mb-1">Franchise</p>
+                                    <h3 class="text-white"><?= $franchiseCount ?></h3>
                                     <div class="progress mb-2 bg-primary">
                                         <div class="progress-bar progress-animated bg-white" style="width: 76%">
                                         </div>
@@ -127,8 +127,8 @@
                     <i class="la la-warehouse"></i> <!-- Icon for Total Amount of Purchase Orders -->
                 </span>
                                 <div class="media-body text-white">
-                                    <p class="mb-1">Total Amount of Purchase Orders</p>
-                                    <h3 class="text-white"><?= $totalPurchaseOrderAmount ?></h3>
+                                    <p class="mb-1">Manufacturer</p>
+                                    <h3 class="text-white"><?= $manufacturerCount ?></h3>
                                     <div class="progress mb-2 bg-secondary">
                                         <div class="progress-bar progress-animated bg-white" style="width: 30%">
                                         </div>
@@ -184,9 +184,10 @@
                                 </div>
                                 <div class="media-content">
                                     <h4 class="mt-3 font-w400 fs-16 text-dark mb-0">Joined on <?= date('d M Y', strtotime($user['created_date'])) ?></h4>
-                                    <p class="my-3">Welcome to your dashboard! Here you can manage your profile, track recent activities, and stay updated on important notifications. Keep your information up to date to ensure smooth business operations and get the most
-                                        out of our platform. If you need any assistance, feel free to reach out to our support team.</p>
-                                </div>
+                                    <p class="my-3">
+                                    Welcome to your dashboard, Agent!
+                                   For assistance, contact support.
+                                    </div>
                                 <div class="text-center mt-4">
                                     <a href="<?= site_url('business_edit_profile') ?>" class="btn btn-primary btn-sm">Update Profile</a>
                                     <a href="<?= site_url('business_view_profile') ?>" class="btn btn-secondary btn-sm">View Details</a>
@@ -219,7 +220,7 @@
                                 </li>
                                 <li class="list-group-item d-flex px-0 justify-content-between">
                                     <strong>Wallet Balance</strong>
-                                    <span class="mb-0">$<?= number_format($user['wallet_balance'] ?? 0, 2); ?></span>
+                                    <span class="mb-0"><?= number_format($user['wallet_balance'] ?? 0, 2); ?></span>
                                 </li>
                             </ul>
                         </div>
@@ -234,6 +235,71 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-4 col-lg-6">
+						<div class="card">
+							<div class="card-header border-0 pb-0">
+								<h4 class="card-title">Timeline</h4>
+							</div>
+							<div class="card-body p-0">
+								<div id="DZ_W_TimeLine" class="widget-timeline dlab-scroll my-4 px-4 height370">
+									<ul class="timeline">
+										<li>
+											<div class="timeline-badge primary"></div>
+											<a class="timeline-panel text-muted" href="#">
+												<span>10 minutes ago</span>
+												<h6 class="mb-0">Youtube, a video-sharing website, goes live <strong
+														class="text-primary">$500</strong>.</h6>
+											</a>
+										</li>
+										<li>
+											<div class="timeline-badge info">
+											</div>
+											<a class="timeline-panel text-muted" href="#">
+												<span>20 minutes ago</span>
+												<h6 class="mb-0">New order placed <strong
+														class="text-info">#XF-2356.</strong></h6>
+												<p class="mb-0">Quisque a consequat ante Sit amet magna at volutapt...
+												</p>
+											</a>
+										</li>
+										<li>
+											<div class="timeline-badge danger">
+											</div>
+											<a class="timeline-panel text-muted" href="#">
+												<span>30 minutes ago</span>
+												<h6 class="mb-0">john just buy your product <strong
+														class="text-warning">Sell $250</strong></h6>
+											</a>
+										</li>
+										<li>
+											<div class="timeline-badge success">
+											</div>
+											<a class="timeline-panel text-muted" href="#">
+												<span>15 minutes ago</span>
+												<h6 class="mb-0">StumbleUpon is acquired by eBay. </h6>
+											</a>
+										</li>
+										<li>
+											<div class="timeline-badge warning">
+											</div>
+											<a class="timeline-panel text-muted" href="#">
+												<span>20 minutes ago</span>
+												<h6 class="mb-0">Mashable, a news website and blog, goes live.</h6>
+											</a>
+										</li>
+										<li>
+											<div class="timeline-badge dark">
+											</div>
+											<a class="timeline-panel text-muted" href="#">
+												<span>20 minutes ago</span>
+												<h6 class="mb-0">Mashable, a news website and blog, goes live.</h6>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 
                 <div class="col-xl-4 col-lg-6 col-sm-6">
                     <div class="card active_users">
@@ -347,89 +413,119 @@
                                 </div>
                             </div>
                             <?php endif; ?>
-
-
-                                <div class="col-xl-9 col-xxl-8">
-
-                                    <div class="card">
-                                        <div class="card-header border-0 flex-wrap">
-                                            <h4 class="card-title">Your Products</h4>
-                                            <div class="d-flex align-items-center">
-                                                <!-- Button trigger modal -->
-                                                <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" onclick="window.location.href='business_add_product#step_product_details' ">
-                                                    + Add New
-                                                </button>
-
-                                                <div class="dropdown custom-dropdown mb-0 ms-3">
-                                                    <div class="btn sharp tp-btn" data-bs-toggle="dropdown" aria-expanded="false" role="button">
-                                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M12.0335 13C12.5854 13 13.0328 12.5523 13.0328 12C13.0328 11.4477 12.5854 11 12.0335 11C11.4816 11 11.0342 11.4477 11.0342 12C11.0342 12.5523 11.4816 13 12.0335 13Z" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            <path d="M12.0335 6C12.5854 6 13.0328 5.55228 13.0328 5C13.0328 4.44772 12.5854 4 12.0335 4C11.4816 4 11.0342 4.44772 11.0342 5C11.0342 5.55228 11.4816 6 12.0335 6Z" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            <path d="M12.0335 20C12.5854 20 13.0328 19.5523 13.0328 19C13.0328 18.4477 12.5854 18 12.0335 18C11.4816 18 11.0342 18.4477 11.0342 19C11.0342 19.5523 11.4816 20 12.0335 20Z" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="dropdown-menu dropdown-menu-end">
-                                                        <a class="dropdown-item" href="javascript:void(0);">Details</a>
-                                                        <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
-                                                    </div>
-                                                </div>
+                                <div class="col-xl-8 col-xxl-8 col-lg-12 col-sm-12">
+                                    <div id="user-activity" class="card">
+                                        <div class="card-header border-0 pb-0 d-sm-flex d-block">
+                                            <h4 class="card-title">Visitor Activity</h4>
+                                            <div class="card-action mb-sm-0 my-2">
+                                                <ul class="nav nav-pills light" id="myTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link active" id="day-tab" href="#user" data-bs-toggle="tab" data-bs-target="#day-tab-pane" role="tab" aria-selected="true">Day</a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link" id="month-tab" href="#bounce" data-bs-toggle="tab" data-bs-target="#month-tab-pane" role="tab" aria-selected="false">
+												Month</a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link" id="year-tab" href="#session-duration" data-bs-toggle="tab" data-bs-target="#year-tab-pane" role="tab" aria-selected="false">Year</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div class="card-body pt-0">
-                                            <div class="table-responsive">
-                                                <table id="example3" class="display min-w850">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Product Name</th>
-                                                            <th>Category</th>
-                                                            <th>Price</th>
-                                                            <th>Stock Status</th>
-                                                            <th>Actions</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <?php if(session()->getFlashdata('success')): ?>
-                                                            <div class="alert alert-success" id="successMessage">
-                                                                <button type="button" class="close small-close" onclick="closeAlert()">×</button>
-                                                                <?= session()->getFlashdata('success'); ?>
-                                                            </div>
-                                                            <?php endif; ?>
-                                                                <?php if (!empty($products) && is_array($products)) : ?>
-                                                                    <?php foreach ($products as $product) : ?>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <?= esc($product['ProductName']); ?>
-                                                                            </td>
-                                                                            <td>
-                                                                                <?= esc($product['DosageForm']); ?>
-                                                                            </td>
-                                                                            <td>$
-                                                                                <?= number_format($product['price'], 2); ?>
-                                                                            </td>
-                                                                            <td>
-                                                                                <?= ($product['total_units'] > 0) ? 'In Stock' : 'Out of Stock'; ?>
-                                                                            </td>
-                                                                            <td>
-                                                                                <a href="<?= base_url('business_edit_product?id='. $product['product_id'] ); ?>" class="btn btn-sm btn-primary">Edit</a>
-                                                                                <a href="<?= base_url('product/delete/' . $product['product_id']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <?php endforeach; ?>
-                                                                            <?php else : ?>
-                                                                                <tr>
-                                                                                    <td colspan="5">No products available.</td>
-                                                                                </tr>
-                                                                                <?php endif; ?>
-                                                    </tbody>
-                                                </table>
-
+                                        <div class="card-body">
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="user" role="tabpanel">
+                                                    <canvas id="activity" class="chartjs"></canvas>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="col-xl-6">
+
+
+
+
+
+
+                                <div class="card">
+                                    <div class="card-header border-0 flex-wrap">
+                                        <h4 class="card-title">Your Products</h4>
+                                        <div class="d-flex align-items-center">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" onclick="window.location.href='business_add_product#step_product_details' ">
+                                                + Add New
+                                            </button>
+
+                                            <div class="dropdown custom-dropdown mb-0 ms-3">
+                                                <div class="btn sharp tp-btn" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+                                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.0335 13C12.5854 13 13.0328 12.5523 13.0328 12C13.0328 11.4477 12.5854 11 12.0335 11C11.4816 11 11.0342 11.4477 11.0342 12C11.0342 12.5523 11.4816 13 12.0335 13Z" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M12.0335 6C12.5854 6 13.0328 5.55228 13.0328 5C13.0328 4.44772 12.5854 4 12.0335 4C11.4816 4 11.0342 4.44772 11.0342 5C11.0342 5.55228 11.4816 6 12.0335 6Z" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M12.0335 20C12.5854 20 13.0328 19.5523 13.0328 19C13.0328 18.4477 12.5854 18 12.0335 18C11.4816 18 11.0342 18.4477 11.0342 19C11.0342 19.5523 11.4816 20 12.0335 20Z" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item" href="javascript:void(0);">Details</a>
+                                                    <a class="dropdown-item text-danger" href="javascript:void(0);">Cancel</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <div class="table-responsive">
+                                            <table id="example3" class="display min-w850">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Name</th>
+                                                        <th>Category</th>
+                                                        <th>Price</th>
+                                                        <th>Stock Status</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php if(session()->getFlashdata('success')): ?>
+                                                        <div class="alert alert-success" id="successMessage">
+                                                            <button type="button" class="close small-close" onclick="closeAlert()">×</button>
+                                                            <?= session()->getFlashdata('success'); ?>
+                                                        </div>
+                                                        <?php endif; ?>
+                                                            <?php if (!empty($products) && is_array($products)) : ?>
+                                                                <?php foreach ($products as $product) : ?>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <?= esc($product['ProductName']); ?>
+                                                                        </td>
+                                                                        <td>
+                                                                            <?= esc($product['DosageForm']); ?>
+                                                                        </td>
+                                                                        <td>$
+                                                                            <?= number_format($product['price'], 2); ?>
+                                                                        </td>
+                                                                        <td>
+                                                                            <?= ($product['total_units'] > 0) ? 'In Stock' : 'Out of Stock'; ?>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="<?= base_url('business_edit_product?id='. $product['product_id'] ); ?>" class="btn btn-sm btn-primary">Edit</a>
+                                                                            <a href="<?= base_url('product/delete/' . $product['product_id']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <?php endforeach; ?>
+                                                                        <?php else : ?>
+                                                                            <tr>
+                                                                                <td colspan="5">No products available.</td>
+                                                                            </tr>
+                                                                            <?php endif; ?>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+            </div>
+            <!-- <div class="col-xl-6">
 					<div class="card h-auto"> -->
-                                <!-- <div class="card-header pb-2 d-block d-sm-flex flex-wrap border-0">
+            <!-- <div class="card-header pb-2 d-block d-sm-flex flex-wrap border-0">
         <div class="mb-3">
             <h4 class="card-title">Recent Activity</h4>
             <p class="mb-0 fs-13">Tracking the latest account transactions</p>
@@ -443,9 +539,9 @@
             </li>
         </ul>
     </div> -->
-                                <!-- <div class="card-body tab-content pt-0 pb-sm-0 pb-3"> -->
-                                <!-- Yesterday's Activity -->
-                                <!-- <div class="tab-pane fade show active" id="pills-Yesterday" role="tabpanel" aria-labelledby="pills-yesterday-tab">
+            <!-- <div class="card-body tab-content pt-0 pb-sm-0 pb-3"> -->
+            <!-- Yesterday's Activity -->
+            <!-- <div class="tab-pane fade show active" id="pills-Yesterday" role="tabpanel" aria-labelledby="pills-yesterday-tab">
             <div class="table-responsive">
                 <table class="table portfolio-table">
                     <tbody>
@@ -513,8 +609,8 @@
                 </table>
             </div>
         </div> -->
-                                <!-- Today's Activity -->
-                                <!-- <div class="tab-pane fade" id="pills-today" role="tabpanel" aria-labelledby="pills-today-tab">
+            <!-- Today's Activity -->
+            <!-- <div class="tab-pane fade" id="pills-today" role="tabpanel" aria-labelledby="pills-today-tab">
             <div class="table-responsive">
                 <table class="table portfolio-table">
                     <tbody>
@@ -562,13 +658,13 @@
                 </table>
             </div>
         </div> -->
-                                <!-- </div>
+            <!-- </div>
 </div> -->
-                                <!-- </div> -->
-                                <!-- <div class="col-xl-6"> -->
-                                <!-- <div class="row"> -->
-                                <!-- Weekly Summary -->
-                                <!-- <div class="col-xl-12">
+            <!-- </div> -->
+            <!-- <div class="col-xl-6"> -->
+            <!-- <div class="row"> -->
+            <!-- Weekly Summary -->
+            <!-- <div class="col-xl-12">
             <div class="card overflow-hidden h-auto">
                 <div class="card-body pb-4">
                     <div class="row">
@@ -606,11 +702,11 @@
         </div> -->
 
 
-                                <!-- </div> -->
-                                <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
 
-            </div>
         </div>
+    </div>
     </div>
     <!--**********************************
             Content body end
