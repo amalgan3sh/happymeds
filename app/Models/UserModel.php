@@ -15,7 +15,7 @@ class UserModel extends Model
         'firstname', 'lastname', 'designation', 'skills', 'gender', 'dob', 'country', 
         'city', 'about_me', 'profile_photo', 'language', 'age', 'experience',
         'location', 'wallet_balance', 'total_investment', 'total_turnover', 
-        'kyc_verify', 'reset_token', 'reset_token_expires'
+        'kyc_verify', 'reset_token', 'reset_token_expires','agent_id'
     ];
     // Automatically manage created_at and updated_at
     protected $useTimestamps = true;

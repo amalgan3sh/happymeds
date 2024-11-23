@@ -1,298 +1,261 @@
- <!--**********************************
-            Content body start
-        ***********************************-->
-        <div class="content-body">
-            <div class="container-fluid">
-                <!-- row -->
-				<div class="row">
-                    <div class="col-xl-12 col-xxl-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Form step</h4>
-                            </div>
-                            <div class="card-body">
-								<div id="smartwizard" class="form-wizard order-create">
-									<ul class="nav nav-wizard">
-										<li><a class="nav-link" href="#wizard_Service"> 
-											<span>1</span> 
-										</a></li>
-										<li><a class="nav-link" href="#wizard_Time">
-											<span>2</span>
-										</a></li>
-										<li><a class="nav-link" href="#wizard_Details">
-											<span>3</span>
-										</a></li>
-										<li><a class="nav-link" href="#wizard_Payment">
-											<span>4</span>
-										</a></li>
-									</ul>
-									<div class="tab-content">
-										<div id="wizard_Service" class="tab-pane" role="tabpanel">
-											<div class="row">
-												<div class="col-lg-6 mb-2">
-													<div class="mb-3">
-														<label class="text-label form-label required">First Name</label>
-														<input type="text" name="firstName" class="form-control" placeholder="Parsley" required>
-													</div>
-												</div>
-												<div class="col-lg-6 mb-2">
-													<div class="mb-3">
-														<label class="text-label form-label required">Last Name</label>
-														<input type="text" name="lastName" class="form-control" placeholder="Montana" required>
-													</div>
-												</div>
-												<div class="col-lg-6 mb-2">
-													<div class="mb-3">
-														<label class="text-label form-label required">Email Address</label>
-														<input type="email" class="form-control" id="inputGroupPrepend2" aria-describedby="inputGroupPrepend2" placeholder="example@example.com.com" required>
-													</div>
-												</div>
-												<div class="col-lg-6 mb-2">
-													<div class="mb-3">
-														<label class="text-label form-label required">Phone Number</label>
-														<input type="number" name="phoneNumber" class="form-control" placeholder="(+1)408-657-9007" required>
-													</div>
-												</div>
-												<div class="col-lg-12 mb-3">
-													<div class="mb-3">
-														<label class="text-label form-label required">Where are you from</label>
-														<input type="text" name="place" class="form-control" required>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div id="wizard_Time" class="tab-pane" role="tabpanel">
-											<div class="row">
-												<div class="col-lg-6 mb-2">
-													<div class="mb-3">
-														<label class="text-label form-label required">Company Name</label>
-														<input type="text" name="firstName" class="form-control" placeholder="Cellophane Square" required>
-													</div>
-												</div>
-												<div class="col-lg-6 mb-2">
-													<div class="mb-3">
-														<label class="text-label form-label required">Company Email Address</label>
-														<input type="email" class="form-control" id="emial1" placeholder="example@example.com.com" required>
-													</div>
-												</div>
-												<div class="col-lg-6 mb-2">
-													<div class="mb-3">
-														<label class="text-label form-label required">Company Phone Number</label>
-														<input type="number" name="phoneNumber" class="form-control" placeholder="(+1)408-657-9007" required>
-													</div>
-												</div>
-												<div class="col-lg-6 mb-2">
-													<div class="mb-3">
-														<label class="text-label form-label required">Your position in Company</label>
-														<input type="text" name="place" class="form-control" required>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div id="wizard_Details" class="tab-pane" role="tabpanel">
-											<div class="row align-items-center">
-												<div class="col-sm-4 mb-2">
-													<label class="form-label required">Monday</label>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="9.00" type="number" name="input1" id="input1">
-													</div>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="6.00" type="number" name="input2" id="input2">
-													</div>
-												</div>
-											</div>
-											<div class="row align-items-center">
-												<div class="col-sm-4 mb-2">
-													<label class="form-label required">Tuesday </label>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="9.00" type="number" name="input3" id="input3">
-													</div>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="6.00" type="number" name="input4" id="input4">
-													</div>
-												</div>
-											</div>
-											<div class="row align-items-center">
-												<div class="col-sm-4 mb-2">
-													<label class="form-label required">Wednesday</label>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="9.00" type="number" name="input5" id="input5">
-													</div>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="6.00" type="number" name="input6" id="input6">
-													</div>
-												</div>
-											</div>
-											<div class="row align-items-center">
-												<div class="col-sm-4 mb-2">
-													<label class="form-label required">Thrusday</label>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="9.00" type="number" name="input7" id="input7">
-													</div>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="6.00" type="number" name="input8" id="input8">
-													</div>
-												</div>
-											</div>
-											<div class="row align-items-center">
-												<div class="col-sm-4 mb-2">
-													<label class="form-label required">Friday</label>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="9.00" type="number" name="input9" id="input9">
-													</div>
-												</div>
-												<div class="col-6 col-sm-4 mb-2">
-													<div class="mb-3">
-														<input class="form-control" value="6.00" type="number" name="input10" id="input10">
-													</div>
-												</div>
-											</div>
-										</div>
-										<div id="wizard_Payment" class="tab-pane" role="tabpanel">
-											<div class="row emial-setup">
-												<div class="col-lg-3 col-sm-6 col-6">
-													<div class="mb-3">
-														<label for="mailclient11" class="mailclinet mailclinet-gmail">
-															<input type="radio" name="emailclient" id="mailclient11">
-															<span class="mail-icon">
-																<i class="mdi mdi-google-plus" aria-hidden="true"></i>
-															</span>
-															<span class="mail-text">I'm using Gmail</span>
-														</label>
-													</div>
-												</div>
-												<div class="col-lg-3 col-sm-6 col-6">
-													<div class="mb-3">
-														<label for="mailclient12" class="mailclinet mailclinet-office">
-															<input type="radio" name="emailclient" id="mailclient12">
-															<span class="mail-icon">
-																<i class="mdi mdi-office" aria-hidden="true"></i>
-															</span>
-															<span class="mail-text">I'm using Office</span>
-														</label>
-													</div>
-												</div>
-												<div class="col-lg-3 col-sm-6 col-6">
-													<div class="mb-3">
-														<label for="mailclient13" class="mailclinet mailclinet-drive">
-															<input type="radio" name="emailclient" id="mailclient13">
-															<span class="mail-icon">
-																<i class="mdi mdi-google-drive" aria-hidden="true"></i>
-															</span>
-															<span class="mail-text">I'm using Drive</span>
-														</label>
-													</div>
-												</div>
-												<div class="col-lg-3 col-sm-6 col-6">
-													<div class="mb-3">
-														<label for="mailclient14" class="mailclinet mailclinet-another">
-															<input type="radio" name="emailclient" id="mailclient14">
-															<span class="mail-icon">
-																<i class="far fa-question-circle"></i>
-															</span>
-															<span class="mail-text">Another Service</span>
-														</label>
-													</div>
-												</div>
-											</div>
+<!--**********************************
+    Content body start
+***********************************-->
+<div class="content-body">
+    <div class="container-fluid">
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">User Information Form</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-validation">
+                            <form method="post" action="<?= site_url('save_customer_data') ?>" class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <!-- User ID -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="user_id">User ID</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="user_id" name="user_name" placeholder="User ID" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter User ID.
+                                                </div>
+                                            </div>
+                                        </div>
 
-											<div class="row">
-												<div class="col-12">
-													<div class="skip-email text-center">
-														<p>Or if want skip this step entirely and setup it later</p>
-														<a href="javascript:void(0)">Skip step</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-                            </div>
+                                        <!-- First Name -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="firstname">First Name</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter first name" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter First Name.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Last Name -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="lastname">Last Name</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter last name" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter Last Name.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="email">Email</label>
+                                            <div class="col-lg-6">
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter a valid Email.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Phone -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="phone">Phone</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone number" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter a valid Phone number.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Gender -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="gender">Gender</label>
+                                            <div class="col-lg-6">
+                                                <select class="form-control" id="gender" name="gender" required>
+                                                    <option value="">Please select</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a Gender.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Date of Birth -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="dob">Date of Birth</label>
+                                            <div class="col-lg-6">
+                                                <input type="date" class="form-control" id="dob" name="dob" required>
+                                                <div class="invalid-feedback">
+                                                    Please select a Date of Birth.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Skills -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="skills">Skills</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="skills" name="skills" placeholder="Enter skills" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter your Skills.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- About Me -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="about_me">About Me</label>
+                                            <div class="col-lg-6">
+                                                <textarea class="form-control" id="about_me" name="about_me" rows="4" placeholder="Tell us about yourself" required></textarea>
+                                                <div class="invalid-feedback">
+                                                    Please enter some information about yourself.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-6">
+                                        <!-- Company Name -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="company_name">Company Name</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="company_name" name="company_name" placeholder="Enter company name" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter Company Name.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- User Type -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="user_type">User Type</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Enter user type" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter User Type.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Location -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="location">Location</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="location" name="location" placeholder="Enter location" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter Location.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Country -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="country">Country</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="country" name="country" placeholder="Enter country" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter Country.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- City -->
+                                        <div class="mb-3 row">
+                                            <label class="col-lg-4 col-form-label form-label" for="city">City</label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="city" name="city" placeholder="Enter city" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter City.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Submit Button -->
+                                        <div class="mb-3 row">
+                                            <div class="col-lg-8 ms-auto">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--**********************************
-            Content body end
-        ***********************************-->
+    </div>
+</div>
+<!--**********************************
+    Content body end
+***********************************-->
 
 
-        <!--**********************************
+		<!--**********************************
             Footer start
         ***********************************-->
-       <div class="footer">
+		<div class="footer">
 			<div class="copyright">
-				<p>Copyright © Designed &amp; Developed by <a href="https://dexignlab.com/"
-						target="_blank">DexignLab</a> <span class="current-year">2024</span>
+				<p>Copyright © Designed &amp; Developed by <a href="#"
+						target="_blank">SpyderHub</a> <span class="current-year">2024</span>
 				</p>
 			</div>
 		</div>
-        <!--**********************************
+		<!--**********************************
             Footer end
         ***********************************-->
 
-        <!--**********************************
+		<!--**********************************
            Support ticket button start
         ***********************************-->
 
-        <!--**********************************
+		<!--**********************************
            Support ticket button end
         ***********************************-->
 
-        
-    </div>
-    <!--**********************************
+
+	</div>
+	<!--**********************************
         Main wrapper end
     ***********************************-->
 
-    <!--**********************************
+	<!--**********************************
         Scripts
     ***********************************-->
-    <!-- Required vendors -->
-    <script src="vendor/global/global.min.js"></script>
-
-    <script src="vendor/jquery-steps/build/jquery.steps.min.js"></script>
-    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
-    <!-- Form validate init -->
-    <script src="js/plugins-init/jquery.validate-init.js"></script>
-	
-	 <script src="vendor/dropzone/dist/dropzone.js"></script>
-
-
-	<!-- Form Steps -->
-	<script src="vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js"></script>
+	<!-- Required vendors -->
+	<script src="vendor/global/global.min.js"></script>
 	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	
 	<script src="js/custom.min.js"></script>
 	<script src="js/dlabnav-init.js"></script>
 	
-   
+	
 	<script>
-		$(document).ready(function(){
-			// SmartWizard initialize
-			$('#smartwizard').smartWizard(); 
-		});
-	</script>
+		(function () {
+			'use strict'
 
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.querySelectorAll('.needs-validation')
+
+			// Loop over them and prevent submission
+			Array.prototype.slice.call(forms)
+				.forEach(function (form) {
+					form.addEventListener('submit', function (event) {
+						if (!form.checkValidity()) {
+							event.preventDefault()
+							event.stopPropagation()
+						}
+
+						form.classList.add('was-validated')
+					}, false)
+				})
+		})()
+	</script>
 </body>
 
 </html>

@@ -33,6 +33,10 @@ $routes->get('agent_view_products', 'AgentController::AgentViewProducts');
 $routes->get('agent_product_master', 'AgentController::AgentProductMaster');
 $routes->get('agent_pre_costing', 'AgentController::AgentPreCosting');
 $routes->get('agent_costing', 'AgentController::AgentCosting');
+$routes->post('save_customer_data', 'AgentController::submitCustomer');
+$routes->delete('delete-user/(:num)', 'AgentController::deleteUser/$1');
+$routes->post('save_bank_account', 'AgentController::saveBankAccount');
+$routes->delete('delete-bank-account/(:num)', 'AgentController::delete/$1');
 
 $routes->get('/public_login', 'PublicController::publicLogin');
 $routes->get('/public_register', 'PublicController::publicRegisteration');

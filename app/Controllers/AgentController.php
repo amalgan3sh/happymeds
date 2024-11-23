@@ -13,6 +13,7 @@ use App\Models\ProductModel;
 use CodeIgniter\Database\Database;
 use Dompdf\Dompdf;
 use Dompdf\Options;
+use App\Models\BankAccountModel;
 
 class AgentController extends Controller
 {
@@ -150,6 +151,32 @@ class AgentController extends Controller
         
         return $header . $home;
     }
+
+    public function saveBankAccount()
+    {
+        $user = $this->authenticate();
+
+        // If validation passes, save data
+        $bankAccountModel = new BankAccountModel();
+
+        $data = [
+            'user_id'        => $this->request->getPost('user_id'),
+            'account_number' => $this->request->getPost('account_number'),
+            'ifsc'           => $this->request->getPost('ifsc'),
+            'name'           => $this->request->getPost('name'),
+            'branch'         => $this->request->getPost('branch'),
+            'city'           => $this->request->getPost('city'),
+            'state'          => $this->request->getPost('state'),
+            'zip'            => $this->request->getPost('zip'),
+        ];
+
+        if ($bankAccountModel->insert($data)) {
+            return redirect()->back()->with('success', 'Bank account details saved successfully!');
+        } else {
+            return redirect()->back()->with('error', 'Failed to save bank account details. Please try again.');
+        }
+    }
+
     public function AgentViewCustomer()
     {
         // Use the authenticate method to check the session and get user data
@@ -157,33 +184,109 @@ class AgentController extends Controller
         
         // Check if the user's KYC is verified
         $isKycVerified = !empty($user['kyc_verify']) ? $user['kyc_verify'] : 'Pending';
+        $userModel = new UserModel();
+
+        // Fetch customers based on agent_id (user_id)
+        $customers = $userModel->where('agent_id', $user['user_id'])->findAll();
         
         
         // Pass the user's data, KYC status, and order counts to the views
         $header = view('business/agent/agent_header', ['user' => $user]);
         $home = view('business/agent/agent_view_customer', [
             'user' => $user,
+            'customers' => $customers
         ]);
         
         return $header . $home;
+    }
+
+    public function deleteUser($user_id)
+    {
+        $user = $this->authenticate();
+        // Load the model
+        $userModel = new \App\Models\UserModel();
+
+        // Find the user by ID
+        $user = $userModel->find($user_id);
+
+        if ($user) {
+            // Delete the user from the database
+            $userModel->delete($user_id);
+
+            // Return a success response
+            return $this->response->setJSON(['success' => true]);
+        } else {
+            // Return an error response if user is not found
+            return $this->response->setJSON(['success' => false, 'message' => 'User not found']);
+        }
     }
     public function AgentAddCustomerBankAccount()
     {
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
         
+        // If $user is a RedirectResponse, return it immediately
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user; // Redirect to the login page
+        }
+        
         // Check if the user's KYC is verified
         $isKycVerified = !empty($user['kyc_verify']) ? $user['kyc_verify'] : 'Pending';
+        $userModel = new \App\Models\UserModel();
+
+        // Get users where `agent_id` matches the authenticated user's `user_id`
+        $associatedUsers = $userModel->where('agent_id', $user['user_id'])->findAll();
+
+        // Load the BankAccountModel to fetch bank accounts
+        $bankAccountModel = new \App\Models\BankAccountModel();
+        
+        // Fetch bank account details along with the user's name
+        $bankAccountModel = new \App\Models\BankAccountModel();
+        $builder = $bankAccountModel->builder();
+        $builder->select('bank_account_details.*, users.user_id, users.firstname, users.lastname, users.user_name'); // Select relevant fields
+        $builder->join('users', 'users.user_id = bank_account_details.user_id', 'inner');
+        $builder->where('users.agent_id', $user['user_id']);  // Filter by agent_id
+        $bankAccounts = $builder->get()->getResultArray();
         
         
         // Pass the user's data, KYC status, and order counts to the views
         $header = view('business/agent/agent_header', ['user' => $user]);
         $home = view('business/agent/agent_add_customer_bank_account', [
             'user' => $user,
+            'associatedUsers' => $associatedUsers,
+            'bankAccounts' => $bankAccounts,
         ]);
         
         return $header . $home;
     }
+
+    public function delete($id)
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+
+        // If $user is a RedirectResponse, return it immediately
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user; // Redirect to the login page
+        }
+        $bankAccountModel = new BankAccountModel();
+        
+        // Find the bank account by ID
+        $bankAccount = $bankAccountModel->find($id);
+        
+        // Check if the bank account exists
+        if (!$bankAccount) {
+            return redirect()->back()->with('error', 'Bank account not found.');
+        }
+        
+        // Delete the bank account
+        if ($bankAccountModel->delete($id)) {
+            return redirect()->back()->with('success', 'Bank account deleted successfully.');
+        } else {
+            return redirect()->back()->with('error', 'Failed to delete the bank account.');
+        }
+    }
+
     public function AgentProductMaster()
     {
         // Use the authenticate method to check the session and get user data
@@ -237,6 +340,43 @@ class AgentController extends Controller
         return $header . $home;
     }
 
+    public function submitCustomer()
+    {
+        $user = $this->authenticate();
+        // Create an instance of the UserModel to interact with the database
+        $userModel = new \App\Models\UserModel();
+    
+        // Get the form data from the POST request
+        $data = [
+            'user_name'     => $this->request->getPost('user_name'),
+            'email'         => $this->request->getPost('email'),
+            'phone'         => $this->request->getPost('phone'),
+            'firstname'     => $this->request->getPost('firstname'),
+            'lastname'      => $this->request->getPost('lastname'),
+            'company_name'  => $this->request->getPost('company_name'),
+            'user_type'     => $this->request->getPost('user_type'),
+            'location'      => $this->request->getPost('location'),
+            'country'       => $this->request->getPost('country'),
+            'city'          => $this->request->getPost('city'),
+            'gender'        => $this->request->getPost('gender'),
+            'dob'           => $this->request->getPost('dob'),
+            'skills'        => $this->request->getPost('skills'),
+            'about_me'      => $this->request->getPost('about_me')
+        ];
+        $data['password'] = password_hash($data['user_name'], PASSWORD_DEFAULT); 
+        $data['agent_id'] = $user['user_id'];
+        $data['kyc_verify'] = 'pending';
+    
+        // Insert the data into the database
+        if ($userModel->insert($data)) {
+            // Redirect to Agent View Customer page
+            return redirect()->to('/agent_view_customer');
+        } else {
+            // Handle the error if insertion fails
+            return redirect()->back()->with('error', 'Failed to save customer data.');
+        }
+    }
+
     public function AgentCosting()
     {
         // Use the authenticate method to check the session and get user data
@@ -269,7 +409,7 @@ class AgentController extends Controller
     
         // If no user is returned, redirect to the login page
         if (!$user) {
-            return redirect()->to('/login')->with('error', 'Please log in first')->send();
+            return redirect()->to('/public_login')->with('error', 'Please log in first')->send();
         }
     
         // Return the authenticated user data
