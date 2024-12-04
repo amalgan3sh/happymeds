@@ -136,9 +136,14 @@
                                         <div class="mb-3 row">
                                             <label class="col-lg-4 col-form-label form-label" for="user_type">User Type</label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Enter user type" required>
+                                                <select class="form-control" id="user_type" name="user_type" required>
+                                                    <option value="" disabled selected>Select User Type</option>
+                                                    <option value="manufacturer">Manufacturer</option>
+                                                    <option value="distributor">Distributor</option>
+                                                    <option value="franchise">Franchise</option>
+                                                </select>
                                                 <div class="invalid-feedback">
-                                                    Please enter User Type.
+                                                    Please select a User Type.
                                                 </div>
                                             </div>
                                         </div>

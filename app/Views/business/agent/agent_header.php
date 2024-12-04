@@ -536,7 +536,7 @@
  
     <!-- Agent Navbar -->
     <li>
-    <a href="business_home" aria-expanded="false">
+    <a href="agent_home" aria-expanded="false">
         <i class="material-symbols-outlined">dashboard</i>
         <span class="nav-text">Dashboard</span>
     </a>
@@ -598,8 +598,8 @@
                         </div>
                     </div>
                     <div class="copyright">
-                        <p><strong>Manufacturer/Supplier Dashboard</strong> © <span class="current-year">2024</span> All Rights Reserved</p>
-                        <p class="fs-12">Made with <span class="heart"></span> by SpyderHub</p>
+                        <p><strong>Agent Dashboard</strong> © <span class="current-year">2024</span> All Rights Reserved</p>
+                        <p class="fs-12">Made by <span class="heart"></span> by SpyderHub</p>
                     </div>
                 </div>
                 <!-- Modal HTML -->

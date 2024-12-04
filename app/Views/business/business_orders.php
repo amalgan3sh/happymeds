@@ -67,7 +67,7 @@
                                         </td>
                                         <td>
                                             <div class="action-buttons d-flex gap-2">
-                                                <a href="<?= base_url('business/view/'.$order['id']) ?>" 
+                                                <a href="<?= base_url('view_purchase_order') . '?order_id=' . $order['id'] ?>" 
                                                 class="btn btn-success btn-sm">
                                                     View
                                                 </a>

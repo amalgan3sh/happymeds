@@ -152,6 +152,107 @@ class AgentController extends Controller
         return $header . $home;
     }
 
+    public function submitProductData()
+    {
+        try {
+            $user = $this->authenticate();
+            // Initialize the product model
+            $productModel = new ProductModel();
+    
+            // Get the product name from the form
+            $productName = $this->request->getPost('ProductName');
+    
+            // Generate a unique prefix for filenames based on the product name
+            $productPrefix = str_replace(' ', '_', strtolower($productName)) . '_' . time();
+    
+            // Set the upload path to root/products/
+            $uploadPath = ROOTPATH . 'products/';
+    
+            // Ensure the products folder exists
+            if (!is_dir($uploadPath)) {
+                if (!mkdir($uploadPath, 0755, true)) {
+                    throw new \RuntimeException('Failed to create directory: ' . $uploadPath);
+                }
+            }
+    
+            // Handle main product image
+            $mainImageName = '';
+            $mainImage = $this->request->getFile('product_img_main');
+            if ($mainImage && $mainImage->isValid()) {
+                $mainImageName = $productPrefix . '_main_' . $mainImage->getRandomName();
+                if (!$mainImage->move($uploadPath, $mainImageName)) {
+                    throw new \RuntimeException('Failed to move main image');
+                }
+            }
+    
+            // Handle additional product images
+            $imagePaths = [];
+            $productImages = $this->request->getFileMultiple('product_images');
+            if (is_array($productImages)) {
+                foreach ($productImages as $image) {
+                    if ($image->isValid()) {
+                        $imageName = $productPrefix . '_extra_' . $image->getRandomName();
+                        if ($image->move($uploadPath, $imageName)) {
+                            $imagePaths[] = 'products/' . $imageName;
+                        }
+                    }
+                }
+            }
+    
+            // Handle thumbnail
+            $thumbnailName = '';
+            $thumbnail = $this->request->getFile('thumbnail');
+            if ($thumbnail && $thumbnail->isValid()) {
+                $thumbnailName = $productPrefix . '_thumbnail_' . $thumbnail->getRandomName();
+                if (!$thumbnail->move($uploadPath, $thumbnailName)) {
+                    throw new \RuntimeException('Failed to move thumbnail');
+                }
+            }
+    
+            // Get icon URL
+            $iconURL = $this->request->getPost('icon');
+    
+            // Prepare data for database insertion
+            $data = [
+                'ProductName' => $productName,
+                'Content' => $this->request->getPost('Content'),
+                'DosageForm' => $this->request->getPost('DosageForm'),
+                'Strength' => $this->request->getPost('Strength'),
+                'TherapeuticUse' => $this->request->getPost('TherapeuticUse'),
+                'TabletShapeAndColor' => $this->request->getPost('TabletShapeAndColor'),
+                'Packaging' => $this->request->getPost('Packaging'),
+                'UnitSize' => $this->request->getPost('UnitSize'),
+                'ShipperSize' => $this->request->getPost('ShipperSize'),
+                'icon' => $iconURL,
+                'product_img_main' => $mainImageName ? 'products/' . $mainImageName : null,
+                'product_images' => !empty($imagePaths) ? json_encode($imagePaths) : null,
+                'thumbnail' => $thumbnailName ? 'products/' . $thumbnailName : null,
+                'rating' => $this->request->getPost('rating'),
+                'sold_units' => $this->request->getPost('sold_units'),
+                'price' => $this->request->getPost('Price'),
+                'total_units' => $this->request->getPost('stockQuantity'),
+                // 'minOrderQuantity' => $this->request->getPost('minOrderQuantity'),
+                // 'sku' => $this->request->getPost('sku'),
+                'status' => 'pending',
+                // 'category' => $this->request->getPost('category'),
+                'manufacturer_id' => $this->request->getPost('ManufacturerName'),
+                'agent_id' => $user['user_id'],
+            ];
+    
+            // Insert data into the database
+            if ($productModel->save($data)) {
+                return redirect()->to('/agent_product_master')->with('success', 'Product has been successfully added.');
+            }
+    
+            return redirect()->back()->withInput()->with('error', 'Failed to save product data.');
+        } catch (\Exception $e) {
+            log_message('error', '[Product Upload] ' . $e->getMessage());
+            return redirect()->back()
+                ->withInput()
+                ->with('error', 'Failed to upload files: ' . $e->getMessage());
+        }
+    }
+
     public function saveBankAccount()
     {
         $user = $this->authenticate();
@@ -291,15 +392,23 @@ class AgentController extends Controller
     {
         // Use the authenticate method to check the session and get user data
         $user = $this->authenticate();
+        // If $user is a RedirectResponse, return it immediately
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user; // Redirect to the login page
+        }
         
         // Check if the user's KYC is verified
         $isKycVerified = !empty($user['kyc_verify']) ? $user['kyc_verify'] : 'Pending';
-        
+        $userModel = new \App\Models\UserModel();
+
+        $manufacturers = $userModel->where('user_type', 'manufacturer')->findAll();
+
         
         // Pass the user's data, KYC status, and order counts to the views
         $header = view('business/agent/agent_header', ['user' => $user]);
         $home = view('business/agent/agent_product_master', [
             'user' => $user,
+            'manufacturers' => $manufacturers
         ]);
         
         return $header . $home;
@@ -312,15 +421,44 @@ class AgentController extends Controller
         
         // Check if the user's KYC is verified
         $isKycVerified = !empty($user['kyc_verify']) ? $user['kyc_verify'] : 'Pending';
+        // Load the Products model
+        $productsModel = new \App\Models\ProductModel();
+
+        // Fetch all products associated with the agent
+        $products = $productsModel->where('agent_id', $user['user_id'])->findAll();
         
         
         // Pass the user's data, KYC status, and order counts to the views
         $header = view('business/agent/agent_header', ['user' => $user]);
         $home = view('business/agent/agent_view_products', [
             'user' => $user,
+            'products' => $products
         ]);
         
         return $header . $home;
+    }
+    public function delete_product($product_id)
+    {
+        // Check if the user is authenticated
+        $user = $this->authenticate();
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user; // Redirect to login if not authenticated
+        }
+
+        // Load the ProductModel
+        $productModel = new \App\Models\ProductModel();
+
+        // Try to delete the product by its ID
+        if ($productModel->delete($product_id)) {
+            // Set a success message
+            session()->setFlashdata('success', 'Product deleted successfully.');
+        } else {
+            // Set an error message
+            session()->setFlashdata('error', 'Failed to delete the product. Please try again.');
+        }
+
+        // Redirect back to the product listing page
+        return redirect()->to(base_url('agent_view_products'));
     }
     public function AgentPreCosting()
     {

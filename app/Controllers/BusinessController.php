@@ -290,13 +290,41 @@ class BusinessController extends Controller
 
         $userId = $user['user_id'];
 
-        $productModel = new ManufacturerProductModel();
+        $productModel = new ProductModel();
         // Fetch products that belong to the logged-in user
-        $products = $productModel->where('user_id', $userId)->findAll();
+        $products = $productModel->where('manufacturer_id', $userId)->findAll();
 
         // Pass the user's data and products to the views
         $header = view('business/business_header', ['user' => $user]);
         $home = view('business/business_manage_products', ['user' => $user, 'products' => $products]);
+
+        // Return the combined views
+        return $header . $home;
+    }
+
+    public function ManufaturerViewPurchaseOrder($order_id)
+    {
+        // Use the authenticate method to check the session and get user data
+        $user = $this->authenticate();
+
+        $userId = $user['user_id'];
+
+        $order_id = $this->request->getGet('order_id'); // Retrieve the 'order_id' from GET parameters
+
+        if (!$order_id) {
+            return redirect()->back()->with('error', 'Order ID is missing.');
+        }
+    
+        $orderModel = new PurchaseOrderModel();
+        $order = $orderModel->find($order_id);
+    
+        if (!$order) {
+            return redirect()->back()->with('error', 'Order not found.');
+        }
+
+        // Pass the user's data and products to the views
+        $header = view('business/business_header', ['user' => $user]);
+        $home = view('business/manufacturer/view_purchase_order', ['order' => $order]);
 
         // Return the combined views
         return $header . $home;
@@ -673,6 +701,15 @@ class BusinessController extends Controller
     
         // Update the user record
         if ($userModel->update($userId, $data)) {
+            // Retrieve the user_type from the database
+            $userType = $userModel->find($userId)['user_type'];
+
+            // Redirect based on the user type
+            if ($userType === 'agent') {
+                return redirect()->to('/agent_home')->with('success', 'Profile updated successfully.');
+            }
+
+            // Default redirect if the user type is not 'agent'
             return redirect()->back()->with('success', 'Profile updated successfully.');
         } else {
             return redirect()->back()->with('error', 'Failed to update the profile. Please try again.');

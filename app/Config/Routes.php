@@ -37,6 +37,8 @@ $routes->post('save_customer_data', 'AgentController::submitCustomer');
 $routes->delete('delete-user/(:num)', 'AgentController::deleteUser/$1');
 $routes->post('save_bank_account', 'AgentController::saveBankAccount');
 $routes->delete('delete-bank-account/(:num)', 'AgentController::delete/$1');
+$routes->post('submit_product_data', 'AgentController::submitProductData');
+$routes->get('agent/delete_product/(:num)', 'AgentController::delete_product/$1');
 
 $routes->get('/public_login', 'PublicController::publicLogin');
 $routes->get('/public_register', 'PublicController::publicRegisteration');
@@ -70,6 +72,7 @@ $routes->post('user/updateProfile', 'BusinessController::updateProfile');
 $routes->post('user/updateProfilePicture', 'BusinessController::updateProfilePicture');
 $routes->get('business_edit_product', 'BusinessController::BusinessEditProduct');
 $routes->get('order/updateStatus/(:num)/(:alpha)', 'BusinessController::updateStatus/$1/$2');
+$routes->get('view_purchase_order', 'BusinessController::ManufaturerViewPurchaseOrder/$1');
 
 $routes->get('business_requirements', 'BusinessController::BusinessRequirements');
 $routes->get('business-message', 'BusinessController::BusinessMessage');

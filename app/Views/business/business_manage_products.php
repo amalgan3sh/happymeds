@@ -33,23 +33,23 @@
                                             <tr>
                                                 <td>
                                                     <div class="form-check custom-checkbox checkbox-primary check-lg me-3">
-                                                        <input type="checkbox" class="form-check-input" id="checkProduct<?= $product['id'] ?>">
-                                                        <label class="form-check-label" for="checkProduct<?= $product['id'] ?>"></label>
+                                                        <input type="checkbox" class="form-check-input" id="checkProduct<?= $product['product_id'] ?>">
+                                                        <label class="form-check-label" for="checkProduct<?= $product['product_id'] ?>"></label>
                                                     </div>
                                                 </td>
-                                                <td><strong><?= $product['id'] ?></strong></td>
+                                                <td><strong><?= $product['product_id'] ?></strong></td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
-                                                        <img src="<?= base_url('uploads/' . $product['product_image']) ?>" class="rounded-lg me-2" width="24" alt="">
-                                                        <span class="w-space-no"><?= esc($product['product_name']) ?></span>
+                                                        <img src="<?= base_url('uploads/' . $product['product_img_main']) ?>" class="rounded-lg me-2" width="24" alt="">
+                                                        <span class="w-space-no"><?= esc($product['ProductName']) ?></span>
                                                     </div>
                                                 </td>
-                                                <td><?= esc($product['category']) ?></td>
+                                                <td><?= esc($product['DosageForm']) ?></td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
-                                                        <?php if ($product['stock_quantity'] > 10) : ?>
+                                                        <?php if ($product['total_units'] > 10) : ?>
                                                             <i class="fa fa-circle text-success me-1"></i> In Stock
-                                                        <?php elseif ($product['stock_quantity'] > 0) : ?>
+                                                        <?php elseif ($product['total_units'] > 0) : ?>
                                                             <i class="fa fa-circle text-warning me-1"></i> Low Stock
                                                         <?php else : ?>
                                                             <i class="fa fa-circle text-danger me-1"></i> Out of Stock
@@ -59,8 +59,8 @@
                                                 <td>$<?= number_format($product['price'], 2) ?></td>
                                                 <td>
                                                     <div class="d-flex">
-                                                        <a href="<?= site_url('product/edit/' . $product['id']) ?>" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-                                                        <a href="<?= site_url('product/delete/' . $product['id']) ?>" class="btn btn-danger shadow btn-xs sharp" onclick="return confirm('Are you sure you want to delete this product?');"><i class="fa fa-trash"></i></a>
+                                                        <a href="<?= site_url('product/edit/' . $product['product_id']) ?>" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
+                                                        <button class="btn btn-danger shadow btn-xs sharp" onclick="confirmDelete('<?= site_url('product/delete/' . $product['product_id']) ?>');"><i class="fa fa-trash"></i></button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -72,6 +72,24 @@
                                     <?php endif; ?>
                                 </tbody>
                             </table>
+                            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function confirmDelete(deleteUrl) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = deleteUrl;
+            }
+        });
+    }
+</script>
                         </div>
                     </div>
                 </div>

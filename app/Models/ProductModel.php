@@ -25,7 +25,7 @@ class ProductModel extends Model
         'total_units',
         'price',
         'productBrochure',
-        'certifications','stockQuantity','minOrderQuantity','sku','status','category','manufacturer_id'];
+        'certifications','stockQuantity','minOrderQuantity','sku','status','category','manufacturer_id','agent_id'];
 
 
 

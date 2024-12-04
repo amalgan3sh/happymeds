@@ -33,11 +33,11 @@
                                     <div class="row">
                                         <div class="col-lg-6 mb-2">
                                             <label class="form-label required">Product Name</label>
-                                            <input type="text" name="productName" class="form-control" placeholder="Product Name" required>
+                                            <input type="text" name="ProductName" class="form-control" placeholder="Product Name" required>
                                         </div>
                                         <div class="col-lg-6 mb-2">
                                             <label class="form-label required">Category</label>
-                                            <select name="category" class="form-control" required>
+                                            <select name="DosageForm" class="form-control" required>
                                                 <option value="">Select Category</option>
                                                 <option value="Medicine">Medicine</option>
                                                 <option value="Supplement">Supplement</option>
@@ -47,19 +47,19 @@
                                         </div>
                                         <div class="col-lg-6 mb-2">
                                             <label class="form-label required">Dosage Form</label>
-                                            <input type="text" name="dosageForm" class="form-control" placeholder="e.g., Tablet, Syrup" required>
+                                            <input type="text" name="DosageForm" class="form-control" placeholder="e.g., Tablet, Syrup" required>
                                         </div>
                                         <div class="col-lg-6 mb-2">
                                             <label class="form-label required">Strength</label>
-                                            <input type="text" name="strength" class="form-control" placeholder="e.g., 500mg, 10ml" required>
+                                            <input type="text" name="Strength" class="form-control" placeholder="e.g., 500mg, 10ml" required>
                                         </div>
                                         <div class="col-lg-12 mb-2">
                                             <label class="form-label">Description</label>
-                                            <textarea name="description" class="form-control" rows="4" placeholder="Provide a brief description of the product"></textarea>
+                                            <textarea name="Content" class="form-control" rows="4" placeholder="Provide a brief description of the product"></textarea>
                                         </div>
                                         <div class="col-lg-12 mb-2">
                                             <label class="form-label">Therapeutic Use</label>
-                                            <input type="text" name="therapeuticUse" class="form-control" placeholder="e.g., Pain relief, Vitamin supplement">
+                                            <input type="text" name="TherapeuticUse" class="form-control" placeholder="e.g., Pain relief, Vitamin supplement">
                                         </div>
                                     </div>
                                 </div>
@@ -72,15 +72,7 @@
                                         </div>
                                         <div class="col-lg-6 mb-2">
                                             <label class="form-label required">Stock Quantity</label>
-                                            <input type="number" name="stock" class="form-control" placeholder="Available stock" required>
-                                        </div>
-                                        <div class="col-lg-6 mb-2">
-                                            <label class="form-label">Minimum Order Quantity</label>
-                                            <input type="number" name="minOrderQty" class="form-control" placeholder="Minimum order quantity">
-                                        </div>
-                                        <div class="col-lg-6 mb-2">
-                                            <label class="form-label">SKU (Stock Keeping Unit)</label>
-                                            <input type="text" name="sku" class="form-control" placeholder="SKU Code">
+                                            <input type="number" name="total_units" class="form-control" placeholder="Available stock" required>
                                         </div>
                                     </div>
                                 </div>
